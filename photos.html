@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photos - JOURNEYWAYS</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
+    <link rel="shortcut icon" href="img/logo_bg_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aptos.css">
+    <style>
+        .script-font {
+            font-family: 'dream-big-wide', sans-serif;
+        }
+        body {
+            font-family: 'aptos', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('img/logo_bg_only.jpg');
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .text-shadow {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+        .gallery-item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50 hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="rules.html" class="hover:text-yellow-400 transition-colors">Game Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+        <div class="relative z-10 text-center">
+            <h1 class="script-font text-6xl md:text-7xl font-bold text-yellow-400 mb-4 fade-in text-shadow">Photos</h1>
+            <p class="text-xl fade-in">Visual glimpses into the world of JOURNEYWAYS</p>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="script-font text-4xl font-bold text-yellow-400 mb-6 text-shadow">Game Gallery</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    Explore the visual elements that make JOURNEYWAYS a unique and immersive experience.
+                </p>
+            </div>
+
+            <!-- Main Game Photos Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo1.jpg" alt="JOURNEYWAYS Game Setup" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Game Setup</h3>
+                        <p class="text-gray-300">The initial board configuration that begins every journey.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo2.jpg" alt="Game Components" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Game Components</h3>
+                        <p class="text-gray-300">The carefully crafted pieces that bring the game to life.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo3.jpg" alt="Players in Action" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Players in Action</h3>
+                        <p class="text-gray-300">Moments of discovery and connection during gameplay.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo4.jpg" alt="Story Cards" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Story Cards</h3>
+                        <p class="text-gray-300">The narrative elements that guide your journey.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo5.jpg" alt="Character Development" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Character Development</h3>
+                        <p class="text-gray-300">Tools for exploring and expressing your evolving identity.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo6.jpg" alt="Group Play Session" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Group Play Session</h3>
+                        <p class="text-gray-300">Collaborative storytelling in action.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Behind the Scenes -->
+            <div class="text-center mb-12">
+                <h2 class="script-font text-4xl font-bold text-yellow-400 mb-6 text-shadow">Behind the Scenes</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    A look at the creative process and design philosophy behind JOURNEYWAYS.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo7.jpg" alt="Design Process" class="w-full h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Design Process</h3>
+                        <p class="text-gray-300">The thoughtful creation of game mechanics that support self-discovery.</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                    <img src="img/photo8.jpg" alt="Artwork Creation" class="w-full h-80 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Artwork Creation</h3>
+                        <p class="text-gray-300">Visual elements designed to inspire reflection and growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="script-font text-4xl font-bold text-black mb-6">Experience the Journey</h2>
+            <p class="text-xl mb-8">
+                Ready to see these moments come to life in your own game?
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="rules.html" class="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                    Learn How to Play
+                </a>
+                <a href="index.html" class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    Back to Home
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 JOURNEYWAYS. A board game about becoming.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

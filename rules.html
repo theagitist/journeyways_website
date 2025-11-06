@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Rules - JOURNEYWAYS</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
+    <link rel="shortcut icon" href="img/logo_bg_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aptos.css">
+    <style>
+        .script-font {
+            font-family: 'dream-big-wide', sans-serif;
+        }
+        body {
+            font-family: 'aptos', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('img/logo_bg_only.jpg');
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .text-shadow {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+        .rule-section {
+            transition: all 0.3s ease;
+        }
+        .rule-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .card-black {
+            color: #6b7280;
+            font-weight: bold;
+        }
+        .card-blue {
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        .card-green {
+            color: #10b981;
+            font-weight: bold;
+        }
+        .card-purple {
+            color: #8b5cf6;
+            font-weight: bold;
+        }
+        .card-red {
+            color: #ef4444;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="rules.html" class="text-yellow-400">Game Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg h-96 flex items-center justify-center relative">
+         <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+         <div class="relative z-10 text-center">
+            <h1 class="script-font text-6xl md:text-7xl font-bold text-yellow-400 mb-4 fade-in text-shadow">Game Rules</h1>
+            <p class="text-xl fade-in">How to begin your journey of becoming</p>
+        </div>
+    </section>
+
+    <!-- Rules Content -->
+    <section class="py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Introduction -->
+            <div class="text-center mb-16">
+                <h2 class="script-font text-4xl font-bold text-yellow-400 mb-6 text-shadow">How to Play JOURNEYWAYS</h2>
+                <p class="text-xl text-gray-300 max-w-4xl mx-auto">
+                    JOURNEYWAYS is not about winning or losing; it's about discovering, exploring, and becoming. 
+                    These guidelines will help you create meaningful experiences, whether playing solo or with others.
+                </p>
+            </div>
+
+            <!-- Game Setup -->
+            <div class="rule-section bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Game Setup</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">What You'll Need</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Board tiles (35).</li>
+                            <li>• Game cards (81).</li>
+                            <li>• Player tokens (1 per player).</li>
+                            <li>• Player booklet (1 per player).</li>
+                            <li>• Some sticky notes.</li>
+                            <li>• Die for choosing the starting player (1).</li>
+                            <li>• Writing utensils.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Initial Setup</h4>
+                        <ol class="space-y-2 text-gray-300 list-decimal list-inside">
+                            <li>Shuffle all cards together and place them face dawn in three draw piles.</li>
+                            <li>Draw one card and place it apart face up. This will be the Discard pile.</li>
+                            <li>Find the Starter board tile and set it apart. Shuffle all others and place them face down in three piles.</li>
+                            <li>Each player takes one player token.</li>
+                            <li>Use the die to determine the starting player. For example, highest number goes first.</li>
+                            <li>Place the Starter board tile in the center of the table.</li>
+                            <li>Taking turns, each player draws a tile fom any pile and places it adjacent to another previously placed tile. If it's a blank tile, put it back in the pile and draw again.</li>
+                            <li>All players place their tokens on the Starter tile.</li>
+                        
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Basic Gameplay -->
+            <div class="rule-section bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Basic Gameplay</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Turn Structure</h4>
+                        <p class="text-gray-300 mb-4">
+                            Each turn consists of three phases: <strong>Explore</strong>, <strong>Draw</strong>, and <strong>Reflect</strong>.
+                        </p>
+                        <div class="grid md:grid-cols-3 gap-4">
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <h5 class="font-semibold text-yellow-400 mb-2">1. Explore</h5>
+                                <p class="text-sm text-gray-300">For Exploration you have two options: (1) Draw a map tile and place it adjacent to another one. If you draw a blank tile, you have to create it before placing it.(2) Use a sticky note to draw a new map tile (whatever you want) and place it on top of an existing one where no player is located. After you place your tile, you can move one or two spaces in any direction.</p>
+                                
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <h5 class="font-semibold text-yellow-400 mb-2">2. Draw</h5>
+                                <p class="text-sm text-gray-300">Draw a card from any pile, even the Discard pile. <span class="card-green">Green</span> cards are movement, <span class="card-black">Black</span> cards are pass of time, <span class="card-blue">Blue</span> cards are quotes, <span class="card-red">Red</span> cards are encounters, <span class="card-purple">Purple</span> cards are group events.</p>
+                                
+                            </div>
+                            <div class="bg-gray-700 p-4 rounded-lg">
+                                <h5 class="font-semibold text-yellow-400 mb-2">3. Reflect</h5>
+                                <p class="text-sm text-gray-300">If you drew a <span class="card-green">Green</span> or <span class="card-purple">Purple</span> card, you have to perform the action it indicates. If you drew a <span class="card-blue">Blue</span> or <span class="card-red">Red</span> card, take into account what they say, and write a new entry in your journal. If you drew a <span class="card-black">Black</span> card, set it apart. The game ends when the fifth <span class="card-black">Black</span> card is drawn.</p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ending the game -->
+            <div class="rule-section bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Ending the game</h3>
+                <div class="space-y-4">
+                    <p class="text-gray-300">
+                        The game ends when the fifth <span class="card-black">Black</span> card is drawn. Each player can add a final entry to their journal, or just leave it as it is. However, if all players agree you can end the session after any amount of <span class="card-black">Black</span> cards are drawn, or disregard the <span class="card-black">Black</span> cards and use a timer, etc.
+                        It is ok if your story ends abruptly. You can leave it like that, or return to it on another session.
+                        <br><br>
+                        After ending the game, each player can fill their Character Sheet at the end of the Player Booklet. This way they can see how their character developed during the game; what changed, and what stayed the same.
+                        <br><br> 
+                    <strong>Remember:</strong> The game is not about winning or losing. It is about discovering, exploring, and becoming.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Writing your journal-->
+            <div class="rule-section bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Writing your journal</h3>
+                <div class="space-y-4">
+                    <p class="text-gray-300">
+                        Unlike traditional games, your character in JOURNEYWAYS emerges through play rather than being predetermined. 
+                        Use the game cards as inspiration, not rigid definitions; the main objective is you set your imagination free and write the story you want to tell. Journal entries can be as short or long, or as terse of detailed as you want.
+                        You can get inspiration from the tile where your token is located and the text in the card, but you can be as creative as you want. You can write a journal entry, doodle it, or do whatever you like.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Solo vs Group Play -->
+            <div class="rule-section bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Solo vs Group Play</h3>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3 text-green-400">Solo Play</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Remove the <span class="card-purple">Purple</span> cards from the game.</li>
+                            <li>• Focus on deep personal reflection.</li>
+                            <li>• Take as much time as you need.</li>
+                            <li>• Use journaling extensively.</li>
+                            <li>• Create your own pacing.</li>
+                            <li>• Return to previous sessions.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3 text-blue-400">Group Play</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Share reflections with others.</li>
+                            <li>• Learn from different perspectives.</li>
+                            <li>• Build collective narratives.</li>
+                            <li>• Support each other's growth.</li>
+                            <li>• Create shared memories.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Advanced Concepts -->
+            <div class="rule-section bg-gray-800 rounded-lg p-8 mb-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Advanced Concepts</h3>
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Session Endings</h4>
+                        <p class="text-gray-300">
+                            It's recommended to end the session when the fifth <span class="card-black">Black</span> card is drawn. Each player can add a final entry to their journal, or just leave it as it is.
+                            However, if all players agree you can end the session after any amount of <span class="card-black">Black</span> cards are drawn, or disregard the <span class="card-black">Black</span> cards and use a timer, etc.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Returning to Previous Sessions</h4>
+                        <p class="text-gray-300">
+                            JOURNEYWAYS is designed for ongoing play. Return to previous sessions, 
+                            revisit old insights, and see how your understanding has evolved. 
+                            Your character and story continue to develop between sessions.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Creating Your Own Elements</h4>
+                        <p class="text-gray-300">
+                            Feel free to add your own story cards, character elements, or game mechanics. 
+                            JOURNEYWAYS is a framework for exploration; make it your own.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tips for Meaningful Play -->
+            <div class="rule-section bg-gray-800 rounded-lg p-8">
+                <h3 class="text-2xl font-bold text-yellow-400 mb-4 text-shadow">Tips for Meaningful Play</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Creating Safe Space</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Set aside dedicated time.</li>
+                            <li>• Minimize distractions.</li>
+                            <li>• Create a comfortable environment.</li>
+                            <li>• Honor everyone's privacy.</li>
+                            <li>• Practice active listening.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-3">Deepening the Experience</h4>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Ask open-ended questions.</li>
+                            <li>• Embrace uncertainty.</li>
+                            <li>• Allow for silence and reflection.</li>
+                            <li>• Be curious, not judgmental.</li>
+                            <li>• Celebrate small discoveries.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="script-font text-4xl font-bold text-black mb-6">Ready to Begin?</h2>
+            <p class="text-xl mb-8">
+                Your journey of becoming starts with a single step. Gather your materials and begin.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html" class="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                    Back to Home
+                </a>
+                <a href="download/JOURNEYWAYS Game Rules 1.0.pdf" download class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    Download Game Rules PDF
+                </a>
+                <a href="download/JOURNEYWYS Character Sheet 1.0.pdf" download class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
+                    Download Character Sheet PDF
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 JOURNEYWAYS. A board game about becoming.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Add smooth scrolling for better UX
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOURNEYWAYS - A Board Game About Becoming</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
+    <link rel="shortcut icon" href="img/logo_bg_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aptos.css">
+    <style>
+        .script-font {
+            font-family: 'dream-big-wide', sans-serif;
+        }
+        body {
+            font-family: 'aptos', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('img/logo_bg_only.jpg');
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .text-shadow {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+        .title-center {
+            text-align: center !important;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero-title {
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .responsive-title {
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="rules.html" class="hover:text-yellow-400 transition-colors">Game Rules</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="relative z-10 w-full flex flex-col items-center justify-center px-4">
+            <h1 class="script-font text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[12rem] font-bold text-yellow-400 mb-12 fade-in text-shadow text-center w-full break-words responsive-title">JOURNEYWAYS</h1>
+            <p class="text-xl md:text-2xl font-bold italic mb-12 fade-in text-shadow text-center">A BOARD GAME ABOUT BECOMING</p>
+            
+            <div class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-8 fade-in text-center max-w-4xl mx-auto">
+                <p class="text-lg md:text-xl leading-relaxed mb-4">
+                    Step into a world where identity is not chosen but uncovered.<br/>In JOURNEYWAYS, you don't play to win; you play to unfold.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed mb-4">
+                    Explore selfhood not with labels, but with motion, memory, and meaning.<br/>Whether solo or in chorus, each session reveals a story made only by your presence.
+                </p>
+                <p class="text-lg md:text-xl leading-relaxed">
+                    With no fixed roles and no final answers, JOURNEYWAYS invites you to<br/>co-create the story of who you are and who you are becoming.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-gray-800">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-6 text-shadow">About the Game</h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                    JOURNEYWAYS is not only a game; it's an exploration of self-discovery<br/>through collaborative storytelling and meaningful choices.
+                </p>
+            </div>
+            
+            <!-- Key Features Grid -->
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-700 rounded-lg p-6 text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="img/no_fixed_roles.jpg" alt="No Fixed Roles" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">No Fixed Roles</h3>
+                    <p class="text-gray-300">Discover your character through play,<br/>not predetermined archetypes.</p>
+                </div>
+                
+                <div class="bg-gray-700 rounded-lg p-6 text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="img/collaborative_storytelling.jpg" alt="Collaborative Storytelling" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Collaborative Storytelling</h3>
+                    <p class="text-gray-300">Co-create narratives that reveal<br/>deeper truths about identity.</p>
+                </div>
+                
+                <div class="bg-gray-700 rounded-lg p-6 text-center">
+                    <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
+                        <img src="img/continuous_growth.jpg" alt="Continuous Growth" class="w-full h-full object-cover">
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Continuous Growth</h3>
+                    <p class="text-gray-300">Each session builds upon the last,<br/>creating an evolving journey.</p>
+                </div>
+            </div>
+            
+            <!-- Gameplay Features -->
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Solo or Group Play</h3>
+                    <p class="text-gray-300 mb-6">
+                        Whether you're exploring alone or with friends, JOURNEYWAYS adapts to your preferred style of play. 
+                        Solo sessions offer deep introspection, while group play creates rich, collaborative narratives.
+                    </p>
+                    
+                    <h3 class="text-2xl font-semibold mb-4">Meaningful Choices</h3>
+                    <p class="text-gray-300">
+                        Every decision in JOURNEYWAYS carries weight. Your choices don't just affect the game—they reveal 
+                        aspects of yourself you might not have known existed.
+                    </p>
+                </div>
+                
+                <div class="bg-gray-700 rounded-lg p-8">
+                    <img src="img/game_components_placeholder.jpg" alt="Game Components" class="w-full rounded-lg mb-4">
+                    <p class="text-sm text-gray-400 text-center">Game components and board setup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black hidden">
+        <div class="max-w-4xl mx-auto text-center px-4">
+            <h2 class="script-font text-4xl md:text-5xl font-bold text-black mb-6 text-shadow">Begin Your Journey</h2>
+            <p class="text-xl mb-8">
+                Ready to discover who you are becoming? Start your JOURNEYWAYS adventure today.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="rules.html" class="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
+                    Learn the Rules
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025 JOURNEYWAYS. A board game about becoming.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
