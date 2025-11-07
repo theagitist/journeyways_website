@@ -28,10 +28,6 @@ journeyways_website/
 │   ├── logo.png
 │   ├── logo_bg_only.png
 │   └── [various game photos]
-├── JOURNEYWAYS_Game_Rules.pdf    # Generated PDF version of rules
-├── JOURNEYWAYS_Game_Rules.docx   # Generated Word version of rules
-├── generate_pdf.py     # Script to generate PDF from rules.html
-├── generate_word.py   # Script to generate Word doc from rules.html
 └── README.md          # This file
 ```
 
@@ -64,27 +60,12 @@ The website provides downloadable PDF files accessible from the "Ready to Begin?
 - **Game Rules PDF** (`download/JOURNEYWAYS Game Rules 1.0.pdf`): Complete rulebook in PDF format
 - **Character Sheet PDF** (`download/JOURNEYWYS Character Sheet 1.0.pdf`): Printable character sheet for players
 
-Additionally, generated versions of the rules are available in the root directory:
-- `JOURNEYWAYS_Game_Rules.pdf` - PDF version generated from rules.html
-- `JOURNEYWAYS_Game_Rules.docx` - Word document version generated from rules.html
-
 ## Technology
 
 - **HTML5**: Semantic markup
 - **Tailwind CSS**: Utility-first CSS framework (via CDN)
 - **Custom Fonts**: Adobe Typekit fonts (dream-big-wide, aptos)
 - **Responsive Design**: Mobile-first approach
-
-## Development Tools
-
-The repository includes Python scripts for generating document versions:
-- `generate_pdf.py`: Converts rules.html to PDF using WeasyPrint
-- `generate_word.py`: Converts rules.html to Word document using python-docx and BeautifulSoup
-
-To use these scripts, install the required dependencies:
-```bash
-pip install weasyprint python-docx beautifulsoup4
-```
 
 ## Setup
 
