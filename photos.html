@@ -78,6 +78,53 @@
         .lightbox-close:hover {
             color: #fbbf24;
         }
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+            padding: 15px 20px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+            z-index: 10000;
+        }
+        .lightbox-nav:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fbbf24;
+        }
+        .lightbox-prev {
+            left: 20px;
+        }
+        .lightbox-next {
+            right: 20px;
+        }
+        .lightbox-caption {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-align: center;
+            max-width: 80%;
+        }
+        .lightbox-caption h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #fbbf24;
+        }
+        .lightbox-caption p {
+            font-size: 16px;
+            color: #e5e7eb;
+        }
         @keyframes zoomIn {
             from { transform: scale(0.8); opacity: 0; }
             to { transform: scale(1); opacity: 1; }
@@ -115,7 +162,7 @@
             <!-- Main Game Photos Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="img/photo1.jpg" alt="JOURNEYWAYS Game Setup" class="w-full h-64 object-cover" onclick="openLightbox('img/photo1.jpg', 'JOURNEYWAYS Game Setup')">
+                    <img src="img/photo1.jpg" alt="JOURNEYWAYS Game Setup" class="w-full h-64 object-cover" onclick="openLightbox(0)">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Game Setup</h3>
                         <p class="text-gray-300">Initial board configuration.</p>
@@ -123,7 +170,7 @@
                 </div>
 
                 <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="img/game_components.jpeg" alt="Game Components" class="w-full h-64 object-cover" onclick="openLightbox('img/game_components.jpeg', 'Game Components')">
+                    <img src="img/game_components.jpeg" alt="Game Components" class="w-full h-64 object-cover" onclick="openLightbox(1)">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Game Components</h3>
                         <p class="text-gray-300">Pieces that bring the game to life.</p>
@@ -131,7 +178,7 @@
                 </div>
 
                 <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="img/players_in_action.jpeg" alt="Players in Action" class="w-full h-64 object-cover" onclick="openLightbox('img/players_in_action.jpeg', 'Players in Action')">
+                    <img src="img/players_in_action.jpeg" alt="Players in Action" class="w-full h-64 object-cover" onclick="openLightbox(2)">
                     <div class="p-6">
                         <h3 class="text-xl font-semibold mb-2">Players in Action</h3>
                         <p class="text-gray-300">Connecting over gameplay.</p>
@@ -165,7 +212,13 @@
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
         <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
-        <img class="lightbox-content" id="lightbox-img" src="" alt="">
+        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</button>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+        <div class="lightbox-caption" onclick="event.stopPropagation()">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-subtitle"></p>
+        </div>
     </div>
 
     <!-- Footer -->
@@ -186,14 +239,62 @@
             });
         });
 
+        // Gallery images data
+        const galleryImages = [
+            {
+                src: 'img/photo1.jpg',
+                alt: 'JOURNEYWAYS Game Setup',
+                title: 'Game Setup',
+                subtitle: 'Initial board configuration.'
+            },
+            {
+                src: 'img/game_components.jpeg',
+                alt: 'Game Components',
+                title: 'Game Components',
+                subtitle: 'Pieces that bring the game to life.'
+            },
+            {
+                src: 'img/players_in_action.jpeg',
+                alt: 'Players in Action',
+                title: 'Players in Action',
+                subtitle: 'Connecting over gameplay.'
+            }
+        ];
+
+        let currentImageIndex = 0;
+
         // Lightbox functionality
-        function openLightbox(imageSrc, imageAlt) {
+        function openLightbox(index) {
+            currentImageIndex = index;
+            updateLightbox();
             const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightboxImg.src = imageSrc;
-            lightboxImg.alt = imageAlt;
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+        }
+
+        function updateLightbox() {
+            const image = galleryImages[currentImageIndex];
+            const lightboxImg = document.getElementById('lightbox-img');
+            const lightboxTitle = document.getElementById('lightbox-title');
+            const lightboxSubtitle = document.getElementById('lightbox-subtitle');
+            
+            lightboxImg.src = image.src;
+            lightboxImg.alt = image.alt;
+            lightboxTitle.textContent = image.title;
+            lightboxSubtitle.textContent = image.subtitle;
+        }
+
+        function navigateLightbox(direction) {
+            currentImageIndex += direction;
+            
+            // Wrap around
+            if (currentImageIndex < 0) {
+                currentImageIndex = galleryImages.length - 1;
+            } else if (currentImageIndex >= galleryImages.length) {
+                currentImageIndex = 0;
+            }
+            
+            updateLightbox();
         }
 
         function closeLightbox(event) {
@@ -205,13 +306,17 @@
             }
         }
 
-        // Close lightbox with Escape key
+        // Keyboard navigation
         document.addEventListener('keydown', function(event) {
+            const lightbox = document.getElementById('lightbox');
+            if (!lightbox.classList.contains('active')) return;
+
             if (event.key === 'Escape') {
-                const lightbox = document.getElementById('lightbox');
-                if (lightbox.classList.contains('active')) {
-                    closeLightbox({ target: { id: 'lightbox' } });
-                }
+                closeLightbox({ target: { id: 'lightbox' } });
+            } else if (event.key === 'ArrowLeft') {
+                navigateLightbox(-1);
+            } else if (event.key === 'ArrowRight') {
+                navigateLightbox(1);
             }
         });
     </script>
