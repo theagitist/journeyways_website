@@ -57,6 +57,10 @@ journeyways_website/
 ### Photos (`photos.html`)
 - Visual gallery of game components
 - Game setup and play examples
+- Interactive lightbox modal with navigation (previous/next buttons)
+- Image captions with titles and subtitles
+- Crossfade transitions between images
+- Keyboard navigation support (arrow keys, escape)
 - "Ready to Begin?" section with download links
 - Navigation bar with links to all pages
 

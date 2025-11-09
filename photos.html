@@ -63,7 +63,14 @@
             max-height: 90%;
             margin: auto;
             display: block;
-            animation: zoomIn 0.3s ease-in;
+            opacity: 1;
+            transition: opacity 0.4s ease-in-out;
+        }
+        .lightbox-content.fade-out {
+            opacity: 0;
+        }
+        .lightbox-content.fade-in {
+            opacity: 1;
         }
         .lightbox-close {
             position: absolute;
@@ -106,24 +113,55 @@
         .lightbox-caption {
             position: absolute;
             bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 0;
+            right: 0;
+            margin: 0 auto;
             background-color: rgba(0, 0, 0, 0.7);
             color: white;
             padding: 15px 30px;
             border-radius: 5px;
             text-align: center;
-            max-width: 80%;
+            width: 400px;
+            height: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+            transition: opacity 0.4s ease-in-out;
+            box-sizing: border-box;
+            will-change: opacity;
+        }
+        .lightbox-caption.fade-out {
+            opacity: 0;
+        }
+        .lightbox-caption.fade-in {
+            opacity: 1;
         }
         .lightbox-caption h3 {
             font-size: 24px;
             font-weight: bold;
-            margin-bottom: 5px;
+            margin: 0 0 5px 0;
             color: #fbbf24;
+            height: 28px;
+            line-height: 28px;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         .lightbox-caption p {
             font-size: 16px;
             color: #e5e7eb;
+            margin: 0;
+            height: 20px;
+            line-height: 20px;
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
         @keyframes zoomIn {
             from { transform: scale(0.8); opacity: 0; }
@@ -266,22 +304,63 @@
         // Lightbox functionality
         function openLightbox(index) {
             currentImageIndex = index;
-            updateLightbox();
             const lightbox = document.getElementById('lightbox');
             lightbox.classList.add('active');
             document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
+            updateLightbox(true); // Show immediately on open
         }
 
-        function updateLightbox() {
+        function updateLightbox(immediate = false) {
             const image = galleryImages[currentImageIndex];
             const lightboxImg = document.getElementById('lightbox-img');
             const lightboxTitle = document.getElementById('lightbox-title');
             const lightboxSubtitle = document.getElementById('lightbox-subtitle');
+            const lightboxCaption = document.querySelector('.lightbox-caption');
             
-            lightboxImg.src = image.src;
-            lightboxImg.alt = image.alt;
-            lightboxTitle.textContent = image.title;
-            lightboxSubtitle.textContent = image.subtitle;
+            if (immediate) {
+                // For initial load, show immediately
+                lightboxImg.src = image.src;
+                lightboxImg.alt = image.alt;
+                lightboxTitle.textContent = image.title;
+                lightboxSubtitle.textContent = image.subtitle;
+                lightboxCaption.style.visibility = 'visible';
+                lightboxImg.classList.remove('fade-out');
+                lightboxImg.classList.add('fade-in');
+                lightboxCaption.classList.remove('fade-out');
+                lightboxCaption.classList.add('fade-in');
+            } else {
+                // Fade out current image and caption
+                lightboxImg.classList.remove('fade-in');
+                lightboxImg.classList.add('fade-out');
+                lightboxCaption.classList.remove('fade-in');
+                lightboxCaption.classList.add('fade-out');
+                
+                // After fade out completes, update content and fade in
+                setTimeout(() => {
+                    // Update image first
+                    lightboxImg.src = image.src;
+                    lightboxImg.alt = image.alt;
+                    
+                    // Temporarily make caption invisible to prevent layout shifts
+                    lightboxCaption.style.visibility = 'hidden';
+                    
+                    // Update text content
+                    lightboxTitle.textContent = image.title;
+                    lightboxSubtitle.textContent = image.subtitle;
+                    
+                    // Force a reflow to ensure text is laid out
+                    void lightboxCaption.offsetHeight;
+                    
+                    // Make caption visible again
+                    lightboxCaption.style.visibility = 'visible';
+                    
+                    // Fade in new image and caption
+                    lightboxImg.classList.remove('fade-out');
+                    lightboxImg.classList.add('fade-in');
+                    lightboxCaption.classList.remove('fade-out');
+                    lightboxCaption.classList.add('fade-in');
+                }, 400); // Match transition duration
+            }
         }
 
         function navigateLightbox(direction) {
@@ -294,7 +373,7 @@
                 currentImageIndex = 0;
             }
             
-            updateLightbox();
+            updateLightbox(false); // Use crossfade transition
         }
 
         function closeLightbox(event) {
