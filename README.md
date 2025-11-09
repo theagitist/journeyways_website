@@ -24,10 +24,16 @@ journeyways_website/
 ├── download/          # Downloadable PDF files
 │   ├── JOURNEYWAYS Game Rules 1.0.pdf
 │   └── JOURNEYWYS Character Sheet 1.0.pdf
-├── img/               # Game images and assets
-│   ├── logo.png
-│   ├── logo_bg_only.png
-│   └── [various game photos]
+├── img/               # Game images and assets (optimized)
+│   ├── logo_bg_only.png    # Favicon
+│   ├── logo_bg_only.jpg    # Background image
+│   ├── photo1.jpg          # Game Setup photo
+│   ├── game_components.jpeg
+│   ├── players_in_action.jpeg
+│   ├── no_fixed_roles.jpg
+│   ├── collaborative_storytelling.jpg
+│   ├── continuous_growth.jpg
+│   └── game_components_placeholder.jpg
 └── README.md          # This file
 ```
 
@@ -50,13 +56,13 @@ journeyways_website/
 
 ### Photos (`photos.html`)
 - Visual gallery of game components
-- Behind-the-scenes content
 - Game setup and play examples
-- Note: Navigation is hidden on this page
+- "Ready to Begin?" section with download links
+- Navigation bar with links to all pages
 
 ## Downloads
 
-The website provides downloadable PDF files accessible from the "Ready to Begin?" section on the rules page:
+The website provides downloadable PDF files accessible from the "Ready to Begin?" section on both the rules and photos pages:
 - **Game Rules PDF** (`download/JOURNEYWAYS Game Rules 1.0.pdf`): Complete rulebook in PDF format
 - **Character Sheet PDF** (`download/JOURNEYWYS Character Sheet 1.0.pdf`): Printable character sheet for players
 
@@ -66,6 +72,7 @@ The website provides downloadable PDF files accessible from the "Ready to Begin?
 - **Tailwind CSS**: Utility-first CSS framework (via CDN)
 - **Custom Fonts**: Adobe Typekit fonts (dream-big-wide, aptos)
 - **Responsive Design**: Mobile-first approach
+- **Image Optimization**: Images optimized using ffmpeg for better performance
 
 ## Setup
 
