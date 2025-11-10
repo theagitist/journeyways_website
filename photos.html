@@ -181,6 +181,21 @@
                         <a href="photos.html" class="hover:text-yellow-400 transition-colors">Photos</a>
                     </div>
                 </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="hover:text-yellow-400 transition-colors py-2">Home</a>
+                    <a href="rules.html" class="hover:text-yellow-400 transition-colors py-2">Game Rules</a>
+                    <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2">Photos</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -397,6 +412,28 @@
             } else if (event.key === 'ArrowRight') {
                 navigateLightbox(1);
             }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
         });
     </script>
 </body>

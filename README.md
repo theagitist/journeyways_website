@@ -44,6 +44,7 @@ journeyways_website/
 - About the game section
 - Key features showcase
 - Solo vs group play information
+- Responsive navigation (desktop menu / mobile hamburger menu)
 
 ### Game Rules (`rules.html`)
 - Complete game setup instructions
@@ -53,6 +54,7 @@ journeyways_website/
 - Solo vs group play guidelines
 - Advanced concepts and tips
 - Download buttons for PDF versions
+- Responsive navigation (desktop menu / mobile hamburger menu)
 
 ### Photos (`photos.html`)
 - Visual gallery of game components
@@ -62,7 +64,7 @@ journeyways_website/
 - Crossfade transitions between images
 - Keyboard navigation support (arrow keys, escape)
 - "Ready to Begin?" section with download links
-- Navigation bar with links to all pages
+- Responsive navigation (desktop menu / mobile hamburger menu)
 
 ## Downloads
 
@@ -70,12 +72,25 @@ The website provides downloadable PDF files accessible from the "Ready to Begin?
 - **Game Rules PDF** (`download/JOURNEYWAYS Game Rules 1.0.pdf`): Complete rulebook in PDF format
 - **Character Sheet PDF** (`download/JOURNEYWYS Character Sheet 1.0.pdf`): Printable character sheet for players
 
+## Navigation
+
+The website features a responsive navigation system:
+
+- **Desktop Navigation**: Horizontal menu bar with links to Home, Game Rules, and Photos (visible on medium screens and larger)
+- **Mobile Navigation**: Hamburger menu button (visible on mobile devices) that opens a dropdown menu with:
+  - Home
+  - Game Rules
+  - Photos
+- The mobile menu automatically closes when a link is clicked
+- Navigation is consistent across all pages
+
 ## Technology
 
 - **HTML5**: Semantic markup
 - **Tailwind CSS**: Utility-first CSS framework (via CDN)
 - **Custom Fonts**: Adobe Typekit fonts (dream-big-wide, aptos)
-- **Responsive Design**: Mobile-first approach
+- **Responsive Design**: Mobile-first approach with hamburger menu for mobile devices
+- **JavaScript**: Vanilla JavaScript for mobile menu toggle and lightbox functionality
 - **Image Optimization**: Images optimized using ffmpeg for better performance
 
 ## Setup
