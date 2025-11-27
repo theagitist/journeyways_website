@@ -45,6 +45,9 @@ journeyways_website/
 - Key features showcase
 - Solo vs group play information
 - Responsive navigation (desktop menu / mobile hamburger menu)
+- Scrolling marquee announcement banner featuring:
+  - ProtoConBC feature (October 2025)
+  - UBC Critical Play Fellowship participation
 
 ### Game Rules (`rules.html`)
 - Complete game setup instructions
