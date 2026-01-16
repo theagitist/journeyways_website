@@ -12,6 +12,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css">
     <link rel="stylesheet" href="https://use.typekit.net/aptos.css">
+    <script>
+        // Redirect to www.journeyways.ca if not already there
+        (function() {
+            if (window.location.hostname !== 'www.journeyways.ca') {
+                window.location.replace('https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
     <style>
         .script-font {
             font-family: 'dream-big-wide', sans-serif;
@@ -228,7 +236,7 @@
     <!-- Footer -->
     <footer class="bg-black py-8">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025 JOURNEYWAYS. A board game about becoming.</p>
+            <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A board game about becoming.</p>
         </div>
     </footer>
 

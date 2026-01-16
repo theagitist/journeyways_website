@@ -133,9 +133,18 @@ The game includes:
 - **Red Cards**: Encounters
 - **Purple Cards**: Group events
 
+## Changelog
+
+### Version 1.1
+- Added automatic redirect to `www.journeyways.ca` if accessed via different hostname
+- Updated copyright notice to 2025-2026
+
+### Version 1.0
+- Initial release
+
 ## License
 
-© 2025 JOURNEYWAYS. A board game about becoming.
+© 2025-2026 JOURNEYWAYS. A board game about becoming.
 
 ## Repository
 
