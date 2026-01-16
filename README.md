@@ -21,6 +21,7 @@ journeyways_website/
 ├── index.html          # Homepage with game overview
 ├── boardgame.html      # Complete game rules and instructions
 ├── photos.html         # Photo gallery of the game
+├── videogame.html      # Video game page (coming soon)
 ├── download/          # Downloadable PDF files
 │   ├── JOURNEYWAYS Game Rules 1.0.pdf
 │   └── JOURNEYWYS Character Sheet 1.0.pdf
@@ -33,7 +34,11 @@ journeyways_website/
 │   ├── no_fixed_roles.jpg
 │   ├── collaborative_storytelling.jpg
 │   ├── continuous_growth.jpg
-│   └── game_components_placeholder.jpg
+│   ├── game_components_placeholder.jpg
+│   └── thumbnails/        # Optimized thumbnail images for gallery
+│       ├── photo1_thumb.jpg
+│       ├── game_components_thumb.jpg
+│       └── players_in_action_thumb.jpg
 └── README.md          # This file
 ```
 
@@ -66,8 +71,14 @@ journeyways_website/
 - Image captions with titles and subtitles
 - Crossfade transitions between images
 - Keyboard navigation support (arrow keys, escape)
+- Optimized thumbnail images for faster page loading
 - "Ready to Begin?" section with download links
 - Responsive navigation (desktop menu / mobile hamburger menu)
+
+### Video Game (`videogame.html`)
+- Coming soon page for the digital version of JOURNEYWAYS
+- Responsive navigation (desktop menu / mobile hamburger menu)
+- Footer with copyright information
 
 ## Downloads
 
@@ -134,6 +145,10 @@ The game includes:
 - **Purple Cards**: Group events
 
 ## Changelog
+
+### Version 1.4.1
+- Added cookie consent banner to all pages
+- Integrated Google Analytics (G-3W5YQCJ0FQ) with cookie consent - only tracks after user accepts cookies
 
 ### Version 1.4
 - Renamed `rules.html` to `boardgame.html` for consistency with navigation naming
