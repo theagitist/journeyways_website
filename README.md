@@ -19,7 +19,7 @@ JOURNEYWAYS is not about winning or losing; it's about discovering, exploring, a
 ```
 journeyways_website/
 ├── index.html          # Homepage with game overview
-├── rules.html          # Complete game rules and instructions
+├── boardgame.html      # Complete game rules and instructions
 ├── photos.html         # Photo gallery of the game
 ├── download/          # Downloadable PDF files
 │   ├── JOURNEYWAYS Game Rules 1.0.pdf
@@ -49,7 +49,7 @@ journeyways_website/
   - ProtoConBC feature (October 2025)
   - UBC Critical Play Fellowship participation
 
-### Game Rules (`rules.html`)
+### Board Game (`boardgame.html`)
 - Complete game setup instructions
 - Basic gameplay mechanics
 - Turn structure (Explore, Draw, Reflect)
@@ -134,6 +134,9 @@ The game includes:
 - **Purple Cards**: Group events
 
 ## Changelog
+
+### Version 1.4
+- Renamed `rules.html` to `boardgame.html` for consistency with navigation naming
 
 ### Version 1.3
 - Added Video Game page with "coming soon" content
