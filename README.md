@@ -28,16 +28,16 @@ journeyways_website/
 ├── img/               # Game images and assets (optimized)
 │   ├── logo_bg_only.png    # Favicon
 │   ├── logo_bg_only.jpg    # Background image
-│   ├── photo1.jpg          # Game Setup photo
-│   ├── game_components.jpeg
+│   ├── boardgame_setup.jpg     # Game Setup photo
+│   ├── boardgame_components.jpeg
 │   ├── players_in_action.jpeg
 │   ├── no_fixed_roles.jpg
 │   ├── collaborative_storytelling.jpg
 │   ├── continuous_growth.jpg
 │   ├── game_components_placeholder.jpg
 │   └── thumbnails/        # Optimized thumbnail images for gallery
-│       ├── photo1_thumb.jpg
-│       ├── game_components_thumb.jpg
+│       ├── boardgame_setup_thumb.jpg
+│       ├── boardgame_components_thumb.jpg
 │       └── players_in_action_thumb.jpg
 └── README.md          # This file
 ```
@@ -145,6 +145,13 @@ The game includes:
 - **Purple Cards**: Group events
 
 ## Changelog
+
+### Version 1.4.2
+- Renamed image files: photo1 → boardgame_setup, game_components → boardgame_components
+- Updated photo titles: "Game Setup" → "Board Game Setup", "Game Components" → "Board Game Components"
+- Updated footer download button text: "Download Game Rules PDF" → "Download Board Game Rules PDF"
+- Removed "Back to Home" button from footer sections
+- Added "Ready to Begin?" section to Video Game page
 
 ### Version 1.4.1
 - Added cookie consent banner to all pages
