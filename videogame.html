@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Game - JOURNEYWAYS</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
+    <link rel="shortcut icon" href="img/logo_bg_only.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css">
+    <link rel="stylesheet" href="https://use.typekit.net/aptos.css">
+    <script>
+        // Redirect to www.journeyways.ca if not already there
+        (function() {
+            if (window.location.hostname !== 'www.journeyways.ca') {
+                window.location.replace('https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash);
+            }
+        })();
+    </script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        body {
+            font-family: 'aptos', sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+        .script-font {
+            font-family: 'dream-big-wide', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('img/logo_bg_only.jpg');
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .text-shadow {
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+        }
+        .main-content {
+            flex: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-4">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="rules.html" class="hover:text-yellow-400 transition-colors">Board Game</a>
+                        <a href="videogame.html" class="text-yellow-400">Video Game</a>
+                        <a href="photos.html" class="hover:text-yellow-400 transition-colors">Photos</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Toggle menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="hover:text-yellow-400 transition-colors py-2">Home</a>
+                    <a href="rules.html" class="hover:text-yellow-400 transition-colors py-2">Board Game</a>
+                    <a href="videogame.html" class="text-yellow-400 py-2">Video Game</a>
+                    <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2">Photos</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="main-content">
+        <!-- Hero Section -->
+        <section class="hero-bg h-96 flex items-center justify-center relative">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="relative z-10 text-center">
+                <h1 class="script-font text-6xl md:text-7xl font-bold text-yellow-400 mb-4 fade-in text-shadow">Video Game</h1>
+                <p class="text-xl fade-in">Coming soon</p>
+            </div>
+        </section>
+
+        <!-- Content Section -->
+        <section class="py-20">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="text-center">
+                    <h2 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-6 text-shadow">Video Game</h2>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                        The digital version of JOURNEYWAYS is currently in development.<br>Check back soon for updates.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const closeIcon = document.getElementById('close-icon');
+
+        mobileMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.remove('hidden');
+                closeIcon.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

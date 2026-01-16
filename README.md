@@ -135,6 +135,13 @@ The game includes:
 
 ## Changelog
 
+### Version 1.3
+- Added Video Game page with "coming soon" content
+- Updated navigation: changed "Board Game Rules" to "Board Game" in nav bars
+- Reordered navigation: moved Photos to last position
+- Optimized Photos page: created thumbnails for faster loading (gallery uses thumbnails, lightbox uses full-size images)
+- Fixed footer positioning on Video Game page
+
 ### Version 1.2
 - Changed all references from "board game" to "game"
 
