@@ -1,6 +1,6 @@
 # JOURNEYWAYS Website
 
-A website for JOURNEYWAYS, a board game about becoming, exploring, and self-discovery.
+A website for JOURNEYWAYS, a game about becoming, exploring, and self-discovery.
 
 ## About JOURNEYWAYS
 
@@ -135,6 +135,9 @@ The game includes:
 
 ## Changelog
 
+### Version 1.2
+- Changed all references from "board game" to "game"
+
 ### Version 1.1
 - Added automatic redirect to `www.journeyways.ca` if accessed via different hostname
 - Updated copyright notice to 2025-2026
@@ -144,7 +147,7 @@ The game includes:
 
 ## License
 
-© 2025-2026 JOURNEYWAYS. A board game about becoming.
+© 2025-2026 JOURNEYWAYS. A game about becoming.
 
 ## Repository
 
