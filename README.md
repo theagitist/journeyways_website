@@ -146,6 +146,14 @@ The game includes:
 
 ## Changelog
 
+### Version 1.4.3
+- Added comprehensive SEO meta tags to all pages (description, keywords, Open Graph, Twitter Cards)
+- Added canonical URLs to all pages
+- Updated author meta tag to "Adri M. (theagitist)"
+- Enhanced SEO-friendly title tags for all pages
+- Added detailed SEO-friendly alt text to all images
+- Generated sitemap.xml for search engine optimization
+
 ### Version 1.4.2
 - Renamed image files: photo1 → boardgame_setup, game_components → boardgame_components
 - Updated photo titles: "Game Setup" → "Board Game Setup", "Game Components" → "Board Game Components"
