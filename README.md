@@ -185,6 +185,13 @@ The game includes:
   - Added `nginx.conf.example` for Nginx servers
   - Enabled gzip compression for text-based files
   - Improved repeat visit performance significantly
+- Optimized render-blocking resources:
+  - Made Typekit fonts non-blocking using media trick with noscript fallbacks
+  - Deferred redirect script to prevent blocking initial render
+  - Moved Google Analytics to end of body with defer attribute
+  - Added `font-display: swap` for better font loading performance
+  - Applied optimizations to all HTML pages (index, boardgame, photos, videogame)
+  - Improved LCP (Largest Contentful Paint) and Core Web Vitals scores
 
 ### Version 1.4.5
 - Optimized all images for SEO and performance:
