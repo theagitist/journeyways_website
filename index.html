@@ -33,9 +33,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css">
-    <link rel="stylesheet" href="https://use.typekit.net/aptos.css">
-    <script>
+    <!-- Non-blocking font loading -->
+    <link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css"></noscript>
+    <link rel="stylesheet" href="https://use.typekit.net/aptos.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://use.typekit.net/aptos.css"></noscript>
+    <script defer>
         // Redirect to www.journeyways.ca if not already there
         (function() {
             if (window.location.hostname !== 'www.journeyways.ca') {
@@ -43,19 +46,15 @@
             }
         })();
     </script>
-    <!-- Google Analytics - Only load if cookies are accepted -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        
-        // Only initialize GA if cookies are accepted
-        if (localStorage.getItem('cookieConsent') === 'accepted') {
-            gtag('js', new Date());
-            gtag('config', 'G-3W5YQCJ0FQ');
-        }
-    </script>
     <style>
+        @font-face {
+            font-family: 'dream-big-wide';
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'aptos';
+            font-display: swap;
+        }
         .script-font {
             font-family: 'dream-big-wide', sans-serif;
         }
@@ -360,6 +359,19 @@
                 }
             });
         })();
+    </script>
+
+    <!-- Google Analytics - Deferred to prevent blocking -->
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
+    <script defer>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        
+        // Only initialize GA if cookies are accepted
+        if (localStorage.getItem('cookieConsent') === 'accepted') {
+            gtag('js', new Date());
+            gtag('config', 'G-3W5YQCJ0FQ');
+        }
     </script>
 
 </body>

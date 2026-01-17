@@ -1,0 +1,48 @@
+# Nginx configuration for efficient caching
+# Place this in your nginx server block or include it
+
+# Cache static assets with appropriate lifetimes
+location ~* \.(jpg|jpeg|png|gif|webp|svg|ico)$ {
+    expires 1y;
+    add_header Cache-Control "max-age=31536000, public, immutable";
+    access_log off;
+}
+
+# Cache fonts
+location ~* \.(woff|woff2|ttf|otf|eot)$ {
+    expires 1y;
+    add_header Cache-Control "max-age=31536000, public, immutable";
+    access_log off;
+}
+
+# Cache CSS and JavaScript
+location ~* \.(css|js)$ {
+    expires 1M;
+    add_header Cache-Control "max-age=2592000, public";
+    access_log off;
+}
+
+# Cache PDFs
+location ~* \.(pdf)$ {
+    expires 1M;
+    add_header Cache-Control "max-age=2592000, public";
+}
+
+# HTML files - shorter cache with revalidation
+location ~* \.(html|htm)$ {
+    expires 1h;
+    add_header Cache-Control "max-age=3600, public, must-revalidate";
+}
+
+# XML files
+location ~* \.(xml)$ {
+    expires 1d;
+    add_header Cache-Control "max-age=86400, public";
+}
+
+# Enable gzip compression
+gzip on;
+gzip_vary on;
+gzip_proxied any;
+gzip_comp_level 6;
+gzip_types text/plain text/css text/xml text/javascript application/json application/javascript application/xml application/xml+rss;

@@ -113,6 +113,10 @@ The website features a responsive navigation system:
   - Large images converted to WebP format for better compression
   - Total size reduction: ~62% (from 12.2 MB to 4.6 MB)
   - Images include width/height attributes and lazy loading for SEO
+- **Performance Optimizations**:
+  - Non-blocking font loading with `font-display: swap`
+  - Deferred scripts to prevent render blocking
+  - Efficient cache lifetimes configured (see Cache Configuration below)
 
 ## Setup
 
@@ -131,6 +135,25 @@ The website features a responsive navigation system:
    # Using Node.js (http-server)
    npx http-server
    ```
+
+## Cache Configuration
+
+The website includes efficient cache headers to speed up repeat visits:
+
+- **Images** (jpg, jpeg, png, webp, svg, ico): 1 year cache with `immutable` flag
+- **Fonts** (woff, woff2, ttf, otf): 1 year cache with `immutable` flag
+- **CSS/JavaScript**: 1 month cache
+- **PDFs**: 1 month cache
+- **HTML files**: 1 hour cache with `must-revalidate` for content updates
+- **XML files**: 1 day cache
+
+### Apache Configuration
+
+The `.htaccess` file is included and will automatically configure caching if your server supports `mod_expires` and `mod_headers`.
+
+### Nginx Configuration
+
+For Nginx servers, see `nginx.conf.example` for cache configuration. Include these settings in your server block.
 
 ## Game Components
 
@@ -152,6 +175,16 @@ The game includes:
 - **Purple Cards**: Group events
 
 ## Changelog
+
+### Version 1.4.7
+- Implemented efficient cache lifetimes for all static assets:
+  - Images and fonts: 1 year cache with `immutable` flag
+  - CSS/JavaScript: 1 month cache
+  - HTML files: 1 hour cache with revalidation
+  - Added `.htaccess` file for Apache servers
+  - Added `nginx.conf.example` for Nginx servers
+  - Enabled gzip compression for text-based files
+  - Improved repeat visit performance significantly
 
 ### Version 1.4.5
 - Optimized all images for SEO and performance:
