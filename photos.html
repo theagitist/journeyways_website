@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Photo gallery for the JOURNEYWAYS research project: board game setup, components, and play in action. A visual record of the identity-exploration and collaborative storytelling work at the heart of Journeyways Research.">
-    <meta name="keywords" content="JOURNEYWAYS photos, board game images, game components, board game setup, game gallery, JOURNEYWAYS pictures, board game photos">
+    <meta name="description" content="JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. Research gallery and media: board game setup, components, and play in action.">
+    <meta name="keywords" content="JOURNEYWAYS, research gallery, board game photos, game components, board game setup, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, identity exploration, collaborative storytelling">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.journeyways.ca/photos.html">
-    <meta property="og:title" content="JOURNEYWAYS Game Photos & Gallery | Board Game Components & Setup Images">
-    <meta property="og:description" content="Browse JOURNEYWAYS game photos and gallery. View board game components, setup images, and players in action. Get a visual glimpse into the world of identity exploration.">
+    <meta property="og:title" content="JOURNEYWAYS | Research & Media">
+    <meta property="og:description" content="JOURNEYWAYS is a UBC-rooted research project. Research gallery and media: board game setup, components, and play in action.">
     <meta property="og:image" content="https://www.journeyways.ca/img/boardgame_setup.jpg">
+    <meta property="og:image:alt" content="JOURNEYWAYS board game setup: identity exploration and collaborative storytelling game ready for play.">
     <meta property="og:site_name" content="JOURNEYWAYS">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.journeyways.ca/photos.html">
-    <meta name="twitter:title" content="JOURNEYWAYS Game Photos & Gallery | Board Game Components & Setup Images">
-    <meta name="twitter:description" content="Browse JOURNEYWAYS game photos and gallery. View board game components, setup images, and players in action.">
+    <meta name="twitter:title" content="JOURNEYWAYS | Research & Media">
+    <meta name="twitter:description" content="JOURNEYWAYS is a UBC-rooted research project. Research gallery and media: board game setup, components, and play in action.">
     <meta name="twitter:image" content="https://www.journeyways.ca/img/boardgame_setup.jpg">
+    <meta name="twitter:image:alt" content="JOURNEYWAYS board game setup: identity exploration and collaborative storytelling game ready for play.">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/photos.html">
@@ -42,19 +44,19 @@
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400" aria-label="JOURNEYWAYS home">JOURNEYWAYS</a>
                     <div class="hidden md:flex space-x-6">
-                        <a href="boardgame.html" class="hover:text-yellow-400 transition-colors">Board Game</a>
-                        <a href="videogame.html" class="hover:text-yellow-400 transition-colors">Video Game</a>
-                        <a href="photos.html" class="text-yellow-400">Photos</a>
+                        <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                        <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                        <a href="photos.html" class="text-yellow-400" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                     </div>
                 </div>
                 <!-- Mobile menu button -->
-                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Toggle menu">
+                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Open or close main menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -62,12 +64,12 @@
                 </button>
             </div>
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div id="mobile-menu" class="hidden md:hidden pb-4" role="navigation" aria-label="Main menu">
                 <div class="flex flex-col space-y-3">
-                    <a href="index.html" class="hover:text-yellow-400 transition-colors py-2">Home</a>
-                    <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2">Board Game</a>
-                    <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2">Video Game</a>
-                    <a href="photos.html" class="text-yellow-400 py-2">Photos</a>
+                    <a href="index.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Home">Home</a>
+                    <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                    <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                    <a href="photos.html" class="text-yellow-400 py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                 </div>
             </div>
         </div>
@@ -80,29 +82,29 @@
             <h1 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-8 tracking-tight text-shadow text-center">Research Gallery &amp; Media</h1>
             <!-- Main Game Photos Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                <figure class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
                     <img src="img/thumbnails/boardgame_setup_thumb.jpg" alt="JOURNEYWAYS board game setup: initial board configuration with game tiles and components arranged for play." class="w-full h-64 object-cover" onclick="openLightbox(0)" loading="lazy">
-                    <div class="p-6">
+                    <figcaption class="p-6">
                         <h2 class="text-xl font-semibold mb-2">Board Game Setup</h2>
-                        <p class="text-gray-300">Initial board configuration.</p>
-                    </div>
-                </div>
+                        <p class="text-gray-300">Initial board configuration for the JOURNEYWAYS identity exploration and collaborative storytelling game—tiles, cards, and play space ready for solo or group play.</p>
+                    </figcaption>
+                </figure>
 
-                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                <figure class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
                     <img src="img/thumbnails/boardgame_components_thumb.jpg" alt="JOURNEYWAYS board game components: cards, tiles, tokens, and player booklets used in the identity exploration game." class="w-full h-64 object-cover" onclick="openLightbox(1)" loading="lazy">
-                    <div class="p-6">
+                    <figcaption class="p-6">
                         <h2 class="text-xl font-semibold mb-2">Board Game Components</h2>
-                        <p class="text-gray-300">Pieces that bring the game to life.</p>
-                    </div>
-                </div>
+                        <p class="text-gray-300">Cards, tiles, tokens, and player booklets that power JOURNEYWAYS collaborative storytelling and transformative identity play.</p>
+                    </figcaption>
+                </figure>
 
-                <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                <figure class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
                     <img src="img/thumbnails/players_in_action_thumb.jpg" alt="Players in action with JOURNEYWAYS: people playing the identity exploration board game and connecting through collaborative storytelling." class="w-full h-64 object-cover" onclick="openLightbox(2)" loading="lazy">
-                    <div class="p-6">
+                    <figcaption class="p-6">
                         <h2 class="text-xl font-semibold mb-2">Players in Action</h2>
-                        <p class="text-gray-300">Connecting over gameplay.</p>
-                    </div>
-                </div>
+                        <p class="text-gray-300">Players engaging with the JOURNEYWAYS board game—identity exploration and collaborative storytelling in practice.</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
@@ -113,7 +115,7 @@
         <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
         <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</button>
         <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</button>
-        <img class="lightbox-content" id="lightbox-img" src="" alt="Enlarged gallery image for JOURNEYWAYS." onclick="event.stopPropagation()">
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Enlarged JOURNEYWAYS research gallery image for identity exploration and collaborative storytelling." onclick="event.stopPropagation()">
         <div class="lightbox-caption" onclick="event.stopPropagation()">
             <h3 id="lightbox-title"></h3>
             <p id="lightbox-subtitle"></p>
@@ -123,7 +125,7 @@
     <!-- Footer -->
     <footer class="bg-black py-8">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.</p>
+            <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.0.0</span></p>
         </div>
     </footer>
 

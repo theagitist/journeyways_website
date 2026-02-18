@@ -19,6 +19,19 @@ body {
     flex-direction: column;
 }
 
+/* Screen-reader only: visible to assistive tech and SEO, hidden visually */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 .script-font {
     font-family: 'dream-big-wide', sans-serif;
 }
@@ -55,6 +68,35 @@ body {
     transform: translateY(0);
 }
 
+/* Board game page – rule sections and card colors */
+.rule-section {
+    transition: all 0.3s ease;
+}
+.rule-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.card-black {
+    color: #6b7280;
+    font-weight: bold;
+}
+.card-blue {
+    color: #3b82f6;
+    font-weight: bold;
+}
+.card-green {
+    color: #10b981;
+    font-weight: bold;
+}
+.card-purple {
+    color: #8b5cf6;
+    font-weight: bold;
+}
+.card-red {
+    color: #ef4444;
+    font-weight: bold;
+}
+
 /* Main content – clear space below fixed nav; minimal, academic spacing */
 main {
     padding-top: 5rem; /* 80px – content not cramped under nav; clean transition */
@@ -69,33 +111,7 @@ main.home {
     flex: 1;
 }
 
-/* Main page title – prominent, academic */
-.main-title {
-    line-height: 1.1;
-}
-
-/* Index – hero & marquee */
-.title-center {
-    text-align: center !important;
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    align-items: center;
-}
-.hero-title {
-    text-align: center;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.responsive-title {
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
-    max-width: 100%;
-}
+/* Index – marquee */
 .marquee-container {
     position: relative;
     width: 100%;

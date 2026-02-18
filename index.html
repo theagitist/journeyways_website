@@ -3,28 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JOURNEYWAYS is a research project exploring identity through collaborative storytelling and play. This site presents the board game and digital iterations—secular, gender-neutral tools for narrative and self-inquiry rooted at UBC.">
-    <meta name="keywords" content="JOURNEYWAYS, board game, identity exploration, collaborative storytelling, self-discovery game, narrative game, character development, solo board game, group board game">
+    <meta name="description" content="JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. A secular, gender-neutral tool for forced migrants and gender-diverse individuals to explore selfhood through play.">
+    <meta name="keywords" content="JOURNEYWAYS, board game, identity exploration, collaborative storytelling, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, self-discovery game, narrative game, character development, solo board game, group board game">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.journeyways.ca/">
-    <meta property="og:title" content="JOURNEYWAYS - A Game About Becoming | Identity Exploration Board Game">
-    <meta property="og:description" content="JOURNEYWAYS is a collaborative storytelling board game about identity exploration and self-discovery. Explore who you are becoming through meaningful choices, solo or group play.">
+    <meta property="og:title" content="JOURNEYWAYS | Home">
+    <meta property="og:description" content="JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. A secular, gender-neutral tool for forced migrants and gender-diverse individuals to explore selfhood through play.">
     <meta property="og:image" content="https://www.journeyways.ca/img/logo_bg_only.jpg">
     <meta property="og:site_name" content="JOURNEYWAYS">
     
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.journeyways.ca/">
-    <meta name="twitter:title" content="JOURNEYWAYS - A Game About Becoming | Identity Exploration Board Game">
-    <meta name="twitter:description" content="JOURNEYWAYS is a collaborative storytelling board game about identity exploration and self-discovery. Explore who you are becoming through meaningful choices.">
+    <meta name="twitter:title" content="JOURNEYWAYS | Home">
+    <meta name="twitter:description" content="JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. A secular, gender-neutral tool for forced migrants and gender-diverse individuals to explore selfhood through play.">
     <meta name="twitter:image" content="https://www.journeyways.ca/img/logo_bg_only.jpg">
     
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/">
+    
+    <!-- JSON-LD Structured Data (CreativeWork) for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "JOURNEYWAYS",
+        "description": "JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. A secular, gender-neutral tool for forced migrants and gender-diverse individuals to explore selfhood through play.",
+        "url": "https://www.journeyways.ca/",
+        "author": {
+            "@type": "Person",
+            "name": "Adri M.",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "UBC Institute for Gender, Race, Sexuality and Social Justice"
+            }
+        },
+        "genre": "Collaborative Storytelling, Identity Exploration"
+    }
+    </script>
     
     <title>Journeyways | Board Game &amp; Identity Research</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
@@ -42,19 +62,19 @@
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
-    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-6">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400" aria-label="JOURNEYWAYS home">JOURNEYWAYS</a>
                     <div class="hidden md:flex space-x-6">
-                        <a href="boardgame.html" class="hover:text-yellow-400 transition-colors">Board Game</a>
-                        <a href="videogame.html" class="hover:text-yellow-400 transition-colors">Video Game</a>
-                        <a href="photos.html" class="hover:text-yellow-400 transition-colors">Photos</a>
+                        <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                        <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                        <a href="photos.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                     </div>
                 </div>
                 <!-- Mobile menu button -->
-                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Toggle menu">
+                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Open or close main menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
                         <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -62,18 +82,19 @@
                 </button>
             </div>
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="hidden md:hidden pb-4">
+            <div id="mobile-menu" class="hidden md:hidden pb-4" role="navigation" aria-label="Main menu">
                 <div class="flex flex-col space-y-3">
-                    <a href="index.html" class="hover:text-yellow-400 transition-colors py-2">Home</a>
-                    <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2">Board Game</a>
-                    <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2">Video Game</a>
-                    <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2">Photos</a>
+                    <a href="index.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Home">Home</a>
+                    <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                    <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                    <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                 </div>
             </div>
         </div>
     </nav>
 
     <main class="home">
+    <aside role="region" aria-label="Site announcements">
     <!-- Marquee Announcement -->
     <div class="marquee-container mt-24 py-6 bg-transparent overflow-hidden">
         <div class="marquee-content">
@@ -83,6 +104,7 @@
             <span class="marquee-text font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • Videogame version <a href="videogame.html" class="marquee-link underline underline-offset-4 decoration-2 hover:text-yellow-400">under development</a>. • </span>
         </div>
     </div>
+    </aside>
 
     <!-- About Section -->
     <section class="pt-8 pb-20 bg-gray-800">
@@ -94,6 +116,7 @@
                 </p>
             </div>
             
+            <h2 class="sr-only">Key features of JOURNEYWAYS</h2>
             <!-- Key Features Grid -->
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <div class="bg-gray-700 rounded-lg p-6 text-center">
@@ -121,6 +144,7 @@
                 </div>
             </div>
             
+            <h2 class="sr-only">Gameplay features</h2>
             <!-- Gameplay Features -->
             <div class="grid md:grid-cols-2 gap-12 items-center">
                 <div>
@@ -138,7 +162,7 @@
                 </div>
                 
                 <div class="bg-gray-700 rounded-lg p-8">
-                    <img src="img/boardgame_components.jpg" alt="JOURNEYWAYS board game components and setup: tiles, cards, tokens, and player booklets arranged for play." class="w-full rounded-lg mb-4">
+                    <img src="img/boardgame_components.jpg" alt="JOURNEYWAYS board game components and setup for collaborative identity exploration: tiles, cards, tokens, and player booklets arranged for play." class="w-full rounded-lg mb-4">
                     <p class="text-sm text-gray-400 text-center">Game components and board setup</p>
                 </div>
             </div>
@@ -151,7 +175,7 @@
     <!-- Footer -->
     <footer class="bg-black py-8">
         <div class="max-w-6xl mx-auto px-4 text-center">
-            <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.</p>
+            <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.0.0</span></p>
         </div>
     </footer>
 
