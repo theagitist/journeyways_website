@@ -126,14 +126,23 @@ main.home {
 }
 .marquee-content {
     display: flex;
-    animation: scroll-left 80s linear infinite !important;
-    flex-shrink: 0;
-    min-width: 100%;
-    gap: 0;
-    will-change: transform; /* Critical for buttery smooth movement at slower speed */
+    white-space: nowrap;
+    /* This forces the slow speed regardless of Tailwind */
+    animation: scroll-left 100s linear infinite !important;
+    will-change: transform;
     backface-visibility: hidden;
-    perspective: 1000px;
 }
+
+/* This forces it to stop EXACTLY where it is when the orange bar is touched */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused !important;
+}
+
+@keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 .marquee-text {
     flex-shrink: 0;
     display: flex;
@@ -141,13 +150,6 @@ main.home {
     white-space: nowrap;
     padding-right: 100px; /* Clear visual break between repeated phrases */
     line-height: 1.6; /* Prevents vertical clipping of underlined links */
-}
-@keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-.marquee-container:hover .marquee-content {
-    animation-play-state: paused !important;
 }
 /* Link styling */
 .marquee-text a {
@@ -331,4 +333,11 @@ main.home {
 @keyframes zoomIn {
     from { transform: scale(0.8); opacity: 0; }
     to { transform: scale(1); opacity: 1; }
+}
+
+.marquee-content a,
+.marquee-content a:hover,
+.marquee-content a:active {
+    color: black !important;
+    text-decoration: underline !important;
 }
