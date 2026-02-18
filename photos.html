@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Browse JOURNEYWAYS game photos and gallery. View board game components, setup images, and players in action. Get a visual glimpse into the world of identity exploration through collaborative storytelling.">
+    <meta name="description" content="Photo gallery for the JOURNEYWAYS research project: board game setup, components, and play in action. A visual record of the identity-exploration and collaborative storytelling work at the heart of Journeyways Research.">
     <meta name="keywords" content="JOURNEYWAYS photos, board game images, game components, board game setup, game gallery, JOURNEYWAYS pictures, board game photos">
-    <meta name="author" content="Adri M. (theagitist)">
+    <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
@@ -26,11 +26,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/photos.html">
     
-    <title>JOURNEYWAYS Game Photos & Gallery | Board Game Components & Setup Images</title>
+    <title>Journeyways | Research Gallery &amp; Media</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
     <link rel="shortcut icon" href="img/logo_bg_only.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Non-blocking font loading -->
@@ -38,202 +37,16 @@
     <noscript><link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css"></noscript>
     <link rel="stylesheet" href="https://use.typekit.net/aptos.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://use.typekit.net/aptos.css"></noscript>
-    <script defer>
-        // Redirect to www.journeyways.ca if not already there
-        (function() {
-            if (window.location.hostname !== 'www.journeyways.ca') {
-                window.location.replace('https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash);
-            }
-        })();
-    </script>
-    <style>
-        @font-face {
-            font-family: 'dream-big-wide';
-            font-display: swap;
-        }
-        @font-face {
-            font-family: 'aptos';
-            font-display: swap;
-        }
-        .script-font {
-            font-family: 'dream-big-wide', sans-serif;
-        }
-        body {
-            font-family: 'aptos', sans-serif;
-        }
-        .hero-bg {
-            background-image: url('img/logo_bg_only.jpg');
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .text-shadow {
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
-        }
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.95);
-            backdrop-blur: 10px;
-            padding: 1.5rem;
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.3s ease-in-out;
-            border-top: 2px solid #fbbf24;
-        }
-        .cookie-banner.show {
-            transform: translateY(0);
-        }
-        .gallery-item {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
-        .gallery-item img {
-            cursor: pointer;
-        }
-        .lightbox {
-            display: none;
-            position: fixed;
-            z-index: 9999;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.9);
-            animation: fadeIn 0.3s ease-in;
-        }
-        .lightbox.active {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .lightbox-content {
-            max-width: 90%;
-            max-height: 90%;
-            margin: auto;
-            display: block;
-            opacity: 1;
-            transition: opacity 0.4s ease-in-out;
-        }
-        .lightbox-content.fade-out {
-            opacity: 0;
-        }
-        .lightbox-content.fade-in {
-            opacity: 1;
-        }
-        .lightbox-close {
-            position: absolute;
-            top: 20px;
-            right: 35px;
-            color: #f1f1f1;
-            font-size: 40px;
-            font-weight: bold;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-        .lightbox-close:hover {
-            color: #fbbf24;
-        }
-        .lightbox-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-size: 30px;
-            font-weight: bold;
-            padding: 15px 20px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-            z-index: 10000;
-        }
-        .lightbox-nav:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fbbf24;
-        }
-        .lightbox-prev {
-            left: 20px;
-        }
-        .lightbox-next {
-            right: 20px;
-        }
-        .lightbox-caption {
-            position: absolute;
-            bottom: 30px;
-            left: 0;
-            right: 0;
-            margin: 0 auto;
-            background-color: rgba(0, 0, 0, 0.7);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 5px;
-            text-align: center;
-            width: 400px;
-            height: 80px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            opacity: 1;
-            transition: opacity 0.4s ease-in-out;
-            box-sizing: border-box;
-            will-change: opacity;
-        }
-        .lightbox-caption.fade-out {
-            opacity: 0;
-        }
-        .lightbox-caption.fade-in {
-            opacity: 1;
-        }
-        .lightbox-caption h3 {
-            font-size: 24px;
-            font-weight: bold;
-            margin: 0 0 5px 0;
-            color: #fbbf24;
-            height: 28px;
-            line-height: 28px;
-            width: 100%;
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        .lightbox-caption p {
-            font-size: 16px;
-            color: #e5e7eb;
-            margin: 0;
-            height: 20px;
-            line-height: 20px;
-            width: 100%;
-            text-align: center;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-        @keyframes zoomIn {
-            from { transform: scale(0.8); opacity: 0; }
-            to { transform: scale(1); opacity: 1; }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
+            <div class="flex justify-between items-center py-6">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
                     <div class="hidden md:flex space-x-6">
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors">Board Game</a>
                         <a href="videogame.html" class="hover:text-yellow-400 transition-colors">Video Game</a>
@@ -260,71 +73,47 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-bg h-96 flex items-center justify-center relative">
-        <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-        <div class="relative z-10 text-center">
-            <h1 class="script-font text-6xl md:text-7xl font-bold text-yellow-400 mb-4 fade-in text-shadow">Photos</h1>
-            <p class="text-xl fade-in">A visual glimpse into the world of JOURNEYWAYS</p>
-        </div>
-    </section>
-
+    <main>
     <!-- Photo Gallery -->
-    <section class="py-20">
-        <div class="max-w-7xl mx-auto px-4">
+    <section class="pt-32 pb-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <h1 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-8 tracking-tight text-shadow text-center">Research Gallery &amp; Media</h1>
             <!-- Main Game Photos Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
                 <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="img/thumbnails/boardgame_setup_thumb.jpg" alt="JOURNEYWAYS board game setup photo - Initial board configuration showing game tiles and components arranged for play" class="w-full h-64 object-cover" onclick="openLightbox(0)" loading="lazy">
+                    <img src="img/thumbnails/boardgame_setup_thumb.jpg" alt="JOURNEYWAYS board game setup: initial board configuration with game tiles and components arranged for play." class="w-full h-64 object-cover" onclick="openLightbox(0)" loading="lazy">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Board Game Setup</h3>
+                        <h2 class="text-xl font-semibold mb-2">Board Game Setup</h2>
                         <p class="text-gray-300">Initial board configuration.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="img/thumbnails/boardgame_components_thumb.jpg" alt="JOURNEYWAYS board game components photo - Game pieces including cards, tiles, tokens, and player booklets that bring the game to life" class="w-full h-64 object-cover" onclick="openLightbox(1)" loading="lazy">
+                    <img src="img/thumbnails/boardgame_components_thumb.jpg" alt="JOURNEYWAYS board game components: cards, tiles, tokens, and player booklets used in the identity exploration game." class="w-full h-64 object-cover" onclick="openLightbox(1)" loading="lazy">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Board Game Components</h3>
+                        <h2 class="text-xl font-semibold mb-2">Board Game Components</h2>
                         <p class="text-gray-300">Pieces that bring the game to life.</p>
                     </div>
                 </div>
 
                 <div class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
-                    <img src="img/thumbnails/players_in_action_thumb.jpg" alt="JOURNEYWAYS players in action photo - People playing the identity exploration board game and connecting over collaborative storytelling gameplay" class="w-full h-64 object-cover" onclick="openLightbox(2)" loading="lazy">
+                    <img src="img/thumbnails/players_in_action_thumb.jpg" alt="Players in action with JOURNEYWAYS: people playing the identity exploration board game and connecting through collaborative storytelling." class="w-full h-64 object-cover" onclick="openLightbox(2)" loading="lazy">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2">Players in Action</h3>
+                        <h2 class="text-xl font-semibold mb-2">Players in Action</h2>
                         <p class="text-gray-300">Connecting over gameplay.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- Call to Action -->
-    <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="script-font text-4xl font-bold text-black mb-6">Ready to Begin?</h2>
-            <p class="text-xl mb-8">
-                Your journey of becoming starts with a single step. Gather your materials and begin.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="download/JOURNEYWAYS Game Rules 1.0.pdf" download class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-                    Download Board Game Rules PDF
-                </a>
-                <a href="download/JOURNEYWYS Character Sheet 1.0.pdf" download class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-                    Download Character Sheet PDF
-                </a>
-            </div>
-        </div>
-    </section>
+    </main>
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
         <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
         <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</button>
         <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</button>
-        <img class="lightbox-content" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Enlarged gallery image for JOURNEYWAYS." onclick="event.stopPropagation()">
         <div class="lightbox-caption" onclick="event.stopPropagation()">
             <h3 id="lightbox-title"></h3>
             <p id="lightbox-subtitle"></p>
@@ -337,163 +126,6 @@
             <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.</p>
         </div>
     </footer>
-
-    <script>
-        // Add smooth scrolling for better UX
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Gallery images data
-        const galleryImages = [
-            {
-                src: 'img/boardgame_setup.jpg',
-                alt: 'JOURNEYWAYS board game setup - Full view of initial board configuration with game tiles and components ready for identity exploration gameplay',
-                title: 'Board Game Setup',
-                subtitle: 'Initial board configuration.'
-            },
-            {
-                src: 'img/boardgame_components.jpeg',
-                alt: 'JOURNEYWAYS board game components - Detailed view of all game pieces including cards, tiles, player tokens, and booklets for collaborative storytelling',
-                title: 'Board Game Components',
-                subtitle: 'Pieces that bring the game to life.'
-            },
-            {
-                src: 'img/players_in_action.jpeg',
-                alt: 'JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay',
-                title: 'Players in Action',
-                subtitle: 'Connecting over gameplay.'
-            }
-        ];
-
-        let currentImageIndex = 0;
-
-        // Lightbox functionality
-        function openLightbox(index) {
-            currentImageIndex = index;
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent scrolling when lightbox is open
-            updateLightbox(true); // Show immediately on open
-        }
-
-        function updateLightbox(immediate = false) {
-            const image = galleryImages[currentImageIndex];
-            const lightboxImg = document.getElementById('lightbox-img');
-            const lightboxTitle = document.getElementById('lightbox-title');
-            const lightboxSubtitle = document.getElementById('lightbox-subtitle');
-            const lightboxCaption = document.querySelector('.lightbox-caption');
-            
-            if (immediate) {
-                // For initial load, show immediately
-                lightboxImg.src = image.src;
-                lightboxImg.alt = image.alt;
-                lightboxTitle.textContent = image.title;
-                lightboxSubtitle.textContent = image.subtitle;
-                lightboxCaption.style.visibility = 'visible';
-                lightboxImg.classList.remove('fade-out');
-                lightboxImg.classList.add('fade-in');
-                lightboxCaption.classList.remove('fade-out');
-                lightboxCaption.classList.add('fade-in');
-            } else {
-                // Fade out current image and caption
-                lightboxImg.classList.remove('fade-in');
-                lightboxImg.classList.add('fade-out');
-                lightboxCaption.classList.remove('fade-in');
-                lightboxCaption.classList.add('fade-out');
-                
-                // After fade out completes, update content and fade in
-                setTimeout(() => {
-                    // Update image first
-                    lightboxImg.src = image.src;
-                    lightboxImg.alt = image.alt;
-                    
-                    // Temporarily make caption invisible to prevent layout shifts
-                    lightboxCaption.style.visibility = 'hidden';
-                    
-                    // Update text content
-                    lightboxTitle.textContent = image.title;
-                    lightboxSubtitle.textContent = image.subtitle;
-                    
-                    // Force a reflow to ensure text is laid out
-                    void lightboxCaption.offsetHeight;
-                    
-                    // Make caption visible again
-                    lightboxCaption.style.visibility = 'visible';
-                    
-                    // Fade in new image and caption
-                    lightboxImg.classList.remove('fade-out');
-                    lightboxImg.classList.add('fade-in');
-                    lightboxCaption.classList.remove('fade-out');
-                    lightboxCaption.classList.add('fade-in');
-                }, 400); // Match transition duration
-            }
-        }
-
-        function navigateLightbox(direction) {
-            currentImageIndex += direction;
-            
-            // Wrap around
-            if (currentImageIndex < 0) {
-                currentImageIndex = galleryImages.length - 1;
-            } else if (currentImageIndex >= galleryImages.length) {
-                currentImageIndex = 0;
-            }
-            
-            updateLightbox(false); // Use crossfade transition
-        }
-
-        function closeLightbox(event) {
-            // Only close if clicking the backdrop or close button, not the image itself
-            if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
-                const lightbox = document.getElementById('lightbox');
-                lightbox.classList.remove('active');
-                document.body.style.overflow = ''; // Restore scrolling
-            }
-        }
-
-        // Keyboard navigation
-        document.addEventListener('keydown', function(event) {
-            const lightbox = document.getElementById('lightbox');
-            if (!lightbox.classList.contains('active')) return;
-
-            if (event.key === 'Escape') {
-                closeLightbox({ target: { id: 'lightbox' } });
-            } else if (event.key === 'ArrowLeft') {
-                navigateLightbox(-1);
-            } else if (event.key === 'ArrowRight') {
-                navigateLightbox(1);
-            }
-        });
-
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
-        });
-
-    </script>
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
@@ -509,48 +141,8 @@
         </div>
     </div>
 
-    <script>
-        // Cookie consent banner
-        (function() {
-            const cookieBanner = document.getElementById('cookie-banner');
-            const acceptCookiesBtn = document.getElementById('accept-cookies');
-            const cookieConsent = localStorage.getItem('cookieConsent');
-
-            if (!cookieConsent) {
-                // Show banner after a short delay
-                setTimeout(() => {
-                    cookieBanner.classList.add('show');
-                }, 1000);
-            }
-
-            acceptCookiesBtn.addEventListener('click', function() {
-                localStorage.setItem('cookieConsent', 'accepted');
-                cookieBanner.classList.remove('show');
-                setTimeout(() => {
-                    cookieBanner.style.display = 'none';
-                }, 300);
-                
-                // Initialize Google Analytics after cookie consent
-                if (typeof gtag !== 'undefined') {
-                    gtag('js', new Date());
-                    gtag('config', 'G-3W5YQCJ0FQ');
-                }
-            });
-        })();
-    </script>
-
-    <!-- Google Analytics - Deferred to prevent blocking -->
+    <script src="js/main.js" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
-    <script defer>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        
-        // Only initialize GA if cookies are accepted
-        if (localStorage.getItem('cookieConsent') === 'accepted') {
-            gtag('js', new Date());
-            gtag('config', 'G-3W5YQCJ0FQ');
-        }
-    </script>
 
 </body>
 </html>

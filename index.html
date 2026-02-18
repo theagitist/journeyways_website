@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JOURNEYWAYS is a collaborative storytelling board game about identity exploration and self-discovery. Explore who you are becoming through meaningful choices, solo or group play. No fixed roles, just continuous growth.">
+    <meta name="description" content="JOURNEYWAYS is a research project exploring identity through collaborative storytelling and play. This site presents the board game and digital iterations—secular, gender-neutral tools for narrative and self-inquiry rooted at UBC.">
     <meta name="keywords" content="JOURNEYWAYS, board game, identity exploration, collaborative storytelling, self-discovery game, narrative game, character development, solo board game, group board game">
-    <meta name="author" content="Adri M. (theagitist)">
+    <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
@@ -26,11 +26,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/">
     
-    <title>JOURNEYWAYS - A Game About Becoming | Identity Exploration Board Game</title>
+    <title>Journeyways | Board Game &amp; Identity Research</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
     <link rel="shortcut icon" href="img/logo_bg_only.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Non-blocking font loading -->
@@ -38,118 +37,16 @@
     <noscript><link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css"></noscript>
     <link rel="stylesheet" href="https://use.typekit.net/aptos.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://use.typekit.net/aptos.css"></noscript>
-    <script defer>
-        // Redirect to www.journeyways.ca if not already there
-        (function() {
-            if (window.location.hostname !== 'www.journeyways.ca') {
-                window.location.replace('https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash);
-            }
-        })();
-    </script>
-    <style>
-        @font-face {
-            font-family: 'dream-big-wide';
-            font-display: swap;
-        }
-        @font-face {
-            font-family: 'aptos';
-            font-display: swap;
-        }
-        .script-font {
-            font-family: 'dream-big-wide', sans-serif;
-        }
-        body {
-            font-family: 'aptos', sans-serif;
-        }
-        .hero-bg {
-            background-image: url('img/logo_bg_only.jpg');
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .text-shadow {
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
-        }
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.95);
-            backdrop-blur: 10px;
-            padding: 1.5rem;
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.3s ease-in-out;
-            border-top: 2px solid #fbbf24;
-        }
-        .cookie-banner.show {
-            transform: translateY(0);
-        }
-        .title-center {
-            text-align: center !important;
-            display: block;
-            width: 100%;
-            margin: 0 auto;
-            justify-content: center;
-            align-items: center;
-        }
-        .hero-title {
-            text-align: center;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .responsive-title {
-            word-wrap: break-word;
-            overflow-wrap: break-word;
-            hyphens: auto;
-            max-width: 100%;
-        }
-        .marquee-container {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            background: linear-gradient(to right, #fbbf24, #f59e0b);
-            color: #000;
-            padding: 12px 0;
-            margin-top: 64px;
-            z-index: 40;
-        }
-        .marquee-wrapper {
-            display: flex;
-            width: fit-content;
-        }
-        .marquee-content {
-            display: inline-block;
-            white-space: nowrap;
-            animation: marquee 14s linear infinite;
-        }
-        .marquee-content:hover {
-            animation-play-state: paused;
-        }
-        @keyframes marquee {
-            0% {
-                transform: translateX(0);
-            }
-            100% {
-                transform: translateX(-50%);
-            }
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
+            <div class="flex justify-between items-center py-6">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
                     <div class="hidden md:flex space-x-6">
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors">Board Game</a>
                         <a href="videogame.html" class="hover:text-yellow-400 transition-colors">Video Game</a>
@@ -176,45 +73,23 @@
         </div>
     </nav>
 
+    <main class="home">
     <!-- Marquee Announcement -->
-    <div class="marquee-container">
-        <div class="marquee-wrapper">
-            <div class="marquee-content">
-                <span class="font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • </span>
-            </div>
-            <div class="marquee-content">
-                <span class="font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • </span>
-            </div>
+    <div class="marquee-container mt-24 py-6 bg-transparent overflow-hidden">
+        <div class="marquee-content">
+            <span class="marquee-text font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • Videogame version <a href="videogame.html" class="marquee-link underline underline-offset-4 decoration-2 hover:text-yellow-400">under development</a>. • </span>
+            <span class="marquee-text font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • Videogame version <a href="videogame.html" class="marquee-link underline underline-offset-4 decoration-2 hover:text-yellow-400">under development</a>. • </span>
+            <span class="marquee-text font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • Videogame version <a href="videogame.html" class="marquee-link underline underline-offset-4 decoration-2 hover:text-yellow-400">under development</a>. • </span>
+            <span class="marquee-text font-bold text-lg">JOURNEYWAYS was featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a> on October 2025. • Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>. • Videogame version <a href="videogame.html" class="marquee-link underline underline-offset-4 decoration-2 hover:text-yellow-400">under development</a>. • </span>
         </div>
     </div>
 
-    <!-- Hero Section -->
-    <section class="hero-bg min-h-screen flex items-center justify-center relative">
-        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
-        <div class="relative z-10 w-full flex flex-col items-center justify-center px-4">
-            <h1 class="script-font text-6xl sm:text-7xl md:text-8xl lg:text-9xl xl:text-[10rem] 2xl:text-[12rem] font-bold text-yellow-400 mb-12 fade-in text-shadow text-center w-full break-words responsive-title">JOURNEYWAYS</h1>
-            <p class="text-xl md:text-2xl font-bold italic mb-12 fade-in text-shadow text-center">A GAME ABOUT BECOMING</p>
-            
-            <div class="bg-black bg-opacity-60 backdrop-blur-sm rounded-lg p-8 fade-in text-center max-w-4xl mx-auto">
-                <p class="text-lg md:text-xl leading-relaxed mb-4">
-                    Step into a world where identity is not chosen but uncovered.<br/>In JOURNEYWAYS, you don't play to win; you play to unfold.
-                </p>
-                <p class="text-lg md:text-xl leading-relaxed mb-4">
-                    Explore selfhood not with labels, but with motion, memory, and meaning.<br/>Whether solo or in chorus, each session reveals a story made only by your presence.
-                </p>
-                <p class="text-lg md:text-xl leading-relaxed">
-                    With no fixed roles and no final answers, JOURNEYWAYS invites you to<br/>co-create the story of who you are and who you are becoming.
-                </p>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
-    <section class="py-20 bg-gray-800">
+    <section class="pt-8 pb-20 bg-gray-800">
         <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-6 text-shadow">About the Game</h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+            <div class="text-center">
+                <h1 class="main-title script-font font-bold text-yellow-400 pt-4 pb-6 text-center text-[12vw] leading-none">Journeyways</h1>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto mb-12">
                     JOURNEYWAYS is not only a game; it's an exploration of self-discovery<br/>through collaborative storytelling and meaningful choices.
                 </p>
             </div>
@@ -223,7 +98,7 @@
             <div class="grid md:grid-cols-3 gap-8 mb-16">
                 <div class="bg-gray-700 rounded-lg p-6 text-center">
                     <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="img/no_fixed_roles.jpg" alt="JOURNEYWAYS board game feature - No fixed roles, discover your character through play in this identity exploration game" class="w-full h-full object-cover">
+                        <img src="img/no_fixed_roles.jpg" alt="Illustration for the No Fixed Roles feature: identity is discovered through play rather than predetermined roles in the JOURNEYWAYS board game." class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl font-semibold mb-3">No Fixed Roles</h3>
                     <p class="text-gray-300">Discover your character through play,<br/>not predetermined archetypes.</p>
@@ -231,7 +106,7 @@
                 
                 <div class="bg-gray-700 rounded-lg p-6 text-center">
                     <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="img/collaborative_storytelling.jpg" alt="JOURNEYWAYS collaborative storytelling gameplay - Co-create narratives that reveal deeper truths about identity" class="w-full h-full object-cover">
+                        <img src="img/collaborative_storytelling.jpg" alt="Collaborative storytelling in JOURNEYWAYS: players co-create narratives that reveal deeper truths about identity." class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Collaborative Storytelling</h3>
                     <p class="text-gray-300">Co-create narratives that reveal<br/>deeper truths about identity.</p>
@@ -239,7 +114,7 @@
                 
                 <div class="bg-gray-700 rounded-lg p-6 text-center">
                     <div class="w-32 h-32 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="img/continuous_growth.jpg" alt="JOURNEYWAYS continuous growth feature - Each game session builds upon the last, creating an evolving journey of self-discovery" class="w-full h-full object-cover">
+                        <img src="img/continuous_growth.jpg" alt="Continuous growth in JOURNEYWAYS: each session builds on the last, creating an evolving journey of identity exploration." class="w-full h-full object-cover">
                     </div>
                     <h3 class="text-xl font-semibold mb-3">Continuous Growth</h3>
                     <p class="text-gray-300">Each session builds upon the last,<br/>creating an evolving journey.</p>
@@ -263,27 +138,15 @@
                 </div>
                 
                 <div class="bg-gray-700 rounded-lg p-8">
-                    <img src="img/boardgame_components.jpg" alt="JOURNEYWAYS board game components and board setup - Game pieces including tiles, cards, tokens, and player booklets" class="w-full rounded-lg mb-4">
+                    <img src="img/boardgame_components.jpg" alt="JOURNEYWAYS board game components and setup: tiles, cards, tokens, and player booklets arranged for play." class="w-full rounded-lg mb-4">
                     <p class="text-sm text-gray-400 text-center">Game components and board setup</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black hidden">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="script-font text-4xl md:text-5xl font-bold text-black mb-6 text-shadow">Begin Your Journey</h2>
-            <p class="text-xl mb-8">
-                Ready to discover who you are becoming? Start your JOURNEYWAYS adventure today.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="boardgame.html" class="bg-black text-white px-8 py-3 rounded-lg hover:bg-gray-800 transition-colors">
-                    Learn the Rules
-                </a>
-            </div>
-        </div>
-    </section>
+    <div id="cta-container"></div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-black py-8">
@@ -291,31 +154,6 @@
             <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.</p>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
-        });
-
-    </script>
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
@@ -331,48 +169,8 @@
         </div>
     </div>
 
-    <script>
-        // Cookie consent banner
-        (function() {
-            const cookieBanner = document.getElementById('cookie-banner');
-            const acceptCookiesBtn = document.getElementById('accept-cookies');
-            const cookieConsent = localStorage.getItem('cookieConsent');
-
-            if (!cookieConsent) {
-                // Show banner after a short delay
-                setTimeout(() => {
-                    cookieBanner.classList.add('show');
-                }, 1000);
-            }
-
-            acceptCookiesBtn.addEventListener('click', function() {
-                localStorage.setItem('cookieConsent', 'accepted');
-                cookieBanner.classList.remove('show');
-                setTimeout(() => {
-                    cookieBanner.style.display = 'none';
-                }, 300);
-                
-                // Initialize Google Analytics after cookie consent
-                if (typeof gtag !== 'undefined') {
-                    gtag('js', new Date());
-                    gtag('config', 'G-3W5YQCJ0FQ');
-                }
-            });
-        })();
-    </script>
-
-    <!-- Google Analytics - Deferred to prevent blocking -->
+    <script src="js/main.js" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
-    <script defer>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        
-        // Only initialize GA if cookies are accepted
-        if (localStorage.getItem('cookieConsent') === 'accepted') {
-            gtag('js', new Date());
-            gtag('config', 'G-3W5YQCJ0FQ');
-        }
-    </script>
 
 </body>
 </html>

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The digital version of JOURNEYWAYS is currently in development. Experience identity exploration and collaborative storytelling in a new interactive format. Check back soon for updates.">
+    <meta name="description" content="The JOURNEYWAYS digital game is under active development as part of Journeyways Research. A secular, gender-neutral interactive space for identity, agency, and community—rooted in the same research that produced the board game.">
     <meta name="keywords" content="JOURNEYWAYS video game, digital game, identity exploration game, interactive storytelling, narrative video game, coming soon, game development">
-    <meta name="author" content="Adri M. (theagitist)">
+    <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph / Facebook -->
@@ -26,11 +26,10 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/videogame.html">
     
-    <title>JOURNEYWAYS Video Game - Digital Version Coming Soon | Identity Exploration</title>
+    <title>Journeyways | Videogame Development Log</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/logo_bg_only.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/logo_bg_only.png">
     <link rel="shortcut icon" href="img/logo_bg_only.png">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Non-blocking font loading -->
@@ -38,75 +37,16 @@
     <noscript><link rel="stylesheet" href="https://use.typekit.net/yue7wtb.css"></noscript>
     <link rel="stylesheet" href="https://use.typekit.net/aptos.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="https://use.typekit.net/aptos.css"></noscript>
-    <script defer>
-        // Redirect to www.journeyways.ca if not already there
-        (function() {
-            if (window.location.hostname !== 'www.journeyways.ca') {
-                window.location.replace('https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash);
-            }
-        })();
-    </script>
-    <style>
-        @font-face {
-            font-family: 'dream-big-wide';
-            font-display: swap;
-        }
-        @font-face {
-            font-family: 'aptos';
-            font-display: swap;
-        }
-        html, body {
-            height: 100%;
-        }
-        body {
-            font-family: 'aptos', sans-serif;
-            display: flex;
-            flex-direction: column;
-        }
-        .script-font {
-            font-family: 'dream-big-wide', sans-serif;
-        }
-        .hero-bg {
-            background-image: url('img/logo_bg_only.jpg');
-        }
-        .fade-in {
-            animation: fadeIn 1s ease-in;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .text-shadow {
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
-        }
-        .cookie-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background-color: rgba(0, 0, 0, 0.95);
-            backdrop-blur: 10px;
-            padding: 1.5rem;
-            z-index: 1000;
-            transform: translateY(100%);
-            transition: transform 0.3s ease-in-out;
-            border-top: 2px solid #fbbf24;
-        }
-        .cookie-banner.show {
-            transform: translateY(0);
-        }
-        .main-content {
-            flex: 1;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-900 text-white">
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-4">
+            <div class="flex justify-between items-center py-6">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-2xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
+                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400">JOURNEYWAYS</a>
                     <div class="hidden md:flex space-x-6">
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors">Board Game</a>
                         <a href="videogame.html" class="text-yellow-400">Video Game</a>
@@ -133,46 +73,47 @@
         </div>
     </nav>
 
-    <div class="main-content">
-        <!-- Hero Section -->
-        <section class="hero-bg h-96 flex items-center justify-center relative">
-            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-            <div class="relative z-10 text-center">
-                <h1 class="script-font text-6xl md:text-7xl font-bold text-yellow-400 mb-4 fade-in text-shadow">Video Game</h1>
-                <p class="text-xl fade-in">Coming soon</p>
-            </div>
-        </section>
-
+    <main class="main-content">
         <!-- Content Section -->
-        <section class="py-20">
+        <section class="pt-32 pb-20">
             <div class="max-w-6xl mx-auto px-4">
-                <div class="text-center">
-                    <h2 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-6 text-shadow">Video Game</h2>
-                    <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                        The digital version of JOURNEYWAYS is currently in development.<br>Check back soon for updates.
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-8 tracking-tight text-shadow">The Digital Journey Begins</h1>
+                    <p class="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                        After an extensive design and conceptualization phase, the JOURNEYWAYS videogame is officially under active development.<br/><br/>This digital version carries the same commitment to identity exploration and collaborative narrative into an interactive medium, allowing players to participate regardless of geographical location.<br/><br/>Further updates will be shared as development progresses.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Call to Action -->
-        <section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">
-            <div class="max-w-4xl mx-auto text-center px-4">
-                <h2 class="script-font text-4xl font-bold text-black mb-6">Ready to Begin?</h2>
-                <p class="text-xl mb-8">
-                    Your journey of becoming starts with a single step. Gather your materials and begin.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="download/JOURNEYWAYS Game Rules 1.0.pdf" download class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-                        Download Board Game Rules PDF
-                    </a>
-                    <a href="download/JOURNEYWYS Character Sheet 1.0.pdf" download class="bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">
-                        Download Character Sheet PDF
-                    </a>
+        <!-- Development Log -->
+        <section class="py-16 border-t border-gray-700">
+            <div class="max-w-6xl mx-auto px-4">
+                <h2 class="script-font text-3xl md:text-4xl font-bold text-yellow-400 mb-2 text-shadow">Development Log</h2>
+                <p class="text-gray-400 text-sm mb-8">Progress and milestones for the digital version.</p>
+                <div class="flex flex-wrap items-center gap-4 mb-10">
+                    <span class="devlog-badge" aria-label="Current development version">Version: v0.3.5-alpha</span>
                 </div>
+                <h3 class="text-lg font-semibold text-gray-300 mb-4">Recent Milestones</h3>
+                <ul class="space-y-4 list-none p-0 m-0">
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Identity Infrastructure Implementation</div>
+                        <div class="devlog-card-desc">Finalizing the architecture for Journeys and participant profile management.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Core System Foundations</div>
+                        <div class="devlog-card-desc">Establishing the underlying data structures that support user agency and data privacy.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Technical Framework</div>
+                        <div class="devlog-card-desc">Setting up the foundational game loop to prepare for future interactive storytelling nodes.</div>
+                    </li>
+                </ul>
             </div>
         </section>
-    </div>
+
+        <div id="cta-container"></div>
+    </main>
 
     <!-- Footer -->
     <footer class="bg-black py-8">
@@ -180,31 +121,6 @@
             <p class="text-gray-400">&copy; 2025-2026 JOURNEYWAYS. A game about becoming.</p>
         </div>
     </footer>
-
-    <script>
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
-        });
-
-    </script>
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
@@ -220,48 +136,8 @@
         </div>
     </div>
 
-    <script>
-        // Cookie consent banner
-        (function() {
-            const cookieBanner = document.getElementById('cookie-banner');
-            const acceptCookiesBtn = document.getElementById('accept-cookies');
-            const cookieConsent = localStorage.getItem('cookieConsent');
-
-            if (!cookieConsent) {
-                // Show banner after a short delay
-                setTimeout(() => {
-                    cookieBanner.classList.add('show');
-                }, 1000);
-            }
-
-            acceptCookiesBtn.addEventListener('click', function() {
-                localStorage.setItem('cookieConsent', 'accepted');
-                cookieBanner.classList.remove('show');
-                setTimeout(() => {
-                    cookieBanner.style.display = 'none';
-                }, 300);
-                
-                // Initialize Google Analytics after cookie consent
-                if (typeof gtag !== 'undefined') {
-                    gtag('js', new Date());
-                    gtag('config', 'G-3W5YQCJ0FQ');
-                }
-            });
-        })();
-    </script>
-
-    <!-- Google Analytics - Deferred to prevent blocking -->
+    <script src="js/main.js" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
-    <script defer>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        
-        // Only initialize GA if cookies are accepted
-        if (localStorage.getItem('cookieConsent') === 'accepted') {
-            gtag('js', new Date());
-            gtag('config', 'G-3W5YQCJ0FQ');
-        }
-    </script>
 
 </body>
 </html>
