@@ -96,7 +96,7 @@ function injectCTA() {
         container.innerHTML =
             '<section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">' +
             '<div class="max-w-4xl mx-auto text-center px-4">' +
-            '<h2 class="script-font text-4xl font-bold text-black mb-6">Ready to Begin?</h2>' +
+            '<h2 class="script-font text-4xl md:text-5xl font-bold text-black mb-6">Ready to Begin?</h2>' +
             '<p class="text-xl mb-8">Step into the digital version of Journeyways. Explore identity, agency, and community in a transformative interactive space.</p>' +
             '<a href="https://play.journeyways.ca" class="inline-block bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg">Play the Digital Version</a>' +
             '</div></section>';

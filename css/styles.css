@@ -1,20 +1,14 @@
 /* Global styles – JOURNEYWAYS (index, videogame, photos) */
 
-@font-face {
-    font-family: 'dream-big-wide';
-    font-display: swap;
-}
-@font-face {
-    font-family: 'aptos';
-    font-display: swap;
-}
+/* Fonts loaded via Google Fonts: Inter (body) and Italianno (script/logo) */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 
 html,
 body {
     height: 100%;
 }
 body {
-    font-family: 'aptos', sans-serif;
+    font-family: 'Inter', sans-serif;
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +27,7 @@ body {
 }
 
 .script-font {
-    font-family: 'dream-big-wide', sans-serif;
+    font-family: 'Italianno', cursive !important;
 }
 /* Hero background – still used on boardgame.html; removed from index/videogame/photos for a cleaner look */
 .hero-bg {
@@ -47,7 +41,7 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 .text-shadow {
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.6), 0 0 30px rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.08);
 }
 
 /* Cookie banner */
