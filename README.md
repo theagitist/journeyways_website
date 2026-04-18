@@ -74,9 +74,32 @@ The project follows a "lean" philosophy:
 - **Performance**: Minimal custom CSS leftovers; Tailwind is used for 90% of the UI to ensure fast rendering.
 - **Secular & Inclusive**: Language is strictly gender-neutral and secular, aligning with the project's research focus on gender-diverse and migrant experiences.
 
+## Server config
+
+Deployed via nginx on a shared VPS. Site-wide features (brotli, gzip, server-tokens) are global drop-ins at `/etc/nginx/conf.d/`. The site-specific config at `/etc/nginx/sites-available/www.journeyways.ca.conf` includes:
+
+```nginx
+include snippets/security-hardening.conf;   # dotfile/.md hides + ACME carveout
+include snippets/static-cache.conf;         # expires 1y for fonts/css/js, 30d for images/pdf
+
+# Rate limiting (zone defined globally in conf.d/rate-limits.conf)
+limit_req zone=general burst=60 nodelay;
+
+# CSP (Report-Only — observe violations, refine, then switch to enforcing)
+add_header Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" always;
+```
+
+The CSP permits Tailwind CDN, Google Fonts, and GA4. `'unsafe-inline'` and `'unsafe-eval'` are required because Tailwind Play CDN injects styles/scripts at runtime. To eventually tighten to strict CSP, build Tailwind locally (CLI) and remove the CDN allowances. Until then, watch the browser console for real violations over a week of traffic, adjust the policy, then switch from `Content-Security-Policy-Report-Only` to `Content-Security-Policy`.
+
 ## Changelog
 
-### Version 1.5.0 (Current)
+### Version 1.5.1
+
+- **Nginx refactor**: replaced inline cache rules with `snippets/static-cache.conf`, removed duplicated gzip block (now global).
+- **CSP (Report-Only)**: deployed permissive CSP as a baseline; rollout to enforcing after a week of violation monitoring.
+- **Rate limiting**: applied `limit_req zone=general burst=60 nodelay;` using the global `rate-limits.conf` zone.
+
+### Version 1.5.0
 - **UI Unification**: Synchronized Navbar height and Logo size across all pages.
 - **Typography Overhaul**: Implemented responsive `12vw` hero title and unified `5xl` section headers.
 - **Marquee Stabilization**: Fixed "jitter" and "jumping" bugs using hardware acceleration (`will-change: transform`) and increased duration to `100s`.
