@@ -94,19 +94,19 @@ function injectCTA() {
 
     if (isVideogame) {
         container.innerHTML =
-            '<section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">' +
+            '<section class="py-12 bg-amber-400 text-black">' +
             '<div class="max-w-4xl mx-auto text-center px-4">' +
-            '<h2 class="script-font text-4xl md:text-5xl font-bold text-black mb-6">Ready to Begin?</h2>' +
-            '<p class="text-xl mb-8">Step into the digital version of Journeyways. Explore identity, agency, and community in a transformative interactive space.</p>' +
-            '<a href="https://play.journeyways.ca" class="inline-block bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors font-semibold text-lg">Play the Digital Version</a>' +
+            '<h2 class="text-2xl md:text-3xl font-semibold mb-3">Ready to Begin?</h2>' +
+            '<p class="text-base md:text-lg mb-6 max-w-2xl mx-auto">Step into the digital version of Journeyways. Explore identity, agency, and community in a transformative interactive space.</p>' +
+            '<a href="https://play.journeyways.ca" class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">Play the Digital Version</a>' +
             '</div></section>';
     } else if (isIndex) {
         container.innerHTML =
-            '<section class="py-20 bg-gradient-to-r from-yellow-400 to-orange-500 text-black">' +
+            '<section class="py-12 bg-amber-400 text-black">' +
             '<div class="max-w-4xl mx-auto text-center px-4">' +
-            '<h2 class="script-font text-4xl md:text-5xl font-bold text-black mb-6 text-shadow">Ready to Begin?</h2>' +
-            '<p class="text-xl mb-8">Experience the journey of identity through the physical board game.</p>' +
-            '<a href="boardgame.html" class="inline-block bg-white text-black px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors">Board Game — Rules &amp; Downloads</a>' +
+            '<h2 class="text-2xl md:text-3xl font-semibold mb-3">Ready to Begin?</h2>' +
+            '<p class="text-base md:text-lg mb-6 max-w-2xl mx-auto">Experience the journey of identity through the physical board game.</p>' +
+            '<a href="boardgame.html" class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">Board Game: Rules &amp; Downloads</a>' +
             '</div></section>';
     }
 }
@@ -148,6 +148,24 @@ var galleryImages = [
         alt: 'JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay',
         title: 'Players in Action',
         subtitle: 'Connecting over gameplay.'
+    },
+    {
+        src: 'img/edges_playtest_journaling.jpg',
+        alt: 'JOURNEYWAYS playtest with the EDGES research group at UBC - participants drawing cards, writing journal entries, and reflecting in collaborative play',
+        title: 'Journaling in Play',
+        subtitle: 'EDGES playtest, UBC. November 2025.'
+    },
+    {
+        src: 'img/edges_playtest_table.jpg',
+        alt: 'JOURNEYWAYS playtest table view - EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table',
+        title: 'Around the Table',
+        subtitle: 'EDGES playtest, UBC. November 2025.'
+    },
+    {
+        src: 'img/edges_playtest_board.jpg',
+        alt: 'JOURNEYWAYS board state mid-session - top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC',
+        title: 'Board State Mid-Session',
+        subtitle: 'EDGES playtest, UBC. November 2025.'
     }
 ];
 var currentImageIndex = 0;

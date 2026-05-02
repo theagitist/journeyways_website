@@ -64,11 +64,11 @@ body {
 
 /* Board game page – rule sections and card colors */
 .rule-section {
-    transition: all 0.3s ease;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.04);
 }
 .rule-section:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-color: rgba(251, 191, 36, 0.35);
 }
 .card-black {
     color: #6b7280;
@@ -111,11 +111,12 @@ main.home {
     width: 100%;
     overflow: hidden;
     user-select: none;
-    background: linear-gradient(to right, #fbbf24, #f59e0b);
+    background: #fbbf24;
     color: #000;
     margin-top: 0; /* main already has padding-top: 5rem (80px) */
     z-index: 40;
-    padding: 24px 0;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 .marquee-content {
     display: grid;
@@ -205,11 +206,14 @@ main.home {
 
 /* Photos – gallery & lightbox */
 .gallery-item {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: border-color 0.2s ease, opacity 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.04);
 }
 .gallery-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(251, 191, 36, 0.35);
+}
+.gallery-item:hover img {
+    opacity: 0.92;
 }
 .gallery-item img {
     cursor: pointer;

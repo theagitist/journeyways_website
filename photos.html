@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="css/styles.css?v=4">
+    <link rel="stylesheet" href="css/styles.css?v=5">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
         .script-font { font-family: 'Italianno', cursive !important; }
@@ -46,9 +46,9 @@
     <!-- Navigation -->
     <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center py-6">
+            <div class="flex justify-between items-center py-3">
                 <div class="flex items-center space-x-8">
-                    <a href="index.html" class="text-3xl md:text-4xl script-font font-bold text-yellow-400" aria-label="JOURNEYWAYS home">JOURNEYWAYS</a>
+                    <a href="index.html" class="text-2xl md:text-3xl script-font font-bold text-yellow-400" aria-label="JOURNEYWAYS home">JOURNEYWAYS</a>
                     <div class="hidden md:flex space-x-6">
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                         <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
@@ -77,32 +77,56 @@
 
     <main>
     <!-- Photo Gallery -->
-    <section class="pt-32 pb-20">
+    <section class="pt-24 pb-14">
         <div class="max-w-6xl mx-auto px-4">
-            <h1 class="script-font text-4xl md:text-5xl font-bold text-yellow-400 mb-8 tracking-tight text-shadow text-center">Research Gallery &amp; Media</h1>
+            <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-10 tracking-tight text-center">Research Gallery &amp; Media</h1>
             <!-- Main Game Photos Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <figure class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                <figure class="gallery-item bg-gray-800 rounded overflow-hidden">
                     <img src="img/thumbnails/boardgame_setup_thumb.jpg" alt="JOURNEYWAYS board game setup: initial board configuration with game tiles and components arranged for play." class="w-full h-64 object-cover" onclick="openLightbox(0)" loading="lazy">
-                    <figcaption class="p-6">
-                        <h2 class="text-xl font-semibold mb-2">Board Game Setup</h2>
-                        <p class="text-gray-300">Initial board configuration for the JOURNEYWAYS identity exploration and collaborative storytelling game—tiles, cards, and play space ready for solo or group play.</p>
+                    <figcaption class="p-5">
+                        <h2 class="text-base font-semibold mb-1.5">Board Game Setup</h2>
+                        <p class="text-sm text-gray-300 leading-relaxed">JOURNEYWAYS featured at ProtoConBC, October 2025. Initial board configuration: tiles, cards, and play space ready for solo or group play.</p>
                     </figcaption>
                 </figure>
 
-                <figure class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                <figure class="gallery-item bg-gray-800 rounded overflow-hidden">
                     <img src="img/thumbnails/boardgame_components_thumb.jpg" alt="JOURNEYWAYS board game components: cards, tiles, tokens, and player booklets used in the identity exploration game." class="w-full h-64 object-cover" onclick="openLightbox(1)" loading="lazy">
-                    <figcaption class="p-6">
-                        <h2 class="text-xl font-semibold mb-2">Board Game Components</h2>
-                        <p class="text-gray-300">Cards, tiles, tokens, and player booklets that power JOURNEYWAYS collaborative storytelling and transformative identity play.</p>
+                    <figcaption class="p-5">
+                        <h2 class="text-base font-semibold mb-1.5">Board Game Components</h2>
+                        <p class="text-sm text-gray-300 leading-relaxed">Cards, tiles, tokens, and player booklets laid out for play.</p>
                     </figcaption>
                 </figure>
 
-                <figure class="gallery-item bg-gray-800 rounded-lg overflow-hidden">
+                <figure class="gallery-item bg-gray-800 rounded overflow-hidden">
                     <img src="img/thumbnails/players_in_action_thumb.jpg" alt="Players in action with JOURNEYWAYS: people playing the identity exploration board game and connecting through collaborative storytelling." class="w-full h-64 object-cover" onclick="openLightbox(2)" loading="lazy">
-                    <figcaption class="p-6">
-                        <h2 class="text-xl font-semibold mb-2">Players in Action</h2>
-                        <p class="text-gray-300">Players engaging with the JOURNEYWAYS board game—identity exploration and collaborative storytelling in practice.</p>
+                    <figcaption class="p-5">
+                        <h2 class="text-base font-semibold mb-1.5">Players in Action</h2>
+                        <p class="text-sm text-gray-300 leading-relaxed">Players engaging with the board game: identity exploration and collaborative storytelling in practice.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item bg-gray-800 rounded overflow-hidden">
+                    <img src="img/thumbnails/edges_playtest_journaling_thumb.jpg" alt="JOURNEYWAYS playtest with the EDGES research group at UBC: participants drawing cards, writing journal entries, and reflecting in collaborative play." class="w-full h-64 object-cover" onclick="openLightbox(3)" loading="lazy">
+                    <figcaption class="p-5">
+                        <h2 class="text-base font-semibold mb-1.5">Journaling in Play</h2>
+                        <p class="text-sm text-gray-300 leading-relaxed">Second playtest of JOURNEYWAYS with the EDGES research group at UBC, November 2025. Character cards drawn, journals open, individual reflection alongside shared play.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item bg-gray-800 rounded overflow-hidden">
+                    <img src="img/thumbnails/edges_playtest_table_thumb.jpg" alt="JOURNEYWAYS playtest table view: EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table." class="w-full h-64 object-cover" onclick="openLightbox(4)" loading="lazy">
+                    <figcaption class="p-5">
+                        <h2 class="text-base font-semibold mb-1.5">Around the Table</h2>
+                        <p class="text-sm text-gray-300 leading-relaxed">A wider view of the same session, with several participants engaged simultaneously around the shared table.</p>
+                    </figcaption>
+                </figure>
+
+                <figure class="gallery-item bg-gray-800 rounded overflow-hidden">
+                    <img src="img/thumbnails/edges_playtest_board_thumb.jpg" alt="JOURNEYWAYS board state mid-session: top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC." class="w-full h-64 object-cover" onclick="openLightbox(5)" loading="lazy">
+                    <figcaption class="p-5">
+                        <h2 class="text-base font-semibold mb-1.5">Board State Mid-Session</h2>
+                        <p class="text-sm text-gray-300 leading-relaxed">Top-down view of the board mid-session: tiles placed, cards drawn, journals at hand.</p>
                     </figcaption>
                 </figure>
             </div>
@@ -137,13 +161,13 @@
                     We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept", you consent to our use of cookies.
                 </p>
             </div>
-            <button id="accept-cookies" class="bg-yellow-400 text-black px-6 py-2 rounded-lg hover:bg-yellow-300 transition-colors font-semibold whitespace-nowrap">
+            <button id="accept-cookies" class="bg-yellow-400 text-black px-5 py-2 rounded hover:bg-yellow-300 transition-colors font-medium whitespace-nowrap">
                 Accept
             </button>
         </div>
     </div>
 
-    <script src="js/main.js?v=2" defer></script>
+    <script src="js/main.js?v=4" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>
