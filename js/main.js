@@ -28,7 +28,72 @@ function getPageId() {
     if (path === '/' || path === '/index.html' || path.endsWith('/')) return 'index';
     if (path.indexOf('videogame') !== -1) return 'videogame';
     if (path.indexOf('photos') !== -1) return 'photos';
+    if (path.indexOf('contact') !== -1) return 'contact';
+    if (path.indexOf('about') !== -1) return 'about';
     return 'index';
+}
+
+// --- Contact page: form submission ---
+// Same-origin endpoint; nginx proxies /api/* to the local backend (server/index.js).
+var CONTACT_ENDPOINT = '/api/contact';
+
+function initContactForm() {
+    var form = document.getElementById('contact-form');
+    if (!form) return;
+    var submitBtn = document.getElementById('contact-submit');
+    var status = document.getElementById('contact-status');
+
+    function setStatus(text, color) {
+        status.textContent = text;
+        status.style.color = color || '';
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!form.checkValidity()) {
+            setStatus('Please fill the required fields.', '#f87171');
+            return;
+        }
+
+        var fd = new FormData(form);
+        var interests = fd.getAll('interest');
+        // Cloudflare Turnstile injects this hidden input on success.
+        var turnstileToken = (fd.get('cf-turnstile-response') || '').toString();
+        var payload = {
+            name: (fd.get('name') || '').toString().trim(),
+            email: (fd.get('email') || '').toString().trim(),
+            interests: interests,
+            message: (fd.get('message') || '').toString().trim(),
+            website: (fd.get('website') || '').toString(), // honeypot
+            turnstileToken: turnstileToken
+        };
+
+        submitBtn.disabled = true;
+        setStatus('Sending...', '');
+
+        fetch(CONTACT_ENDPOINT, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload)
+        }).then(function (res) {
+            return res.json().then(function (body) { return { ok: res.ok, body: body }; });
+        }).then(function (result) {
+            if (result.ok) {
+                form.reset();
+                if (typeof window.turnstile !== 'undefined' && typeof window.turnstile.reset === 'function') {
+                    window.turnstile.reset();
+                }
+                setStatus('Message sent. Thank you for reaching out.', '#86efac');
+            } else {
+                var msg = (result.body && result.body.error) || 'Something went wrong. Please try again later.';
+                setStatus(msg, '#f87171');
+            }
+        }).catch(function () {
+            setStatus('Network error. Please try again later.', '#f87171');
+        }).then(function () {
+            submitBtn.disabled = false;
+        });
+    });
 }
 
 // --- Mobile menu (all pages with nav) ---
@@ -262,6 +327,8 @@ function init() {
     } else if (page === 'photos') {
         initSmoothScroll();
         initLightbox();
+    } else if (page === 'contact') {
+        initContactForm();
     }
 }
 

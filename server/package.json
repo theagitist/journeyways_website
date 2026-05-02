@@ -1,0 +1,19 @@
+{
+  "name": "journeyways-www-backend",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tiny backend for www.journeyways.ca. Currently handles only the contact form: POST /api/contact validates and sends an email via SMTP, plus GET /api/health for monitoring.",
+  "license": "CC-BY-NC-4.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "nodemailer": "^6.9.16"
+  }
+}
