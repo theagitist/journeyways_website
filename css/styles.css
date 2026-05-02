@@ -111,41 +111,40 @@ main.home {
     width: 100%;
     overflow: hidden;
     user-select: none;
-    display: flex;
-    gap: 0;
+    background: linear-gradient(to right, #fbbf24, #f59e0b);
     color: #000;
     margin-top: 0; /* main already has padding-top: 5rem (80px) */
     z-index: 40;
-    padding: 24px 0; /* Prevent vertical cut-off; matches Tailwind py-6 */
+    padding: 24px 0;
 }
 .marquee-content {
-    display: flex;
-    white-space: nowrap;
-    /* This forces the slow speed regardless of Tailwind */
-    animation: scroll-left 100s linear infinite !important;
-    will-change: transform;
-    backface-visibility: hidden;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding: 0 24px;
 }
 
-/* This forces it to stop EXACTLY where it is when the orange bar is touched */
-.marquee-container:hover .marquee-content {
-    animation-play-state: paused !important;
-}
-
-@keyframes scroll-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+.marquee-container:hover .marquee-text {
+    animation-play-state: paused;
 }
 
 .marquee-text {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    padding-right: 100px; /* Clear visual break between repeated phrases */
-    line-height: 1.6; /* Prevents vertical clipping of underlined links */
+    grid-column: 1;
+    grid-row: 1;
+    line-height: 1.6;
+    opacity: 0;
+    animation: marquee-fade 24s ease-in-out infinite;
 }
-/* Link styling */
+.marquee-text:nth-child(1) { animation-delay: 0s; }
+.marquee-text:nth-child(2) { animation-delay: 6s; }
+.marquee-text:nth-child(3) { animation-delay: 12s; }
+.marquee-text:nth-child(4) { animation-delay: 18s; }
+
+@keyframes marquee-fade {
+    0%, 25%, 100% { opacity: 0; }
+    4.16%, 20.83% { opacity: 1; }
+}
+
 .marquee-text a {
     text-decoration: underline;
     color: inherit;
@@ -156,6 +155,18 @@ main.home {
 }
 .marquee-link {
     color: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .marquee-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .marquee-text {
+        opacity: 1;
+        animation: none;
+    }
 }
 
 /* Videogame – Development Log & Ready to Begin CTA */
