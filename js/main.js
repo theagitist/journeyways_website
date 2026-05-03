@@ -222,7 +222,7 @@ var gallerySets = {
     ],
     videogameCards: [
         { src: 'img/design/card-wind.webp', alt: 'Encounter card front: watercolor and ink of a figure with thoughts scattering on the wind.', title: 'Wind', subtitle: '"A wind scatters your thoughts. Do you gather them back? How are they different now?"' },
-        { src: 'img/design/card-echo.webp', alt: 'Encounter card front: watercolor and ink of two figures facing each other in dialogue.', title: 'Echo', subtitle: '"You speak with an echo of yourself. What does it say?"' }
+        { src: 'img/design/card-commune.webp', alt: 'Group action card front: watercolor of six colourful meeples huddled together.', title: 'Commune', subtitle: '"Everyone shares one key element of their story and reflects on what they mean to their own."' }
     ],
     videogameTiles: [
         { src: 'img/design/tile-misty-trail.webp', alt: 'Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.', title: 'Misty Trail', subtitle: 'Map tile.' },
