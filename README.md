@@ -1,115 +1,102 @@
 # JOURNEYWAYS Website
 
-A website for JOURNEYWAYS, a research project and game about becoming, exploring, and self-discovery. Rooted at the University of British Columbia (UBC), this project explores identity through collaborative storytelling and play.
+Public-facing site for JOURNEYWAYS, a master's research project at the UBC Institute for Gender, Race, Sexuality and Social Justice (GRSJ). The project uses a board game and a digital game in development as research instruments to study how people self-identify when given a narrative-driven, safe, collaborative play space.
+
+This repository holds the static site (`www.journeyways.ca`) and a small Node.js backend for a contact form.
 
 ## About JOURNEYWAYS
 
-JOURNEYWAYS is not about winning or losing; it's about discovering, exploring, and becoming. This collaborative storytelling project invites players to explore selfhood through motion, memory, and meaning. Whether playing solo or in a group, each session serves as a transformative space for exploring identity and agency beyond arbitrary categories.
+JOURNEYWAYS is not about winning or losing; it's about discovering, exploring, and becoming. Whether playing solo or as part of a group, each session creates a space for exploring identity and agency beyond predefined categories.
 
-### Key Features
-
-- **No Fixed Roles**: Discover your character through play, not predetermined archetypes.
-- **Collaborative Storytelling**: Co-create narratives that reveal deeper truths about identity.
-- **Continuous Growth**: Each session builds upon the last, creating an evolving journey.
-- **Solo or Group Play**: Adapts to your preferred style of play.
-- **Meaningful Choices**: Every decision carries weight and reveals aspects of yourself.
-
-## Website Structure
-
-journeyways_website/
-├── index.html          # Homepage with research overview and hero title
-├── boardgame.html      # Complete board game rules and instructions
-├── photos.html         # Photo gallery of the game components
-├── videogame.html      # Digital iteration dev log (under development)
-├── css/
-│   └── styles.css      # Custom animations (marquee) and typography
-├── download/           # Downloadable PDF research/game files
-├── img/                # Optimized game assets and feature images
-└── README.md           # This file
+The project is also a *framework*. Map tiles, cards, and a player booklet are the canonical triad; default content is gender-identity-focused but the engine is for identity exploration in general. Anyone is encouraged to author their own variant.
 
 ## Pages
 
-### Homepage (`index.html`)
-- **Hero Header**: Features a responsive, massive "Journeyways" title (`12vw`) to establish project identity.
-- **Announcement Marquee**: A stabilized, slow-scrolling (`100s`) orange banner featuring:
-  - ProtoConBC feature (October 2025).
-  - UBC Critical Play Fellowship participation.
-  - Link to the digital iteration "under development."
-- **Research Context**: Overview of the project's philosophy on identity and storytelling.
+- **Home** (`index.html`). Crossfading hero, three feature cards that open native `<dialog>` popups (No Fixed Roles, Collaborative Storytelling, Continuous Growth), and a marquee of dated announcements (CGS-M, ProtoConBC, Critical Play Fellowship).
+- **Board Game** (`boardgame.html`). How to play: setup, gameplay phases, ending the game, journaling, solo vs group, advanced concepts, tips. Four illustrated figures: card backs by category, the canonical setup photo, a map-tile gallery, and example card fronts.
+- **Video Game** (`videogame.html`). Dev log for the digital version (in development).
+- **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
+- **Photos** (`photos.html`). Research gallery and lightbox.
+- **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
+- **Contact** (`contact.html`). Hidden (`noindex`, off the nav, off the sitemap) until the deliverability issue is resolved.
 
-### Board Game (`boardgame.html`)
-- **Unified Branding**: Synchronized `5xl` header and navigation to match the site-wide aesthetic.
-- **Gameplay Mechanics**: Detailed breakdown of the Explore, Draw, and Reflect phases.
-- **Resources**: Direct access to printable rules and character sheets.
+## Site structure
 
-### Photos (`photos.html`)
-- **Visual Evidence**: Gallery showing physical components and "in-action" play.
-- **Lightbox Integration**: Interactive modal for high-resolution viewing.
-- **Performance**: Uses optimized thumbnails to maintain fast LCP (Largest Contentful Paint).
+```
+www.journeyways.ca/
+├── index.html, boardgame.html, videogame.html, photos.html
+├── about.html, design.html, contact.html
+├── css/styles.css           Card colours, .tile-wood, marquee fade,
+│                            lightbox, hover transitions
+├── js/main.js               Mobile menu, cookie banner, CTA injection,
+│                            lightbox, contact form handler
+├── img/                     Photos, logo, feature cards
+│   ├── design/              webp components: tiles, card fronts, card backs
+│   └── thumbnails/          Photos page thumbnails
+├── download/                Rules and character-sheet PDFs
+├── server/                  Tiny Express + Nodemailer backend (contact form)
+├── brainstorm/              Working notes (gitignored, synced to Obsidian)
+├── sitemap.xml              6 entries; contact.html intentionally absent
+└── VERSION
+```
 
-### Video Game (`videogame.html`)
-- **Digital Iteration**: Development log and vision for the software version of JOURNEYWAYS.
-- **Design Consistency**: Unified header spacing and navigation to ensure a seamless transition from the physical game pages.
+## Tech stack
 
-## Navigation & UI
-
-The website features a unified, responsive navigation system:
-- **Logo**: Enlarged "JOURNEYWAYS" script logo in the navbar for better brand visibility.
-- **Consistency**: Synchronized navigation height (`py-6`) and content padding (`pt-32`) across all pages to prevent "jumping" during transitions.
-- **Mobile Support**: Fully responsive hamburger menu for smaller devices.
-- **Interactive Marquee**: The announcement bar pauses precisely on hover (triggered by the container) to allow easy interaction with links.
-
-## Technology Stack
-
-- **HTML5**: Semantic markup for accessibility and SEO.
-- **Tailwind CSS**: Primary utility-first framework for layout, spacing, and responsive scaling.
-- **Custom CSS**: Used for specialized animations (infinite loops), z-index management, and hardware-accelerated transforms to prevent jitter.
-- **Adobe Typekit**: Integration of `dream-big-wide` and `aptos` for a professional, academic aesthetic.
-- **Vanilla JavaScript**: Lightweight logic for mobile menu toggles and lightbox functionality.
-
-## Development & Cleanup
-
-The project follows a "lean" philosophy:
-- **Zero-Dependency Nav**: No heavy JS libraries for navigation; uses CSS-first positioning.
-- **Performance**: Minimal custom CSS leftovers; Tailwind is used for 90% of the UI to ensure fast rendering.
-- **Secular & Inclusive**: Language is strictly gender-neutral and secular, aligning with the project's research focus on gender-diverse and migrant experiences.
+- **HTML5** with semantic markup, OpenGraph and Twitter card metadata, JSON-LD structured data on the home page.
+- **Tailwind CSS** via Play CDN (no build step; utility classes resolve at runtime).
+- **Custom CSS** for the card-color and tile-wood category highlights, lightbox, and marquee animation.
+- **Vanilla JavaScript** for the mobile menu, lightbox, native `<dialog>` modals, and the contact form handler.
+- **Inter** and **Italianno** via free Google Fonts (replaced Adobe Typekit so the site can be reproduced without licensed assets).
+- **webp images** for all the design and component figures, optimized at ~1000px wide.
+- **Express 5 + Nodemailer + Cloudflare Turnstile** for the contact form (currently stopped pending deliverability fix).
 
 ## Server config
 
-Deployed via nginx on a shared VPS. Site-wide features (brotli, gzip, server-tokens) are global drop-ins at `/etc/nginx/conf.d/`. The site-specific config at `/etc/nginx/sites-available/www.journeyways.ca.conf` includes:
+Deployed via nginx on a shared VPS. Site-wide drop-ins (brotli, gzip, server-tokens off) live at `/etc/nginx/conf.d/`. The site-specific config at `/etc/nginx/sites-available/www.journeyways.ca.conf` includes:
 
 ```nginx
 include snippets/security-hardening.conf;   # dotfile/.md hides + ACME carveout
-include snippets/static-cache.conf;         # expires 1y for fonts/css/js, 30d for images/pdf
+include snippets/static-cache.conf;         # 1y for fonts/css/js, 30d for images/pdf
 
 # Rate limiting (zone defined globally in conf.d/rate-limits.conf)
 limit_req zone=general burst=60 nodelay;
 
-# CSP (Report-Only — observe violations, refine, then switch to enforcing)
-add_header Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' https://cdn.tailwindcss.com https://www.googletagmanager.com 'unsafe-inline' 'unsafe-eval'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob: https://www.google-analytics.com https://www.googletagmanager.com; connect-src 'self' https://www.google-analytics.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" always;
+# CSP (Report-Only: observe, refine, then enforce)
+add_header Content-Security-Policy-Report-Only "default-src 'self'; ..." always;
 ```
 
-The CSP permits Tailwind CDN, Google Fonts, and GA4. `'unsafe-inline'` and `'unsafe-eval'` are required because Tailwind Play CDN injects styles/scripts at runtime. To eventually tighten to strict CSP, build Tailwind locally (CLI) and remove the CDN allowances. Until then, watch the browser console for real violations over a week of traffic, adjust the policy, then switch from `Content-Security-Policy-Report-Only` to `Content-Security-Policy`.
+The CSP permits the Tailwind CDN, Google Fonts, GA4, and Cloudflare Turnstile. To eventually tighten to strict CSP, build Tailwind locally (CLI) and remove the CDN allowance.
+
+## Operational notes
+
+- **Cache-busting** is handled via query-string version on `styles.css` and `main.js`. Current versions: `styles.css?v=6`, `main.js?v=5`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
+- **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
 
 ## Changelog
 
-### Version 1.5.1
+### 1.1.0 (May 2026)
 
-- **Nginx refactor**: replaced inline cache rules with `snippets/static-cache.conf`, removed duplicated gzip block (now global).
-- **CSP (Report-Only)**: deployed permissive CSP as a baseline; rollout to enforcing after a week of violation monitoring.
-- **Rate limiting**: applied `limit_req zone=general burst=60 nodelay;` using the global `rate-limits.conf` zone.
+- Add `design.html`, a long-form Design philosophy page with nine named principles, illustrated with extracted card and tile artwork. Anchored from About via inline links.
+- Add the Design link to the main navigation across all pages.
+- Convert the home feature cards into clickable native `<dialog>` popups with light copy and links into the Design philosophy anchors.
+- Refresh About copy: link the GRSJ institute, add inline anchors into design.html, voice tweaks. Hide the "Get in touch" section until the contact channel is functional.
+- Add the four missing card-back textures (red, green, blue, purple) alongside the existing black; introduce `.tile-wood` and reuse `.card-COLOR` classes for category-name highlighting on Board Game and Design pages.
+- Add four illustrated figures to the Board Game page: card backs row, setup photo, map-tile grid, card-fronts row.
+- Switch body background from `bg-gray-900` to `bg-gray-800` sitewide.
+- Strip "© 2025-2026" from every footer.
+- Bump asset cache key `styles.css?v=5` → `?v=6`.
+- Bump `VERSION` and footer markers to 1.1.0.
 
-### Version 1.5.0
-- **UI Unification**: Synchronized Navbar height and Logo size across all pages.
-- **Typography Overhaul**: Implemented responsive `12vw` hero title and unified `5xl` section headers.
-- **Marquee Stabilization**: Fixed "jitter" and "jumping" bugs using hardware acceleration (`will-change: transform`) and increased duration to `100s`.
-- **Code Pruning**: Removed unused Tailwind CDN leftovers and redundant CSS padding rules to improve load speed.
-- **Layout Fixes**: Adjusted top margins to ensure headers are never obscured by the fixed navigation bar.
+### 1.0.0 (early 2026)
 
-### Version 1.4.7
-- Implemented efficient cache lifetimes for static assets.
-- Optimized render-blocking resources (Typekit non-blocking loading).
+- First public release: home, board game, video game, photos, about; hidden contact form behind a Node backend.
+- Replaced Adobe Typekit with free Google Fonts.
+- Implemented marquee crossfade and dated entries on home.
+- Initial nginx hardening: brotli, gzip, server-tokens off, static-cache snippet, rate limiting, CSP Report-Only.
 
 ## License
 
-© 2025-2026 JOURNEYWAYS. A game about becoming. Rooted in research at UBC GRSJ.
+JOURNEYWAYS. A game about becoming. Rooted in research at UBC GRSJ.
+
+The project will be released openly: rules, components, mechanics, and digital code under their respective licences (Creative Commons for content, an OSI-approved licence for code; specifics determined at publication time).
