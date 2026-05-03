@@ -30,8 +30,8 @@
     <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/tailwind.css?v=17">
-    <link rel="stylesheet" href="css/styles.css?v=21">
+    <link rel="stylesheet" href="css/tailwind.css?v=19">
+    <link rel="stylesheet" href="css/styles.css?v=23">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
         {
@@ -90,56 +90,98 @@
     </nav>
 
     <main>
-    <section class="pt-24 pb-14">
-        <div class="max-w-3xl mx-auto px-4">
-            <header class="text-center mb-12">
-                <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 tracking-tight">About the researcher</h1>
-                <p class="text-base md:text-lg text-gray-300 leading-relaxed">
-                    The person and the program behind JOURNEYWAYS.
-                </p>
-            </header>
 
-            <article class="space-y-10">
-                <section aria-labelledby="bio">
-                    <h2 id="bio" class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4 tracking-tight">Adri M. <span class="text-sm font-normal text-gray-400 align-middle">(they/them)</span></h2>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Adri is a master's student at the UBC <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Institute for Gender, Race, Sexuality and Social Justice</a> (GRSJ). JOURNEYWAYS is the current focus of their research: a board game and a digital game in development, used as research instruments to study how people self-identify when given a narrative-driven, safe, collaborative play space.
+    <!-- ===== Hero: editorial split (research photo as anchor, asymmetric grid) ===== -->
+    <section class="relative pt-24 md:pt-32 pb-12 md:pb-16 md:min-h-[60vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-center">
+                <div class="col-span-12 md:col-span-7">
+                    <div class="flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                            <path d="M22 10v6"/>
+                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+                        </svg>
+                        <span>About &middot; UBC GRSJ research</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-[1.05] mb-3 md:mb-4">About the researcher</h1>
+                    <p class="text-base md:text-lg italic font-light text-gray-300 mb-8 md:mb-10 max-w-prose">The person and the program behind JOURNEYWAYS.</p>
+                    <p class="text-base md:text-lg text-gray-400 leading-relaxed max-w-prose">
+                        A master's research project at the UBC Institute for Gender, Race, Sexuality and Social Justice, exploring identity through narrative and collaborative play.
                     </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        The project was awarded the Canada Graduate Research Scholarship: Master's (CGS-M) in April 2026, and was previously selected for UBC's Critical Play Fellowship in September 2025. Three playtests have been held so far, with the formal research phase opening through 2026.
-                    </p>
-                </section>
-
-                <section aria-labelledby="on-the-project">
-                    <h2 id="on-the-project" class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4 tracking-tight">On the project</h2>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "Knowledge needs to be shared with the people who need it the most." <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-
-                    <p class="text-gray-300 leading-relaxed mt-6 mb-4">
-                        JOURNEYWAYS began as a videogame concept. Soon after, the design shifted to a physical board game, and eventually to both: physical presence should not be a limiting factor to participate, especially given the project's commitment to exploring as diverse a range of identities as possible, but the sensorial experience of physical game components and presence should be honoured as well.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        JOURNEYWAYS was first conceived as a research tool, an alternative to sterile semi-structured interviews and a way to offer people a safe space to talk and elaborate their identities. It is a game. The players are just playing. <a href="design.html#identity" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Everything is valid.</a> <a href="design.html#no-winning" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">There is no winning or losing.</a> These precepts together try to build an environment where players can feel they can lower their guard, where they are not being judged or categorized. They are just telling any story they want to tell, <a href="design.html#expression" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">in any way they want to tell it</a>.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The whole project will be <a href="design.html#shared" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">released openly</a>: rules, components, mechanics, and digital code. Anyone wanting to create their own version will be free to do so and encouraged to share it back. No siloing in.
-                    </p>
-                </section>
-
-                <!-- "Get in touch" section hidden until a direct contact channel is functional. Restore by uncommenting. -->
-                <!--
-                <section aria-labelledby="contact" class="bg-gray-700/60 border border-gray-600 rounded p-6 md:p-7 text-center">
-                    <h2 id="contact" class="text-xl md:text-2xl font-semibold text-yellow-400 mb-3 tracking-tight">Get in touch</h2>
-                    <p class="text-gray-300 leading-relaxed">
-                        A direct contact channel is being set up. Until then, Adri can be reached through UBC GRSJ.
-                    </p>
-                </section>
-                -->
-
-            </article>
+                </div>
+                <div class="col-span-12 md:col-span-5">
+                    <figure class="hero-mask m-0">
+                        <img src="img/adri_self_portrait.webp" alt="Stencil-style illustrated self-portrait of Adri M. on diagonal pastel bands of yellow, white, lavender, and charcoal, evoking the colors of the nonbinary pride flag." class="w-full h-auto block" loading="lazy">
+                    </figure>
+                </div>
+            </div>
         </div>
     </section>
+
+    <!-- ===== Researcher (Chapter I) ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="bio">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Researcher</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="bio" class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-5">Adri M. &middot; they / them</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        Adri is a master's student at the UBC <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Institute for Gender, Race, Sexuality and Social Justice</a> (GRSJ). JOURNEYWAYS is the current focus of their research: a board game and a digital game in development, used as research instruments to study how people self-identify when given a narrative-driven, safe, collaborative play space.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The project was awarded the Canada Graduate Research Scholarship: Master's (CGS-M) in April 2026, and was previously selected for UBC's Critical Play Fellowship in September 2025. Three playtests have been held so far, with the formal research phase opening through 2026.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Project (Chapter II) ===== -->
+    <section class="pt-8 md:pt-12 pb-16 md:pb-24 border-t border-gray-700/40" aria-labelledby="on-the-project">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Project</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="on-the-project" class="sr-only">On the project</h2>
+                    <blockquote class="mb-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;Knowledge needs to be shared with the people who need it the most.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        JOURNEYWAYS began as a videogame concept. Soon after, the design shifted to a physical board game, and eventually to both: physical presence should not be a limiting factor to participate, especially given the project's commitment to exploring as diverse a range of identities as possible, but the sensorial experience of physical game components and presence should be honoured as well.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        JOURNEYWAYS was first conceived as a research tool, an alternative to sterile semi-structured interviews and a way to offer people a safe space to talk and elaborate their identities. It is a game. The players are just playing. <a href="design.html#identity" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Everything is valid.</a> <a href="design.html#no-winning" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">There is no winning or losing.</a> These precepts together try to build an environment where players can feel they can lower their guard, where they are not being judged or categorized. They are just telling any story they want to tell, <a href="design.html#expression" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">in any way they want to tell it</a>.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The whole project will be <a href="design.html#shared" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">released openly</a>: rules, components, mechanics, and digital code. Anyone wanting to create their own version will be free to do so and encouraged to share it back. No siloing in.
+                    </p>
+
+                    <!-- "Get in touch" section hidden until a direct contact channel is functional. Restore by uncommenting and updating to match the editorial spine pattern. -->
+                    <!--
+                    <section aria-labelledby="contact" class="mt-12 pt-8 border-t border-gray-700/40">
+                        <h2 id="contact" class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Get in touch</h2>
+                        <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                            A direct contact channel is being set up. Until then, Adri can be reached through UBC GRSJ.
+                        </p>
+                    </section>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer -->
