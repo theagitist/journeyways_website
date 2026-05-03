@@ -167,11 +167,14 @@ function injectCTA() {
             '</div></section>';
     } else if (isIndex) {
         container.innerHTML =
-            '<section class="py-12 bg-amber-400 text-black">' +
-            '<div class="max-w-4xl mx-auto text-center px-4">' +
-            '<h2 class="text-2xl md:text-3xl font-semibold mb-3">Ready to Begin?</h2>' +
-            '<p class="text-base md:text-lg mb-6 max-w-2xl mx-auto">Experience the journey of identity through the physical board game.</p>' +
-            '<a href="boardgame.html" class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">Board Game: Rules &amp; Downloads</a>' +
+            '<section class="py-20 md:py-24 border-t border-gray-700/40">' +
+            '<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">' +
+            '<p class="text-xs uppercase tracking-[0.25em] text-gray-400 mb-5">Begin</p>' +
+            '<h2 class="text-2xl md:text-3xl text-gray-100 font-light leading-snug mb-10">Step into the game and let the journey unfold.</h2>' +
+            '<a href="boardgame.html" class="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-7 py-3 transition-colors text-sm tracking-[0.2em] uppercase">' +
+            '<span>How to play</span>' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>' +
+            '</a>' +
             '</div></section>';
     }
 }

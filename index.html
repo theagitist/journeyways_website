@@ -52,8 +52,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/tailwind.css?v=5">
-    <link rel="stylesheet" href="css/styles.css?v=9">
+    <link rel="stylesheet" href="css/tailwind.css?v=9">
+    <link rel="stylesheet" href="css/styles.css?v=13">
 </head>
 <body class="bg-gray-800 text-white">
     <!-- Navigation -->
@@ -93,146 +93,304 @@
     </nav>
 
     <main class="home">
-    <aside role="region" aria-label="Site announcements">
-    <!-- Marquee Announcement -->
-    <div class="marquee-container mt-16 overflow-hidden">
-        <div class="marquee-content">
-            <span class="marquee-text text-sm">(April 2026) Project awarded the Canada Graduate Research Scholarship: Master&rsquo;s (CGS-M).</span>
-            <span class="marquee-text text-sm">(October 2025) JOURNEYWAYS featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">ProtoConBC</a>.</span>
-            <span class="marquee-text text-sm">(September 2025) Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-800">UBC's Critical Play Fellowship</a>.</span>
-            <span class="marquee-text text-sm">Videogame version <a href="videogame.html" class="underline underline-offset-2">under development</a>.</span>
-        </div>
-    </div>
-    </aside>
 
-    <!-- About Section -->
-    <section class="pt-10 pb-14 bg-gray-800">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="text-center">
-                <h1 class="main-title script-font font-bold text-yellow-400 pt-2 pb-4 text-center text-7xl md:text-8xl leading-none">Journeyways</h1>
-                <p class="text-base md:text-lg text-gray-200 max-w-2xl mx-auto mt-4 mb-3 leading-relaxed">
-                    You don't play to win; you play to unfold.<br/>
-                    You choose, and you uncover.
-                </p>
-                <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
-                    Explore selfhood not with labels, but with stories, memory, and meaning. Whether solo or as part of a group, each session reveals a story made<br/>
-                    only by your presence.
-                </p>
-            </div>
-
-            <h2 class="sr-only">Key features of JOURNEYWAYS</h2>
-            <!-- Key Features Grid -->
-            <div class="grid md:grid-cols-3 gap-6 mb-14">
-                <button type="button" data-open-modal="modal-no-fixed-roles" aria-haspopup="dialog" class="feature-card bg-gray-700/60 border border-gray-600 rounded p-6 text-center text-white hover:border-yellow-400 focus:border-yellow-400 focus:outline-none transition-colors cursor-pointer">
-                    <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="img/no_fixed_roles.jpg" alt="Illustration for the No Fixed Roles feature: identity is discovered through play rather than predetermined roles in the JOURNEYWAYS board game." class="w-full h-full object-cover">
+    <!-- ===== Hero: editorial split (logo as anchor, asymmetric grid) ===== -->
+    <section class="relative pt-24 md:pt-32 pb-12 md:pb-16 md:min-h-[60vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-center">
+                <div class="col-span-12 md:col-span-7">
+                    <div class="flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                            <path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"/>
+                            <path d="M22 10v6"/>
+                            <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/>
+                        </svg>
+                        <span>A research project &middot; UBC GRSJ</span>
                     </div>
-                    <h3 class="text-base font-semibold mb-2 tracking-wide">No Fixed Roles</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">Discover your character through play, not predetermined archetypes.</p>
-                    <p class="text-xs text-yellow-400 mt-3 tracking-wide">Read more</p>
-                </button>
-
-                <button type="button" data-open-modal="modal-collaborative" aria-haspopup="dialog" class="feature-card bg-gray-700/60 border border-gray-600 rounded p-6 text-center text-white hover:border-yellow-400 focus:border-yellow-400 focus:outline-none transition-colors cursor-pointer">
-                    <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="img/collaborative_storytelling.jpg" alt="Collaborative storytelling in JOURNEYWAYS: players co-create narratives that reveal deeper truths about identity." class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-base font-semibold mb-2 tracking-wide">Collaborative Storytelling</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">Co-create narratives that reveal deeper truths about identity.</p>
-                    <p class="text-xs text-yellow-400 mt-3 tracking-wide">Read more</p>
-                </button>
-
-                <button type="button" data-open-modal="modal-continuous-growth" aria-haspopup="dialog" class="feature-card bg-gray-700/60 border border-gray-600 rounded p-6 text-center text-white hover:border-yellow-400 focus:border-yellow-400 focus:outline-none transition-colors cursor-pointer">
-                    <div class="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
-                        <img src="img/continuous_growth.jpg" alt="Continuous growth in JOURNEYWAYS: each session builds on the last, creating an evolving journey of identity exploration." class="w-full h-full object-cover">
-                    </div>
-                    <h3 class="text-base font-semibold mb-2 tracking-wide">Continuous Growth</h3>
-                    <p class="text-sm text-gray-300 leading-relaxed">Each session builds upon the last, creating an evolving journey.</p>
-                    <p class="text-xs text-yellow-400 mt-3 tracking-wide">Read more</p>
-                </button>
-            </div>
-
-            <!-- Feature modals -->
-            <dialog id="modal-no-fixed-roles" class="feature-modal bg-gray-800 text-white rounded p-0 max-w-lg w-full border border-gray-600 backdrop:bg-black/70" aria-labelledby="modal-no-fixed-roles-title">
-                <div class="p-6 md:p-7">
-                    <h3 id="modal-no-fixed-roles-title" class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4 tracking-tight">No Fixed Roles</h3>
-                    <p class="text-gray-300 leading-relaxed mb-3">
-                        There are no character classes, races, or archetypes to pick from before you sit down. You arrive as yourself, or as someone you invent. Realistic, fantastic, simple, layered: any of these is a valid starting point.
+                    <h1 class="main-title script-font font-bold text-yellow-400 text-7xl md:text-8xl leading-[0.95] tracking-tight mb-6 md:mb-8">Journeyways</h1>
+                    <p class="text-lg md:text-xl text-gray-200 leading-relaxed mb-3 max-w-prose">
+                        You don't play to win; you play to unfold.<br/>You choose, and you uncover.
                     </p>
-                    <p class="text-gray-300 leading-relaxed mb-5">
-                        Identity is built through play, not selected from a list.
+                    <p class="text-base md:text-lg text-gray-400 leading-relaxed mb-10 max-w-prose">
+                        Explore selfhood not with labels, but with stories, memory, and meaning. Whether solo or as part of a group, each session reveals a story made only by your presence.
                     </p>
-                    <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                        <a href="design.html#identity" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Design philosophy: Identity is uncovered</a>
-                        <a href="about.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">About the project</a>
-                    </div>
-                    <div class="flex justify-end mt-6">
-                        <button type="button" data-close-modal class="bg-black text-gray-200 px-5 py-2 rounded hover:bg-gray-700 transition-colors text-sm">Close</button>
-                    </div>
+                    <a href="design.html" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 underline underline-offset-[6px] decoration-1 transition-colors text-sm uppercase tracking-[0.2em]">
+                        <span>Design philosophy</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
                 </div>
-            </dialog>
-
-            <dialog id="modal-collaborative" class="feature-modal bg-gray-800 text-white rounded p-0 max-w-lg w-full border border-gray-600 backdrop:bg-black/70" aria-labelledby="modal-collaborative-title">
-                <div class="p-6 md:p-7">
-                    <h3 id="modal-collaborative-title" class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4 tracking-tight">Collaborative Storytelling</h3>
-                    <p class="text-gray-300 leading-relaxed mb-3">
-                        A session tends to develop into a dialogue. Players tell their own stories and respond to others'. Cards prompt encounters, movement, interaction and introspection. Tiles place you on a shared map. Group cards invite the whole table to weave threads together.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-5">
-                        There is no single narrator. The story belongs to everyone at the table.
-                    </p>
-                    <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                        <a href="design.html#combination" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Design philosophy: A mirror in a cave</a>
-                        <a href="boardgame.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">How to play</a>
-                    </div>
-                    <div class="flex justify-end mt-6">
-                        <button type="button" data-close-modal class="bg-black text-gray-200 px-5 py-2 rounded hover:bg-gray-700 transition-colors text-sm">Close</button>
-                    </div>
+                <div class="col-span-12 md:col-span-5">
+                    <figure class="hero-mask m-0">
+                        <img src="img/og-card.webp" alt="Watercolor of two profiles facing each other; warm tones on the left, cool tones on the right, with a landscape of mountains and water unfolding in the negative space between them. The JOURNEYWAYS visual identity." class="w-full h-auto block">
+                    </figure>
                 </div>
-            </dialog>
-
-            <dialog id="modal-continuous-growth" class="feature-modal bg-gray-800 text-white rounded p-0 max-w-lg w-full border border-gray-600 backdrop:bg-black/70" aria-labelledby="modal-continuous-growth-title">
-                <div class="p-6 md:p-7">
-                    <h3 id="modal-continuous-growth-title" class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4 tracking-tight">Continuous Growth</h3>
-                    <p class="text-gray-300 leading-relaxed mb-3">
-                        Sessions can stand alone, or they can continue. Players bring a character into a future session, open a chapter two, or simply pick up where they left off. There is no formal mechanic for continuity. What carries is the story.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-5">
-                        Solo and group play share the same character; the digital version supports the same migration.
-                    </p>
-                    <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm">
-                        <a href="design.html#expression" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Design philosophy: Expression in any modality</a>
-                        <a href="about.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">About the project</a>
-                    </div>
-                    <div class="flex justify-end mt-6">
-                        <button type="button" data-close-modal class="bg-black text-gray-200 px-5 py-2 rounded hover:bg-gray-700 transition-colors text-sm">Close</button>
-                    </div>
-                </div>
-            </dialog>
-
-            <h2 class="sr-only">Gameplay features</h2>
-            <!-- Gameplay Features -->
-            <div class="grid md:grid-cols-2 gap-10 items-center">
-                <div>
-                    <h3 class="text-xl font-semibold mb-3">Solo or Group Play</h3>
-                    <p class="text-gray-300 mb-6 leading-relaxed">
-                        Whether you're exploring alone or with friends, JOURNEYWAYS adapts to your preferred style of play.
-                        Solo sessions offer deep introspection, while group play creates rich, collaborative narratives.
-                    </p>
-
-                    <h3 class="text-xl font-semibold mb-3">Meaningful Choices</h3>
-                    <p class="text-gray-300 leading-relaxed">
-                        Every decision in JOURNEYWAYS carries weight. Your choices don't just affect the game; they reveal
-                        aspects of yourself you might not have known existed.
-                    </p>
-                </div>
-
-                <figure class="m-0 max-w-sm mx-auto">
-                    <img src="img/boardgame_components.jpg" alt="JOURNEYWAYS board game components and setup for collaborative identity exploration: tiles, cards, tokens, and player booklets arranged for play." class="w-full rounded">
-                    <figcaption class="text-xs text-gray-400 text-center mt-3 tracking-wide uppercase">Game components and board setup</figcaption>
-                </figure>
             </div>
         </div>
     </section>
+
+    <!-- ===== Editorial chapter cards (Swiss-luxury hairline grid) ===== -->
+    <section class="py-12 md:py-16 border-t border-gray-700/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="sr-only">Key features of JOURNEYWAYS</h2>
+            <div class="grid md:grid-cols-3 gap-px bg-gray-700/40 border border-gray-700/40">
+                <button type="button" data-open-modal="modal-no-fixed-roles" aria-haspopup="dialog" class="feature-card group relative bg-gray-800 focus:outline-none focus:bg-gray-700/30 transition-colors p-10 md:p-12 text-left flex flex-col min-h-[360px]">
+                    <header class="flex items-start justify-between mb-14">
+                        <span class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase">01 / 03</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-500 group-hover:text-yellow-400 transition-colors" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>
+                        </svg>
+                    </header>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Identity</p>
+                    <h3 class="text-xl md:text-2xl font-medium text-white mb-5 tracking-tight leading-[1.15]">No Fixed Roles</h3>
+                    <p class="text-sm text-gray-400 leading-[1.75] flex-1">Discover your character through play, not predetermined archetypes.</p>
+                    <footer class="flex items-center gap-3 mt-12 pt-5 border-t border-gray-700/40 text-[10px] uppercase tracking-[0.3em] text-gray-500 group-hover:text-yellow-400 transition-colors">
+                        <span>Read</span>
+                        <span class="flex-1 h-px bg-current opacity-25"></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </footer>
+                </button>
+
+                <button type="button" data-open-modal="modal-collaborative" aria-haspopup="dialog" class="feature-card group relative bg-gray-800 focus:outline-none focus:bg-gray-700/30 transition-colors p-10 md:p-12 text-left flex flex-col min-h-[360px]">
+                    <header class="flex items-start justify-between mb-14">
+                        <span class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase">02 / 03</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-500 group-hover:text-yellow-400 transition-colors" aria-hidden="true">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </header>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Voice</p>
+                    <h3 class="text-xl md:text-2xl font-medium text-white mb-5 tracking-tight leading-[1.15]">Collaborative Storytelling</h3>
+                    <p class="text-sm text-gray-400 leading-[1.75] flex-1">Co-create narratives that reveal deeper truths about identity.</p>
+                    <footer class="flex items-center gap-3 mt-12 pt-5 border-t border-gray-700/40 text-[10px] uppercase tracking-[0.3em] text-gray-500 group-hover:text-yellow-400 transition-colors">
+                        <span>Read</span>
+                        <span class="flex-1 h-px bg-current opacity-25"></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </footer>
+                </button>
+
+                <button type="button" data-open-modal="modal-continuous-growth" aria-haspopup="dialog" class="feature-card group relative bg-gray-800 focus:outline-none focus:bg-gray-700/30 transition-colors p-10 md:p-12 text-left flex flex-col min-h-[360px]">
+                    <header class="flex items-start justify-between mb-14">
+                        <span class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase">03 / 03</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-500 group-hover:text-yellow-400 transition-colors" aria-hidden="true">
+                            <path d="M7 20h10"/>
+                            <path d="M10 20c5.5-2.5.8-6.4 3-10"/>
+                            <path d="M9.5 9.4c1.1.8 1.8 2.2 2.3 3.7-2 .4-3.5.4-4.8-.3-1.2-.6-2.3-1.9-3-4.2 2.8-.5 4.4 0 5.5.8z"/>
+                            <path d="M14.1 6a7 7 0 0 0-1.1 4c1.9-.1 3.3-.6 4.3-1.4 1-1 1.6-2.3 1.7-4.6-2.7.1-4 1-4.9 2z"/>
+                        </svg>
+                    </header>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Continuity</p>
+                    <h3 class="text-xl md:text-2xl font-medium text-white mb-5 tracking-tight leading-[1.15]">Continuous Growth</h3>
+                    <p class="text-sm text-gray-400 leading-[1.75] flex-1">Each session builds upon the last, creating an evolving journey.</p>
+                    <footer class="flex items-center gap-3 mt-12 pt-5 border-t border-gray-700/40 text-[10px] uppercase tracking-[0.3em] text-gray-500 group-hover:text-yellow-400 transition-colors">
+                        <span>Read</span>
+                        <span class="flex-1 h-px bg-current opacity-25"></span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </footer>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature modals (Swiss-luxury, matched to chapter cards) -->
+    <dialog id="modal-no-fixed-roles" class="feature-modal bg-gray-800 text-white p-0 max-w-xl w-full border border-gray-700/60 backdrop:bg-black/80" aria-labelledby="modal-no-fixed-roles-title">
+        <div class="p-10 md:p-12">
+            <header class="flex items-start justify-between mb-12">
+                <span class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase">01 / 03</span>
+                <button type="button" data-close-modal aria-label="Close" class="text-gray-500 hover:text-yellow-400 transition-colors -mt-1 -mr-1 p-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </header>
+            <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Identity</p>
+            <h3 id="modal-no-fixed-roles-title" class="text-2xl md:text-3xl font-medium text-white mb-6 tracking-tight leading-[1.15]">No Fixed Roles</h3>
+            <p class="text-gray-300 text-base leading-[1.75] mb-4">There are no character classes, races, or archetypes to pick from before you sit down. You arrive as yourself, or as someone you invent. Realistic, fantastic, simple, layered: any of these is a valid starting point.</p>
+            <p class="text-gray-300 text-base leading-[1.75] mb-10">Identity is built through play, not selected from a list.</p>
+            <footer class="pt-6 border-t border-gray-700/40">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-4">Read further</p>
+                <div class="flex flex-col gap-3 text-sm">
+                    <a href="design.html#identity" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors group">
+                        <span>Design philosophy: Identity is uncovered</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
+                    <a href="about.html" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors group">
+                        <span>About the project</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </dialog>
+
+    <dialog id="modal-collaborative" class="feature-modal bg-gray-800 text-white p-0 max-w-xl w-full border border-gray-700/60 backdrop:bg-black/80" aria-labelledby="modal-collaborative-title">
+        <div class="p-10 md:p-12">
+            <header class="flex items-start justify-between mb-12">
+                <span class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase">02 / 03</span>
+                <button type="button" data-close-modal aria-label="Close" class="text-gray-500 hover:text-yellow-400 transition-colors -mt-1 -mr-1 p-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </header>
+            <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Voice</p>
+            <h3 id="modal-collaborative-title" class="text-2xl md:text-3xl font-medium text-white mb-6 tracking-tight leading-[1.15]">Collaborative Storytelling</h3>
+            <p class="text-gray-300 text-base leading-[1.75] mb-4">A session tends to develop into a dialogue. Players tell their own stories and respond to others'. Cards prompt encounters, movement, interaction and introspection. Tiles place you on a shared map. Group cards invite the whole table to weave threads together.</p>
+            <p class="text-gray-300 text-base leading-[1.75] mb-10">There is no single narrator. The story belongs to everyone at the table.</p>
+            <footer class="pt-6 border-t border-gray-700/40">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-4">Read further</p>
+                <div class="flex flex-col gap-3 text-sm">
+                    <a href="design.html#combination" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors group">
+                        <span>Design philosophy: A mirror in a cave</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
+                    <a href="boardgame.html" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors group">
+                        <span>How to play</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </dialog>
+
+    <dialog id="modal-continuous-growth" class="feature-modal bg-gray-800 text-white p-0 max-w-xl w-full border border-gray-700/60 backdrop:bg-black/80" aria-labelledby="modal-continuous-growth-title">
+        <div class="p-10 md:p-12">
+            <header class="flex items-start justify-between mb-12">
+                <span class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase">03 / 03</span>
+                <button type="button" data-close-modal aria-label="Close" class="text-gray-500 hover:text-yellow-400 transition-colors -mt-1 -mr-1 p-1">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </header>
+            <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Continuity</p>
+            <h3 id="modal-continuous-growth-title" class="text-2xl md:text-3xl font-medium text-white mb-6 tracking-tight leading-[1.15]">Continuous Growth</h3>
+            <p class="text-gray-300 text-base leading-[1.75] mb-4">Sessions can stand alone, or they can continue. Players bring a character into a future session, open a chapter two, or simply pick up where they left off. There is no formal mechanic for continuity. What carries is the story.</p>
+            <p class="text-gray-300 text-base leading-[1.75] mb-10">Solo and group play share the same character; the digital version supports the same migration.</p>
+            <footer class="pt-6 border-t border-gray-700/40">
+                <p class="text-[10px] uppercase tracking-[0.3em] text-gray-500 mb-4">Read further</p>
+                <div class="flex flex-col gap-3 text-sm">
+                    <a href="design.html#expression" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors group">
+                        <span>Design philosophy: Expression in any modality</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
+                    <a href="about.html" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 transition-colors group">
+                        <span>About the project</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true">
+                            <path d="M7 7h10v10"/>
+                            <path d="M7 17 17 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </footer>
+        </div>
+    </dialog>
+
+    <!-- ===== Body copy: Solo / Choices (3+9 editorial grid with chapter stamp) ===== -->
+    <section class="py-16 md:py-24 border-t border-gray-700/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12">
+                <aside class="col-span-12 md:col-span-3">
+                    <p class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase mb-3">II</p>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80">On gameplay</p>
+                </aside>
+                <div class="col-span-12 md:col-span-8 md:col-start-5 space-y-12 md:space-y-14">
+                    <h2 class="sr-only">Gameplay features</h2>
+                    <article>
+                        <h3 class="text-xl md:text-2xl font-medium mb-5 tracking-tight leading-[1.15]">Solo or group play</h3>
+                        <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                            Whether you're exploring alone or with friends, JOURNEYWAYS adapts to your preferred style of play. Solo sessions offer deep introspection, while group play creates rich, collaborative narratives.
+                        </p>
+                    </article>
+                    <article>
+                        <h3 class="text-xl md:text-2xl font-medium mb-5 tracking-tight leading-[1.15]">Meaningful choices</h3>
+                        <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                            Every decision in JOURNEYWAYS carries weight. Your choices don't just affect the game; they reveal aspects of yourself you might not have known existed.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Parallax components panel (fixed-attachment background, overlay caption) ===== -->
+    <section class="parallax-components relative min-h-[45vh] md:min-h-[55vh] flex items-end" aria-label="Game components and board setup">
+        <div class="absolute inset-0 bg-gradient-to-t from-gray-900/85 via-gray-900/30 to-transparent" aria-hidden="true"></div>
+        <div class="relative w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 pb-10 md:pb-14">
+            <p class="text-[10px] uppercase tracking-[0.3em] text-gray-300/90 mb-3">Plate &middot; 01</p>
+            <p class="text-base md:text-lg text-gray-100 max-w-md leading-relaxed">Tiles, cards, tokens, and player booklets, arranged for a session.</p>
+        </div>
+    </section>
+
+    <!-- ===== Recent (3+9 editorial grid with chapter stamp) ===== -->
+    <aside role="region" aria-label="Recent project news" class="py-16 md:py-24 border-t border-gray-700/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12">
+                <header class="col-span-12 md:col-span-3">
+                    <p class="text-[10px] tabular-nums tracking-[0.3em] text-gray-500 uppercase mb-3">III</p>
+                    <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 inline-flex items-center gap-2">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                            <path d="M4 22h16a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v16a2 2 0 0 1-2 2Zm0 0a2 2 0 0 1-2-2v-9c0-1.1.9-2 2-2h2"/>
+                            <path d="M18 14h-8"/>
+                            <path d="M15 18h-5"/>
+                            <path d="M10 6h8v4h-8V6Z"/>
+                        </svg>
+                        <span>Recent</span>
+                    </p>
+                </header>
+                <ul class="col-span-12 md:col-span-8 md:col-start-5 divide-y divide-gray-700/40 -mt-5 md:mt-0">
+                    <li class="py-5 flex flex-col md:flex-row md:items-baseline md:gap-6">
+                        <span class="text-[10px] tabular-nums text-gray-500 uppercase tracking-[0.3em] md:w-32 shrink-0 mb-1 md:mb-0">April 2026</span>
+                        <p class="text-gray-200 leading-[1.7] text-base">Project awarded the Canada Graduate Research Scholarship: Master's (CGS-M).</p>
+                    </li>
+                    <li class="py-5 flex flex-col md:flex-row md:items-baseline md:gap-6">
+                        <span class="text-[10px] tabular-nums text-gray-500 uppercase tracking-[0.3em] md:w-32 shrink-0 mb-1 md:mb-0">October 2025</span>
+                        <p class="text-gray-200 leading-[1.7] text-base">JOURNEYWAYS featured on <a href="https://www.protoconbc.ca/about" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">ProtoConBC</a>.</p>
+                    </li>
+                    <li class="py-5 flex flex-col md:flex-row md:items-baseline md:gap-6">
+                        <span class="text-[10px] tabular-nums text-gray-500 uppercase tracking-[0.3em] md:w-32 shrink-0 mb-1 md:mb-0">September 2025</span>
+                        <p class="text-gray-200 leading-[1.7] text-base">Adri M and JOURNEYWAYS part of <a href="https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">UBC's Critical Play Fellowship</a>.</p>
+                    </li>
+                    <li class="py-5 flex flex-col md:flex-row md:items-baseline md:gap-6">
+                        <span class="text-[10px] tabular-nums text-gray-500 uppercase tracking-[0.3em] md:w-32 shrink-0 mb-1 md:mb-0">In progress</span>
+                        <p class="text-gray-200 leading-[1.7] text-base">Videogame version <a href="videogame.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">under development</a>.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </aside>
 
     <div id="cta-container"></div>
     </main>
@@ -261,7 +419,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=8" defer></script>
+    <script src="js/main.js?v=11" defer></script>
     <script>
         // Feature-card modals: open via [data-open-modal], close via [data-close-modal] or backdrop click.
         document.addEventListener('DOMContentLoaded', function () {

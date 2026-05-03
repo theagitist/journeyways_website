@@ -130,6 +130,35 @@ body {
 .hero-bg {
     background-image: url('../img/logo_bg_only.jpg');
 }
+
+/* Homepage hero: soft radial mask on the watercolor logo so it bleeds into the page
+   instead of sitting in a hard rectangle. */
+.hero-mask {
+    -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 92%);
+            mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 55%, rgba(0,0,0,0) 92%);
+}
+
+/* Homepage components panel: fixed-attachment parallax on desktop, falls back to
+   scroll on mobile (iOS Safari renders fixed backgrounds poorly). The image is
+   the boardgame_components webp; an overlay gradient at the bottom gives the
+   caption legibility. */
+.parallax-components {
+    background-image: url('../img/boardgame_components.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+}
+@media (min-width: 768px) {
+    .parallax-components {
+        background-attachment: fixed;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .parallax-components {
+        background-attachment: scroll;
+    }
+}
 .fade-in {
     animation: fadeIn 1s ease-in;
 }
