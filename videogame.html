@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="JOURNEYWAYS is a master's research project at UBC GRSJ. The digital game is under development, designed for solo and group play with privacy by design (no camera) and a trilingual launch (English, Spanish, French).">
-    <meta name="keywords" content="JOURNEYWAYS, digital game, video game, identity exploration, collaborative storytelling, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, interactive storytelling, game development">
+    <meta name="keywords" content="JOURNEYWAYS, digital game, video game, identity exploration, collaborative storytelling, real-time multiplayer, narrative game, web game, UBC GRSJ research, trilingual game, privacy by design, alpha development">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
     
@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.journeyways.ca/videogame.html">
     <meta property="og:title" content="JOURNEYWAYS | The Digital Game">
-    <meta property="og:description" content="JOURNEYWAYS is a UBC-rooted research project. The digital game is in development: a secular, gender-neutral space for forced migrants and gender-diverse players to explore selfhood through play.">
+    <meta property="og:description" content="The JOURNEYWAYS digital version, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual interface (EN/ES/FR), privacy by design, web-based with no install required.">
     <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
     <meta property="og:site_name" content="JOURNEYWAYS">
     
@@ -20,7 +20,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.journeyways.ca/videogame.html">
     <meta name="twitter:title" content="JOURNEYWAYS | The Digital Game">
-    <meta name="twitter:description" content="JOURNEYWAYS is a UBC-rooted research project. The digital game is in development: a secular, gender-neutral space for forced migrants and gender-diverse players to explore selfhood through play.">
+    <meta name="twitter:description" content="The JOURNEYWAYS digital version, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual (EN/ES/FR), privacy by design, web-based.">
     <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.jpg">
     
     <!-- Canonical URL -->
@@ -38,7 +38,7 @@
             "@context": "https://schema.org",
             "@type": "VideoGame",
             "name": "JOURNEYWAYS (Digital)",
-            "description": "The digital version of JOURNEYWAYS, currently in development. Designed for solo and group play with privacy by design (no camera) and a trilingual launch (English, Spanish, French).",
+            "description": "The digital version of JOURNEYWAYS, in active development at v0.4.1-alpha. Designed for solo and group play with privacy by design (no camera) and a trilingual launch (English, Spanish, French).",
             "url": "https://www.journeyways.ca/videogame.html",
             "image": "https://www.journeyways.ca/img/og-card.jpg",
             "applicationCategory": "GameApplication",
@@ -52,6 +52,8 @@
                 "fr"
             ],
             "operatingSystem": "Web",
+            "softwareVersion": "0.4.1-alpha",
+            "genre": "Narrative, Identity Exploration, Collaborative Storytelling",
             "author": {
                 "@type": "Person",
                 "name": "Adri M.",
@@ -98,13 +100,16 @@
     </nav>
 
     <main class="main-content">
-        <!-- Content Section -->
+        <!-- Hero -->
         <section class="pt-24 pb-12">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-6 tracking-tight">The Digital Journey Begins</h1>
+                    <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-6 tracking-tight">The Digital Version</h1>
                     <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                        After an extensive design and conceptualization phase, the JOURNEYWAYS videogame is officially under active development.<br/><br/>This digital version carries the same commitment to identity exploration and collaborative narrative into an interactive medium, allowing players to participate regardless of geographical location.<br/><br/>Further updates will be shared as development progresses.
+                        JOURNEYWAYS is being built as a digital game in parallel with the board game. Same design philosophy, same five card categories, same modular map, same private journal. Different medium, same commitment to identity exploration and collaborative narrative.
+                    </p>
+                    <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mt-5 leading-relaxed">
+                        The digital version exists to remove barriers, not to replace the table. Players can participate from anywhere; sessions span geographies; there is no camera support so the focus stays on words and stories. Solo and group play, real-time multiplayer, trilingual at launch in English, Spanish, and French.
                     </p>
                 </div>
             </div>
@@ -116,21 +121,75 @@
                 <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-2 tracking-tight">Development Log</h2>
                 <p class="text-gray-400 text-sm mb-6">Progress and milestones for the digital version.</p>
                 <div class="flex flex-wrap items-center gap-4 mb-10">
-                    <span class="devlog-badge" aria-label="Current development version">Version: v0.3.5-alpha</span>
+                    <span class="devlog-badge" aria-label="Current development version">Version: v0.4.1-alpha</span>
+                    <span class="devlog-badge" aria-label="Latest tag date">Tagged April 2026</span>
                 </div>
-                <h3 class="text-lg font-semibold text-gray-300 mb-4">Recent Milestones</h3>
+
+                <h3 class="text-lg font-semibold text-gray-300 mb-4">In this version</h3>
+                <ul class="space-y-4 list-none p-0 m-0 mb-12">
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Real-time multiplayer</div>
+                        <div class="devlog-card-desc">Lobby, dashboard, and play view show who is present. Collaborative canvas synchronization keeps everyone's view in step.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Modular map and the five-color card system</div>
+                        <div class="devlog-card-desc">The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class="card-red">Red</span> Encounters, <span class="card-green">Green</span> Movement, <span class="card-blue">Blue</span> Reflections, <span class="card-black">Black</span> Countdown, <span class="card-purple">Purple</span> Group actions.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Private journal with sketch preview</div>
+                        <div class="devlog-card-desc">Per-player journal: write entries, sketch with the canvas tool, browse previous entries with thumbnail previews.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Character Origins as PDF</div>
+                        <div class="devlog-card-desc">Players can export their character creation page as a US Letter PDF for printing or archival.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Trilingual interface</div>
+                        <div class="devlog-card-desc">English, Spanish, and French at launch. User-created content stays in the language the user wrote it; nothing gets auto-translated.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Privacy by design</div>
+                        <div class="devlog-card-desc">No camera support. Argon2id password hashing, Cloudflare Turnstile verification, journals scoped per session. All data hosted in Canada.</div>
+                    </li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-gray-300 mb-4">Recent milestones</h3>
                 <ul class="space-y-4 list-none p-0 m-0">
                     <li class="devlog-card">
-                        <div class="devlog-card-title">Identity Infrastructure Implementation</div>
-                        <div class="devlog-card-desc">Finalizing the architecture for Journeys and participant profile management.</div>
+                        <div class="devlog-card-title">Multiplayer presence</div>
+                        <div class="devlog-card-desc">Lobby, JOURNEY view, and dashboard now show who is in the room and who is currently playing.</div>
                     </li>
                     <li class="devlog-card">
-                        <div class="devlog-card-title">Core System Foundations</div>
-                        <div class="devlog-card-desc">Establishing the underlying data structures that support user agency and data privacy.</div>
+                        <div class="devlog-card-title">Journal log redesign</div>
+                        <div class="devlog-card-desc">Per-entry name, compact edit affordance, sketch preview thumbnails on each row.</div>
                     </li>
                     <li class="devlog-card">
-                        <div class="devlog-card-title">Technical Framework</div>
-                        <div class="devlog-card-desc">Setting up the foundational game loop to prepare for future interactive storytelling nodes.</div>
+                        <div class="devlog-card-title">Play-view layout overhaul</div>
+                        <div class="devlog-card-desc">Site navigation moved into a hamburger inside the journal panel. The canvas now reaches the top of the viewport. The journal panel can be hidden entirely or floated as an overlay.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Phone-size advisory</div>
+                        <div class="devlog-card-desc">First-time-per-session modal warns phone users that the game is best on desktop or tablet. Full mobile responsiveness is on the roadmap.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">mtime-based cache invalidation</div>
+                        <div class="devlog-card-desc">Stylesheet and script tags carry an mtime-based version query so rebuilds invalidate browser caches automatically.</div>
+                    </li>
+                </ul>
+
+                <h3 class="text-lg font-semibold text-gray-300 mt-12 mb-4">On the roadmap</h3>
+                <ul class="space-y-4 list-none p-0 m-0">
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Mobile responsiveness</div>
+                        <div class="devlog-card-desc">Phones are advisory for now. Full small-screen support is planned.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Quiet beta, then larger sessions</div>
+                        <div class="devlog-card-desc">First closed beta with a small group, then larger play sessions. No launch campaign; updates here as they happen.</div>
+                    </li>
+                    <li class="devlog-card">
+                        <div class="devlog-card-title">Hybrid play (longer-term)</div>
+                        <div class="devlog-card-desc">A mixed-medium variant that combines physical components, like the player booklet, with digital ones, like the board map.</div>
                     </li>
                 </ul>
             </div>
