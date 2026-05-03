@@ -4,8 +4,11 @@
  */
 
 // --- Redirect (run first) ---
+// Only canonicalize within HTTPS production (apex -> www). Skip file://, http://localhost,
+// and any other dev protocol so local Playwright/file inspection works without bouncing
+// to the live site.
 (function () {
-    if (window.location.hostname !== 'www.journeyways.ca') {
+    if (window.location.protocol === 'https:' && window.location.hostname !== 'www.journeyways.ca') {
         window.location.replace(
             'https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash
         );
@@ -167,15 +170,22 @@ function injectCTA() {
             '</div></section>';
     } else if (isIndex) {
         container.innerHTML =
-            '<section class="py-20 md:py-24 border-t border-gray-700/40">' +
-            '<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">' +
-            '<p class="text-xs uppercase tracking-[0.25em] text-gray-400 mb-5">Begin</p>' +
-            '<h2 class="text-2xl md:text-3xl text-gray-100 font-light leading-snug mb-10">Step into the game and let the journey unfold.</h2>' +
+            '<section class="pt-8 md:pt-12 pb-20 md:pb-24 border-t border-gray-700/40">' +
+            '<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">' +
+            '<div class="grid grid-cols-12 gap-8 md:gap-12 items-start">' +
+            '<header class="col-span-12 md:col-span-3 flex items-center gap-3">' +
+            '<div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">' +
+            '<img src="img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">' +
+            '</div>' +
+            '<span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Begin</span>' +
+            '</header>' +
+            '<div class="col-span-12 md:col-span-8 md:col-start-5">' +
+            '<h2 class="text-xl md:text-2xl text-gray-100 font-light leading-[1.3] tracking-tight mb-8 max-w-prose">Step into the game and let the journey unfold.</h2>' +
             '<a href="boardgame.html" class="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-7 py-3 transition-colors text-sm tracking-[0.2em] uppercase">' +
             '<span>How to play</span>' +
-            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>' +
+            '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>' +
             '</a>' +
-            '</div></section>';
+            '</div></div></div></section>';
     }
 }
 
@@ -237,6 +247,9 @@ var gallerySets = {
         { src: 'img/design/bg-blue.webp', alt: 'Card back in shades of blue watercolor splotches.', title: 'Blue | Reflections', subtitle: 'Card back.' },
         { src: 'img/design/bg-black.webp', alt: 'Card back in shades of black and gray watercolor splotches.', title: 'Black | Countdown', subtitle: 'Card back.' },
         { src: 'img/design/bg-purple.webp', alt: 'Card back in shades of purple watercolor splotches.', title: 'Purple | Group actions', subtitle: 'Card back.' }
+    ],
+    homeComponents: [
+        { src: 'img/boardgame_components.webp', alt: 'JOURNEYWAYS board game components and setup for collaborative identity exploration: tiles, cards, tokens, and player booklets arranged for play.', title: 'Game components', subtitle: 'Tiles, cards, tokens, and player booklets, arranged for a session.' }
     ]
 };
 var currentSet = 'photos';
