@@ -12,7 +12,7 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 
 ## Pages
 
-- **Home** (`index.html`). Crossfading hero, three feature cards that open native `<dialog>` popups (No Fixed Roles, Collaborative Storytelling, Continuous Growth), and a marquee of dated announcements (CGS-M, ProtoConBC, Critical Play Fellowship).
+- **Home** (`index.html`). Editorial Swiss-luxury layout. Asymmetric hero anchored by the watercolor `og-card.webp` on the right; three hairline-divided chapter cards (No Fixed Roles, Collaborative Storytelling, Continuous Growth) opening themed native `<dialog>` popups; 3+9 chapter spine on the body sections (Italianno script titles with watercolor card-back swatches: Principles / Gameplay / Recent / Begin); contained components photo with a single-image lightbox; outline-button closing block. The marquee was retired in favor of a dated Recent rail lower on the page.
 - **Board Game** (`boardgame.html`). How to play: setup, gameplay phases, ending the game, journaling, solo vs group, advanced concepts, tips. Four illustrated figures: card backs by category, the canonical setup photo, a map-tile gallery, and example card fronts.
 - **Video Game** (`videogame.html`). Dev log for the digital version (in development).
 - **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
@@ -71,12 +71,31 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Operational notes
 
-- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=5`, `styles.css?v=9`, `main.js?v=8`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=17`, `styles.css?v=21`, `main.js?v=17`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Font preloading** is set up in every HTML head (`<link rel="preload">` for Inter 400, Inter 600, Italianno 400 latin subsets) so first paint isn't a flash of fallback typography. `Italianno` uses `font-display: block`; Inter uses `font-display: swap` paired with an adjusted `Inter Fallback` face (local Arial with `size-adjust` and ascent/descent overrides) so the swap is layout-neutral and visually subtle.
 - **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
 - **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
 - **Google Search Console** verified via `google6fb8a72b75fa8894.html` at the site root.
 
 ## Changelog
+
+### 1.2.0 (May 2026) — editorial redesign of the homepage
+
+- **Homepage rebuilt** as an editorial Swiss-luxury layout:
+  - Asymmetric hero. Small `A research project · UBC GRSJ` kicker, Italianno wordmark, italic `A game about becoming.` definition line, lede paragraphs, `Design philosophy` text-link CTA on the left; watercolor `og-card.webp` with a soft radial mask on the right.
+  - Marquee retired in favor of a quieter `Recent` rail lower in the page (3+9 chapter spine, dates in `tabular-nums`).
+  - Three chapter cards on a hairline-divided grid (`gap-px` over `bg-gray-700/40`) with Lucide glyphs (compass / users / sprout) at top-left, eyebrow + title + body + arrow footer; numeric stamps removed in favor of the icon as the structural mark.
+  - Modals restyled to match the cards: themed splotch (red / purple / green) in the top-left header, larger title, italic pull-quote on the principle statement, `Read further` hairline footer with arrow links, top-right close glyph.
+  - Body copy and Recent use a 3+9 editorial spine: chapter mark on the left margin (Italianno script title with a small watercolor swatch from the boardgame card backs), body content on the right.
+  - Components photo is now a contained `max-w-5xl` editorial figure with a `Game components` kicker / hairline / `Click to enlarge` caption, opening a single-image lightbox (`homeComponents` set in `main.js`).
+  - Closing block: `Begin` chapter mark + outline button with arrow, replacing the bright yellow `Ready to Begin?` banner.
+- **Nav simplified**: `JOURNEYWAYS` wordmark removed, replaced with a bold `Homepage` link (yellow when on the homepage, white-with-yellow-hover elsewhere) across all 7 pages.
+- **Typography polish**: hero gains a definition line between wordmark and lede; chapter titles set in Italianno script (`Principles`, `Gameplay`, `Recent`, `Begin`); Lucide stroke weights refined to 1.25 on decorative icons (arrows stay 1.5 for direction); Recent date labels bumped from `text-[10px] gray-500` to `text-sm gray-300` for contrast.
+- **FOUT mitigation**: three font preload links added to the head of every page (Inter 400, Inter 600, Italianno 400, latin subsets); Italianno switched to `font-display: block` so the script never flashes a sans-serif fallback; new `Inter Fallback` adjusted face (local Arial with `size-adjust: 107.4%` and ascent / descent overrides) makes the Inter swap layout-neutral and the visible change subtle. Body font stack is now `'Inter', 'Inter Fallback', sans-serif`.
+- **`brand-spec.md`** added at site root, capturing logo, colors, fonts, and UI patterns with a YAML asset manifest.
+- **Local-dev redirect guard**: `main.js` only canonicalizes apex → www on `https:`, so file-protocol and localhost inspection no longer bounce to the live site.
+- Bump cache keys: `tailwind.css?v=17`, `styles.css?v=21`, `main.js?v=17`.
+- Bump `VERSION` and footer markers to 1.2.0.
 
 ### 1.1.2 (May 2026) — videogame polish and search console
 
