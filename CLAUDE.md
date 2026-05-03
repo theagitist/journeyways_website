@@ -37,7 +37,7 @@ www.journeyways.ca/
 - **Tailwind**: locally built. Source under `tools/` (`tailwind.input.css` + `tailwind.config.js`). Run `cd tools && npm run build` to regenerate `css/tailwind.css` after adding any new utility class. Watch mode: `npm run watch`. Always bump `tailwind.css?v=N` after a rebuild.
 - **Fonts**: Inter and Italianno self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). Loaded via `@font-face` declarations at the top of `css/styles.css`. No third-party origins.
 - **Backend**: PM2 app `journeyways-www` (script: `server/index.js`, port `127.0.0.1:1985`). Express 5, Nodemailer 8. nginx proxies `/api/` to it. **Currently stopped**; resume with `pm2 start journeyways-www`. See `server/README.md` for details.
-- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=3`, `styles.css?v=9`, `main.js?v=8`). Bump on every change since `Cache-Control: max-age=31536000`.
+- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=5`, `styles.css?v=9`, `main.js?v=8`). Bump on every change since `Cache-Control: max-age=31536000`.
 
 ## Operational state (May 2026)
 
@@ -48,6 +48,8 @@ www.journeyways.ca/
 - **`server/.env` holds Mailgun SMTP creds and the Cloudflare Turnstile secret.** Values were copied from `/var/www/play.journeyways.ca/.env`. Gitignored. Don't read or echo.
 - **`brainstorm/`** is gitignored. A PostToolUse hook in `.claude/settings.local.json` rsyncs it to `~/apps/obsidian/Academic/Journeyways/Website brainstorm/` on every Edit/Write/MultiEdit. If sync drifts, open `/hooks` in Claude Code once to reload.
 - **Rollback tag** `pre-copy-rework` (in git) marks the state before the rulebook hero copy and about-page work. `git reset --hard pre-copy-rework` to revert all of that.
+- **Google Search Console** verification file `google6fb8a72b75fa8894.html` lives at site root. Don't move or delete it.
+- **Thumbnail aspect ratios matter for the lightbox.** The lightbox shows the source file at native aspect; thumbnails should match that aspect or `object-cover` will crop and the click feels jarring. Cards are 700x545 (use `h-56` with `w-72` -> ratio ~1.286), tiles are 900x900 square (use `h-72` with `w-72`). All tile webps in `img/design/` should be 900x900; if a new one is 700x700, re-encode from the original under `~/FileShare/jw/game materials/Map Tiles/` so it matches in the lightbox.
 
 ## Common commands
 
@@ -67,9 +69,9 @@ sudo nginx -t && sudo systemctl reload nginx
 
 # Rebuild Tailwind after adding any new utility class to HTML/JS
 cd /var/www/www.journeyways.ca/tools && npm run build
-sed -i 's|tailwind.css?v=3|tailwind.css?v=4|' /var/www/www.journeyways.ca/*.html
+sed -i 's|tailwind.css?v=5|tailwind.css?v=6|' /var/www/www.journeyways.ca/*.html
 
-# Bump other asset cache versions (current: tailwind.css?v=3, styles.css?v=9, main.js?v=8)
+# Bump other asset cache versions (current: tailwind.css?v=5, styles.css?v=9, main.js?v=8)
 sed -i 's|styles.css?v=9|styles.css?v=10|' /var/www/www.journeyways.ca/*.html
 sed -i 's|main.js?v=8|main.js?v=9|' /var/www/www.journeyways.ca/*.html
 ```

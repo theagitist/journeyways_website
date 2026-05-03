@@ -71,11 +71,18 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Operational notes
 
-- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=3`, `styles.css?v=9`, `main.js?v=8`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=5`, `styles.css?v=9`, `main.js?v=8`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
 - **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
+- **Google Search Console** verified via `google6fb8a72b75fa8894.html` at the site root.
 
 ## Changelog
+
+### Unreleased (May 2026) — videogame polish and search console
+
+- **Videogame page:** card thumbnails now use `h-56` (matching the 700x545 aspect) so the framing in the thumbnail equals the framing in the lightbox; `tile-night-way.webp` re-encoded at 900x900 to match the other tiles in the lightbox; reduced the gap between the cards row and the Development Log section, removed the divider; meta description harmonized with the OG description; VideoGame JSON-LD enriched with an `image` array (cards + tiles) and a `publisher` (UBC GRSJ).
+- **Google Search Console:** verification file `google6fb8a72b75fa8894.html` placed at site root.
+- Bump `tailwind.css` cache key to `?v=5`.
 
 ### 1.1.1 (May 2026) — security, performance, and SEO pass
 
