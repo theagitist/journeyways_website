@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="JOURNEYWAYS is a master's research project at UBC GRSJ. The digital game is under development, designed for solo and group play with privacy by design (no camera) and a trilingual launch (English, Spanish, French).">
+    <meta name="description" content="The JOURNEYWAYS digital version, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Master's research at UBC GRSJ.">
     <meta name="keywords" content="JOURNEYWAYS, digital game, video game, identity exploration, collaborative storytelling, real-time multiplayer, narrative game, web game, UBC GRSJ research, trilingual game, privacy by design, alpha development">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="shortcut icon" href="img/favicon.png">
-    <link rel="stylesheet" href="css/tailwind.css?v=4">
+    <link rel="stylesheet" href="css/tailwind.css?v=5">
     <link rel="stylesheet" href="css/styles.css?v=9">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -38,9 +38,15 @@
             "@context": "https://schema.org",
             "@type": "VideoGame",
             "name": "JOURNEYWAYS (Digital)",
-            "description": "The digital version of JOURNEYWAYS, in active development at v0.4.1-alpha. Designed for solo and group play with privacy by design (no camera) and a trilingual launch (English, Spanish, French).",
+            "description": "The digital version of JOURNEYWAYS, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Designed for solo and group play.",
             "url": "https://www.journeyways.ca/videogame.html",
-            "image": "https://www.journeyways.ca/img/og-card.jpg",
+            "image": [
+                "https://www.journeyways.ca/img/og-card.jpg",
+                "https://www.journeyways.ca/img/design/card-wind.webp",
+                "https://www.journeyways.ca/img/design/card-commune.webp",
+                "https://www.journeyways.ca/img/design/tile-misty-trail.webp",
+                "https://www.journeyways.ca/img/design/tile-night-way.webp"
+            ],
             "applicationCategory": "GameApplication",
             "playMode": [
                 "SinglePlayer",
@@ -58,6 +64,11 @@
                 "@type": "Person",
                 "name": "Adri M.",
                 "url": "https://www.journeyways.ca/about.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "UBC Institute for Gender, Race, Sexuality and Social Justice",
+                "url": "https://grsj.arts.ubc.ca/"
             }
         }
     </script>
@@ -101,7 +112,7 @@
 
     <main class="main-content">
         <!-- Hero -->
-        <section class="pt-24 pb-12">
+        <section class="pt-24 pb-0">
             <div class="max-w-6xl mx-auto px-4">
                 <div class="max-w-3xl mx-auto text-center">
                     <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-6 tracking-tight">The Digital Version</h1>
@@ -112,14 +123,14 @@
                         The digital version exists to remove barriers, not to replace the table. Players can participate from anywhere; sessions span geographies; there is no camera support so the focus stays on words and stories. Solo and group play, real-time multiplayer, trilingual at launch in English, Spanish, and French.
                     </p>
                 </div>
-                <figure class="my-12">
+                <figure class="mt-12 mb-0">
                     <div class="flex justify-center gap-4">
                         <div class="w-72">
-                            <img src="img/design/card-wind.webp" alt="Encounter card: a watercolor and ink illustration of a figure with thoughts scattering on the wind." class="w-full h-72 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 0)" loading="lazy">
+                            <img src="img/design/card-wind.webp" alt="Encounter card: a watercolor and ink illustration of a figure with thoughts scattering on the wind." class="w-full h-56 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 0)" loading="lazy">
                             <p class="text-xs text-gray-400 italic text-center mt-2">Wind. <span class="card-red">Encounter card</span>.</p>
                         </div>
                         <div class="w-72">
-                            <img src="img/design/card-commune.webp" alt="Group action card: watercolor of six colourful meeples huddled together." class="w-full h-72 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 1)" loading="lazy">
+                            <img src="img/design/card-commune.webp" alt="Group action card: watercolor of six colourful meeples huddled together." class="w-full h-56 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 1)" loading="lazy">
                             <p class="text-xs text-gray-400 italic text-center mt-2">Commune. <span class="card-purple">Group action card</span>.</p>
                         </div>
                     </div>
@@ -128,7 +139,7 @@
         </section>
 
         <!-- Development Log -->
-        <section class="py-12 border-t border-gray-700">
+        <section class="pt-8 pb-12">
             <div class="max-w-6xl mx-auto px-4">
                 <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-2 tracking-tight">Development Log</h2>
                 <p class="text-gray-400 text-sm mb-6">Progress and milestones for the digital version.</p>
