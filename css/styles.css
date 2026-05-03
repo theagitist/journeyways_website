@@ -90,6 +90,10 @@ body {
     color: #ef4444;
     font-weight: bold;
 }
+.tile-wood {
+    color: #c9a87c;
+    font-weight: bold;
+}
 
 /* Main content – clear space below fixed nav; minimal, academic spacing */
 main {
