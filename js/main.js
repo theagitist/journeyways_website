@@ -197,37 +197,37 @@ function initSmoothScroll() {
 // --- Photos: lightbox (expose openLightbox, closeLightbox, navigateLightbox for inline handlers) ---
 var galleryImages = [
     {
-        src: 'img/boardgame_setup.jpg',
+        src: 'img/boardgame_setup.webp',
         alt: 'JOURNEYWAYS board game setup - Full view of initial board configuration with game tiles and components ready for identity exploration gameplay',
         title: 'Board Game Setup',
         subtitle: 'Initial board configuration.'
     },
     {
-        src: 'img/boardgame_components.jpeg',
+        src: 'img/boardgame_components.webp',
         alt: 'JOURNEYWAYS board game components - Detailed view of all game pieces including cards, tiles, player tokens, and booklets for collaborative storytelling',
         title: 'Board Game Components',
         subtitle: 'Pieces that bring the game to life.'
     },
     {
-        src: 'img/players_in_action.jpeg',
+        src: 'img/players_in_action.webp',
         alt: 'JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay',
         title: 'Players in Action',
         subtitle: 'Connecting over gameplay.'
     },
     {
-        src: 'img/edges_playtest_journaling.jpg',
+        src: 'img/edges_playtest_journaling.webp',
         alt: 'JOURNEYWAYS playtest with the EDGES research group at UBC - participants drawing cards, writing journal entries, and reflecting in collaborative play',
         title: 'Journaling in Play',
         subtitle: 'EDGES playtest, UBC. November 2025.'
     },
     {
-        src: 'img/edges_playtest_table.jpg',
+        src: 'img/edges_playtest_table.webp',
         alt: 'JOURNEYWAYS playtest table view - EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table',
         title: 'Around the Table',
         subtitle: 'EDGES playtest, UBC. November 2025.'
     },
     {
-        src: 'img/edges_playtest_board.jpg',
+        src: 'img/edges_playtest_board.webp',
         alt: 'JOURNEYWAYS board state mid-session - top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC',
         title: 'Board State Mid-Session',
         subtitle: 'EDGES playtest, UBC. November 2025.'
