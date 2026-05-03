@@ -2,3 +2,5 @@ brainstorm/
 server/node_modules/
 server/.env
 server/logs/
+tools/node_modules/
+
