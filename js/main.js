@@ -220,6 +220,14 @@ var gallerySets = {
         { src: 'img/design/card-reminiscence.webp', alt: 'Movement card front: a watercolor and ink illustration evoking a return to a familiar place.', title: 'Movement (Green)', subtitle: '"Go to a space you have already been to."' },
         { src: 'img/design/card-encounter.webp', alt: 'Group action card front: a watercolor and ink illustration of two figures meeting.', title: 'Group action (Purple)', subtitle: '"You stumble upon another player. Share one element of your stories."' }
     ],
+    videogameCards: [
+        { src: 'img/design/card-wind.webp', alt: 'Encounter card front: watercolor and ink of a figure with thoughts scattering on the wind.', title: 'Wind', subtitle: '"A wind scatters your thoughts. Do you gather them back? How are they different now?"' },
+        { src: 'img/design/card-echo.webp', alt: 'Encounter card front: watercolor and ink of two figures facing each other in dialogue.', title: 'Echo', subtitle: '"You speak with an echo of yourself. What does it say?"' }
+    ],
+    videogameTiles: [
+        { src: 'img/design/tile-misty-trail.webp', alt: 'Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.', title: 'Misty Trail', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-night-way.webp', alt: 'Map tile: Night Way. Hand-drawn dark path under a starless sky.', title: 'Night Way', subtitle: 'Map tile.' }
+    ],
     boardgameCardBacks: [
         { src: 'img/design/bg-red.webp', alt: 'Card back in red, yellow and orange watercolor splotches.', title: 'Red | Encounters', subtitle: 'Card back.' },
         { src: 'img/design/bg-green.webp', alt: 'Card back in shades of green watercolor splotches.', title: 'Green | Movement', subtitle: 'Card back.' },

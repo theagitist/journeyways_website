@@ -112,10 +112,16 @@
                         The digital version exists to remove barriers, not to replace the table. Players can participate from anywhere; sessions span geographies; there is no camera support so the focus stays on words and stories. Solo and group play, real-time multiplayer, trilingual at launch in English, Spanish, and French.
                     </p>
                 </div>
-                <figure class="mt-12 max-w-md mx-auto">
+                <figure class="my-16 max-w-xs mx-auto">
                     <div class="grid grid-cols-2 gap-3">
-                        <img src="img/design/card-wind.webp" alt="Encounter card: a watercolor and ink illustration of a figure with thoughts scattering on the wind." class="w-full aspect-square object-cover rounded shadow-md" loading="lazy">
-                        <img src="img/design/card-echo.webp" alt="Encounter card: a watercolor and ink illustration of two figures facing each other in dialogue." class="w-full aspect-square object-cover rounded shadow-md" loading="lazy">
+                        <div>
+                            <img src="img/design/card-wind.webp" alt="Encounter card: a watercolor and ink illustration of a figure with thoughts scattering on the wind." class="w-full aspect-square object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 0)" loading="lazy">
+                            <p class="text-xs text-gray-400 italic text-center mt-2">Wind</p>
+                        </div>
+                        <div>
+                            <img src="img/design/card-echo.webp" alt="Encounter card: a watercolor and ink illustration of two figures facing each other in dialogue." class="w-full aspect-square object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 1)" loading="lazy">
+                            <p class="text-xs text-gray-400 italic text-center mt-2">Echo</p>
+                        </div>
                     </div>
                     <figcaption class="text-sm text-gray-400 italic mt-3 text-center">From the deck.</figcaption>
                 </figure>
@@ -188,10 +194,16 @@
                     </li>
                 </ul>
 
-                <figure class="my-12 max-w-md mx-auto">
+                <figure class="my-16 max-w-xs mx-auto">
                     <div class="grid grid-cols-2 gap-3">
-                        <img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." class="w-full aspect-square object-cover rounded shadow-md" loading="lazy">
-                        <img src="img/design/tile-night-way.webp" alt="Map tile: Night Way. Hand-drawn dark path under a starless sky." class="w-full aspect-square object-cover rounded shadow-md" loading="lazy">
+                        <div>
+                            <img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." class="w-full aspect-square object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameTiles', 0)" loading="lazy">
+                            <p class="text-xs text-gray-400 italic text-center mt-2">Misty Trail</p>
+                        </div>
+                        <div>
+                            <img src="img/design/tile-night-way.webp" alt="Map tile: Night Way. Hand-drawn dark path under a starless sky." class="w-full aspect-square object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameTiles', 1)" loading="lazy">
+                            <p class="text-xs text-gray-400 italic text-center mt-2">Night Way</p>
+                        </div>
                     </div>
                     <figcaption class="text-sm text-gray-400 italic mt-3 text-center">From the map.</figcaption>
                 </figure>
@@ -227,6 +239,18 @@
         </div>
     </footer>
 
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)" aria-label="Next image">&#10095;</button>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+        <div class="lightbox-caption" onclick="event.stopPropagation()">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-subtitle"></p>
+        </div>
+    </div>
+
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
@@ -241,7 +265,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=7" defer></script>
+    <script src="js/main.js?v=8" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>
