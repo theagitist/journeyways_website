@@ -194,58 +194,63 @@ function initSmoothScroll() {
     }
 }
 
-// --- Photos: lightbox (expose openLightbox, closeLightbox, navigateLightbox for inline handlers) ---
-var galleryImages = [
-    {
-        src: 'img/boardgame_setup.webp',
-        alt: 'JOURNEYWAYS board game setup - Full view of initial board configuration with game tiles and components ready for identity exploration gameplay',
-        title: 'Board Game Setup',
-        subtitle: 'Initial board configuration.'
-    },
-    {
-        src: 'img/boardgame_components.webp',
-        alt: 'JOURNEYWAYS board game components - Detailed view of all game pieces including cards, tiles, player tokens, and booklets for collaborative storytelling',
-        title: 'Board Game Components',
-        subtitle: 'Pieces that bring the game to life.'
-    },
-    {
-        src: 'img/players_in_action.webp',
-        alt: 'JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay',
-        title: 'Players in Action',
-        subtitle: 'Connecting over gameplay.'
-    },
-    {
-        src: 'img/edges_playtest_journaling.webp',
-        alt: 'JOURNEYWAYS playtest with the EDGES research group at UBC - participants drawing cards, writing journal entries, and reflecting in collaborative play',
-        title: 'Journaling in Play',
-        subtitle: 'EDGES playtest, UBC. November 2025.'
-    },
-    {
-        src: 'img/edges_playtest_table.webp',
-        alt: 'JOURNEYWAYS playtest table view - EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table',
-        title: 'Around the Table',
-        subtitle: 'EDGES playtest, UBC. November 2025.'
-    },
-    {
-        src: 'img/edges_playtest_board.webp',
-        alt: 'JOURNEYWAYS board state mid-session - top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC',
-        title: 'Board State Mid-Session',
-        subtitle: 'EDGES playtest, UBC. November 2025.'
-    }
-];
+// --- Lightbox: supports multiple "sets" of images. Pages call
+// openLightboxFromSet(setName, index) for set-bounded navigation, or
+// openLightbox(index) as a back-compat alias for the photos set. ---
+var gallerySets = {
+    photos: [
+        { src: 'img/boardgame_setup.webp', alt: 'JOURNEYWAYS board game setup - Full view of initial board configuration with game tiles and components ready for identity exploration gameplay', title: 'Board Game Setup', subtitle: 'Initial board configuration.' },
+        { src: 'img/boardgame_components.webp', alt: 'JOURNEYWAYS board game components - Detailed view of all game pieces including cards, tiles, player tokens, and booklets for collaborative storytelling', title: 'Board Game Components', subtitle: 'Pieces that bring the game to life.' },
+        { src: 'img/players_in_action.webp', alt: 'JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay', title: 'Players in Action', subtitle: 'Connecting over gameplay.' },
+        { src: 'img/edges_playtest_journaling.webp', alt: 'JOURNEYWAYS playtest with the EDGES research group at UBC - participants drawing cards, writing journal entries, and reflecting in collaborative play', title: 'Journaling in Play', subtitle: 'EDGES playtest, UBC. November 2025.' },
+        { src: 'img/edges_playtest_table.webp', alt: 'JOURNEYWAYS playtest table view - EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table', title: 'Around the Table', subtitle: 'EDGES playtest, UBC. November 2025.' },
+        { src: 'img/edges_playtest_board.webp', alt: 'JOURNEYWAYS board state mid-session - top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC', title: 'Board State Mid-Session', subtitle: 'EDGES playtest, UBC. November 2025.' }
+    ],
+    boardgameSetup: [
+        { src: 'img/boardgame_setup.webp', alt: 'JOURNEYWAYS setup ready to begin: tiles, character cards, meeples, character booklets.', title: 'Game Setup', subtitle: 'Tiles, cards, tokens.' }
+    ],
+    boardgameTiles: [
+        { src: 'img/design/tile-mirror-lake.webp', alt: 'Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches.', title: 'Mirror Lake', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-singing-cave.webp', alt: 'Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches.', title: 'Singing Cave', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-star-bridge.webp', alt: 'Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches.', title: 'Star Bridge', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-study-room.webp', alt: 'Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches.', title: 'Study Room', subtitle: 'Map tile.' }
+    ],
+    boardgameCardFronts: [
+        { src: 'img/design/card-box-not-yet.webp', alt: "Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'.", title: 'Encounter (Red)', subtitle: '"You find a box labeled ‘Not yet’. Do you grab it? Do you open it?"' },
+        { src: 'img/design/card-reminiscence.webp', alt: 'Movement card front: a watercolor and ink illustration evoking a return to a familiar place.', title: 'Movement (Green)', subtitle: '"Go to a space you have already been to."' },
+        { src: 'img/design/card-encounter.webp', alt: 'Group action card front: a watercolor and ink illustration of two figures meeting.', title: 'Group action (Purple)', subtitle: '"You stumble upon another player. Share one element of your stories."' }
+    ],
+    boardgameCardBacks: [
+        { src: 'img/design/bg-red.webp', alt: 'Card back in red, yellow and orange watercolor splotches.', title: 'Red | Encounters', subtitle: 'Card back.' },
+        { src: 'img/design/bg-green.webp', alt: 'Card back in shades of green watercolor splotches.', title: 'Green | Movement', subtitle: 'Card back.' },
+        { src: 'img/design/bg-blue.webp', alt: 'Card back in shades of blue watercolor splotches.', title: 'Blue | Reflections', subtitle: 'Card back.' },
+        { src: 'img/design/bg-black.webp', alt: 'Card back in shades of black and gray watercolor splotches.', title: 'Black | Countdown', subtitle: 'Card back.' },
+        { src: 'img/design/bg-purple.webp', alt: 'Card back in shades of purple watercolor splotches.', title: 'Purple | Group actions', subtitle: 'Card back.' }
+    ]
+};
+var currentSet = 'photos';
 var currentImageIndex = 0;
 
 function openLightbox(index) {
+    return openLightboxFromSet('photos', index);
+}
+
+function openLightboxFromSet(setName, index) {
+    if (!gallerySets[setName]) return;
+    currentSet = setName;
     currentImageIndex = index;
     var lightbox = document.getElementById('lightbox');
     if (!lightbox) return;
+    if (gallerySets[setName].length <= 1) lightbox.classList.add('single-image');
+    else lightbox.classList.remove('single-image');
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
     updateLightbox(true);
 }
 
 function updateLightbox(immediate) {
-    var image = galleryImages[currentImageIndex];
+    var set = gallerySets[currentSet];
+    var image = set && set[currentImageIndex];
     var lightboxImg = document.getElementById('lightbox-img');
     var lightboxTitle = document.getElementById('lightbox-title');
     var lightboxSubtitle = document.getElementById('lightbox-subtitle');
@@ -284,9 +289,11 @@ function updateLightbox(immediate) {
 }
 
 function navigateLightbox(direction) {
+    var set = gallerySets[currentSet];
+    if (!set) return;
     currentImageIndex += direction;
-    if (currentImageIndex < 0) currentImageIndex = galleryImages.length - 1;
-    else if (currentImageIndex >= galleryImages.length) currentImageIndex = 0;
+    if (currentImageIndex < 0) currentImageIndex = set.length - 1;
+    else if (currentImageIndex >= set.length) currentImageIndex = 0;
     updateLightbox(false);
 }
 
@@ -303,6 +310,7 @@ function closeLightbox(event) {
 function initLightbox() {
     if (!document.getElementById('lightbox')) return;
     window.openLightbox = openLightbox;
+    window.openLightboxFromSet = openLightboxFromSet;
     window.closeLightbox = closeLightbox;
     window.navigateLightbox = navigateLightbox;
 
@@ -321,15 +329,10 @@ function init() {
     initCookieBanner();
     injectCTA();
 
-    var page = getPageId();
-    if (page === 'index') {
-        // index-specific inits if needed
-    } else if (page === 'photos') {
-        initSmoothScroll();
-        initLightbox();
-    } else if (page === 'contact') {
-        initContactForm();
-    }
+    initSmoothScroll();
+    initLightbox();
+
+    if (getPageId() === 'contact') initContactForm();
 }
 
 if (document.readyState === 'loading') {

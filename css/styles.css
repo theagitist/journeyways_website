@@ -318,6 +318,18 @@ main.home {
 .gallery-item img {
     cursor: pointer;
 }
+/* Lightbox triggers used outside of gallery-item containers (e.g., boardgame.html). */
+.lightbox-trigger {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
+}
+.lightbox-trigger:hover {
+    opacity: 0.85;
+}
+/* Hide prev/next arrows when the active gallery set has only one image. */
+.lightbox.single-image .lightbox-nav {
+    display: none;
+}
 .lightbox {
     display: none;
     position: fixed;

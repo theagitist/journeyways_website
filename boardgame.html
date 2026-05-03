@@ -31,7 +31,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="shortcut icon" href="img/favicon.png">
     <link rel="stylesheet" href="css/tailwind.css?v=1">
-    <link rel="stylesheet" href="css/styles.css?v=8">
+    <link rel="stylesheet" href="css/styles.css?v=9">
     <script defer>
         // Redirect to www.journeyways.ca if not already there
         (function() {
@@ -117,23 +117,23 @@
             <figure class="my-8 max-w-4xl mx-auto">
                 <div class="grid grid-cols-3 md:grid-cols-5 gap-3">
                     <div>
-                        <img src="img/design/bg-red.webp" alt="Card back in red, yellow and orange watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md" loading="lazy">
+                        <img src="img/design/bg-red.webp" alt="Card back in red, yellow and orange watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 0)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-red">Red</span> | Encounters</p>
                     </div>
                     <div>
-                        <img src="img/design/bg-green.webp" alt="Card back in shades of green watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md" loading="lazy">
+                        <img src="img/design/bg-green.webp" alt="Card back in shades of green watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 1)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-green">Green</span> | Movement</p>
                     </div>
                     <div>
-                        <img src="img/design/bg-blue.webp" alt="Card back in shades of blue watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md" loading="lazy">
+                        <img src="img/design/bg-blue.webp" alt="Card back in shades of blue watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 2)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-blue">Blue</span> | Reflections</p>
                     </div>
                     <div>
-                        <img src="img/design/bg-black.webp" alt="Card back in shades of black and gray watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md" loading="lazy">
+                        <img src="img/design/bg-black.webp" alt="Card back in shades of black and gray watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 3)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-black">Black</span> | Countdown</p>
                     </div>
                     <div>
-                        <img src="img/design/bg-purple.webp" alt="Card back in shades of purple watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md" loading="lazy">
+                        <img src="img/design/bg-purple.webp" alt="Card back in shades of purple watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 4)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-purple">Purple</span> | Group actions</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
             </div>
 
             <figure class="my-8 max-w-4xl mx-auto">
-                <img src="img/boardgame_setup.webp" alt="Top-down photo of a JOURNEYWAYS setup ready to begin: a four-by-four grid of map tiles in the foreground, the character booklet and a meeple case to the left, and a pile of character cards behind them on a wooden surface." class="w-full rounded shadow-md" loading="lazy">
+                <img src="img/boardgame_setup.webp" alt="Top-down photo of a JOURNEYWAYS setup ready to begin: a four-by-four grid of map tiles in the foreground, the character booklet and a meeple case to the left, and a pile of character cards behind them on a wooden surface." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameSetup', 0)" loading="lazy">
                 <figcaption class="text-sm text-gray-400 italic mt-3 text-center">Tiles, cards, tokens.</figcaption>
             </figure>
 
@@ -212,19 +212,19 @@
             <figure class="my-8 max-w-4xl mx-auto">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                     <div>
-                        <img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 0)" loading="lazy">
                         <p class="text-xs text-gray-400 italic text-center mt-2">Mirror Lake</p>
                     </div>
                     <div>
-                        <img src="img/design/tile-singing-cave.webp" alt="Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/tile-singing-cave.webp" alt="Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 1)" loading="lazy">
                         <p class="text-xs text-gray-400 italic text-center mt-2">Singing Cave</p>
                     </div>
                     <div>
-                        <img src="img/design/tile-star-bridge.webp" alt="Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/tile-star-bridge.webp" alt="Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 2)" loading="lazy">
                         <p class="text-xs text-gray-400 italic text-center mt-2">Star Bridge</p>
                     </div>
                     <div>
-                        <img src="img/design/tile-study-room.webp" alt="Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/tile-study-room.webp" alt="Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 3)" loading="lazy">
                         <p class="text-xs text-gray-400 italic text-center mt-2">Study Room</p>
                     </div>
                 </div>
@@ -234,15 +234,15 @@
             <figure class="my-8 max-w-3xl mx-auto">
                 <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
                     <div>
-                        <img src="img/design/card-box-not-yet.webp" alt="Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/card-box-not-yet.webp" alt="Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardFronts', 0)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
                     </div>
                     <div>
-                        <img src="img/design/card-reminiscence.webp" alt="Movement card front: a watercolor and ink illustration evoking a return to a familiar place." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/card-reminiscence.webp" alt="Movement card front: a watercolor and ink illustration evoking a return to a familiar place." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardFronts', 1)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-green">Movement</span> (Green)</p>
                     </div>
                     <div>
-                        <img src="img/design/card-encounter.webp" alt="Group action card front: a watercolor and ink illustration of two figures meeting." class="w-full rounded shadow-md" loading="lazy">
+                        <img src="img/design/card-encounter.webp" alt="Group action card front: a watercolor and ink illustration of two figures meeting." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardFronts', 2)" loading="lazy">
                         <p class="text-xs italic text-center mt-2"><span class="card-purple">Group action</span> (Purple)</p>
                     </div>
                 </div>
@@ -391,40 +391,17 @@
         </div>
     </footer>
 
-    <script>
-        // Add smooth scrolling for better UX
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
-
-        // Mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const menuIcon = document.getElementById('menu-icon');
-        const closeIcon = document.getElementById('close-icon');
-
-        mobileMenuButton.addEventListener('click', function() {
-            mobileMenu.classList.toggle('hidden');
-            menuIcon.classList.toggle('hidden');
-            closeIcon.classList.toggle('hidden');
-        });
-
-        // Close mobile menu when clicking on a link
-        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', function() {
-                mobileMenu.classList.add('hidden');
-                menuIcon.classList.remove('hidden');
-                closeIcon.classList.add('hidden');
-            });
-        });
-
-    </script>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)" aria-label="Previous image">&#10094;</button>
+        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)" aria-label="Next image">&#10095;</button>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="" onclick="event.stopPropagation()">
+        <div class="lightbox-caption" onclick="event.stopPropagation()">
+            <h3 id="lightbox-title"></h3>
+            <p id="lightbox-subtitle"></p>
+        </div>
+    </div>
 
     <!-- Cookie Consent Banner -->
     <div id="cookie-banner" class="cookie-banner">
@@ -440,48 +417,8 @@
         </div>
     </div>
 
-    <script>
-        // Cookie consent banner
-        (function() {
-            const cookieBanner = document.getElementById('cookie-banner');
-            const acceptCookiesBtn = document.getElementById('accept-cookies');
-            const cookieConsent = localStorage.getItem('cookieConsent');
-
-            if (!cookieConsent) {
-                // Show banner after a short delay
-                setTimeout(() => {
-                    cookieBanner.classList.add('show');
-                }, 1000);
-            }
-
-            acceptCookiesBtn.addEventListener('click', function() {
-                localStorage.setItem('cookieConsent', 'accepted');
-                cookieBanner.classList.remove('show');
-                setTimeout(() => {
-                    cookieBanner.style.display = 'none';
-                }, 300);
-                
-                // Initialize Google Analytics after cookie consent
-                if (typeof gtag !== 'undefined') {
-                    gtag('js', new Date());
-                    gtag('config', 'G-3W5YQCJ0FQ');
-                }
-            });
-        })();
-    </script>
-
-    <!-- Google Analytics - Deferred to prevent blocking -->
+    <script src="js/main.js?v=7" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
-    <script defer>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        
-        // Only initialize GA if cookies are accepted
-        if (localStorage.getItem('cookieConsent') === 'accepted') {
-            gtag('js', new Date());
-            gtag('config', 'G-3W5YQCJ0FQ');
-        }
-    </script>
 
 </body>
 </html>
