@@ -78,11 +78,12 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Changelog
 
-### Unreleased (May 2026) — videogame polish and search console
+### 1.1.2 (May 2026) — videogame polish and search console
 
 - **Videogame page:** card thumbnails now use `h-56` (matching the 700x545 aspect) so the framing in the thumbnail equals the framing in the lightbox; `tile-night-way.webp` re-encoded at 900x900 to match the other tiles in the lightbox; reduced the gap between the cards row and the Development Log section, removed the divider; meta description harmonized with the OG description; VideoGame JSON-LD enriched with an `image` array (cards + tiles) and a `publisher` (UBC GRSJ).
 - **Google Search Console:** verification file `google6fb8a72b75fa8894.html` placed at site root.
 - Bump `tailwind.css` cache key to `?v=5`.
+- Bump `VERSION` and footer markers to 1.1.2.
 
 ### 1.1.1 (May 2026) — security, performance, and SEO pass
 
