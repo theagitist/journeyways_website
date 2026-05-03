@@ -30,11 +30,13 @@ www.journeyways.ca/
 │                            lightbox, hover transitions
 ├── js/main.js               Mobile menu, cookie banner, CTA injection,
 │                            lightbox, contact form handler
-├── img/                     Photos, logo, feature cards
+├── img/                     Photos, logo, feature cards, og-card.jpg, favicon
 │   ├── design/              webp components: tiles, card fronts, card backs
 │   └── thumbnails/          Photos page thumbnails
+├── fonts/                   Self-hosted Inter and Italianno (woff2, latin + latin-ext)
+├── tools/                   Local Tailwind build (npm run build -> css/tailwind.css)
 ├── download/                Rules and character-sheet PDFs
-├── server/                  Tiny Express + Nodemailer backend (contact form)
+├── server/                  Express 5 + Nodemailer 8 backend (contact form, currently stopped)
 ├── brainstorm/              Working notes (gitignored, synced to Obsidian)
 ├── sitemap.xml              6 entries; contact.html intentionally absent
 └── VERSION
@@ -42,13 +44,13 @@ www.journeyways.ca/
 
 ## Tech stack
 
-- **HTML5** with semantic markup, OpenGraph and Twitter card metadata, JSON-LD structured data on the home page.
-- **Tailwind CSS** via Play CDN (no build step; utility classes resolve at runtime).
-- **Custom CSS** for the card-color and tile-wood category highlights, lightbox, and marquee animation.
-- **Vanilla JavaScript** for the mobile menu, lightbox, native `<dialog>` modals, and the contact form handler.
-- **Inter** and **Italianno** via free Google Fonts (replaced Adobe Typekit so the site can be reproduced without licensed assets).
-- **webp images** for all the design and component figures, optimized at ~1000px wide.
-- **Express 5 + Nodemailer + Cloudflare Turnstile** for the contact form (currently stopped pending deliverability fix).
+- **HTML5** with semantic markup, OpenGraph and Twitter card metadata, JSON-LD structured data on every page.
+- **Tailwind CSS**, locally built under `tools/` (no CDN at runtime). Rebuild with `cd tools && npm run build`.
+- **Custom CSS** for the card-color and `.tile-wood` category highlights, lightbox, and marquee animation.
+- **Vanilla JavaScript** for the mobile menu, lightbox (set-bounded prev/next, used on photos / boardgame / videogame), native `<dialog>` modals on the home feature cards, and the contact form handler.
+- **Inter** and **Italianno** self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). No third-party font origins.
+- **webp images** for all the design and component figures, optimized at 700-1600px wide depending on use; lightweight `favicon.png` (12 KB) and `og-card.jpg` (211 KB) for social cards.
+- **Express 5 + Nodemailer 8 + Cloudflare Turnstile** for the contact form (currently stopped pending deliverability fix).
 
 ## Server config
 
@@ -65,15 +67,32 @@ limit_req zone=general burst=60 nodelay;
 add_header Content-Security-Policy-Report-Only "default-src 'self'; ..." always;
 ```
 
-The CSP permits the Tailwind CDN, Google Fonts, GA4, and Cloudflare Turnstile. To eventually tighten to strict CSP, build Tailwind locally (CLI) and remove the CDN allowance.
+The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudflare Turnstile, but Tailwind is now built locally and fonts are self-hosted, so `https://cdn.tailwindcss.com`, `'unsafe-eval'`, `https://fonts.googleapis.com`, and `https://fonts.gstatic.com` are all candidates to drop on the next CSP pass.
 
 ## Operational notes
 
-- **Cache-busting** is handled via query-string version on `styles.css` and `main.js`. Current versions: `styles.css?v=6`, `main.js?v=5`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=3`, `styles.css?v=9`, `main.js?v=8`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
 - **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
 
 ## Changelog
+
+### 1.1.1 (May 2026) — security, performance, and SEO pass
+
+- **Image optimization:** favicon `logo_bg_only.png` (3.5 MB) replaced with `favicon.png` (12 KB); `boardgame_components.jpeg` (2.9 MB) and `players_in_action.jpeg` (2.3 MB) converted to webp at 1600px (~300 KB each); three `edges_playtest_*.jpg` (~360 KB each) converted to webp at 1200px (~120 KB each); generated `og-card.jpg` (211 KB) for social cards.
+- **Self-host Inter and Italianno:** drop Google Fonts; 12 woff2 files under `fonts/` (latin + latin-ext, 5 Inter weights + Italianno).
+- **Tailwind Play CDN to local build:** new `tools/` workspace with `tailwindcss@3` devDependency; ~50 KB of runtime JS removed per pageview; output ~16 KB minified, ~3.5 KB brotli.
+- **Server dependency upgrades:** Express 4.21 to 5.x; Nodemailer 6.9 to 8.x (resolves four high-severity CVEs in addressparser and SMTP command injection).
+- **Boardgame page:** every photo is now a clickable lightbox with set-bounded prev/next (matching the Photos page UX). Refactored `js/main.js` to support multiple gallery sets via `openLightboxFromSet(setName, index)`.
+- **Videogame page:** refresh devlog to v0.4.1-alpha state with concrete features and recent milestones drawn from the actual game repo. Add small thumbnails (Wind / Commune cards, Misty Trail / Night Way tiles) with their own lightbox set.
+- **Title casing standardized** to `JOURNEYWAYS | <Page>` across all seven pages.
+- **JSON-LD structured data** on every page (WebSite, Person, Article, Game, VideoGame, ImageGallery, ContactPage).
+- **og:image** swapped from heavy `logo_bg_only.jpg` (376 KB) to `og-card.jpg` (211 KB) on the four pages that needed it.
+- **Sitemap:** add `<lastmod>` to every entry.
+- **Meta descriptions** on `index.html` and `videogame.html` refreshed away from dated boilerplate.
+- **Marquee regression fix:** dropped a `.marquee-container { margin-top: 0 }` rule that started winning over the inline `mt-16` once Tailwind moved to a static stylesheet.
+- **GRSJ link** on About and Design pages.
+- Bump `VERSION` and footer markers to 1.1.1.
 
 ### 1.1.0 (May 2026)
 
