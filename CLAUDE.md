@@ -24,7 +24,7 @@ www.journeyways.ca/
 ├── img/design/             webp components (tiles, card fronts, card backs)
 ├── fonts/                  Self-hosted Inter and Italianno (woff2, latin + latin-ext)
 ├── tools/                  Local Tailwind build (npm run build -> ../css/tailwind.css)
-├── download/               Game rules and character sheet PDFs
+├── download/               Rulebook and Player Booklet PDFs (Ghostscript-optimized via /ebook setting)
 ├── server/                 Express 5 + Nodemailer 8 backend. PM2 app `journeyways-www`. Currently stopped.
 ├── brainstorm/             Working notes (gitignored, synced to Obsidian vault)
 ├── sitemap.xml             6 entries with <lastmod>; contact.html intentionally absent
@@ -37,11 +37,14 @@ www.journeyways.ca/
 - **Tailwind**: locally built. Source under `tools/` (`tailwind.input.css` + `tailwind.config.js`). Run `cd tools && npm run build` to regenerate `css/tailwind.css` after adding any new utility class. Watch mode: `npm run watch`. Always bump `tailwind.css?v=N` after a rebuild.
 - **Fonts**: Inter and Italianno self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). Loaded via `@font-face` declarations at the top of `css/styles.css`. No third-party origins.
 - **Backend**: PM2 app `journeyways-www` (script: `server/index.js`, port `127.0.0.1:1985`). Express 5, Nodemailer 8. nginx proxies `/api/` to it. **Currently stopped**; resume with `pm2 start journeyways-www`. See `server/README.md` for details.
-- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=19`, `styles.css?v=23`, `main.js?v=17`). Bump on every change since `Cache-Control: max-age=31536000`.
+- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=21`, `styles.css?v=23`, `main.js?v=20`). Bump on every change since `Cache-Control: max-age=31536000`.
 
 ## Operational state (May 2026)
 
-- **Editorial redesign in progress (v1.2.0+).** `index.html` and `about.html` rebuilt with a Swiss-luxury vocabulary: asymmetric editorial split hero with `hero-mask` watercolor on the right, 3+9 chapter spine on body sections (Italianno chapter titles in `text-yellow-400` + small watercolor swatches from the boardgame card backs in `img/design/bg-*.webp`), `border-t border-gray-700/40` hairlines between sections, `font-display: block` on Italianno paired with `Inter Fallback` adjusted face. Pattern documented in `brand-spec.md` at site root. Remaining pages: design / photos / boardgame / videogame, in that order. Rollback tag `pre-homepage-redesign` reverts the rollout. Each page should reuse the homepage hero / chapter-spine / modal recipes verbatim where structurally similar.
+- **Editorial redesign in progress (v1.2.x).** `index.html`, `about.html`, `design.html`, `photos.html`, and `boardgame.html` rebuilt with the Swiss-luxury vocabulary. Body sections use the 3+9 chapter spine (Italianno chapter titles in `text-yellow-400` + small watercolor swatches from the boardgame card backs in `img/design/bg-*.webp`), `border-t border-gray-700/40` hairlines, `font-display: block` on Italianno paired with `Inter Fallback` adjusted face. Pattern documented in `brand-spec.md` at site root. **Remaining: videogame.html.** Rollback tag `pre-homepage-redesign` reverts the rollout.
+- **Hero variations are intentional, not mistakes.** Each page's hero deliberately differs from the others (user explicitly asked for this): home/about use 7/5 split with image right + `hero-mask`; design.html uses 5/7 split with image LEFT + `hero-mask`; photos.html has NO hero image, just a typographic title block + 4-photo tile band beneath; boardgame.html uses a 5/7 split with the rulebook cover (portrait, no `hero-mask`, `items-start`) + title block. Don't normalize them back into one shared layout.
+- **Content rule: "draw" vs "pick".** Players "pick" cards and tiles, never "draw" them. The verb "draw" is reserved for actual illustrating in this game (sticky-note tiles, journal doodles, comic panels, hand-drawn art). Applies site-wide. Phrases like "drawn from a small canon" (= sourced from) and "Hand-drawn" alt text describing artwork are fine.
+- **Decks chapter on boardgame.html is sized to match the previous, pre-redesign card-back row.** `max-w-4xl` wrapper + `grid-cols-3 md:grid-cols-5 gap-3` + `aspect-[3/4]` + simple `text-xs italic` captions in the `<span class="card-X">Color</span> | Category` form. The user reverted multiple smaller-card attempts to this exact size; do not shrink them again without explicit instruction.
 - **Tailwind `space-y-*` + sr-only h2 trap.** A `<h2 class="sr-only">` as the first DOM child of a `space-y-*` container creates a phantom `margin-top: 3rem` on the first visible sibling because the sr-only element still occupies the "first child" slot in the sibling combinator. Use explicit `mt-12 md:mt-14` on subsequent siblings instead of `space-y-*` when an sr-only heading is present. Bit me on the Gameplay section of the home redesign.
 
 - **`contact.html` is hidden.** Mailgun delivers cleanly to Outlook 365 (status 250, "Queued for delivery"), but the recipient inbox doesn't see them: spam/quarantine on the receiving side. Until that's resolved, the page is `noindex, nofollow`, off the nav, and out of the sitemap. The about page's "Get in touch" section is commented out for now. Backend is stopped.
@@ -74,9 +77,13 @@ sudo nginx -t && sudo systemctl reload nginx
 cd /var/www/www.journeyways.ca/tools && npm run build
 sed -i 's|tailwind.css?v=5|tailwind.css?v=6|' /var/www/www.journeyways.ca/*.html
 
-# Bump other asset cache versions (current: tailwind.css?v=5, styles.css?v=9, main.js?v=8)
-sed -i 's|styles.css?v=9|styles.css?v=10|' /var/www/www.journeyways.ca/*.html
-sed -i 's|main.js?v=8|main.js?v=9|' /var/www/www.journeyways.ca/*.html
+# Bump other asset cache versions (current: tailwind.css?v=21, styles.css?v=23, main.js?v=20)
+sed -i 's|styles.css?v=23|styles.css?v=24|' /var/www/www.journeyways.ca/*.html
+sed -i 's|main.js?v=20|main.js?v=21|' /var/www/www.journeyways.ca/*.html
+
+# Optimize a PDF in download/ (Ghostscript /ebook ~halves a 11MB scan to ~5MB)
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
+   -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 ```
 
 ## Boundaries

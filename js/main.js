@@ -215,7 +215,7 @@ var gallerySets = {
         { src: 'img/boardgame_setup.webp', alt: 'JOURNEYWAYS board game setup - Full view of initial board configuration with game tiles and components ready for identity exploration gameplay', title: 'Board Game Setup', subtitle: 'Initial board configuration.' },
         { src: 'img/boardgame_components.webp', alt: 'JOURNEYWAYS board game components - Detailed view of all game pieces including cards, tiles, player tokens, and booklets for collaborative storytelling', title: 'Board Game Components', subtitle: 'Pieces that bring the game to life.' },
         { src: 'img/players_in_action.webp', alt: 'JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay', title: 'Players in Action', subtitle: 'Connecting over gameplay.' },
-        { src: 'img/edges_playtest_journaling.webp', alt: 'JOURNEYWAYS playtest with the EDGES research group at UBC - participants drawing cards, writing journal entries, and reflecting in collaborative play', title: 'Journaling in Play', subtitle: 'EDGES playtest, UBC. November 2025.' },
+        { src: 'img/edges_playtest_journaling.webp', alt: 'JOURNEYWAYS playtest with the EDGES research group at UBC - participants picking cards, writing journal entries, and reflecting in collaborative play', title: 'Journaling in Play', subtitle: 'EDGES playtest, UBC. November 2025.' },
         { src: 'img/edges_playtest_table.webp', alt: 'JOURNEYWAYS playtest table view - EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table', title: 'Around the Table', subtitle: 'EDGES playtest, UBC. November 2025.' },
         { src: 'img/edges_playtest_board.webp', alt: 'JOURNEYWAYS board state mid-session - top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC', title: 'Board State Mid-Session', subtitle: 'EDGES playtest, UBC. November 2025.' },
         { src: 'img/protoconbc_table.webp', alt: 'JOURNEYWAYS at ProtoConBC: a table with the JOURNEYWAYS Game Rules sheet, player booklets, character cards, and a ProtoConBC #18 placard.', title: 'On the Table', subtitle: 'ProtoConBC, Vancouver. October 2025.' },
@@ -228,14 +228,28 @@ var gallerySets = {
     ],
     boardgameTiles: [
         { src: 'img/design/tile-mirror-lake.webp', alt: 'Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches.', title: 'Mirror Lake', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-singing-cave.webp', alt: 'Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches.', title: 'Singing Cave', subtitle: 'Map tile.' },
         { src: 'img/design/tile-star-bridge.webp', alt: 'Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches.', title: 'Star Bridge', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-study-room.webp', alt: 'Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches.', title: 'Study Room', subtitle: 'Map tile.' }
+        { src: 'img/design/tile-singing-cave.webp', alt: 'Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches.', title: 'Singing Cave', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-mountain-peak.webp', alt: 'Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters.', title: 'Mountain Peak', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-childhood-house.webp', alt: 'Map tile: Childhood House. A small house surrounded by colorful watercolor splatters.', title: 'Childhood House', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-study-room.webp', alt: 'Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches.', title: 'Study Room', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-volcanic-ground.webp', alt: 'Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters.', title: 'Volcanic Ground', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-tree-hollow.webp', alt: 'Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches.', title: 'Tree Hollow', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-buried-names-field.webp', alt: 'Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings.', title: 'Buried Names Field', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-misty-trail.webp', alt: 'Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.', title: 'Misty Trail', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-night-way.webp', alt: 'Map tile: Night Way. Hand-drawn dark path under a starless sky.', title: 'Night Way', subtitle: 'Map tile.' },
+        { src: 'img/design/tile-abandoned-playground.webp', alt: 'Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters.', title: 'Abandoned Playground', subtitle: 'Map tile.' }
     ],
     boardgameCardFronts: [
         { src: 'img/design/card-box-not-yet.webp', alt: "Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'.", title: 'Encounter (Red)', subtitle: '"You find a box labeled ‘Not yet’. Do you grab it? Do you open it?"' },
         { src: 'img/design/card-reminiscence.webp', alt: 'Movement card front: a watercolor and ink illustration evoking a return to a familiar place.', title: 'Movement (Green)', subtitle: '"Go to a space you have already been to."' },
-        { src: 'img/design/card-encounter.webp', alt: 'Group action card front: a watercolor and ink illustration of two figures meeting.', title: 'Group action (Purple)', subtitle: '"You stumble upon another player. Share one element of your stories."' }
+        { src: 'img/design/card-encounter.webp', alt: 'Group action card front: a watercolor and ink illustration of two figures meeting.', title: 'Group action (Purple)', subtitle: '"You stumble upon another player. Share one element of your stories."' },
+        { src: 'img/design/card-mirror.webp', alt: 'Encounter card front: a watercolor and ink illustration of a cracked mirror.', title: 'Encounter (Red)', subtitle: '"A mirror cracks as you pass."' },
+        { src: 'img/design/card-commune.webp', alt: 'Group action card front: a watercolor of six colorful meeples huddled together.', title: 'Group action (Purple)', subtitle: '"Everyone shares one key element of their story."' },
+        { src: 'img/design/card-map.webp', alt: 'Encounter card front: a watercolor and ink illustration of a map without directions.', title: 'Encounter (Red)', subtitle: '"You receive a map with no directions. What do you do?"' },
+        { src: 'img/design/card-memory.webp', alt: 'Encounter card front: a watercolor and ink illustration of a memory growing wild.', title: 'Encounter (Red)', subtitle: '"A memory rises, vivid and uninvited. What does it ask of you?"' },
+        { src: 'img/design/card-echo.webp', alt: 'Encounter card front: a watercolor and ink illustration of two splotchy figures facing each other.', title: 'Encounter (Red)', subtitle: '"An echo answers back. Whose voice is it?"' },
+        { src: 'img/design/card-wind.webp', alt: 'Encounter card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind.', title: 'Encounter (Red)', subtitle: '"A wind scatters your thoughts. Do you gather them back? How are they different now?"' }
     ],
     videogameCards: [
         { src: 'img/design/card-wind.webp', alt: 'Encounter card front: watercolor and ink of a figure with thoughts scattering on the wind.', title: 'Wind', subtitle: '"A wind scatters your thoughts. Do you gather them back? How are they different now?"' },

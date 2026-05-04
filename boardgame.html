@@ -7,25 +7,25 @@
     <meta name="keywords" content="JOURNEYWAYS, board game rules, how to play JOURNEYWAYS, game setup, collaborative storytelling, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, identity exploration game, solo board game, group board game">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.journeyways.ca/boardgame.html">
     <meta property="og:title" content="JOURNEYWAYS | The Board Game">
-    <meta property="og:description" content="JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. Learn how to play the board game: rules, setup, solo and group play.">
-    <meta property="og:image" content="https://www.journeyways.ca/img/boardgame_setup.jpg">
+    <meta property="og:description" content="How to play JOURNEYWAYS: setup, turns, and how a session ends. Five card categories, a buildable map, no winning, no losing.">
+    <meta property="og:image" content="https://www.journeyways.ca/img/rulebook_cover.webp">
     <meta property="og:site_name" content="JOURNEYWAYS">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.journeyways.ca/boardgame.html">
     <meta name="twitter:title" content="JOURNEYWAYS | The Board Game">
-    <meta name="twitter:description" content="JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. Learn how to play the board game: rules, setup, solo and group play.">
-    <meta name="twitter:image" content="https://www.journeyways.ca/img/boardgame_setup.jpg">
-    
+    <meta name="twitter:description" content="How to play JOURNEYWAYS: setup, turns, and how a session ends. Five card categories, a buildable map, no winning, no losing.">
+    <meta name="twitter:image" content="https://www.journeyways.ca/img/rulebook_cover.webp">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/boardgame.html">
-    
+
     <title>JOURNEYWAYS | The Board Game</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
@@ -33,12 +33,12 @@
     <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/tailwind.css?v=21">
+    <link rel="stylesheet" href="css/tailwind.css?v=24">
     <link rel="stylesheet" href="css/styles.css?v=23">
     <script defer>
-        // Redirect to www.journeyways.ca if not already there
+        // Local-dev redirect guard: only canonicalize when actually on https.
         (function() {
-            if (window.location.hostname !== 'www.journeyways.ca') {
+            if (window.location.protocol === 'https:' && window.location.hostname !== 'www.journeyways.ca') {
                 window.location.replace('https://www.journeyways.ca' + window.location.pathname + window.location.search + window.location.hash);
             }
         })();
@@ -51,7 +51,7 @@
             "name": "JOURNEYWAYS",
             "description": "A collaborative storytelling board game about identity exploration. Used as a research instrument at UBC GRSJ.",
             "url": "https://www.journeyways.ca/boardgame.html",
-            "image": "https://www.journeyways.ca/img/og-card.jpg",
+            "image": "https://www.journeyways.ca/img/rulebook_cover.webp",
             "numberOfPlayers": "1-6",
             "playMode": [
                 "SinglePlayer",
@@ -82,7 +82,6 @@
                         <a href="about.html" class="hover:text-yellow-400 transition-colors" aria-label="About the researcher and project background">About</a>
                     </div>
                 </div>
-                <!-- Mobile menu button -->
                 <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Open or close main menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -90,7 +89,6 @@
                     </svg>
                 </button>
             </div>
-            <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4" role="navigation" aria-label="Main menu">
                 <div class="flex flex-col space-y-3">
                     <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors py-2" aria-label="Homepage">Homepage</a>
@@ -105,283 +103,410 @@
     </nav>
 
     <main>
-    <!-- Rules Content -->
-    <section class="pt-24 pb-14">
-        <div class="max-w-6xl mx-auto px-4">
-            <!-- Introduction -->
-            <div class="text-center mb-12">
-                <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-6 tracking-tight">How to Play JOURNEYWAYS</h1>
-                <p class="text-base md:text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
-                    JOURNEYWAYS is not about winning or losing; it's about discovering, exploring, and becoming.
-                    These guidelines will help you create meaningful experiences, whether playing solo or with others.
-                </p>
-            </div>
 
-            <figure class="my-8 max-w-4xl mx-auto">
-                <div class="grid grid-cols-3 md:grid-cols-5 gap-3">
-                    <div>
-                        <img src="img/design/bg-red.webp" alt="Card back in red, yellow and orange watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 0)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-red">Red</span> | Encounters</p>
-                    </div>
-                    <div>
-                        <img src="img/design/bg-green.webp" alt="Card back in shades of green watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 1)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-green">Green</span> | Movement</p>
-                    </div>
-                    <div>
-                        <img src="img/design/bg-blue.webp" alt="Card back in shades of blue watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 2)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-blue">Blue</span> | Reflections</p>
-                    </div>
-                    <div>
-                        <img src="img/design/bg-black.webp" alt="Card back in shades of black and gray watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 3)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-black">Black</span> | Countdown</p>
-                    </div>
-                    <div>
-                        <img src="img/design/bg-purple.webp" alt="Card back in shades of purple watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardBacks', 4)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-purple">Purple</span> | Group actions</p>
-                    </div>
+    <!-- ===== Hero: large rulebook cover + title block side-by-side ===== -->
+    <section class="pt-24 md:pt-28 pb-12 md:pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <div class="col-span-12 md:col-span-5">
+                    <figure class="m-0 shadow-lg max-w-md mx-auto md:mx-0">
+                        <img src="img/rulebook_cover.webp" alt="JOURNEYWAYS rulebook cover: diagonal pastel and saturated watercolor bands behind the JOURNEYWAYS wordmark, with a small mountain landscape silhouette." class="w-full h-auto block" loading="eager">
+                    </figure>
                 </div>
-                <figcaption class="text-sm text-gray-400 italic mt-4 text-center">Card backs, one per category.</figcaption>
-            </figure>
-
-            <!-- Game Setup -->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7 mb-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Game Setup</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">What You'll Need</h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li>• Board tiles (35).</li>
-                            <li>• Game cards (81).</li>
-                            <li>• Player tokens (1 per player).</li>
-                            <li>• Player booklet (1 per player).</li>
-                            <li>• Some sticky notes.</li>
-                            <li>• Die for choosing the starting player (1).</li>
-                            <li>• Writing utensils.</li>
-                        </ul>
+                <div class="col-span-12 md:col-span-7">
+                    <div class="flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                            <path d="M10 2v8l3-3 3 3V2"/>
+                            <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20"/>
+                        </svg>
+                        <span>Board game &middot; Rulebook</span>
                     </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Initial Setup</h4>
-                        <ol class="space-y-2 text-gray-300 list-decimal list-inside">
-                            <li>Shuffle all cards together and place them face dawn in three draw piles.</li>
-                            <li>Draw one card and place it apart face up. This will be the Discard pile.</li>
-                            <li>Find the Starter board tile and set it apart. Shuffle all others and place them face down in three piles.</li>
-                            <li>Each player takes one player token.</li>
-                            <li>Use the die to determine the starting player. For example, highest number goes first.</li>
-                            <li>Place the Starter board tile in the center of the table.</li>
-                            <li>Taking turns, each player draws a tile fom any pile and places it adjacent to another previously placed tile. If it's a blank tile, put it back in the pile and draw again.</li>
-                            <li>All players place their tokens on the Starter tile.</li>
-                        
-                            </li>
-                        </ol>
-                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-[1.05] mb-3 md:mb-4">How to play.</h1>
+                    <p class="text-base md:text-lg italic font-light text-gray-300 mb-6 md:mb-8 max-w-prose">Setup, turns, and how a session ends.</p>
+                    <p class="text-base md:text-lg text-gray-400 leading-relaxed max-w-prose mb-6">
+                        JOURNEYWAYS is not about winning or losing. The rules below are a frame to start from. Bend them, break them, write your own. The single fixed rule is that everyone at the table agrees.
+                    </p>
+                    <p class="text-sm md:text-base text-gray-400">
+                        <a href="download/JOURNEYWAYS Game Rules 1.0.pdf" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Download Rulebook (PDF, 585 KB)</a>
+                        &middot;
+                        <a href="download/JOURNEYWAYS Player Booklet 1.0.pdf" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Download Player Booklet (PDF, 5.2 MB)</a>
+                    </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <figure class="my-8 max-w-4xl mx-auto">
-                <img src="img/boardgame_setup.webp" alt="Top-down photo of a JOURNEYWAYS setup ready to begin: a four-by-four grid of map tiles in the foreground, the character booklet and a meeple case to the left, and a pile of character cards behind them on a wooden surface." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameSetup', 0)" loading="lazy">
-                <figcaption class="text-sm text-gray-400 italic mt-3 text-center">Tiles, cards, tokens.</figcaption>
-            </figure>
-
-            <!-- Basic Gameplay -->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7 mb-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Basic Gameplay</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Turn Structure</h4>
-                        <p class="text-gray-300 mb-4">
-                            Each turn consists of three phases: <strong>Explore</strong>, <strong>Draw</strong>, and <strong>Reflect</strong>.
-                        </p>
-                        <div class="grid md:grid-cols-3 gap-4">
-                            <div class="bg-gray-700 p-4 rounded-lg">
-                                <h5 class="font-semibold text-yellow-400 mb-2">1. Explore</h5>
-                                <p class="text-sm text-gray-300">For Exploration you have two options: (1) Draw a map tile and place it adjacent to another one. If you draw a blank tile, you have to create it before placing it.(2) Use a sticky note to draw a new map tile (whatever you want) and place it on top of an existing one where no player is located. After you place your tile, you can move one or two spaces in any direction.</p>
-                                
-                            </div>
-                            <div class="bg-gray-700 p-4 rounded-lg">
-                                <h5 class="font-semibold text-yellow-400 mb-2">2. Draw</h5>
-                                <p class="text-sm text-gray-300">Draw a card from any pile, even the Discard pile. <span class="card-green">Green</span> cards are movement, <span class="card-black">Black</span> cards are pass of time, <span class="card-blue">Blue</span> cards are quotes, <span class="card-red">Red</span> cards are encounters, <span class="card-purple">Purple</span> cards are group events.</p>
-                                
-                            </div>
-                            <div class="bg-gray-700 p-4 rounded-lg">
-                                <h5 class="font-semibold text-yellow-400 mb-2">3. Reflect</h5>
-                                <p class="text-sm text-gray-300">If you drew a <span class="card-green">Green</span> or <span class="card-purple">Purple</span> card, you have to perform the action it indicates. If you drew a <span class="card-blue">Blue</span> or <span class="card-red">Red</span> card, take into account what they say, and write a new entry in your journal. If you drew a <span class="card-black">Black</span> card, set it apart. The game ends when the fifth <span class="card-black">Black</span> card is drawn.</p>
-                                
-                            </div>
+    <!-- ===== Decks (5 card backs as the game's color system) ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="decks">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Decks</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="decks" class="sr-only">Decks</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">
+                        Cards are shuffled together, but then spread into three or more piles. Players choose which pile to pick from. They know the kind of card they will get, but not exactly which one.
+                    </p>
+                    <div class="grid grid-cols-3 md:grid-cols-5 gap-3 max-w-4xl">
+                        <div>
+                            <img src="img/design/bg-red.webp" alt="Card back in red, yellow and orange watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md cursor-pointer" onclick="openLightboxFromSet('boardgameCardBacks', 0)" loading="lazy">
+                            <p class="text-xs italic text-center mt-2"><span class="card-red">Red</span> | Encounters</p>
+                        </div>
+                        <div>
+                            <img src="img/design/bg-green.webp" alt="Card back in shades of green watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md cursor-pointer" onclick="openLightboxFromSet('boardgameCardBacks', 1)" loading="lazy">
+                            <p class="text-xs italic text-center mt-2"><span class="card-green">Green</span> | Movement</p>
+                        </div>
+                        <div>
+                            <img src="img/design/bg-blue.webp" alt="Card back in shades of blue watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md cursor-pointer" onclick="openLightboxFromSet('boardgameCardBacks', 2)" loading="lazy">
+                            <p class="text-xs italic text-center mt-2"><span class="card-blue">Blue</span> | Reflections</p>
+                        </div>
+                        <div>
+                            <img src="img/design/bg-black.webp" alt="Card back in shades of black and gray watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md cursor-pointer" onclick="openLightboxFromSet('boardgameCardBacks', 3)" loading="lazy">
+                            <p class="text-xs italic text-center mt-2"><span class="card-black">Black</span> | Countdown</p>
+                        </div>
+                        <div>
+                            <img src="img/design/bg-purple.webp" alt="Card back in shades of purple watercolor splotches." class="w-full aspect-[3/4] object-cover rounded shadow-md cursor-pointer" onclick="openLightboxFromSet('boardgameCardBacks', 4)" loading="lazy">
+                            <p class="text-xs italic text-center mt-2"><span class="card-purple">Purple</span> | Group actions</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <figure class="my-8 max-w-4xl mx-auto">
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <div>
-                        <img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 0)" loading="lazy">
-                        <p class="text-xs text-gray-400 italic text-center mt-2">Mirror Lake</p>
+    <!-- ===== Setup ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="setup">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
-                    <div>
-                        <img src="img/design/tile-singing-cave.webp" alt="Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 1)" loading="lazy">
-                        <p class="text-xs text-gray-400 italic text-center mt-2">Singing Cave</p>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Setup</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="setup" class="sr-only">Setup</h2>
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-10 mb-10">
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">What you'll need</h3>
+                            <ul class="space-y-2 text-gray-300 text-base leading-relaxed">
+                                <li>Board tiles (35).</li>
+                                <li>Game cards (81).</li>
+                                <li>Player tokens (1 per player).</li>
+                                <li>Player booklet (1 per player).</li>
+                                <li>Some sticky notes.</li>
+                                <li>Die for choosing the starting player (1).</li>
+                                <li>Pens and pencils.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Initial setup</h3>
+                            <ol class="space-y-3 text-gray-300 text-base leading-relaxed list-decimal list-outside ml-5 marker:text-yellow-400/60 marker:font-medium">
+                                <li>Shuffle all cards together and place them face down in three piles.</li>
+                                <li>Pick one card and place it apart face up. This will be the Discard pile.</li>
+                                <li>Find the Starter board tile and set it apart. Shuffle all others and place them face down in three piles.</li>
+                                <li>Each player takes one player token.</li>
+                                <li>Use the die to determine the starting player. For example, highest number goes first.</li>
+                                <li>Place the Starter board tile in the center of the table.</li>
+                                <li>Taking turns, each player picks a tile from any pile and places it adjacent to another previously placed tile. If it's a blank tile, put it back in the pile and pick again.</li>
+                                <li>All players place their tokens on the Starter tile.</li>
+                            </ol>
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/design/tile-star-bridge.webp" alt="Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 2)" loading="lazy">
-                        <p class="text-xs text-gray-400 italic text-center mt-2">Star Bridge</p>
-                    </div>
-                    <div>
-                        <img src="img/design/tile-study-room.webp" alt="Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameTiles', 3)" loading="lazy">
-                        <p class="text-xs text-gray-400 italic text-center mt-2">Study Room</p>
-                    </div>
+                    <figure class="m-0">
+                        <img src="img/boardgame_setup.webp" alt="Top-down photo of a JOURNEYWAYS setup ready to begin: a four-by-four grid of map tiles in the foreground, the character booklet and a meeple case to the left, and a pile of character cards behind them on a wooden surface." class="w-full block cursor-pointer" onclick="openLightboxFromSet('boardgameSetup', 0)" loading="lazy">
+                        <figcaption class="text-sm text-gray-400 italic mt-3">Tiles, cards, tokens.</figcaption>
+                    </figure>
                 </div>
-                <figcaption class="text-sm text-gray-400 italic mt-4 text-center">A few <span class="tile-wood">map tiles</span>. Line illustrations on watercolor splotches.</figcaption>
-            </figure>
+            </div>
+        </div>
+    </section>
 
-            <figure class="my-8 max-w-3xl mx-auto">
-                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                    <div>
-                        <img src="img/design/card-box-not-yet.webp" alt="Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardFronts', 0)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+    <!-- ===== Turn ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="turn">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
-                    <div>
-                        <img src="img/design/card-reminiscence.webp" alt="Movement card front: a watercolor and ink illustration evoking a return to a familiar place." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardFronts', 1)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-green">Movement</span> (Green)</p>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Turn</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="turn" class="sr-only">Turn</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-10">
+                        Each turn has three phases: <span class="font-medium text-white">Explore</span>, <span class="font-medium text-white">Pick</span>, and <span class="font-medium text-white">Reflect</span>.
+                    </p>
+                    <div class="grid md:grid-cols-3 gap-px bg-gray-700/40 border border-gray-700/40 mb-10">
+                        <div class="bg-gray-800 p-6 md:p-7">
+                            <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-3">Phase 1</p>
+                            <h3 class="text-xl font-medium text-white tracking-tight mb-3">Explore</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed">Two options. Pick a map tile and place it adjacent to another one. If you pick a blank tile, you have to create it before placing it. Or use a sticky note to draw a new map tile (whatever you want) and place it on top of an existing one where no player is located. After placing your tile, you can move one or two spaces in any direction.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 md:p-7">
+                            <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-3">Phase 2</p>
+                            <h3 class="text-xl font-medium text-white tracking-tight mb-3">Pick</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed">Pick a card from any pile, even the Discard pile. <span class="card-green">Green</span> cards are movement, <span class="card-black">Black</span> cards are pass of time, <span class="card-blue">Blue</span> cards are quotes, <span class="card-red">Red</span> cards are encounters, <span class="card-purple">Purple</span> cards are group events.</p>
+                        </div>
+                        <div class="bg-gray-800 p-6 md:p-7">
+                            <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-3">Phase 3</p>
+                            <h3 class="text-xl font-medium text-white tracking-tight mb-3">Reflect</h3>
+                            <p class="text-sm text-gray-300 leading-relaxed">If you picked a <span class="card-green">Green</span> or <span class="card-purple">Purple</span> card, you have to perform the action it indicates. If you picked a <span class="card-blue">Blue</span> or <span class="card-red">Red</span> card, take into account what they say, and write a new entry in your journal. If you picked a <span class="card-black">Black</span> card, set it apart. The game ends when the fifth <span class="card-black">Black</span> card is picked.</p>
+                        </div>
                     </div>
-                    <div>
-                        <img src="img/design/card-encounter.webp" alt="Group action card front: a watercolor and ink illustration of two figures meeting." class="w-full rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('boardgameCardFronts', 2)" loading="lazy">
-                        <p class="text-xs italic text-center mt-2"><span class="card-purple">Group action</span> (Purple)</p>
-                    </div>
+
+                    <figure class="m-0 mb-10">
+                        <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4"><span class="tile-wood">Map tiles</span>, twelve examples</p>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div>
+                                <img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 0)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Mirror Lake</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-star-bridge.webp" alt="Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 1)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Star Bridge</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-singing-cave.webp" alt="Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 2)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Singing Cave</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-mountain-peak.webp" alt="Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 3)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Mountain Peak</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-childhood-house.webp" alt="Map tile: Childhood House. A small house surrounded by colorful watercolor splatters." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 4)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Childhood House</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-study-room.webp" alt="Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 5)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Study Room</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-volcanic-ground.webp" alt="Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 6)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Volcanic Ground</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-tree-hollow.webp" alt="Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 7)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Tree Hollow</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-buried-names-field.webp" alt="Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 8)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Buried Names Field</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 9)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Misty Trail</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-night-way.webp" alt="Map tile: Night Way. Hand-drawn dark path under a starless sky." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 10)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Night Way</p>
+                            </div>
+                            <div>
+                                <img src="img/design/tile-abandoned-playground.webp" alt="Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameTiles', 11)" loading="lazy">
+                                <p class="text-xs text-gray-400 italic text-center mt-2">Abandoned Playground</p>
+                            </div>
+                        </div>
+                    </figure>
+
+                    <figure class="m-0">
+                        <p class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Card fronts, nine examples</p>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <div>
+                                <img src="img/design/card-box-not-yet.webp" alt="Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 0)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-reminiscence.webp" alt="Movement card front: a watercolor and ink illustration evoking a return to a familiar place." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 1)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-green">Movement</span> (Green)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-encounter.webp" alt="Group action card front: a watercolor and ink illustration of two figures meeting." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 2)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-purple">Group action</span> (Purple)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-mirror.webp" alt="Encounter card front: a watercolor and ink illustration of a cracked mirror." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 3)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-commune.webp" alt="Group action card front: a watercolor of six colorful meeples huddled together." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 4)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-purple">Group action</span> (Purple)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-map.webp" alt="Encounter card front: a watercolor and ink illustration of a map without directions." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 5)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-memory.webp" alt="Encounter card front: a watercolor and ink illustration of a memory growing wild." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 6)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-echo.webp" alt="Encounter card front: a watercolor and ink illustration of two splotchy figures facing each other." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 7)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+                            </div>
+                            <div>
+                                <img src="img/design/card-wind.webp" alt="Encounter card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind." class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', 8)" loading="lazy">
+                                <p class="text-xs italic text-center mt-2"><span class="card-red">Encounter</span> (Red)</p>
+                            </div>
+                        </div>
+                    </figure>
                 </div>
-                <figcaption class="text-sm text-gray-400 italic mt-4 text-center">Card fronts, three examples.</figcaption>
-            </figure>
+            </div>
+        </div>
+    </section>
 
-            <!-- Ending the game -->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7 mb-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Ending the game</h2>
-                <div class="space-y-4">
-                    <p class="text-gray-300">
-                        The game ends when the fifth <span class="card-black">Black</span> card is drawn. Each player can add a final entry to their journal, or just leave it as it is. However, if all players agree you can end the session after any amount of <span class="card-black">Black</span> cards are drawn, or disregard the <span class="card-black">Black</span> cards and use a timer, etc.
-                        It is ok if your story ends abruptly. You can leave it like that, or return to it on another session.
-                        <br><br>
-                        After ending the game, each player can fill their Character Sheet at the end of the Player Booklet. This way they can see how their character developed during the game; what changed, and what stayed the same.
-                        <br><br> 
-                    <strong>Remember:</strong> The game is not about winning or losing. It is about discovering, exploring, and becoming.
+    <!-- ===== Ending ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="ending">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-black.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Ending</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="ending" class="sr-only">Ending</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        The game ends when the fifth <span class="card-black">Black</span> card is picked. Each player can add a final entry to their journal, or just leave it as it is. If all players agree, you can end after any number of <span class="card-black">Black</span> cards, or disregard them and use a timer, or stop whenever a story feels complete.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        It is okay if your story ends abruptly. You can leave it like that, or return to it on another session.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        After ending the game, each player can fill in their character sheet at the back of the player booklet. This way they can see how their character developed during the game: what changed, and what stayed the same.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;The game is not about winning or losing. It is about discovering, exploring, and becoming.&rdquo;</p>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Journal ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="journal">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Journal</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="journal" class="sr-only">Journal</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        Unlike traditional games, your character in JOURNEYWAYS emerges through play rather than being predetermined. Use the cards as inspiration, not rigid definitions; the main objective is that you set your imagination free and write the story you want to tell.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        Journal entries can be as short or long, as terse or detailed as you want. You can take inspiration from the tile where your token is located and the text on the card, but you can be as creative as you want. Write a journal entry. Doodle it. Draw a comic. Write a fragment. Leave it blank. All of these count.
                     </p>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- Writing your journal-->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7 mb-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Writing your journal</h2>
-                <div class="space-y-4">
-                    <p class="text-gray-300">
-                        Unlike traditional games, your character in JOURNEYWAYS emerges through play rather than being predetermined. 
-                        Use the game cards as inspiration, not rigid definitions; the main objective is you set your imagination free and write the story you want to tell. Journal entries can be as short or long, or as terse of detailed as you want.
-                        You can get inspiration from the tile where your token is located and the text in the card, but you can be as creative as you want. You can write a journal entry, doodle it, or do whatever you like.
+    <!-- ===== Modes ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="modes">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Modes</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="modes" class="sr-only">Modes of play</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-10">
+                        Two ways to play. Choose either, or move between them.
                     </p>
-                </div>
-            </div>
-
-            <!-- Solo vs Group Play -->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7 mb-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Solo vs Group Play</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3 text-green-400">Solo Play</h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li>• Remove the <span class="card-purple">Purple</span> cards from the game.</li>
-                            <li>• Focus on deep personal reflection.</li>
-                            <li>• Take as much time as you need.</li>
-                            <li>• Use journaling extensively.</li>
-                            <li>• Create your own pacing.</li>
-                            <li>• Return to previous sessions.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3 text-blue-400">Group Play</h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li>• Share reflections with others.</li>
-                            <li>• Learn from different perspectives.</li>
-                            <li>• Build collective narratives.</li>
-                            <li>• Support each other's growth.</li>
-                            <li>• Create shared memories.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Advanced Concepts -->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7 mb-6">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Advanced Concepts</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Session Endings</h4>
-                        <p class="text-gray-300">
-                            It's recommended to end the session when the fifth <span class="card-black">Black</span> card is drawn. Each player can add a final entry to their journal, or just leave it as it is.
-                            However, if all players agree you can end the session after any amount of <span class="card-black">Black</span> cards are drawn, or disregard the <span class="card-black">Black</span> cards and use a timer, etc.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Returning to Previous Sessions</h4>
-                        <p class="text-gray-300">
-                            JOURNEYWAYS is designed for ongoing play. Return to previous sessions, 
-                            revisit old insights, and see how your understanding has evolved. 
-                            Your character and story continue to develop between sessions.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Creating Your Own Elements</h4>
-                        <p class="text-gray-300">
-                            Feel free to add your own story cards, character elements, or game mechanics. 
-                            JOURNEYWAYS is a framework for exploration; make it your own.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Tips for Meaningful Play -->
-            <div class="rule-section bg-gray-800 rounded p-6 md:p-7">
-                <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4">Tips for Meaningful Play</h2>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Creating Safe Space</h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li>• Set aside dedicated time.</li>
-                            <li>• Minimize distractions.</li>
-                            <li>• Create a comfortable environment.</li>
-                            <li>• Honor everyone's privacy.</li>
-                            <li>• Practice active listening.</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="text-lg font-semibold mb-3">Deepening the Experience</h4>
-                        <ul class="space-y-2 text-gray-300">
-                            <li>• Ask open-ended questions.</li>
-                            <li>• Embrace uncertainty.</li>
-                            <li>• Allow for silence and reflection.</li>
-                            <li>• Be curious, not judgmental.</li>
-                            <li>• Celebrate small discoveries.</li>
-                        </ul>
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Solo play</h3>
+                            <ul class="space-y-2 text-gray-300 text-base leading-relaxed">
+                                <li>Remove the <span class="card-purple">Purple</span> cards from the game.</li>
+                                <li>Focus on deep personal reflection.</li>
+                                <li>Take as much time as you need.</li>
+                                <li>Use journaling extensively.</li>
+                                <li>Create your own pacing.</li>
+                                <li>Return to previous sessions.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Group play</h3>
+                            <ul class="space-y-2 text-gray-300 text-base leading-relaxed">
+                                <li>Share reflections with others.</li>
+                                <li>Learn from different perspectives.</li>
+                                <li>Build collective narratives.</li>
+                                <li>Support each other's growth.</li>
+                                <li>Create shared memories.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section class="py-12 bg-amber-400 text-black">
-        <div class="max-w-4xl mx-auto text-center px-4">
-            <h2 class="text-2xl md:text-3xl font-semibold mb-3">Ready to Begin?</h2>
-            <p class="text-base md:text-lg mb-6 max-w-2xl mx-auto">
-                Your journey of becoming starts with a single step. Gather your materials and begin.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="download/JOURNEYWAYS Game Rules 1.0.pdf" download class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">
-                    Download Board Game Rules PDF
-                </a>
-                <a href="download/JOURNEYWYS Character Sheet 1.0.pdf" download class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">
-                    Download Character Sheet PDF
-                </a>
+    <!-- ===== Open play ===== -->
+    <section class="pt-12 md:pt-16 pb-20 md:pb-28 border-t border-gray-700/40" aria-labelledby="open-play">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Open play</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="open-play" class="sr-only">Open play</h2>
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-10 mb-10">
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Returning to a session</h3>
+                            <p class="text-gray-300 text-base leading-relaxed">
+                                JOURNEYWAYS is designed for ongoing play. Return to previous sessions, revisit old insights, see how your understanding has evolved. Your character and story continue to develop between sessions.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Make your own</h3>
+                            <p class="text-gray-300 text-base leading-relaxed">
+                                Add your own story cards, tiles, character elements, mechanics. Templates are open. JOURNEYWAYS is a framework for exploration; make it your own.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Setting the table</h3>
+                            <ul class="space-y-2 text-gray-300 text-base leading-relaxed">
+                                <li>Set aside dedicated time.</li>
+                                <li>Minimize distractions.</li>
+                                <li>Create a comfortable environment.</li>
+                                <li>Honor everyone's privacy.</li>
+                                <li>Practice active listening.</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-4">Going deeper</h3>
+                            <ul class="space-y-2 text-gray-300 text-base leading-relaxed">
+                                <li>Ask open-ended questions.</li>
+                                <li>Embrace uncertainty.</li>
+                                <li>Allow for silence and reflection.</li>
+                                <li>Be curious, not judgmental.</li>
+                                <li>Celebrate small discoveries.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     </main>
 
     <!-- Footer -->
@@ -390,7 +515,7 @@
             <p class="text-sm text-gray-500 mb-2">
                 Master's research conducted by <a href="about.html" class="hover:text-yellow-400 transition-colors">Adri M.</a> at the UBC Institute for Gender, Race, Sexuality and Social Justice.
             </p>
-            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.2.0</span></p>
+            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.3.0</span></p>
         </div>
     </footer>
 
@@ -420,7 +545,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=18" defer></script>
+    <script src="js/main.js?v=20" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>

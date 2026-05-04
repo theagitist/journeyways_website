@@ -7,25 +7,25 @@
     <meta name="keywords" content="JOURNEYWAYS, digital game, video game, identity exploration, collaborative storytelling, real-time multiplayer, narrative game, web game, UBC GRSJ research, trilingual game, privacy by design, alpha development">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.journeyways.ca/videogame.html">
     <meta property="og:title" content="JOURNEYWAYS | The Digital Game">
     <meta property="og:description" content="The JOURNEYWAYS digital version, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual interface (EN/ES/FR), privacy by design, web-based with no install required.">
-    <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
+    <meta property="og:image" content="https://www.journeyways.ca/img/og-card.webp">
     <meta property="og:site_name" content="JOURNEYWAYS">
-    
+
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://www.journeyways.ca/videogame.html">
     <meta name="twitter:title" content="JOURNEYWAYS | The Digital Game">
     <meta name="twitter:description" content="The JOURNEYWAYS digital version, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual (EN/ES/FR), privacy by design, web-based.">
-    <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.jpg">
-    
+    <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.webp">
+
     <!-- Canonical URL -->
     <link rel="canonical" href="https://www.journeyways.ca/videogame.html">
-    
+
     <title>JOURNEYWAYS | The Digital Game</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
@@ -33,7 +33,7 @@
     <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/tailwind.css?v=21">
+    <link rel="stylesheet" href="css/tailwind.css?v=24">
     <link rel="stylesheet" href="css/styles.css?v=23">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -43,13 +43,7 @@
             "name": "JOURNEYWAYS (Digital)",
             "description": "The digital version of JOURNEYWAYS, in active development at v0.4.1-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Designed for solo and group play.",
             "url": "https://www.journeyways.ca/videogame.html",
-            "image": [
-                "https://www.journeyways.ca/img/og-card.jpg",
-                "https://www.journeyways.ca/img/design/card-wind.webp",
-                "https://www.journeyways.ca/img/design/card-commune.webp",
-                "https://www.journeyways.ca/img/design/tile-misty-trail.webp",
-                "https://www.journeyways.ca/img/design/tile-night-way.webp"
-            ],
+            "image": "https://www.journeyways.ca/img/og-card.webp",
             "applicationCategory": "GameApplication",
             "playMode": [
                 "SinglePlayer",
@@ -91,7 +85,6 @@
                         <a href="about.html" class="hover:text-yellow-400 transition-colors" aria-label="About the researcher and project background">About</a>
                     </div>
                 </div>
-                <!-- Mobile menu button -->
                 <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Open or close main menu">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -99,7 +92,6 @@
                     </svg>
                 </button>
             </div>
-            <!-- Mobile menu -->
             <div id="mobile-menu" class="hidden md:hidden pb-4" role="navigation" aria-label="Main menu">
                 <div class="flex flex-col space-y-3">
                     <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors py-2" aria-label="Homepage">Homepage</a>
@@ -113,132 +105,203 @@
         </div>
     </nav>
 
-    <main class="main-content">
-        <!-- Hero -->
-        <section class="pt-24 pb-0">
-            <div class="max-w-6xl mx-auto px-4">
-                <div class="max-w-3xl mx-auto text-center">
-                    <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-6 tracking-tight">The Digital Version</h1>
-                    <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-relaxed">
-                        JOURNEYWAYS is being built as a digital game in parallel with the board game. Same design philosophy, same five card categories, same modular map, same private journal. Different medium, same commitment to identity exploration and collaborative narrative.
-                    </p>
-                    <p class="text-base md:text-lg text-gray-300 max-w-2xl mx-auto mt-5 leading-relaxed">
-                        The digital version exists to remove barriers, not to replace the table. Players can participate from anywhere; sessions span geographies; there is no camera support so the focus stays on words and stories. Solo and group play, real-time multiplayer, trilingual at launch in English, Spanish, and French.
-                    </p>
-                </div>
-                <figure class="mt-12 mb-0">
-                    <div class="flex justify-center gap-4">
-                        <div class="w-72">
-                            <img src="img/design/card-wind.webp" alt="Encounter card: a watercolor and ink illustration of a figure with thoughts scattering on the wind." class="w-full h-56 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 0)" loading="lazy">
-                            <p class="text-xs text-gray-400 italic text-center mt-2">Wind. <span class="card-red">Encounter card</span>.</p>
-                        </div>
-                        <div class="w-72">
-                            <img src="img/design/card-commune.webp" alt="Group action card: watercolor of six colourful meeples huddled together." class="w-full h-56 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameCards', 1)" loading="lazy">
-                            <p class="text-xs text-gray-400 italic text-center mt-2">Commune. <span class="card-purple">Group action card</span>.</p>
-                        </div>
-                    </div>
-                </figure>
-            </div>
-        </section>
+    <main>
 
-        <!-- Development Log -->
-        <section class="pt-8 pb-12">
-            <div class="max-w-6xl mx-auto px-4">
-                <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-2 tracking-tight">Development Log</h2>
-                <p class="text-gray-400 text-sm mb-6">Progress and milestones for the digital version.</p>
-                <div class="flex flex-wrap items-center gap-4 mb-3">
-                    <span class="devlog-badge" aria-label="Current development version">Version: v0.4.1-alpha</span>
-                    <span class="devlog-badge" aria-label="Latest tag date">Tagged April 2026</span>
+    <!-- ===== Hero: centered title block + horizontal spec strip ===== -->
+    <section class="pt-24 md:pt-28 pb-12 md:pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Centered title block -->
+            <div class="max-w-3xl mx-auto text-center">
+                <div class="flex items-center justify-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                        <rect width="20" height="14" x="2" y="3" rx="2"/>
+                        <line x1="8" x2="16" y1="21" y2="21"/>
+                        <line x1="12" x2="12" y1="17" y2="21"/>
+                    </svg>
+                    <span>Digital version &middot; Alpha &middot; In development</span>
                 </div>
-                <p class="text-sm text-gray-400 leading-relaxed mb-10">
-                    Source code at <a href="https://github.com/theagitist/journeyways" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">github.com/theagitist/journeyways</a>.<br/>
-                    The repository is private during development; access by request for now. It will be made public when the project is released.
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-[1.05] mb-3 md:mb-4">The digital version.</h1>
+                <p class="text-base md:text-lg italic font-light text-gray-300 mb-8 md:mb-10 max-w-prose mx-auto">Same game. Web-native. Built in the open.</p>
+                <p class="text-base md:text-lg text-gray-400 leading-relaxed max-w-prose mx-auto">
+                    JOURNEYWAYS is being built as a digital game in parallel with the board game. Same design philosophy, same five card categories, same modular map, same private journal. Different medium, same commitment to identity exploration and collaborative narrative.
                 </p>
+            </div>
+            <!-- Horizontal spec strip -->
+            <dl class="mt-10 md:mt-14 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-6 gap-px bg-gray-700/40 border border-gray-700/40">
+                <div class="bg-gray-800 px-4 py-5">
+                    <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5">Version</dt>
+                    <dd class="text-sm font-mono text-white">v0.4.1-alpha</dd>
+                </div>
+                <div class="bg-gray-800 px-4 py-5">
+                    <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5">Tagged</dt>
+                    <dd class="text-sm font-mono text-white">April 2026</dd>
+                </div>
+                <div class="bg-gray-800 px-4 py-5">
+                    <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5">Platform</dt>
+                    <dd class="text-sm font-mono text-white">Web, no install</dd>
+                </div>
+                <div class="bg-gray-800 px-4 py-5">
+                    <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5">Players</dt>
+                    <dd class="text-sm font-mono text-white">1 to 6</dd>
+                </div>
+                <div class="bg-gray-800 px-4 py-5">
+                    <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5">Languages</dt>
+                    <dd class="text-sm font-mono text-white">EN &middot; ES &middot; FR</dd>
+                </div>
+                <div class="bg-gray-800 px-4 py-5">
+                    <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5">Source</dt>
+                    <dd class="text-sm font-mono text-white"><a href="https://github.com/theagitist/journeyways" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">github</a></dd>
+                </div>
+            </dl>
+            <p class="mt-4 text-xs text-gray-500 italic text-center max-w-5xl mx-auto">Repository is private during development. Open to the public at release.</p>
+        </div>
+    </section>
 
-                <h3 class="text-lg font-semibold text-gray-300 mb-4">In this version</h3>
-                <ul class="space-y-4 list-none p-0 m-0 mb-12">
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Real-time multiplayer</div>
-                        <div class="devlog-card-desc">Lobby, dashboard, and play view show who is present. Collaborative canvas synchronization keeps everyone's view in step.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Modular map and the five-color card system</div>
-                        <div class="devlog-card-desc">The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class="card-red">Red</span> Encounters, <span class="card-green">Green</span> Movement, <span class="card-blue">Blue</span> Reflections, <span class="card-black">Black</span> Countdown, <span class="card-purple">Purple</span> Group actions.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Private journal with sketch preview</div>
-                        <div class="devlog-card-desc">Per-player journal: write entries, sketch with the canvas tool, browse previous entries with thumbnail previews.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Character Origins as PDF</div>
-                        <div class="devlog-card-desc">Players can export their character creation page as a US Letter PDF for printing or archival.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Trilingual interface</div>
-                        <div class="devlog-card-desc">English, Spanish, and French at launch. User-created content stays in the language the user wrote it; nothing gets auto-translated.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Privacy by design</div>
-                        <div class="devlog-card-desc">No camera support. Argon2id password hashing, Cloudflare Turnstile verification, journals scoped per session. All data hosted in Canada.</div>
-                    </li>
-                </ul>
+    <!-- ===== Premise ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="premise">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Premise</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="premise" class="sr-only">Premise</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        The digital version exists to remove barriers, not to replace the table. Players can participate from anywhere; sessions span geographies; there is no camera support so the focus stays on words and stories. Solo and group play, real-time multiplayer, trilingual at launch.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The repository is private during development; access by request. It will be made public when the project is released.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-                <h3 class="text-lg font-semibold text-gray-300 mb-4">Recent milestones</h3>
-                <ul class="space-y-4 list-none p-0 m-0">
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Multiplayer presence</div>
-                        <div class="devlog-card-desc">Lobby, JOURNEY view, and dashboard now show who is in the room and who is currently playing.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Journal log redesign</div>
-                        <div class="devlog-card-desc">Per-entry name, compact edit affordance, sketch preview thumbnails on each row.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Play-view layout overhaul</div>
-                        <div class="devlog-card-desc">Site navigation moved into a hamburger inside the journal panel. The canvas now reaches the top of the viewport. The journal panel can be hidden entirely or floated as an overlay.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Phone-size advisory</div>
-                        <div class="devlog-card-desc">First-time-per-session modal warns phone users that the game is best on desktop or tablet. Full mobile responsiveness is on the roadmap.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">mtime-based cache invalidation</div>
-                        <div class="devlog-card-desc">Stylesheet and script tags carry an mtime-based version query so rebuilds invalidate browser caches automatically.</div>
-                    </li>
-                </ul>
-
-                <figure class="my-12">
-                    <div class="flex justify-center gap-4">
-                        <div class="w-72">
-                            <img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." class="w-full h-72 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameTiles', 0)" loading="lazy">
-                            <p class="text-xs text-gray-400 italic text-center mt-2">Misty Trail. <span class="tile-wood">Map tile</span>.</p>
+    <!-- ===== Built ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="built">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Built</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="built" class="sr-only">Built so far</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">
+                        Shipped in the current alpha build.
+                    </p>
+                    <div class="grid sm:grid-cols-2 gap-px bg-gray-700/40 border border-gray-700/40 mb-10">
+                        <div class="bg-gray-800 p-5 md:p-6">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-2">Real-time multiplayer</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Lobby, dashboard, and play view show who is present. Collaborative canvas synchronization keeps everyone's view in step.</p>
                         </div>
-                        <div class="w-72">
-                            <img src="img/design/tile-night-way.webp" alt="Map tile: Night Way. Hand-drawn dark path under a starless sky." class="w-full h-72 object-cover rounded shadow-md lightbox-trigger" onclick="openLightboxFromSet('videogameTiles', 1)" loading="lazy">
-                            <p class="text-xs text-gray-400 italic text-center mt-2">Night Way. <span class="tile-wood">Map tile</span>.</p>
+                        <div class="bg-gray-800 p-5 md:p-6">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-2">Five-color card system</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class="card-red">Red</span> Encounters, <span class="card-green">Green</span> Movement, <span class="card-blue">Blue</span> Reflections, <span class="card-black">Black</span> Countdown, <span class="card-purple">Purple</span> Group actions.</p>
+                        </div>
+                        <div class="bg-gray-800 p-5 md:p-6">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-2">Private journal with sketch preview</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Per-player journal: write entries, sketch with the canvas tool, browse previous entries with thumbnail previews.</p>
+                        </div>
+                        <div class="bg-gray-800 p-5 md:p-6">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-2">Character origins as PDF</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Players can export their character creation page as a US Letter PDF for printing or archival.</p>
+                        </div>
+                        <div class="bg-gray-800 p-5 md:p-6">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-2">Trilingual interface</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">English, Spanish, and French at launch. User-created content stays in the language the user wrote it; nothing gets auto-translated.</p>
+                        </div>
+                        <div class="bg-gray-800 p-5 md:p-6">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-2">Privacy by design</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">No camera support. Argon2id password hashing, Cloudflare Turnstile verification, journals scoped per session. All data hosted in Canada.</p>
                         </div>
                     </div>
-                </figure>
-
-                <h3 class="text-lg font-semibold text-gray-300 mt-12 mb-4">On the roadmap</h3>
-                <ul class="space-y-4 list-none p-0 m-0">
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Mobile responsiveness</div>
-                        <div class="devlog-card-desc">Phones are advisory for now. Full small-screen support is planned.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Quiet beta, then larger sessions</div>
-                        <div class="devlog-card-desc">First closed beta with a small group, then larger play sessions. No launch campaign; updates here as they happen.</div>
-                    </li>
-                    <li class="devlog-card">
-                        <div class="devlog-card-title">Hybrid play (longer-term)</div>
-                        <div class="devlog-card-desc">A mixed-medium variant that combines physical components, like the player booklet, with digital ones, like the board map.</div>
-                    </li>
-                </ul>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <div id="cta-container"></div>
+    <!-- ===== Recent ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="recent">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-black.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Recent</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="recent" class="sr-only">Recent milestones</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">
+                        Latest changes in the development branch.
+                    </p>
+                    <ol class="space-y-6 list-none p-0 m-0">
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Multiplayer presence</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Lobby, JOURNEY view, and dashboard now show who is in the room and who is currently playing.</p>
+                        </li>
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Journal log redesign</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Per-entry name, compact edit affordance, sketch preview thumbnails on each row.</p>
+                        </li>
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Play-view layout overhaul</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Site navigation moved into a hamburger inside the journal panel. The canvas now reaches the top of the viewport. The journal panel can be hidden entirely or floated as an overlay.</p>
+                        </li>
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Phone-size advisory</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">First-time-per-session modal warns phone users that the game is best on desktop or tablet. Full mobile responsiveness is on the roadmap.</p>
+                        </li>
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">mtime-based cache invalidation</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Stylesheet and script tags carry an mtime-based version query so rebuilds invalidate browser caches automatically.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Next ===== -->
+    <section class="pt-12 md:pt-16 pb-16 md:pb-24 border-t border-gray-700/40" aria-labelledby="next">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Next</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="next" class="sr-only">On the roadmap</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">
+                        Planned, not yet shipped.
+                    </p>
+                    <ol class="space-y-6 list-none p-0 m-0">
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Mobile responsiveness</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">Phones are advisory for now. Full small-screen support is planned.</p>
+                        </li>
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Quiet beta, then larger sessions</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">First closed beta with a small group, then larger play sessions. No launch campaign; updates here as they happen.</p>
+                        </li>
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Hybrid play (longer-term)</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">A mixed-medium variant that combines physical components, like the player booklet, with digital ones, like the board map.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer -->
@@ -247,7 +310,7 @@
             <p class="text-sm text-gray-500 mb-2">
                 Master's research conducted by <a href="about.html" class="hover:text-yellow-400 transition-colors">Adri M.</a> at the UBC Institute for Gender, Race, Sexuality and Social Justice.
             </p>
-            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.2.0</span></p>
+            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.3.0</span></p>
         </div>
     </footer>
 
@@ -277,7 +340,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=18" defer></script>
+    <script src="js/main.js?v=20" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>
