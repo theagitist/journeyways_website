@@ -13,8 +13,8 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 ## Pages
 
 - **Home** (`index.html`). Editorial Swiss-luxury layout. Asymmetric hero anchored by the watercolor `og-card.webp` on the right; three hairline-divided chapter cards (No Fixed Roles, Collaborative Storytelling, Continuous Growth) opening themed native `<dialog>` popups; 3+9 chapter spine on the body sections (Italianno script titles with watercolor card-back swatches: Principles / Gameplay / Recent / Begin); contained components photo with a single-image lightbox; outline-button closing block. The marquee was retired in favor of a dated Recent rail lower on the page.
-- **Board Game** (`boardgame.html`). How to play: setup, gameplay phases, ending the game, journaling, solo vs group, advanced concepts, tips. Four illustrated figures: card backs by category, the canonical setup photo, a map-tile gallery, and example card fronts.
-- **Video Game** (`videogame.html`). Dev log for the digital version (in development).
+- **Board Game** (`boardgame.html`). How to play. Editorial hero with the printed rulebook cover (`img/rulebook_cover.webp`) on the left + title block on the right + inline PDF download links with file sizes. Body chapters on the 3+9 spine: Decks (5 card backs), Setup (components + initial steps + setup photo), Turn (3-phase grid + 12 map tiles + 9 card fronts), Ending (with pull quote), Journal, Modes (solo vs group), Open play.
+- **Video Game** (`videogame.html`). Dev log for the digital version. Centered typographic hero with a horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) and a "private during development, public at release" footnote. Body chapters on the 3+9 spine: Premise, Built (6-up hairline grid), Recent (timeline list), Next (timeline list).
 - **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
 - **Photos** (`photos.html`). Research gallery and lightbox.
 - **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
@@ -71,13 +71,25 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Operational notes
 
-- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=17`, `styles.css?v=21`, `main.js?v=17`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Font preloading** is set up in every HTML head (`<link rel="preload">` for Inter 400, Inter 600, Italianno 400 latin subsets) so first paint isn't a flash of fallback typography. `Italianno` uses `font-display: block`; Inter uses `font-display: swap` paired with an adjusted `Inter Fallback` face (local Arial with `size-adjust` and ascent/descent overrides) so the swap is layout-neutral and visually subtle.
 - **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
 - **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
 - **Google Search Console** verified via `google6fb8a72b75fa8894.html` at the site root.
 
 ## Changelog
+
+### 1.3.0 (May 2026) — editorial rollout complete
+
+Wraps the v1.2.x editorial Swiss-luxury redesign that started with the homepage. All six visible pages now ship in the new register.
+
+- **boardgame.html** redesigned. New hero: 5/7 split with the printed rulebook cover (`img/rulebook_cover.webp`, encoded from the JOURNEYWAYS Game Rules PDF cover) on the left + title block on the right at `items-start`. Inline CTAs with precise PDF sizes ("Download Rulebook (PDF, 585 KB)" / "Download Player Booklet (PDF, 5.2 MB)"). Body restructured into chapter-spine sections: Decks, Setup, Turn, Ending, Journal, Modes, Open play. Map tiles section grew from 4 to 12 examples; card fronts grew from 3 to 9. Yellow "Ready to play?" CTA section retired (download links live in the hero now).
+- **videogame.html** redesigned. First centered typographic hero on the site (no asymmetric split), with a horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) in monospace. Body chapters: Premise, Built (6-up hairline grid), Recent and Next (left-border timeline lists). Card and tile figures removed since they appear on boardgame now.
+- **PDF rename + optimization.** `JOURNEYWYS Character Sheet 1.0.pdf` (the typo'd "character sheet" that is actually the player booklet) renamed to `JOURNEYWAYS Player Booklet 1.0.pdf`. Both PDFs optimized with Ghostscript `/ebook` setting: Game Rules 2.2 MB → 585 KB, Player Booklet 11 MB → 5.2 MB.
+- **Content rule (site-wide).** "Draw" → "pick" anywhere it means selecting a card or tile from a pile (body text, alt text, JSON-LD). "Draw" / "drawn" preserved where it means illustrating ("draw a comic", "tiles can be drawn on") or sourcing ("drawn from a small canon") or describing artwork ("Hand-drawn map tile").
+- **Per-page hero variations are intentional**, not mistakes. Documented in `CLAUDE.md` and the user's memory: each of the six pages has its own hero treatment so the site doesn't read as one layout reskinned six times.
+- **6 new map tile webps** encoded from `~/FileShare/jw/game materials/Map Tiles/`: Abandoned Playground, Buried Names Field, Childhood House, Mountain Peak, Tree Hollow, Volcanic Ground.
+- **Bump** cache keys to `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`. `VERSION` and footer markers to 1.3.0.
 
 ### 1.2.0 (May 2026) — editorial redesign of the homepage
 
@@ -94,7 +106,7 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 - **FOUT mitigation**: three font preload links added to the head of every page (Inter 400, Inter 600, Italianno 400, latin subsets); Italianno switched to `font-display: block` so the script never flashes a sans-serif fallback; new `Inter Fallback` adjusted face (local Arial with `size-adjust: 107.4%` and ascent / descent overrides) makes the Inter swap layout-neutral and the visible change subtle. Body font stack is now `'Inter', 'Inter Fallback', sans-serif`.
 - **`brand-spec.md`** added at site root, capturing logo, colors, fonts, and UI patterns with a YAML asset manifest.
 - **Local-dev redirect guard**: `main.js` only canonicalizes apex → www on `https:`, so file-protocol and localhost inspection no longer bounce to the live site.
-- Bump cache keys: `tailwind.css?v=17`, `styles.css?v=21`, `main.js?v=17`.
+- Bump cache keys: `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`.
 - Bump `VERSION` and footer markers to 1.2.0.
 
 ### 1.1.2 (May 2026) — videogame polish and search console
