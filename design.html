@@ -30,8 +30,8 @@
     <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="css/tailwind.css?v=18">
-    <link rel="stylesheet" href="css/styles.css?v=22">
+    <link rel="stylesheet" href="css/tailwind.css?v=21">
+    <link rel="stylesheet" href="css/styles.css?v=23">
     <style>
         .black-card-panel {
             background-image: url('img/design/bg-black.webp');
@@ -103,270 +103,410 @@
     </nav>
 
     <main>
-    <section class="pt-24 pb-14">
-        <div class="max-w-3xl mx-auto px-4">
 
-            <!-- Page header -->
-            <header class="text-center mb-14">
-                <h1 class="text-3xl md:text-4xl font-semibold text-yellow-400 mb-4 tracking-tight">Design philosophy</h1>
-                <p class="text-base md:text-lg text-gray-300 leading-relaxed">
-                    Notes on how the game works. Why each piece works the way it does.
-                </p>
-            </header>
-
-            <!-- Intro -->
-            <article class="space-y-16">
-
-                <section aria-labelledby="intro">
-                    <h2 id="intro" class="sr-only">Introduction</h2>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        JOURNEYWAYS is a board game and a digital game in development, used as research instruments at the UBC <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Institute for Gender, Race, Sexuality and Social Justice</a>. However, the games are not the whole project; they are an integral tool to collect stories in a safe and collaborative environment, but the stories themselves are what matter the most, and the ethnographic analysis that will be performed on them.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The choices below are not aesthetic preferences. They are how the game tries to make space for an honest story. Each one is small. Together they describe what kind of object JOURNEYWAYS is, and what it is for.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "The stories are the most important. Not the way the players tell them." <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                </section>
-
-                <!-- 1. Identity is uncovered -->
-                <section id="identity" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">1. Identity is uncovered.</h2>
-                    <figure class="mb-6">
-                        <img src="img/design/card-box-not-yet.webp" alt="Watercolor and ink illustration of a box labeled Not yet, an Encounter card." class="w-full rounded shadow-md">
-                        <figcaption class="text-sm text-gray-400 italic mt-2 text-center">"You find a box labeled <span class="not-italic">'Not yet'</span>. Do you grab it? Do you open it?" <span class="card-red">Encounter card</span>.</figcaption>
+    <!-- ===== Hero: editorial split ===== -->
+    <section class="relative pt-24 md:pt-32 pb-12 md:pb-16 md:min-h-[60vh] flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-center">
+                <div class="col-span-12 md:col-span-5 md:order-1 order-2">
+                    <figure class="hero-mask m-0">
+                        <img src="img/design/tile-start.webp" alt="JOURNEYWAYS Start tile: a black calligraphic ink swirl on white, ringed by red, purple, blue, green, and magenta watercolor splotches." class="w-full h-auto block" loading="lazy">
                     </figure>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        In JOURNEYWAYS, identity is anything the player decides it to be. As large or as small. As direct or as oblique. Based in real life or completely made up. Realistic. Fantastic. Anything.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The default content is built around gender identity, drawing on Judith Butler, Julia Serano, Susan Stryker, and Kit Heyam, but the game frame is open. Players have used it to talk about parenthood, about being an international student, about a younger self they were trying to remember. One player chose Water as their identity. Not a water-based entity, not anthropomorphized, simply Water. They were reflecting on feeling less flowy than they used to be, and wanted to think about it during their play experience.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "Identity is a very open concept in this game. It can be whatever the player decides it to be. As large or small, as direct or oblique."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                </section>
-
-                <!-- 2. No winning, no losing -->
-                <section id="no-winning" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">2. No winning, no losing.</h2>
-                    <div class="black-card-panel rounded shadow-md p-10 md:p-14 mb-6 text-center" role="img" aria-label="Watercolor in shades of black and gray, with the line: We are always arriving, never arrived.">
-                        <p class="text-2xl md:text-3xl font-light text-gray-100 italic leading-snug">
-                            "We are always arriving,<br>never arrived."
-                        </p>
-                        <p class="text-sm text-gray-400 mt-5 not-italic"><span class="card-black">Countdown card</span>.</p>
+                </div>
+                <div class="col-span-12 md:col-span-7 md:order-2 order-1">
+                    <div class="flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                            <path d="M12 7v14"/>
+                            <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/>
+                        </svg>
+                        <span>Design philosophy &middot; Nine notes</span>
                     </div>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        JOURNEYWAYS has no win condition and no lose condition. By default, a session ends in one of three ways: a timer runs out, five <span class="card-black">Black cards</span> have been drawn, or both. Or something else the players agree on. Or a player chooses to leave at any time, no questions, no penalty.
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-[1.05] mb-3 md:mb-4">How the game works.</h1>
+                    <p class="text-base md:text-lg italic font-light text-gray-300 mb-8 md:mb-10 max-w-prose">Nine principles behind every piece, every rule, every silence at the table.</p>
+                    <p class="text-base md:text-lg text-gray-400 leading-relaxed max-w-prose mb-6">
+                        The choices below are not aesthetic preferences. They are ways to make space for an honest story. Each one is small. Together they describe what JOURNEYWAYS is, and what it is for.
                     </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The <span class="card-black">Black cards</span> are short poetic lines about time passing. <span class="italic">Petals fall, and new buds bloom. A heartbeat skips into the silence beyond. Footsteps vanish in the sand.</span> Each one is a small bell signaling another grain of time has passed.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        The absence of winning is not whimsy. It is the architecture under which the game can hold a real story. There is nothing to optimize. There is no resolution to perform. There is just what the player chose to bring, for as long as they wanted to bring it.
-                    </p>
-                </section>
-
-                <!-- 3. The only rule is consent -->
-                <section id="consent" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">3. The only rule the game enforces is consent at the table.</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
-                        <figure>
-                            <img src="img/design/tile-star-bridge.webp" alt="Hand-drawn map tile titled Star Bridge: a line drawing of an arched bridge against a wash of colored watercolor splotches." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">Star Bridge. <span class="tile-wood">Map tile</span>.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/design/card-map.webp" alt="Watercolor and ink illustration of a map without directions, an Encounter card." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">"You receive a map with no directions. What do you do?" <span class="card-red">Encounter card</span>.</figcaption>
-                        </figure>
-                    </div>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Everything in the game is mutable. Rules can be modified, bent, broken, ignored. New rules can be invented mid-session. The single non-mutable is that the rest of the table agrees.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Rule-breaking is not a failure mode. It is often the best thing that happens in a session. A player once decided not to place a tile adjacent to the existing map, against the rules. The tile was space-themed, so they invented warp mechanics on the fly to connect it. The break became a pivoting moment in the session, and inspired other players to be freer and more creative. Many player modifications get folded back into the canonical rulebook.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic mb-4">
-                        "Everything in the game is modifiable. New rules? Go ahead. Different rules? Go ahead. The only boundary is all other players must be ok with it."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                    <p class="text-gray-300 leading-relaxed">
-                        The looseness has a stated reason: agency. Players are given material to work with and trusted to do something with it. Most board games tell you what to do. JOURNEYWAYS tells you what is here, and asks what you want to do with it.
-                    </p>
-                </section>
-
-                <!-- 4. Designed to elicit, not to provide -->
-                <section id="elicit" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">4. Designed to elicit, not to provide.</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-                        <figure>
-                            <img src="img/design/card-memory.webp" alt="Watercolor card illustration: a memory growing wild." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">Memory. <span class="card-red">Encounter</span> (<span class="card-red">Red</span>).</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/design/card-reminiscence.webp" alt="Watercolor card illustration: footsteps returning to a known place." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">Reminiscence. <span class="card-green">Movement</span> (<span class="card-green">Green</span>).</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/design/card-encounter.webp" alt="Watercolor card illustration: two figures meeting." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">Encounter. <span class="card-purple">Group action</span> (<span class="card-purple">Purple</span>).</figcaption>
-                        </figure>
-                    </div>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The cards are written as gestures, not situations. <span class="italic">"This place reshapes your outline. How?"</span> <span class="italic">"Your voice changes in this place. How does it change?"</span> <span class="italic">"You no longer have to explain yourself. What changes?"</span> Each is short and open. The player provides the specific.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Cards are sorted into colored piles, not one shuffled deck. <span class="card-red">Red</span> is <span class="card-red">Encounters</span>. <span class="card-green">Green</span> is <span class="card-green">Movement</span>. <span class="card-blue">Blue</span> is <span class="card-blue">Reflections</span>, drawn from a small canon of queer thought (Adrienne Rich, James Baldwin, bell hooks, Tammy Baldwin, Karl Heinrich Ulrichs, Margaret Cho, and others). <span class="card-black">Black</span> is <span class="card-black">the passing of time</span>. <span class="card-purple">Purple</span> is <span class="card-purple">group actions</span>. Players choose which pile to draw from. They know the kind of card they will get; but not exactly which one.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        That is on purpose. Agency at the level of category. Discovery at the level of the card.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        No card content is generated by AI. Every prompt and every quote was created by hand. In the digital version, animations are skeuomorphic, never theatrical. The restraint is part of the design.
-                    </p>
-                </section>
-
-                <!-- 5. A mirror in a cave -->
-                <section id="combination" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">5. A mirror in a cave is not a mirror in a classroom.</h2>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-6">
-                        <figure>
-                            <img src="img/design/tile-singing-cave.webp" alt="Hand-drawn map tile: Singing Cave." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">Singing Cave. <span class="tile-wood">Map tile</span>.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/design/card-mirror.webp" alt="Watercolor card illustration: a cracked mirror." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">"A mirror cracks as you pass." <span class="card-red">Encounter card</span>.</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="img/design/tile-study-room.webp" alt="Hand-drawn map tile: Study Room." class="w-full rounded shadow-md">
-                            <figcaption class="text-xs text-gray-400 italic mt-2 text-center">Study Room. <span class="tile-wood">Map tile</span>.</figcaption>
-                        </figure>
-                    </div>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The board is a map. Players place tiles to build it as they go. Where you go on the map is itself an expression: which tile you walk toward, whether you go alone or join another player, whether you stay on the trail or strike out. Movement is not just for getting somewhere: it is part of telling.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Two components meeting is what generates a story. A card on its own gets repetitive quickly. Tiles on their own are too still. The mirror lands differently inside the Singing Cave than at the Study Room. A costume found at the Childhood House is not a costume found on the Star Bridge. The mechanic is the meeting.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "Finding a mirror in a classroom is very different than finding a mirror at the entrance of a dark cave."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                </section>
-
-                <!-- 6. Expression in any modality -->
-                <section id="expression" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">6. Expression in any modality. Even silence.</h2>
-                    <figure class="mb-6">
-                        <img src="img/edges_playtest_journaling.webp" alt="A player journaling during a JOURNEYWAYS session, hands writing in a booklet beside game tiles." class="w-full rounded shadow-md">
-                        <figcaption class="text-sm text-gray-400 italic mt-2 text-center">Players journaling during a session.</figcaption>
-                    </figure>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Each player has a booklet, there they create their character, draw it and convey their stories. They can use it to journal what happens to their character, write fragments, sketch, doodle, draw a comic, or leave it blank. The journal is the durable archive: what carries across sessions, what lets a player return to a character later or open a chapter two.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        But the journal is the default, not the requirement. A player can narrate verbally instead. A player can draw rather than write. A player can pass a turn. A player can sit out a round in silence. None of this is a problem. Silence is not awkward in JOURNEYWAYS. It is one way of telling the story.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic mb-4">
-                        "Doing nothing is also a way of expression."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                    <p class="text-gray-300 leading-relaxed">
-                        The cards are not secret either. The text is short and simple, and any player can ask another for help reading or interpreting. The literacy load is shareable, not solitary.
-                    </p>
-                </section>
-
-                <!-- 7. Simple-yet-sensorial -->
-                <section id="materials" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">7. Simple-yet-sensorial. The materials are yours too.</h2>
-                    <figure class="mb-6">
-                        <img src="img/design/tile-mirror-lake.webp" alt="Hand-drawn map tile titled Mirror Lake: a line-drawn lake silhouette layered over watercolor splotches." class="w-full rounded shadow-md">
-                        <figcaption class="text-sm text-gray-400 italic mt-2 text-center">Mirror Lake. <span class="tile-wood">Map tile</span>.</figcaption>
-                    </figure>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Cardboard or wooden tiles. Card stock that feels nice in the hands. A wordmark in a script that wants to feel playful and organic. Hand-drawn line illustrations on a white ground, with watercolor splotches behind them. The materials are deliberate.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        So is the openness of the materials. Tiles can be drawn on. New tiles can be invented from sticky notes when a player needs a place that does not yet exist on the map. The components do not assume their own permanence. The game's looseness goes all the way down to the cardboard.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "You are placing a solid piece. You can do with it whatever you want. You can even draw on it and expand it."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                </section>
-
-                <!-- 8. The framework is the form -->
-                <section id="framework" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">8. The framework is the form.</h2>
-                    <figure class="mb-6">
-                        <img src="img/boardgame_components.webp" alt="JOURNEYWAYS board game components laid out: map tiles, cards, a player booklet, and tokens." class="w-full rounded shadow-md">
-                        <figcaption class="text-sm text-gray-400 italic mt-2 text-center">The canonical triad: tiles, cards, booklet.</figcaption>
-                    </figure>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        JOURNEYWAYS is held together by three components: the <span class="tile-wood">map tiles</span>, the cards, and the player booklet. Together they make the game recognizable. The map gives location and context. The cards give stimulus and event. The booklet gives expression and archive.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Drop one and the experience changes. Anyone can do that. The framework is open: a researcher can author a variant for a specific community, a teacher can author one for a classroom, a parent can author one for younger players. The default content is adult and gender-focused, but the engine is for identity exploration in general.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The long-term form of JOURNEYWAYS is not a single product. It is the framework, and what other people make with it.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "The engine is meant to help in the creative process, not to be an obstacle."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                </section>
-
-                <!-- 9. Built to be shared. Built to be safe. -->
-                <section id="shared" class="scroll-mt-24">
-                    <h2 class="text-2xl md:text-3xl font-semibold text-yellow-400 mb-5 tracking-tight">9. Built to be shared. Built to be safe.</h2>
-                    <figure class="mb-6">
-                        <img src="img/design/assorted-six-meeples.webp" alt="Watercolor illustration of six meeples in different colors standing together." class="w-full rounded shadow-md">
-                        <figcaption class="text-sm text-gray-400 italic mt-2 text-center">Players, together.</figcaption>
-                    </figure>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        The same commitment runs through two sets of decisions.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        <span class="text-gray-200 font-medium">Reproducibility.</span> Free fonts. Open-source code. Creative Commons content. No proprietary dependencies. The game can be printed, modified, and republished without licensing or asset hurdles. Templates for cards, tiles, and the player booklet will be available so anybody can make their own version. Localized board game variants can be produced through the framework. The digital version launches in English, Spanish, and French.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        <span class="text-gray-200 font-medium">Safety.</span> The digital version ships without camera support. Research sessions are recorded as audio only, never video. All digital assets and data are kept in data centers in Canada (Toronto). User-created content stays in the language the user wrote it in; nothing gets auto-translated, because their words are theirs. Journal entries are stored under a documented <a href="https://play.journeyways.ca/privacy" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://play.journeyways.ca/terms" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2" target="_blank" rel="noopener noreferrer">Terms of Service</a>.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed">
-                        Two threads of one design. Make it possible for anyone to reach the game. Make it safe for anyone to actually play it.
-                    </p>
-                </section>
-
-                <!-- Closing: first-person note -->
-                <section id="closing" class="scroll-mt-24 bg-gray-700/40 border border-gray-600 rounded p-6 md:p-8">
-                    <h2 class="text-xl md:text-2xl font-semibold text-yellow-400 mb-4 tracking-tight">A note from the designer.</h2>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        Identities and ways of expressing them have been part of the human experience for as long as there have been humans. The categories most institutions hand us are recent, narrow, and not built to fit. JOURNEYWAYS does not pretend to fix that. It opens a small space inside it, where someone can talk about themselves without having to compress what they are.
-                    </p>
-                    <p class="text-gray-300 leading-relaxed mb-4">
-                        That is what every choice on this page is for.
-                    </p>
-                    <blockquote class="text-gray-200 leading-relaxed border-l-2 border-amber-400 pl-5 italic">
-                        "Knowledge needs to be shared with the people who need it the most."
-                        <span class="not-italic text-sm text-gray-400">(Adri M.)</span>
-                    </blockquote>
-                </section>
-
-                <!-- Page footer link -->
-                <div class="text-center pt-2">
-                    <p class="text-sm text-gray-400">
-                        For project context and the researcher's bio, see
-                        <a href="about.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">About</a>.
+                    <p class="text-sm md:text-base text-gray-400 leading-relaxed max-w-prose">
+                        <a href="about.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">About the researcher</a> &middot; <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">UBC GRSJ</a>
                     </p>
                 </div>
-
-            </article>
+            </div>
         </div>
     </section>
+
+    <!-- ===== Premise (a quiet eyebrow before the principles begin) ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="premise">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Premise</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="premise" class="sr-only">Premise</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        JOURNEYWAYS is a board game and a digital game in development, used as research instruments at the UBC <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Institute for Gender, Race, Sexuality and Social Justice</a>. The games are not the whole project; they are an integral tool to collect stories in a safe and collaborative environment. The stories themselves are what matter the most, and the ethnographic analysis that will be performed on them.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;The stories are what's most important, no matter how the players tell them.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 1. Identity ===== -->
+    <section id="identity" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="identity-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Identity</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="identity-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">Identity is uncovered.</h2>
+                    <figure class="mb-8">
+                        <img src="img/design/card-box-not-yet.webp" alt="Watercolor and ink illustration of a box labeled Not yet, an Encounter card." class="w-full block" loading="lazy">
+                        <figcaption class="text-sm text-gray-400 italic mt-3">&ldquo;You find a box labeled <span class="not-italic">'Not yet'</span>. Do you grab it? Do you open it?&rdquo; <span class="card-red">Encounter card</span>.</figcaption>
+                    </figure>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        In JOURNEYWAYS, identity is anything the player decides it to be. As large or as small. As direct or as oblique. Based in real life or completely made up. Realistic. Fantastic. Anything.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The default content is built around gender identity, drawing on Judith Butler, Julia Serano, Susan Stryker, and Kit Heyam, but the game frame is open. Players have used it to talk about parenthood, about being an international student, about a younger self they were trying to remember. One player chose Water as their identity. Not a water-based entity, not anthropomorphized, simply Water. They were reflecting on feeling less flowy than they used to be, and wanted to think about it during their play experience.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;Identity is a very open concept in this game. It can be whatever the player decides it to be. As large or small, as direct or oblique.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 2. Stakes ===== -->
+    <section id="no-winning" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="stakes-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-black.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Stakes</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="stakes-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">No winning, no losing.</h2>
+                    <div class="black-card-panel p-10 md:p-14 mb-8 text-center" role="img" aria-label="Watercolor in shades of black and gray, with the line: We are always arriving, never arrived.">
+                        <p class="text-2xl md:text-3xl font-light text-gray-100 italic leading-snug">
+                            &ldquo;We are always arriving,<br>never arrived.&rdquo;
+                        </p>
+                        <p class="text-[10px] uppercase tracking-[0.3em] text-gray-400 mt-5 not-italic"><span class="card-black">Countdown card</span></p>
+                    </div>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        JOURNEYWAYS has no win condition and no lose condition. By default, a session ends in one of three ways: a timer runs out, five <span class="card-black">Black cards</span> have been drawn, or both. Or something else the players agree on. Or a player chooses to leave at any time, no questions, no penalty.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The <span class="card-black">Black cards</span> are short poetic lines about time passing. <span class="italic">Petals fall, and new buds bloom. A heartbeat skips into the silence beyond. Footsteps vanish in the sand.</span> Each one is a small bell signaling another grain of time has passed.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The absence of winning is not whimsy. It is the architecture under which the game can hold a real story. There is nothing to optimize. There is no resolution to perform. There is just what the player chose to bring, for as long as they wanted to bring it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 3. Consent ===== -->
+    <section id="consent" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="consent-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Consent</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="consent-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">The only rule the game enforces is consent at the table.</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
+                        <figure>
+                            <img src="img/design/tile-star-bridge.webp" alt="Hand-drawn map tile titled Star Bridge: a line drawing of an arched bridge against a wash of colored watercolor splotches." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">Star Bridge. <span class="tile-wood">Map tile</span>.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/design/card-map.webp" alt="Watercolor and ink illustration of a map without directions, an Encounter card." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">&ldquo;You receive a map with no directions. What do you do?&rdquo; <span class="card-red">Encounter card</span>.</figcaption>
+                        </figure>
+                    </div>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        Everything in the game is mutable. Rules can be modified, bent, broken, ignored. New rules can be invented mid-session. The single non-mutable is that the rest of the table agrees.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        Rule-breaking is not a failure mode. It is often the best thing that happens in a session. A player once decided not to place a tile adjacent to the existing map, against the rules. The tile was space-themed, so they invented warp mechanics on the fly to connect it. The break became a pivoting moment in the session, and inspired other players to be freer and more creative. Many player modifications get folded back into the canonical rulebook.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;Everything in the game is modifiable. New rules? Go ahead. Different rules? Go ahead. The only boundary is all other players must be ok with it.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-10">
+                        The looseness has a stated reason: agency. Players are given material to work with and trusted to do something with it. Most board games tell you what to do. JOURNEYWAYS tells you what is here, and asks what you want to do with it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 4. Voice ===== -->
+    <section id="elicit" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="voice-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Voice</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="voice-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">Designed to elicit, not to provide.</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        <figure>
+                            <img src="img/design/card-memory.webp" alt="Watercolor card illustration: a memory growing wild." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">Memory. <span class="card-red">Encounter</span> (<span class="card-red">Red</span>).</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/design/card-reminiscence.webp" alt="Watercolor card illustration: footsteps returning to a known place." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">Reminiscence. <span class="card-green">Movement</span> (<span class="card-green">Green</span>).</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/design/card-encounter.webp" alt="Watercolor card illustration: two figures meeting." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">Encounter. <span class="card-purple">Group action</span> (<span class="card-purple">Purple</span>).</figcaption>
+                        </figure>
+                    </div>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        The cards are written as gestures, not situations. <span class="italic">&ldquo;This place reshapes your outline. How?&rdquo;</span> <span class="italic">&ldquo;Your voice changes in this place. How does it change?&rdquo;</span> <span class="italic">&ldquo;You no longer have to explain yourself. What changes?&rdquo;</span> Each is short and open. The player provides the specific.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        Cards are sorted into colored piles, not one shuffled deck. <span class="card-red">Red</span> is <span class="card-red">Encounters</span>. <span class="card-green">Green</span> is <span class="card-green">Movement</span>. <span class="card-blue">Blue</span> is <span class="card-blue">Reflections</span>, drawn from a small canon of queer thought (Adrienne Rich, James Baldwin, bell hooks, Tammy Baldwin, Karl Heinrich Ulrichs, Margaret Cho, and others). <span class="card-black">Black</span> is <span class="card-black">the passing of time</span>. <span class="card-purple">Purple</span> is <span class="card-purple">group actions</span>. Players choose which pile to draw from. They know the kind of card they will get; but not exactly which one.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        That is on purpose. Agency at the level of category. Discovery at the level of the card.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        No card content is generated by AI. Every prompt and every quote was created by hand. In the digital version, animations are skeuomorphic, never theatrical. The restraint is part of the design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 5. Meeting ===== -->
+    <section id="combination" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="meeting-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Meeting</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="meeting-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">A mirror in a cave is not a mirror in a classroom.</h2>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                        <figure>
+                            <img src="img/design/tile-singing-cave.webp" alt="Hand-drawn map tile: Singing Cave." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">Singing Cave. <span class="tile-wood">Map tile</span>.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/design/card-mirror.webp" alt="Watercolor card illustration: a cracked mirror." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">&ldquo;A mirror cracks as you pass.&rdquo; <span class="card-red">Encounter card</span>.</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="img/design/tile-study-room.webp" alt="Hand-drawn map tile: Study Room." class="w-full block" loading="lazy">
+                            <figcaption class="text-xs text-gray-400 italic mt-3">Study Room. <span class="tile-wood">Map tile</span>.</figcaption>
+                        </figure>
+                    </div>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        The board is a map. Players place tiles to build it as they go. Where you go on the map is itself an expression: which tile you walk toward, whether you go alone or join another player, whether you stay on the trail or strike out. Movement is not just for getting somewhere: it is part of telling.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        Two components meeting is what generates a story. A card on its own gets repetitive quickly. Tiles on their own are too still. The mirror lands differently inside the Singing Cave than at the Study Room. A costume found at the Childhood House is not a costume found on the Star Bridge. The mechanic is the meeting.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;Finding a mirror in a classroom is very different than finding a mirror at the entrance of a dark cave.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 6. Modality ===== -->
+    <section id="expression" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="modality-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Modality</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="modality-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">Expression in any modality. Even silence.</h2>
+                    <figure class="mb-8">
+                        <img src="img/edges_playtest_journaling.webp" alt="A player journaling during a JOURNEYWAYS session, hands writing in a booklet beside game tiles." class="w-full block" loading="lazy">
+                        <figcaption class="text-sm text-gray-400 italic mt-3">Players journaling during a session.</figcaption>
+                    </figure>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        Each player has a booklet, there they create their character, draw it and convey their stories. They can use it to journal what happens to their character, write fragments, sketch, doodle, draw a comic, or leave it blank. The journal is the durable archive: what carries across sessions, what lets a player return to a character later or open a chapter two.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        But the journal is the default, not the requirement. A player can narrate verbally instead. A player can draw rather than write. A player can pass a turn. A player can sit out a round in silence. None of this is a problem. Silence is not awkward in JOURNEYWAYS. It is one way of telling the story.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;Doing nothing is also a way of expression.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-10">
+                        The cards are not secret either. The text is short and simple, and any player can ask another for help reading or interpreting. The literacy load is shareable, not solitary.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 7. Hand ===== -->
+    <section id="materials" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="hand-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-black.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Hand</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="hand-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">Simple-yet-sensorial. The materials are yours too.</h2>
+                    <figure class="mb-8">
+                        <img src="img/design/tile-mirror-lake.webp" alt="Hand-drawn map tile titled Mirror Lake: a line-drawn lake silhouette layered over watercolor splotches." class="w-full block" loading="lazy">
+                        <figcaption class="text-sm text-gray-400 italic mt-3">Mirror Lake. <span class="tile-wood">Map tile</span>.</figcaption>
+                    </figure>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        Cardboard or wooden tiles. Card stock that feels nice in the hands. A wordmark in a script that wants to feel playful and organic. Hand-drawn line illustrations on a white ground, with watercolor splotches behind them. The materials are deliberate.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        So is the openness of the materials. Tiles can be drawn on. New tiles can be invented from sticky notes when a player needs a place that does not yet exist on the map. The components do not assume their own permanence. The game's looseness goes all the way down to the cardboard.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;You are placing a solid piece. You can do with it whatever you want. You can even draw on it and expand it.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 8. Frame ===== -->
+    <section id="framework" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="frame-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Frame</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="frame-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">The framework is the form.</h2>
+                    <figure class="mb-8">
+                        <img src="img/boardgame_components.webp" alt="JOURNEYWAYS board game components laid out: map tiles, cards, a player booklet, and tokens." class="w-full block" loading="lazy">
+                        <figcaption class="text-sm text-gray-400 italic mt-3">The canonical triad: tiles, cards, booklet.</figcaption>
+                    </figure>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        JOURNEYWAYS is held together by three components: the <span class="tile-wood">map tiles</span>, the cards, and the player booklet. Together they make the game recognizable. The map gives location and context. The cards give stimulus and event. The booklet gives expression and archive.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        Drop one and the experience changes. Anyone can do that. The framework is open: a researcher can author a variant for a specific community, a teacher can author one for a classroom, a parent can author one for younger players. The default content is adult and gender-focused, but the engine is for identity exploration in general.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        The long-term form of JOURNEYWAYS is not a single product. It is the framework, and what other people make with it.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;The engine is meant to help in the creative process, not to be an obstacle.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== 9. Reach ===== -->
+    <section id="shared" class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="reach-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Reach</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="reach-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">Built to be shared. Built to be safe.</h2>
+                    <figure class="mb-8">
+                        <img src="img/design/assorted-six-meeples.webp" alt="Watercolor illustration of six meeples in different colors standing together." class="w-full block" loading="lazy">
+                        <figcaption class="text-sm text-gray-400 italic mt-3">Players, together.</figcaption>
+                    </figure>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        The same commitment runs through two sets of decisions.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        <span class="text-gray-200 font-medium">Reproducibility.</span> Free fonts. Open-source code. Creative Commons content. No proprietary dependencies. The game can be printed, modified, and republished without licensing or asset hurdles. Templates for cards, tiles, and the player booklet will be available so anybody can make their own version. Localized board game variants can be produced through the framework. The digital version launches in English, Spanish, and French.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        <span class="text-gray-200 font-medium">Safety.</span> The digital version ships without camera support. Research sessions are recorded as audio only, never video. All digital assets and data are kept in data centers in Canada (Toronto). User-created content stays in the language the user wrote it in; nothing gets auto-translated, because their words are theirs. Journal entries are stored under a documented <a href="https://play.journeyways.ca/privacy" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2" target="_blank" rel="noopener noreferrer">Privacy Policy</a> and <a href="https://play.journeyways.ca/terms" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2" target="_blank" rel="noopener noreferrer">Terms of Service</a>.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        Two threads of one design. Make it possible for anyone to reach the game. Make it safe for anyone to actually play it.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Coda ===== -->
+    <section id="closing" class="pt-12 md:pt-16 pb-16 md:pb-24 border-t border-gray-700/40 scroll-mt-24" aria-labelledby="coda-title">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Coda</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="coda-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6">A note from the designer.</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        Identities and ways of expressing them have been part of the human experience for as long as there have been humans. The categories most institutions hand us are recent, narrow, and not built to fit. JOURNEYWAYS does not pretend to fix that. It opens a small space inside it, where someone can talk about themselves without having to compress what they are.
+                    </p>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
+                        That is what every choice on this page is for.
+                    </p>
+                    <blockquote class="mt-10 max-w-prose">
+                        <p class="text-2xl md:text-3xl italic font-light text-gray-100 leading-[1.3] tracking-tight">&ldquo;Knowledge needs to be shared with the people who need it the most.&rdquo;</p>
+                        <footer class="mt-4 text-[10px] uppercase tracking-[0.3em] text-gray-400">Adri M.</footer>
+                    </blockquote>
+                    <p class="text-sm text-gray-400 mt-12">
+                        For project context and the researcher's bio, see <a href="about.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">About</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- Footer -->
@@ -375,7 +515,7 @@
             <p class="text-sm text-gray-500 mb-2">
                 Master's research conducted by <a href="about.html" class="hover:text-yellow-400 transition-colors">Adri M.</a> at the UBC Institute for Gender, Race, Sexuality and Social Justice.
             </p>
-            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.2.0</span></p>
+            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.2.1</span></p>
         </div>
     </footer>
 
@@ -393,7 +533,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=17" defer></script>
+    <script src="js/main.js?v=18" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>
