@@ -343,7 +343,10 @@ background: rgba(251,191,36,0.08); border-radius: 0.375rem
 ```
 bg-black py-8; max-w-6xl mx-auto px-4 text-center
 ```
-Two paragraphs in `text-sm text-gray-500` and `text-gray-400`. Inline links shift to yellow-400 on hover. Version tag in `text-xs text-gray-600 ml-2`.
+Two paragraphs in `text-sm text-gray-500` and `text-gray-400`. Inline links to internal pages (e.g. About) shift to yellow-400 on hover. The **References** link is the one footer exception: it sits at rest in `text-yellow-400 hover:text-yellow-300` so the bibliography is discoverable from every page (it is intentionally not in the main nav). Version tag in `text-xs text-gray-600 ml-2`.
+
+### Bibliography list (`references.html`)
+The references page reuses the editorial chapter spine (watercolor swatch + Italianno script title + sentence-headline + small italic lead) and renders citations as a `<ul class="space-y-5 text-gray-300 text-[15px] md:text-base leading-relaxed">`. Each `<li>` is one APA 7 citation; book and journal titles are wrapped in `<em>`; DOI/URL links use the standard inline link pattern with `break-words` so long DOIs wrap on mobile. Eight thematic chapters, each colored by a single watercolor swatch (red/blue/purple/green/black) drawn from the boardgame card backs in `img/design/bg-*.webp`. The page is reachable from the footer of every other page and from an inline link in `about.html`; it is intentionally absent from the main nav.
 
 ### Animations
 - `fadeIn` (1s ease-in, opacity + translateY 20px to 0). Available as `.fade-in`.
@@ -435,3 +438,4 @@ If a future refactor wants tokens in one place, this is the spec compiled into C
 | `img/favicon.png` | Favicon (cropped logo) |
 | `img/design/` | Card and tile illustrations used on `design.html` and in lightbox sets |
 | `fonts/` | Inter (5 weights) and Italianno (1 weight), woff2, latin + latin-ext |
+| `references.html` | Bibliography page; eight thematic chapters of APA 7 citations. Footer-linked from every page; absent from main nav. Source list lives in `brainstorm/references.md` (gitignored) |
