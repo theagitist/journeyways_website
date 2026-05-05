@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A 5-minute pitch for JOURNEYWAYS, a board game and a digital game built as research instruments for the elaboration of identity beyond colonial categories. Master's research at the UBC Institute for Gender, Race, Sexuality and Social Justice.">
+    <meta name="keywords" content="JOURNEYWAYS pitch, presentation, board game, identity research, gender identity, decolonization, arts-based research, ethnography, UBC GRSJ, master's research, academic conference">
+    <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.journeyways.ca/pitch.html">
+    <meta property="og:title" content="JOURNEYWAYS | Pitch">
+    <meta property="og:description" content="A 5-minute pitch for the project. Ten slides, academic but friendly, designed for conference panels and roundtables.">
+    <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
+    <meta property="og:site_name" content="JOURNEYWAYS">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.journeyways.ca/pitch.html">
+    <meta name="twitter:title" content="JOURNEYWAYS | Pitch">
+    <meta name="twitter:description" content="A 5-minute pitch for a board game and a digital game used as identity-research instruments.">
+    <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.jpg">
+
+    <link rel="canonical" href="https://www.journeyways.ca/pitch.html">
+
+    <title>JOURNEYWAYS | Pitch</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/tailwind.css?v=25">
+    <link rel="stylesheet" href="css/styles.css?v=23">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "PresentationDigitalDocument",
+            "headline": "JOURNEYWAYS: a 5-minute pitch",
+            "description": "A 5-minute conference pitch for JOURNEYWAYS, a board game and a digital game used as research instruments for the elaboration of identity beyond colonial categories.",
+            "url": "https://www.journeyways.ca/pitch.html",
+            "image": "https://www.journeyways.ca/img/og-card.jpg",
+            "author": {
+                "@type": "Person",
+                "name": "Adri M.",
+                "url": "https://www.journeyways.ca/about.html"
+            },
+            "publisher": {
+                "@type": "Person",
+                "name": "Adri M.",
+                "url": "https://www.journeyways.ca/about.html",
+                "affiliation": {
+                    "@type": "EducationalOrganization",
+                    "name": "UBC Institute for Gender, Race, Sexuality and Social Justice",
+                    "url": "https://grsj.arts.ubc.ca/"
+                }
+            }
+        }
+    </script>
+    <style>
+        /* ===== Slide system ===== */
+        :root {
+            --slide-pad-y: clamp(2.5rem, 6vh, 5rem);
+            --slide-pad-x: clamp(1.5rem, 6vw, 5rem);
+        }
+
+        html, body { height: 100%; }
+        body.pitch {
+            background: #111827; /* gray-900 */
+            color: #fff;
+            overflow: hidden;
+        }
+
+        .deck {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        .slide {
+            position: absolute;
+            inset: 0;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            padding: var(--slide-pad-y) var(--slide-pad-x);
+            opacity: 0;
+            transition: opacity 220ms ease;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .slide-inner {
+            width: 100%;
+            max-width: 72rem;
+            margin: 0 auto;
+        }
+
+        .slide-chapter {
+            display: flex;
+            align-items: center;
+            gap: 0.85rem;
+            margin-bottom: 1.25rem;
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(75, 85, 99, 0.4); /* gray-700/40 */
+        }
+        .slide-chapter .swatch {
+            width: 2.5rem;
+            height: 3.25rem;
+            overflow: hidden;
+            opacity: 0.85;
+            flex-shrink: 0;
+        }
+        .slide-chapter .swatch img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+        .slide-chapter .chapter-title {
+            font-family: 'Italianno', cursive;
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            line-height: 1;
+            color: #facc15; /* yellow-400 */
+        }
+
+        .slide h1.cover {
+            font-family: 'Italianno', cursive;
+            font-weight: 400;
+            color: #facc15;
+            font-size: clamp(5rem, 16vw, 14rem);
+            line-height: 0.95;
+            letter-spacing: 0.005em;
+            margin: 0.5rem 0 1.5rem;
+        }
+
+        .slide h2 {
+            font-size: clamp(1.75rem, 3.4vw, 3.25rem);
+            line-height: 1.1;
+            font-weight: 500;
+            color: #fff;
+            letter-spacing: -0.01em;
+            margin-bottom: 1.25rem;
+        }
+
+        .slide p, .slide li {
+            font-size: clamp(1rem, 1.4vw, 1.35rem);
+            line-height: 1.55;
+            color: #d1d5db; /* gray-300 */
+            font-weight: 300;
+        }
+        .slide p + p { margin-top: 0.85rem; }
+        .slide .muted { color: #9ca3af; }
+
+        .pullquote {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: clamp(2.25rem, 4.5vw, 4rem);
+            line-height: 1.1;
+            margin-top: 1.25rem;
+        }
+
+        .principles {
+            list-style: none;
+            padding: 0;
+            margin: 0.5rem 0 0;
+        }
+        .principles li {
+            padding: 0.55rem 0;
+            border-top: 1px solid rgba(75, 85, 99, 0.4);
+        }
+        .principles li:last-child {
+            border-bottom: 1px solid rgba(75, 85, 99, 0.4);
+        }
+
+        .columns-3, .columns-2 {
+            display: grid;
+            gap: clamp(1rem, 2.5vw, 2.5rem);
+            margin-top: 1.5rem;
+        }
+        .columns-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+        .columns-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        @media (max-width: 720px) {
+            .columns-3, .columns-2 { grid-template-columns: 1fr; }
+        }
+
+        .col h3 {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .col p {
+            font-size: clamp(0.95rem, 1.25vw, 1.15rem);
+        }
+
+        .card-row {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: clamp(0.75rem, 1.5vw, 1.5rem);
+            margin: 1.5rem 0;
+        }
+        @media (max-width: 720px) {
+            .card-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        .card-chip {
+            aspect-ratio: 3 / 4;
+            border-radius: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            text-align: center;
+            padding: 0.75rem;
+            color: #fff;
+            font-weight: 500;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.35);
+        }
+        .card-chip span.dot {
+            display: block;
+            width: 0.55rem;
+            height: 0.55rem;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.85);
+        }
+        .card-chip .label {
+            font-size: clamp(0.85rem, 1.1vw, 1rem);
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        .card-chip .role {
+            font-size: clamp(0.75rem, 1vw, 0.95rem);
+            font-style: italic;
+            font-weight: 300;
+            opacity: 0.92;
+        }
+        .chip-red    { background: #b91c1c; }
+        .chip-green  { background: #15803d; }
+        .chip-purple { background: #6b21a8; }
+        .chip-blue   { background: #1d4ed8; }
+        .chip-black  { background: #1f2937; border: 1px solid rgba(255,255,255,0.15); }
+
+        .timeline {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: clamp(1rem, 2.5vw, 2.5rem);
+            margin-top: 1.5rem;
+        }
+        @media (max-width: 720px) {
+            .timeline { grid-template-columns: 1fr; }
+        }
+        .timeline .step {
+            border-top: 2px solid #facc15;
+            padding-top: 0.75rem;
+        }
+        .timeline .step .when {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: clamp(1.5rem, 2.6vw, 2.25rem);
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+        .timeline .step p {
+            font-size: clamp(0.95rem, 1.25vw, 1.15rem);
+        }
+
+        .vignette {
+            border-left: 2px solid rgba(250, 204, 21, 0.5);
+            padding: 0.25rem 0 0.25rem 1.25rem;
+            margin: 0.85rem 0;
+        }
+
+        .stories {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(1.25rem, 3vw, 3rem);
+            margin-top: 1rem;
+        }
+        @media (max-width: 720px) {
+            .stories { grid-template-columns: 1fr; }
+        }
+
+        /* ===== Cover slide ===== */
+        .cover-meta {
+            font-size: 0.78rem;
+            letter-spacing: 0.25em;
+            text-transform: uppercase;
+            color: rgba(250, 204, 21, 0.85);
+            margin-bottom: 0.75rem;
+        }
+        .cover-sub {
+            font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+            color: #d1d5db;
+            font-style: italic;
+            font-weight: 300;
+            max-width: 50rem;
+            line-height: 1.4;
+        }
+        .cover-foot {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #9ca3af;
+        }
+
+        /* ===== Closing ===== */
+        .closing-foot {
+            margin-top: 2rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #9ca3af;
+        }
+
+        /* ===== Controls ===== */
+        .deck-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.85rem 1.25rem;
+            font-size: 0.7rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.55);
+            z-index: 60;
+            pointer-events: none;
+        }
+        .deck-bar a {
+            color: rgba(250, 204, 21, 0.9);
+            text-decoration: none;
+            pointer-events: auto;
+        }
+        .deck-bar a:hover { color: #fde047; }
+        .deck-bar .counter { font-variant-numeric: tabular-nums; }
+
+        .deck-hint {
+            position: fixed;
+            bottom: 0.85rem;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0.65rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.35);
+            z-index: 60;
+            pointer-events: none;
+        }
+        .deck-hint kbd {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 0.05rem 0.35rem;
+            border-radius: 0.2rem;
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        .nav-zone {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            width: 18%;
+            z-index: 50;
+            cursor: pointer;
+        }
+        .nav-zone.prev { left: 0; }
+        .nav-zone.next { right: 0; }
+        .nav-zone:hover { background: linear-gradient(to right, rgba(250, 204, 21, 0.04), transparent); }
+        .nav-zone.next:hover { background: linear-gradient(to left, rgba(250, 204, 21, 0.04), transparent); }
+
+        /* ===== Speaker notes ===== */
+        .speaker-notes {
+            display: none;
+            position: fixed;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            max-height: 40vh;
+            overflow-y: auto;
+            background: rgba(17, 24, 39, 0.96);
+            border-top: 1px solid rgba(250, 204, 21, 0.4);
+            padding: 1rem 2rem 1.5rem;
+            color: #d1d5db;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            z-index: 70;
+        }
+        body.show-notes .speaker-notes.active { display: block; }
+        .speaker-notes h4 {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: 1.4rem;
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .speaker-notes ul {
+            list-style: disc;
+            padding-left: 1.25rem;
+        }
+        .speaker-notes ul li { margin-top: 0.25rem; }
+
+        /* ===== Print to PDF ===== */
+        @media print {
+            @page { size: 16in 9in; margin: 0; }
+            html, body {
+                background: #111827 !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+                overflow: visible !important;
+                height: auto !important;
+            }
+            body.pitch {
+                position: static;
+                overflow: visible;
+            }
+            .deck { position: static !important; display: block; }
+            .slide {
+                position: relative !important;
+                inset: auto !important;
+                display: flex !important;
+                opacity: 1 !important;
+                width: 16in;
+                height: 9in;
+                page-break-after: always;
+                break-after: page;
+            }
+            .slide:last-child { page-break-after: auto; }
+            .deck-bar, .deck-hint, .nav-zone, .speaker-notes { display: none !important; }
+        }
+    </style>
+</head>
+<body class="pitch">
+    <a href="#deck" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-yellow-400 focus:text-gray-900 focus:px-3 focus:py-2 focus:rounded focus:z-[80]">Skip to deck</a>
+
+    <header class="deck-bar" role="banner">
+        <a href="index.html" aria-label="Back to JOURNEYWAYS">&larr; JOURNEYWAYS</a>
+        <span class="counter" aria-live="polite"><span id="slide-current">01</span> / <span id="slide-total">10</span></span>
+    </header>
+
+    <div class="nav-zone prev" id="zone-prev" role="button" aria-label="Previous slide" tabindex="-1"></div>
+    <div class="nav-zone next" id="zone-next" role="button" aria-label="Next slide" tabindex="-1"></div>
+
+    <main id="deck" class="deck" role="main" aria-label="JOURNEYWAYS pitch deck">
+
+        <!-- ===== Slide 1: Cover ===== -->
+        <section class="slide" data-slide="1" aria-labelledby="cover-title">
+            <div class="slide-inner">
+                <div class="cover-meta">Master&rsquo;s research &middot; UBC GRSJ &middot; 2026</div>
+                <h1 id="cover-title" class="cover">JOURNEYWAYS</h1>
+                <p class="cover-sub">A board game and a digital game for the elaboration of identity beyond colonial categories.</p>
+                <p class="cover-foot">5-minute presentation &middot; Adri M. &middot; journeyways.ca</p>
+            </div>
+            <aside class="speaker-notes" data-for="1">
+                <h4>Cover &middot; ~20s</h4>
+                <ul>
+                    <li>Open with the project name and the one-line frame. Do not over-explain.</li>
+                    <li>Anchor: master&rsquo;s research at UBC GRSJ. Academic context, signaled briefly.</li>
+                    <li>Promise: ten slides, five minutes, friendly tone.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 2: The problem ===== -->
+        <section class="slide" data-slide="2" aria-labelledby="s2-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-red.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">The problem</span>
+                </header>
+                <h2 id="s2-title">Identity research begins with a form.</h2>
+                <p>Most studies of gender identity start with a handful of boxes (transman, transwoman, ciswoman, cisman, nonbinary, other) and a semi-structured interview to fit a person inside them.</p>
+                <p>The categories are eurocentric. The interviews are sterile. The setup is built for extraction, not elaboration.</p>
+            </div>
+            <aside class="speaker-notes" data-for="2">
+                <h4>The problem &middot; ~30s</h4>
+                <ul>
+                    <li>Name the standard method: a form plus a semi-structured interview.</li>
+                    <li>Name the critique: categories are eurocentric, the format is sterile, the structure compresses what it claims to study.</li>
+                    <li>This is the gap the project responds to. Do not linger.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 3: The proposition ===== -->
+        <section class="slide" data-slide="3" aria-labelledby="s3-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-purple.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">The proposition</span>
+                </header>
+                <h2 id="s3-title">What if the research happened around a table, not across one?</h2>
+                <p>JOURNEYWAYS is a board game and a digital game built as research instruments. Identity here is whatever the player decides it to be. As large or small, real or imagined, expressed in writing, drawing, speaking, or silence.</p>
+                <p>The goal is to make a space where people can elaborate their own stories without being categorized, judged, or hurried.</p>
+                <p class="pullquote">&ldquo;It is a game. We are just playing. Everything is valid. You can&rsquo;t lose.&rdquo;</p>
+            </div>
+            <aside class="speaker-notes" data-for="3">
+                <h4>The proposition &middot; ~35s</h4>
+                <ul>
+                    <li>Reframe the move: research as a table, not a clipboard.</li>
+                    <li>Identity is what the player decides it to be. Five modalities (write, draw, speak, doodle, silent).</li>
+                    <li>The pull-quote is the emotional anchor of the whole talk. Read it slowly.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 4: The components ===== -->
+        <section class="slide" data-slide="4" aria-labelledby="s4-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-green.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Three components</span>
+                </header>
+                <h2 id="s4-title">Map tiles, cards, and a player booklet.</h2>
+                <div class="columns-3">
+                    <div class="col">
+                        <h3>Map tiles</h3>
+                        <p>Wordless illustrations. Place them, draw on them, expand them. The map is open to interpretation and to authorship.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Cards</h3>
+                        <p>Short text, public to the table, organized in five colored piles. Stimulus, not script.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Player booklet</h3>
+                        <p>Write, draw, doodle, comic, or do nothing. Every mode counts. The booklet leaves a durable archive.</p>
+                    </div>
+                </div>
+                <p class="muted" style="margin-top:1.25rem; font-size: 0.95rem; letter-spacing: 0.18em; text-transform: uppercase;">Rules-light &middot; Open to authorship &middot; Modifiable in play</p>
+            </div>
+            <aside class="speaker-notes" data-for="4">
+                <h4>Three components &middot; ~30s</h4>
+                <ul>
+                    <li>Name the canonical triad. These three together identify the game.</li>
+                    <li>Tiles do location. Cards do stimulus. Booklet does expression and archive.</li>
+                    <li>End on the bottom strip: rules-light, open, modifiable. Three principles, no preamble.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 5: The cards ===== -->
+        <section class="slide" data-slide="5" aria-labelledby="s5-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-blue.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Bounded randomness</span>
+                </header>
+                <h2 id="s5-title">Five colored piles, not one shuffled deck.</h2>
+                <div class="card-row" role="list" aria-label="Card categories">
+                    <div class="card-chip chip-red" role="listitem"><span class="dot"></span><span class="label">Red</span><span class="role">Encounters</span></div>
+                    <div class="card-chip chip-green" role="listitem"><span class="dot"></span><span class="label">Green</span><span class="role">Movement</span></div>
+                    <div class="card-chip chip-purple" role="listitem"><span class="dot"></span><span class="label">Purple</span><span class="role">Social</span></div>
+                    <div class="card-chip chip-blue" role="listitem"><span class="dot"></span><span class="label">Blue</span><span class="role">Quotes</span></div>
+                    <div class="card-chip chip-black" role="listitem"><span class="dot"></span><span class="label">Black</span><span class="role">Time passing</span></div>
+                </div>
+                <p>Players choose which kind of moment to invite. The specific card stays a discovery. Agency at the level of category, surprise at the level of content.</p>
+            </div>
+            <aside class="speaker-notes" data-for="5">
+                <h4>Bounded randomness &middot; ~30s</h4>
+                <ul>
+                    <li>Five categories, five colored piles.</li>
+                    <li>The point is the design move: agency over kind, discovery over specifics.</li>
+                    <li>It lets players steer the tone of the story without collapsing the surprise.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 6: Design principles ===== -->
+        <section class="slide" data-slide="6" aria-labelledby="s6-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-black.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">How it&rsquo;s built</span>
+                </header>
+                <h2 id="s6-title">Five principles, of nine.</h2>
+                <ul class="principles">
+                    <li>Identity stays in the player&rsquo;s hands.</li>
+                    <li>No winning, no losing.</li>
+                    <li>Everyone at the table consents to what happens at the table.</li>
+                    <li>Prompts elicit; they do not provide.</li>
+                    <li>Simple-yet-sensorial materials. Hand-made wordmark. Freely reproducible.</li>
+                </ul>
+                <p class="muted" style="margin-top:1.25rem; font-size: 0.95rem;">The full nine, with materials and examples, live on <a href="design.html" style="color:#facc15; text-decoration: underline; text-underline-offset: 2px;">/design</a>.</p>
+            </div>
+            <aside class="speaker-notes" data-for="6">
+                <h4>How it&rsquo;s built &middot; ~35s</h4>
+                <ul>
+                    <li>Five of the nine principles. Read each one with breath between.</li>
+                    <li>Consent is the only non-negotiable rule. Everything else is open to authorship.</li>
+                    <li>&ldquo;Elicit, not provide&rdquo; is the inversion of standard prompt-driven games.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 7: Stories from the table ===== -->
+        <section class="slide" data-slide="7" aria-labelledby="s7-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-red.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Stories</span>
+                </header>
+                <h2 id="s7-title">From actual playtests.</h2>
+                <div class="stories">
+                    <div class="vignette">
+                        <p>A player once decided their character to be Water. Not water-based. Not anthropomorphized. Simply Water. As a way to think about feeling less flowy than they used to be.</p>
+                    </div>
+                    <div class="vignette">
+                        <p>Another player broke the rule that tiles must be placed adjacent. They placed a space-themed tile separately and authored warp rules to connect it. The break became the best thing about that session.</p>
+                    </div>
+                </div>
+                <p class="pullquote">&ldquo;The more the players create new rules, the better the game goes.&rdquo;</p>
+            </div>
+            <aside class="speaker-notes" data-for="7">
+                <h4>Stories &middot; ~40s</h4>
+                <ul>
+                    <li>Both stories are anonymized; both players gave verbal consent. Use them freely.</li>
+                    <li>Water shows the breadth of identity allowed. The warp tile shows rule-breaking as success metric.</li>
+                    <li>The closing line is the thesis of the design philosophy in fifteen words.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 8: Two versions ===== -->
+        <section class="slide" data-slide="8" aria-labelledby="s8-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-green.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Physical and digital</span>
+                </header>
+                <h2 id="s8-title">Two versions, peers, not hierarchy.</h2>
+                <div class="columns-2">
+                    <div class="col">
+                        <h3>Physical</h3>
+                        <p>Cardboard and wooden tiles. Drawable, expandable. Played at a table. Sixty to ninety minutes for a group of five or six.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Digital</h3>
+                        <p>Real-time, solo or group. English, Spanish, French at launch. No camera support. Cloud-saved journals. Privacy by design.</p>
+                    </div>
+                </div>
+                <p style="margin-top:1.25rem;">Same components, same philosophy, same agency. Open source: code under a software license, content under Creative Commons. No siloing in.</p>
+            </div>
+            <aside class="speaker-notes" data-for="8">
+                <h4>Physical and digital &middot; ~35s</h4>
+                <ul>
+                    <li>Both versions are peers. Neither is canonical.</li>
+                    <li>Digital exists for access and reach, not because the physical was insufficient.</li>
+                    <li>Privacy-by-design is the deliberate move: no camera in the digital version, on purpose.</li>
+                    <li>Open source, two licenses, no proprietary forks.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 9: Research arc ===== -->
+        <section class="slide" data-slide="9" aria-labelledby="s9-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-purple.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">What this is for</span>
+                </header>
+                <h2 id="s9-title">A three-phase research arc.</h2>
+                <div class="timeline">
+                    <div class="step">
+                        <div class="when">Now</div>
+                        <p>Playtesting refines the instrument. Players are testers, not research subjects. Diverse groups have already played.</p>
+                    </div>
+                    <div class="step">
+                        <div class="when">2026</div>
+                        <p>Ethics review and formal protocol. Informed consent, audio-only documentation, ethnographic frame.</p>
+                    </div>
+                    <div class="step">
+                        <div class="when">2026 to 2028</div>
+                        <p>Formal research phase. Ethnographic analysis of the stories that emerge. Papers, talks, and the open framework as the lasting outputs.</p>
+                    </div>
+                </div>
+                <p style="margin-top:1.25rem;">The games are not the project. The project is what the stories show us about how people elaborate identity when they are not under scrutiny.</p>
+            </div>
+            <aside class="speaker-notes" data-for="9">
+                <h4>What this is for &middot; ~40s</h4>
+                <ul>
+                    <li>Phase 1: now. Playtesters refine the tool. No formal study yet.</li>
+                    <li>Phase 2: 2026 ethics review. Mention this clearly: the formal study has not begun.</li>
+                    <li>Phase 3: through 2028. Ethnographic analysis is the methodological core.</li>
+                    <li>Closing line is the figure-ground reversal: the games are instruments, not the artifact.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 10: Closing ===== -->
+        <section class="slide" data-slide="10" aria-labelledby="s10-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-blue.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Success</span>
+                </header>
+                <h2 id="s10-title" class="sr-only">What success looks like.</h2>
+                <p class="pullquote" style="margin-top:0;">&ldquo;The stories are the most important, not the way the players tell them.&rdquo;</p>
+                <p style="margin-top:1.25rem;">A successful end of project: a better understanding of how people talk about their identities when they don&rsquo;t feel under scrutiny, judged, or having to comply with absurd categories. Visibility, where there has been silence.</p>
+                <p class="closing-foot">journeyways.ca &middot; grsj.arts.ubc.ca &middot; Thank you.</p>
+            </div>
+            <aside class="speaker-notes" data-for="10">
+                <h4>Closing &middot; ~25s</h4>
+                <ul>
+                    <li>Read the pull-quote slowly. It does the work.</li>
+                    <li>Land on &ldquo;visibility, where there has been silence&rdquo;. Pause.</li>
+                    <li>Thank the room. Take questions.</li>
+                </ul>
+            </aside>
+        </section>
+
+    </main>
+
+    <footer class="deck-hint" role="contentinfo">
+        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>F</kbd> fullscreen &middot; <kbd>S</kbd> speaker notes &middot; <kbd>P</kbd> print to PDF
+    </footer>
+
+    <script>
+        (function () {
+            'use strict';
+            var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+            var notes = Array.prototype.slice.call(document.querySelectorAll('.speaker-notes'));
+            var counterEl = document.getElementById('slide-current');
+            var totalEl = document.getElementById('slide-total');
+            var current = 0;
+            var total = slides.length;
+
+            totalEl.textContent = String(total).padStart(2, '0');
+
+            function go(i) {
+                if (i < 0) i = 0;
+                if (i >= total) i = total - 1;
+                current = i;
+                slides.forEach(function (s, idx) {
+                    s.classList.toggle('active', idx === i);
+                });
+                notes.forEach(function (n, idx) {
+                    n.classList.toggle('active', idx === i);
+                });
+                counterEl.textContent = String(i + 1).padStart(2, '0');
+                if (location.hash !== '#' + (i + 1)) {
+                    history.replaceState(null, '', '#' + (i + 1));
+                }
+            }
+
+            function next() { go(current + 1); }
+            function prev() { go(current - 1); }
+
+            document.addEventListener('keydown', function (e) {
+                if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+                switch (e.key) {
+                    case 'ArrowRight':
+                    case 'PageDown':
+                    case ' ':
+                        e.preventDefault(); next(); break;
+                    case 'ArrowLeft':
+                    case 'PageUp':
+                        e.preventDefault(); prev(); break;
+                    case 'Home':
+                        e.preventDefault(); go(0); break;
+                    case 'End':
+                        e.preventDefault(); go(total - 1); break;
+                    case 'f':
+                    case 'F':
+                        e.preventDefault();
+                        if (!document.fullscreenElement) {
+                            (document.documentElement.requestFullscreen || function () {}).call(document.documentElement);
+                        } else {
+                            (document.exitFullscreen || function () {}).call(document);
+                        }
+                        break;
+                    case 's':
+                    case 'S':
+                        e.preventDefault();
+                        document.body.classList.toggle('show-notes');
+                        break;
+                    case 'p':
+                    case 'P':
+                        e.preventDefault();
+                        window.print();
+                        break;
+                }
+            });
+
+            document.getElementById('zone-prev').addEventListener('click', prev);
+            document.getElementById('zone-next').addEventListener('click', next);
+
+            // Touch swipe
+            var touchStartX = null;
+            document.addEventListener('touchstart', function (e) {
+                if (e.touches && e.touches.length === 1) touchStartX = e.touches[0].clientX;
+            }, { passive: true });
+            document.addEventListener('touchend', function (e) {
+                if (touchStartX === null) return;
+                var endX = (e.changedTouches && e.changedTouches[0]) ? e.changedTouches[0].clientX : touchStartX;
+                var dx = endX - touchStartX;
+                if (Math.abs(dx) > 60) { dx < 0 ? next() : prev(); }
+                touchStartX = null;
+            }, { passive: true });
+
+            // Initial slide from hash, optional ?notes flag
+            var params = new URLSearchParams(location.search);
+            if (params.has('notes')) document.body.classList.add('show-notes');
+            var hashNum = parseInt((location.hash || '#1').replace('#', ''), 10);
+            if (!isNaN(hashNum) && hashNum >= 1 && hashNum <= total) {
+                go(hashNum - 1);
+            } else {
+                go(0);
+            }
+        })();
+    </script>
+</body>
+</html>

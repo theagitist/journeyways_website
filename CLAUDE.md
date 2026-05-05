@@ -4,7 +4,7 @@ Operator's quick reference for this site. Pairs with `README.md` (user-facing co
 
 ## What this is
 
-A static HTML site (6 visible pages + 1 hidden + 1 footer-only references page) plus a tiny Node backend in `server/` that handles a contact form. The site is the public face of Adri M.'s master's research at UBC GRSJ; tone is academic-yet-friendly. See `brainstorm/proposal-summary.md` for project framing, voice, and content principles.
+A static HTML site (6 visible pages + 1 hidden + 1 footer-only references page + 1 standalone pitch deck) plus a tiny Node backend in `server/` that handles a contact form. The site is the public face of Adri M.'s master's research at UBC GRSJ; tone is academic-yet-friendly. See `brainstorm/proposal-summary.md` for project framing, voice, and content principles.
 
 ## Layout
 
@@ -17,6 +17,7 @@ www.journeyways.ca/
 ├── about.html              About the researcher; bio, project narrative, inline anchors into design.html. "Get in touch" section currently commented out
 ├── design.html             Design philosophy (long-form essay; 9 principles, illustrated with card and tile artwork; anchored from about.html)
 ├── references.html         Bibliography (8 thematic chapters, 27 APA 7 citations). Footer-linked from every page; not in main nav. Source list in brainstorm/references.md (gitignored)
+├── pitch.html              Standalone 5-min conference deck (10 slides). Self-contained: inline CSS+JS, no external slide framework. Linked from about.html hero bar, not in main nav
 ├── contact.html            Contact form (HIDDEN: noindex, not in nav, not in sitemap)
 ├── css/styles.css          Custom CSS (@font-face, card colours, .tile-wood, marquee, lightbox)
 ├── css/tailwind.css        Tailwind utilities, locally built (output of tools/)
@@ -28,7 +29,7 @@ www.journeyways.ca/
 ├── download/               Rulebook and Player Booklet PDFs (Ghostscript-optimized via /ebook setting)
 ├── server/                 Express 5 + Nodemailer 8 backend. PM2 app `journeyways-www`. Currently stopped.
 ├── brainstorm/             Working notes (gitignored, synced to Obsidian vault)
-├── sitemap.xml             7 entries with <lastmod>; contact.html intentionally absent
+├── sitemap.xml             8 entries with <lastmod>; contact.html intentionally absent
 └── .gitignore              Ignores brainstorm/, server/node_modules/, server/.env, server/logs/, tools/node_modules/
 ```
 
@@ -51,6 +52,7 @@ www.journeyways.ca/
 - **`contact.html` is hidden.** Mailgun delivers cleanly to Outlook 365 (status 250, "Queued for delivery"), but the recipient inbox doesn't see them: spam/quarantine on the receiving side. Until that's resolved, the page is `noindex, nofollow`, off the nav, and out of the sitemap. The about page's "Get in touch" section is commented out for now. Backend is stopped.
 - **`design.html` (Design philosophy)** is live and in the main nav. Anchored sections (`#identity`, `#no-winning`, `#consent`, `#elicit`, `#combination`, `#expression`, `#materials`, `#framework`, `#shared`, `#closing`) are linked inline from `about.html` paragraphs. The page uses `.card-COLOR` and `.tile-wood` for category-name highlighting; both classes live in `css/styles.css`.
 - **`references.html` (Bibliography)** is live but intentionally **not in the main nav**. Discoverability: footer link on every page (the only footer link styled `text-yellow-400 hover:text-yellow-300` at rest, breaking the usual "yellow only on hover" rule), hero link bar on `about.html` and `design.html` ("Design philosophy &middot; References &middot; UBC GRSJ" and "About the researcher &middot; References &middot; UBC GRSJ"), inline link in the openness paragraph of `about.html`. Eight thematic chapters with anchor IDs (`#theory`, `#data`, `#arts-based`, `#ethnography`, `#analysis`, `#games`, `#co-creation`, `#pedagogy`) on the editorial chapter spine. Citations are APA 7 in a `<ul class="space-y-5 text-gray-300 text-[15px] md:text-base leading-relaxed">`; book/journal titles wrapped in `<em>`; DOIs use the standard inline link pattern with `break-words` so long DOIs wrap on mobile. Source list (with thematic groupings + full citations) lives in `brainstorm/references.md` and is gitignored. When adding entries, keep sentence case for titles, expand publishers without legal designations (e.g. "Sage Publications" not "SAGE Publications Ltd."), and only add DOIs that are verified to exist (Seal Press / Bloomsbury / Pearson trade titles generally don't have DOIs).
+- **`pitch.html` (5-min conference deck)** is live but intentionally **not in the main nav**. Discoverability: a single "Pitch" link in the `about.html` hero link bar between References and UBC GRSJ. The page is fully self-contained (no Reveal.js or external slide framework): inline `<style>` block defines the slide system, inline `<script>` handles keyboard navigation (arrows, space, Home/End, F fullscreen, S speaker notes, P print). 10 slides, each is a `<section class="slide">` shown via `.active`. Speaker notes hide by default; toggle with `S` or open with `?notes`. Print stylesheet (`@media print` with `@page { size: 16in 9in }`) lays each slide out as a 16:9 page so browsers' "Print to PDF" produces a clean shareable PDF. The deck reuses the editorial pattern (Italianno chapter titles in `text-yellow-400`, watercolor swatches from `img/design/bg-*.webp`, `border-t border-gray-700/40` hairlines) but does NOT include the standard nav; only a top-left "← JOURNEYWAYS" link back to home, plus a slide counter top-right.
 - **Lightbox infrastructure** in `js/main.js` supports multiple gallery sets via `openLightboxFromSet(setName, index)`. Sets currently defined: `photos`, `boardgameSetup`, `boardgameTiles`, `boardgameCardFronts`, `boardgameCardBacks`, `videogameCards`, `videogameTiles`. The lightbox modal markup is duplicated in `photos.html`, `boardgame.html`, and `videogame.html`. CSS hides nav arrows when the active set has only one image.
 - **Audit pass landed in v1.1.1** (May 2026): self-hosted fonts, local Tailwind build, Express 5 / Nodemailer 8, JSON-LD on every page, og-card.jpg replacement of heavy logos, sitemap lastmod, og:image swaps, image webp conversions (saved ~9 MB per first visit), title-tag standardization to `JOURNEYWAYS | <Page>`, boardgame and videogame lightboxes, GRSJ link in About and Design.
 - **`server/.env` holds Mailgun SMTP creds and the Cloudflare Turnstile secret.** Values were copied from `/var/www/play.journeyways.ca/.env`. Gitignored. Don't read or echo.
