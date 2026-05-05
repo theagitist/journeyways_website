@@ -18,6 +18,7 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 - **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
 - **Photos** (`photos.html`). Research gallery and lightbox.
 - **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
+- **References** (`references.html`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list is `brainstorm/references.md`.
 - **Contact** (`contact.html`). Hidden (`noindex`, off the nav, off the sitemap) until the deliverability issue is resolved.
 
 ## Site structure
@@ -25,7 +26,7 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 ```
 www.journeyways.ca/
 ├── index.html, boardgame.html, videogame.html, photos.html
-├── about.html, design.html, contact.html
+├── about.html, design.html, references.html, contact.html
 ├── css/styles.css           Card colours, .tile-wood, marquee fade,
 │                            lightbox, hover transitions
 ├── js/main.js               Mobile menu, cookie banner, CTA injection,
@@ -38,7 +39,7 @@ www.journeyways.ca/
 ├── download/                Rules and character-sheet PDFs
 ├── server/                  Express 5 + Nodemailer 8 backend (contact form, currently stopped)
 ├── brainstorm/              Working notes (gitignored, synced to Obsidian)
-├── sitemap.xml              6 entries; contact.html intentionally absent
+├── sitemap.xml              7 entries; contact.html intentionally absent
 └── VERSION
 ```
 
@@ -71,13 +72,22 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Operational notes
 
-- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Font preloading** is set up in every HTML head (`<link rel="preload">` for Inter 400, Inter 600, Italianno 400 latin subsets) so first paint isn't a flash of fallback typography. `Italianno` uses `font-display: block`; Inter uses `font-display: swap` paired with an adjusted `Inter Fallback` face (local Arial with `size-adjust` and ascent/descent overrides) so the swap is layout-neutral and visually subtle.
 - **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
 - **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
 - **Google Search Console** verified via `google6fb8a72b75fa8894.html` at the site root.
 
 ## Changelog
+
+### 1.3.1 (May 2026) — references page
+
+- **New `references.html`.** Bibliography behind the project, in the editorial register: typographic-only hero, eight thematic chapter sections (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy) with watercolor swatches and Italianno script titles, 27 APA 7 citations rendered as a `<ul>` with sentence-case titles and DOIs. Source list lives in `brainstorm/references.md` (gitignored).
+- **Discoverability without nav crowding.** Footer link added on every page (the one footer link styled `text-yellow-400` at rest, breaking the "yellow only on hover" rule); hero link bar on About and Design now lists References alongside the existing links; About also gains an inline link in the openness paragraph. Intentionally not in the main nav, to keep the six-link visible nav from sprawling.
+- **APA 7 audit pass.** Fixed sentence-case titles (Butler, McDermott), added verified DOIs for Butler 1999, Ritterfeld 2009, Gobet 2004; completed venue for Monteiro-Krebs (CHI EA '24), volume/issue/article number for Hines 2023; reformatted McDermott as a proper dissertation entry (Ohio State / ProQuest); cleaned publisher names per APA conventions (Sage, Springer, Pearson).
+- **`brand-spec.md`** documents the bibliography list pattern and the always-yellow footer exception.
+- Tailwind rebuilt for `break-words` and `text-[15px]`. Bump `tailwind.css?v=24` → `?v=25` site-wide.
+- Sitemap updated to 7 entries with `references.html` (priority 0.6) and lastmod 2026-05-05.
 
 ### 1.3.0 (May 2026) — editorial rollout complete
 

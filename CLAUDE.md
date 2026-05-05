@@ -4,7 +4,7 @@ Operator's quick reference for this site. Pairs with `README.md` (user-facing co
 
 ## What this is
 
-A static HTML site (6 visible pages + 1 hidden) plus a tiny Node backend in `server/` that handles a contact form. The site is the public face of Adri M.'s master's research at UBC GRSJ; tone is academic-yet-friendly. See `brainstorm/proposal-summary.md` for project framing, voice, and content principles.
+A static HTML site (6 visible pages + 1 hidden + 1 footer-only references page) plus a tiny Node backend in `server/` that handles a contact form. The site is the public face of Adri M.'s master's research at UBC GRSJ; tone is academic-yet-friendly. See `brainstorm/proposal-summary.md` for project framing, voice, and content principles.
 
 ## Layout
 
@@ -16,6 +16,7 @@ www.journeyways.ca/
 ├── photos.html             Research gallery + lightbox (6 entries)
 ├── about.html              About the researcher; bio, project narrative, inline anchors into design.html. "Get in touch" section currently commented out
 ├── design.html             Design philosophy (long-form essay; 9 principles, illustrated with card and tile artwork; anchored from about.html)
+├── references.html         Bibliography (8 thematic chapters, 27 APA 7 citations). Footer-linked from every page; not in main nav. Source list in brainstorm/references.md (gitignored)
 ├── contact.html            Contact form (HIDDEN: noindex, not in nav, not in sitemap)
 ├── css/styles.css          Custom CSS (@font-face, card colours, .tile-wood, marquee, lightbox)
 ├── css/tailwind.css        Tailwind utilities, locally built (output of tools/)
@@ -27,7 +28,7 @@ www.journeyways.ca/
 ├── download/               Rulebook and Player Booklet PDFs (Ghostscript-optimized via /ebook setting)
 ├── server/                 Express 5 + Nodemailer 8 backend. PM2 app `journeyways-www`. Currently stopped.
 ├── brainstorm/             Working notes (gitignored, synced to Obsidian vault)
-├── sitemap.xml             6 entries with <lastmod>; contact.html intentionally absent
+├── sitemap.xml             7 entries with <lastmod>; contact.html intentionally absent
 └── .gitignore              Ignores brainstorm/, server/node_modules/, server/.env, server/logs/, tools/node_modules/
 ```
 
@@ -37,7 +38,7 @@ www.journeyways.ca/
 - **Tailwind**: locally built. Source under `tools/` (`tailwind.input.css` + `tailwind.config.js`). Run `cd tools && npm run build` to regenerate `css/tailwind.css` after adding any new utility class. Watch mode: `npm run watch`. Always bump `tailwind.css?v=N` after a rebuild.
 - **Fonts**: Inter and Italianno self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). Loaded via `@font-face` declarations at the top of `css/styles.css`. No third-party origins.
 - **Backend**: PM2 app `journeyways-www` (script: `server/index.js`, port `127.0.0.1:1985`). Express 5, Nodemailer 8. nginx proxies `/api/` to it. **Currently stopped**; resume with `pm2 start journeyways-www`. See `server/README.md` for details.
-- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`). Bump on every change since `Cache-Control: max-age=31536000`.
+- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`). Bump on every change since `Cache-Control: max-age=31536000`.
 
 ## Operational state (May 2026)
 
@@ -49,6 +50,7 @@ www.journeyways.ca/
 
 - **`contact.html` is hidden.** Mailgun delivers cleanly to Outlook 365 (status 250, "Queued for delivery"), but the recipient inbox doesn't see them: spam/quarantine on the receiving side. Until that's resolved, the page is `noindex, nofollow`, off the nav, and out of the sitemap. The about page's "Get in touch" section is commented out for now. Backend is stopped.
 - **`design.html` (Design philosophy)** is live and in the main nav. Anchored sections (`#identity`, `#no-winning`, `#consent`, `#elicit`, `#combination`, `#expression`, `#materials`, `#framework`, `#shared`, `#closing`) are linked inline from `about.html` paragraphs. The page uses `.card-COLOR` and `.tile-wood` for category-name highlighting; both classes live in `css/styles.css`.
+- **`references.html` (Bibliography)** is live but intentionally **not in the main nav**. Discoverability: footer link on every page (the only footer link styled `text-yellow-400 hover:text-yellow-300` at rest, breaking the usual "yellow only on hover" rule), hero link bar on `about.html` and `design.html` ("Design philosophy &middot; References &middot; UBC GRSJ" and "About the researcher &middot; References &middot; UBC GRSJ"), inline link in the openness paragraph of `about.html`. Eight thematic chapters with anchor IDs (`#theory`, `#data`, `#arts-based`, `#ethnography`, `#analysis`, `#games`, `#co-creation`, `#pedagogy`) on the editorial chapter spine. Citations are APA 7 in a `<ul class="space-y-5 text-gray-300 text-[15px] md:text-base leading-relaxed">`; book/journal titles wrapped in `<em>`; DOIs use the standard inline link pattern with `break-words` so long DOIs wrap on mobile. Source list (with thematic groupings + full citations) lives in `brainstorm/references.md` and is gitignored. When adding entries, keep sentence case for titles, expand publishers without legal designations (e.g. "Sage Publications" not "SAGE Publications Ltd."), and only add DOIs that are verified to exist (Seal Press / Bloomsbury / Pearson trade titles generally don't have DOIs).
 - **Lightbox infrastructure** in `js/main.js` supports multiple gallery sets via `openLightboxFromSet(setName, index)`. Sets currently defined: `photos`, `boardgameSetup`, `boardgameTiles`, `boardgameCardFronts`, `boardgameCardBacks`, `videogameCards`, `videogameTiles`. The lightbox modal markup is duplicated in `photos.html`, `boardgame.html`, and `videogame.html`. CSS hides nav arrows when the active set has only one image.
 - **Audit pass landed in v1.1.1** (May 2026): self-hosted fonts, local Tailwind build, Express 5 / Nodemailer 8, JSON-LD on every page, og-card.jpg replacement of heavy logos, sitemap lastmod, og:image swaps, image webp conversions (saved ~9 MB per first visit), title-tag standardization to `JOURNEYWAYS | <Page>`, boardgame and videogame lightboxes, GRSJ link in About and Design.
 - **`server/.env` holds Mailgun SMTP creds and the Cloudflare Turnstile secret.** Values were copied from `/var/www/play.journeyways.ca/.env`. Gitignored. Don't read or echo.
@@ -77,7 +79,7 @@ sudo nginx -t && sudo systemctl reload nginx
 cd /var/www/www.journeyways.ca/tools && npm run build
 sed -i 's|tailwind.css?v=5|tailwind.css?v=6|' /var/www/www.journeyways.ca/*.html
 
-# Bump other asset cache versions (current: tailwind.css?v=21, styles.css?v=23, main.js?v=20)
+# Bump other asset cache versions (current: tailwind.css?v=25, styles.css?v=23, main.js?v=20)
 sed -i 's|styles.css?v=23|styles.css?v=24|' /var/www/www.journeyways.ca/*.html
 sed -i 's|main.js?v=20|main.js?v=21|' /var/www/www.journeyways.ca/*.html
 
