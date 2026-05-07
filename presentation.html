@@ -124,7 +124,7 @@
         }
         .slide-chapter .chapter-title {
             font-family: 'Italianno', cursive;
-            font-size: clamp(2.5rem, 5vw, 4rem);
+            font-size: clamp(3.25rem, 6.5vw, 5.25rem);
             line-height: 1;
             color: #facc15; /* yellow-400 */
         }
@@ -311,6 +311,29 @@
             padding: 0.25rem 0 0.25rem 1.25rem;
             margin: 0.85rem 0;
         }
+        .vignette-thumb {
+            margin: 0 0 0.75rem;
+            aspect-ratio: 5 / 2;
+            overflow: hidden;
+            border-radius: 0.35rem;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+        }
+        .vignette-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Closing slide: subtle bookend echoing the cover artwork. */
+        .closing-mark {
+            margin: 0 auto 1.5rem;
+            max-width: 11rem;
+            opacity: 0.75;
+            -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 95%);
+                    mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 60%, rgba(0,0,0,0) 95%);
+        }
+        .closing-mark img { width: 100%; height: auto; display: block; }
 
         .stories {
             display: grid;
@@ -325,16 +348,17 @@
         /* ===== Cover slide ===== */
         .slide.cover-slide .slide-inner {
             display: grid;
-            grid-template-columns: 7fr 5fr;
+            grid-template-columns: 5fr 7fr;
             gap: clamp(2rem, 5vw, 4rem);
             align-items: center;
+            max-width: 80rem;
         }
         @media (max-width: 820px) {
             .slide.cover-slide .slide-inner {
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
-            .slide.cover-slide .cover-art { order: -1; max-width: 22rem; margin: 0 auto; }
+            .slide.cover-slide .cover-art { order: -1; max-width: 26rem; margin: 0 auto; }
         }
         .cover-meta {
             font-size: 0.78rem;
@@ -474,12 +498,12 @@
         /* ===== Image grids for components ===== */
         .tile-grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: clamp(0.5rem, 1.2vw, 1rem);
-            margin-top: 0.85rem;
-            max-width: 56rem;
+            margin: 0.85rem auto 0;
+            max-width: 64rem;
         }
-        @media (max-width: 720px) {
+        @media (max-width: 960px) {
             .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
         }
         .tile-grid figure { margin: 0; }
@@ -797,6 +821,139 @@
         }
         .overview-close:hover { color: #facc15; }
 
+        /* ===== Presenter mode (loaded with ?presenter=1) ===== */
+        .presenter-view {
+            display: none;
+            position: fixed;
+            inset: 0;
+            flex-direction: column;
+            padding: 1.25rem 1.75rem;
+            background: #111827;
+            color: #fff;
+            z-index: 100;
+        }
+        body.presenter-mode { overflow: auto; }
+        body.presenter-mode .presenter-view { display: flex; }
+        body.presenter-mode .deck,
+        body.presenter-mode .deck-bar,
+        body.presenter-mode .deck-hint,
+        body.presenter-mode .nav-zone,
+        body.presenter-mode .speaker-notes,
+        body.presenter-mode .overview {
+            display: none !important;
+        }
+        .presenter-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 0.75rem;
+            border-bottom: 1px solid rgba(75,85,99,0.4);
+            font-size: 0.7rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #9ca3af;
+        }
+        .presenter-bar .counter { font-variant-numeric: tabular-nums; }
+        .presenter-timer {
+            font-variant-numeric: tabular-nums;
+            color: #facc15;
+            font-weight: 500;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            text-transform: none;
+        }
+        .presenter-main {
+            flex: 1;
+            display: grid;
+            grid-template-rows: minmax(0, 1fr) auto;
+            gap: 1rem;
+            padding-top: 1rem;
+            min-height: 0;
+        }
+        .presenter-now { overflow-y: auto; padding-right: 0.5rem; }
+        .presenter-eyebrow {
+            font-size: 0.65rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #facc15;
+            margin: 0 0 0.5rem;
+            font-weight: 500;
+        }
+        .presenter-title-row {
+            display: flex;
+            align-items: baseline;
+            gap: 0.85rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .presenter-title-row .ch {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: clamp(2rem, 4vw, 3rem);
+            line-height: 1;
+        }
+        .presenter-title-row .t {
+            font-size: clamp(1rem, 1.6vw, 1.3rem);
+            line-height: 1.3;
+            color: #d1d5db;
+            font-weight: 400;
+        }
+        .presenter-notes {
+            font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+            line-height: 1.55;
+            color: #d1d5db;
+        }
+        .presenter-notes h4 {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: 1.5rem;
+            line-height: 1;
+            margin: 0 0 0.6rem;
+        }
+        .presenter-notes ul {
+            list-style: disc;
+            padding-left: 1.25rem;
+            margin: 0;
+        }
+        .presenter-notes li { margin-top: 0.4rem; }
+        .presenter-next {
+            border-top: 1px solid rgba(75,85,99,0.4);
+            padding-top: 0.85rem;
+        }
+        .presenter-foot {
+            padding-top: 0.75rem;
+            border-top: 1px solid rgba(75,85,99,0.4);
+            font-size: 0.65rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #6b7280;
+            text-align: center;
+        }
+        .presenter-foot kbd {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 0.05rem 0.35rem;
+            border-radius: 0.2rem;
+            font-family: inherit;
+            font-size: inherit;
+        }
+        .presenter-popup-warning {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #1f2937;
+            border: 1px solid #facc15;
+            color: #fff;
+            padding: 1.25rem 1.75rem;
+            border-radius: 0.5rem;
+            max-width: 30rem;
+            text-align: center;
+            font-size: 0.95rem;
+            z-index: 200;
+            box-shadow: 0 12px 32px rgba(0,0,0,0.6);
+        }
+
         /* ===== Print to PDF ===== */
         @media print {
             @page { size: 16in 9in; margin: 0; }
@@ -938,7 +1095,7 @@
                         <p>Stimulus and event. Short text, public to the table, organized in five categories. Designed to elicit, not to provide.</p>
                     </div>
                     <div class="col">
-                        <figure class="instrument-thumb"><img src="img/edges_playtest_journaling.webp" alt="A player writing in their booklet during a JOURNEYWAYS playtest." loading="lazy"></figure>
+                        <figure class="instrument-thumb"><img src="img/protoconbc_table.webp" alt="Three JOURNEYWAYS Player Booklets stacked on the table next to the printed game rules." loading="lazy" style="transform: scale(1.85); transform-origin: 58% 78%;"></figure>
                         <h3>Player booklet</h3>
                         <p>Expression and archive. The durable artifact of the session. Accommodates writing, drawing, or silence.</p>
                     </div>
@@ -966,6 +1123,7 @@
                 <div class="tile-grid">
                     <figure><img src="img/design/tile-childhood-house.webp" alt="Map tile: Childhood House. A small house surrounded by colorful watercolor splatters." loading="lazy"><figcaption>Childhood house</figcaption></figure>
                     <figure><img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." loading="lazy"><figcaption>Mirror lake</figcaption></figure>
+                    <figure><img src="img/design/tile-mountain-peak.webp" alt="Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters." loading="lazy"><figcaption>Mountain peak</figcaption></figure>
                     <figure><img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." loading="lazy"><figcaption>Misty trail</figcaption></figure>
                 </div>
                 <ul class="principles" style="margin-top: 1.25rem;">
@@ -1229,9 +1387,15 @@
                 <p>While gender theory (<a href="references.html#theory" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">Butler, Serano, Stryker</a>) is the default anchor, the open framework has elicited stories about parenthood, the international student experience, migrant identity, and a younger self.</p>
                 <div class="stories">
                     <div class="vignette">
+                        <figure class="vignette-thumb">
+                            <img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." loading="lazy">
+                        </figure>
                         <p><strong style="color: #fff; font-weight: 500;">The &ldquo;Water&rdquo; identity.</strong> A player chose their character to be Water. Not water-based, not anthropomorphized. Simply Water. As a way to think about feeling less flowy than they used to be.</p>
                     </div>
                     <div class="vignette">
+                        <figure class="vignette-thumb">
+                            <img src="img/design/tile-star-bridge.webp" alt="Map tile: Star Bridge. Hand-drawn bridge silhouette under a sky of stars." loading="lazy">
+                        </figure>
                         <p><strong style="color: #fff; font-weight: 500;">The space warp.</strong> Another player broke the adjacency rule, placed a space-themed tile separately, and authored warp rules to connect it. The break became the best part of that session.</p>
                     </div>
                 </div>
@@ -1286,6 +1450,9 @@
         <section class="slide" data-slide="15" aria-labelledby="s15-title">
             <div class="slide-inner">
                 <div class="thanks-block">
+                    <figure class="closing-mark" aria-hidden="true">
+                        <img src="img/og-card.webp" alt="" loading="lazy">
+                    </figure>
                     <p class="pullquote" style="margin: 0 auto 1.75rem; max-width: 46rem; text-align: center;">&ldquo;The stories are the most important, no matter how the players tell them.&rdquo;</p>
                     <p style="font-size: clamp(1rem, 1.4vw, 1.35rem); color: #d1d5db;">Visibility, where there has been silence.</p>
                     <h2 id="s15-title" class="thanks-mark" style="margin-top: 2rem;">Thank you.</h2>
@@ -1308,13 +1475,40 @@
     </main>
 
     <footer class="deck-hint faded" role="contentinfo">
-        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>1</kbd>&ndash;<kbd>9</kbd> jump to slide &middot; <kbd>O</kbd> overview &middot; <kbd>F</kbd> fullscreen &middot; <kbd>S</kbd> speaker notes &middot; <kbd>P</kbd> print
+        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>1</kbd>&ndash;<kbd>9</kbd> jump &middot; <kbd>O</kbd> overview &middot; <kbd>W</kbd> presenter window &middot; <kbd>F</kbd> fullscreen &middot; <kbd>P</kbd> print
     </footer>
 
     <aside class="overview" id="overview" aria-label="All slides" aria-hidden="true">
         <button class="overview-close" type="button" aria-label="Close overview">Close [Esc]</button>
         <h2 class="overview-title">All slides</h2>
         <ol class="overview-grid"></ol>
+    </aside>
+
+    <aside class="presenter-view" id="presenter-view" aria-label="Presenter view">
+        <header class="presenter-bar">
+            <span class="counter">Presenter &middot; Slide <span id="presenter-current">01</span> / <span id="presenter-total">15</span></span>
+            <span class="presenter-timer" id="presenter-timer">00:00</span>
+        </header>
+        <div class="presenter-main">
+            <section class="presenter-now">
+                <p class="presenter-eyebrow">Now showing</p>
+                <div class="presenter-title-row">
+                    <span class="ch" id="presenter-current-chapter"></span>
+                    <span class="t" id="presenter-current-title"></span>
+                </div>
+                <div class="presenter-notes" id="presenter-notes"></div>
+            </section>
+            <section class="presenter-next">
+                <p class="presenter-eyebrow">Up next</p>
+                <div class="presenter-title-row">
+                    <span class="ch" id="presenter-next-chapter"></span>
+                    <span class="t" id="presenter-next-title"></span>
+                </div>
+            </section>
+        </div>
+        <footer class="presenter-foot">
+            <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>R</kbd> reset timer &middot; <kbd>Esc</kbd> close
+        </footer>
     </aside>
 
     <script>
@@ -1328,6 +1522,97 @@
             var total = slides.length;
 
             totalEl.textContent = String(total).padStart(2, '0');
+
+            // === Presenter mode setup ===
+            var isPresenter = new URLSearchParams(location.search).has('presenter');
+            if (isPresenter) document.body.classList.add('presenter-mode');
+            var presenterTotalEl = document.getElementById('presenter-total');
+            if (presenterTotalEl) presenterTotalEl.textContent = String(total).padStart(2, '0');
+
+            // BroadcastChannel sync between main and presenter windows. Falls through
+            // gracefully on browsers that don't support it (presenter still works alone).
+            var channel = null;
+            try { channel = new BroadcastChannel('journeyways-deck'); } catch (err) { /* unsupported */ }
+            var suppressBroadcast = false;
+            function broadcastGo(idx) {
+                if (channel && !suppressBroadcast) {
+                    channel.postMessage({ type: 'go', index: idx });
+                }
+            }
+            if (channel) {
+                channel.onmessage = function (e) {
+                    if (!e.data) return;
+                    if (e.data.type === 'go') {
+                        suppressBroadcast = true;
+                        go(e.data.index);
+                        suppressBroadcast = false;
+                    } else if (e.data.type === 'request-state') {
+                        channel.postMessage({ type: 'go', index: current });
+                    }
+                };
+            }
+
+            function readSlideMeta(s) {
+                if (!s) return { chapter: '—', title: 'End of deck', notesHTML: '' };
+                var idx = slides.indexOf(s);
+                var chapter, title;
+                if (idx === 0) {
+                    chapter = 'Cover';
+                    var sub = s.querySelector('.cover-sub');
+                    title = sub ? sub.textContent.trim() : 'Journeyways';
+                } else {
+                    var ch = s.querySelector('.chapter-title');
+                    var h2 = s.querySelector('h2');
+                    chapter = ch ? ch.textContent.trim() : '';
+                    title = h2 ? h2.textContent.trim() : '';
+                    if (!chapter && !title) { chapter = 'Closing'; title = ''; }
+                }
+                var notesEl = s.querySelector('.speaker-notes');
+                return { chapter: chapter, title: title, notesHTML: notesEl ? notesEl.innerHTML : '' };
+            }
+
+            var presenterCurrentEl = document.getElementById('presenter-current');
+            var presenterChapterEl = document.getElementById('presenter-current-chapter');
+            var presenterTitleEl = document.getElementById('presenter-current-title');
+            var presenterNotesEl = document.getElementById('presenter-notes');
+            var presenterNextChapterEl = document.getElementById('presenter-next-chapter');
+            var presenterNextTitleEl = document.getElementById('presenter-next-title');
+
+            function updatePresenterView() {
+                if (!isPresenter) return;
+                var nowInfo = readSlideMeta(slides[current]);
+                var nextInfo = readSlideMeta(slides[current + 1]);
+                if (presenterCurrentEl) presenterCurrentEl.textContent = String(current + 1).padStart(2, '0');
+                if (presenterChapterEl) presenterChapterEl.textContent = nowInfo.chapter;
+                if (presenterTitleEl) presenterTitleEl.textContent = nowInfo.title;
+                if (presenterNotesEl) presenterNotesEl.innerHTML = nowInfo.notesHTML;
+                if (presenterNextChapterEl) presenterNextChapterEl.textContent = nextInfo.chapter;
+                if (presenterNextTitleEl) presenterNextTitleEl.textContent = nextInfo.title;
+            }
+
+            // Session timer (presenter window only).
+            var timerStart = Date.now();
+            var presenterTimerEl = document.getElementById('presenter-timer');
+            if (isPresenter) {
+                setInterval(function () {
+                    var elapsed = Math.floor((Date.now() - timerStart) / 1000);
+                    var mm = String(Math.floor(elapsed / 60)).padStart(2, '0');
+                    var ss = String(elapsed % 60).padStart(2, '0');
+                    if (presenterTimerEl) presenterTimerEl.textContent = mm + ':' + ss;
+                }, 500);
+            }
+
+            function openPresenter() {
+                var url = location.pathname + '?presenter=1' + (location.hash || '');
+                var w = window.open(url, 'jw-presenter', 'width=920,height=720,toolbar=0,menubar=0,location=0,scrollbars=1');
+                if (!w) {
+                    var msg = document.createElement('div');
+                    msg.className = 'presenter-popup-warning';
+                    msg.innerHTML = 'Please allow pop-ups for this site to open the presenter window.';
+                    document.body.appendChild(msg);
+                    setTimeout(function () { msg.remove(); }, 3500);
+                }
+            }
 
             function go(i) {
                 if (i < 0) i = 0;
@@ -1343,6 +1628,8 @@
                 if (location.hash !== '#' + (i + 1)) {
                     history.replaceState(null, '', '#' + (i + 1));
                 }
+                broadcastGo(i);
+                updatePresenterView();
             }
 
             function next() { go(current + 1); }
@@ -1450,6 +1737,17 @@
                     case 'O':
                         e.preventDefault();
                         toggleOverview(true);
+                        break;
+                    case 'w':
+                    case 'W':
+                        if (!isPresenter) { e.preventDefault(); openPresenter(); }
+                        break;
+                    case 'r':
+                    case 'R':
+                        if (isPresenter) { e.preventDefault(); timerStart = Date.now(); }
+                        break;
+                    case 'Escape':
+                        if (isPresenter && window.opener) { e.preventDefault(); window.close(); }
                         break;
                     default:
                         if (/^[0-9]$/.test(e.key)) {
