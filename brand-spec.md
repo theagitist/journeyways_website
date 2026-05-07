@@ -193,7 +193,24 @@ Used in the footer, suitable for short bios and OG descriptions.
 - Description: a watercolor of two profile silhouettes facing each other. The left profile is rendered in warm tones (red, orange, gold), the right in cool tones (blue, teal, purple). Between them, where the silhouettes meet, the negative space frames a landscape: mountains, water, and pines in dusty pinks fading to deep blue. The composition signals duality, encounter, and inner landscape.
 - Favicon: `img/favicon.png` (a tighter crop of the same artwork).
 - Background-only variant: `img/logo_bg_only.jpg` (still used as `.hero-bg` on `boardgame.html`).
-- Do not crop tightly past the chin line; the meeting of profiles is the load-bearing element.
+
+### Logo usage
+
+**Minimum size.** At less than ~96 px square the two profiles lose their distinction and the watercolor reads as noise. Anything below 96 px should fall back to the favicon (a tighter crop) or to the typographic wordmark.
+
+**Clear space.** Reserve at least one half of the logo's height as breathing room on every side. The hero treatment uses a radial mask (`-webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 95%)`) to feather the edges into the page background; this is the canonical way to set the logo over the gray-800 / gray-900 surfaces.
+
+**Anchoring rule.** Don't crop tightly past the chin line. The meeting of profiles is the load-bearing element of the mark; cropping it produces an unbalanced "single face" that misrepresents the identity.
+
+**Prohibited modifications.**
+- No recoloring. The warm-meets-cool duality carries the meaning.
+- No replacing the watercolor texture with flat fills, gradients, or vector traces.
+- No outer strokes, drop shadows, or glow effects on the mark itself. (Shadows on the *figure containing* the mark are fine; e.g. the closing-slide bookend uses a faded radial mask.)
+- No placement over busy photographs without an opaque or heavily blurred backdrop.
+- No standalone use of half the logo (one profile only).
+- No rotation, skew, or non-uniform scaling.
+
+**The wordmark stands alone.** When the illustrated mark won't reproduce well (e.g. small print, single-color contexts, embroidery, faxes), the typographic wordmark in Italianno yellow-400 is itself the brand. Do not commission flat redraws of the watercolor for those contexts; use the wordmark instead.
 
 ---
 
@@ -290,6 +307,23 @@ Headings use sentence case. Card titles often add `tracking-wide`. Figure captio
 - **Top spacing under fixed nav**: `main { padding-top: 5rem; }` globally; `main.home { padding-top: 0; }` on the home page so the hero sits closer to the marquee.
 - **Section rhythm**: `py-12` to `py-14` between major sections; `mb-14` below page headers; `space-y-16` between long-form sub-sections.
 - **Border radius**: default `rounded` (0.25rem) on cards, buttons, and images. No pill buttons. Avatar/feature thumbs use `rounded-full`.
+
+### Per-page hero variations
+
+The hero block is deliberately different on each page. Don't normalize them back into one shared layout — the asymmetry is part of the editorial vocabulary, signaling that each page has its own tonal job.
+
+| Page | Layout | Image treatment | Notes |
+|---|---|---|---|
+| `index.html` (home) | 7/5 split, image right | `og-card.webp` with `hero-mask` (radial fade) | The most familiar shape; sets the default the others vary against. |
+| `about.html` | 7/5 split, image right | Watercolor self-portrait with `hero-mask` | Same shape as home but a different illustration. |
+| `design.html` | 5/7 split, image **left** | A card or tile illustration with `hero-mask` | Mirrored from the home/about layout; signals "this is the essay." |
+| `photos.html` | No hero image | Typographic title block + a 4-photo tile band beneath | The only page without an illustrated hero; lets the photographs be the hero collectively. |
+| `boardgame.html` | 5/7 split, image left | `rulebook_cover.webp` (portrait, no `hero-mask`, `items-start`) | The only page that uses a hard-edged image, because the rulebook cover *is* a printed cover and showing the bleed is the point. |
+| `videogame.html` | Centered typographic hero, no asymmetric split | None | A horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) in monospace replaces the illustration. |
+| `references.html` | Typographic-only, like videogame | None | Sentence-headline + small italic lead, with the editorial chapter spine starting immediately under. |
+| `presentation.html` (cover slide) | 5/7 split, image right | `og-card.webp` (image-dominant since v1.4.0) | The deck cover echoes the home hero but flipped to give the watercolor more presence on a projector. |
+
+Mobile collapse: every multi-column hero stacks the image *above* the text on small screens, regardless of whether desktop has the image left or right. This matters for `design.html` and `boardgame.html` whose desktop layouts put the image on the left.
 
 ---
 
@@ -444,12 +478,102 @@ Discoverability:
 - Page titles follow the pattern `JOURNEYWAYS | <Page>`.
 - Footer attribution: "Master's research conducted by Adri M. at the UBC Institute for Gender, Race, Sexuality and Social Justice."
 - Avoid commercial superlatives ("revolutionary", "best", "ultimate"). Prefer descriptive verbs: explore, unfold, uncover, reveal, become.
+- **"Pick" not "draw"** when selecting a card or tile from a pile. "Draw" / "drawn" is reserved for actual illustrating in this game (sticky-note tiles, journal doodles, comic panels, hand-drawn artwork). Phrases like "drawn from a small canon" (= sourced from) are fine.
+
+### Voice examples
+
+Lines from the site (and the deck) that exemplify the voice. Use these as a calibration set when writing new copy.
+
+> A game about becoming.
+*— The whole tagline. Two short noun phrases, no punctuation flourishes, no hedge. The voice in eight syllables.*
+
+> Identity is enacted, not declared. Forms do not give identity room to enact.
+*— Slide 2, presentation deck. The methodological argument as two short sentences. Note the inversion structure (X, not Y) and the deliberate near-repeat of "enact / enacted." Sentence two is a five-word punch.*
+
+> What if research happened around a table, not across one?
+*— Slide 3 headline. The whole project as a question, with a preposition swap doing all the work. This is a model for headlines: change one small thing and let the change carry the meaning.*
+
+> It is a game. We are just playing. Everything is safe. You can't lose.
+*— Slide 3 pull quote. Four sentences, all declarative, all under six words. Reads like spoken instruction at a table. The voice when reassuring a player.*
+
+> A mirror in a cave is not a mirror in a classroom.
+*— Slide 7. Concrete, parallel, no abstraction. "Designed to elicit, not to provide" is the abstraction; this sentence carries it.*
+
+> Doing nothing is also a way of expression.
+*— Slide 8, on the booklet. Permission given in five words. Notice the gentle "also" — the line could read as a permission slip, but "also" makes it a fact about expression generally.*
+
+> The more the players create new rules, the better the game goes.
+*— Slide 13 closing line. Design philosophy compressed to fifteen words. Plain register. No design-jargon ("emergent," "generative") that would distance the reader.*
+
+> Visibility, where there has been silence.
+*— Closing-slide political horizon (since removed from the deck for pacing, kept in the project elsewhere). One noun, one preposition phrase — read it as a coda, not a thesis.*
+
+**Patterns to notice.** Short sentences predominate. Inversions and near-rhymes do the rhetorical work; superlatives never do. Concrete imagery (a mirror in a cave, a table, doing nothing) carries every abstract claim. The voice is gentle rather than emphatic — periods, not exclamations. When in doubt, write less.
 
 ---
 
-## 8. Quick CSS variable sketch (optional adoption)
+## 8. Tokens reference
 
-If a future refactor wants tokens in one place, this is the spec compiled into CSS custom properties. Not currently in `styles.css`; included for reference.
+A consolidated token table covering colour, type, spacing, radius, shadow, and motion. The CSS custom properties block at the end compiles the colour and type tokens for optional adoption. Spacing and motion tokens are documented but not centralized in CSS today; codify them on a future refactor.
+
+### Spacing
+
+Tailwind defaults plus a few clamp-based custom values used on the deck.
+
+| Token | Value | Where it's used |
+|---|---|---|
+| `space-section` | `py-12` to `py-14` (3 to 3.5rem) | Major section vertical rhythm |
+| `space-page-header` | `mb-14` (3.5rem) | Below page H1 / hero blocks |
+| `space-longform` | `space-y-16` (4rem) | Between long-form sub-sections (e.g. design.html) |
+| `space-card` | `p-6` to `p-7` (1.5 to 1.75rem) | Feature cards, devlog cards |
+| `space-modal` | `p-6 md:p-7` | Modal interiors |
+| `space-button` | `px-5 py-2` to `px-6 py-2.5` | Primary and secondary buttons |
+| `space-deck-y` | `clamp(2.5rem, 6vh, 5rem)` | Vertical padding on presentation slides |
+| `space-deck-x` | `clamp(1.5rem, 6vw, 5rem)` | Horizontal padding on presentation slides |
+| `gap-grid` | `gap-8 md:gap-12` | Hero column gap |
+| `gap-tight` | `gap-2 to gap-4` | Inline meta rows (icon + text) |
+
+### Border radius
+
+Default-low and consistent. There are no pill buttons anywhere on the site — that's deliberate.
+
+| Token | Value | Used for |
+|---|---|---|
+| `radius-default` | `0.25rem` (`rounded`) | Cards, buttons, images, modals, dialog popups |
+| `radius-soft` | `0.4rem` to `0.5rem` | Deck card backs, deck card fronts, deck instrument thumbs, QR card |
+| `radius-pill` | `rounded-full` | Avatar / feature thumbnails only |
+| `radius-large` | `0.5rem to 0.6rem` | Devlog cards, modals on the home dialog popups |
+
+### Shadow
+
+Routine site UI uses no shadows at rest — the dark surface and yellow accents do the lifting. Shadows are reserved for the presentation deck (where slides need to feel staged) and for elevated moments like the lightbox.
+
+| Token | Value | Used for |
+|---|---|---|
+| `shadow-card` | none | Site cards at rest. Border + hover-color does the lift |
+| `shadow-deck-card-back` | `0 8px 20px rgba(0,0,0,0.45)` | Deck card backs on slide 6 |
+| `shadow-deck-card-front` | `0 6px 16px rgba(0,0,0,0.4)` | Deck card fronts on slide 7 |
+| `shadow-deck-thumb` | `0 8px 20px rgba(0,0,0,0.4)` | Instrument thumbnails on slide 4 |
+| `shadow-deck-photo` | `0 10px 24px rgba(0,0,0,0.4)` | Photo blocks (e.g. journaling on slide 8) |
+| `shadow-deck-qr` | `0 6px 16px rgba(0,0,0,0.45)` | QR code on slide 15 |
+| `shadow-popup-warning` | `0 12px 32px rgba(0,0,0,0.6)` | Pop-up blocked warning on the deck |
+
+### Motion
+
+All custom motion respects `prefers-reduced-motion: reduce` (the marquee collapses to a stacked flex list; transitions retain the end state without animating).
+
+| Token | Duration | Easing | Used for |
+|---|---|---|---|
+| `motion-hover` | 200ms | ease | Border and color hover transitions |
+| `motion-fade-in` | 1s | ease-in | `.fade-in` utility (opacity + translateY 20px to 0) |
+| `motion-modal` | 300ms | ease | Cookie banner slide-in, lightbox overlay fade-in |
+| `motion-deck-slide` | 220ms | ease | Slide opacity transitions in the presentation deck |
+| `motion-deck-hint` | 400ms | ease | Bottom hint legend reveal/hide on cursor proximity |
+| `motion-marquee` | 24s loop | linear | Home marquee fade keyframes (4 messages, paused on hover) |
+
+### Quick CSS variable sketch (optional adoption)
+
+If a future refactor wants tokens in one place, this is the colour + type spec compiled into CSS custom properties. Not currently in `styles.css`; included for reference. Spacing, radius, shadow, and motion tokens above could be added on the same pass.
 
 ```css
 :root {
@@ -458,9 +582,11 @@ If a future refactor wants tokens in one place, this is the spec compiled into C
   --color-brand-hover:  #fcd34d;  /* yellow-300 */
 
   /* Surface */
-  --color-bg:           #1f2937;  /* gray-800 */
+  --color-bg:           #1f2937;  /* gray-800, site default */
+  --color-bg-deck:      #111827;  /* gray-900, presentation deck */
   --color-bg-deep:      #000000;
   --color-surface:      rgba(55,65,81,0.6);  /* gray-700/60 */
+  --color-hairline:     rgba(75,85,99,0.4);  /* gray-700/40, dividers */
   --color-border:       #4b5563;             /* gray-600 */
   --color-border-hover: rgba(251,191,36,0.35);
 
@@ -480,12 +606,83 @@ If a future refactor wants tokens in one place, this is the spec compiled into C
   /* Type */
   --font-sans:   'Inter', sans-serif;
   --font-script: 'Italianno', cursive;
+
+  /* Italianno legibility floor — only use for elements >= this size */
+  --italianno-min: 2.5rem;
 }
 ```
 
 ---
 
-## 9. Files to know
+## 9. Companion materials
+
+This brand spec applies to two extension surfaces beyond the website: **print derivatives** (posters, handouts, conference materials, the existing rulebook and player booklet PDFs) and the **videogame UI** (the in-development digital version of JOURNEYWAYS). The rules below carry the system into those contexts.
+
+### Print derivatives
+
+**Colour conversion.** All site colours are sRGB hex. For print, convert to CMYK at the press's preferred profile (FOGRA39 / GRACoL 2006 are typical). Approximate CMYK values for the brand:
+
+| Site role | Hex (sRGB) | Approximate CMYK | Pantone (close match) |
+|---|---|---|---|
+| Brand accent (yellow-400) | `#fbbf24` | C0 M27 Y86 K0 | PMS 1235 C |
+| Page background (site) | `#1f2937` | C82 M70 Y50 K56 | PMS 7546 C |
+| Page background (deck) | `#111827` | C90 M78 Y52 K70 | PMS 7547 C |
+| Card red | `#ef4444` | C0 M83 Y73 K0 | PMS 178 C |
+| Card blue | `#3b82f6` | C72 M48 Y0 K0 | PMS 2925 C |
+| Card green | `#10b981` | C75 M0 Y65 K0 | PMS 7724 C |
+| Card purple | `#8b5cf6` | C55 M68 Y0 K0 | PMS 2665 C |
+| Tile wood | `#c9a87c` | C20 M30 Y55 K10 | PMS 7501 C |
+
+The yellow loses some pop in CMYK. If a piece *needs* the screen brightness (gallery wall, large-format poster), spec a fluorescent or Pantone yellow rather than process CMYK.
+
+**Resolution and the logo.** The illustrated mark master is `img/og-card.jpg` at roughly 600x600 px. That's adequate for small print at 300 dpi (business cards, postcards up to ~5x5 cm). It is *not* adequate for posters or any reproduction over ~10 cm square. For larger pieces, use the **typographic wordmark** (Italianno, vector — see fonts) instead of upscaling the watercolor. If a poster requires the illustrated mark at large size, commission a high-resolution rebuild from the original watercolor source rather than scaling the JPG.
+
+**Bleed and quiet space.** 3 mm bleed standard on all printed pieces. Quiet space around the logo: at minimum half the logo's height on every side (the same rule as on screen). For the wordmark on its own, half the cap-height of "J" works as the quiet space rule.
+
+**Fonts and licensing.** Inter (SIL Open Font License) and Italianno (SIL OFL) are both free for commercial print use, including embedding in supplied PDFs and outlining for press. No license tracking required. Always **embed or outline** fonts when supplying PDF for press; never assume the printer has the families installed.
+
+**File formats for press.**
+- PDF/X-1a for offset litho.
+- PDF/X-4 for digital and inkjet (preserves transparency and CMYK + ICC).
+- sRGB PDF acceptable for in-house desktop colour printing.
+- Always supply a 3 mm bleed and visible crop marks unless the printer specifies otherwise.
+
+**Existing print artifacts.** `download/JOURNEYWAYS Game Rules 1.0.pdf` and `download/JOURNEYWAYS Player Booklet 1.0.pdf` are the canonical printed pieces today (Ghostscript-optimized via `/ebook` setting). Preserve their cover artwork direction when designing companions.
+
+### Videogame UI (`play.journeyways.ca`)
+
+The videogame is the digital version of JOURNEYWAYS. **It is the same game in a different access door** (per the slide 10 framing on the deck), and the brand system carries over directly. Where the videogame UI deviates from the site, it follows the deck.
+
+**Surface and colour.**
+- Default background: `#111827` (gray-900), same as the presentation deck. The deeper background lets watercolor cards, tiles, and the yellow accent sit cleanly during long sessions.
+- Hairline dividers: `rgba(75,85,99,0.4)`.
+- Card backs and content tokens (`#ef4444` etc.): use the existing `.card-COLOR` palette unmodified. These are the physical-component canon; players who play both physical and digital should recognize the colours immediately.
+- No bright daylight modes, no "high-contrast" auto-themes that recolor the brand. If accessibility requires a higher-contrast variant, lift the text colours, not the brand chrome.
+
+**Typography.**
+- Inter for all UI text: buttons, modals, journal entries, prompts, system messages.
+- Italianno reserved for the same display elements as on the deck and site: the wordmark, large screen titles (`>= ~2.5rem`), and any "chapter" rows in long-form content. **Never use Italianno for buttons, labels, or any inline UI text.**
+- The same Italianno legibility floor (§3) applies. If anywhere in the videogame a heading has to be set below ~2.5rem, drop to Inter and treat it as an uppercase yellow eyebrow (`0.85rem`, `letter-spacing 0.18em`, `text-transform uppercase`, `color #facc15`, `font-weight 500`).
+
+**Components.**
+- Buttons: `bg-yellow-400 text-black hover:bg-yellow-300 px-5 py-2 rounded font-medium` for primary; ghost / secondary variants follow the same radius and padding with a yellow-400 border on hover.
+- Modals: same dialog pattern as the site (`bg-gray-800 text-white rounded p-6 md:p-7 border border-gray-600 backdrop:bg-black/70`).
+- Card pulls and tile placements: animations should be skeuomorphic (a tile slides into place, a card flips), never theatrical (no particle effects, no exaggerated bounces). The restraint is part of the design.
+- Journal interface: the booklet is the focal artifact. UI chrome should fade out; the page itself should feel like paper. A low-saturation cream background for the journaling surface inside an otherwise dark UI is acceptable, even though it diverges from the gray-900 default.
+- Pile labels in-game must use the `.card-COLOR` classes unmodified, even if it requires specificity overrides against UI defaults (this came up on slide 6 of the deck and the same pattern applies).
+
+**Hard constraints carried from the project ethics.**
+- **No camera support anywhere in the UI.** Privacy-first; no avatar capture, no video calls between players.
+- **No generative content in prompts, illustrations, or UI copy.** Every prompt is hand-authored and every illustration is hand-painted; the UI must inherit that constraint.
+- **No auto-translation of player content.** Player journals stay exactly as written.
+- **Audio-only documentation** for any session recording feature; no video recording.
+- **Data sovereignty.** Journals hosted on Canadian servers; all storage decisions surface through the privacy policy and terms of use linked from the site.
+
+**What's already built.** `play.journeyways.ca` runs Express 5 / EJS / Socket.io / Helmet / argon2 / MySQL sessions on PM2 (per the top-level `CLAUDE.md`). Its existing views and stylesheets are the de facto reference implementation of the brand system on the videogame side; new UI work should match their patterns rather than reinventing.
+
+---
+
+## 10. Files to know
 
 | File | What it holds |
 |---|---|
