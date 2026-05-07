@@ -105,7 +105,7 @@ The videogame at `/var/www/play.journeyways.ca/` is the digital companion to the
 
 - **Files this site receives updates to from `play.journeyways.ca`:**
   - `brand-spec.md`: new conventions that should be canonical across surfaces (palette, typography, components, voice). The play-side `CLAUDE.md` has the when/where/how rules for editing this file.
-  - `videogame.html` Recent section: a top `<li>` is added for player-facing material changes (game-wide style, palette, fonts, major UX). Skip routine bug fixes and internal refactors.
+  - `videogame.html` Recent section: a top `<li>` is added for player-facing material changes (game-wide style, palette, fonts, major UX). Each item carries a month/year eyebrow above the title (`<p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">Month YYYY</p>`); use the current month when shipping. Skip routine bug fixes and internal refactors.
   - `videogame.html` spec strip and JSON-LD: `Version`, `Tagged` (month/year), and the JSON-LD `softwareVersion` should match the play-side version on its release.
 - **When invoked from the play-side, that project's CLAUDE.md and memory dir already document the cross-repo rules.** When invoked from THIS side and the user references the videogame, also read:
   - `/var/www/play.journeyways.ca/CLAUDE.md`
