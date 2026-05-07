@@ -82,6 +82,15 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Changelog
 
+### 1.4.1 (May 2026) — brand spec, expanded and publicly served
+
+A documentation-and-discoverability pass on `brand-spec.md`. The file already existed (since v1.1.2) but was stale relative to the editorial work. This release brings it forward and publishes it.
+
+- **Brand spec expanded.** Header bumped to v1.4.0+ context. New sub-sections: Logo usage rules (minimum size, clear space, anchoring rule, prohibited modifications, "wordmark stands alone" fallback); per-page hero variations table; pick-not-draw voice rule with eight curated voice examples from the site and deck. The Quick CSS variable sketch grew into a full §8 Tokens reference with spacing, border-radius, shadow, and motion tables. New §9 Companion materials covering print derivatives (CMYK / Pantone conversions for the brand palette, resolution rules for the watercolor master, bleed and quiet space, font licensing, PDF/X format guidance) and the videogame UI (surface and colour, typography rules, components, the five hard ethics constraints carried in from the project — no camera, no generative content, no auto-translation, audio-only, Canadian data sovereignty). Editorial chapter spine pattern and presentation slide system documented in §5.
+- **Brand spec is now publicly served** at `https://www.journeyways.ca/brand-spec.md` as `text/plain; charset=utf-8` with `Cache-Control: public, max-age=86400`. Required a per-site nginx exception: an exact-match `location = /brand-spec.md` block placed before the `security-hardening.conf` include (which 404s every `.md` by default as a defense-in-depth measure). The carve-out pattern is reusable for any future site that wants to publish a single Markdown file; documented in `/var/www/INFRASTRUCTURE.md`.
+- **Footer "Brand spec" link** on every site page (small `text-xs gray-600` next to the version tag, with the standard yellow hover). Subtle on-page metadata that doesn't compete with content links. Other projects (e.g. `play.journeyways.ca` for the videogame UI) should reference the URL rather than copy the file.
+- `VERSION` and footer markers bumped to `1.4.1` site-wide.
+
 ### 1.4.0 (May 2026) — presentation polish, presenter mode, slide overview
 
 A long iteration pass on `presentation.html` (renamed from `pitch.html` early in the cycle), shaped by feedback while building toward a real conference talk.
