@@ -213,12 +213,17 @@
             .columns-3, .columns-2 { grid-template-columns: 1fr; }
         }
 
+        /* Column subheadings: Inter (not Italianno) so they're legible at column width.
+           Italianno script is reserved for the larger chapter titles, cover, and timeline
+           "when" labels where it has room to read. */
         .col h3 {
-            font-family: 'Italianno', cursive;
+            font-family: inherit;
             color: #facc15;
-            font-size: clamp(1.75rem, 3vw, 2.5rem);
-            line-height: 1;
-            margin-bottom: 0.5rem;
+            font-size: clamp(1.1rem, 1.4vw, 1.3rem);
+            font-weight: 500;
+            line-height: 1.25;
+            margin-bottom: 0.55rem;
+            letter-spacing: -0.005em;
         }
         .col p {
             font-size: clamp(0.95rem, 1.25vw, 1.15rem);
@@ -695,6 +700,102 @@
             text-underline-offset: 4px;
         }
         .thanks-block .thanks-links a:hover { color: #fde047; }
+
+        /* ===== Overview overlay (press O) ===== */
+        .overview {
+            position: fixed;
+            inset: 0;
+            background: rgba(17, 24, 39, 0.96);
+            z-index: 80;
+            overflow-y: auto;
+            padding: clamp(2.5rem, 6vh, 4.5rem) clamp(1.5rem, 5vw, 4rem) clamp(2rem, 5vh, 3rem);
+            display: none;
+        }
+        body.show-overview .overview { display: block; }
+        body.show-overview .speaker-notes,
+        body.show-overview .deck-hint { display: none !important; }
+        .overview-title {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: clamp(3rem, 6vw, 5rem);
+            text-align: center;
+            margin: 0 0 1.5rem;
+            line-height: 1;
+        }
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            max-width: 78rem;
+        }
+        .overview-grid li { margin: 0; padding: 0; border: 0; }
+        .overview-card {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 0.5rem;
+            padding: 1rem 1.1rem;
+            text-align: left;
+            cursor: pointer;
+            transition: background 180ms ease, border-color 180ms ease;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            color: inherit;
+            font: inherit;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            justify-content: space-between;
+        }
+        .overview-card:hover,
+        .overview-card:focus-visible {
+            background: rgba(250, 204, 21, 0.08);
+            border-color: rgba(250, 204, 21, 0.4);
+            outline: none;
+        }
+        .overview-card.current {
+            border-color: rgba(250, 204, 21, 0.75);
+            background: rgba(250, 204, 21, 0.06);
+        }
+        .overview-card .num {
+            font-size: 0.65rem;
+            letter-spacing: 0.22em;
+            color: #9ca3af;
+            text-transform: uppercase;
+            font-variant-numeric: tabular-nums;
+        }
+        .overview-card .ch {
+            font-family: 'Italianno', cursive;
+            color: #facc15;
+            font-size: clamp(1.4rem, 2vw, 1.85rem);
+            line-height: 1;
+        }
+        .overview-card .t {
+            font-size: clamp(0.85rem, 1vw, 0.95rem);
+            color: #d1d5db;
+            line-height: 1.35;
+            font-weight: 400;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .overview-close {
+            position: absolute;
+            top: 1rem;
+            right: 1.25rem;
+            background: transparent;
+            border: 0;
+            color: #9ca3af;
+            font-size: 0.65rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            cursor: pointer;
+            padding: 0.4rem 0.6rem;
+        }
+        .overview-close:hover { color: #facc15; }
 
         /* ===== Print to PDF ===== */
         @media print {
@@ -1207,8 +1308,14 @@
     </main>
 
     <footer class="deck-hint faded" role="contentinfo">
-        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>1</kbd>&ndash;<kbd>9</kbd> jump to slide &middot; <kbd>F</kbd> fullscreen &middot; <kbd>S</kbd> speaker notes &middot; <kbd>P</kbd> print to PDF
+        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>1</kbd>&ndash;<kbd>9</kbd> jump to slide &middot; <kbd>O</kbd> overview &middot; <kbd>F</kbd> fullscreen &middot; <kbd>S</kbd> speaker notes &middot; <kbd>P</kbd> print
     </footer>
+
+    <aside class="overview" id="overview" aria-label="All slides" aria-hidden="true">
+        <button class="overview-close" type="button" aria-label="Close overview">Close [Esc]</button>
+        <h2 class="overview-title">All slides</h2>
+        <ol class="overview-grid"></ol>
+    </aside>
 
     <script>
         (function () {
@@ -1257,8 +1364,57 @@
                 go(n - 1);
             }
 
+            // Overview overlay (O / Esc to toggle, click a card to jump).
+            var overview = document.getElementById('overview');
+            var overviewGrid = overview.querySelector('.overview-grid');
+            var overviewCloseBtn = overview.querySelector('.overview-close');
+            slides.forEach(function (slide, idx) {
+                var chapter, title;
+                if (idx === 0) {
+                    chapter = 'Cover';
+                    title = (slide.querySelector('.cover-sub') || { textContent: 'Journeyways' }).textContent.trim();
+                } else {
+                    var ch = slide.querySelector('.chapter-title');
+                    var h2 = slide.querySelector('h2');
+                    chapter = ch ? ch.textContent.trim() : '';
+                    title = h2 ? h2.textContent.trim() : '';
+                    if (!chapter && !title) { chapter = 'Closing'; title = ''; }
+                }
+                var li = document.createElement('li');
+                var btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = 'overview-card';
+                btn.dataset.target = String(idx);
+                var num = document.createElement('span'); num.className = 'num'; num.textContent = 'Slide ' + String(idx + 1).padStart(2, '0');
+                var ch2 = document.createElement('span'); ch2.className = 'ch'; ch2.textContent = chapter;
+                var t   = document.createElement('span'); t.className   = 't';   t.textContent   = title;
+                btn.appendChild(num); btn.appendChild(ch2); btn.appendChild(t);
+                btn.addEventListener('click', function () { go(idx); toggleOverview(false); });
+                li.appendChild(btn);
+                overviewGrid.appendChild(li);
+            });
+            function toggleOverview(force) {
+                var on = (typeof force === 'boolean') ? force : !document.body.classList.contains('show-overview');
+                document.body.classList.toggle('show-overview', on);
+                overview.setAttribute('aria-hidden', on ? 'false' : 'true');
+                if (on) {
+                    var cards = overviewGrid.querySelectorAll('.overview-card');
+                    cards.forEach(function (card, i) { card.classList.toggle('current', i === current); });
+                    var currentCard = cards[current];
+                    if (currentCard) currentCard.focus();
+                }
+            }
+            overviewCloseBtn.addEventListener('click', function () { toggleOverview(false); });
+
             document.addEventListener('keydown', function (e) {
                 if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+                // While the overview is open, only Escape and O close it; nothing else navigates.
+                if (document.body.classList.contains('show-overview')) {
+                    if (e.key === 'Escape' || e.key === 'o' || e.key === 'O') {
+                        e.preventDefault(); toggleOverview(false);
+                    }
+                    return;
+                }
                 switch (e.key) {
                     case 'ArrowRight':
                     case 'PageDown':
@@ -1289,6 +1445,11 @@
                     case 'P':
                         e.preventDefault();
                         window.print();
+                        break;
+                    case 'o':
+                    case 'O':
+                        e.preventDefault();
+                        toggleOverview(true);
                         break;
                     default:
                         if (/^[0-9]$/.test(e.key)) {
@@ -1321,19 +1482,19 @@
                 touchStartX = null;
             }, { passive: true });
 
-            // Bottom hint legend: hidden by default. Shows on mouse / keyboard / touch activity,
-            // then re-hides after 2.5s of stillness.
+            // Bottom hint legend: hidden by default. Shows only when the cursor enters the
+            // bottom strip of the viewport (where the legend would actually appear). No reveal
+            // on keyboard activity, since the legend was distracting on every keypress.
             var hint = document.querySelector('.deck-hint');
-            var hintTimer = null;
-            function pokeHint() {
+            var HINT_REVEAL_PX = 64;
+            document.addEventListener('mousemove', function (e) {
                 if (!hint) return;
-                hint.classList.remove('faded');
-                if (hintTimer) clearTimeout(hintTimer);
-                hintTimer = setTimeout(function () { hint.classList.add('faded'); }, 2500);
-            }
-            document.addEventListener('mousemove', pokeHint);
-            document.addEventListener('keydown', pokeHint);
-            document.addEventListener('touchstart', pokeHint, { passive: true });
+                if (window.innerHeight - e.clientY <= HINT_REVEAL_PX) {
+                    hint.classList.remove('faded');
+                } else {
+                    hint.classList.add('faded');
+                }
+            });
 
             // Initial slide from hash, optional ?notes flag
             var params = new URLSearchParams(location.search);
