@@ -335,6 +335,22 @@
         }
         .closing-mark img { width: 100%; height: auto; display: block; }
 
+        .qr-card {
+            margin: 1.5rem auto 0;
+            padding: 0;
+            width: clamp(8rem, 12vw, 10rem);
+        }
+        .qr-card img { display: block; width: 100%; height: auto; }
+        .qr-card figcaption {
+            font-size: 0.7rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: #9ca3af;
+            text-align: center;
+            margin-top: 0.6rem;
+            font-weight: 500;
+        }
+
         .stories {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -482,18 +498,25 @@
             z-index: 70;
         }
         body.show-notes .speaker-notes.active { display: block; }
+        .speaker-notes {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
         .speaker-notes h4 {
-            font-family: 'Italianno', cursive;
+            font-family: inherit;
             color: #facc15;
-            font-size: 1.4rem;
-            line-height: 1;
-            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.2;
+            margin-bottom: 0.7rem;
         }
         .speaker-notes ul {
             list-style: disc;
             padding-left: 1.25rem;
         }
-        .speaker-notes ul li { margin-top: 0.25rem; }
+        .speaker-notes ul li { margin-top: 0.55rem; line-height: 1.55; }
 
         /* ===== Image grids for components ===== */
         .tile-grid {
@@ -899,23 +922,26 @@
             font-weight: 400;
         }
         .presenter-notes {
-            font-size: clamp(0.95rem, 1.2vw, 1.1rem);
-            line-height: 1.55;
-            color: #d1d5db;
+            font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+            line-height: 1.6;
+            color: #e5e7eb;
         }
         .presenter-notes h4 {
-            font-family: 'Italianno', cursive;
+            font-family: inherit;
             color: #facc15;
-            font-size: 1.5rem;
-            line-height: 1;
-            margin: 0 0 0.6rem;
+            font-size: 0.85rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            font-weight: 500;
+            line-height: 1.2;
+            margin: 0 0 0.85rem;
         }
         .presenter-notes ul {
             list-style: disc;
             padding-left: 1.25rem;
             margin: 0;
         }
-        .presenter-notes li { margin-top: 0.4rem; }
+        .presenter-notes li { margin-top: 0.55rem; line-height: 1.6; }
         .presenter-next {
             border-top: 1px solid rgba(75,85,99,0.4);
             padding-top: 0.85rem;
@@ -1014,8 +1040,9 @@
             <aside class="speaker-notes" data-for="1">
                 <h4>Cover &middot; ~20s</h4>
                 <ul>
-                    <li>Open with the project name and the one-line frame. Do not over-explain.</li>
-                    <li>Anchor: master&rsquo;s research at UBC GRSJ. Academic context, signaled briefly.</li>
+                    <li>Open with the project name and the byline. Don&rsquo;t over-explain &mdash; let the title do the work. &ldquo;Journeyways. A game about becoming.&rdquo;</li>
+                    <li>Anchor briefly: this is master&rsquo;s research at the UBC Institute for Gender, Race, Sexuality and Social Justice. That establishes the academic frame without making the talk feel administrative.</li>
+                    <li>The fuller line &mdash; narrative play as an instrument for critical ethnographic research &mdash; is on the slide. You can read it aloud or let the audience catch it. Either works.</li>
                 </ul>
             </aside>
         </section>
@@ -1045,9 +1072,10 @@
             <aside class="speaker-notes" data-for="2">
                 <h4>The problem &middot; ~50s</h4>
                 <ul>
-                    <li>Set the contrast: traditional methods extract; JOURNEYWAYS elaborates.</li>
-                    <li>The categories themselves are eurocentric and the format compresses what it claims to study.</li>
-                    <li>Land on the inversion: identity is enacted, not declared. Forms cannot give it room to enact.</li>
+                    <li>Open with the contrast directly. Most studies of gender identity start with checkboxes &mdash; transman, transwoman, ciswoman, cisman, nonbinary, other &mdash; plus a semi-structured interview meant to fit a person inside those boxes. That&rsquo;s extraction. It asks &ldquo;what are you?&rdquo;</li>
+                    <li>Name the problem with the categories: they&rsquo;re eurocentric, and they don&rsquo;t survive contact with people whose lives don&rsquo;t fit. The format compresses the very thing it claims to study.</li>
+                    <li>JOURNEYWAYS sets up a different question entirely: &ldquo;who shows up here?&rdquo; Identity is enacted, not declared. The form has to give it room to enact.</li>
+                    <li>That inversion is the entire methodological move of the project. Land on it before moving on.</li>
                 </ul>
             </aside>
         </section>
@@ -1068,9 +1096,10 @@
             <aside class="speaker-notes" data-for="3">
                 <h4>The proposition &middot; ~55s</h4>
                 <ul>
-                    <li>Most important slide for an academic audience. Reverse the figure-ground: a research project with games as instruments, not a games project with research adjacency.</li>
-                    <li>The lineage matters: arts-based research, serious games. Cite briefly.</li>
-                    <li>Pull quote is the emotional anchor. Read slowly.</li>
+                    <li>This is the most important slide for an academic audience. Reverse the figure-ground: this is a research project with games as instruments, not a games project that happens to be research-adjacent.</li>
+                    <li>Cite the lineage briefly so the audience knows you&rsquo;re inside a body of work, not improvising. Arts-based research (Leavy, McDermott). Serious games (Ritterfeld and colleagues). One sentence each is enough.</li>
+                    <li>The actual research is the critical ethnographic analysis of the stories that emerge through play. The games are the form; the analysis is the work. Say that explicitly.</li>
+                    <li>Read the pull quote slowly. &ldquo;It is a game. We are just playing. Everything is safe. You can&rsquo;t lose.&rdquo; That&rsquo;s the emotional contract with the table &mdash; let it land before turning the page.</li>
                 </ul>
             </aside>
         </section>
@@ -1095,7 +1124,7 @@
                         <p>Stimulus and event. Short text, public to the table, organized in five categories. Designed to elicit, not to provide.</p>
                     </div>
                     <div class="col">
-                        <figure class="instrument-thumb"><img src="img/protoconbc_table.webp" alt="Three JOURNEYWAYS Player Booklets stacked on the table next to the printed game rules." loading="lazy" style="transform: scale(1.85); transform-origin: 58% 78%;"></figure>
+                        <figure class="instrument-thumb"><img src="img/protoconbc_table.webp" alt="Three JOURNEYWAYS Player Booklets stacked on the table next to the printed game rules." loading="lazy" style="transform: scale(2.7); transform-origin: 62% 80%; filter: contrast(1.18) saturate(1.1);"></figure>
                         <h3>Player booklet</h3>
                         <p>Expression and archive. The durable artifact of the session. Accommodates writing, drawing, or silence.</p>
                     </div>
@@ -1105,9 +1134,10 @@
             <aside class="speaker-notes" data-for="4">
                 <h4>The instrument &middot; ~30s</h4>
                 <ul>
-                    <li>The canonical triad. Together they identify the game.</li>
-                    <li>Tiles do location. Cards do stimulus. Booklet does expression and archive.</li>
-                    <li>The next four slides take each component in turn, with images.</li>
+                    <li>The canonical triad: map tiles, cards, player booklet. Together they identify the game &mdash; drop one and the experience changes shape.</li>
+                    <li>Each does one job. Tiles do location and context. Cards do stimulus and event. Booklet does expression and archive.</li>
+                    <li>Tell the audience what to expect: the next four slides take each component in turn, with the actual artwork. Brief here, since they&rsquo;ll see the detail next.</li>
+                    <li>End on the engineering claim from the slide: the framework is the form. Together, the three components create an engine for identity exploration.</li>
                 </ul>
             </aside>
         </section>
@@ -1135,9 +1165,10 @@
             <aside class="speaker-notes" data-for="5">
                 <h4>The map &middot; ~50s</h4>
                 <ul>
-                    <li>Tiles are wordless illustrations. No reading required at the map layer.</li>
-                    <li>Movement matters. Where the character goes is itself meaning-bearing.</li>
-                    <li>One playtest example: a player placed a space-themed tile detached from the map and invented &ldquo;warp mechanics&rdquo;. Save the full story for slide 13.</li>
+                    <li>Tiles are wordless illustrations on white. No reading is required at the map layer &mdash; the player projects meaning onto each place.</li>
+                    <li>Movement is meaning. Where a character chooses to go is itself part of the telling. Not a positional mechanic &mdash; a narrative one.</li>
+                    <li>Open authorship is part of the design: players draw on tiles, or invent new ones with sticky notes when a place doesn&rsquo;t yet exist for them. The Buried Names Field tile, for instance, came out of a playtester request.</li>
+                    <li>Rule-breaking as data is the surprise: when a player modifies a rule mid-play to make their story work, that&rsquo;s a success metric, not a fault. Save the full warp-tile story for slide 13.</li>
                 </ul>
             </aside>
         </section>
@@ -1163,9 +1194,10 @@
             <aside class="speaker-notes" data-for="6">
                 <h4>The cards &middot; ~40s</h4>
                 <ul>
-                    <li>Five colored piles. Each card back is the watercolor identity of its category.</li>
-                    <li>Blue holds reflection prompts sourced from the queer canon: Adrienne Rich, James Baldwin, Julia Serano.</li>
-                    <li>Bounded randomness: agency over kind, discovery over content. Five black cards end the session.</li>
+                    <li>Five colored piles, not one shuffled deck. Each card back is the watercolor identity of its category.</li>
+                    <li>Quick walk-through: Red is encounters. Green is movement. Blue is reflections &mdash; quotes sourced from the queer canon (Adrienne Rich, James Baldwin, Julia Serano, bell hooks). Purple is group actions. Black is the passing of time.</li>
+                    <li>The mechanic is bounded randomness. Players choose which pile to pick from &mdash; agency over the kind of card &mdash; while the specific card stays a discovery. Players steer the tone of their story without the game collapsing into pure choice.</li>
+                    <li>Five black cards end the session. The black deck is the poetic countdown &mdash; short, contemplative lines about time passing. &ldquo;We are always arriving, never arrived&rdquo; is one of them.</li>
                 </ul>
             </aside>
         </section>
@@ -1214,9 +1246,10 @@
             <aside class="speaker-notes" data-for="7">
                 <h4>Inside a card &middot; ~45s</h4>
                 <ul>
-                    <li>Three actual card fronts. Show the watercolor and ink language.</li>
-                    <li>A mirror in the Singing Cave is a story of distorted identity. A mirror in the Study Room is a story of institutional scrutiny. The card alone produces neither.</li>
-                    <li>No generative AI. Every prompt is hand-authored to preserve intentionality.</li>
+                    <li>These are real card fronts. Hand-painted watercolor and ink. The visual language is consistent across the deck &mdash; silhouette over watercolor over white.</li>
+                    <li>The headline is the design principle: a mirror in a cave is not a mirror in a classroom. A Mirror card pulled at the Singing Cave reads as a story of distorted, mythic identity. The same Mirror card pulled at the Study Room reads as a story of institutional scrutiny. Image plus context produces the story; the card alone produces neither.</li>
+                    <li>No generative AI. Every prompt was written by hand, every illustration was painted by hand. That restraint is part of the design &mdash; generative content would flatten the player-authored content the project actually depends on.</li>
+                    <li>Worth flagging for an academic audience that&rsquo;s been hearing the opposite stance lately: refusing generative AI is a methodological commitment, not a stylistic one.</li>
                 </ul>
             </aside>
         </section>
@@ -1244,9 +1277,10 @@
             <aside class="speaker-notes" data-for="8">
                 <h4>The booklet &middot; ~40s</h4>
                 <ul>
-                    <li>Journaling is the default mode but never the requirement.</li>
-                    <li>Silence is not awkward in JOURNEYWAYS. It is one way of telling the story.</li>
-                    <li>Booklets carry a character into a future session or another group. Continuity is in the player&rsquo;s hands.</li>
+                    <li>The booklet is where the session deposits itself. Players write, draw, doodle, narrate aloud, or stay quiet. Every mode counts as expression.</li>
+                    <li>Silence is not awkward in JOURNEYWAYS &mdash; it&rsquo;s one way of telling the story. &ldquo;Doing nothing is also a way of expression.&rdquo; That&rsquo;s a deliberate refusal of the performance pressure most group activities carry.</li>
+                    <li>Mechanically, the booklet is the durable archive. A player can carry their character into a future session or into a different group. Continuity sits with the player, not with a system.</li>
+                    <li>For the research, the booklet is the ethnographic artifact. The audio captures the table; the booklet captures what the player chose to commit to paper across sessions.</li>
                 </ul>
             </aside>
         </section>
@@ -1275,9 +1309,10 @@
             <aside class="speaker-notes" data-for="9">
                 <h4>How it&rsquo;s built &middot; ~50s</h4>
                 <ul>
-                    <li>Read briskly. The audience can follow up on the website.</li>
-                    <li>Consent is the only non-negotiable. Everything else is open to authorship.</li>
-                    <li>&ldquo;Elicit, not provide&rdquo; is the inversion of standard prompt-driven games.</li>
+                    <li>Read the list briskly. Each line is a design rule that maps to a specific decision in the materials. Audience can follow up at /design for the full essay.</li>
+                    <li>Highlight just two. First: consent is the only enforced rule. Everything else is mutable &mdash; rules can be bent, ignored, or rewritten if the table agrees.</li>
+                    <li>Second: prompts elicit; they do not provide. That&rsquo;s the inversion of most prompt-driven games, which hand the player a situation and ask for a response. JOURNEYWAYS hands the player a gesture and asks them to bring the situation.</li>
+                    <li>The closing line on the slide &mdash; the framework is meant to be remixed &mdash; is your bridge to slide 14. Keep it light here; you&rsquo;ll come back to it.</li>
                 </ul>
             </aside>
         </section>
@@ -1305,9 +1340,10 @@
             <aside class="speaker-notes" data-for="10">
                 <h4>Physical and digital &middot; ~40s</h4>
                 <ul>
-                    <li>Both versions are peers. Neither is canonical.</li>
-                    <li>Digital exists for access and reach: geography, finance, physical presence.</li>
-                    <li>Same components, same philosophy. The digital version is not a different game.</li>
+                    <li>Two versions, peers. Neither is canonical. Treat them as equal expressions of the same engine.</li>
+                    <li>Physical: cardboard and wooden tiles, watercolor cards, hand-bound booklet. Sixty to ninety minutes for a group of five or six. Tactile, present, slow. The grounded experience.</li>
+                    <li>Digital: web-native, real-time multiplayer. Trilingual at launch (English, Spanish, French). Cloud-saved journals. No camera support. Built so that geography, finance, or physical presence aren&rsquo;t barriers to participation.</li>
+                    <li>The design contract: same components, same philosophy, same agency. The digital version is not a different game &mdash; it&rsquo;s the same game with a different access door.</li>
                 </ul>
             </aside>
         </section>
@@ -1331,9 +1367,13 @@
             <aside class="speaker-notes" data-for="11">
                 <h4>Ethics in the build &middot; ~45s</h4>
                 <ul>
-                    <li>Each commitment is concrete: audio-only, no camera, no generative content, GPL/CC, Canadian hosting.</li>
-                    <li>Refusing generative AI is the unusual one for an academic audience: it would flatten the player-authored content the project depends on.</li>
-                    <li>Library will be curated; framework stays open. Most projects fail one of those tests; this one tries to hold both.</li>
+                    <li>Each commitment is concrete and built into the artifact. Walk them quickly.</li>
+                    <li><strong>Audio-only documentation.</strong> No video recordings of playtests, no camera in the digital app. Privacy comes first.</li>
+                    <li><strong>No auto-translation, no AI.</strong> User-created content stays exactly as written. Player nuance is preserved.</li>
+                    <li><strong>Open access.</strong> Free fonts, GPL code, Creative Commons content. Resists institutional siloing.</li>
+                    <li><strong>Data sovereignty.</strong> Player journals hosted on Canadian servers, with explicit privacy policy and terms of use linked from the app.</li>
+                    <li>The non-obvious one for academics: refusing generative AI. For an audience that&rsquo;s been told &ldquo;use AI to scale qualitative research,&rdquo; this stance needs naming &mdash; generative content would flatten the player-authored content the project actually depends on.</li>
+                    <li>These aren&rsquo;t aspirational principles. They&rsquo;re decisions in the build, not a code of conduct on a wall.</li>
                 </ul>
             </aside>
         </section>
@@ -1369,9 +1409,12 @@
             <aside class="speaker-notes" data-for="12">
                 <h4>Research arc &middot; ~45s</h4>
                 <ul>
-                    <li>Four phases, arts-based.</li>
-                    <li>Be precise: the formal study has not begun. Ethics review is the gate to phase two.</li>
-                    <li>Through 2028: ethnographic analysis is the methodological core.</li>
+                    <li>Four phases, arts-based methodology. Walk the timeline.</li>
+                    <li><strong>Phase 1, game design.</strong> Iterative prototyping, lean mechanics, serious-games framework. This is what&rsquo;s been happening for the past year.</li>
+                    <li><strong>Phase 2, play-testing.</strong> Three to five facilitated sessions with diverse groups of three to six players. Audio recordings and observation. Already underway in alpha; ethics review and formal protocol are the gate to count these as research data.</li>
+                    <li><strong>Phase 3, data collection.</strong> Participant observation paired with semi-structured interviews. The narrative aspects of gameplay are the data.</li>
+                    <li><strong>Phase 4, analysis.</strong> Thematic analysis identifying recurring patterns and themes within player stories.</li>
+                    <li>Be precise about where the project is right now: the formal study has not started yet. Players are testers, not research subjects. The formal ethnographic phase runs through 2028.</li>
                 </ul>
             </aside>
         </section>
@@ -1404,9 +1447,11 @@
             <aside class="speaker-notes" data-for="13">
                 <h4>What has surfaced &middot; ~50s</h4>
                 <ul>
-                    <li>The openness claim isn&rsquo;t hypothetical. Players bring whatever they need to.</li>
-                    <li>Both stories anonymized; both players consented. Use freely.</li>
-                    <li>Closing line is the design philosophy in fifteen words.</li>
+                    <li>Make the openness claim concrete. The default content focuses on gender identity, anchored in Butler, Serano, Stryker. But in actual play, the framework has elicited stories about parenthood, the international student experience, migrant identity, and reminiscence of a younger self. The breadth is behavioral, not theoretical &mdash; players brought it.</li>
+                    <li>The Water identity is the most-quoted playtest. A player chose their character to be Water. Not water-based, not anthropomorphized. Simply Water. As a way to think about feeling less flowy than they used to be. That&rsquo;s identity outside any predefined category.</li>
+                    <li>The space warp is the rule-breaking-as-data story. A player broke the adjacency rule, placed a space-themed tile separately, and authored warp rules to connect it. The break became the best part of that session &mdash; and it&rsquo;s the kind of design intervention that becomes data later.</li>
+                    <li>Both vignettes are anonymized and players consented to retelling. Use freely in talks.</li>
+                    <li>Closing line is the design philosophy in fifteen words: &ldquo;The more the players create new rules, the better the game goes.&rdquo; Read it slowly.</li>
                 </ul>
             </aside>
         </section>
@@ -1439,9 +1484,11 @@
             <aside class="speaker-notes" data-for="14">
                 <h4>Beyond v1 &middot; ~45s</h4>
                 <ul>
-                    <li>The lasting form of the project is the framework, not v1 of the game.</li>
-                    <li>Variants in motion: migrant identity (designer-authored), children&rsquo;s version (requested).</li>
-                    <li>Open framework, curated library. The two-tier model is the governance answer.</li>
+                    <li>The lasting form of the project is the framework, not v1 of the game. Variants are already in motion.</li>
+                    <li><strong>Migrant identity</strong> is in early planning, authored by the project&rsquo;s designer &mdash; first-person interest, applied to a different framing question.</li>
+                    <li><strong>Children&rsquo;s version</strong> is a request from educators; same engine, lighter prompts. Demonstrates that the framework holds outside the academic register.</li>
+                    <li><strong>Two-tier governance</strong> is the answer: the framework stays open, anyone can fork the engine and ship their own deck. The community library is curated &mdash; to keep the published canon at a quality bar and to resist dilution into generic prompt decks.</li>
+                    <li>That separation is the answer to a tension most open-source qualitative projects don&rsquo;t solve: how to invite contribution without losing standards. Open framework, curated library. Both.</li>
                 </ul>
             </aside>
         </section>
@@ -1453,11 +1500,13 @@
                     <figure class="closing-mark" aria-hidden="true">
                         <img src="img/og-card.webp" alt="" loading="lazy">
                     </figure>
-                    <p class="pullquote" style="margin: 0 auto 1.75rem; max-width: 46rem; text-align: center;">&ldquo;The stories are the most important, no matter how the players tell them.&rdquo;</p>
-                    <p style="font-size: clamp(1rem, 1.4vw, 1.35rem); color: #d1d5db;">Visibility, where there has been silence.</p>
-                    <h2 id="s15-title" class="thanks-mark" style="margin-top: 2rem;">Thank you.</h2>
-                    <p class="thanks-sub">Questions welcome.</p>
-                    <p class="thanks-links">
+                    <p class="pullquote" style="margin: 0 auto 2rem; max-width: 46rem; text-align: center;">&ldquo;The stories are the most important, no matter how the players tell them.&rdquo;</p>
+                    <h2 id="s15-title" class="thanks-mark">Thank you.</h2>
+                    <figure class="qr-card">
+                        <img src="img/qr-journeyways.svg" alt="QR code linking to journeyways.ca" loading="lazy">
+                        <figcaption>journeyways.ca</figcaption>
+                    </figure>
+                    <p class="thanks-links" style="margin-top: 2.25rem;">
                         <a href="https://www.journeyways.ca">journeyways.ca</a> &middot; <a href="references.html">References</a> &middot; <a href="design.html">Design</a> &middot; <a href="https://grsj.arts.ubc.ca/">UBC GRSJ</a>
                     </p>
                 </div>
@@ -1465,9 +1514,10 @@
             <aside class="speaker-notes" data-for="15">
                 <h4>Closing &middot; ~40s plus Q&amp;A</h4>
                 <ul>
-                    <li>Read the pull-quote slowly.</li>
-                    <li>Land on &ldquo;visibility, where there has been silence&rdquo;. Pause.</li>
-                    <li>Stay on this slide during questions. Links are for follow-up.</li>
+                    <li>The pull-quote is the closing thesis: &ldquo;The stories are the most important, no matter how the players tell them.&rdquo; Read slowly. Pause after.</li>
+                    <li>Then thank the room and open the floor.</li>
+                    <li>The QR code on the slide goes to journeyways.ca. Audience members can scan from their seats. The link list at the bottom covers references, the design essay, and UBC GRSJ for anyone who wants to follow up later.</li>
+                    <li>Stay on this slide for Q&amp;A.</li>
                 </ul>
             </aside>
         </section>
