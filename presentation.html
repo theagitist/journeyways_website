@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A 5-minute pitch for JOURNEYWAYS, a board game and a digital game built as research instruments for the elaboration of identity beyond colonial categories. Master's research at the UBC Institute for Gender, Race, Sexuality and Social Justice.">
-    <meta name="keywords" content="JOURNEYWAYS pitch, presentation, board game, identity research, gender identity, decolonization, arts-based research, ethnography, UBC GRSJ, master's research, academic conference">
+    <meta name="description" content="A short conference presentation on JOURNEYWAYS, a board game and a digital game built as research instruments for the elaboration of identity beyond colonial categories. Master's research at the UBC Institute for Gender, Race, Sexuality and Social Justice.">
+    <meta name="keywords" content="JOURNEYWAYS presentation, conference deck, board game, identity research, gender identity, decolonization, arts-based research, ethnography, UBC GRSJ, master's research, academic conference">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="noindex, nofollow">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.journeyways.ca/pitch.html">
-    <meta property="og:title" content="JOURNEYWAYS | Pitch">
-    <meta property="og:description" content="A brisk pitch for the project. Fifteen slides, academic but friendly, designed for conference panels and roundtables.">
+    <meta property="og:url" content="https://www.journeyways.ca/presentation.html">
+    <meta property="og:title" content="JOURNEYWAYS | Presentation">
+    <meta property="og:description" content="A short conference deck on the project. Fifteen slides, academic but friendly, designed for panels and roundtables.">
     <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
     <meta property="og:site_name" content="JOURNEYWAYS">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.journeyways.ca/pitch.html">
-    <meta name="twitter:title" content="JOURNEYWAYS | Pitch">
-    <meta name="twitter:description" content="A 5-minute pitch for a board game and a digital game used as identity-research instruments.">
+    <meta name="twitter:url" content="https://www.journeyways.ca/presentation.html">
+    <meta name="twitter:title" content="JOURNEYWAYS | Presentation">
+    <meta name="twitter:description" content="A short conference deck on a board game and a digital game used as identity-research instruments.">
     <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.jpg">
 
-    <link rel="canonical" href="https://www.journeyways.ca/pitch.html">
+    <link rel="canonical" href="https://www.journeyways.ca/presentation.html">
 
-    <title>JOURNEYWAYS | Pitch</title>
+    <title>JOURNEYWAYS | Presentation</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="shortcut icon" href="img/favicon.png">
@@ -37,9 +37,9 @@
         {
             "@context": "https://schema.org",
             "@type": "PresentationDigitalDocument",
-            "headline": "JOURNEYWAYS: a 5-minute pitch",
-            "description": "A 5-minute conference pitch for JOURNEYWAYS, a board game and a digital game used as research instruments for the elaboration of identity beyond colonial categories.",
-            "url": "https://www.journeyways.ca/pitch.html",
+            "headline": "JOURNEYWAYS: conference presentation",
+            "description": "A short conference presentation on JOURNEYWAYS, a board game and a digital game used as research instruments for the elaboration of identity beyond colonial categories.",
+            "url": "https://www.journeyways.ca/presentation.html",
             "image": "https://www.journeyways.ca/img/og-card.jpg",
             "author": {
                 "@type": "Person",
@@ -156,6 +156,27 @@
         }
         .slide p + p { margin-top: 0.85rem; }
         .slide .muted { color: #9ca3af; }
+
+        /* Inline accent line under a column body. Larger and more readable than the uppercase eyebrows. */
+        .slide .eyebrow {
+            margin-top: 0.85rem;
+            font-size: clamp(0.95rem, 1.2vw, 1.15rem);
+            color: #facc15;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            line-height: 1.4;
+        }
+        .slide .eyebrow .q { color: #d1d5db; font-style: italic; font-weight: 300; }
+
+        /* Footer-style cross-link under a slide body. Less aggressive tracking than the previous all-caps muted treatment. */
+        .slide .footer-note {
+            margin-top: 1.25rem;
+            font-size: clamp(0.85rem, 1.05vw, 0.95rem);
+            color: #9ca3af;
+            letter-spacing: 0.04em;
+        }
+        .slide .footer-note a { color: #facc15; text-decoration: underline; text-underline-offset: 2px; }
+        .slide .footer-note a:hover { color: #fde047; }
 
         .pullquote {
             font-style: italic;
@@ -389,7 +410,9 @@
             color: rgba(255,255,255,0.35);
             z-index: 60;
             pointer-events: none;
+            transition: opacity 400ms ease;
         }
+        .deck-hint.faded { opacity: 0; }
         .deck-hint kbd {
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
@@ -507,16 +530,30 @@
             margin-top: 0.15rem;
             display: block;
         }
+        /* Pile-label colour code matching the .card-COLOR classes used elsewhere on the site. Specificity must beat .card-back .label/.role above. */
+        .card-back .label.card-red,    .card-back .role.card-red    { color: #ef4444; }
+        .card-back .label.card-green,  .card-back .role.card-green  { color: #10b981; }
+        .card-back .label.card-blue,   .card-back .role.card-blue   { color: #3b82f6; }
+        .card-back .label.card-purple, .card-back .role.card-purple { color: #8b5cf6; }
+        .card-back .label.card-black,  .card-back .role.card-black  { color: #9ca3af; }
 
         .card-front-row {
             display: grid;
             grid-template-columns: repeat(3, minmax(0, 1fr));
             gap: clamp(1rem, 2vw, 1.75rem);
-            margin: 0.85rem 0;
+            margin: 0.85rem auto;
             max-width: 52rem;
+        }
+        .card-front-row.four {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            max-width: 64rem;
+        }
+        @media (max-width: 960px) {
+            .card-front-row.four { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 36rem; }
         }
         @media (max-width: 720px) {
             .card-front-row { grid-template-columns: 1fr; max-width: 22rem; }
+            .card-front-row.four { grid-template-columns: 1fr; max-width: 22rem; }
         }
         .card-front-row figure { margin: 0; }
         .card-front-row img {
@@ -528,11 +565,38 @@
             display: block;
         }
         .card-front-row figcaption {
-            font-size: 0.78rem;
+            text-align: center;
+            margin-top: 0.55rem;
+        }
+        .card-front-row .card-name {
+            display: block;
+            font-size: clamp(0.85rem, 1.1vw, 1rem);
+            font-weight: 500;
+            color: #facc15;
+            letter-spacing: 0.04em;
+        }
+        .card-front-row .card-prompt {
+            display: block;
+            margin-top: 0.3rem;
+            font-size: clamp(0.78rem, 0.95vw, 0.9rem);
             font-style: italic;
             color: #9ca3af;
-            margin-top: 0.45rem;
-            text-align: center;
+            line-height: 1.45;
+        }
+
+        /* Slide 4: small thumbnail above each column */
+        .instrument-thumb {
+            margin: 0 0 0.85rem;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            border-radius: 0.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+        }
+        .instrument-thumb img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
 
         .photo-block {
@@ -586,9 +650,20 @@
             .principles-2col { grid-template-columns: 1fr; }
         }
         .principles-2col li {
+            position: relative;
             border-top: 1px solid rgba(75, 85, 99, 0.4);
-            padding: 0.55rem 0;
+            padding: 0.65rem 0 0.65rem 1.5rem;
             font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+        }
+        .principles-2col li::before {
+            content: "";
+            position: absolute;
+            left: 0.25rem;
+            top: 1.1rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 50%;
+            background: #facc15;
         }
 
         .thanks-block { text-align: center; max-width: 38rem; margin: 0 auto; }
@@ -698,13 +773,13 @@
                 <div class="columns-2">
                     <div class="col">
                         <h3>Traditional methods</h3>
-                        <p>A handful of boxes (transman, transwoman, ciswoman, cisman, nonbinary, other) and a semi-structured interview to fit a person inside them.</p>
-                        <p class="muted" style="margin-top: 0.85rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">Extraction &middot; &ldquo;What are you?&rdquo;</p>
+                        <p>A handful of checkboxes (transman, transwoman, ciswoman, cisman, nonbinary, other) and a semi-structured interview to fit a person inside them.</p>
+                        <p class="eyebrow">Extraction. <span class="q">&ldquo;What are you?&rdquo;</span></p>
                     </div>
                     <div class="col">
                         <h3>Journeyways</h3>
                         <p>A safe, collaborative table. Open, multimodal expression. The continuous process of identity construction is the data, not the box that contains it.</p>
-                        <p class="muted" style="margin-top: 0.85rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">Elaboration &middot; &ldquo;Who shows up here?&rdquo;</p>
+                        <p class="eyebrow">Elaboration. <span class="q">&ldquo;Who shows up here?&rdquo;</span></p>
                     </div>
                 </div>
                 <p style="margin-top: 1.5rem;">Forms do not give identity room to enact.</p>
@@ -728,9 +803,9 @@
                 </header>
                 <h2 id="s3-title">What if research happened around a table, not across one?</h2>
                 <p>JOURNEYWAYS is a board game and a digital game built as strict, safe research instruments. The actual research is the critical ethnographic analysis of the stories that emerge through play. The games are the form; the analysis is the work.</p>
-                <p>Grounded in arts-based research (Leavy, McDermott) and the serious-games tradition (Ritterfeld and colleagues). Inside a body of methodological work, not improvised.</p>
+                <p>Grounded in arts-based research (<a href="references.html#arts-based" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">Leavy, McDermott</a>) and the serious-games tradition (<a href="references.html#games" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">Ritterfeld and colleagues</a>). Inside a body of methodological work, not improvised.</p>
                 <p class="pullquote">&ldquo;It is a game. We are just playing. Everything is safe. You can&rsquo;t lose.&rdquo;</p>
-                <p class="muted" style="margin-top: 1.25rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">See <a href="references.html" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">/references</a> for the full lineage.</p>
+                <p class="footer-note">See <a href="references.html">/references</a> for the full lineage.</p>
             </div>
             <aside class="speaker-notes" data-for="3">
                 <h4>The proposition &middot; ~55s</h4>
@@ -752,14 +827,17 @@
                 <h2 id="s4-title">Map tiles, cards, and a player booklet.</h2>
                 <div class="columns-3">
                     <div class="col">
+                        <figure class="instrument-thumb"><img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." loading="lazy"></figure>
                         <h3>Map tiles</h3>
                         <p>Wordless illustrations. Location and context, expandable and open to authorship.</p>
                     </div>
                     <div class="col">
+                        <figure class="instrument-thumb"><img src="img/design/card-encounter.webp" alt="Card front: a watercolor and ink illustration of two figures meeting." loading="lazy"></figure>
                         <h3>Cards</h3>
                         <p>Stimulus and event. Short text, public to the table, organized in five categories. Designed to elicit, not to provide.</p>
                     </div>
                     <div class="col">
+                        <figure class="instrument-thumb"><img src="img/edges_playtest_journaling.webp" alt="A player writing in their booklet during a JOURNEYWAYS playtest." loading="lazy"></figure>
                         <h3>Player booklet</h3>
                         <p>Expression and archive. The durable artifact of the session. Accommodates writing, drawing, or silence.</p>
                     </div>
@@ -787,9 +865,6 @@
                 <div class="tile-grid">
                     <figure><img src="img/design/tile-childhood-house.webp" alt="Map tile: Childhood House. A small house surrounded by colorful watercolor splatters." loading="lazy"><figcaption>Childhood house</figcaption></figure>
                     <figure><img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." loading="lazy"><figcaption>Mirror lake</figcaption></figure>
-                    <figure><img src="img/design/tile-mountain-peak.webp" alt="Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters." loading="lazy"><figcaption>Mountain peak</figcaption></figure>
-                    <figure><img src="img/design/tile-singing-cave.webp" alt="Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." loading="lazy"><figcaption>Singing cave</figcaption></figure>
-                    <figure><img src="img/design/tile-tree-hollow.webp" alt="Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches." loading="lazy"><figcaption>Tree hollow</figcaption></figure>
                     <figure><img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." loading="lazy"><figcaption>Misty trail</figcaption></figure>
                 </div>
                 <ul class="principles" style="margin-top: 1.25rem;">
@@ -817,11 +892,11 @@
                 </header>
                 <h2 id="s6-title">Five colored piles, not one shuffled deck.</h2>
                 <div class="card-back-row">
-                    <figure class="card-back"><img src="img/design/bg-red.webp" alt="Red card back: yellow and orange watercolor splotches." loading="lazy"><span class="label">Red</span><span class="role">Encounters</span></figure>
-                    <figure class="card-back"><img src="img/design/bg-green.webp" alt="Green card back: shades of green watercolor splotches." loading="lazy"><span class="label">Green</span><span class="role">Movement</span></figure>
-                    <figure class="card-back"><img src="img/design/bg-blue.webp" alt="Blue card back: shades of blue watercolor splotches." loading="lazy"><span class="label">Blue</span><span class="role">Reflections</span></figure>
-                    <figure class="card-back"><img src="img/design/bg-purple.webp" alt="Purple card back: shades of purple watercolor splotches." loading="lazy"><span class="label">Purple</span><span class="role">Social</span></figure>
-                    <figure class="card-back"><img src="img/design/bg-black.webp" alt="Black card back: shades of black and gray watercolor splotches." loading="lazy"><span class="label">Black</span><span class="role">Time passing</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-red.webp" alt="Red card back: yellow and orange watercolor splotches." loading="lazy"><span class="label card-red">Red</span><span class="role card-red">Encounters</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-green.webp" alt="Green card back: shades of green watercolor splotches." loading="lazy"><span class="label card-green">Green</span><span class="role card-green">Movement</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-blue.webp" alt="Blue card back: shades of blue watercolor splotches." loading="lazy"><span class="label card-blue">Blue</span><span class="role card-blue">Reflections</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-purple.webp" alt="Purple card back: shades of purple watercolor splotches." loading="lazy"><span class="label card-purple">Purple</span><span class="role card-purple">Social</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-black.webp" alt="Black card back: shades of black and gray watercolor splotches." loading="lazy"><span class="label card-black">Black</span><span class="role card-black">Time passing</span></figure>
                 </div>
                 <p>Players choose which pile to pick from. The specific card stays a discovery. Agency at the level of category, surprise at the level of content. Players steer the tone of their story without the game collapsing into pure choice.</p>
                 <p class="muted" style="margin-top: 0.75rem; font-style: italic;">Five black cards end the session. The poetic countdown.</p>
@@ -844,10 +919,35 @@
                     <span class="chapter-title">Inside a card</span>
                 </header>
                 <h2 id="s7-title">A mirror in a cave is not a mirror in a classroom.</h2>
-                <div class="card-front-row">
-                    <figure><img src="img/design/card-mirror.webp" alt="Card front: a watercolor and ink illustration of a cracked mirror." loading="lazy"><figcaption>Mirror</figcaption></figure>
-                    <figure><img src="img/design/card-memory.webp" alt="Card front: a watercolor and ink illustration of a memory growing wild." loading="lazy"><figcaption>Memory</figcaption></figure>
-                    <figure><img src="img/design/card-echo.webp" alt="Card front: a watercolor and ink illustration of two splotchy figures facing each other." loading="lazy"><figcaption>Echo</figcaption></figure>
+                <div class="card-front-row four">
+                    <figure>
+                        <img src="img/design/card-mirror.webp" alt="Card front: a watercolor and ink illustration of a cracked mirror." loading="lazy">
+                        <figcaption>
+                            <span class="card-name">Mirror</span>
+                            <span class="card-prompt">&ldquo;A mirror cracks as you pass. What kind of mirror? What reflection remains?&rdquo;</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/design/card-memory.webp" alt="Card front: a watercolor and ink illustration of a memory growing wild." loading="lazy">
+                        <figcaption>
+                            <span class="card-name">Memory</span>
+                            <span class="card-prompt">&ldquo;A memory grows wild in this place. What does it become?&rdquo;</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/design/card-echo.webp" alt="Card front: a watercolor and ink illustration of two splotchy figures facing each other." loading="lazy">
+                        <figcaption>
+                            <span class="card-name">Echo</span>
+                            <span class="card-prompt">&ldquo;You speak with an echo of yourself. What does it say?&rdquo;</span>
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="img/design/card-wind.webp" alt="Card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind." loading="lazy">
+                        <figcaption>
+                            <span class="card-name">Wind</span>
+                            <span class="card-prompt">&ldquo;A wind scatters your thoughts. Do you gather them back? How are they different now?&rdquo;</span>
+                        </figcaption>
+                    </figure>
                 </div>
                 <p>Cards are written as open gestures. The mechanic is the meeting of components. Image plus context produces a story; the card alone does not.</p>
                 <p class="muted" style="margin-top: 0.75rem; font-style: italic;">Designed to elicit, not to provide. Every prompt is hand-authored. No generative AI. Restraint is part of the design.</p>
@@ -965,7 +1065,7 @@
                     <li><strong style="color: #fff; font-weight: 500;">Audio-only documentation.</strong> No video recordings of playtests, no camera in the digital app. Privacy first.</li>
                     <li><strong style="color: #fff; font-weight: 500;">No auto-translation, no AI.</strong> User-created content stays exactly as written, to preserve the player&rsquo;s authentic words.</li>
                     <li><strong style="color: #fff; font-weight: 500;">Open access.</strong> Free fonts, GPL code, Creative Commons content. Resists institutional siloing.</li>
-                    <li><strong style="color: #fff; font-weight: 500;">Data sovereignty.</strong> Player journals hosted on Canadian servers, with explicit privacy terms.</li>
+                    <li><strong style="color: #fff; font-weight: 500;">Data sovereignty.</strong> Player journals hosted on Canadian servers, governed by an explicit <a href="https://play.journeyways.ca/privacy" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">privacy policy</a> and <a href="https://play.journeyways.ca/terms" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">terms of use</a>.</li>
                 </ul>
                 <p style="margin-top: 1.25rem;">Research-ethics decisions baked into the artifact, not bolted on after.</p>
             </div>
@@ -1025,7 +1125,7 @@
                     <span class="chapter-title">What has surfaced</span>
                 </header>
                 <h2 id="s13-title">Beyond gender, in actual play.</h2>
-                <p>While gender theory (Butler, Serano, Stryker) is the default anchor, the open framework has elicited stories about parenthood, the international student experience, migrant identity, and a younger self.</p>
+                <p>While gender theory (<a href="references.html#theory" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">Butler, Serano, Stryker</a>) is the default anchor, the open framework has elicited stories about parenthood, the international student experience, migrant identity, and a younger self.</p>
                 <div class="stories">
                     <div class="vignette">
                         <p><strong style="color: #fff; font-weight: 500;">The &ldquo;Water&rdquo; identity.</strong> A player chose their character to be Water. Not water-based, not anthropomorphized. Simply Water. As a way to think about feeling less flowy than they used to be.</p>
@@ -1106,8 +1206,8 @@
 
     </main>
 
-    <footer class="deck-hint" role="contentinfo">
-        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>F</kbd> fullscreen &middot; <kbd>S</kbd> speaker notes &middot; <kbd>P</kbd> print to PDF
+    <footer class="deck-hint faded" role="contentinfo">
+        <kbd>&larr;</kbd> <kbd>&rarr;</kbd> navigate &middot; <kbd>1</kbd>&ndash;<kbd>9</kbd> jump to slide &middot; <kbd>F</kbd> fullscreen &middot; <kbd>S</kbd> speaker notes &middot; <kbd>P</kbd> print to PDF
     </footer>
 
     <script>
@@ -1140,6 +1240,22 @@
 
             function next() { go(current + 1); }
             function prev() { go(current - 1); }
+
+            // Digit jump: type a slide number to go there. Multi-digit input is buffered
+            // for ~700ms so e.g. "1" then "0" reaches slide 10. The buffer commits early
+            // when no longer-number could still fit within the deck.
+            var numBuffer = '';
+            var numTimer = null;
+            function commitNum() {
+                if (numTimer) { clearTimeout(numTimer); numTimer = null; }
+                if (numBuffer === '') return;
+                var n = parseInt(numBuffer, 10);
+                numBuffer = '';
+                if (isNaN(n)) return;
+                if (n < 1) n = 1;
+                if (n > total) n = total;
+                go(n - 1);
+            }
 
             document.addEventListener('keydown', function (e) {
                 if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
@@ -1174,6 +1290,18 @@
                         e.preventDefault();
                         window.print();
                         break;
+                    default:
+                        if (/^[0-9]$/.test(e.key)) {
+                            e.preventDefault();
+                            numBuffer += e.key;
+                            if (parseInt(numBuffer, 10) * 10 > total) {
+                                commitNum();
+                            } else {
+                                if (numTimer) clearTimeout(numTimer);
+                                numTimer = setTimeout(commitNum, 700);
+                            }
+                        }
+                        break;
                 }
             });
 
@@ -1192,6 +1320,20 @@
                 if (Math.abs(dx) > 60) { dx < 0 ? next() : prev(); }
                 touchStartX = null;
             }, { passive: true });
+
+            // Bottom hint legend: hidden by default. Shows on mouse / keyboard / touch activity,
+            // then re-hides after 2.5s of stillness.
+            var hint = document.querySelector('.deck-hint');
+            var hintTimer = null;
+            function pokeHint() {
+                if (!hint) return;
+                hint.classList.remove('faded');
+                if (hintTimer) clearTimeout(hintTimer);
+                hintTimer = setTimeout(function () { hint.classList.add('faded'); }, 2500);
+            }
+            document.addEventListener('mousemove', pokeHint);
+            document.addEventListener('keydown', pokeHint);
+            document.addEventListener('touchstart', pokeHint, { passive: true });
 
             // Initial slide from hash, optional ?notes flag
             var params = new URLSearchParams(location.search);
