@@ -19,7 +19,7 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 - **Photos** (`photos.html`). Research gallery and lightbox.
 - **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
 - **References** (`references.html`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list is `brainstorm/references.md`.
-- **Pitch** (`pitch.html`). Standalone 5-minute conference deck: 10 slides built for academic panels, roundtables, and showcases. Self-contained (inline CSS and JS, no external slide framework). Keyboard-driven (arrow keys, space, F for fullscreen, S for speaker notes, P for print-to-PDF). The print stylesheet renders 16:9 pages so any browser's "Print to PDF" produces a clean shareable deck. Linked from the About page hero bar; intentionally not in the main nav.
+- **Pitch** (`pitch.html`). Hidden work-in-progress conference deck. `noindex`, off the nav, off the sitemap, no inbound links anywhere on the site. Reachable only by direct URL while the content is being iterated on. Will be linked from the About hero bar when ready to publish.
 - **Contact** (`contact.html`). Hidden (`noindex`, off the nav, off the sitemap) until the deliverability issue is resolved.
 
 ## Site structure
@@ -40,7 +40,7 @@ www.journeyways.ca/
 ├── download/                Rules and character-sheet PDFs
 ├── server/                  Express 5 + Nodemailer 8 backend (contact form, currently stopped)
 ├── brainstorm/              Working notes (gitignored, synced to Obsidian)
-├── sitemap.xml              8 entries; contact.html intentionally absent
+├── sitemap.xml              7 entries; contact.html and pitch.html intentionally absent
 └── VERSION
 ```
 
@@ -81,17 +81,15 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Changelog
 
-### 1.3.2 (May 2026) — pitch deck
+### 1.3.2 (May 2026) — pitch deck (hidden, work in progress)
 
-- **New `pitch.html`.** Standalone 5-minute conference deck synthesized from the website copy plus the 53-question designer interview in `brainstorm/answers.md`. Ten slides, each a `<section class="slide">` swapped via an `.active` class. Built for academic showcases: panels, roundtables, and discussions.
-  - **Slide arc.** Cover, the problem (sterile interviews and colonial categories), the proposition (research at a table, not across one), three components (map tiles + cards + booklet), bounded randomness (five colored card piles), how it's built (five of nine principles), stories from the table (Water and warp tile vignettes), physical and digital, three-phase research arc, closing thesis.
+- **New `pitch.html`.** Standalone conference deck synthesized from the website copy plus the 53-question designer interview in `brainstorm/answers.md`. Currently hidden while content is iterated on.
+  - **Hidden status.** `noindex, nofollow`, off the nav, off the sitemap, no inbound links anywhere on the site. Reachable only by direct URL. Will be linked from the About hero bar when ready to publish.
   - **Self-contained.** Inline `<style>` block defines the slide system; inline `<script>` handles keyboard navigation (arrow keys, space, Home/End, F fullscreen, S speaker notes toggle, P print) plus touch swipes and URL hash sync. No Reveal.js or any other slide framework.
-  - **Editorial pattern preserved.** Italianno chapter titles in `text-yellow-400`, watercolor swatches from `img/design/bg-*.webp` above each chapter, `border-t border-gray-700/40` hairlines, the same colored card chips for the bounded-randomness slide.
-  - **Print-to-PDF support.** `@media print` with `@page { size: 16in 9in; margin: 0 }` lays each slide out as a 16:9 page so any browser's "Print to PDF" produces a clean shareable deck. No external dependency for PDF export.
-  - **Speaker notes** hidden by default; toggle with `S` or open with `?notes`. One short cue per slide with timing target.
-  - **Discoverability.** Linked from the About page hero bar between References and UBC GRSJ. Not in the main nav. In the sitemap with priority 0.5.
+  - **Editorial pattern preserved.** Italianno chapter titles in `text-yellow-400`, watercolor swatches from `img/design/bg-*.webp` above each chapter, `border-t border-gray-700/40` hairlines. The components slides use the actual tile, card-back, and card-front images from `img/design/`, plus a playtest journaling photo.
+  - **Print-to-PDF support.** `@media print` with `@page { size: 16in 9in; margin: 0 }` lays each slide out as a 16:9 page so any browser's "Print to PDF" produces a shareable deck. No external dependency for PDF export.
+  - **Speaker notes** hidden by default; toggle with `S` or open with `?notes`.
 - No CSS rebuild needed; styles are inline. `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20` unchanged.
-- Sitemap updated to 8 entries with `pitch.html` (priority 0.5) and lastmod 2026-05-05.
 
 ### 1.3.1 (May 2026) — references page
 

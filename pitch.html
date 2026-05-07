@@ -6,12 +6,12 @@
     <meta name="description" content="A 5-minute pitch for JOURNEYWAYS, a board game and a digital game built as research instruments for the elaboration of identity beyond colonial categories. Master's research at the UBC Institute for Gender, Race, Sexuality and Social Justice.">
     <meta name="keywords" content="JOURNEYWAYS pitch, presentation, board game, identity research, gender identity, decolonization, arts-based research, ethnography, UBC GRSJ, master's research, academic conference">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="noindex, nofollow">
 
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.journeyways.ca/pitch.html">
     <meta property="og:title" content="JOURNEYWAYS | Pitch">
-    <meta property="og:description" content="A 5-minute pitch for the project. Ten slides, academic but friendly, designed for conference panels and roundtables.">
+    <meta property="og:description" content="A brisk pitch for the project. Fifteen slides, academic but friendly, designed for conference panels and roundtables.">
     <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
     <meta property="og:site_name" content="JOURNEYWAYS">
 
@@ -131,12 +131,12 @@
 
         .slide h1.cover {
             font-family: 'Italianno', cursive;
-            font-weight: 400;
+            font-weight: 700;
             color: #facc15;
-            font-size: clamp(5rem, 16vw, 14rem);
+            font-size: clamp(4rem, 8.5vw, 7.5rem);
             line-height: 0.95;
-            letter-spacing: 0.005em;
-            margin: 0.5rem 0 1.5rem;
+            letter-spacing: -0.025em;
+            margin: 0.4rem 0 1rem;
         }
 
         .slide h2 {
@@ -158,11 +158,14 @@
         .slide .muted { color: #9ca3af; }
 
         .pullquote {
-            font-family: 'Italianno', cursive;
+            font-style: italic;
+            font-weight: 300;
             color: #facc15;
-            font-size: clamp(2.25rem, 4.5vw, 4rem);
-            line-height: 1.1;
-            margin-top: 1.25rem;
+            font-size: clamp(1.5rem, 2.4vw, 2.25rem);
+            line-height: 1.35;
+            letter-spacing: -0.005em;
+            margin-top: 1.5rem;
+            max-width: 50rem;
         }
 
         .principles {
@@ -254,8 +257,13 @@
             gap: clamp(1rem, 2.5vw, 2.5rem);
             margin-top: 1.5rem;
         }
+        .timeline.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+        @media (max-width: 960px) {
+            .timeline.four { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
         @media (max-width: 720px) {
             .timeline { grid-template-columns: 1fr; }
+            .timeline.four { grid-template-columns: 1fr; }
         }
         .timeline .step {
             border-top: 2px solid #facc15;
@@ -289,6 +297,19 @@
         }
 
         /* ===== Cover slide ===== */
+        .slide.cover-slide .slide-inner {
+            display: grid;
+            grid-template-columns: 7fr 5fr;
+            gap: clamp(2rem, 5vw, 4rem);
+            align-items: center;
+        }
+        @media (max-width: 820px) {
+            .slide.cover-slide .slide-inner {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .slide.cover-slide .cover-art { order: -1; max-width: 22rem; margin: 0 auto; }
+        }
         .cover-meta {
             font-size: 0.78rem;
             letter-spacing: 0.25em;
@@ -297,19 +318,29 @@
             margin-bottom: 0.75rem;
         }
         .cover-sub {
-            font-size: clamp(1.1rem, 1.7vw, 1.5rem);
+            font-size: clamp(1rem, 1.35vw, 1.25rem);
             color: #d1d5db;
             font-style: italic;
             font-weight: 300;
-            max-width: 50rem;
-            line-height: 1.4;
+            max-width: 36rem;
+            line-height: 1.5;
         }
         .cover-foot {
-            margin-top: 2rem;
-            font-size: 0.85rem;
-            letter-spacing: 0.18em;
+            margin-top: 2.5rem;
+            font-size: 0.78rem;
+            letter-spacing: 0.25em;
             text-transform: uppercase;
             color: #9ca3af;
+        }
+        .cover-art {
+            margin: 0;
+            -webkit-mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 95%);
+                    mask-image: radial-gradient(ellipse at center, rgba(0,0,0,1) 65%, rgba(0,0,0,0) 95%);
+        }
+        .cover-art img {
+            width: 100%;
+            height: auto;
+            display: block;
         }
 
         /* ===== Closing ===== */
@@ -412,6 +443,184 @@
         }
         .speaker-notes ul li { margin-top: 0.25rem; }
 
+        /* ===== Image grids for components ===== */
+        .tile-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: clamp(0.5rem, 1.2vw, 1rem);
+            margin-top: 0.85rem;
+            max-width: 56rem;
+        }
+        @media (max-width: 720px) {
+            .tile-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+        .tile-grid figure { margin: 0; }
+        .tile-grid img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.25rem;
+            display: block;
+        }
+        .tile-grid figcaption {
+            font-size: 0.7rem;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #9ca3af;
+            margin-top: 0.35rem;
+            text-align: center;
+        }
+
+        .card-back-row {
+            display: grid;
+            grid-template-columns: repeat(5, minmax(0, 1fr));
+            gap: clamp(0.75rem, 1.5vw, 1.5rem);
+            margin: 1rem 0;
+            align-items: end;
+        }
+        @media (max-width: 720px) {
+            .card-back-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+        }
+        .card-back { text-align: center; margin: 0; }
+        .card-back img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+            display: block;
+            margin-bottom: 0.55rem;
+        }
+        .card-back .label {
+            font-size: clamp(0.78rem, 1.05vw, 1rem);
+            font-weight: 600;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 1.1;
+            display: block;
+        }
+        .card-back .role {
+            font-size: clamp(0.7rem, 0.9vw, 0.85rem);
+            font-style: italic;
+            font-weight: 300;
+            color: #9ca3af;
+            margin-top: 0.15rem;
+            display: block;
+        }
+
+        .card-front-row {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: clamp(1rem, 2vw, 1.75rem);
+            margin: 0.85rem 0;
+            max-width: 52rem;
+        }
+        @media (max-width: 720px) {
+            .card-front-row { grid-template-columns: 1fr; max-width: 22rem; }
+        }
+        .card-front-row figure { margin: 0; }
+        .card-front-row img {
+            width: 100%;
+            aspect-ratio: 700 / 545;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.4);
+            display: block;
+        }
+        .card-front-row figcaption {
+            font-size: 0.78rem;
+            font-style: italic;
+            color: #9ca3af;
+            margin-top: 0.45rem;
+            text-align: center;
+        }
+
+        .photo-block {
+            display: grid;
+            grid-template-columns: 5fr 7fr;
+            gap: clamp(1.5rem, 3.5vw, 3rem);
+            align-items: center;
+            margin-top: 0.85rem;
+        }
+        @media (max-width: 820px) {
+            .photo-block { grid-template-columns: 1fr; }
+        }
+        .photo-block figure {
+            margin: 0;
+            border-radius: 0.25rem;
+            overflow: hidden;
+            box-shadow: 0 10px 24px rgba(0,0,0,0.4);
+        }
+        .photo-block figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .surfaced-list {
+            list-style: none;
+            padding: 0;
+            margin: 0.85rem 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0 clamp(1rem, 2.5vw, 2rem);
+        }
+        @media (max-width: 720px) {
+            .surfaced-list { grid-template-columns: 1fr; }
+        }
+        .surfaced-list li {
+            border-top: 1px solid rgba(75, 85, 99, 0.4);
+            padding: 0.5rem 0;
+            font-size: clamp(0.95rem, 1.25vw, 1.15rem);
+        }
+
+        .principles-2col {
+            list-style: none;
+            padding: 0;
+            margin: 0.85rem 0 0;
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0 clamp(1.5rem, 3vw, 2.5rem);
+        }
+        @media (max-width: 720px) {
+            .principles-2col { grid-template-columns: 1fr; }
+        }
+        .principles-2col li {
+            border-top: 1px solid rgba(75, 85, 99, 0.4);
+            padding: 0.55rem 0;
+            font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+        }
+
+        .thanks-block { text-align: center; max-width: 38rem; margin: 0 auto; }
+        .thanks-block .thanks-mark {
+            font-family: 'Italianno', cursive;
+            font-weight: 700;
+            color: #facc15;
+            font-size: clamp(4rem, 9vw, 7rem);
+            line-height: 0.95;
+            letter-spacing: -0.02em;
+            margin: 0 0 0.75rem;
+        }
+        .thanks-block .thanks-sub {
+            font-size: clamp(1rem, 1.35vw, 1.25rem);
+            color: #d1d5db;
+            font-style: italic;
+            font-weight: 300;
+        }
+        .thanks-block .thanks-links {
+            font-size: 0.78rem;
+            letter-spacing: 0.22em;
+            text-transform: uppercase;
+            color: #9ca3af;
+            margin-top: 1.75rem;
+        }
+        .thanks-block .thanks-links a {
+            color: #facc15;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+        .thanks-block .thanks-links a:hover { color: #fde047; }
+
         /* ===== Print to PDF ===== */
         @media print {
             @page { size: 16in 9in; margin: 0; }
@@ -447,7 +656,7 @@
 
     <header class="deck-bar" role="banner">
         <a href="index.html" aria-label="Back to JOURNEYWAYS">&larr; JOURNEYWAYS</a>
-        <span class="counter" aria-live="polite"><span id="slide-current">01</span> / <span id="slide-total">10</span></span>
+        <span class="counter" aria-live="polite"><span id="slide-current">01</span> / <span id="slide-total">15</span></span>
     </header>
 
     <div class="nav-zone prev" id="zone-prev" role="button" aria-label="Previous slide" tabindex="-1"></div>
@@ -456,19 +665,24 @@
     <main id="deck" class="deck" role="main" aria-label="JOURNEYWAYS pitch deck">
 
         <!-- ===== Slide 1: Cover ===== -->
-        <section class="slide" data-slide="1" aria-labelledby="cover-title">
+        <section class="slide cover-slide" data-slide="1" aria-labelledby="cover-title">
             <div class="slide-inner">
-                <div class="cover-meta">Master&rsquo;s research &middot; UBC GRSJ &middot; 2026</div>
-                <h1 id="cover-title" class="cover">JOURNEYWAYS</h1>
-                <p class="cover-sub">A board game and a digital game for the elaboration of identity beyond colonial categories.</p>
-                <p class="cover-foot">5-minute presentation &middot; Adri M. &middot; journeyways.ca</p>
+                <div class="cover-text">
+                    <div class="cover-meta">Master&rsquo;s research &middot; UBC GRSJ</div>
+                    <h1 id="cover-title" class="cover">Journeyways</h1>
+                    <p class="cover-sub">A game about becoming.</p>
+                    <p style="margin-top: 0.5rem; max-width: 32rem; font-size: clamp(0.9rem, 1.1vw, 1.05rem); color: #9ca3af; line-height: 1.55; font-weight: 300;">Narrative play as an instrument for critical ethnographic research.</p>
+                    <p class="cover-foot">Adri M. &middot; 2026</p>
+                </div>
+                <figure class="cover-art">
+                    <img src="img/og-card.webp" alt="Watercolor of two profiles facing each other; warm tones on the left, cool tones on the right, with a landscape of mountains and water unfolding in the negative space between them. The JOURNEYWAYS visual identity.">
+                </figure>
             </div>
             <aside class="speaker-notes" data-for="1">
                 <h4>Cover &middot; ~20s</h4>
                 <ul>
                     <li>Open with the project name and the one-line frame. Do not over-explain.</li>
                     <li>Anchor: master&rsquo;s research at UBC GRSJ. Academic context, signaled briefly.</li>
-                    <li>Promise: ten slides, five minutes, friendly tone.</li>
                 </ul>
             </aside>
         </section>
@@ -480,16 +694,27 @@
                     <div class="swatch"><img src="img/design/bg-red.webp" alt="" loading="lazy" aria-hidden="true"></div>
                     <span class="chapter-title">The problem</span>
                 </header>
-                <h2 id="s2-title">Identity research begins with a form.</h2>
-                <p>Most studies of gender identity start with a handful of boxes (transman, transwoman, ciswoman, cisman, nonbinary, other) and a semi-structured interview to fit a person inside them.</p>
-                <p>The categories are eurocentric. The interviews are sterile. The setup is built for extraction, not elaboration.</p>
+                <h2 id="s2-title">Identity is enacted, not declared.</h2>
+                <div class="columns-2">
+                    <div class="col">
+                        <h3>Traditional methods</h3>
+                        <p>A handful of boxes (transman, transwoman, ciswoman, cisman, nonbinary, other) and a semi-structured interview to fit a person inside them.</p>
+                        <p class="muted" style="margin-top: 0.85rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">Extraction &middot; &ldquo;What are you?&rdquo;</p>
+                    </div>
+                    <div class="col">
+                        <h3>Journeyways</h3>
+                        <p>A safe, collaborative table. Open, multimodal expression. The continuous process of identity construction is the data, not the box that contains it.</p>
+                        <p class="muted" style="margin-top: 0.85rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">Elaboration &middot; &ldquo;Who shows up here?&rdquo;</p>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem;">Forms do not give identity room to enact.</p>
             </div>
             <aside class="speaker-notes" data-for="2">
-                <h4>The problem &middot; ~30s</h4>
+                <h4>The problem &middot; ~50s</h4>
                 <ul>
-                    <li>Name the standard method: a form plus a semi-structured interview.</li>
-                    <li>Name the critique: categories are eurocentric, the format is sterile, the structure compresses what it claims to study.</li>
-                    <li>This is the gap the project responds to. Do not linger.</li>
+                    <li>Set the contrast: traditional methods extract; JOURNEYWAYS elaborates.</li>
+                    <li>The categories themselves are eurocentric and the format compresses what it claims to study.</li>
+                    <li>Land on the inversion: identity is enacted, not declared. Forms cannot give it room to enact.</li>
                 </ul>
             </aside>
         </section>
@@ -498,224 +723,383 @@
         <section class="slide" data-slide="3" aria-labelledby="s3-title">
             <div class="slide-inner">
                 <header class="slide-chapter">
-                    <div class="swatch"><img src="img/design/bg-purple.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <div class="swatch"><img src="img/design/bg-blue.webp" alt="" loading="lazy" aria-hidden="true"></div>
                     <span class="chapter-title">The proposition</span>
                 </header>
-                <h2 id="s3-title">What if the research happened around a table, not across one?</h2>
-                <p>JOURNEYWAYS is a board game and a digital game built as research instruments. Identity here is whatever the player decides it to be. As large or small, real or imagined, expressed in writing, drawing, speaking, or silence.</p>
-                <p>The goal is to make a space where people can elaborate their own stories without being categorized, judged, or hurried.</p>
-                <p class="pullquote">&ldquo;It is a game. We are just playing. Everything is valid. You can&rsquo;t lose.&rdquo;</p>
+                <h2 id="s3-title">What if research happened around a table, not across one?</h2>
+                <p>JOURNEYWAYS is a board game and a digital game built as strict, safe research instruments. The actual research is the critical ethnographic analysis of the stories that emerge through play. The games are the form; the analysis is the work.</p>
+                <p>Grounded in arts-based research (Leavy, McDermott) and the serious-games tradition (Ritterfeld and colleagues). Inside a body of methodological work, not improvised.</p>
+                <p class="pullquote">&ldquo;It is a game. We are just playing. Everything is safe. You can&rsquo;t lose.&rdquo;</p>
+                <p class="muted" style="margin-top: 1.25rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">See <a href="references.html" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">/references</a> for the full lineage.</p>
             </div>
             <aside class="speaker-notes" data-for="3">
-                <h4>The proposition &middot; ~35s</h4>
+                <h4>The proposition &middot; ~55s</h4>
                 <ul>
-                    <li>Reframe the move: research as a table, not a clipboard.</li>
-                    <li>Identity is what the player decides it to be. Five modalities (write, draw, speak, doodle, silent).</li>
-                    <li>The pull-quote is the emotional anchor of the whole talk. Read it slowly.</li>
+                    <li>Most important slide for an academic audience. Reverse the figure-ground: a research project with games as instruments, not a games project with research adjacency.</li>
+                    <li>The lineage matters: arts-based research, serious games. Cite briefly.</li>
+                    <li>Pull quote is the emotional anchor. Read slowly.</li>
                 </ul>
             </aside>
         </section>
 
-        <!-- ===== Slide 4: The components ===== -->
+        <!-- ===== Slide 4: The instrument ===== -->
         <section class="slide" data-slide="4" aria-labelledby="s4-title">
             <div class="slide-inner">
                 <header class="slide-chapter">
-                    <div class="swatch"><img src="img/design/bg-green.webp" alt="" loading="lazy" aria-hidden="true"></div>
-                    <span class="chapter-title">Three components</span>
+                    <div class="swatch"><img src="img/design/bg-purple.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">The instrument</span>
                 </header>
                 <h2 id="s4-title">Map tiles, cards, and a player booklet.</h2>
                 <div class="columns-3">
                     <div class="col">
                         <h3>Map tiles</h3>
-                        <p>Wordless illustrations. Place them, draw on them, expand them. The map is open to interpretation and to authorship.</p>
+                        <p>Wordless illustrations. Location and context, expandable and open to authorship.</p>
                     </div>
                     <div class="col">
                         <h3>Cards</h3>
-                        <p>Short text, public to the table, organized in five colored piles. Stimulus, not script.</p>
+                        <p>Stimulus and event. Short text, public to the table, organized in five categories. Designed to elicit, not to provide.</p>
                     </div>
                     <div class="col">
                         <h3>Player booklet</h3>
-                        <p>Write, draw, doodle, comic, or do nothing. Every mode counts. The booklet leaves a durable archive.</p>
+                        <p>Expression and archive. The durable artifact of the session. Accommodates writing, drawing, or silence.</p>
                     </div>
                 </div>
-                <p class="muted" style="margin-top:1.25rem; font-size: 0.95rem; letter-spacing: 0.18em; text-transform: uppercase;">Rules-light &middot; Open to authorship &middot; Modifiable in play</p>
+                <p style="margin-top: 1.5rem;">The framework is the form. Drop one component, and the experience changes. Together, they create an engine for identity exploration.</p>
             </div>
             <aside class="speaker-notes" data-for="4">
-                <h4>Three components &middot; ~30s</h4>
+                <h4>The instrument &middot; ~30s</h4>
                 <ul>
-                    <li>Name the canonical triad. These three together identify the game.</li>
+                    <li>The canonical triad. Together they identify the game.</li>
                     <li>Tiles do location. Cards do stimulus. Booklet does expression and archive.</li>
-                    <li>End on the bottom strip: rules-light, open, modifiable. Three principles, no preamble.</li>
+                    <li>The next four slides take each component in turn, with images.</li>
                 </ul>
             </aside>
         </section>
 
-        <!-- ===== Slide 5: The cards ===== -->
+        <!-- ===== Slide 5: The map ===== -->
         <section class="slide" data-slide="5" aria-labelledby="s5-title">
             <div class="slide-inner">
                 <header class="slide-chapter">
-                    <div class="swatch"><img src="img/design/bg-blue.webp" alt="" loading="lazy" aria-hidden="true"></div>
-                    <span class="chapter-title">Bounded randomness</span>
+                    <div class="swatch"><img src="img/design/bg-green.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">The map</span>
                 </header>
-                <h2 id="s5-title">Five colored piles, not one shuffled deck.</h2>
-                <div class="card-row" role="list" aria-label="Card categories">
-                    <div class="card-chip chip-red" role="listitem"><span class="dot"></span><span class="label">Red</span><span class="role">Encounters</span></div>
-                    <div class="card-chip chip-green" role="listitem"><span class="dot"></span><span class="label">Green</span><span class="role">Movement</span></div>
-                    <div class="card-chip chip-purple" role="listitem"><span class="dot"></span><span class="label">Purple</span><span class="role">Social</span></div>
-                    <div class="card-chip chip-blue" role="listitem"><span class="dot"></span><span class="label">Blue</span><span class="role">Quotes</span></div>
-                    <div class="card-chip chip-black" role="listitem"><span class="dot"></span><span class="label">Black</span><span class="role">Time passing</span></div>
+                <h2 id="s5-title">Wordless. Open to interpretation.</h2>
+                <div class="tile-grid">
+                    <figure><img src="img/design/tile-childhood-house.webp" alt="Map tile: Childhood House. A small house surrounded by colorful watercolor splatters." loading="lazy"><figcaption>Childhood house</figcaption></figure>
+                    <figure><img src="img/design/tile-mirror-lake.webp" alt="Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." loading="lazy"><figcaption>Mirror lake</figcaption></figure>
+                    <figure><img src="img/design/tile-mountain-peak.webp" alt="Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters." loading="lazy"><figcaption>Mountain peak</figcaption></figure>
+                    <figure><img src="img/design/tile-singing-cave.webp" alt="Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." loading="lazy"><figcaption>Singing cave</figcaption></figure>
+                    <figure><img src="img/design/tile-tree-hollow.webp" alt="Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches." loading="lazy"><figcaption>Tree hollow</figcaption></figure>
+                    <figure><img src="img/design/tile-misty-trail.webp" alt="Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." loading="lazy"><figcaption>Misty trail</figcaption></figure>
                 </div>
-                <p>Players choose which kind of moment to invite. The specific card stays a discovery. Agency at the level of category, surprise at the level of content.</p>
+                <ul class="principles" style="margin-top: 1.25rem;">
+                    <li><strong style="color: #fff; font-weight: 500;">Spatial agency.</strong> <span class="muted">Movement is an expression. Where a player chooses to go is part of the telling.</span></li>
+                    <li><strong style="color: #fff; font-weight: 500;">Open authorship.</strong> <span class="muted">Players draw on tiles or invent new ones with sticky notes when a place doesn&rsquo;t yet exist.</span></li>
+                    <li><strong style="color: #fff; font-weight: 500;">Rule-breaking as data.</strong> <span class="muted">Modifying rules mid-play is a success metric.</span></li>
+                </ul>
             </div>
             <aside class="speaker-notes" data-for="5">
-                <h4>Bounded randomness &middot; ~30s</h4>
+                <h4>The map &middot; ~50s</h4>
                 <ul>
-                    <li>Five categories, five colored piles.</li>
-                    <li>The point is the design move: agency over kind, discovery over specifics.</li>
-                    <li>It lets players steer the tone of the story without collapsing the surprise.</li>
+                    <li>Tiles are wordless illustrations. No reading required at the map layer.</li>
+                    <li>Movement matters. Where the character goes is itself meaning-bearing.</li>
+                    <li>One playtest example: a player placed a space-themed tile detached from the map and invented &ldquo;warp mechanics&rdquo;. Save the full story for slide 13.</li>
                 </ul>
             </aside>
         </section>
 
-        <!-- ===== Slide 6: Design principles ===== -->
+        <!-- ===== Slide 6: The cards ===== -->
         <section class="slide" data-slide="6" aria-labelledby="s6-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-red.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">The cards</span>
+                </header>
+                <h2 id="s6-title">Five colored piles, not one shuffled deck.</h2>
+                <div class="card-back-row">
+                    <figure class="card-back"><img src="img/design/bg-red.webp" alt="Red card back: yellow and orange watercolor splotches." loading="lazy"><span class="label">Red</span><span class="role">Encounters</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-green.webp" alt="Green card back: shades of green watercolor splotches." loading="lazy"><span class="label">Green</span><span class="role">Movement</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-blue.webp" alt="Blue card back: shades of blue watercolor splotches." loading="lazy"><span class="label">Blue</span><span class="role">Reflections</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-purple.webp" alt="Purple card back: shades of purple watercolor splotches." loading="lazy"><span class="label">Purple</span><span class="role">Social</span></figure>
+                    <figure class="card-back"><img src="img/design/bg-black.webp" alt="Black card back: shades of black and gray watercolor splotches." loading="lazy"><span class="label">Black</span><span class="role">Time passing</span></figure>
+                </div>
+                <p>Players choose which pile to pick from. The specific card stays a discovery. Agency at the level of category, surprise at the level of content. Players steer the tone of their story without the game collapsing into pure choice.</p>
+                <p class="muted" style="margin-top: 0.75rem; font-style: italic;">Five black cards end the session. The poetic countdown.</p>
+            </div>
+            <aside class="speaker-notes" data-for="6">
+                <h4>The cards &middot; ~40s</h4>
+                <ul>
+                    <li>Five colored piles. Each card back is the watercolor identity of its category.</li>
+                    <li>Blue holds reflection prompts sourced from the queer canon: Adrienne Rich, James Baldwin, Julia Serano.</li>
+                    <li>Bounded randomness: agency over kind, discovery over content. Five black cards end the session.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 7: Inside a card ===== -->
+        <section class="slide" data-slide="7" aria-labelledby="s7-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-blue.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Inside a card</span>
+                </header>
+                <h2 id="s7-title">A mirror in a cave is not a mirror in a classroom.</h2>
+                <div class="card-front-row">
+                    <figure><img src="img/design/card-mirror.webp" alt="Card front: a watercolor and ink illustration of a cracked mirror." loading="lazy"><figcaption>Mirror</figcaption></figure>
+                    <figure><img src="img/design/card-memory.webp" alt="Card front: a watercolor and ink illustration of a memory growing wild." loading="lazy"><figcaption>Memory</figcaption></figure>
+                    <figure><img src="img/design/card-echo.webp" alt="Card front: a watercolor and ink illustration of two splotchy figures facing each other." loading="lazy"><figcaption>Echo</figcaption></figure>
+                </div>
+                <p>Cards are written as open gestures. The mechanic is the meeting of components. Image plus context produces a story; the card alone does not.</p>
+                <p class="muted" style="margin-top: 0.75rem; font-style: italic;">Designed to elicit, not to provide. Every prompt is hand-authored. No generative AI. Restraint is part of the design.</p>
+            </div>
+            <aside class="speaker-notes" data-for="7">
+                <h4>Inside a card &middot; ~45s</h4>
+                <ul>
+                    <li>Three actual card fronts. Show the watercolor and ink language.</li>
+                    <li>A mirror in the Singing Cave is a story of distorted identity. A mirror in the Study Room is a story of institutional scrutiny. The card alone produces neither.</li>
+                    <li>No generative AI. Every prompt is hand-authored to preserve intentionality.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 8: The booklet ===== -->
+        <section class="slide" data-slide="8" aria-labelledby="s8-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-black.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">The booklet</span>
+                </header>
+                <h2 id="s8-title">Expression in any modality, including silence.</h2>
+                <div class="photo-block">
+                    <div>
+                        <p><strong style="color: #fff; font-weight: 500;">Active and tangible.</strong> <span class="muted">Writing the journal as the default durable archive. Drawing, doodling, comics.</span></p>
+                        <p style="margin-top: 0.85rem;"><strong style="color: #fff; font-weight: 500;">Passive and intangible.</strong> <span class="muted">Narrating aloud to the table. Passing a turn. Silence.</span></p>
+                        <p class="pullquote" style="font-size: clamp(1.25rem, 2vw, 1.85rem); margin-top: 1.25rem;">&ldquo;Doing nothing is also a way of expression.&rdquo;</p>
+                    </div>
+                    <figure>
+                        <img src="img/edges_playtest_journaling.webp" alt="A player writing in their booklet during a JOURNEYWAYS playtest." loading="lazy">
+                    </figure>
+                </div>
+                <p style="margin-top: 0.85rem;">The booklet is the ethnographic artifact that captures the character across different play sessions.</p>
+            </div>
+            <aside class="speaker-notes" data-for="8">
+                <h4>The booklet &middot; ~40s</h4>
+                <ul>
+                    <li>Journaling is the default mode but never the requirement.</li>
+                    <li>Silence is not awkward in JOURNEYWAYS. It is one way of telling the story.</li>
+                    <li>Booklets carry a character into a future session or another group. Continuity is in the player&rsquo;s hands.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 9: Nine principles ===== -->
+        <section class="slide" data-slide="9" aria-labelledby="s9-title">
             <div class="slide-inner">
                 <header class="slide-chapter">
                     <div class="swatch"><img src="img/design/bg-black.webp" alt="" loading="lazy" aria-hidden="true"></div>
                     <span class="chapter-title">How it&rsquo;s built</span>
                 </header>
-                <h2 id="s6-title">Five principles, of nine.</h2>
-                <ul class="principles">
-                    <li>Identity stays in the player&rsquo;s hands.</li>
-                    <li>No winning, no losing.</li>
-                    <li>Everyone at the table consents to what happens at the table.</li>
+                <h2 id="s9-title">Nine principles behind every piece and every rule.</h2>
+                <ul class="principles-2col">
+                    <li>No winning, no losing. Five black cards end the session, or simply when a story feels complete.</li>
+                    <li>Consent is the only enforced rule. Everything else is mutable.</li>
+                    <li>Identity is uncovered. No predefined roles or archetypes.</li>
+                    <li>Expression takes any form, including silence.</li>
+                    <li>Components combine for compounded meaning.</li>
                     <li>Prompts elicit; they do not provide.</li>
-                    <li>Simple-yet-sensorial materials. Hand-made wordmark. Freely reproducible.</li>
+                    <li>Hand-made materials. Cardboard, wood, watercolor. Sensorial and unintimidating.</li>
+                    <li>Freely accessible. No proprietary fonts, no generative content.</li>
+                    <li style="grid-column: 1 / -1;">The framework is meant to be remixed.</li>
                 </ul>
-                <p class="muted" style="margin-top:1.25rem; font-size: 0.95rem;">The full nine, with materials and examples, live on <a href="design.html" style="color:#facc15; text-decoration: underline; text-underline-offset: 2px;">/design</a>.</p>
+                <p class="muted" style="margin-top: 1.25rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">Full essay on <a href="design.html" style="color: #facc15; text-decoration: underline; text-underline-offset: 2px;">/design</a>.</p>
             </div>
-            <aside class="speaker-notes" data-for="6">
-                <h4>How it&rsquo;s built &middot; ~35s</h4>
+            <aside class="speaker-notes" data-for="9">
+                <h4>How it&rsquo;s built &middot; ~50s</h4>
                 <ul>
-                    <li>Five of the nine principles. Read each one with breath between.</li>
-                    <li>Consent is the only non-negotiable rule. Everything else is open to authorship.</li>
+                    <li>Read briskly. The audience can follow up on the website.</li>
+                    <li>Consent is the only non-negotiable. Everything else is open to authorship.</li>
                     <li>&ldquo;Elicit, not provide&rdquo; is the inversion of standard prompt-driven games.</li>
                 </ul>
             </aside>
         </section>
 
-        <!-- ===== Slide 7: Stories from the table ===== -->
-        <section class="slide" data-slide="7" aria-labelledby="s7-title">
-            <div class="slide-inner">
-                <header class="slide-chapter">
-                    <div class="swatch"><img src="img/design/bg-red.webp" alt="" loading="lazy" aria-hidden="true"></div>
-                    <span class="chapter-title">Stories</span>
-                </header>
-                <h2 id="s7-title">From actual playtests.</h2>
-                <div class="stories">
-                    <div class="vignette">
-                        <p>A player once decided their character to be Water. Not water-based. Not anthropomorphized. Simply Water. As a way to think about feeling less flowy than they used to be.</p>
-                    </div>
-                    <div class="vignette">
-                        <p>Another player broke the rule that tiles must be placed adjacent. They placed a space-themed tile separately and authored warp rules to connect it. The break became the best thing about that session.</p>
-                    </div>
-                </div>
-                <p class="pullquote">&ldquo;The more the players create new rules, the better the game goes.&rdquo;</p>
-            </div>
-            <aside class="speaker-notes" data-for="7">
-                <h4>Stories &middot; ~40s</h4>
-                <ul>
-                    <li>Both stories are anonymized; both players gave verbal consent. Use them freely.</li>
-                    <li>Water shows the breadth of identity allowed. The warp tile shows rule-breaking as success metric.</li>
-                    <li>The closing line is the thesis of the design philosophy in fifteen words.</li>
-                </ul>
-            </aside>
-        </section>
-
-        <!-- ===== Slide 8: Two versions ===== -->
-        <section class="slide" data-slide="8" aria-labelledby="s8-title">
+        <!-- ===== Slide 10: Physical and digital ===== -->
+        <section class="slide" data-slide="10" aria-labelledby="s10-title">
             <div class="slide-inner">
                 <header class="slide-chapter">
                     <div class="swatch"><img src="img/design/bg-green.webp" alt="" loading="lazy" aria-hidden="true"></div>
                     <span class="chapter-title">Physical and digital</span>
                 </header>
-                <h2 id="s8-title">Two versions, peers, not hierarchy.</h2>
+                <h2 id="s10-title">Two versions, peers, not a hierarchy.</h2>
                 <div class="columns-2">
                     <div class="col">
-                        <h3>Physical</h3>
-                        <p>Cardboard and wooden tiles. Drawable, expandable. Played at a table. Sixty to ninety minutes for a group of five or six.</p>
+                        <h3>The physical</h3>
+                        <p>Tactile. Highly drawable. Requires physical presence. Sixty to ninety minutes for a group of five or six. The grounded experience.</p>
                     </div>
                     <div class="col">
-                        <h3>Digital</h3>
-                        <p>Real-time, solo or group. English, Spanish, French at launch. No camera support. Cloud-saved journals. Privacy by design.</p>
+                        <h3>The digital</h3>
+                        <p>Web-native. Real-time multiplayer. Trilingual at launch (English, Spanish, French). Exists because physical presence shouldn&rsquo;t be a barrier to participation. The access-driven variant.</p>
                     </div>
                 </div>
-                <p style="margin-top:1.25rem;">Same components, same philosophy, same agency. Open source: code under a software license, content under Creative Commons. No siloing in.</p>
+                <p style="margin-top: 1.25rem;">Same components, same philosophy, same agency.</p>
             </div>
-            <aside class="speaker-notes" data-for="8">
-                <h4>Physical and digital &middot; ~35s</h4>
+            <aside class="speaker-notes" data-for="10">
+                <h4>Physical and digital &middot; ~40s</h4>
                 <ul>
                     <li>Both versions are peers. Neither is canonical.</li>
-                    <li>Digital exists for access and reach, not because the physical was insufficient.</li>
-                    <li>Privacy-by-design is the deliberate move: no camera in the digital version, on purpose.</li>
-                    <li>Open source, two licenses, no proprietary forks.</li>
+                    <li>Digital exists for access and reach: geography, finance, physical presence.</li>
+                    <li>Same components, same philosophy. The digital version is not a different game.</li>
                 </ul>
             </aside>
         </section>
 
-        <!-- ===== Slide 9: Research arc ===== -->
-        <section class="slide" data-slide="9" aria-labelledby="s9-title">
-            <div class="slide-inner">
-                <header class="slide-chapter">
-                    <div class="swatch"><img src="img/design/bg-purple.webp" alt="" loading="lazy" aria-hidden="true"></div>
-                    <span class="chapter-title">What this is for</span>
-                </header>
-                <h2 id="s9-title">A three-phase research arc.</h2>
-                <div class="timeline">
-                    <div class="step">
-                        <div class="when">Now</div>
-                        <p>Playtesting refines the instrument. Players are testers, not research subjects. Diverse groups have already played.</p>
-                    </div>
-                    <div class="step">
-                        <div class="when">2026</div>
-                        <p>Ethics review and formal protocol. Informed consent, audio-only documentation, ethnographic frame.</p>
-                    </div>
-                    <div class="step">
-                        <div class="when">2026 to 2028</div>
-                        <p>Formal research phase. Ethnographic analysis of the stories that emerge. Papers, talks, and the open framework as the lasting outputs.</p>
-                    </div>
-                </div>
-                <p style="margin-top:1.25rem;">The games are not the project. The project is what the stories show us about how people elaborate identity when they are not under scrutiny.</p>
-            </div>
-            <aside class="speaker-notes" data-for="9">
-                <h4>What this is for &middot; ~40s</h4>
-                <ul>
-                    <li>Phase 1: now. Playtesters refine the tool. No formal study yet.</li>
-                    <li>Phase 2: 2026 ethics review. Mention this clearly: the formal study has not begun.</li>
-                    <li>Phase 3: through 2028. Ethnographic analysis is the methodological core.</li>
-                    <li>Closing line is the figure-ground reversal: the games are instruments, not the artifact.</li>
-                </ul>
-            </aside>
-        </section>
-
-        <!-- ===== Slide 10: Closing ===== -->
-        <section class="slide" data-slide="10" aria-labelledby="s10-title">
+        <!-- ===== Slide 11: Ethics in the build ===== -->
+        <section class="slide" data-slide="11" aria-labelledby="s11-title">
             <div class="slide-inner">
                 <header class="slide-chapter">
                     <div class="swatch"><img src="img/design/bg-blue.webp" alt="" loading="lazy" aria-hidden="true"></div>
-                    <span class="chapter-title">Success</span>
+                    <span class="chapter-title">Ethics in the build</span>
                 </header>
-                <h2 id="s10-title" class="sr-only">What success looks like.</h2>
-                <p class="pullquote" style="margin-top:0;">&ldquo;The stories are the most important, not the way the players tell them.&rdquo;</p>
-                <p style="margin-top:1.25rem;">A successful end of project: a better understanding of how people talk about their identities when they don&rsquo;t feel under scrutiny, judged, or having to comply with absurd categories. Visibility, where there has been silence.</p>
-                <p class="closing-foot">journeyways.ca &middot; grsj.arts.ubc.ca &middot; Thank you.</p>
+                <h2 id="s11-title">Built directly into the artifact.</h2>
+                <ul class="principles-2col">
+                    <li><strong style="color: #fff; font-weight: 500;">Audio-only documentation.</strong> No video recordings of playtests, no camera in the digital app. Privacy first.</li>
+                    <li><strong style="color: #fff; font-weight: 500;">No auto-translation, no AI.</strong> User-created content stays exactly as written, to preserve the player&rsquo;s authentic words.</li>
+                    <li><strong style="color: #fff; font-weight: 500;">Open access.</strong> Free fonts, GPL code, Creative Commons content. Resists institutional siloing.</li>
+                    <li><strong style="color: #fff; font-weight: 500;">Data sovereignty.</strong> Player journals hosted on Canadian servers, with explicit privacy terms.</li>
+                </ul>
+                <p style="margin-top: 1.25rem;">Research-ethics decisions baked into the artifact, not bolted on after.</p>
             </div>
-            <aside class="speaker-notes" data-for="10">
-                <h4>Closing &middot; ~25s</h4>
+            <aside class="speaker-notes" data-for="11">
+                <h4>Ethics in the build &middot; ~45s</h4>
                 <ul>
-                    <li>Read the pull-quote slowly. It does the work.</li>
+                    <li>Each commitment is concrete: audio-only, no camera, no generative content, GPL/CC, Canadian hosting.</li>
+                    <li>Refusing generative AI is the unusual one for an academic audience: it would flatten the player-authored content the project depends on.</li>
+                    <li>Library will be curated; framework stays open. Most projects fail one of those tests; this one tries to hold both.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 12: Research arc ===== -->
+        <section class="slide" data-slide="12" aria-labelledby="s12-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-purple.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Research arc</span>
+                </header>
+                <h2 id="s12-title">A four-phase arts-based methodology.</h2>
+                <div class="timeline four">
+                    <div class="step">
+                        <div class="when">01</div>
+                        <p><strong style="color: #fff; font-weight: 500;">Game design.</strong> <span class="muted">Iterative prototyping using lean mechanics and the serious-games framework.</span></p>
+                    </div>
+                    <div class="step">
+                        <div class="when">02</div>
+                        <p><strong style="color: #fff; font-weight: 500;">Play-testing.</strong> <span class="muted">Three to five facilitated sessions with diverse groups of three to six players. Audio recordings and observation.</span></p>
+                    </div>
+                    <div class="step">
+                        <div class="when">03</div>
+                        <p><strong style="color: #fff; font-weight: 500;">Data collection.</strong> <span class="muted">Participant observation paired with semi-structured interviews. Narrative aspects of gameplay are the data.</span></p>
+                    </div>
+                    <div class="step">
+                        <div class="when">04</div>
+                        <p><strong style="color: #fff; font-weight: 500;">Analysis.</strong> <span class="muted">Thematic analysis identifying recurring patterns and themes within player stories.</span></p>
+                    </div>
+                </div>
+                <p style="margin-top: 1.5rem;">Players are testers right now, not subjects. Ethics review and formal protocol enter at phase two. The formal ethnographic phase runs through 2028.</p>
+            </div>
+            <aside class="speaker-notes" data-for="12">
+                <h4>Research arc &middot; ~45s</h4>
+                <ul>
+                    <li>Four phases, arts-based.</li>
+                    <li>Be precise: the formal study has not begun. Ethics review is the gate to phase two.</li>
+                    <li>Through 2028: ethnographic analysis is the methodological core.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 13: What has surfaced ===== -->
+        <section class="slide" data-slide="13" aria-labelledby="s13-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-red.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">What has surfaced</span>
+                </header>
+                <h2 id="s13-title">Beyond gender, in actual play.</h2>
+                <p>While gender theory (Butler, Serano, Stryker) is the default anchor, the open framework has elicited stories about parenthood, the international student experience, migrant identity, and a younger self.</p>
+                <div class="stories">
+                    <div class="vignette">
+                        <p><strong style="color: #fff; font-weight: 500;">The &ldquo;Water&rdquo; identity.</strong> A player chose their character to be Water. Not water-based, not anthropomorphized. Simply Water. As a way to think about feeling less flowy than they used to be.</p>
+                    </div>
+                    <div class="vignette">
+                        <p><strong style="color: #fff; font-weight: 500;">The space warp.</strong> Another player broke the adjacency rule, placed a space-themed tile separately, and authored warp rules to connect it. The break became the best part of that session.</p>
+                    </div>
+                </div>
+                <p class="pullquote">&ldquo;The more the players create new rules, the better the game goes.&rdquo;</p>
+            </div>
+            <aside class="speaker-notes" data-for="13">
+                <h4>What has surfaced &middot; ~50s</h4>
+                <ul>
+                    <li>The openness claim isn&rsquo;t hypothetical. Players bring whatever they need to.</li>
+                    <li>Both stories anonymized; both players consented. Use freely.</li>
+                    <li>Closing line is the design philosophy in fifteen words.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 14: Beyond v1 ===== -->
+        <section class="slide" data-slide="14" aria-labelledby="s14-title">
+            <div class="slide-inner">
+                <header class="slide-chapter">
+                    <div class="swatch"><img src="img/design/bg-green.webp" alt="" loading="lazy" aria-hidden="true"></div>
+                    <span class="chapter-title">Beyond v1</span>
+                </header>
+                <h2 id="s14-title">Journeyways as a continuous framework.</h2>
+                <p>The three-component engine (map tiles + cards + booklet) is a framework anyone can author variants on. Researchers, classrooms, support groups, community organizers.</p>
+                <div class="columns-3" style="margin-top: 1.25rem;">
+                    <div class="col">
+                        <h3>Migrant identity</h3>
+                        <p>A variant in early planning, by the project&rsquo;s designer.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Children&rsquo;s version</h3>
+                        <p>Requested by educators. Lighter prompts; same engine.</p>
+                    </div>
+                    <div class="col">
+                        <h3>Two-tier governance</h3>
+                        <p>The framework stays open. The community library will be curated. Resists both enclosure and dilution.</p>
+                    </div>
+                </div>
+                <p class="muted" style="margin-top: 1.25rem; font-size: 0.78rem; letter-spacing: 0.22em; text-transform: uppercase;">2026 to 2028 &middot; alpha &rarr; ethics review &rarr; formal protocol &rarr; ethnographic analysis</p>
+            </div>
+            <aside class="speaker-notes" data-for="14">
+                <h4>Beyond v1 &middot; ~45s</h4>
+                <ul>
+                    <li>The lasting form of the project is the framework, not v1 of the game.</li>
+                    <li>Variants in motion: migrant identity (designer-authored), children&rsquo;s version (requested).</li>
+                    <li>Open framework, curated library. The two-tier model is the governance answer.</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- ===== Slide 15: Closing ===== -->
+        <section class="slide" data-slide="15" aria-labelledby="s15-title">
+            <div class="slide-inner">
+                <div class="thanks-block">
+                    <p class="pullquote" style="margin: 0 auto 1.75rem; max-width: 46rem; text-align: center;">&ldquo;The stories are the most important, no matter how the players tell them.&rdquo;</p>
+                    <p style="font-size: clamp(1rem, 1.4vw, 1.35rem); color: #d1d5db;">Visibility, where there has been silence.</p>
+                    <h2 id="s15-title" class="thanks-mark" style="margin-top: 2rem;">Thank you.</h2>
+                    <p class="thanks-sub">Questions welcome.</p>
+                    <p class="thanks-links">
+                        <a href="https://www.journeyways.ca">journeyways.ca</a> &middot; <a href="references.html">References</a> &middot; <a href="design.html">Design</a> &middot; <a href="https://grsj.arts.ubc.ca/">UBC GRSJ</a>
+                    </p>
+                </div>
+            </div>
+            <aside class="speaker-notes" data-for="15">
+                <h4>Closing &middot; ~40s plus Q&amp;A</h4>
+                <ul>
+                    <li>Read the pull-quote slowly.</li>
                     <li>Land on &ldquo;visibility, where there has been silence&rdquo;. Pause.</li>
-                    <li>Thank the room. Take questions.</li>
+                    <li>Stay on this slide during questions. Links are for follow-up.</li>
                 </ul>
             </aside>
         </section>
