@@ -99,6 +99,19 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
    -dNOPAUSE -dQUIET -dBATCH -sOutputFile=out.pdf in.pdf
 ```
 
+## Cross-project link (www.journeyways.ca ↔ play.journeyways.ca)
+
+The videogame at `/var/www/play.journeyways.ca/` is the digital companion to the boardgame this site documents, and several files here are updated by work originating there. When a session is running in this project and is asked to do something cross-cutting:
+
+- **Files this site receives updates to from `play.journeyways.ca`:**
+  - `brand-spec.md`: new conventions that should be canonical across surfaces (palette, typography, components, voice). The play-side `CLAUDE.md` has the when/where/how rules for editing this file.
+  - `videogame.html` Recent section: a top `<li>` is added for player-facing material changes (game-wide style, palette, fonts, major UX). Skip routine bug fixes and internal refactors.
+  - `videogame.html` spec strip and JSON-LD: `Version`, `Tagged` (month/year), and the JSON-LD `softwareVersion` should match the play-side version on its release.
+- **When invoked from the play-side, that project's CLAUDE.md and memory dir already document the cross-repo rules.** When invoked from THIS side and the user references the videogame, also read:
+  - `/var/www/play.journeyways.ca/CLAUDE.md`
+  - `/home/theagitist/.claude/projects/-var-www-play-journeyways-ca/memory/`
+- **Reciprocal rules.** The play-side imports the same content rules that govern this site (no em-dashes, Italianno legibility floor, "pick" not "draw"). Those memories live in `/home/theagitist/.claude/projects/-var-www-www-journeyways-ca/memory/` and are the source of truth.
+
 ## Boundaries
 
 - **Do not modify `/var/www/play.journeyways.ca/`** unless the user explicitly says so. The user has stated this directly. Read for reference (mailer.js patterns are similar to `server/index.js`); don't change.
