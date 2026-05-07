@@ -1,6 +1,13 @@
 # JOURNEYWAYS brand spec
 
-A reference for the visual identity of `www.journeyways.ca`. Captures what the site is doing today (v1.1.2). Use this when extending the site, building companion materials, or briefing collaborators.
+A reference for the visual identity of `www.journeyways.ca`. Captures what the site is doing today (v1.4.0, May 2026). Use this when extending the site, building companion materials, or briefing collaborators.
+
+The site has gone through three substantive cycles since v1.1.2:
+- **v1.2.0–v1.3.0** introduced the editorial Swiss-luxury vocabulary across all six visible pages (home, about, design, photos, boardgame, videogame).
+- **v1.3.1** added `references.html`, a typographic-only bibliography page reachable via the footer.
+- **v1.4.0** added `presentation.html`, a self-contained 15-slide conference deck with a presenter window mode.
+
+The editorial pattern (chapter spine with Italianno script title + watercolor swatch + sentence-case h2) and the presentation slide system are documented in §5 below.
 
 ---
 
@@ -176,10 +183,10 @@ JOURNEYWAYS is a master's research project at the UBC Institute for Gender, Race
 Used in the footer, suitable for short bios and OG descriptions.
 
 ### Wordmark
-- The wordmark is the word "JOURNEYWAYS" set in **Italianno** (script), color `text-yellow-400` (`#fbbf24`), bold.
-- In the fixed nav it appears as `Journeyways` at `text-2xl md:text-3xl`.
-- On the home page it appears as a hero `Journeyways` at `text-7xl md:text-8xl`, leading-none.
-- CSS hook: `.script-font` (defined in `css/styles.css`).
+- The wordmark is the project name set in **Italianno** (script), color `text-yellow-400` (`#fbbf24`), bold.
+- All-caps form **JOURNEYWAYS** appears in body prose, the back-link on the presentation deck, and document titles (`JOURNEYWAYS | <Page>`).
+- Mixed-case form **Journeyways** appears in the nav (`text-2xl md:text-3xl`), in editorial hero blocks (`text-7xl md:text-8xl`), and on the presentation deck cover. Both forms are correct in their contexts; do not normalize.
+- CSS hook: `.script-font` (defined in `css/styles.css`); the presentation deck uses an inline `.cover` and `.chapter-title` pattern instead, since it ships without the global stylesheet hooks.
 
 ### Logo (illustrated mark)
 - File: `img/og-card.jpg` (and `og-card.webp`); square master at roughly 600x600.
@@ -204,9 +211,11 @@ All hex values are Tailwind v3 defaults unless noted.
 ### Surface
 | Role | Token | Hex | Notes |
 |---|---|---|---|
-| Page background | `gray-800` | `#1f2937` | `<body>` default |
+| Page background (site) | `gray-800` | `#1f2937` | `<body>` default on all visible pages |
+| Page background (deck) | `gray-900` | `#111827` | `body.pitch` only, on `presentation.html`. Slightly deeper, lets the watercolor swatches and yellow accents sit cleaner on a presented projector |
 | Deep surface | `black` | `#000000` | Footer, primary buttons, nav at 50% opacity |
 | Card / panel surface | `gray-700/60` | `rgba(55,65,81,0.6)` | Feature cards, modals (interior); also `gray-700/40` for lighter panels |
+| Hairline divider | `gray-700/40` | `rgba(75,85,99,0.4)` | Editorial chapter-spine border-tops; deck slide-chapter border-tops; principles list separators |
 | Border | `gray-600` | `#4b5563` | Card and modal borders at rest |
 | Border (hover) | `yellow-400 @ 35%` | `rgba(251,191,36,0.35)` | Rule sections, gallery items, dev-log cards on hover |
 
@@ -239,10 +248,20 @@ These are content tokens, not UI tokens. Don't recolor them; they map to physica
 ## 3. Typography
 
 ### Families
-- **Inter** (sans-serif). Self-hosted woff2 in `fonts/`, weights 300, 400, 500, 600, 700, latin and latin-ext subsets. Body text and all headings except the wordmark.
-- **Italianno** (script). Self-hosted woff2, weight 400 only. Reserved for the wordmark and rare display flourishes via `.script-font`.
+- **Inter** (sans-serif). Self-hosted woff2 in `fonts/`, weights 300, 400, 500, 600, 700, latin and latin-ext subsets. Body text, all sentence-case h2 headings, principles lists, captions, and any column subheading.
+- **Italianno** (script). Self-hosted woff2, weight 400 only. Reserved for display elements that have room to read.
 
-Both are loaded with `font-display: swap` and `@font-face` declarations at the top of `css/styles.css`. No third-party font origins.
+Both are loaded with `@font-face` declarations at the top of `css/styles.css`. Italianno uses `font-display: block` paired with an adjusted `Inter Fallback` face; Inter uses `font-display: swap`. No third-party font origins.
+
+### Italianno legibility floor
+**Italianno is unreadable below ~2.5rem.** The script font has thin, organic strokes that disappear at body and column-width sizes. Reserve it for elements that render ≥ ~2.5rem in any responsive state:
+
+- Cover wordmark (home hero, presentation cover)
+- Editorial chapter-spine titles (`.chapter-title`, ~`text-4xl` to `text-5xl`)
+- Timeline `when` labels on the presentation deck
+- The closing thanks mark on the presentation deck
+
+For everything else use Inter. This came up repeatedly in iteration: column subheadings (`.col h3`) and presenter-note h4 lines were originally set in Italianno at ~1.4rem and were unreadable. The fix in both cases was to switch to Inter — either as a regular medium-weight yellow heading, or as an uppercase eyebrow line (`font-size: 0.85rem; letter-spacing: 0.18em; text-transform: uppercase; color: #facc15; font-weight: 500`).
 
 ### Scale (as used)
 | Element | Classes | Weight |
@@ -348,6 +367,46 @@ Two paragraphs in `text-sm text-gray-500` and `text-gray-400`. Inline links to i
 ### Bibliography list (`references.html`)
 The references page reuses the editorial chapter spine (watercolor swatch + Italianno script title + sentence-headline + small italic lead) and renders citations as a `<ul class="space-y-5 text-gray-300 text-[15px] md:text-base leading-relaxed">`. Each `<li>` is one APA 7 citation; book and journal titles are wrapped in `<em>`; DOI/URL links use the standard inline link pattern with `break-words` so long DOIs wrap on mobile. Eight thematic chapters, each colored by a single watercolor swatch (red/blue/purple/green/black) drawn from the boardgame card backs in `img/design/bg-*.webp`. The page is reachable from the footer of every other page and from an inline link in `about.html`; it is intentionally absent from the main nav.
 
+### Editorial chapter spine
+The signature body-section pattern across all six visible pages and the presentation deck. Each chapter is introduced by a row consisting of:
+
+1. A small watercolor **swatch** taken from one of the boardgame card backs in `img/design/bg-*.webp` (red / blue / purple / green / black). The swatch is `~2.5rem × 3.25rem` on the deck and `w-10 h-14` (Tailwind) on the site, with `object-cover` cropping.
+2. An **Italianno chapter title** in `text-yellow-400` at `text-4xl` to `text-5xl` (`clamp(3.25rem, 6.5vw, 5.25rem)` on the deck).
+3. A `border-top: 1px solid rgba(75, 85, 99, 0.4)` hairline above the row, inside a column at `pt-3` so the swatch and title hang from the line.
+
+After the chapter row comes a sentence-case **h2** in Inter at `text-2xl` to `text-3xl`, then prose. On site pages each major section is one chapter; on the deck each slide has its own chapter row. Chapter colour selection is loose — pick the swatch whose mood fits the section (red for stakes, blue for reflection, purple for community, green for movement, black for foundation/ending).
+
+**Trap to avoid:** a `<h2 class="sr-only">` as the first DOM child of a `space-y-*` container creates a phantom `margin-top: 3rem` on the first visible sibling because the sr-only element still occupies the "first child" slot in the sibling combinator. Use explicit `mt-12 md:mt-14` on subsequent siblings instead of `space-y-*` when an sr-only heading is present.
+
+### Presentation deck (`presentation.html`)
+A 15-slide self-contained conference deck. **Self-contained means literally:** the slide system, navigation, presenter mode, overview overlay, hint legend, QR card, and print-to-PDF support are all defined inside an inline `<style>` block and an inline IIFE `<script>` in the same HTML file. The site-wide `tailwind.css` and `styles.css` are linked but used only for the `.card-COLOR` classes and font faces.
+
+Visual vocabulary:
+- **Background** is `#111827` (gray-900), one shade deeper than the rest of the site.
+- **Chapter spine** as documented above; `.chapter-title` clamps to `clamp(3.25rem, 6.5vw, 5.25rem)`.
+- **Pull quotes** in italic `text-yellow-400` at `clamp(1.5rem, 2.4vw, 2.25rem)`, `max-width: 50rem`.
+- **Body prose** in `gray-300` at `clamp(1rem, 1.4vw, 1.35rem)`, weight 300.
+- **Italianno** is reserved for the cover (`text-7xl-ish`), the chapter-spine titles, the timeline `when` labels, and the closing "Thank you" mark — all clear above the legibility floor.
+
+Behaviour:
+- Keyboard: `← / →` navigate; `1`–`9` digits jump (multi-digit buffered ~700ms); `O` opens the slide overview; `S` toggles inline speaker notes (`?notes` URL flag opens with notes visible); `F` fullscreen; `P` print to PDF; `W` opens the presenter window; `Esc` closes overview / presenter window.
+- **Presenter mode** is the same page loaded with `?presenter=1`. Renders chapter, h2, full speaker notes, an "Up next" panel, slide counter, and a session timer (`R` resets, `Esc` closes). Both windows sync via `BroadcastChannel('journeyways-deck')`.
+- **Bottom hint legend** is hidden by default and reveals only when the cursor enters the bottom 64 px of the viewport. No reveal on keypress.
+- **Speaker-note typography** uses an Inter uppercase yellow eyebrow for the h4 (the timing label) and 1rem body at line-height 1.6. **Don't use Italianno for note titles** — the script font is below the legibility floor at notes sizes.
+- **Print** stylesheet uses `@page { size: 16in 9in; margin: 0 }` so any browser's "Print to PDF" produces a 16:9 deck.
+
+Slide-specific helpers in the inline style:
+- `.timeline.four` for the four-phase methodology grid on slide 12.
+- `.card-front-row.four` for four card examples with their hand-authored prompts on slide 7.
+- Specificity overrides on `.card-back .label.card-COLOR` so slide 6 pile labels can use the site-wide `.card-COLOR` classes.
+- `.closing-mark` for the faded `og-card.webp` echo on slide 15.
+- `.qr-card` for the QR code on slide 15. The SVG (`img/qr-journeyways.svg`) is generated white-on-`#111827` via `qrencode --foreground=ffffff --background=111827 -m 2 -s 8 -l M` so it sits flush against the slide background. Cache-busted via `?v=N` on the img src; bump if regenerated.
+
+Discoverability:
+- Linked from the About hero bar between References and UBC GRSJ.
+- Listed in `sitemap.xml` at priority 0.5.
+- `meta robots = "noindex, nofollow"` so the deck is linkable but not indexed by search engines while content iterates.
+
 ### Animations
 - `fadeIn` (1s ease-in, opacity + translateY 20px to 0). Available as `.fade-in`.
 - `zoomIn` (declared, used by lightbox transitions).
@@ -439,3 +498,5 @@ If a future refactor wants tokens in one place, this is the spec compiled into C
 | `img/design/` | Card and tile illustrations used on `design.html` and in lightbox sets |
 | `fonts/` | Inter (5 weights) and Italianno (1 weight), woff2, latin + latin-ext |
 | `references.html` | Bibliography page; eight thematic chapters of APA 7 citations. Footer-linked from every page; absent from main nav. Source list lives in `brainstorm/references.md` (gitignored) |
+| `presentation.html` | Self-contained 15-slide conference deck. Inline `<style>` and `<script>` define the slide system, presenter mode, overview overlay, and hint legend. Linked from the About hero bar; `noindex, nofollow` |
+| `img/qr-journeyways.svg` | QR code on the closing slide. Regenerate via `qrencode -t SVG -m 2 -s 8 -l M --foreground=ffffff --background=111827 https://www.journeyways.ca/`. Bump `?v=N` on the img src if regenerated |
