@@ -489,3 +489,45 @@ main.home {
     color: black !important;
     text-decoration: underline !important;
 }
+
+/* "Show earlier updates" disclosure on the videogame Recent section.
+   Native <details>; no JS. Editorial register: small uppercase Inter, gray-400,
+   yellow-400 on hover, plus a `+` glyph that rotates to `x` when expanded. */
+.recent-more {
+    margin-top: 1.5rem;
+}
+.recent-more > summary {
+    cursor: pointer;
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(156 163 175);
+    user-select: none;
+    transition: color 150ms ease;
+}
+.recent-more > summary::-webkit-details-marker { display: none; }
+.recent-more > summary::marker { content: ""; }
+.recent-more > summary:hover { color: rgb(250 204 21); }
+.recent-more > summary:focus-visible {
+    outline: 2px solid rgba(250, 204, 21, 0.6);
+    outline-offset: 4px;
+}
+.recent-more-icon {
+    display: inline-block;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1;
+    transition: transform 200ms ease;
+}
+.recent-more[open] .recent-more-icon { transform: rotate(45deg); }
+.recent-more[open] {
+    margin-top: 1.5rem;
+}
+.recent-more[open] > summary {
+    margin-bottom: 1.5rem;
+}
