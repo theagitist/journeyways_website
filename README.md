@@ -18,7 +18,7 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 - **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
 - **Photos** (`photos.html`). Research gallery and lightbox.
 - **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
-- **References** (`references.html`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list is `brainstorm/references.md`.
+- **References** (`references.html`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Journeyways/Foundations/references.md`.
 - **Brand spec** (`brand-spec.md`). Public reference for the visual identity and design system, served at `https://www.journeyways.ca/brand-spec.md` as `text/plain` for collaborators, printers, and downstream projects (the videogame UI). Covers logo + usage rules, palette (with CMYK / Pantone for print), typography, components, voice + examples, tokens, the editorial chapter spine pattern, the presentation slide system, hero variations per page, and §9 Companion materials covering print and the videogame. Discoverable from the small "Brand spec" link in the footer of every site page.
 - **Presentation** (`presentation.html`). Standalone conference deck (15 slides). `noindex, nofollow` (linkable from the site, not indexed by search engines). Linked from the About hero bar between References and UBC GRSJ. Self-contained: inline CSS and JS, no external slide framework; keyboard-driven (arrow keys, space, F fullscreen, S speaker notes, P print-to-PDF). The print stylesheet renders 16:9 pages so any browser's "Print to PDF" produces a clean shareable deck.
 - **Contact** (`contact.html`). Hidden (`noindex`, off the nav, off the sitemap) until the deliverability issue is resolved.
@@ -40,7 +40,6 @@ www.journeyways.ca/
 ├── tools/                   Local Tailwind build (npm run build -> css/tailwind.css)
 ├── download/                Rules and character-sheet PDFs
 ├── server/                  Express 5 + Nodemailer 8 backend (contact form, currently stopped)
-├── brainstorm/              Working notes (gitignored, synced to Obsidian)
 ├── sitemap.xml              8 entries; contact.html intentionally absent
 └── VERSION
 ```
@@ -77,7 +76,7 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 - **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Font preloading** is set up in every HTML head (`<link rel="preload">` for Inter 400, Inter 600, Italianno 400 latin subsets) so first paint isn't a flash of fallback typography. `Italianno` uses `font-display: block`; Inter uses `font-display: swap` paired with an adjusted `Inter Fallback` face (local Arial with `size-adjust` and ascent/descent overrides) so the swap is layout-neutral and visually subtle.
 - **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
-- **brainstorm/** is gitignored and auto-synced to an Obsidian vault via a PostToolUse hook in `.claude/settings.local.json`.
+- **Project context** (proposals, the 53-question interview with the designer, bibliography source list, parked questions) lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Journeyways/Foundations/`. A `brainstorm/` working copy used to live here; removed on 2026-05-12 to keep a single source.
 - **Google Search Console** verified via `google6fb8a72b75fa8894.html` at the site root.
 
 ## Changelog

@@ -696,6 +696,6 @@ The videogame is the digital version of JOURNEYWAYS. **It is the same game in a 
 | `img/favicon.png` | Favicon (cropped logo) |
 | `img/design/` | Card and tile illustrations used on `design.html` and in lightbox sets |
 | `fonts/` | Inter (5 weights) and Italianno (1 weight), woff2, latin + latin-ext |
-| `references.html` | Bibliography page; eight thematic chapters of APA 7 citations. Footer-linked from every page; absent from main nav. Source list lives in `brainstorm/references.md` (gitignored) |
+| `references.html` | Bibliography page; eight thematic chapters of APA 7 citations. Footer-linked from every page; absent from main nav |
 | `presentation.html` | Self-contained 15-slide conference deck. Inline `<style>` and `<script>` define the slide system, presenter mode, overview overlay, and hint legend. Linked from the About hero bar; `noindex, nofollow` |
 | `img/qr-journeyways.svg` | QR code on the closing slide. Regenerate via `qrencode -t SVG -m 2 -s 8 -l M --foreground=ffffff --background=111827 https://www.journeyways.ca/`. Bump `?v=N` on the img src if regenerated |
