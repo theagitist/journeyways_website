@@ -104,7 +104,7 @@ A long iteration pass on `presentation.html` (renamed from `pitch.html` early in
 - **Chapter titles bumped** from `clamp(2.5rem, 5vw, 4rem)` to `clamp(3.25rem, 6.5vw, 5.25rem)`. Cover slide flipped to image-dominant (`5fr / 7fr`) with a wider `slide-inner` max-width.
 - **`.col h3` switched from Italianno to Inter** at column-width sizes — script font was unreadable on slides 4, 10, 14. Italianno preserved on the cover title, chapter spine titles, timeline `when` labels, and the closing thanks mark.
 - **Re-linked from About hero bar** between References and UBC GRSJ; restored to the sitemap with priority 0.5; `noindex, nofollow` retained so the deck is linkable but not indexed.
-- Hidden reference materials in `~/FileShare/jw/pitch/` (mp4, pptx, m4a, infographic) gitignored. Card prompt copy sourced from `~/FileShare/jw/game materials/Cards/Cards.docx`.
+- Reference materials in `~/apps/journeyways/original_assets/pitch/` (mp4, pptx, m4a, infographic) in the private `journeyways_original_assets` repo. Card prompt copy sourced from `~/apps/journeyways/original_assets/boardgame/cards/Cards.docx`.
 - No CSS rebuild needed; styles are inline. `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20` unchanged.
 - `VERSION` and footer markers bumped to `1.4.0` site-wide.
 
@@ -137,7 +137,7 @@ Wraps the v1.2.x editorial Swiss-luxury redesign that started with the homepage.
 - **PDF rename + optimization.** `JOURNEYWYS Character Sheet 1.0.pdf` (the typo'd "character sheet" that is actually the player booklet) renamed to `JOURNEYWAYS Player Booklet 1.0.pdf`. Both PDFs optimized with Ghostscript `/ebook` setting: Game Rules 2.2 MB → 585 KB, Player Booklet 11 MB → 5.2 MB.
 - **Content rule (site-wide).** "Draw" → "pick" anywhere it means selecting a card or tile from a pile (body text, alt text, JSON-LD). "Draw" / "drawn" preserved where it means illustrating ("draw a comic", "tiles can be drawn on") or sourcing ("drawn from a small canon") or describing artwork ("Hand-drawn map tile").
 - **Per-page hero variations are intentional**, not mistakes. Documented in `CLAUDE.md` and the user's memory: each of the six pages has its own hero treatment so the site doesn't read as one layout reskinned six times.
-- **6 new map tile webps** encoded from `~/FileShare/jw/game materials/Map Tiles/`: Abandoned Playground, Buried Names Field, Childhood House, Mountain Peak, Tree Hollow, Volcanic Ground.
+- **6 new map tile webps** encoded from the original Map Tile assets (now at `~/apps/journeyways/original_assets/boardgame/map-tiles/` in the private `journeyways_original_assets` repo): Abandoned Playground, Buried Names Field, Childhood House, Mountain Peak, Tree Hollow, Volcanic Ground.
 - **Bump** cache keys to `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`. `VERSION` and footer markers to 1.3.0.
 
 ### 1.2.0 (May 2026) — editorial redesign of the homepage
