@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The card decks of JOURNEYWAYS: Encounter, Movement, Reflection, Countdown, and Group. Pick a deck to deal it out and read the hand-drawn prompts and quotes.">
+    <meta name="keywords" content="JOURNEYWAYS cards, card decks, prompts, quotes, identity game, board game cards, gender identity">
+    <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
+    <meta name="robots" content="index, follow">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.journeyways.ca/components-cards.html">
+    <meta property="og:title" content="JOURNEYWAYS | Cards">
+    <meta property="og:description" content="The card decks of JOURNEYWAYS. Pick a deck to deal it out.">
+    <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
+    <meta property="og:site_name" content="JOURNEYWAYS">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.journeyways.ca/components-cards.html">
+    <meta name="twitter:title" content="JOURNEYWAYS | Cards">
+    <meta name="twitter:description" content="The card decks of JOURNEYWAYS.">
+    <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.jpg">
+
+    <link rel="canonical" href="https://www.journeyways.ca/components-cards.html">
+
+    <title>JOURNEYWAYS | Cards</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/tailwind.css?v=25">
+    <link rel="stylesheet" href="css/styles.css?v=26">
+    <style>
+      /* Local replica of the play-side card gallery. Cards render in the printed
+         component style (poker 5:7, warm paper, scaled art, script title); decks
+         start face down and deal out with a per-deck effect. Self-contained so it
+         does not depend on the site's Tailwind build. */
+      .jw-wrap { background: #111827; }
+      .jw-hint { color: #9ca3af; }
+      /* The deck row stays pinned below the nav while the dealt cards scroll, so
+         you can switch decks without scrolling back up. When pinned (.is-stuck,
+         toggled by an IntersectionObserver) the piles shrink with an animation,
+         and grow back when you scroll to the top. */
+      .jw-decks-sentinel { height: 1px; }
+      .jw-decks-row { display: flex; flex-wrap: wrap; gap: clamp(1rem, 4vw, 3rem); justify-content: center; position: sticky; top: 2.9rem; z-index: 30; background: #111827; padding: 1.1rem 0 1.3rem; box-shadow: 0 10px 16px -10px rgba(0,0,0,0.7); transition: padding 0.28s ease, gap 0.28s ease; }
+      .jw-decks-row.is-stuck { padding: 0.45rem 0 0.55rem; gap: clamp(0.6rem, 3vw, 1.6rem); }
+      .jw-decks-row.is-stuck .jw-pile { width: clamp(52px, 12vw, 82px); }
+      .jw-decks-row.is-stuck .jw-deck-col { gap: 0.3rem; }
+      .jw-decks-row.is-stuck .jw-pile-label { font-size: 0.72rem; }
+      @media (max-width: 640px) { .jw-decks-row.is-stuck .jw-pile-label { display: none; } }
+      .jw-deck-col { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; transition: gap 0.28s ease; }
+      .jw-pile {
+        position: relative; width: clamp(120px, 16vw, 150px); aspect-ratio: 5 / 7;
+        border-radius: 0.6rem; cursor: pointer; padding: 0; border: 1px solid rgba(0,0,0,0.35);
+        background-image: var(--back); background-size: cover; background-position: center;
+        box-shadow: 1px 1px 0 #e7e2d6, 3px 3px 0 #dcd7c9, 5px 5px 0 #d1ccbd, 7px 7px 0 #c6c1b1, 9px 11px 22px rgba(0,0,0,0.5);
+        transition: transform 0.25s ease, box-shadow 0.25s ease, width 0.28s ease;
+      }
+      .jw-pile:hover { transform: translateY(-5px) rotate(-1deg); }
+      .jw-pile:focus-visible { outline: 3px solid rgba(251,191,36,0.7); outline-offset: 3px; }
+      .jw-pile.is-active { box-shadow: 0 8px 18px rgba(0,0,0,0.5); transform: translateY(-2px); }
+      .jw-pile.is-active::after { content: ''; position: absolute; inset: 0; border-radius: 0.6rem; box-shadow: inset 0 0 0 2px var(--suit, #fbbf24); }
+      .jw-pile-count {
+        position: absolute; right: -0.4rem; top: -0.4rem; min-width: 1.5rem; height: 1.5rem;
+        display: inline-flex; align-items: center; justify-content: center; padding: 0 0.35rem;
+        border-radius: 9999px; background: var(--suit, #6b7280); color: #fff;
+        font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 700;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.3);
+      }
+      .jw-pile-label { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: #fff; }
+      .jw-panel { display: none; margin-top: 2.5rem; }
+      .jw-panel.is-open { display: block; }
+      .jw-panel-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
+      .jw-deck-dot { width: 0.8rem; height: 0.8rem; border-radius: 9999px; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25); }
+      .jw-panel-name { font-family: 'Inter', sans-serif; font-weight: 700; color: #fff; font-size: 1.125rem; }
+      .jw-panel-meta { color: rgba(255,255,255,0.4); font-family: 'Inter', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
+      .jw-panel-close { margin-left: auto; background: transparent; border: 0; color: rgba(255,255,255,0.7); font-family: 'Inter', sans-serif; font-size: 0.85rem; cursor: pointer; padding: 0.3rem 0.7rem; border-radius: 0.4rem; }
+      .jw-panel-close:hover { color: #fff; background: rgba(255,255,255,0.08); }
+      .jw-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.4rem; }
+      .jw-card {
+        position: relative; aspect-ratio: 5 / 7; background: #fdfbf6;
+        border: 1px solid rgba(0,0,0,0.14); border-radius: 0.55rem; box-shadow: 0 6px 16px rgba(0,0,0,0.35);
+        padding: 0.95rem 0.9rem 1.5rem; display: flex; flex-direction: column; overflow: hidden; color: #1f2937;
+        transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .jw-card:hover { transform: translateY(-4px) rotate(-0.4deg); box-shadow: 0 12px 26px rgba(0,0,0,0.45); }
+      .jw-card-suit { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--suit, #9ca3af); opacity: 0.85; }
+      .jw-card-title { font-family: 'Italianno', cursive; font-size: clamp(1.5rem, 3.4vw, 1.95rem); line-height: 1; text-align: center; color: #1f2937; margin-top: 0.15rem; }
+      .jw-card-art { margin: 0.55rem 0 0.4rem; }
+      .jw-card-art img { width: 100%; height: auto; object-fit: contain; display: block; }
+      .jw-card-body { margin-top: 0.35rem; }
+      .jw-card-text { font-family: 'Inter', sans-serif; font-size: 0.72rem; line-height: 1.38; color: #374151; }
+      .jw-card--text { justify-content: center; text-align: center; }
+      .jw-card--text .jw-card-text { font-size: 0.9rem; line-height: 1.5; color: #1f2937; }
+      .jw-card-author { font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; margin-top: 0.7rem; text-align: center; }
+      .jw-card-id { position: absolute; right: 0.55rem; bottom: 0.45rem; font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 600; color: #9ca3af; letter-spacing: 0.04em; }
+      .jw-card-copies { position: absolute; left: 0.5rem; top: 0.55rem; z-index: 1; font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 700; color: #fff; padding: 0.05rem 0.4rem; border-radius: 9999px; background: var(--suit, #6b7280); box-shadow: 0 1px 4px rgba(0,0,0,0.4); }
+      .jw-card--black .jw-card-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 0.35rem; padding: 1rem 0.85rem; text-align: center; background: #111827; border: 1px solid rgba(0,0,0,0.55); border-radius: 0.4rem; }
+      .jw-card--black .jw-card-text { color: #f3f4f6; }
+      .jw-panel.is-open .jw-card { animation: jw-deal 0.5s cubic-bezier(0.2,0.7,0.3,1) both; animation-delay: calc(var(--i, 0) * 0.035s); }
+      @keyframes jw-deal { from { opacity: 0; transform: var(--from, translateY(24px)); } to { opacity: 1; transform: none; } }
+      .jw-panel[data-effect="fan"]     .jw-card { --from: translateY(-60px) rotate(calc((var(--i) - var(--n) / 2) * 4deg)) scale(0.8); }
+      .jw-panel[data-effect="cascade"] .jw-card { animation-delay: calc(var(--i, 0) * 0.06s); --from: translateY(-46px) scale(0.9); }
+      .jw-panel[data-effect="spread"]  .jw-card { --from: scale(0.4) rotate(-6deg); }
+      .jw-panel[data-effect="deal"]    .jw-card { --from: translate(-70px, -90px) rotate(-12deg) scale(0.78); }
+      .jw-panel[data-effect="pop"]     .jw-card { animation-timing-function: cubic-bezier(0.3,1.5,0.5,1); --from: scale(0.15) rotate(10deg); }
+      @media (prefers-reduced-motion: reduce) { .jw-pile, .jw-card { transition: none; } .jw-panel.is-open .jw-card { animation: none; } }
+
+      /* Tiles: square (post-it sized). The name is not printed on the tile, so it
+         shows as a caption; each illustrated tile credits the artist. The blank
+         tile has no art, repeats, and invites players to draw their own place. */
+      .jw-tiles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.6rem; }
+      .jw-tile-fig { margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+      .jw-tile {
+        position: relative; width: 100%; aspect-ratio: 1 / 1; padding: 0; cursor: pointer; overflow: hidden;
+        border-radius: 0.5rem; border: 1px solid rgba(0,0,0,0.25); background: #fdfbf6;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.35); transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .jw-tile-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+      .jw-tile::after { content: ''; position: absolute; inset: 0; border-radius: 0.5rem; box-shadow: inset 0 0 0 3px rgba(253,251,246,0.85), inset 0 0 0 4px rgba(0,0,0,0.12); pointer-events: none; }
+      .jw-tile:hover { transform: translateY(-4px) rotate(-0.5deg); box-shadow: 0 12px 26px rgba(0,0,0,0.45); }
+      .jw-tile:focus-visible { outline: 3px solid rgba(251,191,36,0.7); outline-offset: 3px; }
+      .jw-tile-id { position: absolute; right: 0.4rem; bottom: 0.35rem; z-index: 1; font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 700; color: #fff; letter-spacing: 0.04em; padding: 0.05rem 0.3rem; border-radius: 9999px; background: rgba(17,24,39,0.55); }
+      .jw-tile--blank { border-style: dashed; border-color: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; text-align: center; }
+      .jw-tile--blank::after { box-shadow: none; }
+      .jw-tile-blank-text { font-family: 'Italianno', cursive; font-size: clamp(1.4rem, 3vw, 1.8rem); color: #6b7280; padding: 0 0.6rem; }
+      .jw-tile-copies { position: absolute; left: 0.4rem; top: 0.4rem; z-index: 1; font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 700; color: #fff; padding: 0.05rem 0.4rem; border-radius: 9999px; background: rgba(139,92,246,0.85); }
+      .jw-tile-cap { text-align: center; }
+      .jw-tile-name { display: block; font-family: 'Italianno', cursive; font-size: clamp(1.4rem, 3vw, 1.7rem); line-height: 1; color: #fff; }
+      .jw-tile-credit { display: block; font-family: 'Inter', sans-serif; font-size: 0.62rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 0.2rem; }
+      /* The card renders inside the shared site lightbox (.lightbox-stage),
+         scaled up uniformly with zoom so it is the grid card, only larger. */
+      .lightbox-stage .jw-card { width: min(46vw, 230px, 30vh); zoom: 1.9; cursor: default; }
+      .lightbox-stage .jw-card:hover { transform: none; }
+      .jw-section-head { text-align: center; margin-bottom: 2.5rem; }
+      .jw-card.is-zoomable { cursor: pointer; }
+      @media (prefers-reduced-motion: reduce) { .jw-tile { transition: none; } }
+    </style>
+</head>
+<body class="bg-gray-800 text-white">
+    <nav class="fixed top-0 w-full bg-black z-50" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors" aria-label="Homepage">Homepage</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                        <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                        <a href="design.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
+                        <a href="components.html" class="text-yellow-400" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
+                        <a href="photos.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
+                        <a href="about.html" class="hover:text-yellow-400 transition-colors" aria-label="About the researcher and project background">About</a>
+                    </div>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Open or close main menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4" role="navigation" aria-label="Main menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors py-2" aria-label="Homepage">Homepage</a>
+                    <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                    <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                    <a href="design.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
+                    <a href="components.html" class="text-yellow-400 py-2" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
+                    <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
+                    <a href="about.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="About the researcher and project background">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="jw-wrap min-h-screen" style="padding-top: 3.5rem;">
+        <div class="max-w-6xl mx-auto px-4 pt-5 pb-12">
+            <a href="components.html" class="inline-flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors mb-6">&larr; Back to Components</a>
+            <header class="text-center mb-12">
+                <h1 class="script-font text-7xl md:text-8xl text-yellow-400 leading-[0.95] mb-3">The Decks</h1>
+                <p class="jw-hint text-sm max-w-2xl mx-auto" id="jw-sub">79 cards across 5 decks. Pick a deck to deal it out.</p>
+            </header>
+
+            <section id="cards-section" aria-labelledby="cards-heading">
+                <div id="jw-gallery">
+                    <p class="jw-hint text-center py-12">Dealing the decks...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-black py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm text-gray-500 mb-2">
+                Master&rsquo;s research conducted by <a href="about.html" class="hover:text-yellow-400 transition-colors">Adri M.</a> at the UBC Institute for Gender, Race, Sexuality and Social Justice. <a href="references.html" class="text-yellow-400 hover:text-yellow-300 transition-colors">References</a>.
+            </p>
+            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.<span class="text-xs text-gray-600 ml-2">v1.4.1</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js?v=21" defer></script>
+    <script src="js/components-cards.js?v=7" defer></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
+</body>
+</html>

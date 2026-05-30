@@ -3,27 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="The card decks of JOURNEYWAYS: Encounter, Movement, Reflection, Countdown, and Group. Pick a deck to deal it out and read the hand-drawn prompts and quotes.">
-    <meta name="keywords" content="JOURNEYWAYS cards, card decks, prompts, quotes, identity game, board game cards, gender identity">
+    <meta name="description" content="The map tiles of JOURNEYWAYS: hand-drawn square locations like Mirror Lake, Singing Cave, and Star Bridge, plus blank tiles players draw themselves. Pick a tile to see it up close.">
+    <meta name="keywords" content="JOURNEYWAYS tiles, map tiles, board game tiles, locations, identity game, gender identity">
     <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
     <meta name="robots" content="index, follow">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.journeyways.ca/cards.html">
-    <meta property="og:title" content="JOURNEYWAYS | Cards">
-    <meta property="og:description" content="The card decks of JOURNEYWAYS. Pick a deck to deal it out.">
+    <meta property="og:url" content="https://www.journeyways.ca/components-tiles.html">
+    <meta property="og:title" content="JOURNEYWAYS | Tiles">
+    <meta property="og:description" content="The hand-drawn map tiles of JOURNEYWAYS. Pick a tile to see it up close.">
     <meta property="og:image" content="https://www.journeyways.ca/img/og-card.jpg">
     <meta property="og:site_name" content="JOURNEYWAYS">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://www.journeyways.ca/cards.html">
-    <meta name="twitter:title" content="JOURNEYWAYS | Cards">
-    <meta name="twitter:description" content="The card decks of JOURNEYWAYS. Pick a deck to deal it out.">
+    <meta name="twitter:url" content="https://www.journeyways.ca/components-tiles.html">
+    <meta name="twitter:title" content="JOURNEYWAYS | Tiles">
+    <meta name="twitter:description" content="The hand-drawn map tiles of JOURNEYWAYS.">
     <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.jpg">
 
-    <link rel="canonical" href="https://www.journeyways.ca/cards.html">
+    <link rel="canonical" href="https://www.journeyways.ca/components-tiles.html">
 
-    <title>JOURNEYWAYS | Cards</title>
+    <title>JOURNEYWAYS | Tiles</title>
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
     <link rel="shortcut icon" href="img/favicon.png">
@@ -31,7 +31,7 @@
     <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/tailwind.css?v=25">
-    <link rel="stylesheet" href="css/styles.css?v=24">
+    <link rel="stylesheet" href="css/styles.css?v=26">
     <style>
       /* Local replica of the play-side card gallery. Cards render in the printed
          component style (poker 5:7, warm paper, scaled art, script title); decks
@@ -95,10 +95,35 @@
       .jw-panel[data-effect="deal"]    .jw-card { --from: translate(-70px, -90px) rotate(-12deg) scale(0.78); }
       .jw-panel[data-effect="pop"]     .jw-card { animation-timing-function: cubic-bezier(0.3,1.5,0.5,1); --from: scale(0.15) rotate(10deg); }
       @media (prefers-reduced-motion: reduce) { .jw-pile, .jw-card { transition: none; } .jw-panel.is-open .jw-card { animation: none; } }
+
+      /* Tiles: square (post-it sized). The name is not printed on the tile, so it
+         shows as a caption; each illustrated tile credits the artist. The blank
+         tile has no art, repeats, and invites players to draw their own place. */
+      .jw-tiles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.6rem; }
+      .jw-tile-fig { margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
+      .jw-tile {
+        position: relative; width: 100%; aspect-ratio: 1 / 1; padding: 0; cursor: pointer; overflow: hidden;
+        border-radius: 0.5rem; border: 1px solid rgba(0,0,0,0.25); background: #fdfbf6;
+        box-shadow: 0 6px 16px rgba(0,0,0,0.35); transition: transform 0.18s ease, box-shadow 0.18s ease;
+      }
+      .jw-tile-art { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+      .jw-tile::after { content: ''; position: absolute; inset: 0; border-radius: 0.5rem; box-shadow: inset 0 0 0 3px rgba(253,251,246,0.85), inset 0 0 0 4px rgba(0,0,0,0.12); pointer-events: none; }
+      .jw-tile:hover { transform: translateY(-4px) rotate(-0.5deg); box-shadow: 0 12px 26px rgba(0,0,0,0.45); }
+      .jw-tile:focus-visible { outline: 3px solid rgba(251,191,36,0.7); outline-offset: 3px; }
+      .jw-tile-id { position: absolute; right: 0.4rem; bottom: 0.35rem; z-index: 1; font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 700; color: #fff; letter-spacing: 0.04em; padding: 0.05rem 0.3rem; border-radius: 9999px; background: rgba(17,24,39,0.55); }
+      .jw-tile--blank { border-style: dashed; border-color: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; text-align: center; }
+      .jw-tile--blank::after { box-shadow: none; }
+      .jw-tile-blank-text { font-family: 'Italianno', cursive; font-size: clamp(1.4rem, 3vw, 1.8rem); color: #6b7280; padding: 0 0.6rem; }
+      .jw-tile-copies { position: absolute; left: 0.4rem; top: 0.4rem; z-index: 1; font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 700; color: #fff; padding: 0.05rem 0.4rem; border-radius: 9999px; background: rgba(139,92,246,0.85); }
+      .jw-tile-cap { text-align: center; }
+      .jw-tile-name { display: block; font-family: 'Italianno', cursive; font-size: clamp(1.4rem, 3vw, 1.7rem); line-height: 1; color: #fff; }
+      .jw-tile-credit { display: block; font-family: 'Inter', sans-serif; font-size: 0.62rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 0.2rem; }
+      .jw-section-head { text-align: center; margin-bottom: 2.5rem; }
+      @media (prefers-reduced-motion: reduce) { .jw-tile { transition: none; } }
     </style>
 </head>
 <body class="bg-gray-800 text-white">
-    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50" aria-label="Main navigation">
+    <nav class="fixed top-0 w-full bg-black z-50" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center py-3">
                 <div class="flex items-center space-x-8">
@@ -107,7 +132,7 @@
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                         <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
                         <a href="design.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
-                        <a href="cards.html" class="text-yellow-400" aria-label="Browse the JOURNEYWAYS card decks">Cards</a>
+                        <a href="components.html" class="text-yellow-400" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
                         <a href="photos.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                         <a href="about.html" class="hover:text-yellow-400 transition-colors" aria-label="About the researcher and project background">About</a>
                     </div>
@@ -125,7 +150,7 @@
                     <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                     <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
                     <a href="design.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
-                    <a href="cards.html" class="text-yellow-400 py-2" aria-label="Browse the JOURNEYWAYS card decks">Cards</a>
+                    <a href="components.html" class="text-yellow-400 py-2" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
                     <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                     <a href="about.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="About the researcher and project background">About</a>
                 </div>
@@ -133,15 +158,19 @@
         </div>
     </nav>
 
-    <main class="jw-wrap min-h-screen" style="padding-top: 5rem;">
-        <div class="max-w-6xl mx-auto px-4 py-12">
-            <div class="text-center mb-10">
-                <h1 class="script-font text-5xl md:text-6xl text-yellow-400 mb-3">The Decks</h1>
-                <p class="jw-hint text-sm" id="jw-sub">Pick a deck to deal it out.</p>
-            </div>
-            <div id="jw-gallery">
-                <p class="jw-hint text-center py-12">Dealing the decks...</p>
-            </div>
+    <main class="jw-wrap min-h-screen" style="padding-top: 3.5rem;">
+        <div class="max-w-6xl mx-auto px-4 pt-5 pb-12">
+            <a href="components.html" class="inline-flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors mb-6">&larr; Back to Components</a>
+            <header class="text-center mb-12">
+                <h1 class="script-font text-7xl md:text-8xl text-yellow-400 leading-[0.95] mb-3">The Tiles</h1>
+                <p class="jw-hint text-sm max-w-2xl mx-auto" id="jw-tiles-sub">The map locations. Their names are not printed on the board; pick a tile to see it up close.</p>
+            </header>
+
+            <section id="tiles-section" aria-labelledby="tiles-heading">
+                <div id="jw-tiles">
+                    <p class="jw-hint text-center py-12">Laying out the tiles...</p>
+                </div>
+            </section>
         </div>
     </main>
 
@@ -154,8 +183,8 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=20" defer></script>
-    <script src="js/cards-gallery.js?v=1" defer></script>
+    <script src="js/main.js?v=21" defer></script>
+    <script src="js/components-tiles.js?v=4" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 </body>
 </html>

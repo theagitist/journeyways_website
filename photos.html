@@ -36,7 +36,7 @@
     <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/tailwind.css?v=25">
-    <link rel="stylesheet" href="css/styles.css?v=24">
+    <link rel="stylesheet" href="css/styles.css?v=26">
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
         {
@@ -71,7 +71,7 @@
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                         <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
                         <a href="design.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
-                        <a href="cards.html" class="hover:text-yellow-400 transition-colors" aria-label="Browse the JOURNEYWAYS card decks">Cards</a>
+                        <a href="components.html" class="hover:text-yellow-400 transition-colors" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
                         <a href="photos.html" class="text-yellow-400" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                         <a href="about.html" class="hover:text-yellow-400 transition-colors" aria-label="About the researcher and project background">About</a>
                     </div>
@@ -89,7 +89,7 @@
                     <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                     <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
                     <a href="design.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
-                    <a href="cards.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Browse the JOURNEYWAYS card decks">Cards</a>
+                    <a href="components.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
                     <a href="photos.html" class="text-yellow-400 py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
                     <a href="about.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="About the researcher and project background">About</a>
                 </div>
@@ -228,16 +228,6 @@
     </main>
 
     <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
-        <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
-        <button class="lightbox-nav lightbox-prev" onclick="event.stopPropagation(); navigateLightbox(-1)">&#10094;</button>
-        <button class="lightbox-nav lightbox-next" onclick="event.stopPropagation(); navigateLightbox(1)">&#10095;</button>
-        <img class="lightbox-content" id="lightbox-img" src="" alt="Enlarged JOURNEYWAYS research gallery image for identity exploration and collaborative storytelling." onclick="event.stopPropagation()">
-        <div class="lightbox-caption" onclick="event.stopPropagation()">
-            <h3 id="lightbox-title"></h3>
-            <p id="lightbox-subtitle"></p>
-        </div>
-    </div>
 
     <!-- Footer -->
     <footer class="bg-black py-8">
@@ -263,7 +253,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=20" defer></script>
+    <script src="js/main.js?v=21" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>

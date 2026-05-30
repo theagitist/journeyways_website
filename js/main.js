@@ -273,6 +273,31 @@ var gallerySets = {
 var currentSet = 'photos';
 var currentImageIndex = 0;
 
+// The lightbox is ONE component, built here and injected once, reused by every
+// page (photos, components, boardgame, etc.). Items are either images
+// ({src, alt, title, subtitle}) or a DOM node ({node: fn|Element}) for rich
+// content like a full card. Pages only register gallerySets and call
+// openLightboxFromSet; no page duplicates the markup or styling.
+function buildLightboxDOM() {
+    if (document.getElementById('lightbox')) return;
+    var lb = document.createElement('div');
+    lb.id = 'lightbox';
+    lb.className = 'lightbox';
+    lb.innerHTML =
+        '<div class="lightbox-box">' +
+            '<button class="lightbox-close" type="button" aria-label="Close">&times;</button>' +
+            '<button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous">&#10094;</button>' +
+            '<button class="lightbox-nav lightbox-next" type="button" aria-label="Next">&#10095;</button>' +
+            '<div class="lightbox-stage" id="lightbox-stage"><img class="lightbox-content" id="lightbox-img" src="" alt=""></div>' +
+            '<div class="lightbox-caption"><h3 id="lightbox-title"></h3><p id="lightbox-subtitle"></p></div>' +
+        '</div>';
+    document.body.appendChild(lb);
+    lb.addEventListener('click', function (e) { if (e.target === lb) closeLightbox(); });
+    lb.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    lb.querySelector('.lightbox-prev').addEventListener('click', function () { navigateLightbox(-1); });
+    lb.querySelector('.lightbox-next').addEventListener('click', function () { navigateLightbox(1); });
+}
+
 function openLightbox(index) {
     return openLightboxFromSet('photos', index);
 }
@@ -287,47 +312,36 @@ function openLightboxFromSet(setName, index) {
     else lightbox.classList.remove('single-image');
     lightbox.classList.add('active');
     document.body.style.overflow = 'hidden';
-    updateLightbox(true);
+    updateLightbox();
 }
 
-function updateLightbox(immediate) {
+function updateLightbox() {
     var set = gallerySets[currentSet];
-    var image = set && set[currentImageIndex];
-    var lightboxImg = document.getElementById('lightbox-img');
-    var lightboxTitle = document.getElementById('lightbox-title');
-    var lightboxSubtitle = document.getElementById('lightbox-subtitle');
-    var lightboxCaption = document.querySelector('.lightbox-caption');
-    if (!image || !lightboxImg || !lightboxTitle || !lightboxSubtitle || !lightboxCaption) return;
+    var item = set && set[currentImageIndex];
+    var stage = document.getElementById('lightbox-stage');
+    var img = document.getElementById('lightbox-img');
+    var title = document.getElementById('lightbox-title');
+    var subtitle = document.getElementById('lightbox-subtitle');
+    var caption = document.querySelector('.lightbox-caption');
+    if (!item || !stage) return;
 
-    if (immediate) {
-        lightboxImg.src = image.src;
-        lightboxImg.alt = image.alt;
-        lightboxTitle.textContent = image.title;
-        lightboxSubtitle.textContent = image.subtitle;
-        lightboxCaption.style.visibility = 'visible';
-        lightboxImg.classList.remove('fade-out');
-        lightboxImg.classList.add('fade-in');
-        lightboxCaption.classList.remove('fade-out');
-        lightboxCaption.classList.add('fade-in');
-    } else {
-        lightboxImg.classList.remove('fade-in');
-        lightboxImg.classList.add('fade-out');
-        lightboxCaption.classList.remove('fade-in');
-        lightboxCaption.classList.add('fade-out');
-        setTimeout(function () {
-            lightboxImg.src = image.src;
-            lightboxImg.alt = image.alt;
-            lightboxCaption.style.visibility = 'hidden';
-            lightboxTitle.textContent = image.title;
-            lightboxSubtitle.textContent = image.subtitle;
-            void lightboxCaption.offsetHeight;
-            lightboxCaption.style.visibility = 'visible';
-            lightboxImg.classList.remove('fade-out');
-            lightboxImg.classList.add('fade-in');
-            lightboxCaption.classList.remove('fade-out');
-            lightboxCaption.classList.add('fade-in');
-        }, 400);
+    // Clear any previously injected rich node.
+    var prevNode = stage.querySelector('.lightbox-node');
+    if (prevNode) prevNode.remove();
+
+    if (item.node) {
+        if (img) img.style.display = 'none';
+        var node = (typeof item.node === 'function') ? item.node() : item.node;
+        if (node) { node.classList.add('lightbox-node'); stage.appendChild(node); }
+    } else if (img) {
+        img.style.display = '';
+        img.src = item.src;
+        img.alt = item.alt || '';
     }
+
+    if (title) title.textContent = item.title || '';
+    if (subtitle) subtitle.textContent = item.subtitle || '';
+    if (caption) caption.style.display = (item.title || item.subtitle) ? '' : 'none';
 }
 
 function navigateLightbox(direction) {
@@ -336,21 +350,19 @@ function navigateLightbox(direction) {
     currentImageIndex += direction;
     if (currentImageIndex < 0) currentImageIndex = set.length - 1;
     else if (currentImageIndex >= set.length) currentImageIndex = 0;
-    updateLightbox(false);
+    updateLightbox();
 }
 
-function closeLightbox(event) {
-    if (event.target.id === 'lightbox' || event.target.classList.contains('lightbox-close')) {
-        var lb = document.getElementById('lightbox');
-        if (lb) {
-            lb.classList.remove('active');
-            document.body.style.overflow = '';
-        }
+function closeLightbox() {
+    var lb = document.getElementById('lightbox');
+    if (lb) {
+        lb.classList.remove('active');
+        document.body.style.overflow = '';
     }
 }
 
 function initLightbox() {
-    if (!document.getElementById('lightbox')) return;
+    buildLightboxDOM();
     window.openLightbox = openLightbox;
     window.openLightboxFromSet = openLightboxFromSet;
     window.closeLightbox = closeLightbox;
@@ -359,7 +371,7 @@ function initLightbox() {
     document.addEventListener('keydown', function (event) {
         var lightbox = document.getElementById('lightbox');
         if (!lightbox || !lightbox.classList.contains('active')) return;
-        if (event.key === 'Escape') closeLightbox({ target: { id: 'lightbox' } });
+        if (event.key === 'Escape') closeLightbox();
         else if (event.key === 'ArrowLeft') navigateLightbox(-1);
         else if (event.key === 'ArrowRight') navigateLightbox(1);
     });
