@@ -88,13 +88,29 @@
         </div>
     </nav>
 
-    <main class="ct-wrap min-h-screen" style="padding-top: 5rem;">
-        <div class="max-w-6xl mx-auto px-4 py-16">
-            <header class="text-center mb-14">
-                <h1 class="script-font font-bold text-7xl md:text-8xl text-yellow-400 leading-[0.95] tracking-tight mb-4">Components</h1>
-                <p class="text-gray-400 text-base max-w-2xl mx-auto">The pieces you play JOURNEYWAYS with. Choose a component to explore it.</p>
-            </header>
+    <main class="ct-wrap min-h-screen">
+        <!-- ===== Hero: matches the other top-level pages (eyebrow + h1 + subtitle) ===== -->
+        <section class="pt-24 md:pt-28 pb-8 md:pb-10">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-3xl mx-auto text-center">
+                    <div class="flex items-center justify-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                            <rect x="3" y="3" width="7" height="7" rx="1"/>
+                            <rect x="14" y="3" width="7" height="7" rx="1"/>
+                            <rect x="3" y="14" width="7" height="7" rx="1"/>
+                            <rect x="14" y="14" width="7" height="7" rx="1"/>
+                        </svg>
+                        <span>Components</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-[1.05] mb-3 md:mb-4">The pieces of the game.</h1>
+                    <p class="text-base md:text-lg italic font-light text-gray-300 mb-8 md:mb-10 max-w-prose mx-auto">The cards, the map tiles, and (soon) the booklet and manual.</p>
+                    <p class="text-base md:text-lg text-gray-400 leading-relaxed max-w-prose mx-auto">Choose a component to explore it up close.</p>
+                </div>
+            </div>
+        </section>
 
+        <section class="pb-16 md:pb-24">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="ct-grid">
                 <a href="components-cards.html" class="ct-card" aria-label="Browse the card decks">
                     <div class="ct-card-img" style="background-image: url('/img/cards/backs/back-reflection-300.webp');"></div>
@@ -132,7 +148,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+            </div>
+        </section>
     </main>
 
     <footer class="bg-black py-8">

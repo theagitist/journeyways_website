@@ -204,7 +204,7 @@
                         </div>
                         <div class="bg-gray-800 p-5 md:p-6">
                             <h3 class="text-base font-medium text-white tracking-tight mb-2">Five-color card system</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class="card-red">Red</span> Encounters, <span class="card-green">Green</span> Movement, <span class="card-blue">Blue</span> Reflections, <span class="card-black">Black</span> Countdown, <span class="card-purple">Purple</span> Group actions.</p>
+                            <p class="text-sm text-gray-400 leading-relaxed">The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class="card-red">Red</span> Encounters, <span class="card-green">Green</span> Movement, <span class="card-blue">Blue</span> Reflections, <span class="card-black">Black</span> Countdown, <span class="card-purple">Purple</span> Group actions. <a href="components-cards.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Browse the decks</a>.</p>
                         </div>
                         <div class="bg-gray-800 p-5 md:p-6">
                             <h3 class="text-base font-medium text-white tracking-tight mb-2">Private journal with sketch preview</h3>
@@ -228,6 +228,44 @@
         </div>
     </section>
 
+    <!-- ===== A look inside ===== -->
+    <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="screens">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">A look inside</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="screens" class="sr-only">A look inside</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">
+                        A few screens from the running alpha. Click any one to see it larger.
+                    </p>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <figure class="m-0">
+                            <img src="img/play/play-home.webp" alt="The JOURNEYWAYS digital game home screen." class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 0)" loading="lazy">
+                            <figcaption class="text-[11px] text-gray-500 italic mt-2">The front door</figcaption>
+                        </figure>
+                        <figure class="m-0">
+                            <img src="img/play/play-dashboard.webp" alt="The digital game dashboard with the player's journeys." class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 1)" loading="lazy">
+                            <figcaption class="text-[11px] text-gray-500 italic mt-2">Your dashboard</figcaption>
+                        </figure>
+                        <figure class="m-0">
+                            <img src="img/play/play-tiles.webp" alt="The digital map-tile gallery." class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 2)" loading="lazy">
+                            <figcaption class="text-[11px] text-gray-500 italic mt-2">The map tiles</figcaption>
+                        </figure>
+                        <figure class="m-0">
+                            <img src="img/play/play-room.webp" alt="Inside a room: the private journal beside the room lobby." class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 3)" loading="lazy">
+                            <figcaption class="text-[11px] text-gray-500 italic mt-2">Inside a room</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- ===== Recent ===== -->
     <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="recent">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -244,6 +282,11 @@
                         Latest changes in the development branch.
                     </p>
                     <ol class="space-y-6 list-none p-0 m-0">
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Cards and map tiles, online</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">The full deck and the modular map now have a live catalogue you can browse on the site: every card sorted by suit, and every map tile, including the blank tiles you fill in yourself. Each set comes from the game itself, so the website always shows what is actually in play. The artwork is delivered at the right size for each screen, with a high-resolution version kept for close-ups, so pages stay light without losing detail. See the <a href="components-cards.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">cards</a> and the <a href="components-tiles.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">map tiles</a>.</p>
+                        </li>
                         <li class="border-l-2 border-gray-700/60 pl-5">
                             <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
                             <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Researchers, invitations, and scheduled rooms</h3>
@@ -269,26 +312,6 @@
                             <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Right to forget your account</h3>
                             <p class="text-sm text-gray-400 leading-relaxed">A new Danger zone on your profile lets you delete your account yourself, with a 30-day grace window so you can change your mind. Four reminder emails arrive over the month, each with a one-click cancel link, plus a confirmation when the deletion completes. If you created rooms where other players have written journals, the action is blocked until you handle those rooms first, so collaborators don't lose work without notice. Available in English, French, and Spanish.</p>
                         </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Privacy audit pass</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">Stopped logging usernames at signup, removed an unused third-party analytics entry from the Content Security Policy, and verified the live deployment matches the privacy policy. Behind-the-scenes work.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Security and reliability audit</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">Closed several account-enumeration and brute-force vectors, made email verification and password reset race-safe, and cut admin-page query times via new indexes and query rewrites. Mostly behind-the-scenes work.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Password reset works</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The "forgot password?" email now lands on a working form. Set a new password and sign back in.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Brand-aligned visual refresh</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The videogame UI now follows the canonical palette (gray-900 base, yellow-400 accent), self-hosts Inter and Italianno, and uses script titles on atmospheric page headers. High-contrast checkboxes and toggles, with green and red reserved for semantic states.</p>
-                        </li>
                     </ol>
                     <details class="recent-more">
                         <summary>
@@ -296,6 +319,26 @@
                             <span class="recent-more-icon" aria-hidden="true">+</span>
                         </summary>
                         <ol class="space-y-6 list-none p-0 m-0">
+                            <li class="border-l-2 border-gray-700/60 pl-5">
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
+                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Privacy audit pass</h3>
+                                <p class="text-sm text-gray-400 leading-relaxed">Stopped logging usernames at signup, removed an unused third-party analytics entry from the Content Security Policy, and verified the live deployment matches the privacy policy. Behind-the-scenes work.</p>
+                            </li>
+                            <li class="border-l-2 border-gray-700/60 pl-5">
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
+                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Security and reliability audit</h3>
+                                <p class="text-sm text-gray-400 leading-relaxed">Closed several account-enumeration and brute-force vectors, made email verification and password reset race-safe, and cut admin-page query times via new indexes and query rewrites. Mostly behind-the-scenes work.</p>
+                            </li>
+                            <li class="border-l-2 border-gray-700/60 pl-5">
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
+                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Password reset works</h3>
+                                <p class="text-sm text-gray-400 leading-relaxed">The "forgot password?" email now lands on a working form. Set a new password and sign back in.</p>
+                            </li>
+                            <li class="border-l-2 border-gray-700/60 pl-5">
+                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
+                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Brand-aligned visual refresh</h3>
+                                <p class="text-sm text-gray-400 leading-relaxed">The videogame UI now follows the canonical palette (gray-900 base, yellow-400 accent), self-hosts Inter and Italianno, and uses script titles on atmospheric page headers. High-contrast checkboxes and toggles, with green and red reserved for semantic states.</p>
+                            </li>
                             <li class="border-l-2 border-gray-700/60 pl-5">
                                 <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">April 2026</p>
                                 <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Multiplayer presence</h3>
@@ -349,6 +392,10 @@
                         Planned, not yet shipped.
                     </p>
                     <ol class="space-y-6 list-none p-0 m-0">
+                        <li class="border-l-2 border-gray-700/60 pl-5">
+                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Printable cards, tiles, and booklets</h3>
+                            <p class="text-sm text-gray-400 leading-relaxed">A single typesetting pipeline that turns the catalogue into print-ready files: the full card and map-tile sets, the player booklet, and the user manual, all generated from the same source as the screen versions so they never drift apart. Coming very soon.</p>
+                        </li>
                         <li class="border-l-2 border-gray-700/60 pl-5">
                             <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Story loop</h3>
                             <p class="text-sm text-gray-400 leading-relaxed">The first end-to-end journaling turn: pick a card from a chosen suit, write a short entry, share it with the room.</p>
@@ -411,7 +458,7 @@
         </div>
     </div>
 
-    <script src="js/main.js?v=21" defer></script>
+    <script src="js/main.js?v=22" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 
 </body>

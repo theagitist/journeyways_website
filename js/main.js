@@ -268,6 +268,12 @@ var gallerySets = {
     ],
     homeComponents: [
         { src: 'img/boardgame_components.webp', alt: 'JOURNEYWAYS board game components and setup for collaborative identity exploration: tiles, cards, tokens, and player booklets arranged for play.', title: 'Game components', subtitle: 'Tiles, cards, tokens, and player booklets, arranged for a session.' }
+    ],
+    videogameScreens: [
+        { src: 'img/play/play-home.webp', alt: 'The JOURNEYWAYS digital game home screen: the watercolour wordmark over a puzzle-piece landscape, with Begin the Journey and Return to Path buttons.', title: 'The front door', subtitle: 'JOURNEYWAYS online: a game about becoming.' },
+        { src: 'img/play/play-dashboard.webp', alt: 'The digital game dashboard: a Welcome back greeting, the five suit dots, and Active Journeys, Join a Journey, and Start a New Journey tabs over cards for the player’s rooms.', title: 'Your dashboard', subtitle: 'Your rooms and journeys, gathered in one place.' },
+        { src: 'img/play/play-tiles.webp', alt: 'The digital map-tile gallery: a grid of square watercolour tiles, each with its name below, including Start, Mirror Lake, Mountain Peak, and Star Bridge.', title: 'The map tiles', subtitle: 'The modular map, including blank tiles to fill in yourself.' },
+        { src: 'img/play/play-room.webp', alt: 'Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right.', title: 'Inside a room', subtitle: 'The private journal beside the live room lobby.' }
     ]
 };
 var currentSet = 'photos';
