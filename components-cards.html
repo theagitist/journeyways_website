@@ -32,6 +32,7 @@
     <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="css/tailwind.css?v=25">
     <link rel="stylesheet" href="css/styles.css?v=26">
+    <link rel="stylesheet" href="css/game-components.css?v=2">
     <style>
       /* Local replica of the play-side card gallery. Cards render in the printed
          component style (poker 5:7, warm paper, scaled art, script title); decks
@@ -79,26 +80,9 @@
       .jw-panel-close { margin-left: auto; background: transparent; border: 0; color: rgba(255,255,255,0.7); font-family: 'Inter', sans-serif; font-size: 0.85rem; cursor: pointer; padding: 0.3rem 0.7rem; border-radius: 0.4rem; }
       .jw-panel-close:hover { color: #fff; background: rgba(255,255,255,0.08); }
       .jw-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.4rem; }
-      .jw-card {
-        position: relative; aspect-ratio: 5 / 7; background: #fdfbf6;
-        border: 1px solid rgba(0,0,0,0.14); border-radius: 0.55rem; box-shadow: 0 6px 16px rgba(0,0,0,0.35);
-        padding: 0.95rem 0.9rem 1.5rem; display: flex; flex-direction: column; overflow: hidden; color: #1f2937;
-        transition: transform 0.18s ease, box-shadow 0.18s ease;
-      }
-      .jw-card:hover { transform: translateY(-4px) rotate(-0.4deg); box-shadow: 0 12px 26px rgba(0,0,0,0.45); }
-      .jw-card-suit { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--suit, #9ca3af); opacity: 0.85; }
-      .jw-card-title { font-family: 'Italianno', cursive; font-size: clamp(1.5rem, 3.4vw, 1.95rem); line-height: 1; text-align: center; color: #1f2937; margin-top: 0.15rem; }
-      .jw-card-art { margin: 0.55rem 0 0.4rem; }
-      .jw-card-art img { width: 100%; height: auto; object-fit: contain; display: block; }
-      .jw-card-body { margin-top: 0.35rem; }
-      .jw-card-text { font-family: 'Inter', sans-serif; font-size: 0.72rem; line-height: 1.38; color: #374151; }
-      .jw-card--text { justify-content: center; text-align: center; }
-      .jw-card--text .jw-card-text { font-size: 0.9rem; line-height: 1.5; color: #1f2937; }
-      .jw-card-author { font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; margin-top: 0.7rem; text-align: center; }
-      .jw-card-id { position: absolute; right: 0.55rem; bottom: 0.45rem; font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 600; color: #9ca3af; letter-spacing: 0.04em; }
-      .jw-card-copies { position: absolute; left: 0.5rem; top: 0.55rem; z-index: 1; font-family: 'Inter', sans-serif; font-size: 0.6rem; font-weight: 700; color: #fff; padding: 0.05rem 0.4rem; border-radius: 9999px; background: var(--suit, #6b7280); box-shadow: 0 1px 4px rgba(0,0,0,0.4); }
-      .jw-card--black .jw-card-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; margin-top: 0.35rem; padding: 1rem 0.85rem; text-align: center; background: #111827; border: 1px solid rgba(0,0,0,0.55); border-radius: 0.4rem; }
-      .jw-card--black .jw-card-text { color: #f3f4f6; }
+      /* Card FACE styles come from the shared /css/game-components.css (linked in
+         the head), the same single source the play app uses. Only this page's
+         chrome (deck piles, grid, reveal animation, lightbox zoom) is here. */
       .jw-panel.is-open .jw-card { animation: jw-deal 0.5s cubic-bezier(0.2,0.7,0.3,1) both; animation-delay: calc(var(--i, 0) * 0.035s); }
       @keyframes jw-deal { from { opacity: 0; transform: var(--from, translateY(24px)); } to { opacity: 1; transform: none; } }
       .jw-panel[data-effect="fan"]     .jw-card { --from: translateY(-60px) rotate(calc((var(--i) - var(--n) / 2) * 4deg)) scale(0.8); }
@@ -130,9 +114,11 @@
       .jw-tile-cap { text-align: center; }
       .jw-tile-name { display: block; font-family: 'Italianno', cursive; font-size: clamp(1.4rem, 3vw, 1.7rem); line-height: 1; color: #fff; }
       .jw-tile-credit { display: block; font-family: 'Inter', sans-serif; font-size: 0.62rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 0.2rem; }
-      /* The card renders inside the shared site lightbox (.lightbox-stage),
-         scaled up uniformly with zoom so it is the grid card, only larger. */
-      .lightbox-stage .jw-card { width: min(46vw, 230px, 30vh); zoom: 1.9; cursor: default; }
+      /* The card renders inside the shared site lightbox (.lightbox-stage) at a
+         larger real width (NOT zoom): the card scales its contents from its own
+         width via container queries, and `zoom` throws off how those cqw units
+         resolve in some browsers, so it is given a bigger width directly. */
+      .lightbox-stage .jw-card { width: min(87vw, 437px, 57vh); cursor: default; }
       .lightbox-stage .jw-card:hover { transform: none; }
       .jw-section-head { text-align: center; margin-bottom: 2.5rem; }
       .jw-card.is-zoomable { cursor: pointer; }
@@ -201,7 +187,8 @@
     </footer>
 
     <script src="js/main.js?v=21" defer></script>
-    <script src="js/components-cards.js?v=7" defer></script>
+    <script src="js/game-components.js?v=2" defer></script>
+    <script src="js/components-cards.js?v=8" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 </body>
 </html>

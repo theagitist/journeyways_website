@@ -29,21 +29,20 @@
     return n;
   }
 
+  // Tiles render through THE single component renderer (window.JWComponents,
+  // shared with the play app) so the website's tiles match the game's exactly.
+  // The caption and lightbox wiring are this page's chrome.
+  function nodeFromHTML(html) {
+    var t = document.createElement('template');
+    t.innerHTML = String(html).trim();
+    return t.content.firstElementChild;
+  }
   function buildTile(tile, i) {
-    var isBlank = tile.blank || !tile.image;
-    var btn = el('button', { type: 'button', class: 'jw-tile' + (isBlank ? ' jw-tile--blank' : ''), 'aria-label': tile.name + ' tile' });
-    if (isBlank) {
-      btn.appendChild(el('span', { class: 'jw-tile-blank-text', text: 'Make your own' }));
-      if (tile.copies > 0) btn.appendChild(el('span', { class: 'jw-tile-copies', title: 'copies in the set', text: '×' + tile.copies }));
-    } else {
-      btn.appendChild(el('img', {
-        class: 'jw-tile-art', src: tile.image.sm,
-        srcset: tile.image.sm + ' 400w, ' + tile.image.md + ' 900w',
-        sizes: '(max-width: 640px) 45vw, 200px',
-        alt: 'Hand-drawn ' + tile.name + ' tile', loading: 'lazy'
-      }));
-    }
-    btn.appendChild(el('span', { class: 'jw-tile-id', text: tile.tile_number }));
+    var btn = nodeFromHTML(window.JWComponents.tileFace({
+      name: tile.name, number: tile.tile_number,
+      isBlank: tile.blank || !tile.image, copies: tile.copies,
+      image: tile.image || null
+    }, { interactive: true, showCopies: true, blankText: 'Make your own' }));
     btn.addEventListener('click', function () { if (window.openLightboxFromSet) window.openLightboxFromSet('tiles', i); });
     var cap = el('figcaption', { class: 'jw-tile-cap' }, [el('span', { class: 'jw-tile-name', text: tile.name })]);
     return el('figure', { class: 'jw-tile-fig' }, [btn, cap]);

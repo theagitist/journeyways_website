@@ -21,29 +21,22 @@
     return n;
   }
 
+  // Cards render through THE single component renderer (window.JWComponents,
+  // /js/game-components.js, shared with the play app) so the website's cards are
+  // byte-identical to the game's. The deal-out animation and click-to-zoom are
+  // added by this page's chrome below (the renderer stays presentation-neutral).
+  function nodeFromHTML(html) {
+    var t = document.createElement('template');
+    t.innerHTML = String(html).trim();
+    return t.content.firstElementChild;
+  }
   function buildCard(card, i, deck) {
-    var isText = !card.image;
-    var isBlack = deck.slug === 'countdown';
-    var cls = 'jw-card' + (isText ? ' jw-card--text' : '') + (isBlack ? ' jw-card--black' : '');
-    var art = el('article', { class: cls, style: '--i:' + i + ';--n:' + deck.cards.length + ';--suit:' + deck.color + ';' });
-    art.appendChild(el('span', { class: 'jw-card-suit', 'aria-hidden': 'true' }));
-    if (card.title) art.appendChild(el('h3', { class: 'jw-card-title', text: card.title }));
-    if (card.image) {
-      var wrap = el('div', { class: 'jw-card-art' });
-      wrap.appendChild(el('img', {
-        src: card.image.sm,
-        srcset: card.image.sm + ' 400w, ' + card.image.md + ' 1000w',
-        sizes: '(max-width: 640px) 45vw, 180px',
-        alt: 'Hand-drawn illustration for ' + (card.title || card.card_number), loading: 'lazy'
-      }));
-      art.appendChild(wrap);
-    }
-    var body = el('div', { class: 'jw-card-body' }, [el('p', { class: 'jw-card-text', text: card.content })]);
-    if (card.author_name) body.appendChild(el('p', { class: 'jw-card-author', text: '- ' + card.author_name + ' -' }));
-    art.appendChild(body);
-    if (card.copies > 1) art.appendChild(el('span', { class: 'jw-card-copies', title: 'copies in the deck', text: '×' + card.copies }));
-    art.appendChild(el('span', { class: 'jw-card-id', text: card.card_number }));
-    return art;
+    return nodeFromHTML(window.JWComponents.cardFace({
+      color: deck.color, deckSlug: deck.slug, isText: !card.image,
+      title: card.title, content: card.content,
+      author: card.author_name || '', number: card.card_number,
+      copies: card.copies, image: card.image || null
+    }, { index: i, count: deck.cards.length, showCopies: true }));
   }
 
   function render(data) {
