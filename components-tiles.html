@@ -34,81 +34,21 @@
     <link rel="stylesheet" href="css/styles.css?v=26">
     <link rel="stylesheet" href="css/game-components.css?v=2">
     <style>
-      /* Local replica of the play-side card gallery. Cards render in the printed
-         component style (poker 5:7, warm paper, scaled art, script title); decks
-         start face down and deal out with a per-deck effect. Self-contained so it
-         does not depend on the site's Tailwind build. */
+      /* The tiles page renders only the tile grid. Tile FACE styles come from the
+         shared /css/game-components.css (linked in the head), the same single
+         source the play app uses; only this page's chrome (background, grid,
+         caption) is here. The card-gallery chrome lives on components-cards.html. */
       .jw-wrap { background: #111827; }
       .jw-hint { color: #9ca3af; }
-      .jw-decks-row { display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 5vw, 3.5rem); justify-content: center; }
-      .jw-deck-col { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; }
-      .jw-pile {
-        position: relative; width: clamp(120px, 16vw, 150px); aspect-ratio: 5 / 7;
-        border-radius: 0.6rem; cursor: pointer; padding: 0; border: 1px solid rgba(0,0,0,0.35);
-        background-image: var(--back); background-size: cover; background-position: center;
-        box-shadow: 1px 1px 0 #e7e2d6, 3px 3px 0 #dcd7c9, 5px 5px 0 #d1ccbd, 7px 7px 0 #c6c1b1, 9px 11px 22px rgba(0,0,0,0.5);
-        transition: transform 0.25s ease, box-shadow 0.25s ease;
-      }
-      .jw-pile:hover { transform: translateY(-5px) rotate(-1deg); }
-      .jw-pile:focus-visible { outline: 3px solid rgba(251,191,36,0.7); outline-offset: 3px; }
-      .jw-pile.is-active { box-shadow: 0 8px 18px rgba(0,0,0,0.5); transform: translateY(-2px); }
-      .jw-pile.is-active::after { content: ''; position: absolute; inset: 0; border-radius: 0.6rem; box-shadow: inset 0 0 0 2px var(--suit, #fbbf24); }
-      .jw-pile-count {
-        position: absolute; right: -0.4rem; top: -0.4rem; min-width: 1.5rem; height: 1.5rem;
-        display: inline-flex; align-items: center; justify-content: center; padding: 0 0.35rem;
-        border-radius: 9999px; background: var(--suit, #6b7280); color: #fff;
-        font-family: 'Inter', sans-serif; font-size: 0.7rem; font-weight: 700;
-        box-shadow: 0 2px 6px rgba(0,0,0,0.4); border: 1px solid rgba(255,255,255,0.3);
-      }
-      .jw-pile-label { font-family: 'Inter', sans-serif; font-size: 0.95rem; font-weight: 600; color: #fff; }
-      .jw-panel { display: none; margin-top: 2.5rem; }
-      .jw-panel.is-open { display: block; }
-      .jw-panel-head { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 1.1rem; }
-      .jw-deck-dot { width: 0.8rem; height: 0.8rem; border-radius: 9999px; box-shadow: inset 0 0 0 1px rgba(255,255,255,0.25); }
-      .jw-panel-name { font-family: 'Inter', sans-serif; font-weight: 700; color: #fff; font-size: 1.125rem; }
-      .jw-panel-meta { color: rgba(255,255,255,0.4); font-family: 'Inter', sans-serif; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; }
-      .jw-panel-close { margin-left: auto; background: transparent; border: 0; color: rgba(255,255,255,0.7); font-family: 'Inter', sans-serif; font-size: 0.85rem; cursor: pointer; padding: 0.3rem 0.7rem; border-radius: 0.4rem; }
-      .jw-panel-close:hover { color: #fff; background: rgba(255,255,255,0.08); }
-      .jw-cards-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.4rem; }
-      .jw-card {
-        position: relative; aspect-ratio: 5 / 7; background: #fdfbf6;
-        border: 1px solid rgba(0,0,0,0.14); border-radius: 0.55rem; box-shadow: 0 6px 16px rgba(0,0,0,0.35);
-        padding: 0.95rem 0.9rem 1.5rem; display: flex; flex-direction: column; overflow: hidden; color: #1f2937;
-        transition: transform 0.18s ease, box-shadow 0.18s ease;
-      }
-      .jw-card:hover { transform: translateY(-4px) rotate(-0.4deg); box-shadow: 0 12px 26px rgba(0,0,0,0.45); }
-      .jw-card-suit { position: absolute; top: 0; left: 0; right: 0; height: 4px; background: var(--suit, #9ca3af); opacity: 0.85; }
-      .jw-card-title { font-family: 'Italianno', cursive; font-size: clamp(1.5rem, 3.4vw, 1.95rem); line-height: 1; text-align: center; color: #1f2937; margin-top: 0.15rem; }
-      .jw-card-art { margin: 0.55rem 0 0.4rem; }
-      .jw-card-art img { width: 100%; height: auto; object-fit: contain; display: block; }
-      .jw-card-text { font-family: 'Inter', sans-serif; font-size: 0.72rem; line-height: 1.38; color: #374151; }
-      .jw-card--text { justify-content: center; text-align: center; }
-      .jw-card--text .jw-card-text { font-size: 0.9rem; line-height: 1.5; color: #1f2937; }
-      .jw-card-author { font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: #6b7280; margin-top: 0.7rem; text-align: center; }
-      .jw-card-id { position: absolute; right: 0.55rem; bottom: 0.45rem; font-family: 'Inter', sans-serif; font-size: 0.62rem; font-weight: 600; color: #9ca3af; letter-spacing: 0.04em; }
-      .jw-card--black .jw-card-body { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; margin: 0.15rem; padding: 1rem 0.85rem; text-align: center; background: #111827; border: 1px solid rgba(0,0,0,0.55); border-radius: 0.4rem; }
-      .jw-card--black .jw-card-text { color: #f3f4f6; }
-      .jw-panel.is-open .jw-card { animation: jw-deal 0.5s cubic-bezier(0.2,0.7,0.3,1) both; animation-delay: calc(var(--i, 0) * 0.035s); }
-      @keyframes jw-deal { from { opacity: 0; transform: var(--from, translateY(24px)); } to { opacity: 1; transform: none; } }
-      .jw-panel[data-effect="fan"]     .jw-card { --from: translateY(-60px) rotate(calc((var(--i) - var(--n) / 2) * 4deg)) scale(0.8); }
-      .jw-panel[data-effect="cascade"] .jw-card { animation-delay: calc(var(--i, 0) * 0.06s); --from: translateY(-46px) scale(0.9); }
-      .jw-panel[data-effect="spread"]  .jw-card { --from: scale(0.4) rotate(-6deg); }
-      .jw-panel[data-effect="deal"]    .jw-card { --from: translate(-70px, -90px) rotate(-12deg) scale(0.78); }
-      .jw-panel[data-effect="pop"]     .jw-card { animation-timing-function: cubic-bezier(0.3,1.5,0.5,1); --from: scale(0.15) rotate(10deg); }
-      @media (prefers-reduced-motion: reduce) { .jw-pile, .jw-card { transition: none; } .jw-panel.is-open .jw-card { animation: none; } }
 
       /* Tiles: square (post-it sized). The name is not printed on the tile, so it
          shows as a caption; each illustrated tile credits the artist. The blank
          tile has no art, repeats, and invites players to draw their own place. */
       .jw-tiles-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 1.6rem; }
       .jw-tile-fig { margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
-      /* Tile FACE styles come from the shared /css/game-components.css (linked
-         in the head), the same single source the play app uses. Only this page's
-         chrome (grid, caption) is here. */
       .jw-tile-cap { text-align: center; }
       .jw-tile-name { display: block; font-family: 'Italianno', cursive; font-size: clamp(1.4rem, 3vw, 1.7rem); line-height: 1; color: #fff; }
       .jw-tile-credit { display: block; font-family: 'Inter', sans-serif; font-size: 0.62rem; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-top: 0.2rem; }
-      .jw-section-head { text-align: center; margin-bottom: 2.5rem; }
       @media (prefers-reduced-motion: reduce) { .jw-tile { transition: none; } }
     </style>
 </head>
@@ -174,8 +114,8 @@
     </footer>
 
     <script src="js/main.js?v=21" defer></script>
-    <script src="js/game-components.js?v=2" defer></script>
-    <script src="js/components-tiles.js?v=5" defer></script>
+    <script src="js/game-components.js?v=3" defer></script>
+    <script src="js/components-tiles.js?v=6" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 </body>
 </html>

@@ -10,26 +10,14 @@
   var sub = document.getElementById('jw-sub');
   if (!mount) return;
 
-  function el(tag, attrs, kids) {
-    var n = document.createElement(tag);
-    if (attrs) Object.keys(attrs).forEach(function (k) {
-      if (k === 'style') n.style.cssText = attrs[k];
-      else if (k === 'text') n.textContent = attrs[k];
-      else n.setAttribute(k, attrs[k]);
-    });
-    (kids || []).forEach(function (c) { if (c) n.appendChild(c); });
-    return n;
-  }
+  // DOM helpers (el, nodeFromHTML) come from THE single component module
+  // (window.JWComponents, /js/game-components.js, shared with the play app), so
+  // there is one implementation across every surface. Cards render through the
+  // same module, so the website's cards are byte-identical to the game's. The
+  // deal-out animation and click-to-zoom are this page's chrome.
+  var el = window.JWComponents.el;
+  var nodeFromHTML = window.JWComponents.nodeFromHTML;
 
-  // Cards render through THE single component renderer (window.JWComponents,
-  // /js/game-components.js, shared with the play app) so the website's cards are
-  // byte-identical to the game's. The deal-out animation and click-to-zoom are
-  // added by this page's chrome below (the renderer stays presentation-neutral).
-  function nodeFromHTML(html) {
-    var t = document.createElement('template');
-    t.innerHTML = String(html).trim();
-    return t.content.firstElementChild;
-  }
   function buildCard(card, i, deck) {
     return nodeFromHTML(window.JWComponents.cardFace({
       color: deck.color, deckSlug: deck.slug, isText: !card.image,

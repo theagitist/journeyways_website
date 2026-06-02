@@ -18,25 +18,14 @@
   // Warm-paper square stand-in for the blank tile (it has no art).
   var BLANK_SRC = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23fdfbf6'/%3E%3C/svg%3E";
 
-  function el(tag, attrs, kids) {
-    var n = document.createElement(tag);
-    if (attrs) Object.keys(attrs).forEach(function (k) {
-      if (k === 'style') n.style.cssText = attrs[k];
-      else if (k === 'text') n.textContent = attrs[k];
-      else n.setAttribute(k, attrs[k]);
-    });
-    (kids || []).forEach(function (c) { if (c) n.appendChild(c); });
-    return n;
-  }
+  // DOM helpers (el, nodeFromHTML) come from THE single component module
+  // (window.JWComponents, shared with the play app), so there is one
+  // implementation across every surface. Tiles render through the same module,
+  // so the website's tiles match the game's exactly. The caption and lightbox
+  // wiring are this page's chrome.
+  var el = window.JWComponents.el;
+  var nodeFromHTML = window.JWComponents.nodeFromHTML;
 
-  // Tiles render through THE single component renderer (window.JWComponents,
-  // shared with the play app) so the website's tiles match the game's exactly.
-  // The caption and lightbox wiring are this page's chrome.
-  function nodeFromHTML(html) {
-    var t = document.createElement('template');
-    t.innerHTML = String(html).trim();
-    return t.content.firstElementChild;
-  }
   function buildTile(tile, i) {
     var btn = nodeFromHTML(window.JWComponents.tileFace({
       name: tile.name, number: tile.tile_number,
