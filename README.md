@@ -14,7 +14,9 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 
 - **Home** (`index.html`). Editorial Swiss-luxury layout. Asymmetric hero anchored by the watercolor `og-card.webp` on the right; three hairline-divided chapter cards (No Fixed Roles, Collaborative Storytelling, Continuous Growth) opening themed native `<dialog>` popups; 3+9 chapter spine on the body sections (Italianno script titles with watercolor card-back swatches: Principles / Gameplay / Recent / Begin); contained components photo with a single-image lightbox; outline-button closing block. The marquee was retired in favor of a dated Recent rail lower on the page.
 - **Board Game** (`boardgame.html`). How to play. Editorial hero with the printed rulebook cover (`img/rulebook_cover.webp`) on the left + title block on the right + inline PDF download links with file sizes. Body chapters on the 3+9 spine: Decks (5 card backs), Setup (components + initial steps + setup photo), Turn (3-phase grid + 12 map tiles + 9 card fronts), Ending (with pull quote), Journal, Modes (solo vs group), Open play.
-- **Video Game** (`videogame.html`). Dev log for the digital version. Centered typographic hero with a horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) and a "private during development, public at release" footnote. Body chapters on the 3+9 spine: Premise, Built (6-up hairline grid), Recent (timeline list), Roadmap (timeline list).
+- **Video Game** (`videogame.html`). Overview of the digital version. Centered typographic hero with a horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) and a "private during development, public at release" footnote. Body chapters on the 3+9 spine: Premise, Built (6-up hairline grid), a pointer to the Updates page (its dev log moved there), Roadmap (timeline list).
+- **Updates** (`updates.html`). Project-wide milestones for both the board game and the digital version on one filterable timeline. Two controls: a game filter (All / Board game / Video game) and a month-tab strip; entries are month-grouped flat cards tagged Board game / Video game / both. 4th item in the main nav (after Video Game). Board-game history sourced from the researcher CV + vault playtesting notes.
+- **Components** (`components.html` + sub-pages). A hub of four cards: **Cards** (`components-cards.html`) and **Tiles** (`components-tiles.html`), both live catalogues drawn from the play API, and **Player Booklet** (`components-booklet.html`) and **Game Manual** (`components-manual.html`), each a page-by-page preview of the print PDF (opening in the shared lightbox) plus a download link.
 - **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
 - **Photos** (`photos.html`). Research gallery and lightbox.
 - **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
@@ -27,8 +29,10 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 
 ```
 www.journeyways.ca/
-├── index.html, boardgame.html, videogame.html, photos.html
+├── index.html, boardgame.html, videogame.html, updates.html, photos.html
+├── components.html, components-cards.html, components-tiles.html, components-booklet.html, components-manual.html
 ├── about.html, design.html, references.html, presentation.html, contact.html
+├── download/               Rulebook and Player Booklet PDFs (published from ~/apps/journeyways/manuals via deploy-web.sh)
 ├── css/styles.css           Card colours, .tile-wood, marquee fade,
 │                            lightbox, hover transitions
 ├── js/main.js               Mobile menu, cookie banner, CTA injection,

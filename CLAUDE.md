@@ -13,7 +13,9 @@ www.journeyways.ca/
 ├── index.html              Home (rulebook hero copy + 3 feature cards + boardgame snapshot)
 ├── boardgame.html          How to play; rules and components
 ├── videogame.html          Digital version overview + roadmap (under development). Its dev log moved to updates.html
-├── updates.html            Project-wide milestones: ONE filterable timeline (All / Board game / Video game), each <li data-type=board|video|both>. Filter logic in main.js initUpdatesFilter(); tag/filter CSS is .jw-* in styles.css. Board data from CV (~/apps/Bio-CV) + vault PLAYTESTING.md. In main nav after Video Game
+├── updates.html            Project-wide milestones timeline. Month-grouped flat cards (.jw-card[data-type=board|video|both]) with a game filter (All/Board/Video) + a month tab strip; both driven by main.js initUpdatesFilter(). "both" cards show two tags. CSS is .jw-* in styles.css. Board data from CV (~/apps/Bio-CV) + vault PLAYTESTING.md. 4th main-nav item (after Video Game); in sitemap.
+├── components.html         Component hub: 4 cards (Cards, Tiles, Player Booklet, Game Manual) linking to the sub-pages below
+├── components-booklet.html / components-manual.html   Player Booklet / Game Manual pages: page-by-page preview (img/booklet/*, img/manual/* rendered from the download PDFs) opening in the shared lightbox (main.js gallerySets booklet/manual), plus a download link. Re-render + ?v-bump these when deploy-web.sh ships new PDFs (see memory project-www-updates-and-components)
 ├── photos.html             Research gallery + lightbox (6 entries)
 ├── about.html              About the researcher; bio, project narrative, inline anchors into design.html. "Get in touch" section currently commented out
 ├── design.html             Design philosophy (long-form essay; 9 principles, illustrated with card and tile artwork; anchored from about.html)
@@ -92,9 +94,17 @@ sudo nginx -t && sudo systemctl reload nginx
 cd /var/www/www.journeyways.ca/tools && npm run build
 sed -i 's|tailwind.css?v=5|tailwind.css?v=6|' /var/www/www.journeyways.ca/*.html
 
-# Bump other asset cache versions (current: tailwind.css?v=25, styles.css?v=23, main.js?v=20)
-sed -i 's|styles.css?v=23|styles.css?v=24|' /var/www/www.journeyways.ca/*.html
-sed -i 's|main.js?v=20|main.js?v=21|' /var/www/www.journeyways.ca/*.html
+# Bump other asset cache versions (versions now vary per page after the updates/components
+# work; latest highs 2026-07-09: styles.css?v=31, main.js?v=29). Bump only the pages that
+# need the new content; versions across pages need not match.
+sed -i 's|styles.css?v=30|styles.css?v=31|' /var/www/www.journeyways.ca/updates.html
+
+# Cloudflare cache (journeyways.ca is proxied): HTML is served DYNAMIC (uncached) so page
+# edits go live immediately; but images (img/**) and download/*.pdf ARE cached. Reusing a
+# filename serves stale bytes -> cache-bust with ?v=N (used ?v=2 on manual/booklet previews
+# + on-site PDF links, 2026-07-09). The ~/apps/keys/cloudflare-token is DNS-scoped and
+# CANNOT purge (auth error 10000); a dedicated Cache-Purge token is needed for bare
+# /download/*.pdf URLs. See memory reference-www-cache-busting.
 
 # Optimize a PDF in download/ (Ghostscript /ebook ~halves a 11MB scan to ~5MB)
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
