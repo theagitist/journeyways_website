@@ -277,11 +277,11 @@ var gallerySets = {
     ],
     manual: [
         { src: 'img/manual/p01.webp', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
-        { src: 'img/manual/p03.webp', alt: 'The manual table of contents, listing Game Setup, Basic Gameplay, Writing your journal, Solo and Group Play, Advanced Concepts, and Tips.', title: 'Contents', subtitle: 'What is inside.' },
-        { src: 'img/manual/p04.webp', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles.', title: 'Game Setup', subtitle: 'Laying out the game.' },
-        { src: 'img/manual/p05.webp', alt: 'The Basic Gameplay page: the three phases of a turn and what each card colour means.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
-        { src: 'img/manual/p06.webp', alt: 'The Writing your journal page, with guidance and an example journal entry.', title: 'Your Journal', subtitle: 'Writing from the cards.' },
-        { src: 'img/manual/p10.webp', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/manual/p04.webp', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p05.webp', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
+        { src: 'img/manual/p08.webp', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
+        { src: 'img/manual/p09.webp', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
+        { src: 'img/manual/p13.webp', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ],
     booklet: [
         { src: 'img/booklet/p01.webp', alt: 'The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
