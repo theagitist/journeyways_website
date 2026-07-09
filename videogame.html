@@ -80,6 +80,7 @@
                     <div class="hidden md:flex space-x-6">
                         <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                         <a href="videogame.html" class="text-yellow-400" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                        <a href="updates.html" class="hover:text-yellow-400 transition-colors" aria-label="Project updates and milestones for the board game and digital game">Updates</a>
                         <a href="design.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
                         <a href="components.html" class="hover:text-yellow-400 transition-colors" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
                         <a href="photos.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
@@ -98,6 +99,7 @@
                     <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors py-2" aria-label="Homepage">Homepage</a>
                     <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
                     <a href="videogame.html" class="text-yellow-400 py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                    <a href="updates.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Project updates and milestones for the board game and digital game">Updates</a>
                     <a href="design.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
                     <a href="components.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
                     <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
@@ -270,7 +272,7 @@
         </div>
     </section>
 
-    <!-- ===== Recent ===== -->
+    <!-- ===== Recent (moved to Updates) ===== -->
     <section class="pt-12 md:pt-16 pb-4 md:pb-6 border-t border-gray-700/40" aria-labelledby="recent">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
@@ -282,119 +284,9 @@
                 </header>
                 <div class="col-span-12 md:col-span-8 md:col-start-5">
                     <h2 id="recent" class="sr-only">Recent milestones</h2>
-                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">
-                        Latest changes in the development branch.
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
+                        The full development log now lives on the <a href="updates.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Updates</a> page, alongside the board game's milestones.
                     </p>
-                    <ol class="space-y-6 list-none p-0 m-0">
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">June 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">A table that shows its hands</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The shared table now feels alive. When you pick a card or tile it rides with your cursor until you set it down, and everyone watches it move, named to whoever is holding it, since nothing here is secret. Tiles can rest on top of one another in neat little piles with a small count, and moving the top one reveals the tile beneath. Along the bottom of the screen a quiet line tells the room what is happening: who is placing a card, moving a tile, or writing in their journal (never what they wrote), with the most recent action when things are still. Open it and the line unfolds into a history with terse timestamps; tap any entry for a closer look at who, when, and which card or tile was involved.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">June 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">A new engine under the table</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The game now runs on PostgreSQL. The shared table, every journal, and each session's state are stored as rich, nested objects, and PostgreSQL works with that kind of structured data natively, so the game saves and restores a session more quickly and holds it more reliably. Nothing changes in how you play; the engine just rests on sturdier ground.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">June 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">A table to play on</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The cards and map tiles now sit on a shared table. Everything is shuffled into uneven, face-down piles, each showing its suit on the back and the tiles on their wooden backs. Pick the top of a pile and it turns face up for the whole room to see, then place it on the table wherever it belongs. An organizer can choose how many Countdown cards are in play and reshuffle the deck during a session, with everyone asked to agree before it happens.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">June 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">One catalogue, drawn once</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">Every card and tile is now drawn from a single shared definition, so the catalogue on this site, your dashboard, and the live game table all show exactly the same components. Each one scales cleanly to whatever size it needs while keeping its true proportions: a card stays a poker card, a tile stays a post-it square, and the art and text shrink and grow together.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Cards and map tiles, online</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The full deck and the modular map now have a live catalogue you can browse on the site: every card sorted by suit, and every map tile, including the blank tiles you fill in yourself. Each set comes from the game itself, so the website always shows what is actually in play. The artwork is delivered at the right size for each screen, with a high-resolution version kept for close-ups, so pages stay light without losing detail. See the <a href="components-cards.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">cards</a> and the <a href="components-tiles.html" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">map tiles</a>.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Researchers, invitations, and scheduled rooms</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">Research rooms grow up. The person who creates one is its researcher, and they can name other people in the room as researchers too; everyone sees a small tag next to the names so it is clear who is who. A researcher can configure a short set of optional questions (for example an age range, gender identity in your own words, or a country), which you see when you join and can skip; once anyone has answered, the questions are locked so they cannot change underneath you. Joining a research room now names its researchers up front and asks you to join only if you know and trust them. Room creators can also invite people by email, and open a room on a schedule so it stays closed until a chosen time.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Research rooms and open play</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">When you create a room you now choose whether it is for research or for open play. Joining a research room shows a short, plain-language screen explaining that the content you create there may be quoted, always anonymised, in the project's research, and joining is how you agree to that. Open play rooms stay private to the people in them. The choice is shown clearly on the room and on your dashboard.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Policy versions, recorded consent</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">Terms of Service and Privacy Policy now show their version and effective date at the top. When we update them in a way that changes what you agreed to, the next time you sign in you'll see a short re-acceptance screen with links to the updated text. Each acceptance is recorded against your account, so the record of what you agreed to, and when, stays with you.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Live multiplayer presence</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">The "online" badge next to each room on your dashboard now updates in real time as players come and go, no page refresh needed. The lobby chips and the in-room presence pill also got a tighter visual pass with a "you" marker so it is clear which traveller is yours.</p>
-                        </li>
-                        <li class="border-l-2 border-gray-700/60 pl-5">
-                            <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                            <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Right to forget your account</h3>
-                            <p class="text-sm text-gray-400 leading-relaxed">A new Danger zone on your profile lets you delete your account yourself, with a 30-day grace window so you can change your mind. Four reminder emails arrive over the month, each with a one-click cancel link, plus a confirmation when the deletion completes. If you created rooms where other players have written journals, the action is blocked until you handle those rooms first, so collaborators don't lose work without notice. Available in English, French, and Spanish.</p>
-                        </li>
-                    </ol>
-                    <details class="recent-more">
-                        <summary>
-                            <span>Earlier updates</span>
-                            <span class="recent-more-icon" aria-hidden="true">+</span>
-                        </summary>
-                        <ol class="space-y-6 list-none p-0 m-0">
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Privacy audit pass</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">Stopped logging usernames at signup, removed an unused third-party analytics entry from the Content Security Policy, and verified the live deployment matches the privacy policy. Behind-the-scenes work.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Security and reliability audit</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">Closed several account-enumeration and brute-force vectors, made email verification and password reset race-safe, and cut admin-page query times via new indexes and query rewrites. Mostly behind-the-scenes work.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Password reset works</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">The "forgot password?" email now lands on a working form. Set a new password and sign back in.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">May 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Brand-aligned visual refresh</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">The videogame UI now follows the canonical palette (gray-900 base, yellow-400 accent), self-hosts Inter and Italianno, and uses script titles on atmospheric page headers. High-contrast checkboxes and toggles, with green and red reserved for semantic states.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">April 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Multiplayer presence</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">Lobby, JOURNEY view, and dashboard now show who is in the room and who is currently playing.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">April 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Journal log redesign</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">Per-entry name, compact edit affordance, sketch preview thumbnails on each row.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">February 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Play-view layout overhaul</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">Site navigation moved into a hamburger inside the journal panel. The canvas now reaches the top of the viewport. The journal panel can be hidden entirely or floated as an overlay.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">February 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Phone-size advisory</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">First-time-per-session modal warns phone users that the game is best on desktop or tablet. Full mobile responsiveness is on the roadmap.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">February 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">mtime-based cache invalidation</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">Stylesheet and script tags carry an mtime-based version query so rebuilds invalidate browser caches automatically.</p>
-                            </li>
-                            <li class="border-l-2 border-gray-700/60 pl-5">
-                                <p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">January 2026</p>
-                                <h3 class="text-base font-medium text-white tracking-tight mb-1.5">Development begins</h3>
-                                <p class="text-sm text-gray-400 leading-relaxed">First commits on the digital companion to the boardgame.</p>
-                            </li>
-                        </ol>
-                    </details>
                 </div>
             </div>
         </div>

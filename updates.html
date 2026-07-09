@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Milestones and progress across JOURNEYWAYS: the physical board game (design, playtests, version 1.0, awards) and the digital version in active development. One timeline, filterable by game. Master's research at UBC GRSJ.">
+    <meta name="keywords" content="JOURNEYWAYS, updates, milestones, timeline, development log, playtests, awards, board game, digital game, UBC GRSJ research">
+    <meta name="author" content="Adri M. (theagitist) / UBC GRSJ">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.journeyways.ca/updates.html">
+    <meta property="og:title" content="JOURNEYWAYS | Updates">
+    <meta property="og:description" content="One filterable timeline of milestones across JOURNEYWAYS: the physical board game and the digital version in active development.">
+    <meta property="og:image" content="https://www.journeyways.ca/img/og-card.webp">
+    <meta property="og:site_name" content="JOURNEYWAYS">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://www.journeyways.ca/updates.html">
+    <meta name="twitter:title" content="JOURNEYWAYS | Updates">
+    <meta name="twitter:description" content="One filterable timeline of milestones across JOURNEYWAYS: the physical board game and the digital version in active development.">
+    <meta name="twitter:image" content="https://www.journeyways.ca/img/og-card.webp">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.journeyways.ca/updates.html">
+
+    <title>JOURNEYWAYS | Updates</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
+    <link rel="shortcut icon" href="img/favicon.png">
+    <link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="css/tailwind.css?v=25">
+    <link rel="stylesheet" href="css/styles.css?v=31">
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "JOURNEYWAYS | Updates",
+            "description": "Milestones and progress across JOURNEYWAYS: the physical board game (design, playtests, version 1.0, awards) and the digital version in active development.",
+            "url": "https://www.journeyways.ca/updates.html",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "JOURNEYWAYS",
+                "url": "https://www.journeyways.ca/"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "Adri M.",
+                "url": "https://www.journeyways.ca/about.html"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "UBC Institute for Gender, Race, Sexuality and Social Justice",
+                "url": "https://grsj.arts.ubc.ca/"
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-800 text-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-black bg-opacity-50 backdrop-blur-sm z-50" aria-label="Main navigation">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-8">
+                    <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors" aria-label="Homepage">Homepage</a>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="boardgame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                        <a href="videogame.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                        <a href="updates.html" class="text-yellow-400" aria-label="Project updates and milestones for the board game and digital game">Updates</a>
+                        <a href="design.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
+                        <a href="components.html" class="hover:text-yellow-400 transition-colors" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
+                        <a href="photos.html" class="hover:text-yellow-400 transition-colors" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
+                        <a href="about.html" class="hover:text-yellow-400 transition-colors" aria-label="About the researcher and project background">About</a>
+                    </div>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden text-yellow-400 hover:text-yellow-300 focus:outline-none" aria-label="Open or close main menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4" role="navigation" aria-label="Main menu">
+                <div class="flex flex-col space-y-3">
+                    <a href="index.html" class="font-bold hover:text-yellow-400 transition-colors py-2" aria-label="Homepage">Homepage</a>
+                    <a href="boardgame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS board game rules and how to play">Board Game</a>
+                    <a href="videogame.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS digital game development">Video Game</a>
+                    <a href="updates.html" class="text-yellow-400 py-2" aria-label="Project updates and milestones for the board game and digital game">Updates</a>
+                    <a href="design.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS design philosophy">Design</a>
+                    <a href="components.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Browse the JOURNEYWAYS cards and map tiles">Components</a>
+                    <a href="photos.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="Go to JOURNEYWAYS research gallery and media">Photos</a>
+                    <a href="about.html" class="hover:text-yellow-400 transition-colors py-2" aria-label="About the researcher and project background">About</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- ===== Hero: typographic title block ===== -->
+    <section class="pt-24 md:pt-32 pb-12 md:pb-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-3xl">
+                <div class="flex items-center gap-2 mb-6 text-xs uppercase tracking-[0.25em] text-yellow-400/80">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5" aria-hidden="true">
+                        <circle cx="12" cy="12" r="9"/>
+                        <path d="M12 7v5l3 2"/>
+                    </svg>
+                    <span>Milestones &middot; Progress</span>
+                </div>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-medium text-white tracking-tight leading-[1.05] mb-3 md:mb-4">The journey so far.</h1>
+                <p class="text-base md:text-lg italic font-light text-gray-300 mb-6 md:mb-8">Both sides of JOURNEYWAYS, on one timeline.</p>
+                <p class="text-base md:text-lg text-gray-400 leading-relaxed">
+                    Milestones across the physical board game and the digital version in active development. Each entry is marked by which it touches; some touch both. Filter by game, or jump to a month.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Timeline ===== -->
+    <section class="pt-12 md:pt-16 pb-16 md:pb-24 border-t border-gray-700/40" aria-labelledby="timeline-heading">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
+                <header class="col-span-12 md:col-span-3 flex items-center gap-3">
+                    <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
+                        <img src="img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                    </div>
+                    <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Timeline</span>
+                </header>
+                <div class="col-span-12 md:col-span-8 md:col-start-5">
+                    <h2 id="timeline-heading" class="sr-only">Timeline of updates</h2>
+                    <p class="text-gray-300 text-base md:text-lg leading-[1.75] mb-8">Filter by game, or jump to a month. Amber marks the board game, blue the digital version.</p>
+
+            <div id="updates-filter" class="jw-filter mb-4" role="group" aria-label="Filter updates by game">
+                <button type="button" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" data-filter="board" aria-pressed="false">Board game</button>
+                <button type="button" data-filter="video" aria-pressed="false">Video game</button>
+            </div>
+
+            <div id="updates-months" class="jw-tabs" role="tablist" aria-label="Jump to a month">
+                <button type="button" role="tab" data-month="all" aria-selected="true">All</button>
+                <button type="button" role="tab" data-month="2026-06" aria-selected="false">JUN '26</button>
+                <button type="button" role="tab" data-month="2026-05" aria-selected="false">MAY '26</button>
+                <button type="button" role="tab" data-month="2026-04" aria-selected="false">APR '26</button>
+                <button type="button" role="tab" data-month="2026-02" aria-selected="false">FEB '26</button>
+                <button type="button" role="tab" data-month="2026-01" aria-selected="false">JAN '26</button>
+                <button type="button" role="tab" data-month="2025-11" aria-selected="false">NOV '25</button>
+                <button type="button" role="tab" data-month="2025-10" aria-selected="false">OCT '25</button>
+                <button type="button" role="tab" data-month="2025-08" aria-selected="false">AUG '25</button>
+                <button type="button" role="tab" data-month="2025-07" aria-selected="false">JUL '25</button>
+            </div>
+
+
+            <div class="jw-tl">
+
+                <div class="jw-tl-month" data-month="2026-06">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">June 2026</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="both">
+                            <span class="jw-tag jw-tag--board">Board game</span><span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A guest lecture in GRSJ 306</h3>
+                            <p class="jw-card-text">JOURNEYWAYS was brought into UBC's GRSJ 306 as a guest lecture, sharing the game and its approach to identity, play, and pedagogy with students.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A table that shows its hands</h3>
+                            <p class="jw-card-text">The shared table now feels alive. When you pick a card or tile it rides with your cursor until you set it down, and everyone watches it move, named to whoever is holding it, since nothing here is secret. Tiles can rest on top of one another in neat little piles with a small count, and moving the top one reveals the tile beneath. Along the bottom of the screen a quiet line tells the room what is happening: who is placing a card, moving a tile, or writing in their journal (never what they wrote). Open it and the line unfolds into a history with terse timestamps.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A new engine under the table</h3>
+                            <p class="jw-card-text">The game now runs on PostgreSQL. The shared table, every journal, and each session's state are stored as rich, nested objects, and PostgreSQL works with that kind of structured data natively, so the game saves and restores a session more quickly and holds it more reliably. Nothing changes in how you play; the engine just rests on sturdier ground.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A table to play on</h3>
+                            <p class="jw-card-text">The cards and map tiles now sit on a shared table. Everything is shuffled into uneven, face-down piles, each showing its suit on the back and the tiles on their wooden backs. Pick the top of a pile and it turns face up for the whole room to see, then place it wherever it belongs. An organizer can choose how many Countdown cards are in play and reshuffle the deck during a session, with everyone asked to agree first.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">One catalogue, drawn once</h3>
+                            <p class="jw-card-text">Every card and tile is now drawn from a single shared definition, so the catalogue on this site, your dashboard, and the live game table all show exactly the same components. Each one scales cleanly to whatever size it needs while keeping its true proportions: a card stays a poker card, a tile stays a post-it square, and the art and text shrink and grow together.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2026-05">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">May 2026</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Cards and map tiles, online</h3>
+                            <p class="jw-card-text">The full deck and the modular map now have a live catalogue you can browse on the site: every card sorted by suit, and every map tile, including the blank tiles you fill in yourself. Each set comes from the game itself, so the website always shows what is actually in play. See the <a href="components-cards.html">cards</a> and the <a href="components-tiles.html">map tiles</a>.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Researchers, invitations, and scheduled rooms</h3>
+                            <p class="jw-card-text">Research rooms grow up. The person who creates one is its researcher, and can name others as researchers too, with a small tag beside each name. A researcher can configure a short set of optional questions (an age range, gender identity in your own words, a country) that you can skip; once anyone answers, they lock. Room creators can also invite people by email and open a room on a schedule.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Research rooms and open play</h3>
+                            <p class="jw-card-text">When you create a room you now choose whether it is for research or for open play. Joining a research room shows a short, plain-language screen explaining that the content you create there may be quoted, always anonymised, in the project's research, and joining is how you agree to that. Open play rooms stay private to the people in them.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Policy versions, recorded consent</h3>
+                            <p class="jw-card-text">Terms of Service and Privacy Policy now show their version and effective date at the top. When we update them in a way that changes what you agreed to, the next time you sign in you'll see a short re-acceptance screen with links to the updated text. Each acceptance is recorded against your account.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Live multiplayer presence</h3>
+                            <p class="jw-card-text">The "online" badge next to each room on your dashboard now updates in real time as players come and go, no page refresh needed. The lobby chips and the in-room presence pill also got a tighter visual pass with a "you" marker so it is clear which traveller is yours.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Right to forget your account</h3>
+                            <p class="jw-card-text">A new Danger zone on your profile lets you delete your account yourself, with a 30-day grace window so you can change your mind. Four reminder emails arrive over the month, each with a one-click cancel link. If you created rooms where other players have written journals, the action is blocked until you handle those rooms first, so collaborators don't lose work. Available in English, French, and Spanish.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Privacy audit pass</h3>
+                            <p class="jw-card-text">Stopped logging usernames at signup, removed an unused third-party analytics entry from the Content Security Policy, and verified the live deployment matches the privacy policy. Behind-the-scenes work.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Security and reliability audit</h3>
+                            <p class="jw-card-text">Closed several account-enumeration and brute-force vectors, made email verification and password reset race-safe, and cut admin-page query times via new indexes and query rewrites. Mostly behind-the-scenes work.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Password reset works</h3>
+                            <p class="jw-card-text">The "forgot password?" email now lands on a working form. Set a new password and sign back in.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Brand-aligned visual refresh</h3>
+                            <p class="jw-card-text">The videogame UI now follows the canonical palette (gray-900 base, yellow-400 accent), self-hosts Inter and Italianno, and uses script titles on atmospheric page headers. High-contrast checkboxes and toggles, with green and red reserved for semantic states.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2026-04">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">April 2026</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="both">
+                            <span class="jw-tag jw-tag--board">Board game</span><span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A master's scholarship</h3>
+                            <p class="jw-card-text">The research behind JOURNEYWAYS was awarded a Canada Graduate Scholarship at the master's level (CGS-M) from the Social Sciences and Humanities Research Council, a national merit-based award supporting the project through its next phase at UBC GRSJ.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Multiplayer presence</h3>
+                            <p class="jw-card-text">Lobby, JOURNEY view, and dashboard now show who is in the room and who is currently playing.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Journal log redesign</h3>
+                            <p class="jw-card-text">Per-entry name, compact edit affordance, sketch preview thumbnails on each row.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2026-02">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">February 2026</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="both">
+                            <span class="jw-tag jw-tag--board">Board game</span><span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A critical play fellowship</h3>
+                            <p class="jw-card-text">JOURNEYWAYS received the Critical Play Fellows Award, a UBC graduate award recognising the project's use of play as a mode of critical inquiry.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Play-view layout overhaul</h3>
+                            <p class="jw-card-text">Site navigation moved into a hamburger inside the journal panel. The canvas now reaches the top of the viewport. The journal panel can be hidden entirely or floated as an overlay.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Phone-size advisory</h3>
+                            <p class="jw-card-text">First-time-per-session modal warns phone users that the game is best on desktop or tablet. Full mobile responsiveness is on the roadmap.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">mtime-based cache invalidation</h3>
+                            <p class="jw-card-text">Stylesheet and script tags carry an mtime-based version query so rebuilds invalidate browser caches automatically.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2026-01">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">January 2026</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="both">
+                            <span class="jw-tag jw-tag--board">Board game</span><span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A guest lecture in EPSE 503</h3>
+                            <p class="jw-card-text">JOURNEYWAYS was brought into UBC's EPSE 503 as a guest lecture, sharing the game and its approach to identity, play, and learning with students.</p>
+                        </article>
+                        <article class="jw-card" data-type="video">
+                            <span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">Development begins</h3>
+                            <p class="jw-card-text">First commits on the digital companion to the boardgame.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2025-11">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">November 2025</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="board">
+                            <span class="jw-tag jw-tag--board">Board game</span>
+                            <h3 class="jw-card-title">Version 1.0, and a second playtest</h3>
+                            <p class="jw-card-text">The complete first edition came together: 35 map tiles, 81 cards across five colour-coded piles, the rulebook, and a write-in player booklet for each player. The game was played with the EDGES research group at UBC, an academic research-group session that fed straight back into the design.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2025-10">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">October 2025</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="board">
+                            <span class="jw-tag jw-tag--board">Board game</span>
+                            <h3 class="jw-card-title">First public playtest</h3>
+                            <p class="jw-card-text">JOURNEYWAYS took part in ProtoCON BC in Vancouver, a convention for playtesting game prototypes, and met its first table of players. Watching people pick cards, place tiles, and bend the loose rules to their own ends is where the game learns the most.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2025-08">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">August 2025</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="both">
+                            <span class="jw-tag jw-tag--board">Board game</span><span class="jw-tag jw-tag--video">Video game</span>
+                            <h3 class="jw-card-title">A Faculty of Arts award</h3>
+                            <p class="jw-card-text">The project received a Faculty of Arts Graduate Award from UBC, early institutional support for the research that became JOURNEYWAYS.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="jw-tl-month" data-month="2025-07">
+                    <div class="jw-tl-label"><span class="jw-dot"></span><span class="jw-when">July 2025</span><span class="jw-rule"></span></div>
+                    <div class="jw-cards">
+                        <article class="jw-card" data-type="board">
+                            <span class="jw-tag jw-tag--board">Board game</span>
+                            <h3 class="jw-card-title">Design begins</h3>
+                            <p class="jw-card-text">General design of JOURNEYWAYS began: a loose-ruled game about identity and becoming, and the first shape of its map tiles, its five colour-coded card piles, and the write-in player booklet.</p>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+
+                    <p class="text-sm text-gray-500 mt-8">See what is planned next on the <a href="videogame.html#roadmap" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">Video Game</a> page.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-sm text-gray-500 mb-2">
+                Master's research conducted by <a href="about.html" class="hover:text-yellow-400 transition-colors">Adri M.</a> at the UBC Institute for Gender, Race, Sexuality and Social Justice. <a href="references.html" class="text-yellow-400 hover:text-yellow-300 transition-colors">References</a>.
+            </p>
+            <p class="text-gray-400">JOURNEYWAYS. A game about becoming.</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex-1">
+                <p class="text-white text-sm md:text-base">
+                    We use cookies to enhance your browsing experience and analyze site traffic. By clicking "Accept", you consent to our use of cookies.
+                </p>
+            </div>
+            <button id="accept-cookies" class="bg-yellow-400 text-black px-5 py-2 rounded hover:bg-yellow-300 transition-colors font-medium whitespace-nowrap">
+                Accept
+            </button>
+        </div>
+    </div>
+
+    <script src="js/main.js?v=26" defer></script>
+    <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
+
+</body>
+</html>

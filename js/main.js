@@ -383,6 +383,74 @@ function initLightbox() {
     });
 }
 
+// --- Updates timeline: game filter + month tabs (updates.html only) ---
+function initUpdatesFilter() {
+    var typeBar = document.getElementById('updates-filter');
+    if (!typeBar) return;
+    var monthBar = document.getElementById('updates-months');
+    var months = Array.prototype.slice.call(document.querySelectorAll('.jw-tl-month'));
+    var typeButtons = typeBar.querySelectorAll('button');
+    var monthButtons = monthBar ? monthBar.querySelectorAll('button') : [];
+    var state = { type: 'all', month: 'all' };
+
+    function cardMatches(card, type) {
+        var t = card.getAttribute('data-type');
+        return type === 'all' || t === type || t === 'both';
+    }
+    function monthHasType(month, type) {
+        return Array.prototype.slice.call(month.querySelectorAll('.jw-card')).some(function (c) {
+            return cardMatches(c, type);
+        });
+    }
+    function monthByKey(key) {
+        return months.filter(function (m) { return m.getAttribute('data-month') === key; })[0];
+    }
+
+    function apply() {
+        // A month tab is available only if it has cards under the current game filter.
+        monthButtons.forEach(function (b) {
+            var key = b.getAttribute('data-month');
+            if (key === 'all') return;
+            var m = monthByKey(key);
+            b.disabled = !(m && monthHasType(m, state.type));
+        });
+        // If the selected month has nothing under the new filter, fall back to All.
+        if (state.month !== 'all') {
+            var m = monthByKey(state.month);
+            if (!m || !monthHasType(m, state.type)) state.month = 'all';
+        }
+        // Show/hide sections and cards.
+        months.forEach(function (month) {
+            var inMonth = state.month === 'all' || state.month === month.getAttribute('data-month');
+            var anyVisible = false;
+            month.querySelectorAll('.jw-card').forEach(function (card) {
+                var show = inMonth && cardMatches(card, state.type);
+                card.hidden = !show;
+                if (show) anyVisible = true;
+            });
+            month.hidden = !anyVisible;
+        });
+        typeButtons.forEach(function (b) {
+            b.setAttribute('aria-pressed', b.getAttribute('data-filter') === state.type ? 'true' : 'false');
+        });
+        monthButtons.forEach(function (b) {
+            b.setAttribute('aria-selected', b.getAttribute('data-month') === state.month ? 'true' : 'false');
+        });
+    }
+
+    typeButtons.forEach(function (b) {
+        b.addEventListener('click', function () { state.type = b.getAttribute('data-filter'); apply(); });
+    });
+    monthButtons.forEach(function (b) {
+        b.addEventListener('click', function () {
+            if (b.disabled) return;
+            state.month = b.getAttribute('data-month');
+            apply();
+        });
+    });
+    apply();
+}
+
 // --- Main init ---
 function init() {
     initMobileMenu();
@@ -391,6 +459,7 @@ function init() {
 
     initSmoothScroll();
     initLightbox();
+    initUpdatesFilter();
 
     if (getPageId() === 'contact') initContactForm();
 }

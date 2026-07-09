@@ -12,7 +12,8 @@ A static HTML site (6 visible pages + 2 hidden + 1 footer-only references page) 
 www.journeyways.ca/
 ├── index.html              Home (rulebook hero copy + 3 feature cards + boardgame snapshot)
 ├── boardgame.html          How to play; rules and components
-├── videogame.html          Digital version dev log (under development)
+├── videogame.html          Digital version overview + roadmap (under development). Its dev log moved to updates.html
+├── updates.html            Project-wide milestones: ONE filterable timeline (All / Board game / Video game), each <li data-type=board|video|both>. Filter logic in main.js initUpdatesFilter(); tag/filter CSS is .jw-* in styles.css. Board data from CV (~/apps/Bio-CV) + vault PLAYTESTING.md. In main nav after Video Game
 ├── photos.html             Research gallery + lightbox (6 entries)
 ├── about.html              About the researcher; bio, project narrative, inline anchors into design.html. "Get in touch" section currently commented out
 ├── design.html             Design philosophy (long-form essay; 9 principles, illustrated with card and tile artwork; anchored from about.html)
