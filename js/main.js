@@ -276,20 +276,20 @@ var gallerySets = {
         { src: 'img/play/play-room.webp', alt: 'Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right.', title: 'Inside a room', subtitle: 'The private journal beside the live room lobby.' }
     ],
     manual: [
-        { src: 'img/manual/p01.webp', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
-        { src: 'img/manual/p04.webp', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
-        { src: 'img/manual/p05.webp', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
-        { src: 'img/manual/p08.webp', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
-        { src: 'img/manual/p09.webp', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
-        { src: 'img/manual/p13.webp', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/manual/p01.webp?v=2', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
+        { src: 'img/manual/p04.webp?v=2', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p05.webp?v=2', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
+        { src: 'img/manual/p08.webp?v=2', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
+        { src: 'img/manual/p09.webp?v=2', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
+        { src: 'img/manual/p13.webp?v=2', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ],
     booklet: [
-        { src: 'img/booklet/p01.webp', alt: 'The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
-        { src: 'img/booklet/p02.webp', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
-        { src: 'img/booklet/p03.webp', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
-        { src: 'img/booklet/p06.webp', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
-        { src: 'img/booklet/p15.webp', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
-        { src: 'img/booklet/p16.webp', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/booklet/p01.webp?v=2', alt: 'The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
+        { src: 'img/booklet/p02.webp?v=2', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
+        { src: 'img/booklet/p03.webp?v=2', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
+        { src: 'img/booklet/p06.webp?v=2', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
+        { src: 'img/booklet/p15.webp?v=2', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
+        { src: 'img/booklet/p16.webp?v=2', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ]
 };
 var currentSet = 'photos';
