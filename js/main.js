@@ -274,6 +274,22 @@ var gallerySets = {
         { src: 'img/play/play-dashboard.webp', alt: 'The digital game dashboard: a Welcome back greeting, the five suit dots, and Active Journeys, Join a Journey, and Start a New Journey tabs over cards for the player’s rooms.', title: 'Your dashboard', subtitle: 'Your rooms and journeys, gathered in one place.' },
         { src: 'img/play/play-tiles.webp', alt: 'The digital map-tile gallery: a grid of square watercolour tiles, each with its name below, including Start, Mirror Lake, Mountain Peak, and Star Bridge.', title: 'The map tiles', subtitle: 'The modular map, including blank tiles to fill in yourself.' },
         { src: 'img/play/play-room.webp', alt: 'Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right.', title: 'Inside a room', subtitle: 'The private journal beside the live room lobby.' }
+    ],
+    manual: [
+        { src: 'img/manual/p01.webp', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
+        { src: 'img/manual/p03.webp', alt: 'The manual table of contents, listing Game Setup, Basic Gameplay, Writing your journal, Solo and Group Play, Advanced Concepts, and Tips.', title: 'Contents', subtitle: 'What is inside.' },
+        { src: 'img/manual/p04.webp', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p05.webp', alt: 'The Basic Gameplay page: the three phases of a turn and what each card colour means.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
+        { src: 'img/manual/p06.webp', alt: 'The Writing your journal page, with guidance and an example journal entry.', title: 'Your Journal', subtitle: 'Writing from the cards.' },
+        { src: 'img/manual/p10.webp', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+    ],
+    booklet: [
+        { src: 'img/booklet/p01.webp', alt: 'The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
+        { src: 'img/booklet/p02.webp', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
+        { src: 'img/booklet/p03.webp', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
+        { src: 'img/booklet/p06.webp', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
+        { src: 'img/booklet/p15.webp', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
+        { src: 'img/booklet/p16.webp', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ]
 };
 var currentSet = 'photos';
