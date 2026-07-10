@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | The Digital Game",
+        "description": "The JOURNEYWAYS digital version, in active development at v0.7.0-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Master's research at UBC GRSJ.",
+        "keywords": "JOURNEYWAYS, digital game, video game, identity exploration, collaborative storytelling, real-time multiplayer, narrative game, web game, UBC GRSJ research, trilingual game, privacy by design, alpha development",
+        "og_title": "JOURNEYWAYS | The Digital Game",
+        "og_description": "The JOURNEYWAYS digital version, in active development at v0.7.0-alpha. Real-time multiplayer, trilingual interface (EN/ES/FR), privacy by design, web-based with no install required."
+    },
+    "hero": {
+        "eyebrow": "Digital version · Alpha · In development",
+        "title": "The digital version.",
+        "tagline": "Same game. Web-native. Built in the open.",
+        "lead": "JOURNEYWAYS is being built as a digital game in parallel with the board game. Same design philosophy, same five card categories, same modular map, same private journal. Different medium, same commitment to identity exploration and collaborative narrative.",
+        "spec": {
+            "version_label": "Version",
+            "tagged_label": "Tagged",
+            "tagged_value": "June 2026",
+            "platform_label": "Platform",
+            "platform_value": "Web, no install",
+            "players_label": "Players",
+            "players_value": "1 to 6",
+            "languages_label": "Languages",
+            "source_label": "Source",
+            "note": "Repository is private during development. Open to the public at release."
+        }
+    },
+    "premise": {
+        "stamp": "Premise",
+        "sr": "Premise",
+        "p1": "The digital version exists to remove barriers, not to replace the table. Players can participate from anywhere; sessions span geographies; there is no camera support so the focus stays on words and stories. Solo and group play, real-time multiplayer, trilingual at launch.",
+        "p2": "The repository is private during development; access by request. It will be made public when the project is released."
+    },
+    "built": {
+        "stamp": "Built",
+        "sr": "Built so far",
+        "intro": "Shipped in the current alpha build.",
+        "cards": {
+            "multiplayer": {
+                "title": "Real-time multiplayer",
+                "body": "Lobby, dashboard, and play view show who is present. Collaborative canvas synchronization keeps everyone's view in step."
+            },
+            "cards": {
+                "title": "Five-color card system",
+                "body": "The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class=\"card-red\">Red</span> Encounters, <span class=\"card-green\">Green</span> Movement, <span class=\"card-blue\">Blue</span> Reflections, <span class=\"card-black\">Black</span> Countdown, <span class=\"card-purple\">Purple</span> Group actions. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse the decks</a>."
+            },
+            "table": {
+                "title": "The shared game table",
+                "body": "Every card is shuffled together and dealt into a handful of uneven, face-down piles around a shared table, each showing its suit on the back; the map tiles stack the same way on their wooden backs. Pick the top of a pile and it turns face up for the whole room to look at, then place it on the table wherever you like. A game's organizer can set how many Countdown cards are in play and reshuffle the deck mid-game, with every traveller asked to agree first."
+            },
+            "journal": {
+                "title": "Private journal with sketch preview",
+                "body": "Per-player journal: write entries, sketch with the canvas tool, browse previous entries with thumbnail previews."
+            },
+            "origins": {
+                "title": "Character origins as PDF",
+                "body": "Players can export their character creation page as a US Letter PDF for printing or archival."
+            },
+            "trilingual": {
+                "title": "Trilingual interface",
+                "body": "English, Spanish, and French at launch. User-created content stays in the language the user wrote it; nothing gets auto-translated."
+            },
+            "privacy": {
+                "title": "Privacy by design",
+                "body": "No camera support. Argon2id password hashing, Cloudflare Turnstile verification, journals scoped per session. All data hosted in Canada."
+            }
+        }
+    },
+    "screens": {
+        "stamp": "A look inside",
+        "sr": "A look inside",
+        "intro": "A few screens from the running alpha. Click any one to see it larger.",
+        "front": {
+            "alt": "The JOURNEYWAYS digital game home screen.",
+            "caption": "The front door"
+        },
+        "dashboard": {
+            "alt": "The digital game dashboard with the player's journeys.",
+            "caption": "Your dashboard"
+        },
+        "tiles": {
+            "alt": "The digital map-tile gallery.",
+            "caption": "The map tiles"
+        },
+        "room": {
+            "alt": "Inside a room: the private journal beside the room lobby.",
+            "caption": "Inside a room"
+        }
+    },
+    "recent": {
+        "stamp": "Recent",
+        "sr": "Recent milestones",
+        "body": "The full development log now lives on the <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Updates</a> page, alongside the board game's milestones."
+    },
+    "roadmap": {
+        "stamp": "Roadmap",
+        "sr": "Roadmap",
+        "intro": "Planned, not yet shipped.",
+        "items": {
+            "print": {
+                "title": "Printable cards, tiles, and booklets",
+                "body": "A single typesetting pipeline that turns the catalogue into print-ready files: the full card and map-tile sets, the player booklet, and the user manual, all generated from the same source as the screen versions so they never drift apart. Coming very soon."
+            },
+            "story_loop": {
+                "title": "Story loop",
+                "body": "The shared table is in place; next is the full journaling turn that builds on it: pick a card from a chosen suit, write a short entry from it, and share it with the room."
+            },
+            "chat": {
+                "title": "In-room chat",
+                "body": "Plain text chat inside your room, alongside the canvas and the journal. Voice and video stay outside the application; bring your own."
+            },
+            "export": {
+                "title": "Take your stories with you",
+                "body": "Export your character data, narrative entries, and reflections in a portable format you can keep, even after the session ends."
+            },
+            "mobile": {
+                "title": "Mobile responsiveness",
+                "body": "Phones are advisory for now. Full small-screen support is planned."
+            },
+            "docs": {
+                "title": "Open documentation",
+                "body": "The full project, in plain technical writing, visible on the site: security, privacy, data governance, infrastructure. For anyone who wants to look under the hood."
+            },
+            "beta": {
+                "title": "Quiet beta, then larger sessions",
+                "body": "First closed beta with a small group, then larger play sessions. No launch campaign; updates here as they happen."
+            },
+            "hybrid": {
+                "title": "Hybrid play (longer-term)",
+                "body": "A mixed-medium variant that combines physical components, like the player booklet, with digital ones, like the board map."
+            }
+        }
+    }
+}

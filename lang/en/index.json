@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Home",
+        "description": "JOURNEYWAYS is a master's research project at UBC GRSJ. A board game and a digital game in development, used as research instruments to study how people self-identify when given a narrative-driven, safe, collaborative play space.",
+        "keywords": "JOURNEYWAYS, board game, identity exploration, collaborative storytelling, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, self-discovery game, narrative game, character development, solo board game, group board game",
+        "og_title": "JOURNEYWAYS | Home",
+        "og_description": "JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. A secular, gender-neutral tool for forced migrants and gender-diverse individuals to explore selfhood through play."
+    },
+    "hero": {
+        "eyebrow": "A research project · UBC GRSJ",
+        "tagline": "A game about becoming.",
+        "lead": "You don't play to win; you play to unfold.<br/>You choose, and you uncover.",
+        "body": "Explore selfhood not with labels, but with stories, memory, and meaning. Whether solo or as part of a group, each session reveals a story made only by your presence.",
+        "design_link": "Design philosophy",
+        "image_alt": "Watercolor of two profiles facing each other; warm tones on the left, cool tones on the right, with a landscape of mountains and water unfolding in the negative space between them. The JOURNEYWAYS visual identity."
+    },
+    "principles": {
+        "stamp": "Principles",
+        "sr_heading": "Key features of JOURNEYWAYS",
+        "read": "Read",
+        "cards": [
+            {
+                "eyebrow": "Identity",
+                "title": "No Fixed Roles",
+                "body": "Discover your character through play, not predetermined archetypes. Identity is built at the table, not selected from a list."
+            },
+            {
+                "eyebrow": "Voice",
+                "title": "Collaborative Storytelling",
+                "body": "Co-create narratives that reveal deeper truths about identity. There is no single narrator; the story belongs to everyone."
+            },
+            {
+                "eyebrow": "Continuity",
+                "title": "Continuous Growth",
+                "body": "Each session builds upon the last, creating an evolving journey. What carries between sessions is the story, not a mechanic."
+            }
+        ]
+    },
+    "modals": {
+        "close": "Close",
+        "read_further": "Read further",
+        "0": {
+            "eyebrow": "Identity",
+            "title": "No Fixed Roles",
+            "body": "You don't pick from a list of classes, races, or archetypes. You arrive as yourself, or as someone you invent. Realistic, fantastic, simple, or layered are all valid starting points.",
+            "quote": "Identity is built through play, not selected from a list.",
+            "links": [
+                "Design philosophy: Identity is uncovered",
+                "About the project"
+            ]
+        },
+        "1": {
+            "eyebrow": "Voice",
+            "title": "Collaborative Storytelling",
+            "body": "A session unfolds as dialogue. Players tell their own stories and respond to others'. Cards prompt encounters, tiles place you on a shared map, and group cards invite the table to weave threads together.",
+            "quote": "There is no single narrator. The story belongs to everyone at the table.",
+            "links": [
+                "Design philosophy: A mirror in a cave",
+                "How to play"
+            ]
+        },
+        "2": {
+            "eyebrow": "Continuity",
+            "title": "Continuous Growth",
+            "body": "Sessions can stand alone, or continue. Players bring a character into a future session, open a chapter two, or pick up where they left off. There is no formal mechanic for continuity. What carries is the story.",
+            "quote": "Solo and group play share the same character. The digital version supports the same migration.",
+            "links": [
+                "Design philosophy: Expression in any modality",
+                "About the project"
+            ]
+        }
+    },
+    "gameplay": {
+        "stamp": "Gameplay",
+        "sr_heading": "Gameplay features",
+        "a_title": "Solo or group play",
+        "a_body": "Whether you're exploring alone or with friends, JOURNEYWAYS adapts to your preferred style of play. Solo sessions offer deep introspection, while group play creates rich, collaborative narratives.",
+        "b_title": "Meaningful choices",
+        "b_body": "Every decision in JOURNEYWAYS carries weight. Your choices don't just affect the game; they reveal aspects of yourself you might not have known existed."
+    },
+    "components": {
+        "caption": "Game components",
+        "enlarge": "Click to enlarge",
+        "image_alt": "JOURNEYWAYS board game components and setup for collaborative identity exploration: tiles, cards, tokens, and player booklets arranged for play."
+    },
+    "recent": {
+        "stamp": "Recent",
+        "aria": "Recent project news",
+        "items": [
+            {
+                "date": "April 2026",
+                "html": "Project awarded the Canada Graduate Research Scholarship: Master's (CGS-M)."
+            },
+            {
+                "date": "October 2025",
+                "html": "JOURNEYWAYS featured on <a href=\"https://www.protoconbc.ca/about\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">ProtoConBC</a>."
+            },
+            {
+                "date": "September 2025",
+                "html": "Adri M and JOURNEYWAYS part of <a href=\"https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">UBC's Critical Play Fellowship</a>."
+            },
+            {
+                "date": "In progress",
+                "html": "Videogame version <a href=\"/videogame.html\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">under development</a>."
+            }
+        ]
+    }
+}

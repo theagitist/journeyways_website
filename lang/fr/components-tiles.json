@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Tuiles",
+        "description": "Les tuiles de carte de JOURNEYWAYS : des lieux carrés dessinés à la main comme Lac Miroir, Grotte Chantante et Pont des Étoiles, ainsi que des tuiles vierges que chaque personne dessine. Choisissez une tuile pour la voir de près.",
+        "keywords": "tuiles de JOURNEYWAYS, tuiles de carte, tuiles de jeu de société, lieux, jeu d'identité, identité de genre",
+        "og_title": "JOURNEYWAYS | Tuiles",
+        "og_description": "Les tuiles de carte dessinées à la main de JOURNEYWAYS. Choisissez une tuile pour la voir de près."
+    },
+    "back": "&larr; Retour aux composants",
+    "title": "Les Tuiles",
+    "subtitle": "Les lieux de la carte. Leurs noms ne sont pas imprimés sur le plateau; choisissez une tuile pour la voir de près.",
+    "loading": "Disposition des tuiles..."
+}

@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Manual del juego",
+        "description": "El Manual del juego de JOURNEYWAYS: cómo preparar y jugar, en solitario o en grupo, las reglas flexibles, la forma de un turno y qué significa cada color de carta. Previsualiza las páginas o descarga el PDF.",
+        "keywords": "manual de JOURNEYWAYS, libro de reglas, reglas del juego, cómo jugar, juego de mesa, juego de identidad",
+        "og_title": "JOURNEYWAYS | Manual del juego",
+        "og_description": "Cómo preparar y jugar JOURNEYWAYS, en solitario o en grupo. Previsualiza las páginas o descarga el PDF."
+    },
+    "back": "Volver a Componentes",
+    "title": "El Manual del juego",
+    "intro": "Cómo preparar y jugar JOURNEYWAYS, en solitario o en grupo: las reglas flexibles, la forma de un turno y qué significa cada uno de los cinco colores de carta. Se incluye una copia con el juego.",
+    "pages_hint": "Trece páginas. Elige cualquier página para leerla de cerca.",
+    "download": {
+        "en": "Download · English ↓",
+        "es": "Descargar · Español ↓",
+        "fr": "Télécharger · Français ↓",
+        "note": "PDF, unos 2,2 MB. El mismo manual en inglés, español o francés."
+    },
+    "preview_heading": "Vista previa del manual",
+    "pages": {
+        "0": {
+            "alt": "La portada del Manual del juego: Reglas del juego de JOURNEYWAYS sobre un paisaje en acuarela.",
+            "caption": "Portada"
+        },
+        "1": {
+            "alt": "La página de Preparación del juego, con una nota al margen dibujada a mano.",
+            "caption": "Preparación del juego"
+        },
+        "2": {
+            "alt": "La página de Juego básico con la leyenda de colores de las cartas.",
+            "caption": "Juego básico"
+        },
+        "3": {
+            "alt": "Una entrada de diario de ejemplo con un volcán pintado.",
+            "caption": "Una entrada de diario"
+        },
+        "4": {
+            "alt": "La página de Juego en solitario y en grupo con meeples pintados.",
+            "caption": "Solo y grupo"
+        },
+        "5": {
+            "alt": "La contraportada del manual.",
+            "caption": "Contraportada"
+        }
+    }
+}

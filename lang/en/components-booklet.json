@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Player Booklet",
+        "description": "The JOURNEYWAYS Player Booklet: a write-in booklet for each player, with character-creation prompts, lined journal pages, and a character sheet. Preview the pages or download the PDF.",
+        "keywords": "JOURNEYWAYS player booklet, journal, character sheet, board game, identity game",
+        "og_title": "JOURNEYWAYS | Player Booklet",
+        "og_description": "A write-in booklet for each player: character prompts, journal pages, and a character sheet. Preview the pages or download the PDF."
+    },
+    "back": "← Back to Components",
+    "title": "The Player Booklet",
+    "lede": "A write-in booklet for each player: character-creation prompts, lined journal pages to fill as your character unfolds, and a character sheet at the front and the back. One per player per session; print it, fold it, make it yours.",
+    "count": "Sixteen pages. Pick any page to read it up close.",
+    "dl": {
+        "en": "Download · English ↓",
+        "es": "Descargar · Español ↓",
+        "fr": "Télécharger · Français ↓",
+        "note": "PDF, about 2.9 MB. Same booklet in English, Spanish, or French."
+    },
+    "preview_heading": "Booklet preview",
+    "pages": [
+        { "alt": "The Player Booklet cover.", "caption": "Cover" },
+        { "alt": "The intro and Quick Reference page.", "caption": "Quick Reference" },
+        { "alt": "The first Character Sheet.", "caption": "Character Sheet" },
+        { "alt": "A lined journal page.", "caption": "Journal Page" },
+        { "alt": "The second Character Sheet.", "caption": "Character Sheet" },
+        { "alt": "The booklet back cover.", "caption": "Back cover" }
+    ]
+}

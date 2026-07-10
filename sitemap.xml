@@ -1,56 +1,350 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://www.journeyways.ca/</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/boardgame.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/boardgame.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/boardgame.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/boardgame.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/boardgame.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/boardgame.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/boardgame.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/videogame.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/videogame.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/videogame.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/videogame.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/videogame.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/videogame.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/videogame.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/updates.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/updates.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/updates.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/updates.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/updates.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/updates.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/updates.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/photos.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/photos.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/photos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/photos.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/photos.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/photos.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/photos.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/about.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/about.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/about.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/about.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/about.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/about.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/design.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/design.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/design.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/design.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
+    <loc>https://www.journeyways.ca/es/design.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/design.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/design.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/design.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/design.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/design.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/design.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/design.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/design.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/components.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/components.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/components.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/components-cards.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/components-tiles.html</loc>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/components-manual.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-manual.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/components-manual.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-manual.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/components-manual.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-manual.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-manual.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/components-booklet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-booklet.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/components-booklet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-booklet.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/components-booklet.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-booklet.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-booklet.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.journeyways.ca/references.html</loc>
-    <lastmod>2026-07-09</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/references.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/references.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/references.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/references.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/references.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/references.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/references.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/references.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/references.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/references.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/references.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/references.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/references.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/references.html"/>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/presentation.html</loc>
-    <lastmod>2026-05-08</lastmod>
+    <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

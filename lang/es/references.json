@@ -1,0 +1,62 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Referencias",
+        "description": "La bibliografía detrás de JOURNEYWAYS: teoría de género, datos institucionales, investigación basada en las artes, etnografía crítica, análisis temático, estudios sobre el juego, cocreación y pedagogía. Las obras que dieron forma a un proyecto de investigación de maestría en el UBC Institute for Gender, Race, Sexuality and Social Justice.",
+        "keywords": "JOURNEYWAYS bibliografía, referencias, teoría de género, Butler, Serano, Stryker, Heyam, investigación basada en las artes, etnografía crítica, análisis temático, Braun Clarke, juegos serios, Tekinbaş Zimmerman, Sanders Stappers, Freire, investigación UBC GRSJ",
+        "og_title": "JOURNEYWAYS | Referencias",
+        "og_description": "La bibliografía detrás de un juego de mesa y un juego digital usados como instrumentos de investigación. Ocho agrupaciones temáticas, veintisiete obras."
+    },
+    "hero": {
+        "eyebrow": "Referencias · APA 7",
+        "title": "Lo que he estado leyendo.",
+        "tagline": "La bibliografía detrás del proyecto, agrupada por temas.",
+        "lead": "Estas obras dieron forma a cómo se enmarcó y se diseñó JOURNEYWAYS. Algunas son lo bastante antiguas como para ser fundacionales; otras son recientes y se sienten como conversaciones aún en curso. Esta es la estructura que sostiene la primera fase del proyecto.",
+        "links": {
+            "about": "Sobre el proyecto",
+            "design": "Filosofía de diseño",
+            "grsj": "UBC GRSJ"
+        }
+    },
+    "sections": {
+        "theory": {
+            "stamp": "Teoría",
+            "title": "Qué significa siquiera hablar de género.",
+            "subtitle": "Obras fundacionales dentro de las que se sitúa el proyecto."
+        },
+        "data": {
+            "stamp": "Datos",
+            "title": "Cómo las instituciones intentan contarnos (y fallan al hacerlo).",
+            "subtitle": "La identidad de género en instrumentos de encuesta y registros médicos electrónicos."
+        },
+        "arts_based": {
+            "stamp": "Basado en las artes",
+            "title": "Crear conocimiento creando cosas.",
+            "subtitle": "La investigación basada en las artes como metodología con valor propio."
+        },
+        "ethnography": {
+            "stamp": "Etnografía",
+            "title": "Investigar allí donde la gente importa.",
+            "subtitle": "La etnografía crítica y la ética de estar en la sala."
+        },
+        "analysis": {
+            "stamp": "Análisis",
+            "title": "Cómo escuchar una transcripción sin aplanarla.",
+            "subtitle": "El análisis temático reflexivo como una práctica de lectura honesta."
+        },
+        "games": {
+            "stamp": "Juegos",
+            "title": "El juego como herramienta seria de indagación.",
+            "subtitle": "Estudios sobre el juego, juegos serios y diseño iterativo."
+        },
+        "co_creation": {
+            "stamp": "Cocreación",
+            "title": "Diseñar con, no para.",
+            "subtitle": "El diseño participativo y los nuevos paisajes que lo rodean."
+        },
+        "pedagogy": {
+            "stamp": "Pedagogía",
+            "title": "Enseñar como práctica de liberación.",
+            "subtitle": "El diálogo, la autoetnografía y aprender en común."
+        }
+    }
+}

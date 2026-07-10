@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Le jeu vidéo",
+        "description": "La version numérique de JOURNEYWAYS, en développement actif à la v0.7.0-alpha. Multijoueur en temps réel, interface trilingue (anglais, espagnol, français), confidentialité dès la conception (sans caméra), sur le web et sans installation requise. Recherche de maîtrise à l'UBC GRSJ.",
+        "keywords": "JOURNEYWAYS, jeu vidéo, jeu numérique, exploration de l'identité, narration collaborative, multijoueur en temps réel, jeu narratif, jeu web, recherche UBC GRSJ, jeu trilingue, confidentialité dès la conception, développement alpha",
+        "og_title": "JOURNEYWAYS | Le jeu vidéo",
+        "og_description": "La version numérique de JOURNEYWAYS, en développement actif à la v0.7.0-alpha. Multijoueur en temps réel, interface trilingue (EN/ES/FR), confidentialité dès la conception, sur le web et sans installation."
+    },
+    "hero": {
+        "eyebrow": "Version numérique · Alpha · En développement",
+        "title": "La version numérique.",
+        "tagline": "Le même jeu. Natif du web. Construit en public.",
+        "lead": "JOURNEYWAYS est développé comme jeu vidéo en parallèle du jeu de société. La même philosophie de design, les mêmes cinq catégories de cartes, la même carte modulaire, le même journal privé. Un autre médium, le même engagement envers l'exploration de l'identité et la narration collaborative.",
+        "spec": {
+            "version_label": "Version",
+            "tagged_label": "Étiqueté",
+            "tagged_value": "Juin 2026",
+            "platform_label": "Plateforme",
+            "platform_value": "Web, sans installation",
+            "players_label": "Personnes",
+            "players_value": "1 à 6",
+            "languages_label": "Langues",
+            "source_label": "Code source",
+            "note": "Le dépôt est privé pendant le développement. Ouvert au public à la sortie."
+        }
+    },
+    "premise": {
+        "stamp": "Prémisse",
+        "sr": "Prémisse",
+        "p1": "La version numérique existe pour lever les obstacles, non pour remplacer la table. Chaque personne peut participer où qu'elle soit ; les séances traversent les géographies ; il n'y a pas de prise en charge de la caméra, afin que l'attention reste sur les mots et les histoires. Jeu en solo et en groupe, multijoueur en temps réel, trilingue dès le lancement.",
+        "p2": "Le dépôt est privé pendant le développement ; l'accès se fait sur demande. Il sera rendu public à la sortie du projet."
+    },
+    "built": {
+        "stamp": "Construit",
+        "sr": "Construit jusqu'ici",
+        "intro": "Livré dans la version alpha actuelle.",
+        "cards": {
+            "multiplayer": {
+                "title": "Multijoueur en temps réel",
+                "body": "Le hall, le tableau de bord et la vue de jeu montrent qui est présent. La synchronisation du canevas collaboratif garde la vue de chaque personne au même rythme."
+            },
+            "cards": {
+                "title": "Système de cartes à cinq couleurs",
+                "body": "Le même système de tuiles de carte et de piles de cartes que le jeu de société, recréé sous forme de canevas interactif. <span class=\"card-red\">Rouge</span> Rencontres, <span class=\"card-green\">Verte</span> Déplacement, <span class=\"card-blue\">Bleue</span> Réflexions, <span class=\"card-black\">Noire</span> Compte à rebours, <span class=\"card-purple\">Violette</span> Actions de groupe. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Parcourir les jeux de cartes</a>."
+            },
+            "table": {
+                "title": "La table de jeu partagée",
+                "body": "Toutes les cartes sont battues ensemble et distribuées en une poignée de piles inégales, face cachée, autour d'une table partagée, chacune montrant sa couleur au dos ; les tuiles de carte s'empilent de la même façon sur leur dos en bois. Choisissez le sommet d'une pile et il se retourne face visible pour que toute la salle le regarde, puis placez-le sur la table où vous voulez. La personne qui organise la partie peut fixer le nombre de cartes de Compte à rebours en jeu et rebattre le jeu en cours de partie, en demandant d'abord l'accord de chaque personne qui voyage."
+            },
+            "journal": {
+                "title": "Journal privé avec aperçu du croquis",
+                "body": "Un journal pour chaque personne : rédigez des entrées, dessinez avec l'outil de canevas, parcourez les entrées précédentes grâce à des aperçus miniatures."
+            },
+            "origins": {
+                "title": "Origines du personnage en PDF",
+                "body": "Chaque personne peut exporter sa page de création de personnage sous forme de PDF au format Lettre (US Letter) pour l'impression ou l'archivage."
+            },
+            "trilingual": {
+                "title": "Interface trilingue",
+                "body": "Anglais, espagnol et français dès le lancement. Le contenu créé par chaque personne reste dans la langue où elle l'a écrit ; rien n'est traduit automatiquement."
+            },
+            "privacy": {
+                "title": "Confidentialité dès la conception",
+                "body": "Aucune prise en charge de la caméra. Hachage des mots de passe avec Argon2id, vérification par Cloudflare Turnstile, journaux limités à chaque séance. Toutes les données hébergées au Canada."
+            }
+        }
+    },
+    "screens": {
+        "stamp": "Un aperçu de l'intérieur",
+        "sr": "Un aperçu de l'intérieur",
+        "intro": "Quelques écrans de l'alpha en fonctionnement. Cliquez sur l'un d'eux pour l'agrandir.",
+        "front": {
+            "alt": "L'écran d'accueil du jeu vidéo JOURNEYWAYS.",
+            "caption": "La porte d'entrée"
+        },
+        "dashboard": {
+            "alt": "Le tableau de bord du jeu vidéo avec les voyages de la personne qui joue.",
+            "caption": "Votre tableau de bord"
+        },
+        "tiles": {
+            "alt": "La galerie numérique de tuiles de carte.",
+            "caption": "Les tuiles de carte"
+        },
+        "room": {
+            "alt": "À l'intérieur d'une salle : le journal privé à côté du hall de la salle.",
+            "caption": "À l'intérieur d'une salle"
+        }
+    },
+    "recent": {
+        "stamp": "Récent",
+        "sr": "Jalons récents",
+        "body": "Le journal de développement complet vit désormais sur la page <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Actualités</a>, aux côtés des jalons du jeu de société."
+    },
+    "roadmap": {
+        "stamp": "Feuille de route",
+        "sr": "Feuille de route",
+        "intro": "Prévu, pas encore livré.",
+        "items": {
+            "print": {
+                "title": "Cartes, tuiles et livrets imprimables",
+                "body": "Une seule chaîne de composition typographique qui transforme le catalogue en fichiers prêts à imprimer : les jeux complets de cartes et de tuiles de carte, le livret du joueur ou de la joueuse et le manuel d'utilisation, tous générés à partir de la même source que les versions à l'écran, de sorte qu'ils ne divergent jamais. Très bientôt."
+            },
+            "story_loop": {
+                "title": "Boucle narrative",
+                "body": "La table partagée est en place ; vient ensuite le tour de journal complet qui s'appuie dessus : choisir une carte d'une couleur choisie, en rédiger une brève entrée et la partager avec la salle."
+            },
+            "chat": {
+                "title": "Clavardage dans la salle",
+                "body": "Un clavardage en texte simple dans votre salle, aux côtés du canevas et du journal. La voix et la vidéo restent en dehors de l'application ; utilisez vos propres outils."
+            },
+            "export": {
+                "title": "Emportez vos histoires avec vous",
+                "body": "Exportez les données de votre personnage, vos entrées narratives et vos réflexions dans un format portable que vous pouvez conserver, même après la fin de la séance."
+            },
+            "mobile": {
+                "title": "Adaptation aux mobiles",
+                "body": "Pour l'instant, les téléphones sont donnés à titre indicatif. La prise en charge complète des petits écrans est prévue."
+            },
+            "docs": {
+                "title": "Documentation ouverte",
+                "body": "Le projet complet, en langage technique clair, visible sur le site : sécurité, confidentialité, gouvernance des données, infrastructure. Pour qui veut regarder sous le capot."
+            },
+            "beta": {
+                "title": "Bêta discrète, puis séances plus larges",
+                "body": "D'abord une bêta fermée avec un petit groupe, puis des séances de jeu plus larges. Aucune campagne de lancement ; les nouvelles paraissent ici au fur et à mesure."
+            },
+            "hybrid": {
+                "title": "Jeu hybride (à plus long terme)",
+                "body": "Une variante à médium mixte qui combine des composants physiques, comme le livret du joueur ou de la joueuse, avec des composants numériques, comme la carte du plateau."
+            }
+        }
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Inicio",
+        "description": "JOURNEYWAYS es un proyecto de investigación de maestría en UBC GRSJ. Un juego de mesa y un juego digital en desarrollo, usados como instrumentos de investigación para estudiar cómo se autoidentifican las personas cuando se les da un espacio de juego narrativo, seguro y colaborativo.",
+        "keywords": "JOURNEYWAYS, juego de mesa, exploración de la identidad, narración colaborativa, juego decolonial, narrativa de migración forzada, narración de género diverso, investigación UBC GRSJ, arte transdisciplinario, juego de identidad transformador, juego de autodescubrimiento, juego narrativo, desarrollo de personaje, juego de mesa en solitario, juego de mesa en grupo",
+        "og_title": "JOURNEYWAYS | Inicio",
+        "og_description": "JOURNEYWAYS es un proyecto de investigación con raíces en UBC que explora la identidad y la agencia a través de la narración colaborativa. Una herramienta laica y neutral en cuanto al género para que personas migrantes forzadas y de género diverso exploren la identidad a través del juego."
+    },
+    "hero": {
+        "eyebrow": "Un proyecto de investigación · UBC GRSJ",
+        "tagline": "Un juego sobre el devenir.",
+        "lead": "No juegas para ganar; juegas para desplegarte.<br/>Eliges, y descubres.",
+        "body": "Explora la identidad no con etiquetas, sino con historias, memoria y significado. En solitario o en grupo, cada sesión revela una historia hecha solo por tu presencia.",
+        "design_link": "Filosofía de diseño",
+        "image_alt": "Acuarela de dos perfiles enfrentados; tonos cálidos a la izquierda, tonos fríos a la derecha, con un paisaje de montañas y agua que se despliega en el espacio negativo entre ellos. La identidad visual de JOURNEYWAYS."
+    },
+    "principles": {
+        "stamp": "Principios",
+        "sr_heading": "Características principales de JOURNEYWAYS",
+        "read": "Leer",
+        "cards": [
+            {
+                "eyebrow": "Identidad",
+                "title": "Sin roles fijos",
+                "body": "Descubre tu personaje a través del juego, no con arquetipos predeterminados. La identidad se construye en la mesa, no se elige de una lista."
+            },
+            {
+                "eyebrow": "Voz",
+                "title": "Narración colaborativa",
+                "body": "Co-crea narrativas que revelan verdades más profundas sobre la identidad. No hay una sola voz narradora; la historia pertenece a todo el mundo."
+            },
+            {
+                "eyebrow": "Continuidad",
+                "title": "Crecimiento continuo",
+                "body": "Cada sesión se apoya en la anterior y crea un viaje en evolución. Lo que pasa de una sesión a otra es la historia, no una mecánica."
+            }
+        ]
+    },
+    "modals": {
+        "close": "Cerrar",
+        "read_further": "Seguir leyendo",
+        "0": {
+            "eyebrow": "Identidad",
+            "title": "Sin roles fijos",
+            "body": "No eliges de una lista de clases, razas o arquetipos. Llegas como tú, o como alguien que inventas. Realista, fantástico, simple o con muchas capas: todos son puntos de partida válidos.",
+            "quote": "La identidad se construye jugando, no se elige de una lista.",
+            "links": [
+                "Filosofía de diseño: la identidad se descubre",
+                "Acerca del proyecto"
+            ]
+        },
+        "1": {
+            "eyebrow": "Voz",
+            "title": "Narración colaborativa",
+            "body": "Una sesión se despliega como diálogo. Cada persona cuenta su propia historia y responde a las demás. Las cartas proponen encuentros, las fichas te sitúan en un mapa compartido y las cartas de grupo invitan a la mesa a entrelazar hilos.",
+            "quote": "No hay una sola voz narradora. La historia pertenece a todo el mundo en la mesa.",
+            "links": [
+                "Filosofía de diseño: un espejo en una cueva",
+                "Cómo jugar"
+            ]
+        },
+        "2": {
+            "eyebrow": "Continuidad",
+            "title": "Crecimiento continuo",
+            "body": "Las sesiones pueden ser independientes o continuar. Puedes llevar un personaje a una sesión futura, abrir un capítulo dos o retomar donde lo dejaste. No hay una mecánica formal de continuidad. Lo que permanece es la historia.",
+            "quote": "El juego en solitario y en grupo comparten el mismo personaje. La versión digital admite la misma migración.",
+            "links": [
+                "Filosofía de diseño: expresión en cualquier modalidad",
+                "Acerca del proyecto"
+            ]
+        }
+    },
+    "gameplay": {
+        "stamp": "Juego",
+        "sr_heading": "Características de juego",
+        "a_title": "Juego en solitario o en grupo",
+        "a_body": "Ya explores en solitario o con amistades, JOURNEYWAYS se adapta a tu estilo de juego preferido. Las sesiones en solitario ofrecen una introspección profunda, mientras que el juego en grupo crea narrativas ricas y colaborativas.",
+        "b_title": "Decisiones con sentido",
+        "b_body": "Cada decisión en JOURNEYWAYS tiene peso. Tus elecciones no solo afectan al juego; revelan aspectos de ti que quizá no sabías que existían."
+    },
+    "components": {
+        "caption": "Componentes del juego",
+        "enlarge": "Haz clic para ampliar",
+        "image_alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: fichas, cartas, piezas y cuadernos de jugador dispuestos para jugar."
+    },
+    "recent": {
+        "stamp": "Novedades",
+        "aria": "Novedades recientes del proyecto",
+        "items": [
+            {
+                "date": "Abril 2026",
+                "html": "El proyecto recibió la Beca de Investigación de Posgrado de Canadá: Maestría (CGS-M)."
+            },
+            {
+                "date": "Octubre 2025",
+                "html": "JOURNEYWAYS presentado en <a href=\"https://www.protoconbc.ca/about\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">ProtoConBC</a>."
+            },
+            {
+                "date": "Septiembre 2025",
+                "html": "Adri M y JOURNEYWAYS forman parte de la <a href=\"https://pop-culture.arts.ubc.ca/sebastian-saldarriaga-2/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Critical Play Fellowship de UBC</a>."
+            },
+            {
+                "date": "En curso",
+                "html": "Versión de videojuego <a href=\"/videogame.html\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">en desarrollo</a>."
+            }
+        ]
+    }
+}

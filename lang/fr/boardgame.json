@@ -1,0 +1,266 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Le jeu de société",
+        "description": "JOURNEYWAYS est un projet de recherche ancré à UBC qui explore l'identité et l'agentivité à travers le récit collaboratif. Apprenez à jouer au jeu de société : règles, mise en place, jeu en solo et en groupe pour une exploration de soi laïque et neutre du point de vue du genre.",
+        "keywords": "JOURNEYWAYS, règles du jeu de société, comment jouer à JOURNEYWAYS, mise en place du jeu, récit collaboratif, jeu décolonial, récit de migration forcée, narration de genre divers, recherche UBC GRSJ, art transdisciplinaire, jeu transformateur d'identité, jeu d'exploration de l'identité, jeu de société en solo, jeu de société en groupe",
+        "og_title": "JOURNEYWAYS | Le jeu de société",
+        "og_description": "Comment jouer à JOURNEYWAYS : mise en place, tours et fin d'une séance. Cinq catégories de cartes, une carte qui se construit, sans gagner ni perdre."
+    },
+    "hero": {
+        "eyebrow": "Jeu de société · Manuel",
+        "cover_alt": "Couverture du manuel de JOURNEYWAYS : des bandes d'aquarelle en diagonale, aux tons pastel et saturés, derrière le logo JOURNEYWAYS, avec une petite silhouette de paysage montagneux.",
+        "title": "Comment jouer.",
+        "tagline": "Mise en place, tours et fin d'une séance.",
+        "intro": "JOURNEYWAYS ne consiste pas à gagner ou à perdre. Les règles ci-dessous sont un cadre de départ. Pliez-les, brisez-les, écrivez les vôtres. La seule règle fixe est que toutes les personnes autour de la table soient d'accord.",
+        "rulebook_label": "Manuel (PDF) :",
+        "booklet_label": "Cahier de jeu (PDF) :",
+        "langs": {
+            "en": "English",
+            "es": "Español",
+            "fr": "Français"
+        }
+    },
+    "decks": {
+        "stamp": "Paquets",
+        "sr_heading": "Paquets",
+        "intro": "Les cartes sont mélangées ensemble, puis réparties en trois piles ou plus. Chaque personne choisit dans quelle pile prendre une carte. Elle sait quel type de carte elle obtiendra, mais pas exactement laquelle.",
+        "chips": [
+            {
+                "alt": "Dos de carte en taches d'aquarelle rouges, jaunes et orange.",
+                "color": "Rouge",
+                "category": "Rencontres"
+            },
+            {
+                "alt": "Dos de carte en nuances de taches d'aquarelle vertes.",
+                "color": "Verte",
+                "category": "Mouvement"
+            },
+            {
+                "alt": "Dos de carte en nuances de taches d'aquarelle bleues.",
+                "color": "Bleue",
+                "category": "Réflexions"
+            },
+            {
+                "alt": "Dos de carte en nuances de taches d'aquarelle noires et grises.",
+                "color": "Noire",
+                "category": "Compte à rebours"
+            },
+            {
+                "alt": "Dos de carte en nuances de taches d'aquarelle violettes.",
+                "color": "Violette",
+                "category": "Actions de groupe"
+            }
+        ],
+        "browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Parcourez toutes les cartes dans la galerie des composants</a>, paquet par paquet."
+    },
+    "setup": {
+        "stamp": "Mise en place",
+        "sr_heading": "Mise en place",
+        "need_heading": "Ce qu'il vous faut",
+        "need": [
+            "Tuiles de carte (35).",
+            "Cartes de jeu (81).",
+            "Pions (1 par personne).",
+            "Cahier de jeu (1 par personne).",
+            "Quelques papiers autocollants.",
+            "Un dé pour choisir qui commence (1).",
+            "Des stylos et des crayons."
+        ],
+        "initial_heading": "Mise en place initiale",
+        "steps": [
+            "Mélangez toutes les cartes ensemble et placez-les face cachée en trois piles.",
+            "Choisissez une carte et placez-la à part, face visible. Ce sera la pile de Défausse.",
+            "Trouvez la tuile de Départ et mettez-la de côté. Mélangez toutes les autres et placez-les face cachée en trois piles.",
+            "Chaque personne prend un pion.",
+            "Utilisez le dé pour déterminer qui commence. Par exemple, le plus grand nombre commence.",
+            "Placez la tuile de Départ au centre de la table.",
+            "À tour de rôle, chaque personne choisit une tuile dans n'importe quelle pile et la place à côté d'une tuile déjà posée. Si c'est une tuile vierge, remettez-la dans la pile et choisissez-en une autre.",
+            "Toutes les personnes placent leurs pions sur la tuile de Départ."
+        ],
+        "figure_alt": "Photo en plongée d'une partie de JOURNEYWAYS prête à commencer : une grille de quatre par quatre de tuiles de carte au premier plan, le cahier de personnage et un étui de pions à gauche, et une pile de cartes de personnage derrière, sur une surface en bois.",
+        "figcaption": "Tuiles, cartes, pions."
+    },
+    "turn": {
+        "stamp": "Tour",
+        "sr_heading": "Tour",
+        "intro_html": "Chaque tour comporte trois phases : <span class=\"font-medium text-white\">Explorer</span>, <span class=\"font-medium text-white\">Choisir</span> et <span class=\"font-medium text-white\">Réfléchir</span>.",
+        "phases": [
+            {
+                "eyebrow": "Phase 1",
+                "title": "Explorer",
+                "body_html": "Deux options. Choisissez une tuile de carte et placez-la à côté d'une autre. Si vous choisissez une tuile vierge, vous devez la créer avant de la poser. Ou utilisez un papier autocollant pour dessiner une nouvelle tuile de carte (ce que vous voulez) et posez-la par-dessus une tuile existante où ne se trouve aucune personne. Après avoir posé votre tuile, vous pouvez vous déplacer d'une ou deux cases dans n'importe quelle direction."
+            },
+            {
+                "eyebrow": "Phase 2",
+                "title": "Choisir",
+                "body_html": "Choisissez une carte dans n'importe quelle pile, même la pile de Défausse. Les cartes <span class=\"card-green\">Vertes</span> sont le mouvement, les <span class=\"card-black\">Noires</span> le passage du temps, les <span class=\"card-blue\">Bleues</span> des citations, les <span class=\"card-red\">Rouges</span> des rencontres, et les <span class=\"card-purple\">Violettes</span> des événements de groupe."
+            },
+            {
+                "eyebrow": "Phase 3",
+                "title": "Réfléchir",
+                "body_html": "Si vous avez choisi une carte <span class=\"card-green\">Verte</span> ou <span class=\"card-purple\">Violette</span>, vous devez réaliser l'action qu'elle indique. Si vous avez choisi une carte <span class=\"card-blue\">Bleue</span> ou <span class=\"card-red\">Rouge</span>, tenez compte de ce qu'elle dit et écrivez une nouvelle entrée dans votre journal. Si vous avez choisi une carte <span class=\"card-black\">Noire</span>, mettez-la de côté. La partie se termine lorsque la cinquième carte <span class=\"card-black\">Noire</span> est choisie."
+            }
+        ],
+        "tiles_label_html": "<span class=\"tile-wood\">Tuiles de carte</span>, douze exemples",
+        "tiles": [
+            {
+                "alt": "Tuile de carte : Lac Miroir. Silhouette de lac dessinée à la main sur des taches d'aquarelle.",
+                "name": "Lac Miroir"
+            },
+            {
+                "alt": "Tuile de carte : Pont des Étoiles. Silhouette de pont en arc dessinée à la main sur des taches d'aquarelle.",
+                "name": "Pont des Étoiles"
+            },
+            {
+                "alt": "Tuile de carte : Grotte Chantante. Silhouette de grotte dessinée à la main sur des taches d'aquarelle.",
+                "name": "Grotte Chantante"
+            },
+            {
+                "alt": "Tuile de carte : Sommet de la Montagne. Silhouette de montagne dessinée à la main dans des bleus profonds avec des éclaboussures d'encre.",
+                "name": "Sommet de la Montagne"
+            },
+            {
+                "alt": "Tuile de carte : Maison d'Enfance. Une petite maison entourée d'éclaboussures d'aquarelle colorées.",
+                "name": "Maison d'Enfance"
+            },
+            {
+                "alt": "Tuile de carte : Salle d'Étude. Silhouette de pièce dessinée à la main sur des taches d'aquarelle.",
+                "name": "Salle d'Étude"
+            },
+            {
+                "alt": "Tuile de carte : Terre Volcanique. Un volcan en éruption dans des éclaboussures d'encre rouges, orange et noires ardentes.",
+                "name": "Terre Volcanique"
+            },
+            {
+                "alt": "Tuile de carte : Creux de l'Arbre. Un arbre nu avec des éclaboussures bleu profond et violettes sur ses branches.",
+                "name": "Creux de l'Arbre"
+            },
+            {
+                "alt": "Tuile de carte : Champ des Noms Enterrés. Un dessin au trait d'un champ craquelé et fissuré avec deux petits jeunes plants.",
+                "name": "Champ des Noms Enterrés"
+            },
+            {
+                "alt": "Tuile de carte : Sentier Brumeux. Des arbres nus dessinés à la main bordant un sentier tranquille entre deux coteaux.",
+                "name": "Sentier Brumeux"
+            },
+            {
+                "alt": "Tuile de carte : Chemin Nocturne. Sentier sombre dessiné à la main sous un ciel sans étoiles.",
+                "name": "Chemin Nocturne"
+            },
+            {
+                "alt": "Tuile de carte : Aire de Jeu Abandonnée. Une structure de jeux avec toboggan et échelle, avec des éclaboussures de peinture multicolores.",
+                "name": "Aire de Jeu Abandonnée"
+            }
+        ],
+        "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Voyez l'ensemble complet des tuiles de carte</a> dans la galerie des composants.",
+        "fronts_label": "Faces des cartes, neuf exemples",
+        "fronts": [
+            {
+                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'une boîte étiquetée « Pas encore ».",
+                "category": "Rencontre",
+                "color": "Rouge"
+            },
+            {
+                "alt": "Face de carte Mouvement : une illustration à l'aquarelle et à l'encre évoquant le retour vers un lieu familier.",
+                "category": "Mouvement",
+                "color": "Verte"
+            },
+            {
+                "alt": "Face de carte Action de groupe : une illustration à l'aquarelle et à l'encre de deux figures qui se rencontrent.",
+                "category": "Action de groupe",
+                "color": "Violette"
+            },
+            {
+                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'un miroir fêlé.",
+                "category": "Rencontre",
+                "color": "Rouge"
+            },
+            {
+                "alt": "Face de carte Action de groupe : une aquarelle de six pions colorés blottis les uns contre les autres.",
+                "category": "Action de groupe",
+                "color": "Violette"
+            },
+            {
+                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'une carte sans directions.",
+                "category": "Rencontre",
+                "color": "Rouge"
+            },
+            {
+                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'un souvenir qui pousse à l'état sauvage.",
+                "category": "Rencontre",
+                "color": "Rouge"
+            },
+            {
+                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre de deux figures tachetées se faisant face.",
+                "category": "Rencontre",
+                "color": "Rouge"
+            },
+            {
+                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'une figure dont les pensées se dispersent au vent.",
+                "category": "Rencontre",
+                "color": "Rouge"
+            }
+        ],
+        "fronts_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Parcourez toutes les cartes</a>, classées par paquet, dans la galerie des composants."
+    },
+    "ending": {
+        "stamp": "Fin",
+        "sr_heading": "Fin",
+        "p1_html": "La partie se termine lorsque la cinquième carte <span class=\"card-black\">Noire</span> est choisie. Chaque personne peut ajouter une dernière entrée à son journal, ou simplement le laisser tel quel. Si toutes les personnes sont d'accord, vous pouvez terminer après n'importe quel nombre de cartes <span class=\"card-black\">Noires</span>, ou les ignorer et utiliser un minuteur, ou vous arrêter dès qu'une histoire semble complète.",
+        "p2": "Ce n'est pas grave si votre histoire se termine brusquement. Vous pouvez la laisser ainsi, ou y revenir lors d'une autre séance.",
+        "p3": "Après la fin de la partie, chaque personne peut remplir sa fiche de personnage au dos du cahier de jeu. Elle peut ainsi voir comment son personnage s'est développé au cours de la partie : ce qui a changé et ce qui est resté pareil.",
+        "quote": "« Le jeu ne consiste pas à gagner ou à perdre. Il s'agit de découvrir, d'explorer et de devenir. »"
+    },
+    "journal": {
+        "stamp": "Journal",
+        "sr_heading": "Journal",
+        "p1": "Contrairement aux jeux traditionnels, votre personnage dans JOURNEYWAYS émerge par le jeu plutôt que d'être prédéterminé. Utilisez les cartes comme inspiration, non comme des définitions rigides ; l'objectif principal est de libérer votre imagination et d'écrire l'histoire que vous voulez raconter.",
+        "p2": "Les entrées de journal peuvent être aussi courtes ou longues, aussi sobres ou détaillées que vous le souhaitez. Vous pouvez vous inspirer de la tuile où se trouve votre pion et du texte de la carte, et laisser libre cours à votre créativité. Écrivez une entrée de journal. Gribouillez-la. Dessinez une bande dessinée. Écrivez un fragment. Laissez-la vierge. Tout cela compte."
+    },
+    "modes": {
+        "stamp": "Modes",
+        "sr_heading": "Modes de jeu",
+        "intro": "Deux façons de jouer. Choisissez l'une, ou passez de l'une à l'autre.",
+        "solo_heading": "Jeu en solo",
+        "solo": [
+            "Retirez les cartes <span class=\"card-purple\">Violettes</span> du jeu.",
+            "Concentrez-vous sur une réflexion personnelle profonde.",
+            "Prenez tout le temps qu'il vous faut.",
+            "Tenez un journal en abondance.",
+            "Créez votre propre rythme.",
+            "Revenez à des séances précédentes."
+        ],
+        "group_heading": "Jeu en groupe",
+        "group": [
+            "Partagez vos réflexions avec d'autres.",
+            "Apprenez de perspectives différentes.",
+            "Construisez des récits collectifs.",
+            "Soutenez la croissance de chaque personne.",
+            "Créez des souvenirs partagés."
+        ]
+    },
+    "open": {
+        "stamp": "Jeu ouvert",
+        "sr_heading": "Jeu ouvert",
+        "returning_heading": "Revenir à une séance",
+        "returning_body": "JOURNEYWAYS est conçu pour un jeu continu. Revenez à des séances précédentes, redécouvrez d'anciennes intuitions, voyez comment votre compréhension a évolué. Votre personnage et votre histoire continuent de se développer entre les séances.",
+        "makeyourown_heading": "Faites-le vôtre",
+        "makeyourown_body": "Ajoutez vos propres cartes d'histoire, tuiles, éléments de personnage, mécaniques. Les modèles sont ouverts. JOURNEYWAYS est un cadre d'exploration ; faites-le vôtre.",
+        "setting_heading": "Préparer la table",
+        "setting": [
+            "Réservez un temps dédié.",
+            "Réduisez les distractions.",
+            "Créez un environnement confortable.",
+            "Respectez la vie privée de chaque personne.",
+            "Pratiquez l'écoute active."
+        ],
+        "deeper_heading": "Aller plus loin",
+        "deeper": [
+            "Posez des questions ouvertes.",
+            "Accueillez l'incertitude.",
+            "Laissez place au silence et à la réflexion.",
+            "Cultivez la curiosité, pas le jugement.",
+            "Célébrez les petites découvertes."
+        ]
+    }
+}

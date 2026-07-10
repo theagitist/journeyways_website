@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Components",
+        "description": "The components of JOURNEYWAYS: the card decks, the hand-drawn map tiles, and (soon) the player booklet and user manual. Choose a component to explore it.",
+        "keywords": "JOURNEYWAYS components, card decks, map tiles, player booklet, user manual, identity game, board game, gender identity",
+        "og_title": "JOURNEYWAYS | Components",
+        "og_description": "The cards, the map tiles, and more. Choose a component to explore it."
+    },
+    "hero": {
+        "eyebrow": "Components",
+        "title": "The pieces of the game.",
+        "subtitle": "The cards, the map tiles, the player booklet, and the manual.",
+        "lead": "Choose a component to explore it up close."
+    },
+    "cards": [
+        {
+            "aria": "Browse the card decks",
+            "title": "Cards",
+            "desc": "Five decks of prompts and quotes, Encounter, Movement, Reflection, Countdown, and Group. Pick a deck to deal it out.",
+            "go": "Browse the decks"
+        },
+        {
+            "aria": "Browse the map tiles",
+            "title": "Tiles",
+            "desc": "Hand-drawn square map locations, plus blank tiles you draw yourself. Pick a tile to see it up close.",
+            "go": "Browse the tiles"
+        },
+        {
+            "aria": "Explore the Player Booklet",
+            "title": "Player Booklet",
+            "desc": "A write-in booklet for each player: character-creation prompts, lined journal pages, and a character sheet. Preview it or download it to print.",
+            "go": "Open the booklet"
+        },
+        {
+            "aria": "Explore the Game Manual",
+            "title": "Game Manual",
+            "desc": "How to set up and play JOURNEYWAYS, solo or in a group: the loose rules, the turn, and what each card colour means. Preview it or download it to print.",
+            "go": "Open the manual"
+        }
+    ]
+}

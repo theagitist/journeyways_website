@@ -1,0 +1,39 @@
+{
+    "common": {
+        "nav": {
+            "homepage": "Accueil",
+            "boardgame": "Jeu de société",
+            "videogame": "Jeu vidéo",
+            "updates": "Actualités",
+            "design": "Design",
+            "components": "Composants",
+            "photos": "Photos",
+            "about": "À propos",
+            "aria": {
+                "homepage": "Accueil",
+                "boardgame": "Aller aux règles du jeu de société JOURNEYWAYS et comment jouer",
+                "videogame": "Aller au développement du jeu numérique JOURNEYWAYS",
+                "updates": "Actualités et jalons du projet pour le jeu de société et le jeu numérique",
+                "design": "Aller à la philosophie de design de JOURNEYWAYS",
+                "components": "Parcourir les cartes et les tuiles de carte de JOURNEYWAYS",
+                "photos": "Aller à la galerie de recherche et aux médias de JOURNEYWAYS",
+                "about": "À propos de la chercheuse et du contexte du projet"
+            }
+        },
+        "banner": {
+            "text": "Cette page est aussi disponible en français.",
+            "cta": "Voir en français",
+            "dismiss": "Fermer"
+        },
+        "footer": {
+            "research_by": "Recherche de maîtrise menée par",
+            "at_institute": "à l'UBC Institute for Gender, Race, Sexuality and Social Justice.",
+            "references": "Références",
+            "tagline": "Un jeu sur le devenir."
+        },
+        "cookie": {
+            "text": "Nous utilisons des cookies pour améliorer votre expérience de navigation et analyser le trafic du site. En cliquant sur « Accepter », vous consentez à notre utilisation des cookies.",
+            "accept": "Accepter"
+        }
+    }
+}

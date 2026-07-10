@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Galería de investigación",
+        "description": "JOURNEYWAYS es un proyecto de investigación con raíces en la UBC que explora la identidad y la agencia a través de la narración colaborativa. Galería de investigación y material: preparación del juego de mesa, componentes y el juego en acción.",
+        "keywords": "JOURNEYWAYS, galería de investigación, fotos del juego de mesa, componentes del juego, preparación del juego de mesa, juego decolonial, narrativa de migración forzada, narración de género diverso, investigación UBC GRSJ, arte transdisciplinario, juego transformador de identidad, exploración de la identidad, narración colaborativa",
+        "og_title": "JOURNEYWAYS | Galería de investigación",
+        "og_description": "Fotografías de las pruebas de juego de JOURNEYWAYS y de los componentes del juego, tomadas en ProtoConBC y en el grupo de investigación EDGES de la UBC."
+    },
+    "hero": {
+        "eyebrow": "Galería de investigación · Pruebas de juego",
+        "title": "Desde la mesa.",
+        "tagline": "Pruebas de juego, componentes y el juego en acción.",
+        "lead": "Fotografías de sesiones de JOURNEYWAYS y estudios de materiales. Tomadas en ProtoConBC (Vancouver, octubre de 2025) y durante el grupo de investigación EDGES de la UBC (noviembre de 2025), con los componentes preparados para fotografía de producto en el intermedio.",
+        "links": {
+            "design": "Filosofía de diseño",
+            "play": "Cómo jugar"
+        }
+    },
+    "play": {
+        "alt_players": "Quienes juegan a JOURNEYWAYS alrededor de una mesa larga durante una prueba de juego en ProtoConBC.",
+        "alt_journaling": "Una persona escribe en su diario durante una sesión de JOURNEYWAYS.",
+        "alt_table": "Vista de la mesa de una prueba de juego de JOURNEYWAYS: el grupo de investigación EDGES de la UBC jugando de forma colaborativa.",
+        "alt_board": "Estado del tablero de JOURNEYWAYS a mitad de sesión, vista cenital."
+    },
+    "hall": {
+        "stamp": "Sala",
+        "sr_heading": "Sala",
+        "intro": "ProtoConBC, Vancouver. Octubre de 2025. JOURNEYWAYS estuvo en la mesa 18 de la convención. Gente desconocida se puso a jugar por una hora o dos; algunas personas escribieron, otras dibujaron, otras mantuvieron el reglamento abierto a su lado.",
+        "table": {
+            "alt": "JOURNEYWAYS en ProtoConBC: una mesa con la hoja de Reglas del Juego de JOURNEYWAYS, cuadernos de juego, cartas de personaje y un cartel de ProtoConBC #18.",
+            "title": "Sobre la mesa",
+            "caption": "El puesto: reglamento, cuadernos de juego, el cartel de la mesa 18 y una persona que avanza en su primera sesión."
+        },
+        "hall": {
+            "alt": "Vista amplia de la sala de la convención ProtoConBC, con personas escribiendo en mesas largas y el cartel LOOKING FOR PLAYERS a la vista.",
+            "title": "En la sala",
+            "caption": "La sala de la convención a media tarde, con un cartel de «Looking for players» sobre la mesa y el ambiente en un murmullo bajo de escritura concentrada."
+        },
+        "pair": {
+            "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con las fichas de mapa en acuarela extendidas entre ambas.",
+            "title": "Dos personas",
+            "caption": "Dos personas desconocidas se volvieron compañía de juego por una hora. Cuadernos abiertos, cartas extendidas, el mapa tendido entre ambas."
+        },
+        "session": {
+            "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, fichas y diarios cubriendo la mesa.",
+            "title": "A mitad de sesión",
+            "caption": "Un ángulo más amplio de la misma sesión: varias personas escribiendo a la vez, la mesa cubierta de fichas, cartas de personaje y lápices."
+        }
+    },
+    "pieces": {
+        "stamp": "Piezas",
+        "sr_heading": "Piezas",
+        "intro": "Los componentes, fotografiados sin nadie jugando. Fichas, cartas, piezas, cuadernos. Dispuestos sobre una superficie de madera para leerse como una naturaleza muerta del vocabulario material del juego.",
+        "setup": {
+            "alt": "Preparación del juego de mesa JOURNEYWAYS: configuración inicial del tablero con fichas y componentes dispuestos para jugar.",
+            "title": "Preparación del juego de mesa",
+            "caption": "JOURNEYWAYS presente en ProtoConBC, octubre de 2025. Configuración inicial del tablero: fichas, cartas y espacio de juego listos para jugar en solitario o en grupo."
+        },
+        "components": {
+            "alt": "Componentes del juego de mesa JOURNEYWAYS: cartas, fichas, piezas y cuadernos de juego usados en el juego de exploración de la identidad.",
+            "title": "Componentes del juego de mesa",
+            "caption": "Cartas, fichas, piezas y cuadernos de juego dispuestos para jugar."
+        },
+        "enlarge_note": "Haz clic en cualquier imagen para ampliarla."
+    }
+}

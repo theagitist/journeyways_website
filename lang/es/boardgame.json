@@ -1,0 +1,266 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | El juego de mesa",
+        "description": "JOURNEYWAYS es un proyecto de investigación con raíces en UBC que explora la identidad y la agencia a través del relato colaborativo. Aprende a jugar al juego de mesa: reglas, preparación, juego en solitario y en grupo para una indagación de sí laica y neutral en cuanto al género.",
+        "keywords": "JOURNEYWAYS, reglas del juego de mesa, cómo jugar a JOURNEYWAYS, preparación del juego, relato colaborativo, juego decolonial, narrativa de migración forzada, narración de género diverso, investigación UBC GRSJ, arte transdisciplinario, juego transformador de identidad, juego de exploración de la identidad, juego de mesa en solitario, juego de mesa en grupo",
+        "og_title": "JOURNEYWAYS | El juego de mesa",
+        "og_description": "Cómo jugar a JOURNEYWAYS: preparación, turnos y cómo termina una sesión. Cinco categorías de cartas, un mapa que se construye, sin ganar ni perder."
+    },
+    "hero": {
+        "eyebrow": "Juego de mesa · Manual",
+        "cover_alt": "Portada del manual de JOURNEYWAYS: bandas de acuarela en tonos pastel y saturados en diagonal detrás del logotipo JOURNEYWAYS, con una pequeña silueta de paisaje montañoso.",
+        "title": "Cómo jugar.",
+        "tagline": "Preparación, turnos y cómo termina una sesión.",
+        "intro": "JOURNEYWAYS no trata de ganar ni de perder. Las reglas de abajo son un marco desde el que empezar. Dóblalas, rómpelas, escribe las tuyas. La única regla fija es que todas las personas en la mesa estén de acuerdo.",
+        "rulebook_label": "Manual (PDF):",
+        "booklet_label": "Cuaderno de juego (PDF):",
+        "langs": {
+            "en": "English",
+            "es": "Español",
+            "fr": "Français"
+        }
+    },
+    "decks": {
+        "stamp": "Mazos",
+        "sr_heading": "Mazos",
+        "intro": "Las cartas se barajan juntas y luego se reparten en tres o más pilas. Cada persona elige de qué pila tomar una carta. Sabe qué tipo de carta obtendrá, pero no exactamente cuál.",
+        "chips": [
+            {
+                "alt": "Reverso de carta en manchas de acuarela rojas, amarillas y naranjas.",
+                "color": "Roja",
+                "category": "Encuentros"
+            },
+            {
+                "alt": "Reverso de carta en tonos de manchas de acuarela verdes.",
+                "color": "Verde",
+                "category": "Movimiento"
+            },
+            {
+                "alt": "Reverso de carta en tonos de manchas de acuarela azules.",
+                "color": "Azul",
+                "category": "Reflexiones"
+            },
+            {
+                "alt": "Reverso de carta en tonos de manchas de acuarela negras y grises.",
+                "color": "Negra",
+                "category": "Cuenta atrás"
+            },
+            {
+                "alt": "Reverso de carta en tonos de manchas de acuarela moradas.",
+                "color": "Morada",
+                "category": "Acciones de grupo"
+            }
+        ],
+        "browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora todas las cartas en la galería de Componentes</a>, mazo por mazo."
+    },
+    "setup": {
+        "stamp": "Preparación",
+        "sr_heading": "Preparación",
+        "need_heading": "Qué necesitas",
+        "need": [
+            "Fichas de mapa (35).",
+            "Cartas de juego (81).",
+            "Peones (1 por persona).",
+            "Cuaderno de juego (1 por persona).",
+            "Algunas notas adhesivas.",
+            "Dado para elegir quién empieza (1).",
+            "Bolígrafos y lápices."
+        ],
+        "initial_heading": "Preparación inicial",
+        "steps": [
+            "Baraja todas las cartas juntas y colócalas boca abajo en tres pilas.",
+            "Elige una carta y colócala aparte boca arriba. Será la pila de Descarte.",
+            "Busca la ficha Inicial y ponla aparte. Baraja todas las demás y colócalas boca abajo en tres pilas.",
+            "Cada persona toma un peón.",
+            "Usa el dado para determinar quién empieza. Por ejemplo, el número más alto va primero.",
+            "Coloca la ficha Inicial en el centro de la mesa.",
+            "Por turnos, cada persona elige una ficha de cualquier pila y la coloca junto a otra ficha ya colocada. Si es una ficha en blanco, vuelve a ponerla en la pila y elige otra.",
+            "Todas las personas colocan sus peones en la ficha Inicial."
+        ],
+        "figure_alt": "Foto cenital de una partida de JOURNEYWAYS lista para empezar: una cuadrícula de cuatro por cuatro de fichas de mapa en primer plano, el cuaderno de personaje y un estuche de peones a la izquierda, y una pila de cartas de personaje detrás, sobre una superficie de madera.",
+        "figcaption": "Fichas, cartas, peones."
+    },
+    "turn": {
+        "stamp": "Turno",
+        "sr_heading": "Turno",
+        "intro_html": "Cada turno tiene tres fases: <span class=\"font-medium text-white\">Explorar</span>, <span class=\"font-medium text-white\">Elegir</span> y <span class=\"font-medium text-white\">Reflexionar</span>.",
+        "phases": [
+            {
+                "eyebrow": "Fase 1",
+                "title": "Explorar",
+                "body_html": "Dos opciones. Elige una ficha de mapa y colócala junto a otra. Si eliges una ficha en blanco, tienes que crearla antes de colocarla. O usa una nota adhesiva para dibujar una nueva ficha de mapa (lo que quieras) y colócala encima de una existente donde no haya ninguna persona. Después de colocar tu ficha, puedes moverte uno o dos espacios en cualquier dirección."
+            },
+            {
+                "eyebrow": "Fase 2",
+                "title": "Elegir",
+                "body_html": "Elige una carta de cualquier pila, incluso de la pila de Descarte. Las cartas <span class=\"card-green\">Verdes</span> son de movimiento, las <span class=\"card-black\">Negras</span> son paso del tiempo, las <span class=\"card-blue\">Azules</span> son citas, las <span class=\"card-red\">Rojas</span> son encuentros y las <span class=\"card-purple\">Moradas</span> son eventos de grupo."
+            },
+            {
+                "eyebrow": "Fase 3",
+                "title": "Reflexionar",
+                "body_html": "Si elegiste una carta <span class=\"card-green\">Verde</span> o <span class=\"card-purple\">Morada</span>, tienes que realizar la acción que indica. Si elegiste una carta <span class=\"card-blue\">Azul</span> o <span class=\"card-red\">Roja</span>, ten en cuenta lo que dice y escribe una nueva entrada en tu diario. Si elegiste una carta <span class=\"card-black\">Negra</span>, ponla aparte. La partida termina cuando se elige la quinta carta <span class=\"card-black\">Negra</span>."
+            }
+        ],
+        "tiles_label_html": "<span class=\"tile-wood\">Fichas de mapa</span>, doce ejemplos",
+        "tiles": [
+            {
+                "alt": "Ficha de mapa: Lago Espejo. Silueta de lago dibujada a mano sobre manchas de acuarela.",
+                "name": "Lago Espejo"
+            },
+            {
+                "alt": "Ficha de mapa: Puente de las Estrellas. Silueta de puente arqueado dibujada a mano sobre manchas de acuarela.",
+                "name": "Puente de las Estrellas"
+            },
+            {
+                "alt": "Ficha de mapa: Cueva Cantora. Silueta de cueva dibujada a mano sobre manchas de acuarela.",
+                "name": "Cueva Cantora"
+            },
+            {
+                "alt": "Ficha de mapa: Cima de la Montaña. Silueta de montaña dibujada a mano en azules profundos con salpicaduras de tinta.",
+                "name": "Cima de la Montaña"
+            },
+            {
+                "alt": "Ficha de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela.",
+                "name": "Casa de la Infancia"
+            },
+            {
+                "alt": "Ficha de mapa: Cuarto de Estudio. Silueta de habitación dibujada a mano sobre manchas de acuarela.",
+                "name": "Cuarto de Estudio"
+            },
+            {
+                "alt": "Ficha de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta rojas, naranjas y negras ardientes.",
+                "name": "Tierra Volcánica"
+            },
+            {
+                "alt": "Ficha de mapa: Hueco del Árbol. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas.",
+                "name": "Hueco del Árbol"
+            },
+            {
+                "alt": "Ficha de mapa: Campo de Nombres Enterrados. Un dibujo lineal de un campo agrietado y fisurado con dos pequeños retoños.",
+                "name": "Campo de Nombres Enterrados"
+            },
+            {
+                "alt": "Ficha de mapa: Sendero Brumoso. Árboles desnudos dibujados a mano que flanquean un sendero tranquilo entre dos laderas.",
+                "name": "Sendero Brumoso"
+            },
+            {
+                "alt": "Ficha de mapa: Camino Nocturno. Sendero oscuro dibujado a mano bajo un cielo sin estrellas.",
+                "name": "Camino Nocturno"
+            },
+            {
+                "alt": "Ficha de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolores.",
+                "name": "Parque Abandonado"
+            }
+        ],
+        "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Mira el conjunto completo de fichas de mapa</a> en la galería de Componentes.",
+        "fronts_label": "Anversos de las cartas, nueve ejemplos",
+        "fronts": [
+            {
+                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una caja etiquetada 'Todavía no'.",
+                "category": "Encuentro",
+                "color": "Roja"
+            },
+            {
+                "alt": "Anverso de carta de Movimiento: una ilustración en acuarela y tinta que evoca el regreso a un lugar familiar.",
+                "category": "Movimiento",
+                "color": "Verde"
+            },
+            {
+                "alt": "Anverso de carta de Acción de grupo: una ilustración en acuarela y tinta de dos figuras que se encuentran.",
+                "category": "Acción de grupo",
+                "color": "Morada"
+            },
+            {
+                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un espejo agrietado.",
+                "category": "Encuentro",
+                "color": "Roja"
+            },
+            {
+                "alt": "Anverso de carta de Acción de grupo: una acuarela de seis peones de colores apiñados.",
+                "category": "Acción de grupo",
+                "color": "Morada"
+            },
+            {
+                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un mapa sin direcciones.",
+                "category": "Encuentro",
+                "color": "Roja"
+            },
+            {
+                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un recuerdo que crece silvestre.",
+                "category": "Encuentro",
+                "color": "Roja"
+            },
+            {
+                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de dos figuras manchadas frente a frente.",
+                "category": "Encuentro",
+                "color": "Roja"
+            },
+            {
+                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una figura con pensamientos que se dispersan en el viento.",
+                "category": "Encuentro",
+                "color": "Roja"
+            }
+        ],
+        "fronts_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora todas las cartas</a>, ordenadas por mazo, en la galería de Componentes."
+    },
+    "ending": {
+        "stamp": "Final",
+        "sr_heading": "Final",
+        "p1_html": "La partida termina cuando se elige la quinta carta <span class=\"card-black\">Negra</span>. Cada persona puede añadir una entrada final a su diario, o simplemente dejarlo como está. Si todas las personas están de acuerdo, pueden terminar tras cualquier número de cartas <span class=\"card-black\">Negras</span>, o ignorarlas y usar un temporizador, o parar cuando una historia se sienta completa.",
+        "p2": "No pasa nada si tu historia termina de forma abrupta. Puedes dejarla así, o volver a ella en otra sesión.",
+        "p3": "Al terminar la partida, cada persona puede rellenar su hoja de personaje al final del cuaderno de juego. Así puede ver cómo se desarrolló su personaje durante la partida: qué cambió y qué permaneció igual.",
+        "quote": "“La partida no trata de ganar ni de perder. Trata de descubrir, explorar y devenir.”"
+    },
+    "journal": {
+        "stamp": "Diario",
+        "sr_heading": "Diario",
+        "p1": "A diferencia de los juegos tradicionales, tu personaje en JOURNEYWAYS surge a través del juego en lugar de estar predeterminado. Usa las cartas como inspiración, no como definiciones rígidas; el objetivo principal es que liberes tu imaginación y escribas la historia que quieres contar.",
+        "p2": "Las entradas del diario pueden ser tan cortas o largas, tan escuetas o detalladas como quieras. Puedes inspirarte en la ficha donde está tu peón y en el texto de la carta, y dar rienda suelta a tu creatividad. Escribe una entrada de diario. Garabatéala. Dibuja un cómic. Escribe un fragmento. Déjala en blanco. Todo eso cuenta."
+    },
+    "modes": {
+        "stamp": "Modos",
+        "sr_heading": "Modos de juego",
+        "intro": "Dos formas de jugar. Elige una, o alterna entre ellas.",
+        "solo_heading": "Juego en solitario",
+        "solo": [
+            "Retira las cartas <span class=\"card-purple\">Moradas</span> del juego.",
+            "Céntrate en una reflexión personal profunda.",
+            "Tómate todo el tiempo que necesites.",
+            "Usa el diario con generosidad.",
+            "Marca tu propio ritmo.",
+            "Vuelve a sesiones anteriores."
+        ],
+        "group_heading": "Juego en grupo",
+        "group": [
+            "Comparte reflexiones con otras personas.",
+            "Aprende de perspectivas distintas.",
+            "Construye narrativas colectivas.",
+            "Apoya el crecimiento de las demás personas.",
+            "Crea recuerdos compartidos."
+        ]
+    },
+    "open": {
+        "stamp": "Juego abierto",
+        "sr_heading": "Juego abierto",
+        "returning_heading": "Volver a una sesión",
+        "returning_body": "JOURNEYWAYS está pensado para el juego continuo. Vuelve a sesiones anteriores, revisita ideas pasadas, observa cómo ha evolucionado tu comprensión. Tu personaje y tu historia siguen desarrollándose entre sesiones.",
+        "makeyourown_heading": "Hazlo tuyo",
+        "makeyourown_body": "Añade tus propias cartas de historia, fichas, elementos de personaje, mecánicas. Las plantillas son abiertas. JOURNEYWAYS es un marco para la exploración; hazlo tuyo.",
+        "setting_heading": "Preparar la mesa",
+        "setting": [
+            "Reserva un tiempo dedicado.",
+            "Reduce las distracciones.",
+            "Crea un ambiente cómodo.",
+            "Respeta la privacidad de cada persona.",
+            "Practica la escucha activa."
+        ],
+        "deeper_heading": "Ir más a fondo",
+        "deeper": [
+            "Haz preguntas abiertas.",
+            "Abraza la incertidumbre.",
+            "Da espacio al silencio y a la reflexión.",
+            "Ten curiosidad, no juicio.",
+            "Celebra los pequeños descubrimientos."
+        ]
+    }
+}

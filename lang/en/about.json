@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | About the researcher",
+        "description": "JOURNEYWAYS is master's research by Adri M. at the UBC Institute for Gender, Race, Sexuality and Social Justice. A board game and digital game used as research instruments to study identity beyond predefined categories.",
+        "keywords": "JOURNEYWAYS, Adri M, UBC GRSJ, master's research, gender identity, narrative game, board game research, identity exploration, decolonial play, transdisciplinary art",
+        "og_title": "JOURNEYWAYS | About the researcher",
+        "og_description": "JOURNEYWAYS is master's research by Adri M. at UBC GRSJ. A board game and digital game used as research instruments to study identity beyond predefined categories."
+    },
+    "hero": {
+        "eyebrow": "About · UBC GRSJ research",
+        "title": "About the researcher",
+        "tagline": "The person and the program behind JOURNEYWAYS.",
+        "lead": "A master's research project at the UBC Institute for Gender, Race, Sexuality and Social Justice, exploring identity through narrative and collaborative play.",
+        "links": {
+            "design": "Design philosophy",
+            "references": "References",
+            "presentation": "Presentation",
+            "grsj": "UBC GRSJ"
+        },
+        "image_alt": "Stencil-style illustrated self-portrait of Adri M. on diagonal pastel bands of yellow, white, lavender, and charcoal, evoking the colors of the nonbinary pride flag."
+    },
+    "researcher": {
+        "stamp": "Researcher",
+        "byline": "Adri M. · they / them",
+        "bio_1": "Adri is a master's student at the UBC <a href=\"https://grsj.arts.ubc.ca/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Institute for Gender, Race, Sexuality and Social Justice</a> (GRSJ). JOURNEYWAYS is the current focus of their research: a board game and a digital game in development, used as research instruments to study how people self-identify when given a narrative-driven, safe, collaborative play space.",
+        "bio_2": "The project was awarded the Canada Graduate Research Scholarship: Master's (CGS-M) in April 2026, and was previously selected for UBC's Critical Play Fellowship in September 2025. Three playtests have been held so far, with the formal research phase opening through 2026."
+    },
+    "project": {
+        "stamp": "Project",
+        "sr_heading": "On the project",
+        "quote": "“Knowledge needs to be shared with the people who need it the most.”",
+        "p_1": "JOURNEYWAYS began as a videogame concept. Soon after, the design shifted to a physical board game, and eventually to both: physical presence should not be a limiting factor to participate, especially given the project's commitment to exploring as diverse a range of identities as possible, but the sensorial experience of physical game components and presence should be honoured as well.",
+        "p_2": "JOURNEYWAYS was first conceived as a research tool, an alternative to sterile semi-structured interviews and a way to offer people a safe space to talk and elaborate their identities. It is a game. The players are just playing. <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Everything is valid.</a> <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">There is no winning or losing.</a> These precepts together try to build an environment where players can feel they can lower their guard, where they are not being judged or categorized. They are just telling any story they want to tell, <a href=\"%3$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">in any way they want to tell it</a>.",
+        "p_3": "The whole project will be <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">released openly</a>: rules, components, mechanics, and digital code. Anyone wanting to create their own version will be free to do so and encouraged to share it back. The <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">project's bibliography</a> is published here too. No siloing in."
+    }
+}

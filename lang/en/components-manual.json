@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Game Manual",
+        "description": "The JOURNEYWAYS Game Manual: how to set up and play, solo or in a group, the loose rules, the shape of a turn, and what each card colour means. Preview the pages or download the PDF.",
+        "keywords": "JOURNEYWAYS manual, rulebook, game rules, how to play, board game, identity game",
+        "og_title": "JOURNEYWAYS | Game Manual",
+        "og_description": "How to set up and play JOURNEYWAYS, solo or in a group. Preview the pages or download the PDF."
+    },
+    "back": "Back to Components",
+    "title": "The Game Manual",
+    "intro": "How to set up and play JOURNEYWAYS, solo or in a group: the loose rules, the shape of a turn, and what each of the five card colours means. One copy is included with the game.",
+    "pages_hint": "Thirteen pages. Pick any page to read it up close.",
+    "download": {
+        "en": "Download · English ↓",
+        "es": "Descargar · Español ↓",
+        "fr": "Télécharger · Français ↓",
+        "note": "PDF, about 2.2 MB. Same manual in English, Spanish, or French."
+    },
+    "preview_heading": "Manual preview",
+    "pages": {
+        "0": {
+            "alt": "The Game Manual cover: JOURNEYWAYS Game Rules over a watercolour landscape.",
+            "caption": "Cover"
+        },
+        "1": {
+            "alt": "The Game Setup page, with a hand-drawn side note.",
+            "caption": "Game Setup"
+        },
+        "2": {
+            "alt": "The Basic Gameplay page with the card-colour legend.",
+            "caption": "Basic Gameplay"
+        },
+        "3": {
+            "alt": "A sample journal entry with a painted volcano.",
+            "caption": "A journal entry"
+        },
+        "4": {
+            "alt": "The Solo and Group Play page with painted meeples.",
+            "caption": "Solo & Group"
+        },
+        "5": {
+            "alt": "The manual back cover.",
+            "caption": "Back cover"
+        }
+    }
+}

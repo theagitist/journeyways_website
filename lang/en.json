@@ -1,0 +1,43 @@
+{
+    "common": {
+        "nav": {
+            "homepage": "Homepage",
+            "boardgame": "Board Game",
+            "videogame": "Video Game",
+            "updates": "Updates",
+            "design": "Design",
+            "components": "Components",
+            "photos": "Photos",
+            "about": "About",
+            "aria": {
+                "homepage": "Homepage",
+                "boardgame": "Go to JOURNEYWAYS board game rules and how to play",
+                "videogame": "Go to JOURNEYWAYS digital game development",
+                "updates": "Project updates and milestones for the board game and digital game",
+                "design": "Go to JOURNEYWAYS design philosophy",
+                "components": "Browse the JOURNEYWAYS cards and map tiles",
+                "photos": "Go to JOURNEYWAYS research gallery and media",
+                "about": "About the researcher and project background"
+            }
+        },
+        "banner": {
+            "text": "This page is also available in English.",
+            "cta": "View in English",
+            "dismiss": "Dismiss"
+        },
+        "footer": {
+            "research_by": "Master's research conducted by",
+            "at_institute": "at the UBC Institute for Gender, Race, Sexuality and Social Justice.",
+            "references": "References",
+            "tagline": "A game about becoming."
+        },
+        "cookie": {
+            "text": "We use cookies to enhance your browsing experience and analyze site traffic. By clicking \"Accept\", you consent to our use of cookies.",
+            "accept": "Accept"
+        },
+        "notfound": {
+            "body": "This page could not be found.",
+            "home": "Back to home"
+        }
+    }
+}

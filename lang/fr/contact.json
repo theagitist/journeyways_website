@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Contact",
+        "description": "Contactez JOURNEYWAYS : un jeu de plateau et un jeu numérique sur l'identité, à visée de recherche. Écrivez en tant que personne qui joue, chercheuse, enseignante, thérapeute, qui organise dans la communauté ou qui souhaite créer une variante.",
+        "keywords": "JOURNEYWAYS contact, Adri M, UBC GRSJ, projet de recherche, contact jeu de plateau, questions jeu narratif, création de variantes",
+        "og_title": "JOURNEYWAYS | Contact",
+        "og_description": "Écrivez au sujet de JOURNEYWAYS en tant que personne qui joue, chercheuse, enseignante, thérapeute, qui organise dans la communauté ou qui souhaite créer une variante.",
+        "robots": "noindex, follow"
+    },
+    "hero": {
+        "title": "Contact",
+        "intro": "Les personnes qui font de la recherche, qui enseignent, qui organisent dans leur communauté ou qui sont curieuses du jeu peuvent toutes écrire. Cochez les cases qui vous décrivent et ajoutez quelques mots si vous le souhaitez."
+    },
+    "form": {
+        "heading": "Formulaire de contact",
+        "name_label": "Nom",
+        "email_label": "Courriel",
+        "interests_legend": "J'écris en tant que... (facultatif, cochez ce qui convient)",
+        "message_label": "Un court message (facultatif)",
+        "message_placeholder": "Que souhaitez-vous faire, apprendre ou partager ?",
+        "message_hint": "Jusqu'à 1000 caractères.",
+        "honeypot_label": "Site web (laisser vide)",
+        "submit": "Envoyer"
+    },
+    "interests": {
+        "player": "Personne qui joue ou curieuse du jeu",
+        "researcher": "Recherche",
+        "educator": "Personne enseignante",
+        "therapist": "Thérapeute ou personne soignante",
+        "organizer": "Personne qui organise dans la communauté",
+        "variant-author": "Souhaite créer une variante",
+        "press": "Presse ou journalisme",
+        "other": "Autre"
+    },
+    "errors": {
+        "name_required": "Un nom valide est requis (moins de 100 caractères).",
+        "email_required": "Un courriel valide est requis.",
+        "message_too_long": "Le message doit faire moins de 1000 caractères.",
+        "verification_failed": "La vérification a échoué. Actualisez la page et réessayez.",
+        "rate_limited": "Trop de tentatives. Réessayez plus tard.",
+        "unavailable": "Contact temporairement indisponible. Réessayez plus tard.",
+        "send_failed": "Impossible d'envoyer votre message. Réessayez plus tard."
+    }
+}

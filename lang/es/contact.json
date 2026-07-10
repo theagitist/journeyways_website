@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Contacto",
+        "description": "Escribe a JOURNEYWAYS: un juego de mesa y un juego digital sobre la identidad, con enfoque de investigación. Contacta como quien juega, investiga, enseña, ejerce terapia, organiza en comunidad o quiere crear una variante.",
+        "keywords": "JOURNEYWAYS contacto, Adri M, UBC GRSJ, proyecto de investigación, contacto juego de mesa, consultas juego narrativo, creación de variantes",
+        "og_title": "JOURNEYWAYS | Contacto",
+        "og_description": "Escribe sobre JOURNEYWAYS como quien juega, investiga, enseña, ejerce terapia, organiza en comunidad o quiere crear una variante.",
+        "robots": "noindex, follow"
+    },
+    "hero": {
+        "title": "Contacto",
+        "intro": "Quienes investigan, enseñan, organizan en la comunidad o sienten curiosidad por el juego pueden escribir. Marca las casillas que te describan y añade unas palabras si quieres."
+    },
+    "form": {
+        "heading": "Formulario de contacto",
+        "name_label": "Nombre",
+        "email_label": "Correo electrónico",
+        "interests_legend": "Escribo como... (opcional, marca las que quieras)",
+        "message_label": "Una nota breve (opcional)",
+        "message_placeholder": "¿Qué te gustaría hacer, aprender o compartir?",
+        "message_hint": "Hasta 1000 caracteres.",
+        "honeypot_label": "Sitio web (dejar en blanco)",
+        "submit": "Enviar"
+    },
+    "interests": {
+        "player": "Quien juega o siente curiosidad por el juego",
+        "researcher": "Persona que investiga",
+        "educator": "Docente",
+        "therapist": "Terapeuta o profesional de salud",
+        "organizer": "Persona que organiza en la comunidad",
+        "variant-author": "Quiere crear una variante",
+        "press": "Prensa o periodismo",
+        "other": "Otro motivo"
+    },
+    "errors": {
+        "name_required": "Se necesita un nombre válido (menos de 100 caracteres).",
+        "email_required": "Se necesita un correo electrónico válido.",
+        "message_too_long": "El mensaje debe tener menos de 1000 caracteres.",
+        "verification_failed": "La verificación falló. Actualiza la página e inténtalo de nuevo.",
+        "rate_limited": "Demasiados intentos. Inténtalo de nuevo más tarde.",
+        "unavailable": "El contacto no está disponible por el momento. Inténtalo de nuevo más tarde.",
+        "send_failed": "No se pudo enviar tu mensaje. Inténtalo de nuevo más tarde."
+    }
+}

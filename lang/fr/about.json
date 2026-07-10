@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | À propos de la recherche",
+        "description": "JOURNEYWAYS est une recherche de maîtrise menée par Adri M. au UBC Institute for Gender, Race, Sexuality and Social Justice. Un jeu de société et un jeu numérique utilisés comme instruments de recherche pour étudier l'identité au-delà des catégories prédéfinies.",
+        "keywords": "JOURNEYWAYS, Adri M, UBC GRSJ, recherche de maîtrise, identité de genre, jeu narratif, recherche par le jeu de société, exploration de l'identité, jeu décolonial, art transdisciplinaire",
+        "og_title": "JOURNEYWAYS | À propos de la recherche",
+        "og_description": "JOURNEYWAYS est une recherche de maîtrise menée par Adri M. au UBC GRSJ. Un jeu de société et un jeu numérique utilisés comme instruments de recherche pour étudier l'identité au-delà des catégories prédéfinies."
+    },
+    "hero": {
+        "eyebrow": "À propos · recherche UBC GRSJ",
+        "title": "À propos de la personne qui mène la recherche",
+        "tagline": "La personne et le programme derrière JOURNEYWAYS.",
+        "lead": "Un projet de recherche de maîtrise au UBC Institute for Gender, Race, Sexuality and Social Justice, qui explore l'identité à travers le récit et le jeu collaboratif.",
+        "links": {
+            "design": "Philosophie de conception",
+            "references": "Références",
+            "presentation": "Présentation",
+            "grsj": "UBC GRSJ"
+        },
+        "image_alt": "Autoportrait illustré au pochoir d'Adri M. sur des bandes diagonales aux tons pastel de jaune, blanc, lavande et anthracite, évoquant les couleurs du drapeau de la fierté non binaire."
+    },
+    "researcher": {
+        "stamp": "Qui mène la recherche",
+        "byline": "Adri M. · iel",
+        "bio_1": "Adri poursuit une maîtrise au UBC <a href=\"https://grsj.arts.ubc.ca/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Institute for Gender, Race, Sexuality and Social Justice</a> (GRSJ). JOURNEYWAYS est au cœur de sa recherche actuelle : un jeu de société et un jeu numérique en développement, utilisés comme instruments de recherche pour étudier comment chaque personne définit son identité lorsqu'elle dispose d'un espace de jeu narratif, sûr et collaboratif.",
+        "bio_2": "Le projet a reçu la Canada Graduate Research Scholarship: Master's (CGS-M) en avril 2026, et avait auparavant été sélectionné pour la UBC Critical Play Fellowship en septembre 2025. Trois séances de test de jeu ont eu lieu jusqu'à présent, et la phase formelle de recherche s'ouvre au cours de 2026."
+    },
+    "project": {
+        "stamp": "Projet",
+        "sr_heading": "À propos du projet",
+        "quote": "« La connaissance doit être partagée avec les personnes qui en ont le plus besoin. »",
+        "p_1": "JOURNEYWAYS a commencé comme un concept de jeu vidéo. Peu après, la conception s'est déplacée vers un jeu de société physique, puis vers les deux : la présence physique ne devrait pas être un facteur limitant pour participer, surtout compte tenu de l'engagement du projet à explorer une gamme d'identités aussi diverse que possible, mais l'expérience sensorielle des composants physiques du jeu et de la présence mérite elle aussi d'être honorée.",
+        "p_2": "JOURNEYWAYS a d'abord été conçu comme un outil de recherche, une alternative aux entretiens semi-directifs et froids, et une façon d'offrir aux personnes un espace sûr pour parler et élaborer leur identité. C'est un jeu. Les personnes qui jouent ne font que jouer. <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Tout est valable.</a> <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">On ne gagne ni ne perd.</a> Ensemble, ces principes cherchent à bâtir un environnement où chaque personne sent qu'elle peut baisser la garde, où elle n'est ni jugée ni classée. Elle raconte simplement l'histoire qu'elle veut raconter, <a href=\"%3$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">de la manière qu'elle veut la raconter</a>.",
+        "p_3": "L'ensemble du projet sera <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">publié ouvertement</a> : règles, composants, mécaniques et code numérique. Toute personne souhaitant créer sa propre version sera libre de le faire, et encouragée à la partager en retour. La <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">bibliographie du projet</a> est également publiée ici. Rien n'est cloisonné."
+    }
+}

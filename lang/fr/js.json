@@ -1,0 +1,93 @@
+{
+    "ui": {
+        "cta_index_stamp": "Commencer",
+        "cta_index_heading": "Entrez dans le jeu et laissez le voyage se déployer.",
+        "cta_index_button": "Comment jouer",
+        "cta_index_href": "/fr/boardgame.html",
+        "cta_vg_heading": "Envie de commencer ?",
+        "cta_vg_body": "Entrez dans la version numérique de Journeyways. Explorez l'identité, l'agentivité et la communauté dans un espace interactif transformateur.",
+        "cta_vg_button": "Jouer à la version numérique",
+        "lb_close": "Fermer",
+        "lb_prev": "Précédent",
+        "lb_next": "Suivant",
+        "contact_fill_required": "Veuillez remplir les champs obligatoires.",
+        "contact_sending": "Envoi en cours...",
+        "contact_sent": "Message envoyé. Merci de nous avoir écrit.",
+        "contact_generic_error": "Une erreur est survenue. Veuillez réessayer plus tard.",
+        "contact_network": "Erreur réseau. Veuillez réessayer plus tard."
+    },
+    "gallery": {
+        "photos": [
+            { "title": "Préparation du jeu de société", "subtitle": "Configuration initiale du plateau.", "alt": "Préparation du jeu de société JOURNEYWAYS : vue d'ensemble de la configuration initiale du plateau, avec les tuiles et les composants prêts pour une partie d'exploration de l'identité." },
+            { "title": "Composants du jeu de société", "subtitle": "Les pièces qui donnent vie au jeu.", "alt": "Composants du jeu de société JOURNEYWAYS : vue détaillée de toutes les pièces, dont les cartes, les tuiles, les meeples et les cahiers pour la narration collaborative." },
+            { "title": "En pleine partie", "subtitle": "Se connecter par le jeu.", "alt": "Des personnes en train de jouer à JOURNEYWAYS : elles participent au jeu de société d'exploration de l'identité et illustrent la narration collaborative et un jeu porteur de sens." },
+            { "title": "Écrire son journal en jouant", "subtitle": "Test de jeu avec EDGES, UBC. Novembre 2025.", "alt": "Test de jeu de JOURNEYWAYS avec le groupe de recherche EDGES à UBC : les personnes qui participent choisissent des cartes, rédigent des entrées de journal et réfléchissent dans un jeu collaboratif." },
+            { "title": "Autour de la table", "subtitle": "Test de jeu avec EDGES, UBC. Novembre 2025.", "alt": "Vue de la table lors d'un test de jeu de JOURNEYWAYS : le groupe de recherche EDGES à UBC joue de façon collaborative, avec des cartes, des tuiles et des journaux répartis sur la table." },
+            { "title": "Le plateau en cours de séance", "subtitle": "Test de jeu avec EDGES, UBC. Novembre 2025.", "alt": "L'état du plateau de JOURNEYWAYS en cours de séance : vue de dessus de tuiles formant un chemin, de cartes de personnage disposées et de pages de journal ouvertes, lors du test de jeu d'EDGES à UBC." },
+            { "title": "Sur la table", "subtitle": "ProtoConBC, Vancouver. Octobre 2025.", "alt": "JOURNEYWAYS à ProtoConBC : une table avec la feuille des Règles du jeu de JOURNEYWAYS, des cahiers, des cartes de personnage et un écriteau ProtoConBC n° 18." },
+            { "title": "Dans la salle", "subtitle": "ProtoConBC, Vancouver. Octobre 2025.", "alt": "Vue large de la salle de la convention ProtoConBC, avec des personnes qui écrivent à de longues tables et l'écriteau LOOKING FOR PLAYERS visible." },
+            { "title": "Deux personnes", "subtitle": "ProtoConBC, Vancouver. Octobre 2025.", "alt": "Deux personnes qui écrivent dans leurs cahiers à une table de JOURNEYWAYS pendant ProtoConBC, les tuiles de carte à l'aquarelle réparties entre elles." },
+            { "title": "En cours de séance", "subtitle": "ProtoConBC, Vancouver. Octobre 2025.", "alt": "Un angle plus large d'une séance de JOURNEYWAYS à ProtoConBC : plusieurs personnes écrivent en même temps, avec des cartes, des tuiles et des journaux qui couvrent la table." }
+        ],
+        "videogameScreens": [
+            { "title": "La porte d'entrée", "subtitle": "JOURNEYWAYS en ligne : un jeu sur le devenir.", "alt": "L'écran d'accueil du jeu numérique JOURNEYWAYS : le logotype à l'aquarelle sur un paysage en pièces de puzzle, avec les boutons Commencer le voyage et Revenir au chemin." },
+            { "title": "Votre tableau de bord", "subtitle": "Vos salles et vos voyages, réunis au même endroit.", "alt": "Le tableau de bord du jeu numérique : un message de bienvenue, les cinq points de couleur et les onglets Voyages en cours, Rejoindre un voyage et Commencer un nouveau voyage, au-dessus des cartes des salles de chaque personne." },
+            { "title": "Les tuiles de carte", "subtitle": "La carte modulaire, avec des tuiles vierges à compléter vous-même.", "alt": "La galerie de tuiles de carte du jeu numérique : une grille de tuiles carrées à l'aquarelle, chacune avec son nom en dessous, dont Départ, Lac Miroir, Sommet de la Montagne et Pont des Étoiles." },
+            { "title": "À l'intérieur d'une salle", "subtitle": "Le journal privé à côté du hall de la salle en direct.", "alt": "À l'intérieur d'une salle : le panneau du journal privé avec les questions Origines du personnage à gauche, à côté du hall de la salle avec ses membres et un bouton Commencer le voyage à droite." }
+        ],
+        "homeComponents": [
+            { "title": "Composants du jeu", "subtitle": "Tuiles, cartes, meeples et cahiers, disposés pour une séance.", "alt": "Composants et préparation du jeu de société JOURNEYWAYS pour l'exploration collaborative de l'identité : tuiles, cartes, meeples et cahiers disposés pour jouer." }
+        ],
+        "boardgameSetup": [
+            { "title": "Préparation du jeu", "subtitle": "Tuiles, cartes, meeples.", "alt": "JOURNEYWAYS prêt à commencer : tuiles, cartes de personnage, meeples, cahiers de personnage." }
+        ],
+        "boardgameTiles": [
+            { "title": "Lac Miroir", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Lac Miroir. Silhouette d'un lac dessinée à la main sur des taches d'aquarelle." },
+            { "title": "Pont des Étoiles", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Pont des Étoiles. Silhouette d'un pont en arche dessinée à la main sur des taches d'aquarelle." },
+            { "title": "Grotte Chantante", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Grotte Chantante. Silhouette d'une grotte dessinée à la main sur des taches d'aquarelle." },
+            { "title": "Sommet de la Montagne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sommet de la Montagne. Silhouette d'une montagne dessinée à la main dans des bleus profonds avec des éclaboussures d'encre." },
+            { "title": "Maison d'Enfance", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Maison d'Enfance. Une petite maison entourée d'éclaboussures d'aquarelle colorées." },
+            { "title": "Salle d'Étude", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Salle d'Étude. Silhouette d'une pièce dessinée à la main sur des taches d'aquarelle." },
+            { "title": "Terre Volcanique", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Terre Volcanique. Un volcan en éruption dans des éclaboussures d'encre rouge feu, orange et noir." },
+            { "title": "Arbre Creux", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Arbre Creux. Un arbre nu avec des éclaboussures bleu profond et violet sur ses branches." },
+            { "title": "Champ des Noms Enfouis", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Champ des Noms Enfouis. Un dessin au trait d'un champ craquelé et fissuré avec deux petites pousses." },
+            { "title": "Sentier Brumeux", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sentier Brumeux. Des arbres nus dessinés à la main bordant un chemin paisible entre deux coteaux." },
+            { "title": "Chemin Nocturne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Chemin Nocturne. Un chemin sombre dessiné à la main sous un ciel sans étoiles." },
+            { "title": "Aire de Jeux Abandonnée", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Aire de Jeux Abandonnée. Une structure de jeu avec toboggan et échelle, avec des éclaboussures de peinture multicolores." }
+        ],
+        "boardgameCardFronts": [
+            { "title": "Rencontre (Rouge)", "subtitle": "\"Vous trouvez une boîte étiquetée 'Pas encore'. La prenez-vous ? L'ouvrez-vous ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une boîte étiquetée 'Pas encore'." },
+            { "title": "Mouvement (Verte)", "subtitle": "\"Retournez à un espace que vous avez déjà visité.\"", "alt": "Recto de carte de Mouvement : une illustration à l'aquarelle et à l'encre évoquant le retour vers un lieu familier." },
+            { "title": "Action de groupe (Violette)", "subtitle": "\"Vous croisez une autre personne. Partagez un élément de vos histoires.\"", "alt": "Recto de carte d'Action de groupe : une illustration à l'aquarelle et à l'encre de deux figures qui se rencontrent." },
+            { "title": "Rencontre (Rouge)", "subtitle": "\"Un miroir se fêle à votre passage.\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'un miroir fêlé." },
+            { "title": "Action de groupe (Violette)", "subtitle": "\"Chaque personne partage un élément clé de son histoire.\"", "alt": "Recto de carte d'Action de groupe : une aquarelle de six meeples colorés blottis ensemble." },
+            { "title": "Rencontre (Rouge)", "subtitle": "\"Vous recevez une carte sans indications. Que faites-vous ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une carte sans indications." },
+            { "title": "Rencontre (Rouge)", "subtitle": "\"Un souvenir surgit, vif et non invité. Que vous demande-t-il ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'un souvenir qui pousse à l'état sauvage." },
+            { "title": "Rencontre (Rouge)", "subtitle": "\"Un écho répond. À qui est cette voix ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre de deux figures tachetées face à face." },
+            { "title": "Rencontre (Rouge)", "subtitle": "\"Un vent disperse vos pensées. Les rassemblez-vous ? En quoi sont-elles différentes maintenant ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une figure dont les pensées se dispersent au vent." }
+        ],
+        "boardgameCardBacks": [
+            { "title": "Rouge | Rencontres", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle rouges, jaunes et orange." },
+            { "title": "Verte | Mouvement", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de vert." },
+            { "title": "Bleue | Réflexions", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de bleu." },
+            { "title": "Noire | Compte à rebours", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de noir et de gris." },
+            { "title": "Violette | Actions de groupe", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de violet." }
+        ],
+        "manual": [
+            { "title": "Couverture", "subtitle": "Le Manuel du jeu.", "alt": "La couverture du Manuel du jeu : Règles du jeu de JOURNEYWAYS, un jeu de société sur le devenir, sur un paysage à l'aquarelle." },
+            { "title": "Préparation du jeu", "subtitle": "Mise en place du jeu.", "alt": "La page Préparation du jeu : ce qu'il vous faut et comment disposer les tuiles et les cinq piles de cartes, avec une note de marge dessinée à la main." },
+            { "title": "Déroulement de base", "subtitle": "Explorer, choisir, réfléchir.", "alt": "La page Déroulement de base : les trois phases d'un tour et une légende des cinq couleurs de carte." },
+            { "title": "Une entrée de journal", "subtitle": "Un exemple d'écriture à partir des cartes.", "alt": "Un exemple d'entrée de journal en écriture manuscrite, avec un petit volcan peint dans le coin." },
+            { "title": "Jeu en solo et en groupe", "subtitle": "Jouer en solo ou à plusieurs.", "alt": "La page Jeu en solo et en groupe, avec une photographie de meeples peints." },
+            { "title": "Quatrième de couverture", "subtitle": "Un jeu sur le devenir.", "alt": "La quatrième de couverture du manuel : la marque Journeyways, un code QR et l'accroche un jeu sur le devenir." }
+        ],
+        "booklet": [
+            { "title": "Couverture", "subtitle": "Le Cahier de jeu.", "alt": "La couverture du Cahier de jeu : la marque Journeyways sur un doux paysage monochrome, intitulé Cahier de jeu." },
+            { "title": "Aide-mémoire", "subtitle": "Le tour et les couleurs de carte en un coup d'œil.", "alt": "La page d'introduction et d'Aide-mémoire : les trois phases d'un tour, les couleurs de carte et ce qu'il est bon de savoir." },
+            { "title": "Fiche de personnage", "subtitle": "Qui vous êtes au départ.", "alt": "La première Fiche de personnage : des questions sur d'où vous venez, où vous êtes maintenant, ce que et qui vous êtes, pourquoi, votre nom et votre but." },
+            { "title": "Page de journal", "subtitle": "Des pages lignées pour écrire et dessiner votre histoire.", "alt": "Une page de journal lignée avec la marque Journeyways, pour écrire et dessiner votre histoire à mesure qu'elle se déploie." },
+            { "title": "Fiche de personnage", "subtitle": "La personne que vous êtes devenue.", "alt": "La deuxième Fiche de personnage : des questions sur qui vous êtes maintenant, ce qui a changé, votre nom, le titre de votre histoire et des réflexions." },
+            { "title": "Quatrième de couverture", "subtitle": "Un jeu sur le devenir.", "alt": "La quatrième de couverture du cahier : la marque Journeyways, un code QR et l'accroche un jeu de société sur le devenir." }
+        ]
+    }
+}

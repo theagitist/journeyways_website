@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Cuaderno de juego",
+        "description": "El Cuaderno de juego de JOURNEYWAYS: un cuaderno para escribir, uno por cada persona, con preguntas para crear el personaje, páginas de diario con renglones y una hoja de personaje. Previsualiza las páginas o descarga el PDF.",
+        "keywords": "cuaderno de juego JOURNEYWAYS, diario, hoja de personaje, juego de mesa, juego de identidad",
+        "og_title": "JOURNEYWAYS | Cuaderno de juego",
+        "og_description": "Un cuaderno para escribir, uno por cada persona: preguntas de personaje, páginas de diario y una hoja de personaje. Previsualiza las páginas o descarga el PDF."
+    },
+    "back": "← Volver a Componentes",
+    "title": "El Cuaderno de juego",
+    "lede": "Un cuaderno para escribir, uno para cada persona: preguntas para crear el personaje, páginas de diario con renglones para ir llenando conforme el personaje se despliega, y una hoja de personaje al inicio y al final. Uno por persona en cada sesión; imprímelo, dóblalo y hazlo tuyo.",
+    "count": "Dieciséis páginas. Elige cualquier página para leerla de cerca.",
+    "dl": {
+        "en": "Download · English ↓",
+        "es": "Descargar · Español ↓",
+        "fr": "Télécharger · Français ↓",
+        "note": "PDF, unos 2.9 MB. El mismo cuaderno en inglés, español o francés."
+    },
+    "preview_heading": "Vista previa del cuaderno",
+    "pages": [
+        { "alt": "La portada del Cuaderno de juego.", "caption": "Portada" },
+        { "alt": "La página de introducción y Referencia rápida.", "caption": "Referencia rápida" },
+        { "alt": "La primera Hoja de personaje.", "caption": "Hoja de personaje" },
+        { "alt": "Una página de diario con renglones.", "caption": "Página de diario" },
+        { "alt": "La segunda Hoja de personaje.", "caption": "Hoja de personaje" },
+        { "alt": "La contraportada del cuaderno.", "caption": "Contraportada" }
+    ]
+}

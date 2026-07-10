@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Design philosophy",
+        "description": "JOURNEYWAYS design philosophy: nine principles behind a board game and digital game built as research instruments for identity exploration. Loose rules, no winning, expression in any modality, the framework as the form.",
+        "keywords": "JOURNEYWAYS, game design philosophy, identity, narrative game design, decolonial play, research game, agency in games, no winning condition, framework game, open source board game, UBC GRSJ research",
+        "og_title": "JOURNEYWAYS | Design philosophy",
+        "og_description": "Nine notes on how the game thinks. Why each piece works the way it does."
+    },
+    "hero": {
+        "image_alt": "JOURNEYWAYS Start tile: a black calligraphic ink swirl on white, ringed by red, purple, blue, green, and magenta watercolor splotches.",
+        "eyebrow": "Design philosophy · Nine notes",
+        "title": "How the game works.",
+        "tagline": "Nine principles behind every piece, every rule, every silence at the table.",
+        "lead": "The choices below are not aesthetic preferences. They are ways to make space for an honest story. Each one is small. Together they describe what JOURNEYWAYS is, and what it is for.",
+        "links": {
+            "about": "About the researcher",
+            "references": "References",
+            "grsj": "UBC GRSJ"
+        }
+    },
+    "premise": {
+        "stamp": "Premise",
+        "sr_heading": "Premise",
+        "body": "JOURNEYWAYS is a board game and a digital game in development, used as research instruments at the UBC <a href=\"https://grsj.arts.ubc.ca/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Institute for Gender, Race, Sexuality and Social Justice</a>. The games are not the whole project; they are an integral tool to collect stories in a safe and collaborative environment. The stories themselves are what matter the most, and the ethnographic analysis that will be performed on them.",
+        "quote": "“The stories are what's most important, no matter how the players tell them.”"
+    },
+    "identity": {
+        "stamp": "Identity",
+        "title": "Identity is uncovered.",
+        "fig_alt": "Watercolor and ink illustration of a box labeled Not yet, an Encounter card.",
+        "fig_caption": "“You find a box labeled <span class=\"not-italic\">'Not yet'</span>. Do you grab it? Do you open it?” <span class=\"card-red\">Encounter card</span>.",
+        "body_1": "In JOURNEYWAYS, identity is anything the player decides it to be. As large or as small. As direct or as oblique. Based in real life or completely made up. Realistic. Fantastic. Anything.",
+        "body_2": "The default content is built around gender identity, drawing on Judith Butler, Julia Serano, Susan Stryker, and Kit Heyam, but the game frame is open. Players have used it to talk about parenthood, about being an international student, about a younger self they were trying to remember. One player chose Water as their identity. Not a water-based entity, not anthropomorphized, simply Water. They were reflecting on feeling less flowy than they used to be, and wanted to think about it during their play experience.",
+        "quote": "“Identity is a very open concept in this game. It can be whatever the player decides it to be. As large or small, as direct or oblique.”"
+    },
+    "stakes": {
+        "stamp": "Stakes",
+        "title": "No winning, no losing.",
+        "panel_aria": "Watercolor in shades of black and gray, with the line: We are always arriving, never arrived.",
+        "panel_quote": "“We are always arriving,<br>never arrived.”",
+        "panel_label": "<span class=\"card-black\">Countdown card</span>",
+        "body_1": "JOURNEYWAYS has no win condition and no lose condition. By default, a session ends in one of three ways: a timer runs out, five <span class=\"card-black\">Black cards</span> have been picked, or both. Or something else the players agree on. Or a player chooses to leave at any time, no questions, no penalty.",
+        "body_2": "The <span class=\"card-black\">Black cards</span> are short poetic lines about time passing. <span class=\"italic\">Petals fall, and new buds bloom. A heartbeat skips into the silence beyond. Footsteps vanish in the sand.</span> Each one is a small bell signaling another grain of time has passed.",
+        "body_3": "The absence of winning is not whimsy. It is the architecture under which the game can hold a real story. There is nothing to optimize. There is no resolution to perform. There is just what the player chose to bring, for as long as they wanted to bring it."
+    },
+    "consent": {
+        "stamp": "Consent",
+        "title": "The only rule the game enforces is consent at the table.",
+        "fig1_alt": "Hand-drawn map tile titled Star Bridge: a line drawing of an arched bridge against a wash of colored watercolor splotches.",
+        "fig1_caption": "Star Bridge. <span class=\"tile-wood\">Map tile</span>.",
+        "fig2_alt": "Watercolor and ink illustration of a map without directions, an Encounter card.",
+        "fig2_caption": "“You receive a map with no directions. What do you do?” <span class=\"card-red\">Encounter card</span>.",
+        "body_1": "Everything in the game is mutable. Rules can be modified, bent, broken, ignored. New rules can be invented mid-session. The single non-mutable is that the rest of the table agrees.",
+        "body_2": "Rule-breaking is not a failure mode. It is often the best thing that happens in a session. A player once decided not to place a tile adjacent to the existing map, against the rules. The tile was space-themed, so they invented warp mechanics on the fly to connect it. The break became a pivoting moment in the session, and inspired other players to be freer and more creative. Many player modifications get folded back into the canonical rulebook.",
+        "quote": "“Everything in the game is modifiable. New rules? Go ahead. Different rules? Go ahead. The only boundary is all other players must be ok with it.”",
+        "body_3": "The looseness has a stated reason: agency. Players are given material to work with and trusted to do something with it. Most board games tell you what to do. JOURNEYWAYS tells you what is here, and asks what you want to do with it."
+    },
+    "voice": {
+        "stamp": "Voice",
+        "title": "Designed to elicit, not to provide.",
+        "fig1_alt": "Watercolor card illustration: a memory growing wild.",
+        "fig1_caption": "Memory. <span class=\"card-red\">Encounter</span> (<span class=\"card-red\">Red</span>).",
+        "fig2_alt": "Watercolor card illustration: footsteps returning to a known place.",
+        "fig2_caption": "Reminiscence. <span class=\"card-green\">Movement</span> (<span class=\"card-green\">Green</span>).",
+        "fig3_alt": "Watercolor card illustration: two figures meeting.",
+        "fig3_caption": "Encounter. <span class=\"card-purple\">Group action</span> (<span class=\"card-purple\">Purple</span>).",
+        "body_1": "The cards are written as gestures, not situations. <span class=\"italic\">“This place reshapes your outline. How?”</span> <span class=\"italic\">“Your voice changes in this place. How does it change?”</span> <span class=\"italic\">“You no longer have to explain yourself. What changes?”</span> Each is short and open. The player provides the specific.",
+        "body_2": "Cards are sorted into colored piles, not one shuffled deck. <span class=\"card-red\">Red</span> is <span class=\"card-red\">Encounters</span>. <span class=\"card-green\">Green</span> is <span class=\"card-green\">Movement</span>. <span class=\"card-blue\">Blue</span> is <span class=\"card-blue\">Reflections</span>, drawn from a small canon of queer thought (Adrienne Rich, James Baldwin, bell hooks, Tammy Baldwin, Karl Heinrich Ulrichs, Margaret Cho, and others). <span class=\"card-black\">Black</span> is <span class=\"card-black\">the passing of time</span>. <span class=\"card-purple\">Purple</span> is <span class=\"card-purple\">group actions</span>. Players choose which pile to pick from. They know the kind of card they will get; but not exactly which one.",
+        "body_3": "That is on purpose. Agency at the level of category. Discovery at the level of the card.",
+        "body_4": "No card content is generated by AI. Every prompt and every quote was created by hand. In the digital version, animations are skeuomorphic, never theatrical. The restraint is part of the design."
+    },
+    "meeting": {
+        "stamp": "Meeting",
+        "title": "A mirror in a cave is not a mirror in a classroom.",
+        "fig1_alt": "Hand-drawn map tile: Singing Cave.",
+        "fig1_caption": "Singing Cave. <span class=\"tile-wood\">Map tile</span>.",
+        "fig2_alt": "Watercolor card illustration: a cracked mirror.",
+        "fig2_caption": "“A mirror cracks as you pass.” <span class=\"card-red\">Encounter card</span>.",
+        "fig3_alt": "Hand-drawn map tile: Study Room.",
+        "fig3_caption": "Study Room. <span class=\"tile-wood\">Map tile</span>.",
+        "body_1": "The board is a map. Players place tiles to build it as they go. Where you go on the map is itself an expression: which tile you walk toward, whether you go alone or join another player, whether you stay on the trail or strike out. Movement is not just for getting somewhere: it is part of telling.",
+        "body_2": "Two components meeting is what generates a story. A card on its own gets repetitive quickly. Tiles on their own are too still. The mirror lands differently inside the Singing Cave than at the Study Room. A costume found at the Childhood House is not a costume found on the Star Bridge. The mechanic is the meeting.",
+        "quote": "“Finding a mirror in a classroom is very different than finding a mirror at the entrance of a dark cave.”"
+    },
+    "modality": {
+        "stamp": "Modality",
+        "title": "Expression in any modality. Even silence.",
+        "fig_alt": "A player journaling during a JOURNEYWAYS session, hands writing in a booklet beside game tiles.",
+        "fig_caption": "Players journaling during a session.",
+        "body_1": "Each player has a booklet, there they create their character, draw it and convey their stories. They can use it to journal what happens to their character, write fragments, sketch, doodle, draw a comic, or leave it blank. The journal is the durable archive: what carries across sessions, what lets a player return to a character later or open a chapter two.",
+        "body_2": "But the journal is the default, not the requirement. A player can narrate verbally instead. A player can draw rather than write. A player can pass a turn. A player can sit out a round in silence. None of this is a problem. Silence is not awkward in JOURNEYWAYS. It is one way of telling the story.",
+        "quote": "“Doing nothing is also a way of expression.”",
+        "body_3": "The cards are not secret either. The text is short and simple, and any player can ask another for help reading or interpreting. The literacy load is shareable, not solitary."
+    },
+    "hand": {
+        "stamp": "Hand",
+        "title": "Simple-yet-sensorial. The materials are yours too.",
+        "fig_alt": "Hand-drawn map tile titled Mirror Lake: a line-drawn lake silhouette layered over watercolor splotches.",
+        "fig_caption": "Mirror Lake. <span class=\"tile-wood\">Map tile</span>.",
+        "body_1": "Cardboard or wooden tiles. Card stock that feels nice in the hands. A wordmark in a script that wants to feel playful and organic. Hand-drawn line illustrations on a white ground, with watercolor splotches behind them. The materials are deliberate.",
+        "body_2": "So is the openness of the materials. Tiles can be drawn on. New tiles can be invented from sticky notes when a player needs a place that does not yet exist on the map. The components do not assume their own permanence. The game's looseness goes all the way down to the cardboard.",
+        "quote": "“You are placing a solid piece. You can do with it whatever you want. You can even draw on it and expand it.”"
+    },
+    "frame": {
+        "stamp": "Frame",
+        "title": "The framework is the form.",
+        "fig_alt": "JOURNEYWAYS board game components laid out: map tiles, cards, a player booklet, and tokens.",
+        "fig_caption": "The canonical triad: tiles, cards, booklet.",
+        "body_1": "JOURNEYWAYS is held together by three components: the <span class=\"tile-wood\">map tiles</span>, the cards, and the player booklet. Together they make the game recognizable. The map gives location and context. The cards give stimulus and event. The booklet gives expression and archive.",
+        "body_2": "Drop one and the experience changes. Anyone can do that. The framework is open: a researcher can author a variant for a specific community, a teacher can author one for a classroom, a parent can author one for younger players. The default content is adult and gender-focused, but the engine is for identity exploration in general.",
+        "body_3": "The long-term form of JOURNEYWAYS is not a single product. It is the framework, and what other people make with it. You can look closely at two of the three pieces now: the <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">cards</a> and the <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">map tiles</a>.",
+        "quote": "“The engine is meant to help in the creative process, not to be an obstacle.”"
+    },
+    "reach": {
+        "stamp": "Reach",
+        "title": "Built to be shared. Built to be safe.",
+        "fig_alt": "Watercolor illustration of six meeples in different colors standing together.",
+        "fig_caption": "Players, together.",
+        "body_1": "The same commitment runs through two sets of decisions.",
+        "body_2": "<span class=\"text-gray-200 font-medium\">Reproducibility.</span> Free fonts. Open-source code. Creative Commons content. No proprietary dependencies. The game can be printed, modified, and republished without licensing or asset hurdles. Templates for cards, tiles, and the player booklet will be available so anybody can make their own version. Localized board game variants can be produced through the framework. The digital version launches in English, Spanish, and French.",
+        "body_3": "<span class=\"text-gray-200 font-medium\">Safety.</span> The digital version ships without camera support. Research sessions are recorded as audio only, never video. All digital assets and data are kept in data centers in Canada (Toronto). User-created content stays in the language the user wrote it in; nothing gets auto-translated, because their words are theirs. Journal entries are stored under a documented <a href=\"https://play.journeyways.ca/privacy\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\" target=\"_blank\" rel=\"noopener noreferrer\">Privacy Policy</a> and <a href=\"https://play.journeyways.ca/terms\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\" target=\"_blank\" rel=\"noopener noreferrer\">Terms of Service</a>.",
+        "body_4": "Two threads of one design. Make it possible for anyone to reach the game. Make it safe for anyone to actually play it."
+    },
+    "coda": {
+        "stamp": "Coda",
+        "title": "A note from the designer.",
+        "body_1": "Identities and ways of expressing them have been part of the human experience for as long as there have been humans. The categories most institutions hand us are recent, narrow, and not built to fit. JOURNEYWAYS does not pretend to fix that. It opens a small space inside it, where someone can talk about themselves without having to compress what they are.",
+        "body_2": "That is what every choice on this page is for.",
+        "quote": "“Knowledge needs to be shared with the people who need it the most.”",
+        "footer_note": "For project context and the researcher's bio, see <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">About</a>."
+    }
+}

@@ -1,0 +1,62 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | References",
+        "description": "The bibliography behind JOURNEYWAYS: gender theory, institutional data, arts-based research, critical ethnography, thematic analysis, game studies, co-creation, and pedagogy. The works that shaped a master's research project at the UBC Institute for Gender, Race, Sexuality and Social Justice.",
+        "keywords": "JOURNEYWAYS bibliography, references, gender theory, Butler, Serano, Stryker, Heyam, arts-based research, critical ethnography, thematic analysis, Braun Clarke, serious games, Tekinbaş Zimmerman, Sanders Stappers, Freire, UBC GRSJ research",
+        "og_title": "JOURNEYWAYS | References",
+        "og_description": "The bibliography behind a board game and a digital game used as research instruments. Eight thematic groupings, twenty-seven works."
+    },
+    "hero": {
+        "eyebrow": "References · APA 7",
+        "title": "What I’ve been reading.",
+        "tagline": "The bibliography behind the project, grouped thematically.",
+        "lead": "These works shaped how JOURNEYWAYS was framed and designed. Some are old enough to be foundational; others are recent and feel like conversations still in progress. This is the load-bearing structure behind the project’s first phase.",
+        "links": {
+            "about": "About the project",
+            "design": "Design philosophy",
+            "grsj": "UBC GRSJ"
+        }
+    },
+    "sections": {
+        "theory": {
+            "stamp": "Theory",
+            "title": "What it means to talk about gender at all.",
+            "subtitle": "Foundational works that the project sits inside."
+        },
+        "data": {
+            "stamp": "Data",
+            "title": "How institutions try (and fail) to count us.",
+            "subtitle": "Gender identity in survey instruments and electronic health records."
+        },
+        "arts_based": {
+            "stamp": "Arts-based",
+            "title": "Making knowledge by making things.",
+            "subtitle": "Arts-based research as a methodology in its own right."
+        },
+        "ethnography": {
+            "stamp": "Ethnography",
+            "title": "Doing research where people matters.",
+            "subtitle": "Critical ethnography and the ethics of being in the room."
+        },
+        "analysis": {
+            "stamp": "Analysis",
+            "title": "How to listen to a transcript without flattening it.",
+            "subtitle": "Reflexive thematic analysis as an honest reading practice."
+        },
+        "games": {
+            "stamp": "Games",
+            "title": "Play as a serious tool for inquiry.",
+            "subtitle": "Game studies, serious games, and iterative design."
+        },
+        "co_creation": {
+            "stamp": "Co-creation",
+            "title": "Designing with, not for.",
+            "subtitle": "Participatory design and the new landscapes around it."
+        },
+        "pedagogy": {
+            "stamp": "Pedagogy",
+            "title": "Teaching as the practice of liberation.",
+            "subtitle": "Dialogue, autoethnography, and learning together."
+        }
+    }
+}

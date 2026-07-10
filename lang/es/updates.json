@@ -1,0 +1,211 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Novedades",
+        "description": "Hitos y avances de JOURNEYWAYS: el juego de mesa físico (diseño, pruebas de juego, versión 1.0, galardones) y la versión digital en desarrollo activo. Una sola cronología, filtrable por juego. Investigación de maestría en UBC GRSJ.",
+        "keywords": "JOURNEYWAYS, novedades, hitos, cronología, registro de desarrollo, pruebas de juego, galardones, juego de mesa, juego digital, investigación UBC GRSJ",
+        "og_title": "JOURNEYWAYS | Novedades",
+        "og_description": "Una cronología filtrable de hitos de JOURNEYWAYS: el juego de mesa físico y la versión digital en desarrollo activo."
+    },
+    "hero": {
+        "eyebrow": "Hitos · Progreso",
+        "title": "El viaje hasta ahora.",
+        "tagline": "Las dos caras de JOURNEYWAYS, en una sola cronología.",
+        "body": "Hitos del juego de mesa físico y de la versión digital en desarrollo activo. Cada entrada indica a cuál corresponde; algunas corresponden a ambas. Filtra por juego o salta a un mes."
+    },
+    "timeline": {
+        "stamp": "Cronología",
+        "sr_heading": "Cronología de novedades",
+        "intro": "Filtra por juego o salta a un mes. El ámbar marca el juego de mesa; el azul, la versión digital.",
+        "footer_html": "Consulta lo que viene a continuación en la página del <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Videojuego</a>."
+    },
+    "filter": {
+        "aria": "Filtrar novedades por juego",
+        "all": "Todo",
+        "board": "Juego de mesa",
+        "video": "Videojuego"
+    },
+    "months_aria": "Saltar a un mes",
+    "months_all": "Todos",
+    "tags": {
+        "board": "Juego de mesa",
+        "video": "Videojuego"
+    },
+    "months": [
+        {
+            "tab": "JUL '26",
+            "label": "Julio de 2026",
+            "items": [
+                {
+                    "title": "Los documentos impresos, rehechos",
+                    "body": "El reglamento y el cuadernillo de juego se reconstruyeron desde el código fuente en una tubería de composición tipográfica, de modo que siguen siendo editables, reproducibles y fieles a la tipografía del juego: un único manual de lectura ilustrado y un cuadernillo para escribir, imprimir y plegar."
+                }
+            ]
+        },
+        {
+            "tab": "JUN '26",
+            "label": "Junio de 2026",
+            "items": [
+                {
+                    "title": "Una clase invitada en GRSJ 306",
+                    "body": "JOURNEYWAYS se llevó a GRSJ 306 en UBC como clase invitada, para compartir con el estudiantado el juego y su enfoque de la identidad, el juego y la pedagogía."
+                },
+                {
+                    "title": "Una mesa que muestra sus manos",
+                    "body": "La mesa compartida ahora se siente viva. Cuando eliges una carta o una casilla, viaja con el cursor hasta que la dejas, y todo el mundo la ve moverse, con el nombre de quien la sostiene, porque aquí nada es secreto. Las casillas pueden apilarse unas sobre otras en pequeños montones ordenados con un pequeño contador, y al mover la de arriba se revela la de debajo. En la parte inferior de la pantalla, una línea discreta le cuenta a la sala lo que ocurre: quién coloca una carta, mueve una casilla o escribe en su diario (nunca lo que escribió). Ábrela y la línea se despliega en un historial con marcas de tiempo escuetas."
+                },
+                {
+                    "title": "Un nuevo motor bajo la mesa",
+                    "body": "El juego ahora funciona sobre PostgreSQL. La mesa compartida, cada diario y el estado de cada sesión se guardan como objetos ricos y anidados, y PostgreSQL trabaja con ese tipo de datos estructurados de forma nativa, de modo que el juego guarda y restaura una sesión con mayor rapidez y la conserva con mayor fiabilidad. Nada cambia en la forma de jugar; el motor solo se apoya en una base más firme."
+                },
+                {
+                    "title": "Una mesa para jugar",
+                    "body": "Las cartas y las casillas del mapa ahora están sobre una mesa compartida. Todo se baraja en montones desiguales y boca abajo, cada uno con su palo en el reverso y las casillas con su dorso de madera. Elige la carta superior de un montón y se voltea boca arriba para que la vea toda la sala; luego colócala donde corresponda. Quien organiza puede decidir cuántas cartas de Cuenta atrás están en juego y volver a barajar el mazo durante una sesión, pidiendo antes el acuerdo de todo el mundo."
+                },
+                {
+                    "title": "Un catálogo, trazado una sola vez",
+                    "body": "Cada carta y cada casilla se toman ahora de una única definición compartida, de modo que el catálogo de este sitio, tu panel y la mesa de juego en vivo muestran exactamente los mismos componentes. Cada uno se escala con nitidez al tamaño que necesite conservando sus proporciones reales: una carta sigue siendo una carta de póquer, una casilla sigue siendo un cuadrado tipo post-it, y la ilustración y el texto se encogen y crecen juntos."
+                }
+            ]
+        },
+        {
+            "tab": "MAY '26",
+            "label": "Mayo de 2026",
+            "items": [
+                {
+                    "title": "Cartas y casillas del mapa, en línea",
+                    "body": "El mazo completo y el mapa modular ahora tienen un catálogo en vivo que puedes explorar en el sitio: cada carta ordenada por palo, y cada casilla del mapa, incluidas las casillas en blanco que rellenas tú. Cada conjunto proviene del propio juego, así que el sitio web siempre muestra lo que de verdad está en juego. Consulta las <a href=\"%1$s\">cartas</a> y las <a href=\"%2$s\">casillas del mapa</a>."
+                },
+                {
+                    "title": "Personal investigador, invitaciones y salas programadas",
+                    "body": "Las salas de investigación maduran. Quien crea una es su persona investigadora, y también puede nombrar a otras como investigadoras, con una pequeña etiqueta junto a cada nombre. Una persona investigadora puede configurar un breve conjunto de preguntas opcionales (un rango de edad, la identidad de género con tus propias palabras, un país) que puedes omitir; una vez que alguien responde, quedan bloqueadas. Quienes crean salas también pueden invitar a otras personas por correo electrónico y abrir una sala según un horario."
+                },
+                {
+                    "title": "Salas de investigación y juego libre",
+                    "body": "Al crear una sala, ahora eliges si es para investigación o para juego libre. Al unirte a una sala de investigación aparece una pantalla breve, en lenguaje claro, que explica que el contenido que crees allí podría citarse, siempre de forma anónima, en la investigación del proyecto, y unirte es la manera de aceptarlo. Las salas de juego libre permanecen privadas para quienes están en ellas."
+                },
+                {
+                    "title": "Versiones de las políticas, consentimiento registrado",
+                    "body": "Los Términos del servicio y la Política de privacidad ahora muestran su versión y fecha de entrada en vigor en la parte superior. Cuando los actualizamos de una forma que cambia aquello que aceptaste, la próxima vez que inicies sesión verás una breve pantalla de nueva aceptación con enlaces al texto actualizado. Cada aceptación se registra en tu cuenta."
+                },
+                {
+                    "title": "Presencia multijugador en vivo",
+                    "body": "La insignia de «en línea» junto a cada sala de tu panel ahora se actualiza en tiempo real a medida que las personas entran y salen, sin necesidad de recargar la página. Las fichas del vestíbulo y la píldora de presencia dentro de la sala también recibieron un repaso visual más cuidado, con una marca de «tú» para que quede claro cuál es tu persona viajera."
+                },
+                {
+                    "title": "Derecho a borrar tu cuenta",
+                    "body": "Una nueva Zona de peligro en tu perfil te permite eliminar tu propia cuenta, con un margen de 30 días para que puedas cambiar de idea. A lo largo del mes llegan cuatro correos recordatorios, cada uno con un enlace de cancelación de un solo clic. Si creaste salas donde otras personas han escrito diarios, la acción se bloquea hasta que gestiones primero esas salas, para que quienes colaboran no pierdan su trabajo. Disponible en inglés, francés y español."
+                },
+                {
+                    "title": "Revisión de privacidad",
+                    "body": "Dejamos de registrar los nombres de usuario en el alta, eliminamos de la Política de seguridad de contenido una entrada de analítica de terceros que no se usaba y verificamos que el despliegue en vivo coincide con la política de privacidad. Trabajo entre bastidores."
+                },
+                {
+                    "title": "Revisión de seguridad y fiabilidad",
+                    "body": "Cerramos varios vectores de enumeración de cuentas y de fuerza bruta, hicimos que la verificación por correo y el restablecimiento de contraseña sean seguros ante condiciones de carrera, y redujimos los tiempos de consulta de las páginas de administración con nuevos índices y reescrituras de consultas. En su mayoría, trabajo entre bastidores."
+                },
+                {
+                    "title": "El restablecimiento de contraseña funciona",
+                    "body": "El correo de «¿olvidaste tu contraseña?» ahora lleva a un formulario que funciona. Establece una nueva contraseña y vuelve a iniciar sesión."
+                },
+                {
+                    "title": "Renovación visual acorde con la marca",
+                    "body": "La interfaz del videojuego ahora sigue la paleta canónica (base gray-900, acento yellow-400), aloja por su cuenta Inter e Italianno, y usa títulos en tipografía script en las cabeceras atmosféricas de las páginas. Casillas de verificación e interruptores de alto contraste, con el verde y el rojo reservados para estados semánticos."
+                }
+            ]
+        },
+        {
+            "tab": "ABR '26",
+            "label": "Abril de 2026",
+            "items": [
+                {
+                    "title": "Una beca de maestría",
+                    "body": "La investigación detrás de JOURNEYWAYS recibió una Canada Graduate Scholarship de nivel de maestría (CGS-M) del Social Sciences and Humanities Research Council, un galardón nacional por méritos que apoya el proyecto a lo largo de su próxima fase en UBC GRSJ."
+                },
+                {
+                    "title": "Presencia multijugador",
+                    "body": "El vestíbulo, la vista JOURNEY y el panel ahora muestran quién está en la sala y quién está jugando en ese momento."
+                },
+                {
+                    "title": "Rediseño del registro del diario",
+                    "body": "Nombre por entrada, un control de edición compacto y miniaturas de vista previa del boceto en cada fila."
+                }
+            ]
+        },
+        {
+            "tab": "FEB '26",
+            "label": "Febrero de 2026",
+            "items": [
+                {
+                    "title": "Una beca de juego crítico",
+                    "body": "JOURNEYWAYS recibió el Critical Play Fellows Award, un galardón de posgrado de UBC que reconoce el uso que hace el proyecto del juego como forma de indagación crítica."
+                },
+                {
+                    "title": "Renovación del diseño de la vista de juego",
+                    "body": "La navegación del sitio se trasladó a un menú de hamburguesa dentro del panel del diario. El lienzo ahora llega hasta la parte superior de la ventana. El panel del diario puede ocultarse por completo o flotar como una capa superpuesta."
+                },
+                {
+                    "title": "Aviso para pantallas de teléfono",
+                    "body": "Un aviso que aparece la primera vez de cada sesión advierte a quienes usan el teléfono que el juego se disfruta mejor en escritorio o tableta. La adaptación completa a móviles está en la hoja de ruta."
+                },
+                {
+                    "title": "Invalidación de caché basada en mtime",
+                    "body": "Las etiquetas de hojas de estilo y de scripts llevan una consulta de versión basada en mtime, de modo que las recompilaciones invalidan las cachés del navegador automáticamente."
+                }
+            ]
+        },
+        {
+            "tab": "ENE '26",
+            "label": "Enero de 2026",
+            "items": [
+                {
+                    "title": "Una clase invitada en EPSE 503",
+                    "body": "JOURNEYWAYS se llevó a EPSE 503 en UBC como clase invitada, para compartir con el estudiantado el juego y su enfoque de la identidad, el juego y el aprendizaje."
+                },
+                {
+                    "title": "Comienza el desarrollo",
+                    "body": "Primeros commits del complemento digital del juego de mesa."
+                }
+            ]
+        },
+        {
+            "tab": "NOV '25",
+            "label": "Noviembre de 2025",
+            "items": [
+                {
+                    "title": "Versión 1.0, y una segunda prueba de juego",
+                    "body": "La primera edición completa tomó forma: 35 casillas de mapa, 81 cartas repartidas en cinco montones codificados por color, el reglamento y un cuadernillo para escribir para cada participante. El juego se jugó con el grupo de investigación EDGES en UBC, una sesión con un grupo de investigación académico que repercutió directamente en el diseño."
+                }
+            ]
+        },
+        {
+            "tab": "OCT '25",
+            "label": "Octubre de 2025",
+            "items": [
+                {
+                    "title": "Primera prueba de juego pública",
+                    "body": "JOURNEYWAYS participó en ProtoCON BC en Vancouver, una convención para probar prototipos de juegos, y conoció a sus primeras personas jugadoras. Ver a la gente elegir cartas, colocar casillas y doblar las reglas flexibles a su antojo es donde más aprende el juego."
+                }
+            ]
+        },
+        {
+            "tab": "AGO '25",
+            "label": "Agosto de 2025",
+            "items": [
+                {
+                    "title": "Un galardón de la Facultad de Artes",
+                    "body": "El proyecto recibió un Faculty of Arts Graduate Award de UBC, un primer apoyo institucional para la investigación que se convirtió en JOURNEYWAYS."
+                }
+            ]
+        },
+        {
+            "tab": "JUL '25",
+            "label": "Julio de 2025",
+            "items": [
+                {
+                    "title": "Comienza el diseño",
+                    "body": "Comenzó el diseño general de JOURNEYWAYS: un juego de reglas flexibles sobre la identidad y el devenir, y la primera forma de sus casillas de mapa, sus cinco montones de cartas codificados por color y el cuadernillo para escribir."
+                }
+            ]
+        }
+    ]
+}

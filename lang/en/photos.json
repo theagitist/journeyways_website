@@ -1,0 +1,66 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Research gallery",
+        "description": "JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. Research gallery and media: board game setup, components, and play in action.",
+        "keywords": "JOURNEYWAYS, research gallery, board game photos, game components, board game setup, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, identity exploration, collaborative storytelling",
+        "og_title": "JOURNEYWAYS | Research gallery",
+        "og_description": "Photographs from JOURNEYWAYS playtests and game components, captured at ProtoConBC and the EDGES research group at UBC."
+    },
+    "hero": {
+        "eyebrow": "Research gallery · Playtests",
+        "title": "From the table.",
+        "tagline": "Playtests, components, and play in action.",
+        "lead": "Photographs from JOURNEYWAYS sessions and material studies. Captured at ProtoConBC (Vancouver, October 2025) and during the EDGES research group at UBC (November 2025), with components staged for product photography in between.",
+        "links": {
+            "design": "Design philosophy",
+            "play": "How to play"
+        }
+    },
+    "play": {
+        "alt_players": "JOURNEYWAYS players around a long table during a playtest at ProtoConBC.",
+        "alt_journaling": "A player journaling during a JOURNEYWAYS session.",
+        "alt_table": "JOURNEYWAYS playtest table view: EDGES research group at UBC playing collaboratively.",
+        "alt_board": "JOURNEYWAYS board state mid-session, top-down view."
+    },
+    "hall": {
+        "stamp": "Hall",
+        "sr_heading": "Hall",
+        "intro": "ProtoConBC, Vancouver. October 2025. JOURNEYWAYS featured at table 18 of the convention. Strangers became players for an hour or two; some wrote, some drew, some kept the rulebook open beside them.",
+        "table": {
+            "alt": "JOURNEYWAYS at ProtoConBC: a table with the JOURNEYWAYS Game Rules sheet, player booklets, character cards, and a ProtoConBC #18 placard.",
+            "title": "On the table",
+            "caption": "The booth: rulebook, player booklets, the table-18 placard, and a player working through their first session."
+        },
+        "hall": {
+            "alt": "Wide view of the ProtoConBC convention hall, with players writing at long tables and the LOOKING FOR PLAYERS sign visible.",
+            "title": "In the hall",
+            "caption": "The convention room mid-afternoon, with a \"Looking for players\" sign on the table and the room a low murmur of focused writing."
+        },
+        "pair": {
+            "alt": "Two players writing in their booklets at a JOURNEYWAYS table during ProtoConBC, the watercolor map tiles spread between them.",
+            "title": "Two players",
+            "caption": "A pair of strangers became playmates for an hour. Booklets open, cards spread, the map laid down between them."
+        },
+        "session": {
+            "alt": "A wider angle of a JOURNEYWAYS session at ProtoConBC: several players writing simultaneously, with cards, tiles, and journals filling the table.",
+            "title": "Mid-session",
+            "caption": "A wider angle of the same session: several players writing at once, the table covered in tiles, character cards, and pencils."
+        }
+    },
+    "pieces": {
+        "stamp": "Pieces",
+        "sr_heading": "Pieces",
+        "intro": "The components, photographed without players. Tiles, cards, tokens, booklets. Staged on a wood surface to read like a still life of the game's material vocabulary.",
+        "setup": {
+            "alt": "JOURNEYWAYS board game setup: initial board configuration with game tiles and components arranged for play.",
+            "title": "Board game setup",
+            "caption": "JOURNEYWAYS featured at ProtoConBC, October 2025. Initial board configuration: tiles, cards, and play space ready for solo or group play."
+        },
+        "components": {
+            "alt": "JOURNEYWAYS board game components: cards, tiles, tokens, and player booklets used in the identity exploration game.",
+            "title": "Board game components",
+            "caption": "Cards, tiles, tokens, and player booklets laid out for play."
+        },
+        "enlarge_note": "Click any image to enlarge."
+    }
+}

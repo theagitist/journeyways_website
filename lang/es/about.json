@@ -1,0 +1,36 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Sobre quien investiga",
+        "description": "JOURNEYWAYS es investigación de maestría de Adri M. en el UBC Institute for Gender, Race, Sexuality and Social Justice. Un juego de mesa y un juego digital usados como instrumentos de investigación para estudiar la identidad más allá de las categorías predefinidas.",
+        "keywords": "JOURNEYWAYS, Adri M, UBC GRSJ, investigación de maestría, identidad de género, juego narrativo, investigación con juego de mesa, exploración de la identidad, juego decolonial, arte transdisciplinario",
+        "og_title": "JOURNEYWAYS | Sobre quien investiga",
+        "og_description": "JOURNEYWAYS es investigación de maestría de Adri M. en el UBC GRSJ. Un juego de mesa y un juego digital usados como instrumentos de investigación para estudiar la identidad más allá de las categorías predefinidas."
+    },
+    "hero": {
+        "eyebrow": "Sobre el proyecto · investigación en UBC GRSJ",
+        "title": "Sobre quien investiga",
+        "tagline": "La persona y el programa detrás de JOURNEYWAYS.",
+        "lead": "Un proyecto de investigación de maestría en el UBC Institute for Gender, Race, Sexuality and Social Justice, que explora la identidad a través de la narrativa y el juego colaborativo.",
+        "links": {
+            "design": "Filosofía de diseño",
+            "references": "Referencias",
+            "presentation": "Presentación",
+            "grsj": "UBC GRSJ"
+        },
+        "image_alt": "Autorretrato ilustrado en estilo esténcil de Adri M. sobre bandas diagonales en tonos pastel de amarillo, blanco, lavanda y carbón, que evocan los colores de la bandera del orgullo no binario."
+    },
+    "researcher": {
+        "stamp": "Quien investiga",
+        "byline": "Adri M. · elle",
+        "bio_1": "Adri cursa una maestría en el UBC <a href=\"https://grsj.arts.ubc.ca/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Institute for Gender, Race, Sexuality and Social Justice</a> (GRSJ). JOURNEYWAYS es el foco actual de su investigación: un juego de mesa y un juego digital en desarrollo, usados como instrumentos de investigación para estudiar cómo cada persona se autoidentifica cuando cuenta con un espacio de juego narrativo, seguro y colaborativo.",
+        "bio_2": "El proyecto recibió la Canada Graduate Research Scholarship: Master's (CGS-M) en abril de 2026, y antes fue seleccionado para la UBC Critical Play Fellowship en septiembre de 2025. Hasta ahora se han realizado tres pruebas de juego, y la fase formal de investigación se abre a lo largo de 2026."
+    },
+    "project": {
+        "stamp": "Proyecto",
+        "sr_heading": "Sobre el proyecto",
+        "quote": "“El conocimiento debe compartirse con las personas que más lo necesitan.”",
+        "p_1": "JOURNEYWAYS comenzó como un concepto de videojuego. Poco después, el diseño se transformó en un juego de mesa físico y, con el tiempo, en ambos: la presencia física no debería ser un factor limitante para participar, sobre todo dado el compromiso del proyecto de explorar una gama de identidades tan diversa como sea posible, pero la experiencia sensorial de los componentes físicos del juego y de la presencia también merece honrarse.",
+        "p_2": "JOURNEYWAYS se concibió primero como una herramienta de investigación, una alternativa a las entrevistas semiestructuradas y frías, y una manera de ofrecer a las personas un espacio seguro para hablar y elaborar sus identidades. Es un juego. Quienes juegan solo están jugando. <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Todo es válido.</a> <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">No se gana ni se pierde.</a> Estos preceptos, en conjunto, buscan construir un entorno donde cada persona sienta que puede bajar la guardia, donde no se le juzga ni se le clasifica. Solo está contando la historia que quiera contar, <a href=\"%3$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">del modo en que quiera contarla</a>.",
+        "p_3": "El proyecto completo se <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">publicará de forma abierta</a>: reglas, componentes, mecánicas y código digital. Cualquier persona que quiera crear su propia versión será libre de hacerlo, y se le anima a compartirla de vuelta. La <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">bibliografía del proyecto</a> también se publica aquí. Nada queda encerrado."
+    }
+}

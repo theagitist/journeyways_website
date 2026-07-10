@@ -1,0 +1,211 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Nouveautés",
+        "description": "Jalons et avancées de JOURNEYWAYS : le jeu de société physique (conception, tests de jeu, version 1.0, distinctions) et la version numérique en développement actif. Une seule chronologie, filtrable par jeu. Recherche de maîtrise à UBC GRSJ.",
+        "keywords": "JOURNEYWAYS, nouveautés, jalons, chronologie, journal de développement, tests de jeu, distinctions, jeu de société, jeu numérique, recherche UBC GRSJ",
+        "og_title": "JOURNEYWAYS | Nouveautés",
+        "og_description": "Une chronologie filtrable des jalons de JOURNEYWAYS : le jeu de société physique et la version numérique en développement actif."
+    },
+    "hero": {
+        "eyebrow": "Jalons · Progression",
+        "title": "Le parcours jusqu'ici.",
+        "tagline": "Les deux faces de JOURNEYWAYS, sur une seule chronologie.",
+        "body": "Des jalons du jeu de société physique et de la version numérique en développement actif. Chaque entrée indique à laquelle elle se rapporte ; certaines se rapportent aux deux. Filtrez par jeu, ou sautez à un mois."
+    },
+    "timeline": {
+        "stamp": "Chronologie",
+        "sr_heading": "Chronologie des nouveautés",
+        "intro": "Filtrez par jeu, ou sautez à un mois. L'ambre marque le jeu de société ; le bleu, la version numérique.",
+        "footer_html": "Découvrez ce qui est prévu ensuite sur la page <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Jeu vidéo</a>."
+    },
+    "filter": {
+        "aria": "Filtrer les nouveautés par jeu",
+        "all": "Tout",
+        "board": "Jeu de société",
+        "video": "Jeu vidéo"
+    },
+    "months_aria": "Sauter à un mois",
+    "months_all": "Tous",
+    "tags": {
+        "board": "Jeu de société",
+        "video": "Jeu vidéo"
+    },
+    "months": [
+        {
+            "tab": "JUIL '26",
+            "label": "Juillet 2026",
+            "items": [
+                {
+                    "title": "Les documents imprimés, refondus",
+                    "body": "Le livret de règles et le carnet du jeu ont été reconstruits depuis leur source dans une chaîne de composition typographique, si bien qu'ils restent modifiables, reproductibles et fidèles à la typographie du jeu : un seul manuel de lecture illustré, et un carnet à remplir, à imprimer et à plier."
+                }
+            ]
+        },
+        {
+            "tab": "JUIN '26",
+            "label": "Juin 2026",
+            "items": [
+                {
+                    "title": "Une conférence invitée dans GRSJ 306",
+                    "body": "JOURNEYWAYS a été présenté dans le cours GRSJ 306 de UBC lors d'une conférence invitée, pour partager le jeu et son approche de l'identité, du jeu et de la pédagogie avec les personnes étudiantes."
+                },
+                {
+                    "title": "Une table qui montre ses mains",
+                    "body": "La table partagée semble désormais vivante. Quand vous choisissez une carte ou une tuile, elle suit votre curseur jusqu'à ce que vous la posiez, et tout le monde la voit se déplacer, au nom de la personne qui la tient, car ici rien n'est secret. Les tuiles peuvent se poser les unes sur les autres en petites piles nettes avec un petit compteur, et déplacer celle du dessus révèle la tuile en dessous. En bas de l'écran, une ligne discrète indique à la salle ce qui se passe : qui pose une carte, déplace une tuile ou écrit dans son carnet (jamais ce qui a été écrit). Ouvrez-la et la ligne se déploie en un historique aux horodatages laconiques."
+                },
+                {
+                    "title": "Un nouveau moteur sous la table",
+                    "body": "Le jeu fonctionne désormais sur PostgreSQL. La table partagée, chaque carnet et l'état de chaque session sont stockés sous forme d'objets riches et imbriqués, et PostgreSQL travaille nativement avec ce type de données structurées, de sorte que le jeu enregistre et restaure une session plus rapidement et la conserve de manière plus fiable. Rien ne change dans la façon de jouer ; le moteur repose simplement sur un terrain plus solide."
+                },
+                {
+                    "title": "Une table pour jouer",
+                    "body": "Les cartes et les tuiles de la carte reposent désormais sur une table partagée. Tout est mélangé en piles inégales et face cachée, chacune montrant sa couleur au dos et les tuiles sur leur dos en bois. Choisissez le dessus d'une pile et il se retourne face visible pour toute la salle, puis placez-le là où il convient. La personne qui organise peut choisir combien de cartes Compte à rebours sont en jeu et remélanger le paquet pendant une session, après avoir demandé l'accord de tout le monde."
+                },
+                {
+                    "title": "Un catalogue, tracé une seule fois",
+                    "body": "Chaque carte et chaque tuile provient désormais d'une seule définition partagée, de sorte que le catalogue de ce site, votre tableau de bord et la table de jeu en direct affichent exactement les mêmes composants. Chacun s'adapte proprement à la taille dont il a besoin tout en conservant ses vraies proportions : une carte reste une carte à jouer, une tuile reste un carré de type post-it, et l'illustration et le texte rétrécissent et grandissent ensemble."
+                }
+            ]
+        },
+        {
+            "tab": "MAI '26",
+            "label": "Mai 2026",
+            "items": [
+                {
+                    "title": "Cartes et tuiles de la carte, en ligne",
+                    "body": "Le paquet complet et la carte modulaire disposent désormais d'un catalogue en direct que vous pouvez parcourir sur le site : chaque carte triée par couleur, et chaque tuile de la carte, y compris les tuiles vierges que vous remplissez vous-même. Chaque ensemble provient du jeu lui-même, si bien que le site web montre toujours ce qui est réellement en jeu. Voir les <a href=\"%1$s\">cartes</a> et les <a href=\"%2$s\">tuiles de la carte</a>."
+                },
+                {
+                    "title": "Personnes chercheuses, invitations et salles programmées",
+                    "body": "Les salles de recherche gagnent en maturité. La personne qui en crée une en est la personne chercheuse, et peut aussi en désigner d'autres comme chercheuses, avec une petite étiquette à côté de chaque nom. Une personne chercheuse peut configurer un court ensemble de questions facultatives (une tranche d'âge, l'identité de genre dans vos propres mots, un pays) que vous pouvez ignorer ; dès que quelqu'un répond, elles se verrouillent. Les personnes qui créent des salles peuvent aussi inviter d'autres personnes par courriel et ouvrir une salle selon un horaire."
+                },
+                {
+                    "title": "Salles de recherche et jeu libre",
+                    "body": "Lorsque vous créez une salle, vous choisissez désormais si elle est destinée à la recherche ou au jeu libre. En rejoignant une salle de recherche, un court écran en langage clair explique que le contenu que vous y créez pourra être cité, toujours de façon anonyme, dans la recherche du projet, et que la rejoindre est la façon d'y consentir. Les salles de jeu libre restent privées pour les personnes qui s'y trouvent."
+                },
+                {
+                    "title": "Versions des politiques, consentement enregistré",
+                    "body": "Les Conditions d'utilisation et la Politique de confidentialité affichent désormais leur version et leur date d'entrée en vigueur en haut. Lorsque nous les mettons à jour d'une manière qui change ce que vous aviez accepté, à votre prochaine connexion un court écran de réacceptation s'affichera avec des liens vers le texte mis à jour. Chaque acceptation est enregistrée sur votre compte."
+                },
+                {
+                    "title": "Présence multijoueur en direct",
+                    "body": "Le badge « en ligne » à côté de chaque salle de votre tableau de bord se met désormais à jour en temps réel à mesure que les personnes arrivent et repartent, sans rechargement de page. Les jetons du salon et la pastille de présence dans la salle ont aussi reçu une passe visuelle plus soignée, avec un repère « vous » afin que l'on sache clairement quelle est votre personne voyageuse."
+                },
+                {
+                    "title": "Droit d'effacer votre compte",
+                    "body": "Une nouvelle Zone de danger sur votre profil vous permet de supprimer vous-même votre compte, avec un délai de grâce de 30 jours pour changer d'avis. Quatre courriels de rappel arrivent au cours du mois, chacun avec un lien d'annulation en un clic. Si vous avez créé des salles où d'autres personnes ont écrit des carnets, l'action est bloquée jusqu'à ce que vous ayez d'abord traité ces salles, afin que les personnes qui collaborent ne perdent pas leur travail. Disponible en anglais, en français et en espagnol."
+                },
+                {
+                    "title": "Passe d'audit de confidentialité",
+                    "body": "Nous avons cessé de journaliser les noms d'utilisateur à l'inscription, retiré de la Politique de sécurité du contenu une entrée d'analytique tierce inutilisée, et vérifié que le déploiement en ligne correspond à la politique de confidentialité. Travail en coulisses."
+                },
+                {
+                    "title": "Audit de sécurité et de fiabilité",
+                    "body": "Nous avons fermé plusieurs vecteurs d'énumération de comptes et de force brute, rendu la vérification par courriel et la réinitialisation de mot de passe résistantes aux conditions de concurrence, et réduit les temps de requête des pages d'administration grâce à de nouveaux index et à des réécritures de requêtes. Surtout du travail en coulisses."
+                },
+                {
+                    "title": "La réinitialisation de mot de passe fonctionne",
+                    "body": "Le courriel « mot de passe oublié ? » aboutit désormais à un formulaire fonctionnel. Définissez un nouveau mot de passe et reconnectez-vous."
+                },
+                {
+                    "title": "Rafraîchissement visuel aligné sur la marque",
+                    "body": "L'interface du jeu vidéo suit désormais la palette canonique (base gray-900, accent yellow-400), héberge elle-même Inter et Italianno, et utilise des titres en typographie script sur des en-têtes de page atmosphériques. Cases à cocher et interrupteurs à fort contraste, le vert et le rouge étant réservés aux états sémantiques."
+                }
+            ]
+        },
+        {
+            "tab": "AVR '26",
+            "label": "Avril 2026",
+            "items": [
+                {
+                    "title": "Une bourse de maîtrise",
+                    "body": "La recherche derrière JOURNEYWAYS a reçu une Canada Graduate Scholarship de niveau maîtrise (CGS-M) du Social Sciences and Humanities Research Council, une distinction nationale au mérite qui soutient le projet tout au long de sa prochaine phase à UBC GRSJ."
+                },
+                {
+                    "title": "Présence multijoueur",
+                    "body": "Le salon, la vue JOURNEY et le tableau de bord montrent désormais qui se trouve dans la salle et qui est en train de jouer."
+                },
+                {
+                    "title": "Refonte du registre du carnet",
+                    "body": "Nom par entrée, une commande d'édition compacte et des vignettes d'aperçu du croquis sur chaque ligne."
+                }
+            ]
+        },
+        {
+            "tab": "FÉVR '26",
+            "label": "Février 2026",
+            "items": [
+                {
+                    "title": "Une bourse de jeu critique",
+                    "body": "JOURNEYWAYS a reçu le Critical Play Fellows Award, une distinction de cycle supérieur de UBC qui reconnaît l'usage que fait le projet du jeu comme mode d'enquête critique."
+                },
+                {
+                    "title": "Refonte de la mise en page de la vue de jeu",
+                    "body": "La navigation du site a été déplacée dans un menu hamburger à l'intérieur du panneau du carnet. Le canevas atteint désormais le haut de la fenêtre. Le panneau du carnet peut être entièrement masqué ou affiché en superposition flottante."
+                },
+                {
+                    "title": "Avis pour les écrans de téléphone",
+                    "body": "Un avis qui apparaît la première fois de chaque session prévient les personnes sur téléphone que le jeu se savoure mieux sur ordinateur ou tablette. L'adaptation complète aux mobiles figure sur la feuille de route."
+                },
+                {
+                    "title": "Invalidation du cache fondée sur mtime",
+                    "body": "Les balises de feuille de style et de script portent une requête de version fondée sur mtime, de sorte que les recompilations invalident automatiquement les caches du navigateur."
+                }
+            ]
+        },
+        {
+            "tab": "JANV '26",
+            "label": "Janvier 2026",
+            "items": [
+                {
+                    "title": "Une conférence invitée dans EPSE 503",
+                    "body": "JOURNEYWAYS a été présenté dans le cours EPSE 503 de UBC lors d'une conférence invitée, pour partager le jeu et son approche de l'identité, du jeu et de l'apprentissage avec les personnes étudiantes."
+                },
+                {
+                    "title": "Le développement commence",
+                    "body": "Premiers commits sur le compagnon numérique du jeu de société."
+                }
+            ]
+        },
+        {
+            "tab": "NOV '25",
+            "label": "Novembre 2025",
+            "items": [
+                {
+                    "title": "Version 1.0, et un deuxième test de jeu",
+                    "body": "La première édition complète a pris forme : 35 tuiles de carte, 81 cartes réparties en cinq piles codées par couleur, le livret de règles et un carnet à remplir pour chaque personne qui joue. Le jeu a été joué avec le groupe de recherche EDGES à UBC, une séance de groupe de recherche universitaire qui a directement nourri la conception."
+                }
+            ]
+        },
+        {
+            "tab": "OCT '25",
+            "label": "Octobre 2025",
+            "items": [
+                {
+                    "title": "Premier test de jeu public",
+                    "body": "JOURNEYWAYS a participé à ProtoCON BC à Vancouver, une convention de test de prototypes de jeux, et a rencontré ses premières personnes joueuses. Observer les gens choisir des cartes, poser des tuiles et plier les règles souples à leur guise, c'est là que le jeu apprend le plus."
+                }
+            ]
+        },
+        {
+            "tab": "AOÛT '25",
+            "label": "Août 2025",
+            "items": [
+                {
+                    "title": "Un prix de la Faculté des arts",
+                    "body": "Le projet a reçu un Faculty of Arts Graduate Award de UBC, un premier soutien institutionnel à la recherche qui est devenue JOURNEYWAYS."
+                }
+            ]
+        },
+        {
+            "tab": "JUIL '25",
+            "label": "Juillet 2025",
+            "items": [
+                {
+                    "title": "La conception commence",
+                    "body": "La conception générale de JOURNEYWAYS a commencé : un jeu aux règles souples sur l'identité et le devenir, et la première forme de ses tuiles de carte, de ses cinq piles de cartes codées par couleur et du carnet à remplir."
+                }
+            ]
+        }
+    ]
+}

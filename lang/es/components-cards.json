@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Cartas",
+        "description": "Los mazos de cartas de JOURNEYWAYS: Encuentro, Movimiento, Reflexión, Cuenta atrás y Acción de grupo. Elige un mazo para repartirlo y lee las consignas y citas dibujadas a mano.",
+        "keywords": "cartas de JOURNEYWAYS, mazos de cartas, consignas, citas, juego de identidad, cartas de juego de mesa, identidad de género",
+        "og_title": "JOURNEYWAYS | Cartas",
+        "og_description": "Los mazos de cartas de JOURNEYWAYS. Elige un mazo para repartirlo."
+    },
+    "back": "Volver a Componentes",
+    "heading": "Los mazos",
+    "sub": "79 cartas en 5 mazos. Elige un mazo para repartirlo.",
+    "loading": "Repartiendo los mazos..."
+}

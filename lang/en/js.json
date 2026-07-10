@@ -1,0 +1,93 @@
+{
+    "ui": {
+        "cta_index_stamp": "Begin",
+        "cta_index_heading": "Step into the game and let the journey unfold.",
+        "cta_index_button": "How to play",
+        "cta_index_href": "/boardgame.html",
+        "cta_vg_heading": "Ready to Begin?",
+        "cta_vg_body": "Step into the digital version of Journeyways. Explore identity, agency, and community in a transformative interactive space.",
+        "cta_vg_button": "Play the Digital Version",
+        "lb_close": "Close",
+        "lb_prev": "Previous",
+        "lb_next": "Next",
+        "contact_fill_required": "Please fill the required fields.",
+        "contact_sending": "Sending...",
+        "contact_sent": "Message sent. Thank you for reaching out.",
+        "contact_generic_error": "Something went wrong. Please try again later.",
+        "contact_network": "Network error. Please try again later."
+    },
+    "gallery": {
+        "photos": [
+            { "title": "Board Game Setup", "subtitle": "Initial board configuration.", "alt": "JOURNEYWAYS board game setup - Full view of initial board configuration with game tiles and components ready for identity exploration gameplay" },
+            { "title": "Board Game Components", "subtitle": "Pieces that bring the game to life.", "alt": "JOURNEYWAYS board game components - Detailed view of all game pieces including cards, tiles, player tokens, and booklets for collaborative storytelling" },
+            { "title": "Players in Action", "subtitle": "Connecting over gameplay.", "alt": "JOURNEYWAYS players in action - People engaged in playing the identity exploration board game, demonstrating collaborative storytelling and meaningful gameplay" },
+            { "title": "Journaling in Play", "subtitle": "EDGES playtest, UBC. November 2025.", "alt": "JOURNEYWAYS playtest with the EDGES research group at UBC - participants picking cards, writing journal entries, and reflecting in collaborative play" },
+            { "title": "Around the Table", "subtitle": "EDGES playtest, UBC. November 2025.", "alt": "JOURNEYWAYS playtest table view - EDGES research group at UBC playing collaboratively, with cards, tiles, and journals spread across the table" },
+            { "title": "Board State Mid-Session", "subtitle": "EDGES playtest, UBC. November 2025.", "alt": "JOURNEYWAYS board state mid-session - top-down view of game tiles forming a path, character cards arrayed, and journal pages open from the EDGES playtest at UBC" },
+            { "title": "On the Table", "subtitle": "ProtoConBC, Vancouver. October 2025.", "alt": "JOURNEYWAYS at ProtoConBC: a table with the JOURNEYWAYS Game Rules sheet, player booklets, character cards, and a ProtoConBC #18 placard." },
+            { "title": "In the Hall", "subtitle": "ProtoConBC, Vancouver. October 2025.", "alt": "Wide view of the ProtoConBC convention hall, with players writing at long tables and the LOOKING FOR PLAYERS sign visible." },
+            { "title": "Two Players", "subtitle": "ProtoConBC, Vancouver. October 2025.", "alt": "Two players writing in their booklets at a JOURNEYWAYS table during ProtoConBC, the watercolor map tiles spread between them." },
+            { "title": "Mid-Session", "subtitle": "ProtoConBC, Vancouver. October 2025.", "alt": "A wider angle of a JOURNEYWAYS session at ProtoConBC: several players writing simultaneously, with cards, tiles, and journals filling the table." }
+        ],
+        "videogameScreens": [
+            { "title": "The front door", "subtitle": "JOURNEYWAYS online: a game about becoming.", "alt": "The JOURNEYWAYS digital game home screen: the watercolour wordmark over a puzzle-piece landscape, with Begin the Journey and Return to Path buttons." },
+            { "title": "Your dashboard", "subtitle": "Your rooms and journeys, gathered in one place.", "alt": "The digital game dashboard: a Welcome back greeting, the five suit dots, and Active Journeys, Join a Journey, and Start a New Journey tabs over cards for the player’s rooms." },
+            { "title": "The map tiles", "subtitle": "The modular map, including blank tiles to fill in yourself.", "alt": "The digital map-tile gallery: a grid of square watercolour tiles, each with its name below, including Start, Mirror Lake, Mountain Peak, and Star Bridge." },
+            { "title": "Inside a room", "subtitle": "The private journal beside the live room lobby.", "alt": "Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right." }
+        ],
+        "homeComponents": [
+            { "title": "Game components", "subtitle": "Tiles, cards, tokens, and player booklets, arranged for a session.", "alt": "JOURNEYWAYS board game components and setup for collaborative identity exploration: tiles, cards, tokens, and player booklets arranged for play." }
+        ],
+        "boardgameSetup": [
+            { "title": "Game Setup", "subtitle": "Tiles, cards, tokens.", "alt": "JOURNEYWAYS setup ready to begin: tiles, character cards, meeples, character booklets." }
+        ],
+        "boardgameTiles": [
+            { "title": "Mirror Lake", "subtitle": "Map tile.", "alt": "Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." },
+            { "title": "Star Bridge", "subtitle": "Map tile.", "alt": "Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches." },
+            { "title": "Singing Cave", "subtitle": "Map tile.", "alt": "Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." },
+            { "title": "Mountain Peak", "subtitle": "Map tile.", "alt": "Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters." },
+            { "title": "Childhood House", "subtitle": "Map tile.", "alt": "Map tile: Childhood House. A small house surrounded by colorful watercolor splatters." },
+            { "title": "Study Room", "subtitle": "Map tile.", "alt": "Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches." },
+            { "title": "Volcanic Ground", "subtitle": "Map tile.", "alt": "Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters." },
+            { "title": "Tree Hollow", "subtitle": "Map tile.", "alt": "Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches." },
+            { "title": "Buried Names Field", "subtitle": "Map tile.", "alt": "Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings." },
+            { "title": "Misty Trail", "subtitle": "Map tile.", "alt": "Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." },
+            { "title": "Night Way", "subtitle": "Map tile.", "alt": "Map tile: Night Way. Hand-drawn dark path under a starless sky." },
+            { "title": "Abandoned Playground", "subtitle": "Map tile.", "alt": "Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters." }
+        ],
+        "boardgameCardFronts": [
+            { "title": "Encounter (Red)", "subtitle": "\"You find a box labeled ‘Not yet’. Do you grab it? Do you open it?\"", "alt": "Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'." },
+            { "title": "Movement (Green)", "subtitle": "\"Go to a space you have already been to.\"", "alt": "Movement card front: a watercolor and ink illustration evoking a return to a familiar place." },
+            { "title": "Group action (Purple)", "subtitle": "\"You stumble upon another player. Share one element of your stories.\"", "alt": "Group action card front: a watercolor and ink illustration of two figures meeting." },
+            { "title": "Encounter (Red)", "subtitle": "\"A mirror cracks as you pass.\"", "alt": "Encounter card front: a watercolor and ink illustration of a cracked mirror." },
+            { "title": "Group action (Purple)", "subtitle": "\"Everyone shares one key element of their story.\"", "alt": "Group action card front: a watercolor of six colorful meeples huddled together." },
+            { "title": "Encounter (Red)", "subtitle": "\"You receive a map with no directions. What do you do?\"", "alt": "Encounter card front: a watercolor and ink illustration of a map without directions." },
+            { "title": "Encounter (Red)", "subtitle": "\"A memory rises, vivid and uninvited. What does it ask of you?\"", "alt": "Encounter card front: a watercolor and ink illustration of a memory growing wild." },
+            { "title": "Encounter (Red)", "subtitle": "\"An echo answers back. Whose voice is it?\"", "alt": "Encounter card front: a watercolor and ink illustration of two splotchy figures facing each other." },
+            { "title": "Encounter (Red)", "subtitle": "\"A wind scatters your thoughts. Do you gather them back? How are they different now?\"", "alt": "Encounter card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind." }
+        ],
+        "boardgameCardBacks": [
+            { "title": "Red | Encounters", "subtitle": "Card back.", "alt": "Card back in red, yellow and orange watercolor splotches." },
+            { "title": "Green | Movement", "subtitle": "Card back.", "alt": "Card back in shades of green watercolor splotches." },
+            { "title": "Blue | Reflections", "subtitle": "Card back.", "alt": "Card back in shades of blue watercolor splotches." },
+            { "title": "Black | Countdown", "subtitle": "Card back.", "alt": "Card back in shades of black and gray watercolor splotches." },
+            { "title": "Purple | Group actions", "subtitle": "Card back.", "alt": "Card back in shades of purple watercolor splotches." }
+        ],
+        "manual": [
+            { "title": "Cover", "subtitle": "The Game Manual.", "alt": "The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape." },
+            { "title": "Game Setup", "subtitle": "Laying out the game.", "alt": "The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note." },
+            { "title": "Basic Gameplay", "subtitle": "Explore, pick, reflect.", "alt": "The Basic Gameplay page: the three phases of a turn and a legend of the five card colours." },
+            { "title": "A journal entry", "subtitle": "An example of writing from the cards.", "alt": "A sample journal entry in a handwritten script, with a small painted volcano in the corner." },
+            { "title": "Solo and Group Play", "subtitle": "Playing alone or together.", "alt": "The Solo and Group Play page, with a photograph of painted meeples." },
+            { "title": "Back cover", "subtitle": "A game about becoming.", "alt": "The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming." }
+        ],
+        "booklet": [
+            { "title": "Cover", "subtitle": "The Player Booklet.", "alt": "The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet." },
+            { "title": "Quick Reference", "subtitle": "The turn and the card colours at a glance.", "alt": "The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know." },
+            { "title": "Character Sheet", "subtitle": "Who you are at the start.", "alt": "The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal." },
+            { "title": "Journal Page", "subtitle": "Lined pages to write and draw your story.", "alt": "A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds." },
+            { "title": "Character Sheet", "subtitle": "Who you have become.", "alt": "The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections." },
+            { "title": "Back cover", "subtitle": "A game about becoming.", "alt": "The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming." }
+        ]
+    }
+}

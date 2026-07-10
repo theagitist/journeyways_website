@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Composants",
+        "description": "Les composants de JOURNEYWAYS : les paquets de cartes, les tuiles de carte dessinées à la main et (bientôt) le cahier de jeu et le manuel. Choisis un composant pour l'explorer.",
+        "keywords": "composants de JOURNEYWAYS, paquets de cartes, tuiles de carte, cahier de jeu, manuel, jeu d'identité, jeu de société, identité de genre",
+        "og_title": "JOURNEYWAYS | Composants",
+        "og_description": "Les cartes, les tuiles de carte et plus encore. Choisis un composant pour l'explorer."
+    },
+    "hero": {
+        "eyebrow": "Composants",
+        "title": "Les pièces du jeu.",
+        "subtitle": "Les cartes, les tuiles de carte, le cahier de jeu et le manuel.",
+        "lead": "Choisis un composant pour l'explorer de près."
+    },
+    "cards": [
+        {
+            "aria": "Parcours les paquets de cartes",
+            "title": "Cartes",
+            "desc": "Cinq paquets de consignes et de citations : Rencontre, Déplacement, Réflexion, Compte à rebours et Groupe. Choisis un paquet pour le distribuer.",
+            "go": "Parcours les paquets"
+        },
+        {
+            "aria": "Parcours les tuiles de carte",
+            "title": "Tuiles",
+            "desc": "Des lieux de carte carrés dessinés à la main, avec des tuiles vierges que chaque personne dessine elle-même. Choisis une tuile pour la voir de près.",
+            "go": "Parcours les tuiles"
+        },
+        {
+            "aria": "Découvre le Cahier de jeu",
+            "title": "Cahier de jeu",
+            "desc": "Un cahier où écrire, un par personne : des consignes pour créer le personnage, des pages de journal lignées et une fiche de personnage. Tu peux le prévisualiser ou le télécharger pour l'imprimer.",
+            "go": "Ouvre le cahier"
+        },
+        {
+            "aria": "Découvre le Manuel du jeu",
+            "title": "Manuel du jeu",
+            "desc": "Comment préparer et jouer à JOURNEYWAYS, en solo ou en groupe : les règles souples, le tour de jeu et ce que signifie chaque couleur de carte. Tu peux le prévisualiser ou le télécharger pour l'imprimer.",
+            "go": "Ouvre le manuel"
+        }
+    ]
+}

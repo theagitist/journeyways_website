@@ -1,0 +1,28 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Cahier de jeu",
+        "description": "Le Cahier de jeu de JOURNEYWAYS : un cahier à remplir, un par personne, avec des questions pour créer le personnage, des pages de journal lignées et une fiche de personnage. Prévisualisez les pages ou téléchargez le PDF.",
+        "keywords": "cahier de jeu JOURNEYWAYS, journal, fiche de personnage, jeu de société, jeu d'identité",
+        "og_title": "JOURNEYWAYS | Cahier de jeu",
+        "og_description": "Un cahier à remplir, un par personne : questions de personnage, pages de journal et une fiche de personnage. Prévisualisez les pages ou téléchargez le PDF."
+    },
+    "back": "← Retour aux composants",
+    "title": "Le Cahier de jeu",
+    "lede": "Un cahier à remplir, un pour chaque personne : des questions pour créer le personnage, des pages de journal lignées à remplir au fil du personnage qui se dévoile, et une fiche de personnage au début et à la fin. Un par personne à chaque séance ; imprimez-le, pliez-le, faites-en le vôtre.",
+    "count": "Seize pages. Choisissez une page pour la lire de près.",
+    "dl": {
+        "en": "Download · English ↓",
+        "es": "Descargar · Español ↓",
+        "fr": "Télécharger · Français ↓",
+        "note": "PDF, environ 2,9 Mo. Le même cahier en anglais, espagnol ou français."
+    },
+    "preview_heading": "Aperçu du cahier",
+    "pages": [
+        { "alt": "La couverture du Cahier de jeu.", "caption": "Couverture" },
+        { "alt": "La page d'introduction et d'Aide-mémoire.", "caption": "Aide-mémoire" },
+        { "alt": "La première Fiche de personnage.", "caption": "Fiche de personnage" },
+        { "alt": "Une page de journal lignée.", "caption": "Page de journal" },
+        { "alt": "La deuxième Fiche de personnage.", "caption": "Fiche de personnage" },
+        { "alt": "La quatrième de couverture du cahier.", "caption": "Quatrième de couverture" }
+    ]
+}

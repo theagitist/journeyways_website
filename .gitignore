@@ -3,3 +3,6 @@ server/.env
 server/logs/
 tools/node_modules/
 
+
+# Local secrets (real config lives in /etc/journeyways/www-config.php, out of docroot)
+api/www-config.php

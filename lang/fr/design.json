@@ -1,0 +1,132 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Philosophie de conception",
+        "description": "Philosophie de conception de JOURNEYWAYS : neuf principes derrière un jeu de société et un jeu numérique conçus comme instruments de recherche pour explorer l'identité. Des règles souples, aucune victoire, l'expression dans toute modalité, le cadre comme forme.",
+        "keywords": "JOURNEYWAYS, philosophie de conception de jeux, identité, conception de jeux narratifs, jeu décolonial, jeu de recherche, agentivité dans les jeux, aucune condition de victoire, jeu comme cadre, jeu de société libre, recherche UBC GRSJ",
+        "og_title": "JOURNEYWAYS | Philosophie de conception",
+        "og_description": "Neuf notes sur la façon dont le jeu pense. Pourquoi chaque pièce fonctionne comme elle fonctionne."
+    },
+    "hero": {
+        "image_alt": "Tuile de Départ de JOURNEYWAYS : un tourbillon calligraphique d'encre noire sur blanc, entouré de taches d'aquarelle rouges, violettes, bleues, vertes et magenta.",
+        "eyebrow": "Philosophie de conception · Neuf notes",
+        "title": "Comment le jeu fonctionne.",
+        "tagline": "Neuf principes derrière chaque pièce, chaque règle, chaque silence à la table.",
+        "lead": "Les choix qui suivent ne sont pas des préférences esthétiques. Ce sont des manières de faire de la place pour une histoire honnête. Chacun est petit. Ensemble, ils décrivent ce qu'est JOURNEYWAYS et à quoi il sert.",
+        "links": {
+            "about": "À propos de la recherche",
+            "references": "Références",
+            "grsj": "UBC GRSJ"
+        }
+    },
+    "premise": {
+        "stamp": "Prémisse",
+        "sr_heading": "Prémisse",
+        "body": "JOURNEYWAYS est un jeu de société et un jeu numérique en développement, utilisés comme instruments de recherche au UBC <a href=\"https://grsj.arts.ubc.ca/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Institute for Gender, Race, Sexuality and Social Justice</a>. Les jeux ne sont pas l'ensemble du projet ; ce sont un outil essentiel pour recueillir des récits dans un environnement sûr et collaboratif. Ce sont les récits eux-mêmes qui importent le plus, ainsi que l'analyse ethnographique qui en sera faite.",
+        "quote": "« Les récits sont ce qui compte le plus, peu importe la façon dont chaque personne les raconte. »"
+    },
+    "identity": {
+        "stamp": "Identité",
+        "title": "L'identité se découvre.",
+        "fig_alt": "Illustration à l'aquarelle et à l'encre d'une boîte étiquetée Pas encore, une carte de Rencontre.",
+        "fig_caption": "« Tu trouves une boîte étiquetée <span class=\"not-italic\">'Pas encore'</span>. La prends-tu ? L'ouvres-tu ? » <span class=\"card-red\">Carte de Rencontre</span>.",
+        "body_1": "Dans JOURNEYWAYS, l'identité est tout ce que la personne qui joue décide qu'elle soit. Aussi vaste ou aussi menue. Aussi directe ou aussi oblique. Ancrée dans la vie réelle ou entièrement inventée. Réaliste. Fantastique. N'importe quoi.",
+        "body_2": "Le contenu par défaut s'articule autour de l'identité de genre, en s'appuyant sur Judith Butler, Julia Serano, Susan Stryker et Kit Heyam, mais le cadre du jeu reste ouvert. Des personnes l'ont utilisé pour parler de la parentalité, du fait d'être étudiant international, d'une version plus jeune d'elles-mêmes qu'elles cherchaient à se rappeler. Une personne a choisi l'Eau comme identité. Pas une entité aquatique, rien d'anthropomorphisé, simplement l'Eau. Elle réfléchissait au sentiment d'être moins fluide qu'avant, et voulait y penser pendant son expérience de jeu.",
+        "quote": "« L'identité est une notion très ouverte dans ce jeu. Elle peut être ce que la personne qui joue décide. Aussi vaste ou menue, aussi directe ou oblique. »"
+    },
+    "stakes": {
+        "stamp": "Enjeu",
+        "title": "Ni victoire ni défaite.",
+        "panel_aria": "Aquarelle dans des tons de noir et de gris, avec la phrase : Nous sommes toujours en train d'arriver, jamais à destination.",
+        "panel_quote": "« Nous sommes toujours en train d'arriver,<br>jamais à destination. »",
+        "panel_label": "<span class=\"card-black\">Carte de Compte à rebours</span>",
+        "body_1": "JOURNEYWAYS n'a ni condition de victoire ni condition de défaite. Par défaut, une séance se termine de l'une de trois façons : un minuteur s'épuise, cinq <span class=\"card-black\">cartes Noires</span> ont été choisies, ou les deux. Ou toute autre chose dont les personnes qui jouent conviennent. Ou bien une personne choisit de partir à tout moment, sans question, sans pénalité.",
+        "body_2": "Les <span class=\"card-black\">cartes Noires</span> sont de brefs vers poétiques sur le temps qui passe. <span class=\"italic\">Les pétales tombent, et de nouveaux bourgeons éclosent. Un battement de cœur saute vers le silence de l'au-delà. Les pas s'évanouissent dans le sable.</span> Chacune est une petite cloche qui signale qu'un autre grain de temps s'est écoulé.",
+        "body_3": "L'absence de victoire n'est pas une fantaisie. C'est l'architecture sous laquelle le jeu peut porter un récit véritable. Il n'y a rien à optimiser. Il n'y a aucune résolution à jouer. Il y a seulement ce que la personne a choisi d'apporter, aussi longtemps qu'elle a voulu l'apporter."
+    },
+    "consent": {
+        "stamp": "Consentement",
+        "title": "La seule règle que le jeu impose, c'est le consentement à la table.",
+        "fig1_alt": "Tuile de carte dessinée à la main intitulée Pont des Étoiles : le dessin au trait d'un pont en arc sur un lavis de taches d'aquarelle colorées.",
+        "fig1_caption": "Pont des Étoiles. <span class=\"tile-wood\">Tuile de carte</span>.",
+        "fig2_alt": "Illustration à l'aquarelle et à l'encre d'un plan sans indications, une carte de Rencontre.",
+        "fig2_caption": "« Tu reçois un plan sans indications. Que fais-tu ? » <span class=\"card-red\">Carte de Rencontre</span>.",
+        "body_1": "Tout dans le jeu est modifiable. Les règles peuvent être modifiées, infléchies, brisées, ignorées. De nouvelles règles peuvent être inventées en cours de séance. Le seul élément immuable, c'est que le reste de la table soit d'accord.",
+        "body_2": "Enfreindre les règles n'est pas un échec. C'est souvent la meilleure chose qui arrive dans une séance. Une fois, une personne a décidé de ne pas poser une tuile à côté de la carte existante, contre les règles. La tuile avait un thème spatial : elle a donc inventé sur le moment une mécanique de saut hyperspatial pour la relier. La rupture est devenue un moment charnière de la séance, et a inspiré d'autres personnes à être plus libres et plus créatives. De nombreuses modifications apportées par les personnes qui jouent finissent par être intégrées au livret de règles canonique.",
+        "quote": "« Tout dans le jeu est modifiable. De nouvelles règles ? Allez-y. Des règles différentes ? Allez-y. La seule limite, c'est que toutes les autres personnes soient d'accord. »",
+        "body_3": "Cette souplesse a une raison affirmée : l'agentivité. On donne aux personnes qui jouent de la matière avec laquelle travailler, et on leur fait confiance pour en faire quelque chose. La plupart des jeux de société vous disent quoi faire. JOURNEYWAYS vous dit ce qu'il y a ici, et demande ce que vous voulez en faire."
+    },
+    "voice": {
+        "stamp": "Voix",
+        "title": "Conçu pour susciter, non pour fournir.",
+        "fig1_alt": "Illustration de carte à l'aquarelle : un souvenir qui pousse à l'état sauvage.",
+        "fig1_caption": "Mémoire. <span class=\"card-red\">Rencontre</span> (<span class=\"card-red\">Rouge</span>).",
+        "fig2_alt": "Illustration de carte à l'aquarelle : des pas qui reviennent vers un lieu connu.",
+        "fig2_caption": "Réminiscence. <span class=\"card-green\">Mouvement</span> (<span class=\"card-green\">Verte</span>).",
+        "fig3_alt": "Illustration de carte à l'aquarelle : deux figures qui se rencontrent.",
+        "fig3_caption": "Rencontre. <span class=\"card-purple\">Action de groupe</span> (<span class=\"card-purple\">Violette</span>).",
+        "body_1": "Les cartes sont écrites comme des gestes, non comme des situations. <span class=\"italic\">« Ce lieu remodèle ton contour. Comment ? »</span> <span class=\"italic\">« Ta voix change dans ce lieu. Comment change-t-elle ? »</span> <span class=\"italic\">« Tu n'as plus à t'expliquer. Qu'est-ce qui change ? »</span> Chacune est brève et ouverte. La personne qui joue fournit le concret.",
+        "body_2": "Les cartes sont triées en piles de couleur, non en un seul paquet mélangé. Les <span class=\"card-red\">Rouges</span> sont les <span class=\"card-red\">Rencontres</span>. Les <span class=\"card-green\">Vertes</span> sont le <span class=\"card-green\">Mouvement</span>. Les <span class=\"card-blue\">Bleues</span> sont les <span class=\"card-blue\">Réflexions</span>, puisées dans un petit canon de pensée queer (Adrienne Rich, James Baldwin, bell hooks, Tammy Baldwin, Karl Heinrich Ulrichs, Margaret Cho et d'autres). Les <span class=\"card-black\">Noires</span> sont <span class=\"card-black\">le passage du temps</span>. Les <span class=\"card-purple\">Violettes</span> sont les <span class=\"card-purple\">actions de groupe</span>. Les personnes qui jouent choisissent dans quelle pile prendre. Elles savent quel type de carte elles obtiendront ; mais pas exactement laquelle.",
+        "body_3": "C'est volontaire. L'agentivité au niveau de la catégorie. La découverte au niveau de la carte.",
+        "body_4": "Aucun contenu des cartes n'est généré par IA. Chaque consigne et chaque citation ont été créées à la main. Dans la version numérique, les animations sont skeuomorphiques, jamais théâtrales. La retenue fait partie de la conception."
+    },
+    "meeting": {
+        "stamp": "Rencontre",
+        "title": "Un miroir dans une grotte n'est pas un miroir dans une salle de classe.",
+        "fig1_alt": "Tuile de carte dessinée à la main : Grotte Chantante.",
+        "fig1_caption": "Grotte Chantante. <span class=\"tile-wood\">Tuile de carte</span>.",
+        "fig2_alt": "Illustration de carte à l'aquarelle : un miroir fissuré.",
+        "fig2_caption": "« Un miroir se fissure à ton passage. » <span class=\"card-red\">Carte de Rencontre</span>.",
+        "fig3_alt": "Tuile de carte dessinée à la main : Salle d'Étude.",
+        "fig3_caption": "Salle d'Étude. <span class=\"tile-wood\">Tuile de carte</span>.",
+        "body_1": "Le plateau est une carte. Les personnes qui jouent posent des tuiles pour la construire au fur et à mesure. L'endroit où l'on va sur la carte est lui-même une expression : vers quelle tuile on marche, si l'on avance en solitaire ou si l'on rejoint une autre personne, si l'on reste sur le sentier ou si l'on s'aventure ailleurs. Le mouvement ne sert pas qu'à aller quelque part : il fait partie du récit.",
+        "body_2": "C'est la rencontre de deux composants qui engendre un récit. Une carte seule devient vite répétitive. Les tuiles seules sont trop immobiles. Le miroir résonne autrement dans la Grotte Chantante qu'à la Salle d'Étude. Un costume trouvé à la Maison d'Enfance n'est pas un costume trouvé sur le Pont des Étoiles. La mécanique, c'est la rencontre.",
+        "quote": "« Trouver un miroir dans une salle de classe est très différent de trouver un miroir à l'entrée d'une grotte sombre. »"
+    },
+    "modality": {
+        "stamp": "Modalité",
+        "title": "L'expression dans toute modalité. Même le silence.",
+        "fig_alt": "Une personne qui écrit dans son journal pendant une séance de JOURNEYWAYS, les mains notant dans un cahier à côté des tuiles du jeu.",
+        "fig_caption": "Des personnes qui écrivent dans leur journal pendant une séance.",
+        "body_1": "Chaque personne a un cahier ; c'est là qu'elle crée son personnage, le dessine et transmet ses récits. Elle peut s'en servir pour tenir un journal de ce qui arrive à son personnage, écrire des fragments, esquisser, gribouiller, dessiner une bande dessinée, ou le laisser vierge. Le cahier est l'archive durable : ce qui se transmet d'une séance à l'autre, ce qui permet de revenir à un personnage plus tard ou d'ouvrir un chapitre deux.",
+        "body_2": "Mais le cahier est l'option par défaut, non une exigence. On peut raconter à voix haute. On peut dessiner plutôt qu'écrire. On peut passer son tour. On peut rester à l'écart d'un tour en silence. Rien de tout cela n'est un problème. Le silence n'est pas gênant dans JOURNEYWAYS. C'est une manière de raconter l'histoire.",
+        "quote": "« Ne rien faire est aussi une forme d'expression. »",
+        "body_3": "Les cartes ne sont pas secrètes non plus. Le texte est bref et simple, et n'importe quelle personne peut demander à une autre de l'aider à le lire ou à l'interpréter. La charge de lecture se partage, elle n'est pas solitaire."
+    },
+    "hand": {
+        "stamp": "Toucher",
+        "title": "Simple et pourtant sensoriel. Les matériaux sont vôtres aussi.",
+        "fig_alt": "Tuile de carte dessinée à la main intitulée Lac Miroir : la silhouette au trait d'un lac superposée à des taches d'aquarelle.",
+        "fig_caption": "Lac Miroir. <span class=\"tile-wood\">Tuile de carte</span>.",
+        "body_1": "Des tuiles en carton ou en bois. Un papier cartonné agréable au toucher. Un logotype dans une écriture qui veut être ludique et organique. Des illustrations au trait dessinées à la main sur fond blanc, avec des taches d'aquarelle derrière. Les matériaux sont délibérés.",
+        "body_2": "L'ouverture des matériaux l'est tout autant. On peut dessiner sur les tuiles. On peut inventer de nouvelles tuiles avec des notes autocollantes quand une personne a besoin d'un lieu qui n'existe pas encore sur la carte. Les composants ne présument pas de leur propre permanence. La souplesse du jeu descend jusqu'au carton.",
+        "quote": "« Tu poses une pièce solide. Tu peux en faire ce que tu veux. Tu peux même dessiner dessus et l'agrandir. »"
+    },
+    "frame": {
+        "stamp": "Cadre",
+        "title": "Le cadre est la forme.",
+        "fig_alt": "Composants du jeu de société JOURNEYWAYS disposés : tuiles de carte, cartes, un cahier de personnage et des pions.",
+        "fig_caption": "La triade canonique : tuiles, cartes, cahier.",
+        "body_1": "JOURNEYWAYS tient ensemble grâce à trois composants : les <span class=\"tile-wood\">tuiles de carte</span>, les cartes et le cahier de personnage. Ensemble, ils rendent le jeu reconnaissable. La carte donne le lieu et le contexte. Les cartes donnent le stimulus et l'événement. Le cahier donne l'expression et l'archive.",
+        "body_2": "Retirez-en un et l'expérience change. N'importe qui peut le faire. Le cadre est ouvert : une personne qui fait de la recherche peut créer une variante pour une communauté précise, le personnel enseignant peut en créer une pour une salle de classe, un parent peut en créer une pour des personnes plus jeunes. Le contenu par défaut est adulte et centré sur le genre, mais le moteur sert à l'exploration de l'identité en général.",
+        "body_3": "La forme à long terme de JOURNEYWAYS n'est pas un produit unique. C'est le cadre, et ce que d'autres personnes en font. Vous pouvez déjà examiner de près deux des trois pièces : les <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">cartes</a> et les <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">tuiles de carte</a>.",
+        "quote": "« Le moteur est censé aider dans le processus créatif, non être un obstacle. »"
+    },
+    "reach": {
+        "stamp": "Portée",
+        "title": "Fait pour être partagé. Fait pour être sûr.",
+        "fig_alt": "Illustration à l'aquarelle de six pions de couleurs différentes réunis.",
+        "fig_caption": "Les personnes qui jouent, ensemble.",
+        "body_1": "Le même engagement traverse deux ensembles de décisions.",
+        "body_2": "<span class=\"text-gray-200 font-medium\">Reproductibilité.</span> Des polices libres. Du code libre. Du contenu sous Creative Commons. Aucune dépendance propriétaire. Le jeu peut être imprimé, modifié et republié sans obstacles de licence ni de ressources. Des gabarits pour les cartes, les tuiles et le cahier de personnage seront disponibles afin que chacun puisse créer sa propre version. Des variantes localisées du jeu de société peuvent être produites à travers le cadre. La version numérique sort en anglais, en espagnol et en français.",
+        "body_3": "<span class=\"text-gray-200 font-medium\">Sécurité.</span> La version numérique est distribuée sans prise en charge de la caméra. Les séances de recherche sont enregistrées en audio seulement, jamais en vidéo. Toutes les ressources et données numériques sont conservées dans des centres de données au Canada (Toronto). Le contenu créé par les personnes utilisatrices reste dans la langue dans laquelle il a été écrit ; rien n'est traduit automatiquement, car leurs mots leur appartiennent. Les entrées de journal sont conservées selon une <a href=\"https://play.journeyways.ca/privacy\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\" target=\"_blank\" rel=\"noopener noreferrer\">Politique de confidentialité</a> et des <a href=\"https://play.journeyways.ca/terms\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\" target=\"_blank\" rel=\"noopener noreferrer\">Conditions d'utilisation</a> documentées.",
+        "body_4": "Deux fils d'une même conception. Rendre possible pour quiconque d'atteindre le jeu. Le rendre sûr pour que quiconque puisse vraiment y jouer."
+    },
+    "coda": {
+        "stamp": "Coda",
+        "title": "Une note de la personne qui a conçu le jeu.",
+        "body_1": "Les identités et les façons de les exprimer font partie de l'expérience humaine depuis qu'il y a des êtres humains. Les catégories que la plupart des institutions nous tendent sont récentes, étroites, et ne sont pas faites pour convenir. JOURNEYWAYS ne prétend pas régler cela. Il ouvre un petit espace à l'intérieur, où quelqu'un peut parler de soi sans avoir à comprimer ce qu'il est.",
+        "body_2": "C'est à cela que sert chaque choix de cette page.",
+        "quote": "« La connaissance doit être partagée avec les personnes qui en ont le plus besoin. »",
+        "footer_note": "Pour le contexte du projet et la biographie de la personne qui mène la recherche, consultez <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">À propos</a>."
+    }
+}

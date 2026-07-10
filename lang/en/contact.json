@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Contact",
+        "description": "Contact JOURNEYWAYS: a research-driven board game and digital game about identity. Reach out as a player, researcher, educator, therapist, community organizer, or variant author.",
+        "keywords": "JOURNEYWAYS contact, Adri M, UBC GRSJ, research project, board game contact, narrative game inquiries, framework variant authoring",
+        "og_title": "JOURNEYWAYS | Contact",
+        "og_description": "Reach out about JOURNEYWAYS as a player, researcher, educator, therapist, community organizer, or variant author.",
+        "robots": "noindex, follow"
+    },
+    "hero": {
+        "title": "Contact",
+        "intro": "Researchers, educators, community organizers, and curious players are all welcome to reach out. Tick whichever boxes describe you and add a few words if you'd like."
+    },
+    "form": {
+        "heading": "Contact form",
+        "name_label": "Name",
+        "email_label": "Email",
+        "interests_legend": "I'm reaching out as a... (optional, pick any)",
+        "message_label": "A short note (optional)",
+        "message_placeholder": "What are you hoping to do, learn, or share?",
+        "message_hint": "Up to 1000 characters.",
+        "honeypot_label": "Website (leave empty)",
+        "submit": "Send"
+    },
+    "interests": {
+        "player": "Player or curious about the game",
+        "researcher": "Researcher",
+        "educator": "Educator",
+        "therapist": "Therapist or healthcare provider",
+        "organizer": "Community organizer",
+        "variant-author": "Want to author a variant",
+        "press": "Journalist or press",
+        "other": "Other"
+    },
+    "errors": {
+        "name_required": "A valid name is required (under 100 characters).",
+        "email_required": "A valid email is required.",
+        "message_too_long": "Message must be under 1000 characters.",
+        "verification_failed": "Verification failed. Please refresh the page and try again.",
+        "rate_limited": "Too many attempts. Please try again later.",
+        "unavailable": "Contact temporarily unavailable. Please try again later.",
+        "send_failed": "Could not send your message. Please try again later."
+    }
+}

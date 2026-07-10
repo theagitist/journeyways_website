@@ -54,7 +54,7 @@ function initContactForm() {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (!form.checkValidity()) {
-            setStatus('Please fill the required fields.', '#f87171');
+            setStatus(jwUI('contact_fill_required', 'Please fill the required fields.'), '#f87171');
             return;
         }
 
@@ -68,11 +68,12 @@ function initContactForm() {
             interests: interests,
             message: (fd.get('message') || '').toString().trim(),
             website: (fd.get('website') || '').toString(), // honeypot
-            turnstileToken: turnstileToken
+            turnstileToken: turnstileToken,
+            lang: document.documentElement.lang || 'en' // localizes server-side errors
         };
 
         submitBtn.disabled = true;
-        setStatus('Sending...', '');
+        setStatus(jwUI('contact_sending', 'Sending...'), '');
 
         fetch(CONTACT_ENDPOINT, {
             method: 'POST',
@@ -86,13 +87,13 @@ function initContactForm() {
                 if (typeof window.turnstile !== 'undefined' && typeof window.turnstile.reset === 'function') {
                     window.turnstile.reset();
                 }
-                setStatus('Message sent. Thank you for reaching out.', '#86efac');
+                setStatus(jwUI('contact_sent', 'Message sent. Thank you for reaching out.'), '#86efac');
             } else {
-                var msg = (result.body && result.body.error) || 'Something went wrong. Please try again later.';
+                var msg = (result.body && result.body.error) || jwUI('contact_generic_error', 'Something went wrong. Please try again later.');
                 setStatus(msg, '#f87171');
             }
         }).catch(function () {
-            setStatus('Network error. Please try again later.', '#f87171');
+            setStatus(jwUI('contact_network', 'Network error. Please try again later.'), '#f87171');
         }).then(function () {
             submitBtn.disabled = false;
         });
@@ -164,9 +165,9 @@ function injectCTA() {
         container.innerHTML =
             '<section class="py-12 bg-amber-400 text-black">' +
             '<div class="max-w-4xl mx-auto text-center px-4">' +
-            '<h2 class="text-2xl md:text-3xl font-semibold mb-3">Ready to Begin?</h2>' +
-            '<p class="text-base md:text-lg mb-6 max-w-2xl mx-auto">Step into the digital version of Journeyways. Explore identity, agency, and community in a transformative interactive space.</p>' +
-            '<a href="https://play.journeyways.ca" class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">Play the Digital Version</a>' +
+            '<h2 class="text-2xl md:text-3xl font-semibold mb-3">' + jwUI('cta_vg_heading', 'Ready to Begin?') + '</h2>' +
+            '<p class="text-base md:text-lg mb-6 max-w-2xl mx-auto">' + jwUI('cta_vg_body', 'Step into the digital version of Journeyways. Explore identity, agency, and community in a transformative interactive space.') + '</p>' +
+            '<a href="https://play.journeyways.ca" class="inline-block bg-black text-white px-6 py-2.5 rounded font-medium hover:bg-gray-800 transition-colors">' + jwUI('cta_vg_button', 'Play the Digital Version') + '</a>' +
             '</div></section>';
     } else if (isIndex) {
         container.innerHTML =
@@ -175,14 +176,14 @@ function injectCTA() {
             '<div class="grid grid-cols-12 gap-8 md:gap-12 items-start">' +
             '<header class="col-span-12 md:col-span-3 flex items-center gap-3">' +
             '<div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">' +
-            '<img src="img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">' +
+            '<img src="/img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">' +
             '</div>' +
-            '<span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">Begin</span>' +
+            '<span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none">' + jwUI('cta_index_stamp', 'Begin') + '</span>' +
             '</header>' +
             '<div class="col-span-12 md:col-span-8 md:col-start-5">' +
-            '<h2 class="text-xl md:text-2xl text-gray-100 font-light leading-[1.3] tracking-tight mb-8 max-w-prose">Step into the game and let the journey unfold.</h2>' +
-            '<a href="boardgame.html" class="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-7 py-3 transition-colors text-sm tracking-[0.2em] uppercase">' +
-            '<span>How to play</span>' +
+            '<h2 class="text-xl md:text-2xl text-gray-100 font-light leading-[1.3] tracking-tight mb-8 max-w-prose">' + jwUI('cta_index_heading', 'Step into the game and let the journey unfold.') + '</h2>' +
+            '<a href="' + jwUI('cta_index_href', '/boardgame.html') + '" class="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-7 py-3 transition-colors text-sm tracking-[0.2em] uppercase">' +
+            '<span>' + jwUI('cta_index_button', 'How to play') + '</span>' +
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>' +
             '</a>' +
             '</div></div></div></section>';
@@ -276,24 +277,45 @@ var gallerySets = {
         { src: 'img/play/play-room.webp', alt: 'Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right.', title: 'Inside a room', subtitle: 'The private journal beside the live room lobby.' }
     ],
     manual: [
-        { src: 'img/manual/p01.webp?v=2', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
-        { src: 'img/manual/p04.webp?v=2', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
-        { src: 'img/manual/p05.webp?v=2', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
-        { src: 'img/manual/p08.webp?v=2', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
-        { src: 'img/manual/p09.webp?v=2', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
-        { src: 'img/manual/p13.webp?v=2', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/manual/p01.webp?v=3', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
+        { src: 'img/manual/p04.webp?v=3', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p05.webp?v=3', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
+        { src: 'img/manual/p08.webp?v=3', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
+        { src: 'img/manual/p09.webp?v=3', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
+        { src: 'img/manual/p13.webp?v=3', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ],
     booklet: [
-        { src: 'img/booklet/p01.webp?v=2', alt: 'The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
-        { src: 'img/booklet/p02.webp?v=2', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
-        { src: 'img/booklet/p03.webp?v=2', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
-        { src: 'img/booklet/p06.webp?v=2', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
-        { src: 'img/booklet/p15.webp?v=2', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
-        { src: 'img/booklet/p16.webp?v=2', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/booklet/p01.webp?v=3', alt: 'The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
+        { src: 'img/booklet/p02.webp?v=3', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
+        { src: 'img/booklet/p03.webp?v=3', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
+        { src: 'img/booklet/p06.webp?v=3', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
+        { src: 'img/booklet/p15.webp?v=3', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
+        { src: 'img/booklet/p16.webp?v=3', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ]
 };
 var currentSet = 'photos';
 var currentImageIndex = 0;
+
+// --- i18n: server injects window.__I18N (see partials/footer.php). English baked
+// into this file is the fallback. ui[] holds CTA/lightbox strings; gallery[] holds
+// localized title/subtitle/alt keyed by set name + index, overlaid onto gallerySets. ---
+function jwUI(key, fallback) {
+    var ui = (window.__I18N && window.__I18N.ui) || {};
+    return (ui[key] != null) ? ui[key] : fallback;
+}
+(function () {
+    var g = (window.__I18N && window.__I18N.gallery) || {};
+    Object.keys(g).forEach(function (setName) {
+        if (!gallerySets[setName]) return;
+        (g[setName] || []).forEach(function (tr, i) {
+            var item = gallerySets[setName][i];
+            if (!item || !tr) return;
+            if (tr.title != null) item.title = tr.title;
+            if (tr.subtitle != null) item.subtitle = tr.subtitle;
+            if (tr.alt != null) item.alt = tr.alt;
+        });
+    });
+})();
 
 // The lightbox is ONE component, built here and injected once, reused by every
 // page (photos, components, boardgame, etc.). Items are either images
@@ -307,9 +329,9 @@ function buildLightboxDOM() {
     lb.className = 'lightbox';
     lb.innerHTML =
         '<div class="lightbox-box">' +
-            '<button class="lightbox-close" type="button" aria-label="Close">&times;</button>' +
-            '<button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous">&#10094;</button>' +
-            '<button class="lightbox-nav lightbox-next" type="button" aria-label="Next">&#10095;</button>' +
+            '<button class="lightbox-close" type="button" aria-label="' + jwUI('lb_close', 'Close') + '">&times;</button>' +
+            '<button class="lightbox-nav lightbox-prev" type="button" aria-label="' + jwUI('lb_prev', 'Previous') + '">&#10094;</button>' +
+            '<button class="lightbox-nav lightbox-next" type="button" aria-label="' + jwUI('lb_next', 'Next') + '">&#10095;</button>' +
             '<div class="lightbox-stage" id="lightbox-stage"><img class="lightbox-content" id="lightbox-img" src="" alt=""></div>' +
             '<div class="lightbox-caption"><h3 id="lightbox-title"></h3><p id="lightbox-subtitle"></p></div>' +
         '</div>';

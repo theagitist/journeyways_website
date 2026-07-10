@@ -1,0 +1,266 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | The Board Game",
+        "description": "JOURNEYWAYS is a UBC-rooted research project exploring identity and agency through collaborative storytelling. Learn how to play the board game: rules, setup, solo and group play for secular, gender-neutral self-inquiry.",
+        "keywords": "JOURNEYWAYS, board game rules, how to play JOURNEYWAYS, game setup, collaborative storytelling, decolonial play, forced migration narrative, gender-diverse storytelling, UBC GRSJ research, transdisciplinary art, transformative identity game, identity exploration game, solo board game, group board game",
+        "og_title": "JOURNEYWAYS | The Board Game",
+        "og_description": "How to play JOURNEYWAYS: setup, turns, and how a session ends. Five card categories, a buildable map, no winning, no losing."
+    },
+    "hero": {
+        "eyebrow": "Board game · Rulebook",
+        "cover_alt": "JOURNEYWAYS rulebook cover: diagonal pastel and saturated watercolor bands behind the JOURNEYWAYS wordmark, with a small mountain landscape silhouette.",
+        "title": "How to play.",
+        "tagline": "Setup, turns, and how a session ends.",
+        "intro": "JOURNEYWAYS is not about winning or losing. The rules below are a frame to start from. Bend them, break them, write your own. The single fixed rule is that everyone at the table agrees.",
+        "rulebook_label": "Rulebook (PDF):",
+        "booklet_label": "Player Booklet (PDF):",
+        "langs": {
+            "en": "English",
+            "es": "Español",
+            "fr": "Français"
+        }
+    },
+    "decks": {
+        "stamp": "Decks",
+        "sr_heading": "Decks",
+        "intro": "Cards are shuffled together, but then spread into three or more piles. Players choose which pile to pick from. They know the kind of card they will get, but not exactly which one.",
+        "chips": [
+            {
+                "alt": "Card back in red, yellow and orange watercolor splotches.",
+                "color": "Red",
+                "category": "Encounters"
+            },
+            {
+                "alt": "Card back in shades of green watercolor splotches.",
+                "color": "Green",
+                "category": "Movement"
+            },
+            {
+                "alt": "Card back in shades of blue watercolor splotches.",
+                "color": "Blue",
+                "category": "Reflections"
+            },
+            {
+                "alt": "Card back in shades of black and gray watercolor splotches.",
+                "color": "Black",
+                "category": "Countdown"
+            },
+            {
+                "alt": "Card back in shades of purple watercolor splotches.",
+                "color": "Purple",
+                "category": "Group actions"
+            }
+        ],
+        "browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse every card in the Components gallery</a>, deck by deck."
+    },
+    "setup": {
+        "stamp": "Setup",
+        "sr_heading": "Setup",
+        "need_heading": "What you'll need",
+        "need": [
+            "Board tiles (35).",
+            "Game cards (81).",
+            "Player tokens (1 per player).",
+            "Player booklet (1 per player).",
+            "Some sticky notes.",
+            "Die for choosing the starting player (1).",
+            "Pens and pencils."
+        ],
+        "initial_heading": "Initial setup",
+        "steps": [
+            "Shuffle all cards together and place them face down in three piles.",
+            "Pick one card and place it apart face up. This will be the Discard pile.",
+            "Find the Starter board tile and set it apart. Shuffle all others and place them face down in three piles.",
+            "Each player takes one player token.",
+            "Use the die to determine the starting player. For example, highest number goes first.",
+            "Place the Starter board tile in the center of the table.",
+            "Taking turns, each player picks a tile from any pile and places it adjacent to another previously placed tile. If it's a blank tile, put it back in the pile and pick again.",
+            "All players place their tokens on the Starter tile."
+        ],
+        "figure_alt": "Top-down photo of a JOURNEYWAYS setup ready to begin: a four-by-four grid of map tiles in the foreground, the character booklet and a meeple case to the left, and a pile of character cards behind them on a wooden surface.",
+        "figcaption": "Tiles, cards, tokens."
+    },
+    "turn": {
+        "stamp": "Turn",
+        "sr_heading": "Turn",
+        "intro_html": "Each turn has three phases: <span class=\"font-medium text-white\">Explore</span>, <span class=\"font-medium text-white\">Pick</span>, and <span class=\"font-medium text-white\">Reflect</span>.",
+        "phases": [
+            {
+                "eyebrow": "Phase 1",
+                "title": "Explore",
+                "body_html": "Two options. Pick a map tile and place it adjacent to another one. If you pick a blank tile, you have to create it before placing it. Or use a sticky note to draw a new map tile (whatever you want) and place it on top of an existing one where no player is located. After placing your tile, you can move one or two spaces in any direction."
+            },
+            {
+                "eyebrow": "Phase 2",
+                "title": "Pick",
+                "body_html": "Pick a card from any pile, even the Discard pile. <span class=\"card-green\">Green</span> cards are movement, <span class=\"card-black\">Black</span> cards are pass of time, <span class=\"card-blue\">Blue</span> cards are quotes, <span class=\"card-red\">Red</span> cards are encounters, <span class=\"card-purple\">Purple</span> cards are group events."
+            },
+            {
+                "eyebrow": "Phase 3",
+                "title": "Reflect",
+                "body_html": "If you picked a <span class=\"card-green\">Green</span> or <span class=\"card-purple\">Purple</span> card, you have to perform the action it indicates. If you picked a <span class=\"card-blue\">Blue</span> or <span class=\"card-red\">Red</span> card, take into account what they say, and write a new entry in your journal. If you picked a <span class=\"card-black\">Black</span> card, set it apart. The game ends when the fifth <span class=\"card-black\">Black</span> card is picked."
+            }
+        ],
+        "tiles_label_html": "<span class=\"tile-wood\">Map tiles</span>, twelve examples",
+        "tiles": [
+            {
+                "alt": "Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches.",
+                "name": "Mirror Lake"
+            },
+            {
+                "alt": "Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches.",
+                "name": "Star Bridge"
+            },
+            {
+                "alt": "Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches.",
+                "name": "Singing Cave"
+            },
+            {
+                "alt": "Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters.",
+                "name": "Mountain Peak"
+            },
+            {
+                "alt": "Map tile: Childhood House. A small house surrounded by colorful watercolor splatters.",
+                "name": "Childhood House"
+            },
+            {
+                "alt": "Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches.",
+                "name": "Study Room"
+            },
+            {
+                "alt": "Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters.",
+                "name": "Volcanic Ground"
+            },
+            {
+                "alt": "Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches.",
+                "name": "Tree Hollow"
+            },
+            {
+                "alt": "Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings.",
+                "name": "Buried Names Field"
+            },
+            {
+                "alt": "Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.",
+                "name": "Misty Trail"
+            },
+            {
+                "alt": "Map tile: Night Way. Hand-drawn dark path under a starless sky.",
+                "name": "Night Way"
+            },
+            {
+                "alt": "Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters.",
+                "name": "Abandoned Playground"
+            }
+        ],
+        "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">See the full set of map tiles</a> in the Components gallery.",
+        "fronts_label": "Card fronts, nine examples",
+        "fronts": [
+            {
+                "alt": "Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'.",
+                "category": "Encounter",
+                "color": "Red"
+            },
+            {
+                "alt": "Movement card front: a watercolor and ink illustration evoking a return to a familiar place.",
+                "category": "Movement",
+                "color": "Green"
+            },
+            {
+                "alt": "Group action card front: a watercolor and ink illustration of two figures meeting.",
+                "category": "Group action",
+                "color": "Purple"
+            },
+            {
+                "alt": "Encounter card front: a watercolor and ink illustration of a cracked mirror.",
+                "category": "Encounter",
+                "color": "Red"
+            },
+            {
+                "alt": "Group action card front: a watercolor of six colorful meeples huddled together.",
+                "category": "Group action",
+                "color": "Purple"
+            },
+            {
+                "alt": "Encounter card front: a watercolor and ink illustration of a map without directions.",
+                "category": "Encounter",
+                "color": "Red"
+            },
+            {
+                "alt": "Encounter card front: a watercolor and ink illustration of a memory growing wild.",
+                "category": "Encounter",
+                "color": "Red"
+            },
+            {
+                "alt": "Encounter card front: a watercolor and ink illustration of two splotchy figures facing each other.",
+                "category": "Encounter",
+                "color": "Red"
+            },
+            {
+                "alt": "Encounter card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind.",
+                "category": "Encounter",
+                "color": "Red"
+            }
+        ],
+        "fronts_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse all the cards</a>, sorted by deck, in the Components gallery."
+    },
+    "ending": {
+        "stamp": "Ending",
+        "sr_heading": "Ending",
+        "p1_html": "The game ends when the fifth <span class=\"card-black\">Black</span> card is picked. Each player can add a final entry to their journal, or just leave it as it is. If all players agree, you can end after any number of <span class=\"card-black\">Black</span> cards, or disregard them and use a timer, or stop whenever a story feels complete.",
+        "p2": "It is okay if your story ends abruptly. You can leave it like that, or return to it on another session.",
+        "p3": "After ending the game, each player can fill in their character sheet at the back of the player booklet. This way they can see how their character developed during the game: what changed, and what stayed the same.",
+        "quote": "“The game is not about winning or losing. It is about discovering, exploring, and becoming.”"
+    },
+    "journal": {
+        "stamp": "Journal",
+        "sr_heading": "Journal",
+        "p1": "Unlike traditional games, your character in JOURNEYWAYS emerges through play rather than being predetermined. Use the cards as inspiration, not rigid definitions; the main objective is that you set your imagination free and write the story you want to tell.",
+        "p2": "Journal entries can be as short or long, as terse or detailed as you want. You can take inspiration from the tile where your token is located and the text on the card, but you can be as creative as you want. Write a journal entry. Doodle it. Draw a comic. Write a fragment. Leave it blank. All of these count."
+    },
+    "modes": {
+        "stamp": "Modes",
+        "sr_heading": "Modes of play",
+        "intro": "Two ways to play. Choose either, or move between them.",
+        "solo_heading": "Solo play",
+        "solo": [
+            "Remove the <span class=\"card-purple\">Purple</span> cards from the game.",
+            "Focus on deep personal reflection.",
+            "Take as much time as you need.",
+            "Use journaling extensively.",
+            "Create your own pacing.",
+            "Return to previous sessions."
+        ],
+        "group_heading": "Group play",
+        "group": [
+            "Share reflections with others.",
+            "Learn from different perspectives.",
+            "Build collective narratives.",
+            "Support each other's growth.",
+            "Create shared memories."
+        ]
+    },
+    "open": {
+        "stamp": "Open play",
+        "sr_heading": "Open play",
+        "returning_heading": "Returning to a session",
+        "returning_body": "JOURNEYWAYS is designed for ongoing play. Return to previous sessions, revisit old insights, see how your understanding has evolved. Your character and story continue to develop between sessions.",
+        "makeyourown_heading": "Make your own",
+        "makeyourown_body": "Add your own story cards, tiles, character elements, mechanics. Templates are open. JOURNEYWAYS is a framework for exploration; make it your own.",
+        "setting_heading": "Setting the table",
+        "setting": [
+            "Set aside dedicated time.",
+            "Minimize distractions.",
+            "Create a comfortable environment.",
+            "Honor everyone's privacy.",
+            "Practice active listening."
+        ],
+        "deeper_heading": "Going deeper",
+        "deeper": [
+            "Ask open-ended questions.",
+            "Embrace uncertainty.",
+            "Allow for silence and reflection.",
+            "Be curious, not judgmental.",
+            "Celebrate small discoveries."
+        ]
+    }
+}

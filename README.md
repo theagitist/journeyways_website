@@ -2,7 +2,19 @@
 
 Public-facing site for JOURNEYWAYS, a master's research project at the UBC Institute for Gender, Race, Sexuality and Social Justice (GRSJ). The project uses a board game and a digital game in development as research instruments to study how people self-identify when given a narrative-driven, safe, collaborative play space.
 
-This repository holds the static site (`www.journeyways.ca`) and a small Node.js backend for a contact form.
+This repository holds the site (`www.journeyways.ca`).
+
+> **Localization refactor (2026-07-10, staged, not yet live).** The site has been
+> refactored from copy-pasted static HTML to a lean **PHP-FPM** server-render and
+> localized to Spanish and French (N-language-ready): a front controller
+> (`index.php`) + partials + per-language JSON dictionaries (`lang/`), SEO-optimal
+> per-language URLs (English bare, `/es/`, `/fr/`) with reciprocal hreflang, a
+> language switcher, and an Accept-Language suggestion banner. The contact form is
+> ported to a dependency-free `api/contact.php` (the Node `server/` retires at
+> cutover). The page descriptions below still describe the content faithfully; the
+> `.html` filenames are now the clean URLs served by the front controller. The
+> go-live is a single nginx change staged in `deploy/` (`nginx-www.journeyways.ca.conf`
+> + `CUTOVER.md`). Full detail: `CLAUDE.md` and the memory `project_www_php_i18n`.
 
 ## About JOURNEYWAYS
 
@@ -23,7 +35,7 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 - **References** (`references.html`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/references.md`.
 - **Brand spec** (no longer in this repo as of 2026-05-12). Canonical copy moved to the Academia Obsidian vault at `Projects/Journeyways/Foundations/brand-spec.md`. Covers logo + usage rules, palette, typography, components, voice + examples, tokens, the editorial chapter spine pattern, the presentation slide system, hero variations per page, and §9 Companion materials covering print and the videogame. Not currently public; will return to the live site in HTML form when the vault-to-HTML rendering pipeline ships (queued in the vault's website roadmap).
 - **Presentation** (`presentation.html`). Standalone conference deck (15 slides). `noindex, nofollow` (linkable from the site, not indexed by search engines). Linked from the About hero bar between References and UBC GRSJ. Self-contained: inline CSS and JS, no external slide framework; keyboard-driven (arrow keys, space, F fullscreen, S speaker notes, P print-to-PDF). The print stylesheet renders 16:9 pages so any browser's "Print to PDF" produces a clean shareable deck.
-- **Contact** (`contact.html`). Hidden (`noindex`, off the nav, off the sitemap) until the deliverability issue is resolved.
+- **Contact** (`contact.html`). `noindex`, off the nav and sitemap. The form posts to `api/contact.php` (validation, honeypot, Cloudflare Turnstile, per-IP rate limit, authenticated SMTPS via ZeptoMail, localized errors); secrets live in `/etc/journeyways/www-config.php`, out of the docroot.
 
 ## Site structure
 

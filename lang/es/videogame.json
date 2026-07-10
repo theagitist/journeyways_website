@@ -1,0 +1,133 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | El videojuego",
+        "description": "La versión digital de JOURNEYWAYS, en desarrollo activo en la v0.7.0-alpha. Multijugador en tiempo real, interfaz trilingüe (inglés, español, francés), privacidad por diseño (sin cámara), basada en la web y sin necesidad de instalación. Investigación de maestría en el UBC GRSJ.",
+        "keywords": "JOURNEYWAYS, juego digital, videojuego, exploración de la identidad, narrativa colaborativa, multijugador en tiempo real, juego narrativo, juego web, investigación UBC GRSJ, juego trilingüe, privacidad por diseño, desarrollo alpha",
+        "og_title": "JOURNEYWAYS | El videojuego",
+        "og_description": "La versión digital de JOURNEYWAYS, en desarrollo activo en la v0.7.0-alpha. Multijugador en tiempo real, interfaz trilingüe (EN/ES/FR), privacidad por diseño, basada en la web y sin instalación."
+    },
+    "hero": {
+        "eyebrow": "Versión digital · Alpha · En desarrollo",
+        "title": "La versión digital.",
+        "tagline": "El mismo juego. Nativo de la web. Construido en abierto.",
+        "lead": "JOURNEYWAYS se está construyendo como juego digital en paralelo con el juego de mesa. La misma filosofía de diseño, las mismas cinco categorías de cartas, el mismo mapa modular, el mismo diario privado. Otro medio, el mismo compromiso con la exploración de la identidad y la narrativa colaborativa.",
+        "spec": {
+            "version_label": "Versión",
+            "tagged_label": "Etiquetado",
+            "tagged_value": "Junio de 2026",
+            "platform_label": "Plataforma",
+            "platform_value": "Web, sin instalación",
+            "players_label": "Personas",
+            "players_value": "1 a 6",
+            "languages_label": "Idiomas",
+            "source_label": "Código",
+            "note": "El repositorio es privado durante el desarrollo. Abierto al público en el lanzamiento."
+        }
+    },
+    "premise": {
+        "stamp": "Premisa",
+        "sr": "Premisa",
+        "p1": "La versión digital existe para eliminar barreras, no para reemplazar la mesa. Cada persona puede participar desde donde esté; las sesiones abarcan distintas geografías; no hay soporte de cámara, así que el foco permanece en las palabras y las historias. Juego en solitario y en grupo, multijugador en tiempo real, trilingüe desde el lanzamiento.",
+        "p2": "El repositorio es privado durante el desarrollo; el acceso es por solicitud. Se hará público cuando el proyecto se publique."
+    },
+    "built": {
+        "stamp": "Construido",
+        "sr": "Construido hasta ahora",
+        "intro": "Incluido en la compilación alpha actual.",
+        "cards": {
+            "multiplayer": {
+                "title": "Multijugador en tiempo real",
+                "body": "El vestíbulo, el panel y la vista de juego muestran quién está presente. La sincronización del lienzo colaborativo mantiene la vista de todas las personas al mismo compás."
+            },
+            "cards": {
+                "title": "Sistema de cartas de cinco colores",
+                "body": "El mismo sistema de fichas de mapa y pilas de cartas que el juego de mesa, recreado como un lienzo interactivo. <span class=\"card-red\">Roja</span> Encuentros, <span class=\"card-green\">Verde</span> Movimiento, <span class=\"card-blue\">Azul</span> Reflexiones, <span class=\"card-black\">Negra</span> Cuenta atrás, <span class=\"card-purple\">Morada</span> Acciones de grupo. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora los mazos</a>."
+            },
+            "table": {
+                "title": "La mesa de juego compartida",
+                "body": "Todas las cartas se barajan juntas y se reparten en un puñado de pilas desiguales, boca abajo, alrededor de una mesa compartida, cada una mostrando su palo en el reverso; las fichas de mapa se apilan del mismo modo sobre sus reversos de madera. Elige la carta superior de una pila y se voltea boca arriba para que toda la sala la vea; luego colócala en la mesa donde prefieras. Quien organiza la partida puede fijar cuántas cartas de Cuenta atrás están en juego y volver a barajar el mazo a mitad de la partida, pidiendo primero el acuerdo de cada persona viajera."
+            },
+            "journal": {
+                "title": "Diario privado con vista previa del boceto",
+                "body": "Un diario para cada persona: escribe entradas, dibuja con la herramienta de lienzo y hojea entradas anteriores con vistas previas en miniatura."
+            },
+            "origins": {
+                "title": "Orígenes del personaje en PDF",
+                "body": "Cada persona puede exportar su página de creación de personaje como un PDF en tamaño Carta (US Letter) para imprimir o archivar."
+            },
+            "trilingual": {
+                "title": "Interfaz trilingüe",
+                "body": "Inglés, español y francés desde el lanzamiento. El contenido creado por cada persona permanece en el idioma en que lo escribió; nada se traduce automáticamente."
+            },
+            "privacy": {
+                "title": "Privacidad por diseño",
+                "body": "Sin soporte de cámara. Hash de contraseñas con Argon2id, verificación con Cloudflare Turnstile, diarios acotados por sesión. Todos los datos alojados en Canadá."
+            }
+        }
+    },
+    "screens": {
+        "stamp": "Un vistazo por dentro",
+        "sr": "Un vistazo por dentro",
+        "intro": "Algunas pantallas de la alpha en funcionamiento. Haz clic en cualquiera para verla más grande.",
+        "front": {
+            "alt": "La pantalla de inicio del juego digital JOURNEYWAYS.",
+            "caption": "La puerta de entrada"
+        },
+        "dashboard": {
+            "alt": "El panel del juego digital con los viajes de quien juega.",
+            "caption": "Tu panel"
+        },
+        "tiles": {
+            "alt": "La galería digital de fichas de mapa.",
+            "caption": "Las fichas de mapa"
+        },
+        "room": {
+            "alt": "Dentro de una sala: el diario privado junto al vestíbulo de la sala.",
+            "caption": "Dentro de una sala"
+        }
+    },
+    "recent": {
+        "stamp": "Reciente",
+        "sr": "Hitos recientes",
+        "body": "El registro completo de desarrollo ahora vive en la página de <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Novedades</a>, junto a los hitos del juego de mesa."
+    },
+    "roadmap": {
+        "stamp": "Hoja de ruta",
+        "sr": "Hoja de ruta",
+        "intro": "Planificado, aún no publicado.",
+        "items": {
+            "print": {
+                "title": "Cartas, fichas y cuadernos imprimibles",
+                "body": "Un único proceso de composición tipográfica que convierte el catálogo en archivos listos para imprimir: los conjuntos completos de cartas y fichas de mapa, el cuaderno de jugadora o jugador y el manual de uso, todos generados desde la misma fuente que las versiones en pantalla, de modo que nunca se desincronizan. Muy pronto."
+            },
+            "story_loop": {
+                "title": "Ciclo narrativo",
+                "body": "La mesa compartida ya está lista; lo siguiente es el turno completo de diario que se construye sobre ella: elegir una carta de un palo escogido, escribir una breve entrada a partir de ella y compartirla con la sala."
+            },
+            "chat": {
+                "title": "Chat dentro de la sala",
+                "body": "Chat de texto plano dentro de tu sala, junto al lienzo y al diario. La voz y el video quedan fuera de la aplicación; usa tus propias herramientas."
+            },
+            "export": {
+                "title": "Llévate tus historias contigo",
+                "body": "Exporta los datos de tu personaje, tus entradas narrativas y tus reflexiones en un formato portátil que puedes conservar, incluso después de que termine la sesión."
+            },
+            "mobile": {
+                "title": "Adaptación a móviles",
+                "body": "Por ahora, los teléfonos son solo orientativos. Está previsto el soporte completo para pantallas pequeñas."
+            },
+            "docs": {
+                "title": "Documentación abierta",
+                "body": "El proyecto completo, en lenguaje técnico claro, visible en el sitio: seguridad, privacidad, gobernanza de datos, infraestructura. Para quien quiera mirar bajo el capó."
+            },
+            "beta": {
+                "title": "Beta discreta y luego sesiones más grandes",
+                "body": "Primero una beta cerrada con un grupo pequeño y luego sesiones de juego más grandes. Sin campaña de lanzamiento; las novedades se publican aquí a medida que suceden."
+            },
+            "hybrid": {
+                "title": "Juego híbrido (a más largo plazo)",
+                "body": "Una variante de medio mixto que combina componentes físicos, como el cuaderno de jugadora o jugador, con otros digitales, como el mapa del tablero."
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Componentes",
+        "description": "Los componentes de JOURNEYWAYS: los mazos de cartas, las losetas de mapa dibujadas a mano y (pronto) el cuaderno de juego y el manual. Elige un componente para explorarlo.",
+        "keywords": "componentes de JOURNEYWAYS, mazos de cartas, losetas de mapa, cuaderno de juego, manual, juego de identidad, juego de mesa, identidad de género",
+        "og_title": "JOURNEYWAYS | Componentes",
+        "og_description": "Las cartas, las losetas de mapa y más. Elige un componente para explorarlo."
+    },
+    "hero": {
+        "eyebrow": "Componentes",
+        "title": "Las piezas del juego.",
+        "subtitle": "Las cartas, las losetas de mapa, el cuaderno de juego y el manual.",
+        "lead": "Elige un componente para explorarlo de cerca."
+    },
+    "cards": [
+        {
+            "aria": "Explora los mazos de cartas",
+            "title": "Cartas",
+            "desc": "Cinco mazos de consignas y citas: Encuentro, Movimiento, Reflexión, Cuenta atrás y Grupo. Elige un mazo para repartirlo.",
+            "go": "Explora los mazos"
+        },
+        {
+            "aria": "Explora las losetas de mapa",
+            "title": "Losetas",
+            "desc": "Lugares del mapa cuadrados dibujados a mano, más losetas en blanco que dibuja cada persona. Elige una loseta para verla de cerca.",
+            "go": "Explora las losetas"
+        },
+        {
+            "aria": "Descubre el Cuaderno de juego",
+            "title": "Cuaderno de juego",
+            "desc": "Un cuaderno para escribir, uno por persona: consignas para crear el personaje, páginas de diario con renglones y una hoja de personaje. Puedes verlo o descargarlo para imprimirlo.",
+            "go": "Abre el cuaderno"
+        },
+        {
+            "aria": "Descubre el Manual del juego",
+            "title": "Manual del juego",
+            "desc": "Cómo preparar y jugar a JOURNEYWAYS, en solitario o en grupo: las reglas flexibles, el turno y lo que significa cada color de carta. Puedes verlo o descargarlo para imprimirlo.",
+            "go": "Abre el manual"
+        }
+    ]
+}

@@ -1,0 +1,251 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Updates",
+        "description": "Milestones and progress across JOURNEYWAYS: the physical board game (design, playtests, version 1.0, awards) and the digital version in active development. One timeline, filterable by game. Master's research at UBC GRSJ.",
+        "keywords": "JOURNEYWAYS, updates, milestones, timeline, development log, playtests, awards, board game, digital game, UBC GRSJ research",
+        "og_title": "JOURNEYWAYS | Updates",
+        "og_description": "One filterable timeline of milestones across JOURNEYWAYS: the physical board game and the digital version in active development."
+    },
+    "hero": {
+        "eyebrow": "Milestones · Progress",
+        "title": "The journey so far.",
+        "tagline": "Both sides of JOURNEYWAYS, on one timeline.",
+        "body": "Milestones across the physical board game and the digital version in active development. Each entry is marked by which it touches; some touch both. Filter by game, or jump to a month."
+    },
+    "timeline": {
+        "stamp": "Timeline",
+        "sr_heading": "Timeline of updates",
+        "intro": "Filter by game, or jump to a month. Amber marks the board game, blue the digital version.",
+        "footer_html": "See what is planned next on the <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Video Game</a> page."
+    },
+    "filter": {
+        "aria": "Filter updates by game",
+        "all": "All",
+        "board": "Board game",
+        "video": "Video game"
+    },
+    "months_aria": "Jump to a month",
+    "months_all": "All",
+    "tags": {
+        "board": "Board game",
+        "video": "Video game"
+    },
+    "months": [
+        {
+            "id": "2026-07",
+            "tab": "JUL '26",
+            "label": "July 2026",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "The print documents, refactored",
+                    "body": "The rulebook and player booklet were rebuilt from source in a typesetting pipeline, so they stay editable, reproducible, and true to the game's typography: a single illustrated reading manual, and a write-in booklet to print and fold."
+                }
+            ]
+        },
+        {
+            "id": "2026-06",
+            "tab": "JUN '26",
+            "label": "June 2026",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "A guest lecture in GRSJ 306",
+                    "body": "JOURNEYWAYS was brought into UBC's GRSJ 306 as a guest lecture, sharing the game and its approach to identity, play, and pedagogy with students."
+                },
+                {
+                    "type": "video",
+                    "title": "A table that shows its hands",
+                    "body": "The shared table now feels alive. When you pick a card or tile it rides with your cursor until you set it down, and everyone watches it move, named to whoever is holding it, since nothing here is secret. Tiles can rest on top of one another in neat little piles with a small count, and moving the top one reveals the tile beneath. Along the bottom of the screen a quiet line tells the room what is happening: who is placing a card, moving a tile, or writing in their journal (never what they wrote). Open it and the line unfolds into a history with terse timestamps."
+                },
+                {
+                    "type": "video",
+                    "title": "A new engine under the table",
+                    "body": "The game now runs on PostgreSQL. The shared table, every journal, and each session's state are stored as rich, nested objects, and PostgreSQL works with that kind of structured data natively, so the game saves and restores a session more quickly and holds it more reliably. Nothing changes in how you play; the engine just rests on sturdier ground."
+                },
+                {
+                    "type": "video",
+                    "title": "A table to play on",
+                    "body": "The cards and map tiles now sit on a shared table. Everything is shuffled into uneven, face-down piles, each showing its suit on the back and the tiles on their wooden backs. Pick the top of a pile and it turns face up for the whole room to see, then place it wherever it belongs. An organizer can choose how many Countdown cards are in play and reshuffle the deck during a session, with everyone asked to agree first."
+                },
+                {
+                    "type": "video",
+                    "title": "One catalogue, drawn once",
+                    "body": "Every card and tile is now drawn from a single shared definition, so the catalogue on this site, your dashboard, and the live game table all show exactly the same components. Each one scales cleanly to whatever size it needs while keeping its true proportions: a card stays a poker card, a tile stays a post-it square, and the art and text shrink and grow together."
+                }
+            ]
+        },
+        {
+            "id": "2026-05",
+            "tab": "MAY '26",
+            "label": "May 2026",
+            "items": [
+                {
+                    "type": "video",
+                    "title": "Cards and map tiles, online",
+                    "links": ["/components-cards.html", "/components-tiles.html"],
+                    "body": "The full deck and the modular map now have a live catalogue you can browse on the site: every card sorted by suit, and every map tile, including the blank tiles you fill in yourself. Each set comes from the game itself, so the website always shows what is actually in play. See the <a href=\"%1$s\">cards</a> and the <a href=\"%2$s\">map tiles</a>."
+                },
+                {
+                    "type": "video",
+                    "title": "Researchers, invitations, and scheduled rooms",
+                    "body": "Research rooms grow up. The person who creates one is its researcher, and can name others as researchers too, with a small tag beside each name. A researcher can configure a short set of optional questions (an age range, gender identity in your own words, a country) that you can skip; once anyone answers, they lock. Room creators can also invite people by email and open a room on a schedule."
+                },
+                {
+                    "type": "video",
+                    "title": "Research rooms and open play",
+                    "body": "When you create a room you now choose whether it is for research or for open play. Joining a research room shows a short, plain-language screen explaining that the content you create there may be quoted, always anonymised, in the project's research, and joining is how you agree to that. Open play rooms stay private to the people in them."
+                },
+                {
+                    "type": "video",
+                    "title": "Policy versions, recorded consent",
+                    "body": "Terms of Service and Privacy Policy now show their version and effective date at the top. When we update them in a way that changes what you agreed to, the next time you sign in you'll see a short re-acceptance screen with links to the updated text. Each acceptance is recorded against your account."
+                },
+                {
+                    "type": "video",
+                    "title": "Live multiplayer presence",
+                    "body": "The \"online\" badge next to each room on your dashboard now updates in real time as players come and go, no page refresh needed. The lobby chips and the in-room presence pill also got a tighter visual pass with a \"you\" marker so it is clear which traveller is yours."
+                },
+                {
+                    "type": "video",
+                    "title": "Right to forget your account",
+                    "body": "A new Danger zone on your profile lets you delete your account yourself, with a 30-day grace window so you can change your mind. Four reminder emails arrive over the month, each with a one-click cancel link. If you created rooms where other players have written journals, the action is blocked until you handle those rooms first, so collaborators don't lose work. Available in English, French, and Spanish."
+                },
+                {
+                    "type": "video",
+                    "title": "Privacy audit pass",
+                    "body": "Stopped logging usernames at signup, removed an unused third-party analytics entry from the Content Security Policy, and verified the live deployment matches the privacy policy. Behind-the-scenes work."
+                },
+                {
+                    "type": "video",
+                    "title": "Security and reliability audit",
+                    "body": "Closed several account-enumeration and brute-force vectors, made email verification and password reset race-safe, and cut admin-page query times via new indexes and query rewrites. Mostly behind-the-scenes work."
+                },
+                {
+                    "type": "video",
+                    "title": "Password reset works",
+                    "body": "The \"forgot password?\" email now lands on a working form. Set a new password and sign back in."
+                },
+                {
+                    "type": "video",
+                    "title": "Brand-aligned visual refresh",
+                    "body": "The videogame UI now follows the canonical palette (gray-900 base, yellow-400 accent), self-hosts Inter and Italianno, and uses script titles on atmospheric page headers. High-contrast checkboxes and toggles, with green and red reserved for semantic states."
+                }
+            ]
+        },
+        {
+            "id": "2026-04",
+            "tab": "APR '26",
+            "label": "April 2026",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "A master's scholarship",
+                    "body": "The research behind JOURNEYWAYS was awarded a Canada Graduate Scholarship at the master's level (CGS-M) from the Social Sciences and Humanities Research Council, a national merit-based award supporting the project through its next phase at UBC GRSJ."
+                },
+                {
+                    "type": "video",
+                    "title": "Multiplayer presence",
+                    "body": "Lobby, JOURNEY view, and dashboard now show who is in the room and who is currently playing."
+                },
+                {
+                    "type": "video",
+                    "title": "Journal log redesign",
+                    "body": "Per-entry name, compact edit affordance, sketch preview thumbnails on each row."
+                }
+            ]
+        },
+        {
+            "id": "2026-02",
+            "tab": "FEB '26",
+            "label": "February 2026",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "A critical play fellowship",
+                    "body": "JOURNEYWAYS received the Critical Play Fellows Award, a UBC graduate award recognising the project's use of play as a mode of critical inquiry."
+                },
+                {
+                    "type": "video",
+                    "title": "Play-view layout overhaul",
+                    "body": "Site navigation moved into a hamburger inside the journal panel. The canvas now reaches the top of the viewport. The journal panel can be hidden entirely or floated as an overlay."
+                },
+                {
+                    "type": "video",
+                    "title": "Phone-size advisory",
+                    "body": "First-time-per-session modal warns phone users that the game is best on desktop or tablet. Full mobile responsiveness is on the roadmap."
+                },
+                {
+                    "type": "video",
+                    "title": "mtime-based cache invalidation",
+                    "body": "Stylesheet and script tags carry an mtime-based version query so rebuilds invalidate browser caches automatically."
+                }
+            ]
+        },
+        {
+            "id": "2026-01",
+            "tab": "JAN '26",
+            "label": "January 2026",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "A guest lecture in EPSE 503",
+                    "body": "JOURNEYWAYS was brought into UBC's EPSE 503 as a guest lecture, sharing the game and its approach to identity, play, and learning with students."
+                },
+                {
+                    "type": "video",
+                    "title": "Development begins",
+                    "body": "First commits on the digital companion to the boardgame."
+                }
+            ]
+        },
+        {
+            "id": "2025-11",
+            "tab": "NOV '25",
+            "label": "November 2025",
+            "items": [
+                {
+                    "type": "board",
+                    "title": "Version 1.0, and a second playtest",
+                    "body": "The complete first edition came together: 35 map tiles, 81 cards across five colour-coded piles, the rulebook, and a write-in player booklet for each player. The game was played with the EDGES research group at UBC, an academic research-group session that fed straight back into the design."
+                }
+            ]
+        },
+        {
+            "id": "2025-10",
+            "tab": "OCT '25",
+            "label": "October 2025",
+            "items": [
+                {
+                    "type": "board",
+                    "title": "First public playtest",
+                    "body": "JOURNEYWAYS took part in ProtoCON BC in Vancouver, a convention for playtesting game prototypes, and met its first table of players. Watching people pick cards, place tiles, and bend the loose rules to their own ends is where the game learns the most."
+                }
+            ]
+        },
+        {
+            "id": "2025-08",
+            "tab": "AUG '25",
+            "label": "August 2025",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "A Faculty of Arts award",
+                    "body": "The project received a Faculty of Arts Graduate Award from UBC, early institutional support for the research that became JOURNEYWAYS."
+                }
+            ]
+        },
+        {
+            "id": "2025-07",
+            "tab": "JUL '25",
+            "label": "July 2025",
+            "items": [
+                {
+                    "type": "board",
+                    "title": "Design begins",
+                    "body": "General design of JOURNEYWAYS began: a loose-ruled game about identity and becoming, and the first shape of its map tiles, its five colour-coded card piles, and the write-in player booklet."
+                }
+            ]
+        }
+    ]
+}

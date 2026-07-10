@@ -1,0 +1,13 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Fichas",
+        "description": "Las fichas de mapa de JOURNEYWAYS: lugares cuadrados dibujados a mano como Lago Espejo, Cueva Cantora y Puente de las Estrellas, además de fichas en blanco que cada persona dibuja. Elige una ficha para verla de cerca.",
+        "keywords": "fichas de JOURNEYWAYS, fichas de mapa, fichas de juego de mesa, lugares, juego de identidad, identidad de género",
+        "og_title": "JOURNEYWAYS | Fichas",
+        "og_description": "Las fichas de mapa dibujadas a mano de JOURNEYWAYS. Elige una ficha para verla de cerca."
+    },
+    "back": "&larr; Volver a Componentes",
+    "title": "Las Fichas",
+    "subtitle": "Los lugares del mapa. Sus nombres no están impresos en el tablero; elige una ficha para verla de cerca.",
+    "loading": "Colocando las fichas..."
+}

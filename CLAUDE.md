@@ -43,6 +43,67 @@ www.journeyways.ca/
 - **Backend**: PM2 app `journeyways-www` (script: `server/index.js`, port `127.0.0.1:1985`). Express 5, Nodemailer 8. nginx proxies `/api/` to it. **Currently stopped**; resume with `pm2 start journeyways-www`. See `server/README.md` for details.
 - **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`). Bump on every change since `Cache-Control: max-age=31536000`.
 
+## Localization (PHP i18n refactor, in progress since 2026-07-10)
+
+The site has been refactored from copy-pasted static HTML to a lean **PHP-FPM**
+server-render so it can localize to es/fr (N-language-ready) with SEO-optimal
+per-language URLs. **Phases 0-2 built and locally verified; not committed, not live**
+(nginx still serves the static `*.html` until the cutover). All 14 content pages are
+on the new stack: 12 trilingual (home, board game, about, design, video game, updates,
+references, photos, components hub, manual, booklet, contact) and 2 English-only (the
+cards + tiles galleries render English `/api` data). The contact form is ported to
+`api/contact.php`. Full plan + as-built: memory `project_www_php_i18n`, vault
+`Website localization (PHP i18n)`.
+
+- **Routing:** `index.php` is the front controller. It strips a leading `/es` or
+  `/fr` from the URL (English is bare, the default), maps the remaining clean path
+  via the `inc/pages.php` registry to a template, and renders
+  `partials/head.php` + `templates/<page>.php` + `partials/footer.php`. Unknown path
+  or a language a page is not published in -> `404.php`.
+- **Strings:** `lang/<lang>.json` holds shared chrome (`common`); each page's strings
+  live in `lang/<lang>/<page>.json` (nested under `pages.<page>` at load), and
+  `lang/<lang>/js.json` holds the JS-facing strings injected as `window.__I18N`.
+  English is the source of truth; es/fr deep-merge over it (missing key -> English).
+  `t('a.b.c')` / `te()` (escaped) / `jw_get()` (raw arrays) live in `inc/i18n.php`,
+  with `jw_url()` (localized URL) and `jw_page_url()` (localized when the target page
+  is published in that lang, else the English static path, for phased rollout).
+  `main.js` (`?v=22`) reads `window.__I18N` via `jwUI()` and overlays localized
+  `gallery[set][i]` captions onto its built-in English `gallerySets`.
+- **SEO:** every page is self-canonical, with reciprocal `hreflang` (+ `x-default`
+  = English) built from the langs each page declares in `inc/pages.php`. Translate
+  the invisibles too (title/description/OG/JSON-LD/`<html lang>`/`alt`). No
+  auto-redirect: a dismissible Accept-Language suggestion banner + a nav switcher.
+- **Publishing gate:** add a language to a page's `langs` in `inc/pages.php` ONLY
+  when that page is fully translated, so no half-translated page is ever indexed.
+- **Assets are root-absolute** (`/css/...`, `/img/...`) because `/es/` and `/fr/`
+  pages live one level deep; relative paths would break.
+- **Tailwind:** `tools/tailwind.config.js` now globs `../templates/**/*.php` +
+  `../partials/**/*.php`; the prebuilt `css/tailwind.css` only holds classes seen at
+  its last build, so rebuild (`cd tools && npm run build`) before relying on any NEW
+  class added in a PHP file (Phase 0 reused existing classes, so no rebuild needed).
+- **Dev test (no nginx):** `cd www && php -S 127.0.0.1:8899 <router>` where the router
+  mimics nginx `try_files` (serve real files, else `index.php`); it must `realpath()`
+  the docroot since `www` is a symlink. Then `curl`/screenshot `/`, `/es/`, `/fr/`.
+- **sitemap.xml is generated** from the route registry by `php bin/gen-sitemap.php`
+  (rerun after editing `inc/pages.php`): localized routes get reciprocal `xhtml:link`
+  hreflang + x-default; not-yet-ported English pages stay single-entry.
+- **Dev-test all pages (no nginx):** `cd www && nohup php -S 127.0.0.1:8899 <router> & disown`
+  where the router routes `/` + `*.html` to `index.php` and `realpath()`s the docroot
+  (www is a symlink); then `curl`/screenshot `/`, `/es/…`, `/fr/…`.
+- **Contact form:** `api/contact.php` (dependency-free: validation, honeypot,
+  Turnstile, file-based per-IP rate limit, authenticated SMTPS, localized errors from
+  the contact dict via a `lang` field). Run its CLI self-test with `php api/contact.php`.
+  Secrets live in `/etc/journeyways/www-config.php` (out of docroot, `0640`); shape in
+  `api/www-config.sample.php`. `main.js` (`?v=23`) posts `lang` and localizes statuses.
+- **Not yet done = the operator cutover** (needs `sudo nginx -t`/reload). Fully
+  prepared in **`deploy/`**: `deploy/nginx-www.journeyways.ca.conf` (the post-cutover
+  vhost) and `deploy/CUTOVER.md` (step-by-step runbook with verification + rollback).
+  In short: create `/etc/journeyways/www-config.php` from `api/www-config.sample.php`,
+  `git mv` the 14 page `*.html` into `legacy-html/` (keep presentation/google*), apply
+  the vhost (php-fpm front controller + `/api/contact` handler + source denies, keeping
+  the play `/api/cards|tiles` proxies), reload, verify, then delete `server/` + the PM2
+  app. Deferred: localize the cards/tiles gallery data so those two pages can publish es/fr.
+
 ## Operational state (May 2026)
 
 - **Editorial redesign complete in v1.3.0** (May 2026). All six visible pages (`index.html`, `about.html`, `design.html`, `photos.html`, `boardgame.html`, `videogame.html`) ship in the Swiss-luxury vocabulary. Body sections use the 3+9 chapter spine (Italianno chapter titles in `text-yellow-400` + small watercolor swatches from the boardgame card backs in `img/design/bg-*.webp`), `border-t border-gray-700/40` hairlines, `font-display: block` on Italianno paired with `Inter Fallback` adjusted face. Pattern documented in `brand-spec.md` in the Academia vault under `Journeyways/Foundations/`. Rollback tag `pre-homepage-redesign` at commit `6a46e15` reverts the rollout.

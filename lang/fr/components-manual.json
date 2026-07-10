@@ -1,0 +1,46 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Manuel du jeu",
+        "description": "Le Manuel du jeu JOURNEYWAYS : comment préparer et jouer, en solo ou en groupe, les règles souples, la forme d'un tour et ce que signifie chaque couleur de carte. Prévisualisez les pages ou téléchargez le PDF.",
+        "keywords": "manuel JOURNEYWAYS, livre de règles, règles du jeu, comment jouer, jeu de société, jeu d'identité",
+        "og_title": "JOURNEYWAYS | Manuel du jeu",
+        "og_description": "Comment préparer et jouer JOURNEYWAYS, en solo ou en groupe. Prévisualisez les pages ou téléchargez le PDF."
+    },
+    "back": "Retour aux Composants",
+    "title": "Le Manuel du jeu",
+    "intro": "Comment préparer et jouer JOURNEYWAYS, en solo ou en groupe : les règles souples, la forme d'un tour et ce que signifie chacune des cinq couleurs de carte. Un exemplaire est inclus avec le jeu.",
+    "pages_hint": "Treize pages. Choisissez n'importe quelle page pour la lire de près.",
+    "download": {
+        "en": "Download · English ↓",
+        "es": "Descargar · Español ↓",
+        "fr": "Télécharger · Français ↓",
+        "note": "PDF, environ 2,2 Mo. Le même manuel en anglais, espagnol ou français."
+    },
+    "preview_heading": "Aperçu du manuel",
+    "pages": {
+        "0": {
+            "alt": "La couverture du Manuel du jeu : Règles du jeu de JOURNEYWAYS sur un paysage à l'aquarelle.",
+            "caption": "Couverture"
+        },
+        "1": {
+            "alt": "La page Préparation du jeu, avec une note de marge dessinée à la main.",
+            "caption": "Préparation du jeu"
+        },
+        "2": {
+            "alt": "La page Déroulement de base avec la légende des couleurs de carte.",
+            "caption": "Déroulement de base"
+        },
+        "3": {
+            "alt": "Un exemple d'entrée de journal avec un volcan peint.",
+            "caption": "Une entrée de journal"
+        },
+        "4": {
+            "alt": "La page Jeu en solo et en groupe avec des meeples peints.",
+            "caption": "Solo et groupe"
+        },
+        "5": {
+            "alt": "La quatrième de couverture du manuel.",
+            "caption": "Quatrième de couverture"
+        }
+    }
+}
