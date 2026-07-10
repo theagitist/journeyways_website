@@ -37,6 +37,7 @@
       .jw-hint { color: #9ca3af; }
       .jw-dl { display: inline-flex; align-items: center; gap: 0.5rem; background: #facc15; color: #111827; font-weight: 600; font-size: 0.9rem; padding: 0.6rem 1.15rem; border-radius: 6px; transition: background-color 150ms ease; }
       .jw-dl:hover { background: #fde047; }
+      .jw-dl-row { display: flex; flex-wrap: wrap; gap: 0.6rem; justify-content: center; }
       .jw-pages { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 1.5rem; }
       .jw-page { margin: 0; display: flex; flex-direction: column; gap: 0.55rem; }
       .jw-page img { width: 100%; height: auto; display: block; background: #fff; border: 1px solid rgba(255,255,255,0.08); border-radius: 4px; box-shadow: 0 6px 20px rgba(0,0,0,0.35); cursor: pointer; transition: transform 150ms ease, box-shadow 150ms ease; }
@@ -90,18 +91,23 @@
                 <h1 class="script-font text-7xl md:text-8xl text-yellow-400 leading-[0.95] mb-3">The Player Booklet</h1>
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2">A write-in booklet for each player: character-creation prompts, lined journal pages to fill as your character unfolds, and a character sheet at the front and the back. One per player per session; print it, fold it, make it yours.</p>
                 <p class="text-gray-500 text-xs mb-7">Sixteen pages. Pick any page to read it up close.</p>
-                <a href="download/JOURNEYWAYS Player Booklet 1.0.pdf?v=2" download class="jw-dl">Download the booklet (PDF, 3.5 MB) &darr;</a>
+                <div class="jw-dl-row">
+                    <a href="download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=3" download class="jw-dl">Download &middot; English &darr;</a>
+                    <a href="download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=3" download class="jw-dl">Descargar &middot; Espa&ntilde;ol &darr;</a>
+                    <a href="download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=3" download class="jw-dl">T&eacute;l&eacute;charger &middot; Fran&ccedil;ais &darr;</a>
+                </div>
+                <p class="text-gray-500 text-xs mt-3">PDF, about 2.9 MB. Same booklet in English, Spanish, or French.</p>
             </header>
 
             <section aria-labelledby="preview-heading">
                 <h2 id="preview-heading" class="sr-only">Booklet preview</h2>
                 <div class="jw-pages">
-                    <figure class="jw-page"><img src="img/booklet/p01.webp?v=2" alt="The Player Booklet cover." loading="lazy" onclick="openLightboxFromSet('booklet', 0)"><figcaption>Cover</figcaption></figure>
-                    <figure class="jw-page"><img src="img/booklet/p02.webp?v=2" alt="The intro and Quick Reference page." loading="lazy" onclick="openLightboxFromSet('booklet', 1)"><figcaption>Quick Reference</figcaption></figure>
-                    <figure class="jw-page"><img src="img/booklet/p03.webp?v=2" alt="The first Character Sheet." loading="lazy" onclick="openLightboxFromSet('booklet', 2)"><figcaption>Character Sheet</figcaption></figure>
-                    <figure class="jw-page"><img src="img/booklet/p06.webp?v=2" alt="A lined journal page." loading="lazy" onclick="openLightboxFromSet('booklet', 3)"><figcaption>Journal Page</figcaption></figure>
-                    <figure class="jw-page"><img src="img/booklet/p15.webp?v=2" alt="The second Character Sheet." loading="lazy" onclick="openLightboxFromSet('booklet', 4)"><figcaption>Character Sheet</figcaption></figure>
-                    <figure class="jw-page"><img src="img/booklet/p16.webp?v=2" alt="The booklet back cover." loading="lazy" onclick="openLightboxFromSet('booklet', 5)"><figcaption>Back cover</figcaption></figure>
+                    <figure class="jw-page"><img src="img/booklet/p01.webp?v=3" alt="The Player Booklet cover." loading="lazy" onclick="openLightboxFromSet('booklet', 0)"><figcaption>Cover</figcaption></figure>
+                    <figure class="jw-page"><img src="img/booklet/p02.webp?v=3" alt="The intro and Quick Reference page." loading="lazy" onclick="openLightboxFromSet('booklet', 1)"><figcaption>Quick Reference</figcaption></figure>
+                    <figure class="jw-page"><img src="img/booklet/p03.webp?v=3" alt="The first Character Sheet." loading="lazy" onclick="openLightboxFromSet('booklet', 2)"><figcaption>Character Sheet</figcaption></figure>
+                    <figure class="jw-page"><img src="img/booklet/p06.webp?v=3" alt="A lined journal page." loading="lazy" onclick="openLightboxFromSet('booklet', 3)"><figcaption>Journal Page</figcaption></figure>
+                    <figure class="jw-page"><img src="img/booklet/p15.webp?v=3" alt="The second Character Sheet." loading="lazy" onclick="openLightboxFromSet('booklet', 4)"><figcaption>Character Sheet</figcaption></figure>
+                    <figure class="jw-page"><img src="img/booklet/p16.webp?v=3" alt="The booklet back cover." loading="lazy" onclick="openLightboxFromSet('booklet', 5)"><figcaption>Back cover</figcaption></figure>
                 </div>
             </section>
         </div>
@@ -116,7 +122,7 @@
         </div>
     </footer>
 
-    <script src="js/main.js?v=29" defer></script>
+    <script src="js/main.js?v=30" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 </body>
 </html>
