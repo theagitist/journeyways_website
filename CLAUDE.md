@@ -30,25 +30,27 @@ www.journeyways.ca/
 ├── fonts/                  Self-hosted Inter and Italianno (woff2, latin + latin-ext)
 ├── tools/                  Local Tailwind build (npm run build -> ../css/tailwind.css)
 ├── download/               Rulebook and Player Booklet PDFs (Ghostscript-optimized via /ebook setting)
-├── server/                 Express 5 + Nodemailer 8 backend. PM2 app `journeyways-www`. Currently stopped.
-├── sitemap.xml             8 entries with <lastmod>; contact.html intentionally absent
-└── .gitignore              Ignores server/node_modules/, server/.env, server/logs/, tools/node_modules/
+├── api/                    Dependency-free contact handler (`contact.php`) + config sample
+├── inc/ partials/ templates/ lang/ 404.php index.php   PHP i18n front-controller stack
+├── legacy-html/            Pre-refactor static page HTML, parked as a rollback fallback
+├── sitemap.xml             Per-language entries with hreflang; contact intentionally absent
+└── .gitignore              Ignores tools/node_modules/, api/www-config.php
 ```
 
 ## How it runs
 
-- **Static pages**: nginx serves `/var/www/www.journeyways.ca/`. Vhost at `/etc/nginx/sites-available/www.journeyways.ca.conf`.
+- **Pages**: nginx serves `/var/www/www.journeyways.ca/` with `index index.php`; real files serve directly, everything else falls through `try_files` to the `index.php` front controller (see Localization below). Vhost at `/etc/nginx/sites-available/www.journeyways.ca.conf`; the committed reference copy is `deploy/nginx-www.journeyways.ca.conf`.
 - **Tailwind**: locally built. Source under `tools/` (`tailwind.input.css` + `tailwind.config.js`). Run `cd tools && npm run build` to regenerate `css/tailwind.css` after adding any new utility class. Watch mode: `npm run watch`. Always bump `tailwind.css?v=N` after a rebuild.
 - **Fonts**: Inter and Italianno self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). Loaded via `@font-face` declarations at the top of `css/styles.css`. No third-party origins.
-- **Backend**: PM2 app `journeyways-www` (script: `server/index.js`, port `127.0.0.1:1985`). Express 5, Nodemailer 8. nginx proxies `/api/` to it. **Currently stopped**; resume with `pm2 start journeyways-www`. See `server/README.md` for details.
+- **Backend**: the contact form is `api/contact.php`, run by php-fpm (nginx routes `location = /api/contact` to `unix:/run/php/php8.3-fpm.sock`). No Node: the old Express `journeyways-www` PM2 app was deleted at the 2026-07-10 cutover. Secrets in `/etc/journeyways/www-config.php` (out of docroot).
 - **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`). Bump on every change since `Cache-Control: max-age=31536000`.
 
-## Localization (PHP i18n refactor, in progress since 2026-07-10)
+## Localization (PHP i18n refactor, LIVE since 2026-07-10)
 
 The site has been refactored from copy-pasted static HTML to a lean **PHP-FPM**
 server-render so it can localize to es/fr (N-language-ready) with SEO-optimal
-per-language URLs. **Phases 0-2 built and locally verified; not committed, not live**
-(nginx still serves the static `*.html` until the cutover). All 14 content pages are
+per-language URLs. **LIVE as of 2026-07-10** (the vhost cutover is done; the old
+static pages are parked in `legacy-html/` as a rollback fallback). All 14 content pages are
 on the new stack: 12 trilingual (home, board game, about, design, video game, updates,
 references, photos, components hub, manual, booklet, contact) and 2 English-only (the
 cards + tiles galleries render English `/api` data). The contact form is ported to
@@ -95,14 +97,15 @@ cards + tiles galleries render English `/api` data). The contact form is ported 
   the contact dict via a `lang` field). Run its CLI self-test with `php api/contact.php`.
   Secrets live in `/etc/journeyways/www-config.php` (out of docroot, `0640`); shape in
   `api/www-config.sample.php`. `main.js` (`?v=23`) posts `lang` and localizes statuses.
-- **Not yet done = the operator cutover** (needs `sudo nginx -t`/reload). Fully
-  prepared in **`deploy/`**: `deploy/nginx-www.journeyways.ca.conf` (the post-cutover
-  vhost) and `deploy/CUTOVER.md` (step-by-step runbook with verification + rollback).
-  In short: create `/etc/journeyways/www-config.php` from `api/www-config.sample.php`,
-  `git mv` the 14 page `*.html` into `legacy-html/` (keep presentation/google*), apply
-  the vhost (php-fpm front controller + `/api/contact` handler + source denies, keeping
-  the play `/api/cards|tiles` proxies), reload, verify, then delete `server/` + the PM2
-  app. Deferred: localize the cards/tiles gallery data so those two pages can publish es/fr.
+- **Cutover DONE 2026-07-10** (`deploy/CUTOVER.md` is the runbook + rollback of record):
+  the vhost from `deploy/nginx-www.journeyways.ca.conf` is live (php-fpm front controller
+  + `/api/contact` handler + source denies, keeping the play `/api/cards|tiles` proxies);
+  `/etc/journeyways/www-config.php` holds the ZeptoMail token + Turnstile secret (Turnstile
+  secret also backed up at `~/apps/keys/journeyways-turnstile-secret`); the 14 page `*.html`
+  are in `legacy-html/`; the Node `server/` + `journeyways-www` PM2 app were deleted.
+  **Rollback** any time: `git mv legacy-html/*.html .`, restore the pre-cutover vhost from
+  `/etc/nginx/sites-available/www.journeyways.ca.conf.bak-*`, reload. **Deferred:** localize
+  the cards/tiles gallery data so those two pages can publish es/fr (they are English-only).
 
 ## Operational state (May 2026)
 
@@ -112,7 +115,7 @@ cards + tiles galleries render English `/api` data). The contact form is ported 
 - **Decks chapter on boardgame.html is sized to match the previous, pre-redesign card-back row.** `max-w-4xl` wrapper + `grid-cols-3 md:grid-cols-5 gap-3` + `aspect-[3/4]` + simple `text-xs italic` captions in the `<span class="card-X">Color</span> | Category` form. The user reverted multiple smaller-card attempts to this exact size; do not shrink them again without explicit instruction.
 - **Tailwind `space-y-*` + sr-only h2 trap.** A `<h2 class="sr-only">` as the first DOM child of a `space-y-*` container creates a phantom `margin-top: 3rem` on the first visible sibling because the sr-only element still occupies the "first child" slot in the sibling combinator. Use explicit `mt-12 md:mt-14` on subsequent siblings instead of `space-y-*` when an sr-only heading is present. Bit me on the Gameplay section of the home redesign.
 
-- **`contact.html` is hidden.** Mailgun delivers cleanly to Outlook 365 (status 250, "Queued for delivery"), but the recipient inbox doesn't see them: spam/quarantine on the receiving side. Until that's resolved, the page is `noindex, nofollow`, off the nav, and out of the sitemap. The about page's "Get in touch" section is commented out for now. Backend is stopped.
+- **Contact page + form are live.** The form posts to `api/contact.php`, which sends via ZeptoMail SMTPS (`no-reply@journeyways.ca` -> `aemjcr@gmail.com`) with Cloudflare Turnstile enforced (Mailgun was retired project-wide 2026-06-24; the old Node backend is gone). The page is kept **`noindex`** and out of the sitemap by design (`meta.robots` in `lang/*/contact.json`); it is reachable directly and via the nav language stack. A real end-to-end send needs a browser (Turnstile is domain-locked, so curl cannot mint a token); validation, Turnstile-rejection, and honeypot paths are curl-verifiable.
 - **`design.html` (Design philosophy)** is live and in the main nav. Anchored sections (`#identity`, `#no-winning`, `#consent`, `#elicit`, `#combination`, `#expression`, `#materials`, `#framework`, `#shared`, `#closing`) are linked inline from `about.html` paragraphs. The page uses `.card-COLOR` and `.tile-wood` for category-name highlighting; both classes live in `css/styles.css`.
 - **`references.html` (Bibliography)** is live but intentionally **not in the main nav**. Discoverability: footer link on every page (the only footer link styled `text-yellow-400 hover:text-yellow-300` at rest, breaking the usual "yellow only on hover" rule), hero link bar on `about.html` and `design.html` ("Design philosophy &middot; References &middot; UBC GRSJ" and "About the researcher &middot; References &middot; UBC GRSJ"), inline link in the openness paragraph of `about.html`. Eight thematic chapters with anchor IDs (`#theory`, `#data`, `#arts-based`, `#ethnography`, `#analysis`, `#games`, `#co-creation`, `#pedagogy`) on the editorial chapter spine. Citations are APA 7 in a `<ul class="space-y-5 text-gray-300 text-[15px] md:text-base leading-relaxed">`; book/journal titles wrapped in `<em>`; DOIs use the standard inline link pattern with `break-words` so long DOIs wrap on mobile. Source list (with thematic groupings + full citations) lives in the Academia vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/references.md`. When adding entries, keep sentence case for titles, expand publishers without legal designations (e.g. "Sage Publications" not "SAGE Publications Ltd."), and only add DOIs that are verified to exist (Seal Press / Bloomsbury / Pearson trade titles generally don't have DOIs).
 - **`presentation.html` is the conference deck** (renamed from `pitch.html` in May 2026; "pitch" was deemed too promotional). `noindex, nofollow` (linkable from the site, not indexed by search engines). Linked from the About hero bar between References and UBC GRSJ; included in the sitemap with priority 0.5. 15 slides, mirrors the narrative arc of the JOURNEYWAYS conference video. Self-contained: inline `<style>` defines the slide system, inline `<script>` handles all behaviour. The deck reuses the editorial pattern (Italianno chapter titles in `text-yellow-400`, watercolor swatches from `img/design/bg-*.webp`, `border-t border-gray-700/40` hairlines) but does not include the standard nav; only a top-left "← JOURNEYWAYS" link back to home, plus a slide counter top-right.

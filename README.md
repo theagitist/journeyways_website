@@ -4,17 +4,17 @@ Public-facing site for JOURNEYWAYS, a master's research project at the UBC Insti
 
 This repository holds the site (`www.journeyways.ca`).
 
-> **Localization refactor (2026-07-10, staged, not yet live).** The site has been
-> refactored from copy-pasted static HTML to a lean **PHP-FPM** server-render and
-> localized to Spanish and French (N-language-ready): a front controller
-> (`index.php`) + partials + per-language JSON dictionaries (`lang/`), SEO-optimal
-> per-language URLs (English bare, `/es/`, `/fr/`) with reciprocal hreflang, a
-> language switcher, and an Accept-Language suggestion banner. The contact form is
-> ported to a dependency-free `api/contact.php` (the Node `server/` retires at
-> cutover). The page descriptions below still describe the content faithfully; the
-> `.html` filenames are now the clean URLs served by the front controller. The
-> go-live is a single nginx change staged in `deploy/` (`nginx-www.journeyways.ca.conf`
-> + `CUTOVER.md`). Full detail: `CLAUDE.md` and the memory `project_www_php_i18n`.
+> **Localization refactor (LIVE 2026-07-10).** The site runs as a lean **PHP-FPM**
+> server-render, refactored from copy-pasted static HTML and localized to Spanish and
+> French (N-language-ready): a front controller (`index.php`) + partials + per-language
+> JSON dictionaries (`lang/`), SEO-optimal per-language URLs (English bare, `/es/`,
+> `/fr/`) with reciprocal hreflang, a language switcher, and an Accept-Language
+> suggestion banner. The contact form is a dependency-free `api/contact.php` (ZeptoMail
+> SMTPS + Turnstile; the old Node `server/` was retired). The page descriptions below
+> describe the content faithfully; the `.html` filenames are the clean URLs served by
+> the front controller. The old static pages are parked in `legacy-html/` as a rollback
+> fallback (see `deploy/CUTOVER.md`). Full detail: `CLAUDE.md` and the memory
+> `project_www_php_i18n`.
 
 ## About JOURNEYWAYS
 
@@ -55,8 +55,8 @@ www.journeyways.ca/
 ├── fonts/                   Self-hosted Inter and Italianno (woff2, latin + latin-ext)
 ├── tools/                   Local Tailwind build (npm run build -> css/tailwind.css)
 ├── download/                Rules and character-sheet PDFs
-├── server/                  Express 5 + Nodemailer 8 backend (contact form, currently stopped)
-├── sitemap.xml              8 entries; contact.html intentionally absent
+├── legacy-html/             Pre-refactor static page HTML, parked as a rollback fallback
+├── sitemap.xml              per-language entries with hreflang; contact intentionally absent
 └── VERSION
 ```
 
@@ -68,7 +68,7 @@ www.journeyways.ca/
 - **Vanilla JavaScript** for the mobile menu, lightbox (set-bounded prev/next, used on photos / boardgame / videogame), native `<dialog>` modals on the home feature cards, and the contact form handler.
 - **Inter** and **Italianno** self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). No third-party font origins.
 - **webp images** for all the design and component figures, optimized at 700-1600px wide depending on use; lightweight `favicon.png` (12 KB) and `og-card.jpg` (211 KB) for social cards.
-- **Express 5 + Nodemailer 8 + Cloudflare Turnstile** for the contact form (currently stopped pending deliverability fix).
+- **Dependency-free `api/contact.php`** (raw authenticated SMTPS to ZeptoMail + Cloudflare Turnstile) for the contact form. The old Express + Nodemailer `server/` was retired at the PHP cutover.
 
 ## Server config
 
@@ -91,7 +91,7 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 - **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Font preloading** is set up in every HTML head (`<link rel="preload">` for Inter 400, Inter 600, Italianno 400 latin subsets) so first paint isn't a flash of fallback typography. `Italianno` uses `font-display: block`; Inter uses `font-display: swap` paired with an adjusted `Inter Fallback` face (local Arial with `size-adjust` and ascent/descent overrides) so the swap is layout-neutral and visually subtle.
-- **Contact backend** lives in `server/`. PM2 app `journeyways-www` on `127.0.0.1:1985`. Currently stopped due to recipient-side spam quarantine. Resume with `pm2 start journeyways-www`.
+- **Contact backend** is `api/contact.php`, run by php-fpm (nginx routes `location = /api/contact` to the php-fpm socket). Secrets (ZeptoMail token, Turnstile secret) live in `/etc/journeyways/www-config.php` outside the docroot (`theagitist:www-data 0640`), never in the repo. The old Node `journeyways-www` PM2 app was deleted.
 - **Project context** (proposals, the 53-question interview with the designer, bibliography source list, parked questions) lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/`. A `brainstorm/` working copy used to live here; removed on 2026-05-12 to keep a single source.
 - **Google Search Console** verified via `google6fb8a72b75fa8894.html` at the site root.
 
