@@ -14,7 +14,12 @@
         "contact_sending": "Envoi en cours...",
         "contact_sent": "Message envoyé. Merci de nous avoir écrit.",
         "contact_generic_error": "Une erreur est survenue. Veuillez réessayer plus tard.",
-        "contact_network": "Erreur réseau. Veuillez réessayer plus tard."
+        "contact_network": "Erreur réseau. Veuillez réessayer plus tard.",
+        "gal_error_decks": "Impossible de charger les paquets pour le moment. Réessayez plus tard.",
+        "gal_error_tiles": "Impossible de charger les tuiles pour le moment. Réessayez plus tard.",
+        "gal_tile_blank": "Créez la vôtre",
+        "gal_tile_inset": "%d dans l'ensemble",
+        "gal_tile_alt": "Tuile %s"
     },
     "gallery": {
         "photos": [

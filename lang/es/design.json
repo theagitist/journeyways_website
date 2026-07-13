@@ -7,7 +7,7 @@
         "og_description": "Nueve notas sobre cómo piensa el juego. Por qué cada pieza funciona como funciona."
     },
     "hero": {
-        "image_alt": "Ficha de Inicio de JOURNEYWAYS: un remolino caligráfico de tinta negra sobre blanco, rodeado de manchas de acuarela rojas, moradas, azules, verdes y magentas.",
+        "image_alt": "Mosaico de Inicio de JOURNEYWAYS: un remolino caligráfico de tinta negra sobre blanco, rodeado de manchas de acuarela rojas, moradas, azules, verdes y magentas.",
         "eyebrow": "Filosofía de diseño · Nueve notas",
         "title": "Cómo funciona el juego.",
         "tagline": "Nueve principios detrás de cada pieza, cada regla, cada silencio en la mesa.",
@@ -46,12 +46,12 @@
     "consent": {
         "stamp": "Consentimiento",
         "title": "La única regla que el juego impone es el consentimiento en la mesa.",
-        "fig1_alt": "Ficha de mapa dibujada a mano titulada Puente de las Estrellas: el dibujo lineal de un puente arqueado sobre un lavado de manchas de acuarela de colores.",
-        "fig1_caption": "Puente de las Estrellas. <span class=\"tile-wood\">Ficha de mapa</span>.",
+        "fig1_alt": "Mosaico de mapa dibujado a mano titulado Puente de las Estrellas: el dibujo lineal de un puente arqueado sobre un lavado de manchas de acuarela de colores.",
+        "fig1_caption": "Puente de las Estrellas. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "fig2_alt": "Ilustración en acuarela y tinta de un mapa sin indicaciones, una carta de Encuentro.",
         "fig2_caption": "“Recibes un mapa sin indicaciones. ¿Qué haces?” <span class=\"card-red\">Carta de Encuentro</span>.",
         "body_1": "Todo en el juego es mutable. Las reglas se pueden modificar, doblar, romper, ignorar. Se pueden inventar reglas nuevas a mitad de sesión. Lo único inmutable es que el resto de la mesa esté de acuerdo.",
-        "body_2": "Romper las reglas no es un fallo. A menudo es lo mejor que ocurre en una sesión. Una vez, una persona decidió no colocar una ficha junto al mapa existente, en contra de las reglas. La ficha tenía temática espacial, así que inventó sobre la marcha una mecánica de salto hiperespacial para conectarla. La ruptura se convirtió en un momento clave de la sesión, e inspiró a otras personas a ser más libres y creativas. Muchas modificaciones de quienes juegan acaban incorporándose al reglamento canónico.",
+        "body_2": "Romper las reglas no es un fallo. A menudo es lo mejor que ocurre en una sesión. Una vez, una persona decidió no colocar un mosaico junto al mapa existente, en contra de las reglas. El mosaico tenía temática espacial, así que inventó sobre la marcha una mecánica de salto hiperespacial para conectarla. La ruptura se convirtió en un momento clave de la sesión, e inspiró a otras personas a ser más libres y creativas. Muchas modificaciones de quienes juegan acaban incorporándose al reglamento canónico.",
         "quote": "“Todo en el juego es modificable. ¿Reglas nuevas? Adelante. ¿Reglas distintas? Adelante. El único límite es que todas las demás personas estén de acuerdo.”",
         "body_3": "La flexibilidad tiene una razón declarada: la agencia. A quienes juegan se les da material con el que trabajar y se confía en que hagan algo con él. La mayoría de los juegos de mesa te dicen qué hacer. JOURNEYWAYS te dice qué hay aquí, y pregunta qué quieres hacer con ello."
     },
@@ -72,20 +72,20 @@
     "meeting": {
         "stamp": "Encuentro",
         "title": "Un espejo en una cueva no es un espejo en un aula.",
-        "fig1_alt": "Ficha de mapa dibujada a mano: Cueva Cantora.",
-        "fig1_caption": "Cueva Cantora. <span class=\"tile-wood\">Ficha de mapa</span>.",
+        "fig1_alt": "Mosaico de mapa dibujado a mano: Cueva Cantora.",
+        "fig1_caption": "Cueva Cantora. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "fig2_alt": "Ilustración de carta en acuarela: un espejo agrietado.",
         "fig2_caption": "“Un espejo se agrieta a tu paso.” <span class=\"card-red\">Carta de Encuentro</span>.",
-        "fig3_alt": "Ficha de mapa dibujada a mano: Sala de Estudio.",
-        "fig3_caption": "Sala de Estudio. <span class=\"tile-wood\">Ficha de mapa</span>.",
-        "body_1": "El tablero es un mapa. Quienes juegan colocan fichas para construirlo sobre la marcha. Adónde vas en el mapa es en sí mismo una expresión: hacia qué ficha caminas, si vas en solitario o te unes a otra persona, si sigues el sendero o te lanzas por tu cuenta. El movimiento no sirve solo para llegar a algún sitio: es parte del relato.",
-        "body_2": "Que dos componentes se encuentren es lo que genera una historia. Una carta por sí sola se vuelve repetitiva enseguida. Las fichas por sí solas son demasiado quietas. El espejo aterriza de forma distinta dentro de la Cueva Cantora que en la Sala de Estudio. Un disfraz hallado en la Casa de la Infancia no es un disfraz hallado en el Puente de las Estrellas. La mecánica es el encuentro.",
+        "fig3_alt": "Mosaico de mapa dibujado a mano: Sala de Estudio.",
+        "fig3_caption": "Sala de Estudio. <span class=\"tile-wood\">Mosaico de mapa</span>.",
+        "body_1": "El tablero es un mapa. Quienes juegan colocan mosaicos para construirlo sobre la marcha. Adónde vas en el mapa es en sí mismo una expresión: hacia qué mosaico caminas, si vas en solitario o te unes a otra persona, si sigues el sendero o te lanzas por tu cuenta. El movimiento no sirve solo para llegar a algún sitio: es parte del relato.",
+        "body_2": "Que dos componentes se encuentren es lo que genera una historia. Una carta por sí sola se vuelve repetitiva enseguida. Los mosaicos por sí solos son demasiado quietos. El espejo aterriza de forma distinta dentro de la Cueva Cantora que en la Sala de Estudio. Un disfraz hallado en la Casa de la Infancia no es un disfraz hallado en el Puente de las Estrellas. La mecánica es el encuentro.",
         "quote": "“Encontrar un espejo en un aula es muy distinto a encontrar un espejo a la entrada de una cueva oscura.”"
     },
     "modality": {
         "stamp": "Modalidad",
         "title": "Expresión en cualquier modalidad. Incluso el silencio.",
-        "fig_alt": "Una persona escribiendo en su diario durante una sesión de JOURNEYWAYS, con las manos anotando en un cuaderno junto a las fichas del juego.",
+        "fig_alt": "Una persona escribiendo en su diario durante una sesión de JOURNEYWAYS, con las manos anotando en un cuaderno junto a los mosaicos del juego.",
         "fig_caption": "Personas escribiendo en su diario durante una sesión.",
         "body_1": "Cada persona tiene un cuaderno; allí crea su personaje, lo dibuja y transmite sus historias. Puede usarlo para llevar un diario de lo que le ocurre a su personaje, escribir fragmentos, esbozar, garabatear, dibujar un cómic o dejarlo en blanco. El diario es el archivo duradero: lo que se conserva de una sesión a otra, lo que permite volver a un personaje más tarde o abrir un capítulo dos.",
         "body_2": "Pero el diario es la opción por defecto, no un requisito. Se puede narrar en voz alta. Se puede dibujar en lugar de escribir. Se puede pasar el turno. Se puede quedar fuera de una ronda en silencio. Nada de esto es un problema. El silencio no resulta incómodo en JOURNEYWAYS. Es una forma más de contar la historia.",
@@ -95,20 +95,20 @@
     "hand": {
         "stamp": "Tacto",
         "title": "Sencillo y a la vez sensorial. Los materiales también son tuyos.",
-        "fig_alt": "Ficha de mapa dibujada a mano titulada Lago Espejo: la silueta lineal de un lago superpuesta sobre manchas de acuarela.",
-        "fig_caption": "Lago Espejo. <span class=\"tile-wood\">Ficha de mapa</span>.",
-        "body_1": "Fichas de cartón o de madera. Cartulina que se siente agradable en las manos. Un logotipo en una tipografía manuscrita que quiere sentirse lúdica y orgánica. Ilustraciones lineales dibujadas a mano sobre fondo blanco, con manchas de acuarela detrás. Los materiales son deliberados.",
-        "body_2": "También lo es la apertura de los materiales. Se puede dibujar sobre las fichas. Se pueden inventar fichas nuevas con notas adhesivas cuando alguien necesita un lugar que todavía no existe en el mapa. Los componentes no dan por sentada su propia permanencia. La flexibilidad del juego llega hasta el cartón.",
+        "fig_alt": "Mosaico de mapa dibujado a mano titulado Lago Espejo: la silueta lineal de un lago superpuesta sobre manchas de acuarela.",
+        "fig_caption": "Lago Espejo. <span class=\"tile-wood\">Mosaico de mapa</span>.",
+        "body_1": "Mosaicos de cartón o de madera. Cartulina que se siente agradable en las manos. Un logotipo en una tipografía manuscrita que quiere sentirse lúdica y orgánica. Ilustraciones lineales dibujadas a mano sobre fondo blanco, con manchas de acuarela detrás. Los materiales son deliberados.",
+        "body_2": "También lo es la apertura de los materiales. Se puede dibujar sobre los mosaicos. Se pueden inventar mosaicos nuevos con notas adhesivas cuando alguien necesita un lugar que todavía no existe en el mapa. Los componentes no dan por sentada su propia permanencia. La flexibilidad del juego llega hasta el cartón.",
         "quote": "“Estás colocando una pieza sólida. Puedes hacer con ella lo que quieras. Incluso puedes dibujar sobre ella y ampliarla.”"
     },
     "frame": {
         "stamp": "Marco",
         "title": "El marco es la forma.",
-        "fig_alt": "Componentes del juego de mesa JOURNEYWAYS dispuestos: fichas de mapa, cartas, un cuaderno de personaje y peones.",
-        "fig_caption": "La tríada canónica: fichas, cartas, cuaderno.",
-        "body_1": "JOURNEYWAYS se sostiene sobre tres componentes: las <span class=\"tile-wood\">fichas de mapa</span>, las cartas y el cuaderno de personaje. Juntos hacen que el juego sea reconocible. El mapa aporta lugar y contexto. Las cartas aportan estímulo y acontecimiento. El cuaderno aporta expresión y archivo.",
+        "fig_alt": "Componentes del juego de mesa JOURNEYWAYS dispuestos: mosaicos de mapa, cartas, un cuaderno de personaje y peones.",
+        "fig_caption": "La tríada canónica: mosaicos, cartas, cuaderno.",
+        "body_1": "JOURNEYWAYS se sostiene sobre tres componentes: los <span class=\"tile-wood\">mosaicos de mapa</span>, las cartas y el cuaderno de personaje. Juntos hacen que el juego sea reconocible. El mapa aporta lugar y contexto. Las cartas aportan estímulo y acontecimiento. El cuaderno aporta expresión y archivo.",
         "body_2": "Quita uno y la experiencia cambia. Cualquiera puede hacerlo. El marco es abierto: quien investiga puede crear una variante para una comunidad concreta, el profesorado puede crear una para el aula, una madre o un padre puede crear una para jugar con quienes son más pequeños. El contenido por defecto es adulto y centrado en el género, pero el motor sirve para la exploración de la identidad en general.",
-        "body_3": "La forma a largo plazo de JOURNEYWAYS no es un único producto. Es el marco, y lo que otras personas hagan con él. Ya puedes mirar de cerca dos de las tres piezas: las <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">cartas</a> y las <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">fichas de mapa</a>.",
+        "body_3": "La forma a largo plazo de JOURNEYWAYS no es un único producto. Es el marco, y lo que otras personas hagan con él. Ya puedes mirar de cerca dos de las tres piezas: las <a href=\"%1$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">cartas</a> y los <a href=\"%2$s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">mosaicos de mapa</a>.",
         "quote": "“El motor está pensado para ayudar en el proceso creativo, no para ser un obstáculo.”"
     },
     "reach": {
@@ -117,7 +117,7 @@
         "fig_alt": "Ilustración en acuarela de seis meeples de distintos colores juntos.",
         "fig_caption": "Las personas que juegan, juntas.",
         "body_1": "El mismo compromiso recorre dos conjuntos de decisiones.",
-        "body_2": "<span class=\"text-gray-200 font-medium\">Reproducibilidad.</span> Tipografías libres. Código abierto. Contenido bajo Creative Commons. Sin dependencias propietarias. El juego se puede imprimir, modificar y volver a publicar sin obstáculos de licencias ni de recursos. Habrá plantillas para las cartas, las fichas y el cuaderno de personaje, para que cualquiera pueda crear su propia versión. Se pueden producir variantes localizadas del juego de mesa a través del marco. La versión digital se lanza en inglés, español y francés.",
+        "body_2": "<span class=\"text-gray-200 font-medium\">Reproducibilidad.</span> Tipografías libres. Código abierto. Contenido bajo Creative Commons. Sin dependencias propietarias. El juego se puede imprimir, modificar y volver a publicar sin obstáculos de licencias ni de recursos. Habrá plantillas para las cartas, los mosaicos y el cuaderno de personaje, para que cualquiera pueda crear su propia versión. Se pueden producir variantes localizadas del juego de mesa a través del marco. La versión digital se lanza en inglés, español y francés.",
         "body_3": "<span class=\"text-gray-200 font-medium\">Seguridad.</span> La versión digital se distribuye sin soporte de cámara. Las sesiones de investigación se graban solo en audio, nunca en vídeo. Todos los recursos y datos digitales se guardan en centros de datos en Canadá (Toronto). El contenido creado por las personas usuarias permanece en el idioma en que lo escribieron; nada se traduce automáticamente, porque sus palabras son suyas. Las entradas del diario se almacenan bajo una <a href=\"https://play.journeyways.ca/privacy\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\" target=\"_blank\" rel=\"noopener noreferrer\">Política de privacidad</a> y unos <a href=\"https://play.journeyways.ca/terms\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\" target=\"_blank\" rel=\"noopener noreferrer\">Términos de servicio</a> documentados.",
         "body_4": "Dos hilos de un mismo diseño. Hacer posible que cualquiera alcance el juego. Hacer que sea seguro para cualquiera jugarlo de verdad."
     },

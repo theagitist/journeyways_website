@@ -52,7 +52,7 @@
         "1": {
             "eyebrow": "Voz",
             "title": "Narración colaborativa",
-            "body": "Una sesión se despliega como diálogo. Cada persona cuenta su propia historia y responde a las demás. Las cartas proponen encuentros, las fichas te sitúan en un mapa compartido y las cartas de grupo invitan a la mesa a entrelazar hilos.",
+            "body": "Una sesión se despliega como diálogo. Cada persona cuenta su propia historia y responde a las demás. Las cartas proponen encuentros, los mosaicos te sitúan en un mapa compartido y las cartas de grupo invitan a la mesa a entrelazar hilos.",
             "quote": "No hay una sola voz narradora. La historia pertenece a todo el mundo en la mesa.",
             "links": [
                 "Filosofía de diseño: un espejo en una cueva",
@@ -81,7 +81,7 @@
     "components": {
         "caption": "Componentes del juego",
         "enlarge": "Haz clic para ampliar",
-        "image_alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: fichas, cartas, piezas y cuadernos de jugador dispuestos para jugar."
+        "image_alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: mosaicos, cartas, piezas y cuadernos de jugador dispuestos para jugar."
     },
     "recent": {
         "stamp": "Novedades",

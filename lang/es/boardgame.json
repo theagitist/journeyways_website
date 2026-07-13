@@ -58,7 +58,7 @@
         "sr_heading": "Preparación",
         "need_heading": "Qué necesitas",
         "need": [
-            "Fichas de mapa (35).",
+            "Mosaicos de mapa (35).",
             "Cartas de juego (81).",
             "Peones (1 por persona).",
             "Cuaderno de juego (1 por persona).",
@@ -70,15 +70,15 @@
         "steps": [
             "Baraja todas las cartas juntas y colócalas boca abajo en tres pilas.",
             "Elige una carta y colócala aparte boca arriba. Será la pila de Descarte.",
-            "Busca la ficha Inicial y ponla aparte. Baraja todas las demás y colócalas boca abajo en tres pilas.",
+            "Busca el mosaico Inicial y ponlo aparte. Baraja todos los demás y colócalos boca abajo en tres pilas.",
             "Cada persona toma un peón.",
             "Usa el dado para determinar quién empieza. Por ejemplo, el número más alto va primero.",
-            "Coloca la ficha Inicial en el centro de la mesa.",
-            "Por turnos, cada persona elige una ficha de cualquier pila y la coloca junto a otra ficha ya colocada. Si es una ficha en blanco, vuelve a ponerla en la pila y elige otra.",
-            "Todas las personas colocan sus peones en la ficha Inicial."
+            "Coloca el mosaico Inicial en el centro de la mesa.",
+            "Por turnos, cada persona elige un mosaico de cualquier pila y lo coloca junto a otro mosaico ya colocado. Si es un mosaico en blanco, vuelve a ponerlo en la pila y elige otro.",
+            "Todas las personas colocan sus peones en el mosaico Inicial."
         ],
-        "figure_alt": "Foto cenital de una partida de JOURNEYWAYS lista para empezar: una cuadrícula de cuatro por cuatro de fichas de mapa en primer plano, el cuaderno de personaje y un estuche de peones a la izquierda, y una pila de cartas de personaje detrás, sobre una superficie de madera.",
-        "figcaption": "Fichas, cartas, peones."
+        "figure_alt": "Foto cenital de una partida de JOURNEYWAYS lista para empezar: una cuadrícula de cuatro por cuatro de mosaicos de mapa en primer plano, el cuaderno de personaje y un estuche de peones a la izquierda, y una pila de cartas de personaje detrás, sobre una superficie de madera.",
+        "figcaption": "Mosaicos, cartas, peones."
     },
     "turn": {
         "stamp": "Turno",
@@ -88,7 +88,7 @@
             {
                 "eyebrow": "Fase 1",
                 "title": "Explorar",
-                "body_html": "Dos opciones. Elige una ficha de mapa y colócala junto a otra. Si eliges una ficha en blanco, tienes que crearla antes de colocarla. O usa una nota adhesiva para dibujar una nueva ficha de mapa (lo que quieras) y colócala encima de una existente donde no haya ninguna persona. Después de colocar tu ficha, puedes moverte uno o dos espacios en cualquier dirección."
+                "body_html": "Dos opciones. Elige un mosaico de mapa y colócalo junto a otro. Si eliges un mosaico en blanco, tienes que crearlo antes de colocarlo. O usa una nota adhesiva para dibujar un nuevo mosaico de mapa (lo que quieras) y colócalo encima de uno existente donde no haya ninguna persona. Después de colocar tu mosaico, puedes moverte uno o dos espacios en cualquier dirección."
             },
             {
                 "eyebrow": "Fase 2",
@@ -101,58 +101,58 @@
                 "body_html": "Si elegiste una carta <span class=\"card-green\">Verde</span> o <span class=\"card-purple\">Morada</span>, tienes que realizar la acción que indica. Si elegiste una carta <span class=\"card-blue\">Azul</span> o <span class=\"card-red\">Roja</span>, ten en cuenta lo que dice y escribe una nueva entrada en tu diario. Si elegiste una carta <span class=\"card-black\">Negra</span>, ponla aparte. La partida termina cuando se elige la quinta carta <span class=\"card-black\">Negra</span>."
             }
         ],
-        "tiles_label_html": "<span class=\"tile-wood\">Fichas de mapa</span>, doce ejemplos",
+        "tiles_label_html": "<span class=\"tile-wood\">Mosaicos de mapa</span>, doce ejemplos",
         "tiles": [
             {
-                "alt": "Ficha de mapa: Lago Espejo. Silueta de lago dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Lago Espejo. Silueta de lago dibujada a mano sobre manchas de acuarela.",
                 "name": "Lago Espejo"
             },
             {
-                "alt": "Ficha de mapa: Puente de las Estrellas. Silueta de puente arqueado dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de puente arqueado dibujada a mano sobre manchas de acuarela.",
                 "name": "Puente de las Estrellas"
             },
             {
-                "alt": "Ficha de mapa: Cueva Cantora. Silueta de cueva dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Cueva Cantora. Silueta de cueva dibujada a mano sobre manchas de acuarela.",
                 "name": "Cueva Cantora"
             },
             {
-                "alt": "Ficha de mapa: Cima de la Montaña. Silueta de montaña dibujada a mano en azules profundos con salpicaduras de tinta.",
+                "alt": "Mosaico de mapa: Cima de la Montaña. Silueta de montaña dibujada a mano en azules profundos con salpicaduras de tinta.",
                 "name": "Cima de la Montaña"
             },
             {
-                "alt": "Ficha de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela.",
+                "alt": "Mosaico de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela.",
                 "name": "Casa de la Infancia"
             },
             {
-                "alt": "Ficha de mapa: Cuarto de Estudio. Silueta de habitación dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Cuarto de Estudio. Silueta de habitación dibujada a mano sobre manchas de acuarela.",
                 "name": "Cuarto de Estudio"
             },
             {
-                "alt": "Ficha de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta rojas, naranjas y negras ardientes.",
+                "alt": "Mosaico de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta rojas, naranjas y negras ardientes.",
                 "name": "Tierra Volcánica"
             },
             {
-                "alt": "Ficha de mapa: Hueco del Árbol. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas.",
+                "alt": "Mosaico de mapa: Hueco del Árbol. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas.",
                 "name": "Hueco del Árbol"
             },
             {
-                "alt": "Ficha de mapa: Campo de Nombres Enterrados. Un dibujo lineal de un campo agrietado y fisurado con dos pequeños retoños.",
+                "alt": "Mosaico de mapa: Campo de Nombres Enterrados. Un dibujo lineal de un campo agrietado y fisurado con dos pequeños retoños.",
                 "name": "Campo de Nombres Enterrados"
             },
             {
-                "alt": "Ficha de mapa: Sendero Brumoso. Árboles desnudos dibujados a mano que flanquean un sendero tranquilo entre dos laderas.",
+                "alt": "Mosaico de mapa: Sendero Brumoso. Árboles desnudos dibujados a mano que flanquean un sendero tranquilo entre dos laderas.",
                 "name": "Sendero Brumoso"
             },
             {
-                "alt": "Ficha de mapa: Camino Nocturno. Sendero oscuro dibujado a mano bajo un cielo sin estrellas.",
+                "alt": "Mosaico de mapa: Camino Nocturno. Sendero oscuro dibujado a mano bajo un cielo sin estrellas.",
                 "name": "Camino Nocturno"
             },
             {
-                "alt": "Ficha de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolores.",
+                "alt": "Mosaico de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolores.",
                 "name": "Parque Abandonado"
             }
         ],
-        "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Mira el conjunto completo de fichas de mapa</a> en la galería de Componentes.",
+        "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Mira el conjunto completo de mosaicos de mapa</a> en la galería de Componentes.",
         "fronts_label": "Anversos de las cartas, nueve ejemplos",
         "fronts": [
             {
@@ -215,7 +215,7 @@
         "stamp": "Diario",
         "sr_heading": "Diario",
         "p1": "A diferencia de los juegos tradicionales, tu personaje en JOURNEYWAYS surge a través del juego en lugar de estar predeterminado. Usa las cartas como inspiración, no como definiciones rígidas; el objetivo principal es que liberes tu imaginación y escribas la historia que quieres contar.",
-        "p2": "Las entradas del diario pueden ser tan cortas o largas, tan escuetas o detalladas como quieras. Puedes inspirarte en la ficha donde está tu peón y en el texto de la carta, y dar rienda suelta a tu creatividad. Escribe una entrada de diario. Garabatéala. Dibuja un cómic. Escribe un fragmento. Déjala en blanco. Todo eso cuenta."
+        "p2": "Las entradas del diario pueden ser tan cortas o largas, tan escuetas o detalladas como quieras. Puedes inspirarte en el mosaico donde está tu peón y en el texto de la carta, y dar rienda suelta a tu creatividad. Escribe una entrada de diario. Garabatéala. Dibuja un cómic. Escribe un fragmento. Déjala en blanco. Todo eso cuenta."
     },
     "modes": {
         "stamp": "Modos",
@@ -245,7 +245,7 @@
         "returning_heading": "Volver a una sesión",
         "returning_body": "JOURNEYWAYS está pensado para el juego continuo. Vuelve a sesiones anteriores, revisita ideas pasadas, observa cómo ha evolucionado tu comprensión. Tu personaje y tu historia siguen desarrollándose entre sesiones.",
         "makeyourown_heading": "Hazlo tuyo",
-        "makeyourown_body": "Añade tus propias cartas de historia, fichas, elementos de personaje, mecánicas. Las plantillas son abiertas. JOURNEYWAYS es un marco para la exploración; hazlo tuyo.",
+        "makeyourown_body": "Añade tus propias cartas de historia, mosaicos, elementos de personaje, mecánicas. Las plantillas son abiertas. JOURNEYWAYS es un marco para la exploración; hazlo tuyo.",
         "setting_heading": "Preparar la mesa",
         "setting": [
             "Reserva un tiempo dedicado.",

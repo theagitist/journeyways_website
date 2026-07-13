@@ -41,11 +41,11 @@
             },
             "cards": {
                 "title": "Sistema de cartas de cinco colores",
-                "body": "El mismo sistema de fichas de mapa y pilas de cartas que el juego de mesa, recreado como un lienzo interactivo. <span class=\"card-red\">Roja</span> Encuentros, <span class=\"card-green\">Verde</span> Movimiento, <span class=\"card-blue\">Azul</span> Reflexiones, <span class=\"card-black\">Negra</span> Cuenta atrás, <span class=\"card-purple\">Morada</span> Acciones de grupo. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora los mazos</a>."
+                "body": "El mismo sistema de mosaicos de mapa y pilas de cartas que el juego de mesa, recreado como un lienzo interactivo. <span class=\"card-red\">Roja</span> Encuentros, <span class=\"card-green\">Verde</span> Movimiento, <span class=\"card-blue\">Azul</span> Reflexiones, <span class=\"card-black\">Negra</span> Cuenta atrás, <span class=\"card-purple\">Morada</span> Acciones de grupo. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora los mazos</a>."
             },
             "table": {
                 "title": "La mesa de juego compartida",
-                "body": "Todas las cartas se barajan juntas y se reparten en un puñado de pilas desiguales, boca abajo, alrededor de una mesa compartida, cada una mostrando su palo en el reverso; las fichas de mapa se apilan del mismo modo sobre sus reversos de madera. Elige la carta superior de una pila y se voltea boca arriba para que toda la sala la vea; luego colócala en la mesa donde prefieras. Quien organiza la partida puede fijar cuántas cartas de Cuenta atrás están en juego y volver a barajar el mazo a mitad de la partida, pidiendo primero el acuerdo de cada persona viajera."
+                "body": "Todas las cartas se barajan juntas y se reparten en un puñado de pilas desiguales, boca abajo, alrededor de una mesa compartida, cada una mostrando su palo en el reverso; los mosaicos de mapa se apilan del mismo modo sobre sus reversos de madera. Elige la carta superior de una pila y se voltea boca arriba para que toda la sala la vea; luego colócala en la mesa donde prefieras. Quien organiza la partida puede fijar cuántas cartas de Cuenta atrás están en juego y volver a barajar el mazo a mitad de la partida, pidiendo primero el acuerdo de cada persona viajera."
             },
             "journal": {
                 "title": "Diario privado con vista previa del boceto",
@@ -78,8 +78,8 @@
             "caption": "Tu panel"
         },
         "tiles": {
-            "alt": "La galería digital de fichas de mapa.",
-            "caption": "Las fichas de mapa"
+            "alt": "La galería digital de mosaicos de mapa.",
+            "caption": "Los mosaicos de mapa"
         },
         "room": {
             "alt": "Dentro de una sala: el diario privado junto al vestíbulo de la sala.",
@@ -97,8 +97,8 @@
         "intro": "Planificado, aún no publicado.",
         "items": {
             "print": {
-                "title": "Cartas, fichas y cuadernos imprimibles",
-                "body": "Un único proceso de composición tipográfica que convierte el catálogo en archivos listos para imprimir: los conjuntos completos de cartas y fichas de mapa, el cuaderno de jugadora o jugador y el manual de uso, todos generados desde la misma fuente que las versiones en pantalla, de modo que nunca se desincronizan. Muy pronto."
+                "title": "Cartas, mosaicos y cuadernos imprimibles",
+                "body": "Un único proceso de composición tipográfica que convierte el catálogo en archivos listos para imprimir: los conjuntos completos de cartas y mosaicos de mapa, el cuaderno de jugadora o jugador y el manual de uso, todos generados desde la misma fuente que las versiones en pantalla, de modo que nunca se desincronizan. Muy pronto."
             },
             "story_loop": {
                 "title": "Ciclo narrativo",

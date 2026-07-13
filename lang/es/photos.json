@@ -37,29 +37,29 @@
             "caption": "La sala de la convención a media tarde, con un cartel de «Looking for players» sobre la mesa y el ambiente en un murmullo bajo de escritura concentrada."
         },
         "pair": {
-            "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con las fichas de mapa en acuarela extendidas entre ambas.",
+            "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con los mosaicos de mapa en acuarela extendidos entre ambas.",
             "title": "Dos personas",
             "caption": "Dos personas desconocidas se volvieron compañía de juego por una hora. Cuadernos abiertos, cartas extendidas, el mapa tendido entre ambas."
         },
         "session": {
-            "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, fichas y diarios cubriendo la mesa.",
+            "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, mosaicos y diarios cubriendo la mesa.",
             "title": "A mitad de sesión",
-            "caption": "Un ángulo más amplio de la misma sesión: varias personas escribiendo a la vez, la mesa cubierta de fichas, cartas de personaje y lápices."
+            "caption": "Un ángulo más amplio de la misma sesión: varias personas escribiendo a la vez, la mesa cubierta de mosaicos, cartas de personaje y lápices."
         }
     },
     "pieces": {
         "stamp": "Piezas",
         "sr_heading": "Piezas",
-        "intro": "Los componentes, fotografiados sin nadie jugando. Fichas, cartas, piezas, cuadernos. Dispuestos sobre una superficie de madera para leerse como una naturaleza muerta del vocabulario material del juego.",
+        "intro": "Los componentes, fotografiados sin nadie jugando. Mosaicos, cartas, piezas, cuadernos. Dispuestos sobre una superficie de madera para leerse como una naturaleza muerta del vocabulario material del juego.",
         "setup": {
-            "alt": "Preparación del juego de mesa JOURNEYWAYS: configuración inicial del tablero con fichas y componentes dispuestos para jugar.",
+            "alt": "Preparación del juego de mesa JOURNEYWAYS: configuración inicial del tablero con mosaicos y componentes dispuestos para jugar.",
             "title": "Preparación del juego de mesa",
-            "caption": "JOURNEYWAYS presente en ProtoConBC, octubre de 2025. Configuración inicial del tablero: fichas, cartas y espacio de juego listos para jugar en solitario o en grupo."
+            "caption": "JOURNEYWAYS presente en ProtoConBC, octubre de 2025. Configuración inicial del tablero: mosaicos, cartas y espacio de juego listos para jugar en solitario o en grupo."
         },
         "components": {
-            "alt": "Componentes del juego de mesa JOURNEYWAYS: cartas, fichas, piezas y cuadernos de juego usados en el juego de exploración de la identidad.",
+            "alt": "Componentes del juego de mesa JOURNEYWAYS: cartas, mosaicos, piezas y cuadernos de juego usados en el juego de exploración de la identidad.",
             "title": "Componentes del juego de mesa",
-            "caption": "Cartas, fichas, piezas y cuadernos de juego dispuestos para jugar."
+            "caption": "Cartas, mosaicos, piezas y cuadernos de juego dispuestos para jugar."
         },
         "enlarge_note": "Haz clic en cualquier imagen para ampliarla."
     }

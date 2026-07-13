@@ -1,15 +1,15 @@
 {
     "meta": {
         "title": "JOURNEYWAYS | Componentes",
-        "description": "Los componentes de JOURNEYWAYS: los mazos de cartas, las losetas de mapa dibujadas a mano y (pronto) el cuaderno de juego y el manual. Elige un componente para explorarlo.",
-        "keywords": "componentes de JOURNEYWAYS, mazos de cartas, losetas de mapa, cuaderno de juego, manual, juego de identidad, juego de mesa, identidad de género",
+        "description": "Los componentes de JOURNEYWAYS: los mazos de cartas, los mosaicos de mapa dibujados a mano y (pronto) el cuaderno de juego y el manual. Elige un componente para explorarlo.",
+        "keywords": "componentes de JOURNEYWAYS, mazos de cartas, mosaicos de mapa, cuaderno de juego, manual, juego de identidad, juego de mesa, identidad de género",
         "og_title": "JOURNEYWAYS | Componentes",
-        "og_description": "Las cartas, las losetas de mapa y más. Elige un componente para explorarlo."
+        "og_description": "Las cartas, los mosaicos de mapa y más. Elige un componente para explorarlo."
     },
     "hero": {
         "eyebrow": "Componentes",
         "title": "Las piezas del juego.",
-        "subtitle": "Las cartas, las losetas de mapa, el cuaderno de juego y el manual.",
+        "subtitle": "Las cartas, los mosaicos de mapa, el cuaderno de juego y el manual.",
         "lead": "Elige un componente para explorarlo de cerca."
     },
     "cards": [
@@ -20,10 +20,10 @@
             "go": "Explora los mazos"
         },
         {
-            "aria": "Explora las losetas de mapa",
-            "title": "Losetas",
-            "desc": "Lugares del mapa cuadrados dibujados a mano, más losetas en blanco que dibuja cada persona. Elige una loseta para verla de cerca.",
-            "go": "Explora las losetas"
+            "aria": "Explora los mosaicos de mapa",
+            "title": "Mosaicos",
+            "desc": "Lugares del mapa cuadrados dibujados a mano, más mosaicos en blanco que dibuja cada persona. Elige un mosaico para verlo de cerca.",
+            "go": "Explora los mosaicos"
         },
         {
             "aria": "Descubre el Cuaderno de juego",

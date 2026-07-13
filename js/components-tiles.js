@@ -12,8 +12,12 @@
  */
 (function () {
   var mount = document.getElementById('jw-tiles');
-  var sub = document.getElementById('jw-tiles-sub');
   if (!mount) return;
+
+  // i18n: the server injects window.__I18N (partials/footer.php); English here is
+  // the fallback. The intro caption is rendered + localized server-side, so this
+  // script no longer overwrites it.
+  var ui = (window.__I18N && window.__I18N.ui) || {};
 
   // Warm-paper square stand-in for the blank tile (it has no art).
   var BLANK_SRC = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600'%3E%3Crect width='100%25' height='100%25' fill='%23fdfbf6'/%3E%3C/svg%3E";
@@ -31,7 +35,7 @@
       name: tile.name, number: tile.tile_number,
       isBlank: tile.blank || !tile.image, copies: tile.copies,
       image: tile.image || null
-    }, { interactive: true, showCopies: true, blankText: 'Make your own' }));
+    }, { interactive: true, showCopies: true, blankText: ui.gal_tile_blank || 'Make your own' }));
     btn.addEventListener('click', function () { if (window.openLightboxFromSet) window.openLightboxFromSet('tiles', i); });
     var cap = el('figcaption', { class: 'jw-tile-cap' }, [el('span', { class: 'jw-tile-name', text: tile.name })]);
     return el('figure', { class: 'jw-tile-fig' }, [btn, cap]);
@@ -39,15 +43,16 @@
 
   function render(data) {
     var tiles = data.tiles || [];
-    if (sub) sub.textContent = tiles.length + ' map tiles. Their names are not printed on the board; pick a tile to see it up close.';
 
     // Register the lightbox set on the shared component. Use the medium (900px)
     // variant for the close-up, fast to load and crisp in the boxed lightbox.
+    var insetTmpl = ui.gal_tile_inset || '%d in the set';
+    var altTmpl = ui.gal_tile_alt || '%s tile';
     if (window.gallerySets) {
       window.gallerySets.tiles = tiles.map(function (t) {
         var src = (t.image && t.image.md) ? t.image.md : BLANK_SRC;
-        var subt = t.tile_number + (t.copies > 0 ? '  ·  ' + t.copies + ' in the set' : '');
-        return { src: src, alt: t.name + ' tile', title: t.name, subtitle: subt };
+        var subt = t.tile_number + (t.copies > 0 ? '  ·  ' + insetTmpl.replace('%d', t.copies) : '');
+        return { src: src, alt: altTmpl.replace('%s', t.name), title: t.name, subtitle: subt };
       });
     }
 
@@ -63,6 +68,6 @@
     .then(render)
     .catch(function () {
       mount.textContent = '';
-      mount.appendChild(el('p', { class: 'jw-hint', style: 'text-align:center;padding:3rem 0;', text: 'The tiles could not be loaded right now. Please try again later.' }));
+      mount.appendChild(el('p', { class: 'jw-hint', style: 'text-align:center;padding:3rem 0;', text: ui.gal_error_tiles || 'The tiles could not be loaded right now. Please try again later.' }));
     });
 })();

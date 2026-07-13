@@ -91,4 +91,4 @@ $P = 'pages.components-cards';
     </main>
 
 <script src="/js/game-components.js?v=3" defer></script>
-<script src="/js/components-cards.js?v=9" defer></script>
+<script src="/js/components-cards.js?v=10" defer></script>

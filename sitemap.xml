@@ -242,12 +242,60 @@
   </url>
   <url>
     <loc>https://www.journeyways.ca/components-cards.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-cards.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/components-cards.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-cards.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/components-cards.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-cards.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-cards.html"/>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.journeyways.ca/components-tiles.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-tiles.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/components-tiles.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-tiles.html"/>
+    <lastmod>2026-07-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/components-tiles.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-tiles.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-tiles.html"/>
     <lastmod>2026-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

@@ -42,4 +42,4 @@ $P = 'pages.components-tiles';
     </main>
 
     <script src="/js/game-components.js?v=3" defer></script>
-    <script src="/js/components-tiles.js?v=6" defer></script>
+    <script src="/js/components-tiles.js?v=7" defer></script>

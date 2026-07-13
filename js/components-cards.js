@@ -7,8 +7,12 @@
  */
 (function () {
   var mount = document.getElementById('jw-gallery');
-  var sub = document.getElementById('jw-sub');
   if (!mount) return;
+
+  // i18n: the server injects window.__I18N (partials/footer.php); English here is
+  // the fallback. The intro caption is rendered + localized server-side (the PHP
+  // template's sub string), so this script no longer overwrites it.
+  var ui = (window.__I18N && window.__I18N.ui) || {};
 
   // DOM helpers (el, nodeFromHTML) come from THE single component module
   // (window.JWComponents, /js/game-components.js, shared with the play app), so
@@ -29,7 +33,6 @@
 
   function render(data) {
     var decks = data.decks || [];
-    if (sub) sub.textContent = data.total + ' cards across ' + decks.length + ' decks. Pick a deck to deal it out.';
     mount.textContent = '';
 
     // Sentinel just above the sticky deck row; when it scrolls out under the nav
@@ -61,7 +64,7 @@
         el('span', { class: 'jw-deck-dot', style: 'background:' + deck.color + ';' }),
         el('span', { class: 'jw-panel-name', text: deck.type }),
         el('span', { class: 'jw-panel-meta', text: deck.letter + ' · ' + deck.cards.length }),
-        el('button', { type: 'button', class: 'jw-panel-close', 'data-close': '', text: 'Close' })
+        el('button', { type: 'button', class: 'jw-panel-close', 'data-close': '', text: ui.lb_close || 'Close' })
       ]);
       var grid = el('div', { class: 'jw-cards-grid' });
 
@@ -127,6 +130,6 @@
     .then(render)
     .catch(function () {
       mount.textContent = '';
-      mount.appendChild(el('p', { class: 'jw-hint', style: 'text-align:center;padding:3rem 0;', text: 'The decks could not be loaded right now. Please try again later.' }));
+      mount.appendChild(el('p', { class: 'jw-hint', style: 'text-align:center;padding:3rem 0;', text: ui.gal_error_decks || 'The decks could not be loaded right now. Please try again later.' }));
     });
 })();

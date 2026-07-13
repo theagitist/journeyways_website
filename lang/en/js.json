@@ -14,7 +14,12 @@
         "contact_sending": "Sending...",
         "contact_sent": "Message sent. Thank you for reaching out.",
         "contact_generic_error": "Something went wrong. Please try again later.",
-        "contact_network": "Network error. Please try again later."
+        "contact_network": "Network error. Please try again later.",
+        "gal_error_decks": "The decks could not be loaded right now. Please try again later.",
+        "gal_error_tiles": "The tiles could not be loaded right now. Please try again later.",
+        "gal_tile_blank": "Make your own",
+        "gal_tile_inset": "%d in the set",
+        "gal_tile_alt": "%s tile"
     },
     "gallery": {
         "photos": [

@@ -14,46 +14,51 @@
         "contact_sending": "Enviando...",
         "contact_sent": "Mensaje enviado. Gracias por escribir.",
         "contact_generic_error": "Algo salió mal. Vuelve a intentarlo más tarde.",
-        "contact_network": "Error de red. Vuelve a intentarlo más tarde."
+        "contact_network": "Error de red. Vuelve a intentarlo más tarde.",
+        "gal_error_decks": "Ahora mismo no se han podido cargar los mazos. Inténtalo de nuevo más tarde.",
+        "gal_error_tiles": "Ahora mismo no se han podido cargar los mosaicos. Inténtalo de nuevo más tarde.",
+        "gal_tile_blank": "Haz la tuya",
+        "gal_tile_inset": "%d en el conjunto",
+        "gal_tile_alt": "Mosaico %s"
     },
     "gallery": {
         "photos": [
-            { "title": "Preparación del juego de mesa", "subtitle": "Configuración inicial del tablero.", "alt": "Preparación del juego de mesa JOURNEYWAYS: vista completa de la configuración inicial del tablero, con fichas y componentes listos para una partida de exploración de la identidad." },
-            { "title": "Componentes del juego de mesa", "subtitle": "Piezas que dan vida al juego.", "alt": "Componentes del juego de mesa JOURNEYWAYS: vista detallada de todas las piezas, incluidas cartas, fichas, meeples y cuadernos para la narración colaborativa." },
+            { "title": "Preparación del juego de mesa", "subtitle": "Configuración inicial del tablero.", "alt": "Preparación del juego de mesa JOURNEYWAYS: vista completa de la configuración inicial del tablero, con mosaicos y componentes listos para una partida de exploración de la identidad." },
+            { "title": "Componentes del juego de mesa", "subtitle": "Piezas que dan vida al juego.", "alt": "Componentes del juego de mesa JOURNEYWAYS: vista detallada de todas las piezas, incluidas cartas, mosaicos, meeples y cuadernos para la narración colaborativa." },
             { "title": "En plena partida", "subtitle": "Conectando a través del juego.", "alt": "Quienes juegan a JOURNEYWAYS en plena acción: personas participando en el juego de mesa de exploración de la identidad, que muestran la narración colaborativa y un juego significativo." },
             { "title": "Escribiendo el diario en juego", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "Prueba de juego de JOURNEYWAYS con el grupo de investigación EDGES en UBC: quienes participan eligen cartas, escriben entradas de diario y reflexionan en juego colaborativo." },
-            { "title": "Alrededor de la mesa", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "Vista de la mesa en una prueba de juego de JOURNEYWAYS: el grupo de investigación EDGES en UBC jugando de forma colaborativa, con cartas, fichas y diarios repartidos por la mesa." },
-            { "title": "El tablero a media sesión", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "El estado del tablero de JOURNEYWAYS a media sesión: vista cenital de fichas que forman un camino, cartas de personaje dispuestas y páginas de diario abiertas, en la prueba de juego de EDGES en UBC." },
+            { "title": "Alrededor de la mesa", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "Vista de la mesa en una prueba de juego de JOURNEYWAYS: el grupo de investigación EDGES en UBC jugando de forma colaborativa, con cartas, mosaicos y diarios repartidos por la mesa." },
+            { "title": "El tablero a media sesión", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "El estado del tablero de JOURNEYWAYS a media sesión: vista cenital de mosaicos que forman un camino, cartas de personaje dispuestas y páginas de diario abiertas, en la prueba de juego de EDGES en UBC." },
             { "title": "Sobre la mesa", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "JOURNEYWAYS en ProtoConBC: una mesa con la hoja de Reglas del juego de JOURNEYWAYS, cuadernos, cartas de personaje y un cartel de ProtoConBC n.º 18." },
             { "title": "En el salón", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Vista amplia del salón de la convención ProtoConBC, con personas escribiendo en mesas largas y el cartel LOOKING FOR PLAYERS a la vista." },
-            { "title": "Dos personas", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con las fichas de mapa en acuarela repartidas entre ambas." },
-            { "title": "A media sesión", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, fichas y diarios llenando la mesa." }
+            { "title": "Dos personas", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con los mosaicos de mapa en acuarela repartidos entre ambas." },
+            { "title": "A media sesión", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, mosaicos y diarios llenando la mesa." }
         ],
         "videogameScreens": [
             { "title": "La puerta de entrada", "subtitle": "JOURNEYWAYS en línea: un juego sobre el devenir.", "alt": "La pantalla de inicio del juego digital de JOURNEYWAYS: el logotipo en acuarela sobre un paisaje de piezas de rompecabezas, con los botones Comienza el viaje y Vuelve al camino." },
             { "title": "Tu panel", "subtitle": "Tus salas y viajes, reunidos en un solo lugar.", "alt": "El panel del juego digital: un saludo de bienvenida, los cinco puntos de palo y las pestañas Viajes activos, Unirse a un viaje y Comenzar un nuevo viaje, sobre tarjetas de las salas de cada persona." },
-            { "title": "Las fichas de mapa", "subtitle": "El mapa modular, con fichas en blanco para que las completes tú.", "alt": "La galería de fichas de mapa del juego digital: una cuadrícula de fichas cuadradas en acuarela, cada una con su nombre debajo, incluidas Inicio, Lago Espejo, Pico de la Montaña y Puente de las Estrellas." },
+            { "title": "Los mosaicos de mapa", "subtitle": "El mapa modular, con mosaicos en blanco para que los completes tú.", "alt": "La galería de mosaicos de mapa del juego digital: una cuadrícula de mosaicos cuadrados en acuarela, cada uno con su nombre debajo, incluidos Inicio, Lago Espejo, Pico de la Montaña y Puente de las Estrellas." },
             { "title": "Dentro de una sala", "subtitle": "El diario privado junto al vestíbulo en vivo de la sala.", "alt": "Dentro de una sala: el panel del diario privado con las preguntas de Orígenes del personaje a la izquierda, junto al vestíbulo de la sala con sus integrantes y un botón Comenzar viaje a la derecha." }
         ],
         "homeComponents": [
-            { "title": "Componentes del juego", "subtitle": "Fichas, cartas, meeples y cuadernos, dispuestos para una sesión.", "alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: fichas, cartas, meeples y cuadernos dispuestos para jugar." }
+            { "title": "Componentes del juego", "subtitle": "Mosaicos, cartas, meeples y cuadernos, dispuestos para una sesión.", "alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: mosaicos, cartas, meeples y cuadernos dispuestos para jugar." }
         ],
         "boardgameSetup": [
-            { "title": "Preparación del juego", "subtitle": "Fichas, cartas, meeples.", "alt": "JOURNEYWAYS listo para empezar: fichas, cartas de personaje, meeples, cuadernos de personaje." }
+            { "title": "Preparación del juego", "subtitle": "Mosaicos, cartas, meeples.", "alt": "JOURNEYWAYS listo para empezar: mosaicos, cartas de personaje, meeples, cuadernos de personaje." }
         ],
         "boardgameTiles": [
-            { "title": "Lago Espejo", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Lago Espejo. Silueta de un lago dibujada a mano sobre manchas de acuarela." },
-            { "title": "Puente de las Estrellas", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Puente de las Estrellas. Silueta de un puente arqueado dibujada a mano sobre manchas de acuarela." },
-            { "title": "Cueva Cantora", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Cueva Cantora. Silueta de una cueva dibujada a mano sobre manchas de acuarela." },
-            { "title": "Pico de la Montaña", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Pico de la Montaña. Silueta de una montaña dibujada a mano en azules profundos con salpicaduras de tinta." },
-            { "title": "Casa de la Infancia", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela." },
-            { "title": "Sala de Estudio", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Sala de Estudio. Silueta de una habitación dibujada a mano sobre manchas de acuarela." },
-            { "title": "Tierra Volcánica", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta en rojo ardiente, naranja y negro." },
-            { "title": "Árbol Hueco", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Árbol Hueco. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas." },
-            { "title": "Campo de Nombres Enterrados", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Campo de Nombres Enterrados. Un dibujo de líneas de un campo agrietado y resquebrajado con dos pequeños retoños." },
-            { "title": "Sendero Neblinoso", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Sendero Neblinoso. Árboles desnudos dibujados a mano flanqueando un camino tranquilo entre dos laderas." },
-            { "title": "Camino Nocturno", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Camino Nocturno. Un camino oscuro dibujado a mano bajo un cielo sin estrellas." },
-            { "title": "Parque Abandonado", "subtitle": "Ficha de mapa.", "alt": "Ficha de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolor." }
+            { "title": "Lago Espejo", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Lago Espejo. Silueta de un lago dibujada a mano sobre manchas de acuarela." },
+            { "title": "Puente de las Estrellas", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de un puente arqueado dibujada a mano sobre manchas de acuarela." },
+            { "title": "Cueva Cantora", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Cueva Cantora. Silueta de una cueva dibujada a mano sobre manchas de acuarela." },
+            { "title": "Pico de la Montaña", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Pico de la Montaña. Silueta de una montaña dibujada a mano en azules profundos con salpicaduras de tinta." },
+            { "title": "Casa de la Infancia", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela." },
+            { "title": "Sala de Estudio", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sala de Estudio. Silueta de una habitación dibujada a mano sobre manchas de acuarela." },
+            { "title": "Tierra Volcánica", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta en rojo ardiente, naranja y negro." },
+            { "title": "Árbol Hueco", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Árbol Hueco. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas." },
+            { "title": "Campo de Nombres Enterrados", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Campo de Nombres Enterrados. Un dibujo de líneas de un campo agrietado y resquebrajado con dos pequeños retoños." },
+            { "title": "Sendero Neblinoso", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sendero Neblinoso. Árboles desnudos dibujados a mano flanqueando un camino tranquilo entre dos laderas." },
+            { "title": "Camino Nocturno", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Camino Nocturno. Un camino oscuro dibujado a mano bajo un cielo sin estrellas." },
+            { "title": "Parque Abandonado", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolor." }
         ],
         "boardgameCardFronts": [
             { "title": "Encuentro (Roja)", "subtitle": "\"Encuentras una caja con la etiqueta 'Todavía no'. ¿La tomas? ¿La abres?\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una caja con la etiqueta 'Todavía no'." },
@@ -75,7 +80,7 @@
         ],
         "manual": [
             { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: Reglas del juego de JOURNEYWAYS, un juego de mesa sobre el devenir, sobre un paisaje en acuarela." },
-            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer las fichas y las cinco pilas de cartas, con una nota al margen dibujada a mano." },
+            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer los mosaicos y las cinco pilas de cartas, con una nota al margen dibujada a mano." },
             { "title": "Juego básico", "subtitle": "Explorar, elegir, reflexionar.", "alt": "La página de Juego básico: las tres fases de un turno y una leyenda de los cinco colores de carta." },
             { "title": "Una entrada de diario", "subtitle": "Un ejemplo de escritura a partir de las cartas.", "alt": "Una entrada de diario de ejemplo en letra manuscrita, con un pequeño volcán pintado en la esquina." },
             { "title": "Juego en solitario y en grupo", "subtitle": "Jugar en solitario o en grupo.", "alt": "La página de Juego en solitario y en grupo, con una fotografía de meeples pintados." },
