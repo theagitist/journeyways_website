@@ -144,24 +144,21 @@ cards + tiles galleries render English `/api` data). The contact form is ported 
 # Verify a page serves
 /usr/bin/curl -sk -H "Host: www.journeyways.ca" "https://127.0.0.1/" -o /dev/null -w "%{http_code}\n"
 
-# Resume the contact-form backend (after fixing the deliverability issue)
-pm2 start journeyways-www && pm2 save
-pm2 logs journeyways-www --lines 50
-
-# Smoke-test backend health (after start)
-/usr/bin/curl -sk -H "Host: www.journeyways.ca" "https://127.0.0.1/api/health"
+# Contact form (no Node; php-fpm runs api/contact.php). CLI self-test:
+/usr/bin/php /var/www/www.journeyways.ca/api/contact.php   # -> "contact.php self-test OK"
+# Live: POST to /api/contact (a real send needs a browser Turnstile token; curl exercises
+# the validation / Turnstile-rejection / honeypot paths). Secrets: /etc/journeyways/www-config.php
 
 # Reload nginx after vhost change (always test first)
 sudo nginx -t && sudo systemctl reload nginx
 
-# Rebuild Tailwind after adding any new utility class to HTML/JS
-cd /var/www/www.journeyways.ca/tools && npm run build
-sed -i 's|tailwind.css?v=5|tailwind.css?v=6|' /var/www/www.journeyways.ca/*.html
+# Rebuild Tailwind after adding any new utility class to a template/partial/JS
+cd /var/www/www.journeyways.ca/tools && npm run build   # globs templates/**/*.php + partials/**/*.php
 
-# Bump other asset cache versions (versions now vary per page after the updates/components
-# work; latest highs 2026-07-09: styles.css?v=31, main.js?v=29). Bump only the pages that
-# need the new content; versions across pages need not match.
-sed -i 's|styles.css?v=30|styles.css?v=31|' /var/www/www.journeyways.ca/updates.html
+# Asset cache versions now live in the PHP layer, NOT the *.html (those are in legacy-html/):
+# tailwind.css / styles.css links are in partials/head.php; main.js?v= is injected by
+# partials/footer.php. Bump the ?v= there after changing the asset. Cloudflare caches assets
+# (not HTML), so a same-name asset needs a ?v= bump; the cloudflare-token cannot purge.
 
 # Cloudflare cache (journeyways.ca is proxied): HTML is served DYNAMIC (uncached) so page
 # edits go live immediately; but images (img/**) and download/*.pdf ARE cached. Reusing a
@@ -179,8 +176,10 @@ gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook \
 
 The videogame at `/var/www/play.journeyways.ca/` is the digital companion to the boardgame this site documents, and several files here are updated by work originating there. When a session is running in this project and is asked to do something cross-cutting:
 
+> **Post-PHP-refactor note:** the page formerly at `videogame.html` is now `templates/videogame.php` with its copy in `lang/{en,es,fr}/videogame.json`. Player-facing timeline entries and the version/spec strip are edited in the template (and localized in the JSON), not in a static `.html` (those are archived in `legacy-html/`). The guidance below still describes what to update; only the file it lives in changed.
+
 - **Files this site receives updates to from `play.journeyways.ca`:**
-  - `videogame.html` Recent section: a top `<li>` is added for player-facing material changes (game-wide style, palette, fonts, major UX). Each item carries a month/year eyebrow above the title (`<p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">Month YYYY</p>`); use the current month when shipping. Skip routine bug fixes and internal refactors.
+  - `templates/videogame.php` Recent section (was `videogame.html`): a top `<li>` is added for player-facing material changes (game-wide style, palette, fonts, major UX). Each item carries a month/year eyebrow above the title (`<p class="text-[10px] uppercase tracking-[0.2em] text-yellow-400/70 mb-1">Month YYYY</p>`); use the current month when shipping. Skip routine bug fixes and internal refactors.
   - `videogame.html` spec strip and JSON-LD: `Version`, `Tagged` (month/year), and the JSON-LD `softwareVersion` should match the play-side version on its release.
 - **`brand-spec.md` no longer lives in this repo.** Canonical version is in the Academia vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/brand-spec.md`. Edits land in the vault, not here. Until the rendering pipeline restores HTML governance docs (tracked in `Website Specific/Documentation/ROADMAP.md` in the vault), play-side links to `https://www.journeyways.ca/brand-spec.md` will 404; this is expected.
 - **When invoked from the play-side, that project's CLAUDE.md and memory dir already document the cross-repo rules.** When invoked from THIS side and the user references the videogame, also read:
