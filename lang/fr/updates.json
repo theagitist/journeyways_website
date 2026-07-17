@@ -36,6 +36,10 @@
             "label": "Juillet 2026",
             "items": [
                 {
+                    "title": "Le site, désormais en trois langues",
+                    "body": "Le site web se lit maintenant en anglais, en espagnol et en français, chaque langue à sa propre adresse. Toutes les pages sont traduites, ainsi que les catalogues de cartes et de tuiles de carte, le livret de règles et le carnet à imprimer. Le texte vient directement du jeu, de sorte qu'une carte ou un lieu se lisent de la même façon sur le site qu'à la table."
+                },
+                {
                     "title": "Les documents imprimés, refondus",
                     "body": "Le livret de règles et le carnet du jeu ont été reconstruits depuis leur source dans une chaîne de composition typographique, si bien qu'ils restent modifiables, reproductibles et fidèles à la typographie du jeu : un seul manuel de lecture illustré, et un carnet à remplir, à imprimer et à plier."
                 }

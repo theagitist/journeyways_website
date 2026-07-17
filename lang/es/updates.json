@@ -36,6 +36,10 @@
             "label": "Julio de 2026",
             "items": [
                 {
+                    "title": "El sitio, ahora en tres idiomas",
+                    "body": "El sitio web ahora se lee en inglés, español y francés, cada idioma en su propia dirección. Todas las páginas están traducidas, junto con los catálogos de cartas y mosaicos de mapa y el reglamento y el cuadernillo imprimibles. El texto viene directamente del juego, así que una carta o un lugar se leen igual en el sitio que en la mesa."
+                },
+                {
                     "title": "Los documentos impresos, rehechos",
                     "body": "El reglamento y el cuadernillo de juego se reconstruyeron desde el código fuente en una tubería de composición tipográfica, de modo que siguen siendo editables, reproducibles y fieles a la tipografía del juego: un único manual de lectura ilustrado y un cuadernillo para escribir, imprimir y plegar."
                 }

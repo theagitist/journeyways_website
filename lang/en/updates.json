@@ -38,6 +38,11 @@
             "items": [
                 {
                     "type": "both",
+                    "title": "The site, now in three languages",
+                    "body": "The website now reads in English, Spanish, and French, each language at its own address. Every page is translated, along with the card and map-tile catalogues and the printable rulebook and player booklet. The words come straight from the game, so a card or a place reads the same on the site as it does at the table."
+                },
+                {
+                    "type": "both",
                     "title": "The print documents, refactored",
                     "body": "The rulebook and player booklet were rebuilt from source in a typesetting pipeline, so they stay editable, reproducible, and true to the game's typography: a single illustrated reading manual, and a write-in booklet to print and fold."
                 }
