@@ -51,11 +51,14 @@ The site has been refactored from copy-pasted static HTML to a lean **PHP-FPM**
 server-render so it can localize to es/fr (N-language-ready) with SEO-optimal
 per-language URLs. **LIVE as of 2026-07-10** (the vhost cutover is done; the old
 static pages are parked in `legacy-html/` as a rollback fallback). All 14 content pages are
-on the new stack: 12 trilingual (home, board game, about, design, video game, updates,
-references, photos, components hub, manual, booklet, contact) and 2 English-only (the
-cards + tiles galleries render English `/api` data). The contact form is ported to
-`api/contact.php`. Full plan + as-built: memory `project_www_php_i18n`, vault
-`Website localization (PHP i18n)`.
+on the new stack: **all 14 are trilingual** (home, board game, about, design, video game,
+updates, references, photos, components hub, manual, booklet, contact, and the cards +
+tiles galleries). The two galleries render content from the **language-aware play `/api`**
+(`?lng=`); play's locale files are the single source, so the website and the play app show
+identical card/tile text in every language, and their JS chrome localizes via
+`window.__I18N`. Spanish map-tile term is "mosaico" (a site-wide sweep replaced "ficha de
+mapa"). The contact form is ported to `api/contact.php`. Full plan + as-built: memory
+`project_www_php_i18n` + `project_cards_system`, vault `Website localization (PHP i18n)`.
 
 - **Routing:** `index.php` is the front controller. It strips a leading `/es` or
   `/fr` from the URL (English is bare, the default), maps the remaining clean path
@@ -104,8 +107,9 @@ cards + tiles galleries render English `/api` data). The contact form is ported 
   secret also backed up at `~/apps/keys/journeyways-turnstile-secret`); the 14 page `*.html`
   are in `legacy-html/`; the Node `server/` + `journeyways-www` PM2 app were deleted.
   **Rollback** any time: `git mv legacy-html/*.html .`, restore the pre-cutover vhost from
-  `/etc/nginx/sites-available/www.journeyways.ca.conf.bak-*`, reload. **Deferred:** localize
-  the cards/tiles gallery data so those two pages can publish es/fr (they are English-only).
+  `/etc/nginx/sites-available/www.journeyways.ca.conf.bak-*`, reload. The cards/tiles
+  galleries are now localized and published in es/fr too (via the language-aware play `/api`);
+  see `project_cards_system` / `project_www_php_i18n`.
 
 ## Operational state (May 2026)
 
