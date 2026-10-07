@@ -36,20 +36,40 @@
             "label": "Octubre de 2026",
             "items": [
                 {
-                    "title": "Trece lugares nuevos en el mapa",
-                    "body": "El mapa crece. Trece mosaicos nuevos se suman al conjunto, que llega a cuarenta y un lugares ilustrados más el mosaico en blanco para dibujar el propio. Entre las novedades hay una encrucijada, una pista de baile, una galería de los espejos, un fuerte de mantas y un festival de faroles. Cada uno es un dibujo de líneas sencillo sobre salpicaduras de pintura vivas, y aparecen en la versión digital y en la galería de mosaicos del sitio."
-                },
-                {
-                    "title": "Un mazo más grande: cartas nuevas en todas las pilas",
-                    "body": "El mazo creció de 79 a 101 diseños. La pila de Grupo (morada) pasó de cuatro a dieciséis, la de Movimiento (verde) de tres a doce, y la de Encuentro (roja) sumó ocho nuevas, incluidas unas cartas de color cruzado que conectan las pilas. Se retiraron algunas cartas repetidas o planas y se recortó la pila de Cuenta atrás. Ya puedes ver las cartas nuevas en la versión digital y en la galería de cartas; la baraja impresa llegará más adelante."
-                },
-                {
                     "title": "La baraja, re-ilustrada",
                     "body": "Todas las cartas ilustradas comparten ahora un mismo estilo pintado a mano, en tinta y acuarela. Las 62 caras de carta, las originales y las nuevas, se volvieron a ilustrar con un aspecto único y coherente, para que la baraja se sienta como un solo conjunto. El arte nuevo aparece en la versión digital y en la galería de cartas; la baraja impresa llegará después."
                 },
                 {
                     "title": "Los mosaicos, re-ilustrados",
                     "body": "Los mosaicos de mapa comparten ahora el mismo estilo pintado a mano, en tinta y acuarela, que las cartas, para que todo el conjunto, cartas y tablero, se sienta como un mismo mundo. Cada mosaico se volvió a ilustrar; el arte nuevo está en la versión digital, en la galería de mosaicos y en las hojas imprimibles de mosaicos."
+                }
+            ]
+        },
+        {
+            "tab": "SEP '26",
+            "label": "Septiembre de 2026",
+            "items": [
+                {
+                    "title": "Arte en proceso",
+                    "body": "Continúa el trabajo de re-ilustrar todo el conjunto. El arte nuevo de cartas y mosaicos todavía se está pintando."
+                }
+            ]
+        },
+        {
+            "tab": "AGO '26",
+            "label": "Agosto de 2026",
+            "items": [
+                {
+                    "title": "Trece lugares nuevos en el mapa",
+                    "body": "El mapa crece. Trece mosaicos nuevos se suman al conjunto, que llega a cuarenta y un lugares ilustrados más el mosaico en blanco para dibujar el propio. Entre las novedades hay una encrucijada, una pista de baile, una galería de los espejos, un fuerte de mantas y un festival de faroles. Aparecen en la versión digital y en la galería de mosaicos del sitio."
+                },
+                {
+                    "title": "Un mazo más grande: cartas nuevas en todas las pilas",
+                    "body": "El mazo creció de 79 a 101 diseños. La pila de Grupo (morada) pasó de cuatro a dieciséis, la de Movimiento (verde) de tres a doce, y la de Encuentro (roja) sumó ocho nuevas, incluidas unas cartas de color cruzado que conectan las pilas. Se retiraron algunas cartas repetidas o planas y se recortó la pila de Cuenta atrás. Ya puedes ver las cartas nuevas en la versión digital y en la galería de cartas; la baraja impresa llegará más adelante."
+                },
+                {
+                    "title": "Rehaciendo el arte de cartas y mosaicos",
+                    "body": "Comenzó el trabajo de re-ilustrar todo el juego. Cada carta y cada mosaico de mapa se repintarían con un mismo estilo pintado a mano, en tinta y acuarela, para que todo el conjunto, cartas y tablero, se sintiera como un solo mundo. El trabajo se extendió por las semanas siguientes; el arte terminado llegó en octubre."
                 }
             ]
         },
