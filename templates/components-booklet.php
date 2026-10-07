@@ -29,9 +29,9 @@ $previews = ['p01', 'p02', 'p03', 'p06', 'p15', 'p16'];
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.lede") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.count") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=3" download class="jw-dl"><?= te("$P.dl.en") ?></a>
-                    <a href="/download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=3" download class="jw-dl"><?= te("$P.dl.es") ?></a>
-                    <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=3" download class="jw-dl"><?= te("$P.dl.fr") ?></a>
+                    <a href="/download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=4" download class="jw-dl"><?= te("$P.dl.en") ?></a>
+                    <a href="/download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=4" download class="jw-dl"><?= te("$P.dl.es") ?></a>
+                    <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=4" download class="jw-dl"><?= te("$P.dl.fr") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.dl.note") ?></p>
             </header>

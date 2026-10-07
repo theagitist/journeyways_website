@@ -32,6 +32,33 @@
     },
     "months": [
         {
+            "id": "2026-10",
+            "tab": "OCT '26",
+            "label": "October 2026",
+            "items": [
+                {
+                    "type": "both",
+                    "title": "Thirteen new places on the map",
+                    "body": "The map grows. Thirteen new tiles join the set, bringing it to forty-one illustrated places plus the draw-your-own blank. The new arrivals include a crossroads, a dancefloor, a hall of mirrors, a blanket fort, and a lantern festival. Each is a simple line doodle over bright paint-splatter, and they appear in the digital game and in the tile gallery on the site."
+                },
+                {
+                    "type": "both",
+                    "title": "A bigger deck: new cards across the piles",
+                    "body": "The card deck grew from 79 to 101 designs. The Group (purple) pile went from four to sixteen, Movement (green) from three to twelve, and the Encounter (red) pile gained eight new prompts, including a set of cross-colour cards that reach between the piles. A few repeated or flat cards were retired, and the Countdown pile was trimmed. You can see the new cards in the digital game and the card gallery now; the printed deck follows later."
+                },
+                {
+                    "type": "both",
+                    "title": "The card deck, re-illustrated",
+                    "body": "Every illustrated card now shares one hand-painted ink-and-watercolour style. All 62 card faces, the originals and the new cards, were re-illustrated in a single consistent look, so the deck feels like one set. The new art appears in the digital game and the card gallery; the printed deck follows."
+                },
+                {
+                    "type": "both",
+                    "title": "The map tiles, re-illustrated",
+                    "body": "The map tiles now share the same hand-painted ink-and-watercolour look as the cards, so the whole set, cards and board, feels like one world. Every tile was re-illustrated; the new art is in the digital game, the tile gallery, and the printable tile sheets."
+                }
+            ]
+        },
+        {
             "id": "2026-07",
             "tab": "JUL '26",
             "label": "July 2026",

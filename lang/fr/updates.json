@@ -32,6 +32,28 @@
     },
     "months": [
         {
+            "tab": "OCT '26",
+            "label": "Octobre 2026",
+            "items": [
+                {
+                    "title": "Treize nouveaux lieux sur la carte",
+                    "body": "La carte s'agrandit. Treize nouvelles tuiles rejoignent l'ensemble, qui atteint quarante et un lieux illustrés plus la tuile vierge à dessiner soi-même. Parmi les nouveautés : un carrefour, une piste de danse, une galerie des miroirs, une cabane de couvertures et une fête des lanternes. Chacune est un simple dessin au trait sur des éclaboussures de peinture vives, et elles apparaissent dans la version numérique et dans la galerie de tuiles du site."
+                },
+                {
+                    "title": "Un jeu plus grand : de nouvelles cartes dans toutes les piles",
+                    "body": "Le jeu est passé de 79 à 101 cartes. La pile Groupe (violette) est passée de quatre à seize, Mouvement (verte) de trois à douze, et Rencontre (rouge) a gagné huit nouvelles cartes, dont des cartes intercolores qui relient les piles. Quelques cartes répétées ou plates ont été retirées et la pile Compte à rebours a été réduite. Vous pouvez voir les nouvelles cartes dans la version numérique et dans la galerie de cartes dès maintenant ; le jeu imprimé suivra plus tard."
+                },
+                {
+                    "title": "Le jeu de cartes, réillustré",
+                    "body": "Toutes les cartes illustrées partagent désormais un même style peint à la main, à l'encre et à l'aquarelle. Les 62 faces de cartes, les originales et les nouvelles, ont été réillustrées dans un look unique et cohérent, pour que le jeu forme un seul ensemble. Les nouvelles illustrations apparaissent dans la version numérique et la galerie de cartes ; le jeu imprimé suivra."
+                },
+                {
+                    "title": "Les tuiles, réillustrées",
+                    "body": "Les tuiles de carte partagent désormais le même style peint à la main, à l'encre et à l'aquarelle, que les cartes, pour que tout l'ensemble, cartes et plateau, forme un seul monde. Chaque tuile a été réillustrée ; les nouvelles illustrations sont dans la version numérique, la galerie de tuiles et les planches de tuiles imprimables."
+                }
+            ]
+        },
+        {
             "tab": "JUIL '26",
             "label": "Juillet 2026",
             "items": [

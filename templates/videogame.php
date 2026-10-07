@@ -27,7 +27,7 @@ $P = 'pages.videogame';
             <dl class="mt-10 md:mt-14 max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-6 gap-px bg-gray-700/40 border border-gray-700/40">
                 <div class="bg-gray-800 px-4 py-5">
                     <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5"><?= te("$P.hero.spec.version_label") ?></dt>
-                    <dd class="text-sm font-mono text-white">v0.7.0-alpha</dd>
+                    <dd class="text-sm font-mono text-white">v0.7.1-alpha</dd>
                 </div>
                 <div class="bg-gray-800 px-4 py-5">
                     <dt class="text-[10px] uppercase tracking-[0.3em] text-yellow-400/80 mb-1.5"><?= te("$P.hero.spec.tagged_label") ?></dt>
@@ -222,7 +222,7 @@ $P = 'pages.videogame';
             "@context": "https://schema.org",
             "@type": "VideoGame",
             "name": "JOURNEYWAYS (Digital)",
-            "description": "The digital version of JOURNEYWAYS, in active development at v0.7.0-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Designed for solo and group play.",
+            "description": "The digital version of JOURNEYWAYS, in active development at v0.7.1-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Designed for solo and group play.",
             "url": "https://www.journeyways.ca/videogame.html",
             "image": "https://www.journeyways.ca/img/og-card.webp",
             "applicationCategory": "GameApplication",
@@ -236,7 +236,7 @@ $P = 'pages.videogame';
                 "fr"
             ],
             "operatingSystem": "Web",
-            "softwareVersion": "0.7.0-alpha",
+            "softwareVersion": "0.7.1-alpha",
             "genre": "Narrative, Identity Exploration, Collaborative Storytelling",
             "author": {
                 "@type": "Person",

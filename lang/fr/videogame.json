@@ -1,10 +1,10 @@
 {
     "meta": {
         "title": "JOURNEYWAYS | Le jeu vidéo",
-        "description": "La version numérique de JOURNEYWAYS, en développement actif à la v0.7.0-alpha. Multijoueur en temps réel, interface trilingue (anglais, espagnol, français), confidentialité dès la conception (sans caméra), sur le web et sans installation requise. Recherche de maîtrise à l'UBC GRSJ.",
+        "description": "La version numérique de JOURNEYWAYS, en développement actif à la v0.7.1-alpha. Multijoueur en temps réel, interface trilingue (anglais, espagnol, français), confidentialité dès la conception (sans caméra), sur le web et sans installation requise. Recherche de maîtrise à l'UBC GRSJ.",
         "keywords": "JOURNEYWAYS, jeu vidéo, jeu numérique, exploration de l'identité, narration collaborative, multijoueur en temps réel, jeu narratif, jeu web, recherche UBC GRSJ, jeu trilingue, confidentialité dès la conception, développement alpha",
         "og_title": "JOURNEYWAYS | Le jeu vidéo",
-        "og_description": "La version numérique de JOURNEYWAYS, en développement actif à la v0.7.0-alpha. Multijoueur en temps réel, interface trilingue (EN/ES/FR), confidentialité dès la conception, sur le web et sans installation."
+        "og_description": "La version numérique de JOURNEYWAYS, en développement actif à la v0.7.1-alpha. Multijoueur en temps réel, interface trilingue (EN/ES/FR), confidentialité dès la conception, sur le web et sans installation."
     },
     "hero": {
         "eyebrow": "Version numérique · Alpha · En développement",
@@ -14,7 +14,7 @@
         "spec": {
             "version_label": "Version",
             "tagged_label": "Étiqueté",
-            "tagged_value": "Juin 2026",
+            "tagged_value": "Octobre 2026",
             "platform_label": "Plateforme",
             "platform_value": "Web, sans installation",
             "players_label": "Personnes",
