@@ -36,6 +36,10 @@
             "label": "Octubre de 2026",
             "items": [
                 {
+                    "title": "Preparación más simple y reverso de los mosaicos",
+                    "body": "Los mosaicos del tablero ahora comparten un reverso pintado, así que se pueden barajar boca abajo y elegir a ciegas. La preparación también es más simple: ya no hay un mosaico de inicio. Baraja todos los mosaicos, coloca el primero para empezar el mapa compartido y todo el mundo comienza allí. El antiguo mosaico de inicio sigue en el juego como un lugar nuevo, El claro."
+                },
+                {
                     "title": "Seis mosaicos nuevos",
                     "body": "Seis lugares nuevos se suman al tablero, inspirados en los mosaicos que algunas personas dibujaron en la mesa durante las pruebas de juego. Tomamos sus bocetos como punto de partida y los pintamos en el estilo de tinta y acuarela del juego: una aldea, un peñasco, una rueda de la suerte, una estrella guía, un campo de tulipanes y el cosmos. Están en la versión digital y en la galería de mosaicos."
                 },

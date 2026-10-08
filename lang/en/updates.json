@@ -38,6 +38,11 @@
             "items": [
                 {
                     "type": "both",
+                    "title": "Simpler setup, and tile backs",
+                    "body": "The board tiles now share a painted back, so they can be shuffled face down and picked blind. Setup is simpler too: there is no separate start tile anymore. Shuffle all the tiles, place the first one to begin the shared map, and everyone starts there. The old start tile stays in the game as a new place, The Clearing."
+                },
+                {
+                    "type": "both",
                     "title": "Six new map tiles",
                     "body": "Six new places join the board, inspired by tiles players drew at the table during playtests. We took their sketches as starting points and painted them in the game's ink-and-watercolour style: a village, a great boulder, a wheel of chance, a wayfinding star, a field of tulips, and the cosmos. They are in the digital game and the tile gallery."
                 },
