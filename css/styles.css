@@ -636,3 +636,15 @@ main.home {
 }
 .jw-card-text { font-size: 0.875rem; color: #9ca3af; line-height: 1.625; }
 .jw-card-text a { color: rgb(250 204 21); text-decoration: underline; text-underline-offset: 2px; }
+
+/* Card illustration frame: white card face, deck-colour border, soft lift.
+   Applied to the sample card images on the Design and Board Game pages so they
+   read as physical cards on the dark page instead of bare rectangles. Pair with
+   a card-red/green/purple class to colour the border via currentColor. */
+.jw-card-frame {
+    display: block;
+    background: #fff;
+    border: 3px solid currentColor;
+    border-radius: 0.65rem;
+    box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.6);
+}

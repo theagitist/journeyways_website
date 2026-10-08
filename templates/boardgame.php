@@ -13,30 +13,30 @@ $deckBacks = [
 ];
 // Map tiles: [image path, gallery index].
 $mapTiles = [
-    ['/img/design/tile-mirror-lake.webp',         0],
-    ['/img/design/tile-star-bridge.webp',         1],
-    ['/img/design/tile-singing-cave.webp',        2],
-    ['/img/design/tile-mountain-peak.webp',       3],
-    ['/img/design/tile-childhood-house.webp',     4],
-    ['/img/design/tile-study-room.webp',          5],
-    ['/img/design/tile-volcanic-ground.webp',     6],
-    ['/img/design/tile-tree-hollow.webp',         7],
-    ['/img/design/tile-buried-names-field.webp',  8],
-    ['/img/design/tile-misty-trail.webp',         9],
-    ['/img/design/tile-night-way.webp',          10],
-    ['/img/design/tile-abandoned-playground.webp', 11],
+    ['/img/design/tile-mirror-lake.webp?v=2',         0],
+    ['/img/design/tile-star-bridge.webp?v=2',         1],
+    ['/img/design/tile-singing-cave.webp?v=2',        2],
+    ['/img/design/tile-mountain-peak.webp?v=2',       3],
+    ['/img/design/tile-childhood-house.webp?v=2',     4],
+    ['/img/design/tile-study-room.webp?v=2',          5],
+    ['/img/design/tile-volcanic-ground.webp?v=2',     6],
+    ['/img/design/tile-tree-hollow.webp?v=2',         7],
+    ['/img/design/tile-buried-names-field.webp?v=2',  8],
+    ['/img/design/tile-misty-trail.webp?v=2',         9],
+    ['/img/design/tile-night-way.webp?v=2',          10],
+    ['/img/design/tile-abandoned-playground.webp?v=2', 11],
 ];
 // Card fronts: [image path, card-colour class, gallery index].
 $cardFronts = [
-    ['/img/design/card-box-not-yet.webp',  'card-red',    0],
-    ['/img/design/card-reminiscence.webp', 'card-green',  1],
-    ['/img/design/card-encounter.webp',    'card-purple', 2],
-    ['/img/design/card-mirror.webp',       'card-red',    3],
-    ['/img/design/card-commune.webp',      'card-purple', 4],
-    ['/img/design/card-map.webp',          'card-red',    5],
-    ['/img/design/card-memory.webp',       'card-red',    6],
-    ['/img/design/card-echo.webp',         'card-red',    7],
-    ['/img/design/card-wind.webp',         'card-red',    8],
+    ['/img/design/card-box-not-yet.webp?v=3',  'card-red',    0],
+    ['/img/design/card-homecoming.webp?v=3', 'card-green',  1],
+    ['/img/design/card-encounter.webp?v=3',    'card-purple', 2],
+    ['/img/design/card-mirror.webp?v=3',       'card-red',    3],
+    ['/img/design/card-commune.webp?v=3',      'card-purple', 4],
+    ['/img/design/card-map.webp?v=3',          'card-red',    5],
+    ['/img/design/card-memory.webp?v=3',       'card-red',    6],
+    ['/img/design/card-echo.webp?v=3',         'card-red',    7],
+    ['/img/design/card-wind.webp?v=3',         'card-red',    8],
 ];
 ?>
 <main>
@@ -47,7 +47,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <div class="col-span-12 md:col-span-5">
                     <figure class="m-0 shadow-lg max-w-md mx-auto md:mx-0">
-                        <img src="/img/rulebook_cover.webp" alt="<?= te("$P.hero.cover_alt") ?>" class="w-full h-auto block" loading="eager">
+                        <img src="/img/rulebook_cover.webp?v=2" alt="<?= te("$P.hero.cover_alt") ?>" class="w-full h-auto block" loading="eager">
                     </figure>
                 </div>
                 <div class="col-span-12 md:col-span-7">
@@ -199,7 +199,7 @@ $cardFronts = [
                         <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
 <?php foreach ($cardFronts as $i => [$src, $cls, $idx]): $c = "$P.turn.fronts.$i"; ?>
                             <div>
-                                <img src="<?= esc($src) ?>" alt="<?= te("$c.alt") ?>" class="w-full cursor-pointer" onclick="openLightboxFromSet('boardgameCardFronts', <?= $idx ?>)" loading="lazy">
+                                <img src="<?= esc($src) ?>" alt="<?= te("$c.alt") ?>" class="w-full cursor-pointer jw-card-frame <?= esc($cls) ?>" onclick="openLightboxFromSet('boardgameCardFronts', <?= $idx ?>)" loading="lazy">
                                 <p class="text-xs italic text-center mt-2"><span class="<?= esc($cls) ?>"><?= te("$c.category") ?></span> (<?= te("$c.color") ?>)</p>
                             </div>
 <?php endforeach; ?>

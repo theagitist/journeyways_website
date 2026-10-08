@@ -17,7 +17,7 @@
     </div>
 
     <script>window.__I18N = <?= json_encode(jw_load_js($JW_LANG), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) ?>;</script>
-    <script src="/js/main.js?v=23" defer></script>
+    <script src="/js/main.js?v=24" defer></script>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=G-3W5YQCJ0FQ"></script>
 </body>
 </html>

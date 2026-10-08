@@ -152,7 +152,7 @@ $P = 'pages.videogame';
                             <figcaption class="text-[11px] text-gray-500 italic mt-2"><?= te("$P.screens.dashboard.caption") ?></figcaption>
                         </figure>
                         <figure class="m-0">
-                            <img src="/img/play/play-tiles.webp" alt="<?= te("$P.screens.tiles.alt") ?>" class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 2)" loading="lazy">
+                            <img src="/img/play/play-tiles.webp?v=2" alt="<?= te("$P.screens.tiles.alt") ?>" class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 2)" loading="lazy">
                             <figcaption class="text-[11px] text-gray-500 italic mt-2"><?= te("$P.screens.tiles.caption") ?></figcaption>
                         </figure>
                         <figure class="m-0">

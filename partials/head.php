@@ -66,7 +66,7 @@ $ogImage = JW_ORIGIN . '/img/og-card.jpg';
     <link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/tailwind.css?v=25">
-    <link rel="stylesheet" href="/css/styles.css?v=26">
+    <link rel="stylesheet" href="/css/styles.css?v=27">
 </head>
 <body class="bg-gray-800 text-white">
 <?php require __DIR__ . '/nav.php'; ?>

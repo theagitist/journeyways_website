@@ -79,7 +79,7 @@ $P = 'pages.design';
                 <div class="col-span-12 md:col-span-8 md:col-start-5">
                     <h2 id="identity-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6"><?= te("$P.identity.title") ?></h2>
                     <figure class="mb-8">
-                        <img src="/img/design/card-box-not-yet.webp" alt="<?= te("$P.identity.fig_alt") ?>" class="w-full block" loading="lazy">
+                        <img src="/img/design/card-box-not-yet.webp?v=3" alt="<?= te("$P.identity.fig_alt") ?>" class="w-full block jw-card-frame card-red" loading="lazy">
                         <figcaption class="text-sm text-gray-400 italic mt-3"><?= t("$P.identity.fig_caption") ?></figcaption>
                     </figure>
                     <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
@@ -143,11 +143,11 @@ $P = 'pages.design';
                     <h2 id="consent-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6"><?= te("$P.consent.title") ?></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">
                         <figure>
-                            <img src="/img/design/tile-star-bridge.webp" alt="<?= te("$P.consent.fig1_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/tile-star-bridge.webp?v=2" alt="<?= te("$P.consent.fig1_alt") ?>" class="w-full block" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.consent.fig1_caption") ?></figcaption>
                         </figure>
                         <figure>
-                            <img src="/img/design/card-map.webp" alt="<?= te("$P.consent.fig2_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/card-map.webp?v=3" alt="<?= te("$P.consent.fig2_alt") ?>" class="w-full block jw-card-frame card-red" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.consent.fig2_caption") ?></figcaption>
                         </figure>
                     </div>
@@ -183,15 +183,15 @@ $P = 'pages.design';
                     <h2 id="voice-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6"><?= te("$P.voice.title") ?></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         <figure>
-                            <img src="/img/design/card-memory.webp" alt="<?= te("$P.voice.fig1_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/card-memory.webp?v=3" alt="<?= te("$P.voice.fig1_alt") ?>" class="w-full block jw-card-frame card-red" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.voice.fig1_caption") ?></figcaption>
                         </figure>
                         <figure>
-                            <img src="/img/design/card-reminiscence.webp" alt="<?= te("$P.voice.fig2_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/card-homecoming.webp?v=3" alt="<?= te("$P.voice.fig2_alt") ?>" class="w-full block jw-card-frame card-green" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.voice.fig2_caption") ?></figcaption>
                         </figure>
                         <figure>
-                            <img src="/img/design/card-encounter.webp" alt="<?= te("$P.voice.fig3_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/card-encounter.webp?v=3" alt="<?= te("$P.voice.fig3_alt") ?>" class="w-full block jw-card-frame card-purple" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.voice.fig3_caption") ?></figcaption>
                         </figure>
                     </div>
@@ -226,15 +226,15 @@ $P = 'pages.design';
                     <h2 id="meeting-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6"><?= te("$P.meeting.title") ?></h2>
                     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
                         <figure>
-                            <img src="/img/design/tile-singing-cave.webp" alt="<?= te("$P.meeting.fig1_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/tile-singing-cave.webp?v=2" alt="<?= te("$P.meeting.fig1_alt") ?>" class="w-full block" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.meeting.fig1_caption") ?></figcaption>
                         </figure>
                         <figure>
-                            <img src="/img/design/card-mirror.webp" alt="<?= te("$P.meeting.fig2_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/card-mirror.webp?v=3" alt="<?= te("$P.meeting.fig2_alt") ?>" class="w-full block jw-card-frame card-red" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.meeting.fig2_caption") ?></figcaption>
                         </figure>
                         <figure>
-                            <img src="/img/design/tile-study-room.webp" alt="<?= te("$P.meeting.fig3_alt") ?>" class="w-full block" loading="lazy">
+                            <img src="/img/design/tile-study-room.webp?v=2" alt="<?= te("$P.meeting.fig3_alt") ?>" class="w-full block" loading="lazy">
                             <figcaption class="text-xs text-gray-400 italic mt-3"><?= t("$P.meeting.fig3_caption") ?></figcaption>
                         </figure>
                     </div>
@@ -300,7 +300,7 @@ $P = 'pages.design';
                 <div class="col-span-12 md:col-span-8 md:col-start-5">
                     <h2 id="hand-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6"><?= te("$P.hand.title") ?></h2>
                     <figure class="mb-8">
-                        <img src="/img/design/tile-mirror-lake.webp" alt="<?= te("$P.hand.fig_alt") ?>" class="w-full block" loading="lazy">
+                        <img src="/img/design/tile-mirror-lake.webp?v=2" alt="<?= te("$P.hand.fig_alt") ?>" class="w-full block" loading="lazy">
                         <figcaption class="text-sm text-gray-400 italic mt-3"><?= t("$P.hand.fig_caption") ?></figcaption>
                     </figure>
                     <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
@@ -367,7 +367,7 @@ $P = 'pages.design';
                 <div class="col-span-12 md:col-span-8 md:col-start-5">
                     <h2 id="reach-title" class="text-2xl md:text-3xl font-medium text-white tracking-tight leading-tight mb-6"><?= te("$P.reach.title") ?></h2>
                     <figure class="mb-8">
-                        <img src="/img/design/assorted-six-meeples.webp" alt="<?= te("$P.reach.fig_alt") ?>" class="w-full block" loading="lazy">
+                        <img src="/img/design/card-shared-encounter.webp?v=3" alt="<?= te("$P.reach.fig_alt") ?>" class="w-full block jw-card-frame card-purple" loading="lazy">
                         <figcaption class="text-sm text-gray-400 italic mt-3"><?= te("$P.reach.fig_caption") ?></figcaption>
                     </figure>
                     <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
