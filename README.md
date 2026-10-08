@@ -153,7 +153,7 @@ Wraps the v1.2.x editorial Swiss-luxury redesign that started with the homepage.
 - **PDF rename + optimization.** `JOURNEYWYS Character Sheet 1.0.pdf` (the typo'd "character sheet" that is actually the player booklet) renamed to `JOURNEYWAYS Player Booklet 1.0.pdf`. Both PDFs optimized with Ghostscript `/ebook` setting: Game Rules 2.2 MB → 585 KB, Player Booklet 11 MB → 5.2 MB.
 - **Content rule (site-wide).** "Draw" → "pick" anywhere it means selecting a card or tile from a pile (body text, alt text, JSON-LD). "Draw" / "drawn" preserved where it means illustrating ("draw a comic", "tiles can be drawn on") or sourcing ("drawn from a small canon") or describing artwork ("Hand-drawn map tile").
 - **Per-page hero variations are intentional**, not mistakes. Documented in `CLAUDE.md` and the user's memory: each of the six pages has its own hero treatment so the site doesn't read as one layout reskinned six times.
-- **6 new map tile webps** encoded from the original Map Tile assets (now at `~/apps/journeyways/original_assets/boardgame/map-tiles/` in the private `journeyways_original_assets` repo): Abandoned Playground, Buried Names Field, Childhood House, Mountain Peak, Tree Hollow, Volcanic Ground.
+- **6 new map tile webps** encoded from the original Map Tile assets (the canonical tile art now lives at `~/apps/journeyways/original_assets/boardgame/tiles-gemini/` in the private `journeyways_original_assets` repo; the old `map-tiles/` dir was removed 2026-10-08): Abandoned Playground, Buried Names Field, Childhood House, Mountain Peak, Tree Hollow, Volcanic Ground.
 - **Bump** cache keys to `tailwind.css?v=24`, `styles.css?v=23`, `main.js?v=20`. `VERSION` and footer markers to 1.3.0.
 
 ### 1.2.0 (May 2026) — editorial redesign of the homepage
