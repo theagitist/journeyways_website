@@ -18,7 +18,7 @@ $P = 'pages.design';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-center">
                 <div class="col-span-12 md:col-span-5 md:order-1 order-2">
                     <figure class="hero-mask m-0">
-                        <img src="/img/design/tile-start.webp" alt="<?= te("$P.hero.image_alt") ?>" class="w-full h-auto block" loading="lazy">
+                        <img src="/img/design/tile-start-wc.webp" alt="<?= te("$P.hero.image_alt") ?>" class="w-full h-auto block" loading="lazy">
                     </figure>
                 </div>
                 <div class="col-span-12 md:col-span-7 md:order-2 order-1">

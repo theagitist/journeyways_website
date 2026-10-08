@@ -9,7 +9,7 @@ $P = 'pages.components';
 $cards = [
     ['/components-cards.html',   "background-image: url('/img/cards/backs/back-reflection-300.webp');"],
     ['/components-tiles.html',   "background-image: url('/img/tiles/mirror-lake-400.webp');"],
-    ['/components-booklet.html', "background-image: url('/img/booklet/p01.webp?v=3');"],
+    ['/components-booklet.html', "background-image: url('/img/booklet/p01.webp?v=5');"],
     ['/components-manual.html',  "background-image: url('/img/rulebook_cover.webp');"],
 ];
 ?>
