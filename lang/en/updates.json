@@ -38,6 +38,11 @@
             "items": [
                 {
                     "type": "both",
+                    "title": "Six new map tiles",
+                    "body": "Six new places join the board, inspired by tiles players drew at the table during playtests. We took their sketches as starting points and painted them in the game's ink-and-watercolour style: a village, a great boulder, a wheel of chance, a wayfinding star, a field of tulips, and the cosmos. They are in the digital game and the tile gallery."
+                },
+                {
+                    "type": "both",
                     "title": "The card deck, re-illustrated",
                     "body": "Every illustrated card now shares one hand-painted ink-and-watercolour style. All 62 card faces, the originals and the new cards, were re-illustrated in a single consistent look, so the deck feels like one set. The new art appears in the digital game and the card gallery; the printed deck follows."
                 },
@@ -139,7 +144,10 @@
                 {
                     "type": "video",
                     "title": "Cards and map tiles, online",
-                    "links": ["/components-cards.html", "/components-tiles.html"],
+                    "links": [
+                        "/components-cards.html",
+                        "/components-tiles.html"
+                    ],
                     "body": "The full deck and the modular map now have a live catalogue you can browse on the site: every card sorted by suit, and every map tile, including the blank tiles you fill in yourself. Each set comes from the game itself, so the website always shows what is actually in play. See the <a href=\"%1$s\">cards</a> and the <a href=\"%2$s\">map tiles</a>."
                 },
                 {

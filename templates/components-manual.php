@@ -26,9 +26,9 @@ $P = 'pages.components-manual';
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.intro") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.pages_hint") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=12" download class="jw-dl"><?= t("$P.download.en") ?></a>
-                    <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=12" download class="jw-dl"><?= t("$P.download.es") ?></a>
-                    <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=12" download class="jw-dl"><?= t("$P.download.fr") ?></a>
+                    <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=13" download class="jw-dl"><?= t("$P.download.en") ?></a>
+                    <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=13" download class="jw-dl"><?= t("$P.download.es") ?></a>
+                    <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=13" download class="jw-dl"><?= t("$P.download.fr") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.download.note") ?></p>
             </header>
