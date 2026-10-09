@@ -47,17 +47,17 @@
             { "title": "Preparación del juego", "subtitle": "Mosaicos, cartas, meeples.", "alt": "JOURNEYWAYS listo para empezar: mosaicos, cartas de personaje, meeples, cuadernos de personaje." }
         ],
         "boardgameTiles": [
-            { "title": "Lago Espejo", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Lago Espejo. Silueta de un lago dibujada a mano sobre manchas de acuarela." },
-            { "title": "Puente de las Estrellas", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de un puente arqueado dibujada a mano sobre manchas de acuarela." },
-            { "title": "Cueva Cantora", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Cueva Cantora. Silueta de una cueva dibujada a mano sobre manchas de acuarela." },
-            { "title": "Pico de la Montaña", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Pico de la Montaña. Silueta de una montaña dibujada a mano en azules profundos con salpicaduras de tinta." },
+            { "title": "Lago Espejo", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Lago Espejo. Silueta de un lago sobre manchas de acuarela." },
+            { "title": "Puente de las Estrellas", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de un puente arqueado sobre manchas de acuarela." },
+            { "title": "Cueva Cantora", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Cueva Cantora. Silueta de una cueva sobre manchas de acuarela." },
+            { "title": "Pico de la Montaña", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Pico de la Montaña. Silueta de una montaña en azules profundos con salpicaduras de tinta." },
             { "title": "Casa de la Infancia", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela." },
-            { "title": "Sala de Estudio", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sala de Estudio. Silueta de una habitación dibujada a mano sobre manchas de acuarela." },
+            { "title": "Sala de Estudio", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sala de Estudio. Silueta de una habitación sobre manchas de acuarela." },
             { "title": "Tierra Volcánica", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta en rojo ardiente, naranja y negro." },
             { "title": "Árbol Hueco", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Árbol Hueco. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas." },
             { "title": "Campo de Nombres Enterrados", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Campo de Nombres Enterrados. Un dibujo de líneas de un campo agrietado y resquebrajado con dos pequeños retoños." },
             { "title": "Sendero Neblinoso", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sendero Neblinoso. Árboles desnudos dibujados a mano flanqueando un camino tranquilo entre dos laderas." },
-            { "title": "Camino Nocturno", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Camino Nocturno. Un camino oscuro dibujado a mano bajo un cielo sin estrellas." },
+            { "title": "Camino Nocturno", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Camino Nocturno. Un camino oscuro bajo un cielo sin estrellas." },
             { "title": "Parque Abandonado", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolor." }
         ],
         "boardgameCardFronts": [
@@ -80,7 +80,7 @@
         ],
         "manual": [
             { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: Reglas del juego de JOURNEYWAYS, un juego de mesa sobre el devenir, sobre un paisaje en acuarela." },
-            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer los mosaicos y las cinco pilas de cartas, con una nota al margen dibujada a mano." },
+            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer los mosaicos y las cinco pilas de cartas, con una nota al margen." },
             { "title": "Juego básico", "subtitle": "Explorar, elegir, reflexionar.", "alt": "La página de Juego básico: las tres fases de un turno y una leyenda de los cinco colores de carta." },
             { "title": "Una entrada de diario", "subtitle": "Un ejemplo de escritura a partir de las cartas.", "alt": "Una entrada de diario de ejemplo en letra manuscrita, con un pequeño volcán pintado en la esquina." },
             { "title": "Juego en solitario y en grupo", "subtitle": "Jugar en solitario o en grupo.", "alt": "La página de Juego en solitario y en grupo, con una fotografía de meeples pintados." },

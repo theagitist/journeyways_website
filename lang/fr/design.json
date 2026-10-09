@@ -46,7 +46,7 @@
     "consent": {
         "stamp": "Consentement",
         "title": "La seule règle que le jeu impose, c'est le consentement à la table.",
-        "fig1_alt": "Tuile de carte dessinée à la main intitulée Pont des Étoiles : le dessin au trait d'un pont en arc sur un lavis de taches d'aquarelle colorées.",
+        "fig1_alt": "Tuile de carte intitulée Pont des Étoiles : le dessin au trait d'un pont en arc sur un lavis de taches d'aquarelle colorées.",
         "fig1_caption": "Pont des Étoiles. <span class=\"tile-wood\">Tuile de carte</span>.",
         "fig2_alt": "Illustration à l'aquarelle et à l'encre d'un plan sans indications, une carte de Rencontre.",
         "fig2_caption": "« Tu reçois un plan sans indications. Que fais-tu ? » <span class=\"card-red\">Carte de Rencontre</span>.",
@@ -67,16 +67,16 @@
         "body_1": "Les cartes sont écrites comme des gestes, non comme des situations. <span class=\"italic\">« Ce lieu remodèle ton contour. Comment ? »</span> <span class=\"italic\">« Ta voix change dans ce lieu. Comment change-t-elle ? »</span> <span class=\"italic\">« Tu n'as plus à t'expliquer. Qu'est-ce qui change ? »</span> Chacune est brève et ouverte. La personne qui joue fournit le concret.",
         "body_2": "Les cartes sont triées en piles de couleur, non en un seul paquet mélangé. Les <span class=\"card-red\">Rouges</span> sont les <span class=\"card-red\">Rencontres</span>. Les <span class=\"card-green\">Vertes</span> sont le <span class=\"card-green\">Mouvement</span>. Les <span class=\"card-blue\">Bleues</span> sont les <span class=\"card-blue\">Réflexions</span>, puisées dans un petit canon de pensée queer (Adrienne Rich, James Baldwin, bell hooks, Tammy Baldwin, Karl Heinrich Ulrichs, Margaret Cho et d'autres). Les <span class=\"card-black\">Noires</span> sont <span class=\"card-black\">le passage du temps</span>. Les <span class=\"card-purple\">Violettes</span> sont les <span class=\"card-purple\">actions de groupe</span>. Les personnes qui jouent choisissent dans quelle pile prendre. Elles savent quel type de carte elles obtiendront ; mais pas exactement laquelle.",
         "body_3": "C'est volontaire. L'agentivité au niveau de la catégorie. La découverte au niveau de la carte.",
-        "body_4": "Aucun contenu des cartes n'est généré par IA. Chaque consigne et chaque citation ont été créées à la main. Dans la version numérique, les animations sont skeuomorphiques, jamais théâtrales. La retenue fait partie de la conception."
+        "body_4": "Dans la version numérique, les animations sont skeuomorphiques, jamais théâtrales. La retenue fait partie de la conception."
     },
     "meeting": {
         "stamp": "Rencontre",
         "title": "Un miroir dans une grotte n'est pas un miroir dans une salle de classe.",
-        "fig1_alt": "Tuile de carte dessinée à la main : Grotte Chantante.",
+        "fig1_alt": "Tuile de carte : Grotte Chantante.",
         "fig1_caption": "Grotte Chantante. <span class=\"tile-wood\">Tuile de carte</span>.",
         "fig2_alt": "Illustration de carte à l'aquarelle : un miroir fissuré.",
         "fig2_caption": "« Un miroir se fissure à ton passage. » <span class=\"card-red\">Carte de Rencontre</span>.",
-        "fig3_alt": "Tuile de carte dessinée à la main : Salle d'Étude.",
+        "fig3_alt": "Tuile de carte : Salle d'Étude.",
         "fig3_caption": "Salle d'Étude. <span class=\"tile-wood\">Tuile de carte</span>.",
         "body_1": "Le plateau est une carte. Les personnes qui jouent posent des tuiles pour la construire au fur et à mesure. L'endroit où l'on va sur la carte est lui-même une expression : vers quelle tuile on marche, si l'on avance en solitaire ou si l'on rejoint une autre personne, si l'on reste sur le sentier ou si l'on s'aventure ailleurs. Le mouvement ne sert pas qu'à aller quelque part : il fait partie du récit.",
         "body_2": "C'est la rencontre de deux composants qui engendre un récit. Une carte seule devient vite répétitive. Les tuiles seules sont trop immobiles. Le miroir résonne autrement dans la Grotte Chantante qu'à la Salle d'Étude. Un costume trouvé à la Maison d'Enfance n'est pas un costume trouvé sur le Pont des Étoiles. La mécanique, c'est la rencontre.",
@@ -95,9 +95,9 @@
     "hand": {
         "stamp": "Toucher",
         "title": "Simple et pourtant sensoriel. Les matériaux sont vôtres aussi.",
-        "fig_alt": "Tuile de carte dessinée à la main intitulée Lac Miroir : la silhouette au trait d'un lac superposée à des taches d'aquarelle.",
+        "fig_alt": "Tuile de carte intitulée Lac Miroir : la silhouette au trait d'un lac superposée à des taches d'aquarelle.",
         "fig_caption": "Lac Miroir. <span class=\"tile-wood\">Tuile de carte</span>.",
-        "body_1": "Des tuiles en carton ou en bois. Un papier cartonné agréable au toucher. Un logotype dans une écriture qui veut être ludique et organique. Des illustrations au trait dessinées à la main sur fond blanc, avec des taches d'aquarelle derrière. Les matériaux sont délibérés.",
+        "body_1": "Des tuiles en carton ou en bois. Un papier cartonné agréable au toucher. Un logotype dans une écriture qui veut être ludique et organique. Des illustrations au trait sur fond blanc, avec des taches d'aquarelle derrière. Les matériaux sont délibérés.",
         "body_2": "L'ouverture des matériaux l'est tout autant. On peut dessiner sur les tuiles. On peut inventer de nouvelles tuiles avec des notes autocollantes quand une personne a besoin d'un lieu qui n'existe pas encore sur la carte. Les composants ne présument pas de leur propre permanence. La souplesse du jeu descend jusqu'au carton.",
         "quote": "« Tu poses une pièce solide. Tu peux en faire ce que tu veux. Tu peux même dessiner dessus et l'agrandir. »"
     },

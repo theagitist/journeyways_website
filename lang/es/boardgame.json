@@ -104,19 +104,19 @@
         "tiles_label_html": "<span class=\"tile-wood\">Mosaicos de mapa</span>, doce ejemplos",
         "tiles": [
             {
-                "alt": "Mosaico de mapa: Lago Espejo. Silueta de lago dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Lago Espejo. Silueta de lago sobre manchas de acuarela.",
                 "name": "Lago Espejo"
             },
             {
-                "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de puente arqueado dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de puente arqueado sobre manchas de acuarela.",
                 "name": "Puente de las Estrellas"
             },
             {
-                "alt": "Mosaico de mapa: Cueva Cantora. Silueta de cueva dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Cueva Cantora. Silueta de cueva sobre manchas de acuarela.",
                 "name": "Cueva Cantora"
             },
             {
-                "alt": "Mosaico de mapa: Cima de la Montaña. Silueta de montaña dibujada a mano en azules profundos con salpicaduras de tinta.",
+                "alt": "Mosaico de mapa: Cima de la Montaña. Silueta de montaña en azules profundos con salpicaduras de tinta.",
                 "name": "Cima de la Montaña"
             },
             {
@@ -124,7 +124,7 @@
                 "name": "Casa de la Infancia"
             },
             {
-                "alt": "Mosaico de mapa: Cuarto de Estudio. Silueta de habitación dibujada a mano sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: Cuarto de Estudio. Silueta de habitación sobre manchas de acuarela.",
                 "name": "Cuarto de Estudio"
             },
             {
@@ -144,7 +144,7 @@
                 "name": "Sendero Brumoso"
             },
             {
-                "alt": "Mosaico de mapa: Camino Nocturno. Sendero oscuro dibujado a mano bajo un cielo sin estrellas.",
+                "alt": "Mosaico de mapa: Camino Nocturno. Sendero oscuro bajo un cielo sin estrellas.",
                 "name": "Camino Nocturno"
             },
             {

@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "JOURNEYWAYS | Components",
-        "description": "The components of JOURNEYWAYS: the card decks, the hand-drawn map tiles, and (soon) the player booklet and user manual. Choose a component to explore it.",
+        "description": "The components of JOURNEYWAYS: the card decks, the map tiles, and (soon) the player booklet and user manual. Choose a component to explore it.",
         "keywords": "JOURNEYWAYS components, card decks, map tiles, player booklet, user manual, identity game, board game, gender identity",
         "og_title": "JOURNEYWAYS | Components",
         "og_description": "The cards, the map tiles, and more. Choose a component to explore it."
@@ -22,7 +22,7 @@
         {
             "aria": "Browse the map tiles",
             "title": "Tiles",
-            "desc": "Hand-drawn square map locations, plus blank tiles you draw yourself. Pick a tile to see it up close.",
+            "desc": "Square map locations, plus blank tiles you draw yourself. Pick a tile to see it up close.",
             "go": "Browse the tiles"
         },
         {

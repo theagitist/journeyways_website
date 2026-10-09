@@ -47,17 +47,17 @@
             { "title": "Game Setup", "subtitle": "Tiles, cards, tokens.", "alt": "JOURNEYWAYS setup ready to begin: tiles, character cards, meeples, character booklets." }
         ],
         "boardgameTiles": [
-            { "title": "Mirror Lake", "subtitle": "Map tile.", "alt": "Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches." },
-            { "title": "Star Bridge", "subtitle": "Map tile.", "alt": "Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches." },
-            { "title": "Singing Cave", "subtitle": "Map tile.", "alt": "Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches." },
-            { "title": "Mountain Peak", "subtitle": "Map tile.", "alt": "Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters." },
+            { "title": "Mirror Lake", "subtitle": "Map tile.", "alt": "Map tile: Mirror Lake. Lake silhouette over watercolor splotches." },
+            { "title": "Star Bridge", "subtitle": "Map tile.", "alt": "Map tile: Star Bridge. Arched bridge silhouette over watercolor splotches." },
+            { "title": "Singing Cave", "subtitle": "Map tile.", "alt": "Map tile: Singing Cave. Cave silhouette over watercolor splotches." },
+            { "title": "Mountain Peak", "subtitle": "Map tile.", "alt": "Map tile: Mountain Peak. Mountain silhouette in deep blues with ink splatters." },
             { "title": "Childhood House", "subtitle": "Map tile.", "alt": "Map tile: Childhood House. A small house surrounded by colorful watercolor splatters." },
-            { "title": "Study Room", "subtitle": "Map tile.", "alt": "Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches." },
+            { "title": "Study Room", "subtitle": "Map tile.", "alt": "Map tile: Study Room. Room silhouette over watercolor splotches." },
             { "title": "Volcanic Ground", "subtitle": "Map tile.", "alt": "Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters." },
             { "title": "Tree Hollow", "subtitle": "Map tile.", "alt": "Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches." },
             { "title": "Buried Names Field", "subtitle": "Map tile.", "alt": "Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings." },
-            { "title": "Misty Trail", "subtitle": "Map tile.", "alt": "Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides." },
-            { "title": "Night Way", "subtitle": "Map tile.", "alt": "Map tile: Night Way. Hand-drawn dark path under a starless sky." },
+            { "title": "Misty Trail", "subtitle": "Map tile.", "alt": "Map tile: Misty Trail. Bare trees flanking a quiet path between two hillsides." },
+            { "title": "Night Way", "subtitle": "Map tile.", "alt": "Map tile: Night Way. Dark path under a starless sky." },
             { "title": "Abandoned Playground", "subtitle": "Map tile.", "alt": "Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters." }
         ],
         "boardgameCardFronts": [
@@ -80,7 +80,7 @@
         ],
         "manual": [
             { "title": "Cover", "subtitle": "The Game Manual.", "alt": "The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape." },
-            { "title": "Game Setup", "subtitle": "Laying out the game.", "alt": "The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note." },
+            { "title": "Game Setup", "subtitle": "Laying out the game.", "alt": "The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a side note." },
             { "title": "Basic Gameplay", "subtitle": "Explore, pick, reflect.", "alt": "The Basic Gameplay page: the three phases of a turn and a legend of the five card colours." },
             { "title": "A journal entry", "subtitle": "An example of writing from the cards.", "alt": "A sample journal entry in a handwritten script, with a small painted volcano in the corner." },
             { "title": "Solo and Group Play", "subtitle": "Playing alone or together.", "alt": "The Solo and Group Play page, with a photograph of painted meeples." },

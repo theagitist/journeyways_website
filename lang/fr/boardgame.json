@@ -104,19 +104,19 @@
         "tiles_label_html": "<span class=\"tile-wood\">Tuiles de carte</span>, douze exemples",
         "tiles": [
             {
-                "alt": "Tuile de carte : Lac Miroir. Silhouette de lac dessinée à la main sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : Lac Miroir. Silhouette de lac sur des taches d'aquarelle.",
                 "name": "Lac Miroir"
             },
             {
-                "alt": "Tuile de carte : Pont des Étoiles. Silhouette de pont en arc dessinée à la main sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : Pont des Étoiles. Silhouette de pont en arc sur des taches d'aquarelle.",
                 "name": "Pont des Étoiles"
             },
             {
-                "alt": "Tuile de carte : Grotte Chantante. Silhouette de grotte dessinée à la main sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : Grotte Chantante. Silhouette de grotte sur des taches d'aquarelle.",
                 "name": "Grotte Chantante"
             },
             {
-                "alt": "Tuile de carte : Sommet de la Montagne. Silhouette de montagne dessinée à la main dans des bleus profonds avec des éclaboussures d'encre.",
+                "alt": "Tuile de carte : Sommet de la Montagne. Silhouette de montagne dans des bleus profonds avec des éclaboussures d'encre.",
                 "name": "Sommet de la Montagne"
             },
             {
@@ -124,7 +124,7 @@
                 "name": "Maison d'Enfance"
             },
             {
-                "alt": "Tuile de carte : Salle d'Étude. Silhouette de pièce dessinée à la main sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : Salle d'Étude. Silhouette de pièce sur des taches d'aquarelle.",
                 "name": "Salle d'Étude"
             },
             {
@@ -144,7 +144,7 @@
                 "name": "Sentier Brumeux"
             },
             {
-                "alt": "Tuile de carte : Chemin Nocturne. Sentier sombre dessiné à la main sous un ciel sans étoiles.",
+                "alt": "Tuile de carte : Chemin Nocturne. Sentier sombre sous un ciel sans étoiles.",
                 "name": "Chemin Nocturne"
             },
             {

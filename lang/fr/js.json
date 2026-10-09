@@ -47,17 +47,17 @@
             { "title": "Préparation du jeu", "subtitle": "Tuiles, cartes, meeples.", "alt": "JOURNEYWAYS prêt à commencer : tuiles, cartes de personnage, meeples, cahiers de personnage." }
         ],
         "boardgameTiles": [
-            { "title": "Lac Miroir", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Lac Miroir. Silhouette d'un lac dessinée à la main sur des taches d'aquarelle." },
-            { "title": "Pont des Étoiles", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Pont des Étoiles. Silhouette d'un pont en arche dessinée à la main sur des taches d'aquarelle." },
-            { "title": "Grotte Chantante", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Grotte Chantante. Silhouette d'une grotte dessinée à la main sur des taches d'aquarelle." },
-            { "title": "Sommet de la Montagne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sommet de la Montagne. Silhouette d'une montagne dessinée à la main dans des bleus profonds avec des éclaboussures d'encre." },
+            { "title": "Lac Miroir", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Lac Miroir. Silhouette d'un lac sur des taches d'aquarelle." },
+            { "title": "Pont des Étoiles", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Pont des Étoiles. Silhouette d'un pont en arche sur des taches d'aquarelle." },
+            { "title": "Grotte Chantante", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Grotte Chantante. Silhouette d'une grotte sur des taches d'aquarelle." },
+            { "title": "Sommet de la Montagne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sommet de la Montagne. Silhouette d'une montagne dans des bleus profonds avec des éclaboussures d'encre." },
             { "title": "Maison d'Enfance", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Maison d'Enfance. Une petite maison entourée d'éclaboussures d'aquarelle colorées." },
-            { "title": "Salle d'Étude", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Salle d'Étude. Silhouette d'une pièce dessinée à la main sur des taches d'aquarelle." },
+            { "title": "Salle d'Étude", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Salle d'Étude. Silhouette d'une pièce sur des taches d'aquarelle." },
             { "title": "Terre Volcanique", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Terre Volcanique. Un volcan en éruption dans des éclaboussures d'encre rouge feu, orange et noir." },
             { "title": "Arbre Creux", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Arbre Creux. Un arbre nu avec des éclaboussures bleu profond et violet sur ses branches." },
             { "title": "Champ des Noms Enfouis", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Champ des Noms Enfouis. Un dessin au trait d'un champ craquelé et fissuré avec deux petites pousses." },
             { "title": "Sentier Brumeux", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sentier Brumeux. Des arbres nus dessinés à la main bordant un chemin paisible entre deux coteaux." },
-            { "title": "Chemin Nocturne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Chemin Nocturne. Un chemin sombre dessiné à la main sous un ciel sans étoiles." },
+            { "title": "Chemin Nocturne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Chemin Nocturne. Un chemin sombre sous un ciel sans étoiles." },
             { "title": "Aire de Jeux Abandonnée", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Aire de Jeux Abandonnée. Une structure de jeu avec toboggan et échelle, avec des éclaboussures de peinture multicolores." }
         ],
         "boardgameCardFronts": [
@@ -80,7 +80,7 @@
         ],
         "manual": [
             { "title": "Couverture", "subtitle": "Le Manuel du jeu.", "alt": "La couverture du Manuel du jeu : Règles du jeu de JOURNEYWAYS, un jeu de société sur le devenir, sur un paysage à l'aquarelle." },
-            { "title": "Préparation du jeu", "subtitle": "Mise en place du jeu.", "alt": "La page Préparation du jeu : ce qu'il vous faut et comment disposer les tuiles et les cinq piles de cartes, avec une note de marge dessinée à la main." },
+            { "title": "Préparation du jeu", "subtitle": "Mise en place du jeu.", "alt": "La page Préparation du jeu : ce qu'il vous faut et comment disposer les tuiles et les cinq piles de cartes, avec une note de marge." },
             { "title": "Déroulement de base", "subtitle": "Explorer, choisir, réfléchir.", "alt": "La page Déroulement de base : les trois phases d'un tour et une légende des cinq couleurs de carte." },
             { "title": "Une entrée de journal", "subtitle": "Un exemple d'écriture à partir des cartes.", "alt": "Un exemple d'entrée de journal en écriture manuscrite, avec un petit volcan peint dans le coin." },
             { "title": "Jeu en solo et en groupe", "subtitle": "Jouer en solo ou à plusieurs.", "alt": "La page Jeu en solo et en groupe, avec une photographie de meeples peints." },

@@ -104,19 +104,19 @@
         "tiles_label_html": "<span class=\"tile-wood\">Map tiles</span>, twelve examples",
         "tiles": [
             {
-                "alt": "Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches.",
+                "alt": "Map tile: Mirror Lake. Lake silhouette over watercolor splotches.",
                 "name": "Mirror Lake"
             },
             {
-                "alt": "Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches.",
+                "alt": "Map tile: Star Bridge. Arched bridge silhouette over watercolor splotches.",
                 "name": "Star Bridge"
             },
             {
-                "alt": "Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches.",
+                "alt": "Map tile: Singing Cave. Cave silhouette over watercolor splotches.",
                 "name": "Singing Cave"
             },
             {
-                "alt": "Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters.",
+                "alt": "Map tile: Mountain Peak. Mountain silhouette in deep blues with ink splatters.",
                 "name": "Mountain Peak"
             },
             {
@@ -124,7 +124,7 @@
                 "name": "Childhood House"
             },
             {
-                "alt": "Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches.",
+                "alt": "Map tile: Study Room. Room silhouette over watercolor splotches.",
                 "name": "Study Room"
             },
             {
@@ -140,11 +140,11 @@
                 "name": "Buried Names Field"
             },
             {
-                "alt": "Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.",
+                "alt": "Map tile: Misty Trail. Bare trees flanking a quiet path between two hillsides.",
                 "name": "Misty Trail"
             },
             {
-                "alt": "Map tile: Night Way. Hand-drawn dark path under a starless sky.",
+                "alt": "Map tile: Night Way. Dark path under a starless sky.",
                 "name": "Night Way"
             },
             {

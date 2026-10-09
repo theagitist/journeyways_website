@@ -46,7 +46,7 @@
     "consent": {
         "stamp": "Consentimiento",
         "title": "La única regla que el juego impone es el consentimiento en la mesa.",
-        "fig1_alt": "Mosaico de mapa dibujado a mano titulado Puente de las Estrellas: el dibujo lineal de un puente arqueado sobre un lavado de manchas de acuarela de colores.",
+        "fig1_alt": "Mosaico de mapa titulado Puente de las Estrellas: el dibujo lineal de un puente arqueado sobre un lavado de manchas de acuarela de colores.",
         "fig1_caption": "Puente de las Estrellas. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "fig2_alt": "Ilustración en acuarela y tinta de un mapa sin indicaciones, una carta de Encuentro.",
         "fig2_caption": "“Recibes un mapa sin indicaciones. ¿Qué haces?” <span class=\"card-red\">Carta de Encuentro</span>.",
@@ -67,16 +67,16 @@
         "body_1": "Las cartas están escritas como gestos, no como situaciones. <span class=\"italic\">“Este lugar remodela tu contorno. ¿Cómo?”</span> <span class=\"italic\">“Tu voz cambia en este lugar. ¿Cómo cambia?”</span> <span class=\"italic\">“Ya no tienes que dar explicaciones. ¿Qué cambia?”</span> Cada una es breve y abierta. Quien juega aporta lo concreto.",
         "body_2": "Las cartas se ordenan en montones de colores, no en un único mazo barajado. Las <span class=\"card-red\">Rojas</span> son <span class=\"card-red\">Encuentros</span>. Las <span class=\"card-green\">Verdes</span> son <span class=\"card-green\">Movimiento</span>. Las <span class=\"card-blue\">Azules</span> son <span class=\"card-blue\">Reflexiones</span>, tomadas de un pequeño canon de pensamiento queer (Adrienne Rich, James Baldwin, bell hooks, Tammy Baldwin, Karl Heinrich Ulrichs, Margaret Cho y más). Las <span class=\"card-black\">Negras</span> son <span class=\"card-black\">el paso del tiempo</span>. Las <span class=\"card-purple\">Moradas</span> son <span class=\"card-purple\">acciones de grupo</span>. Quienes juegan eligen de qué montón elegir. Saben qué tipo de carta obtendrán; pero no exactamente cuál.",
         "body_3": "Eso es intencional. Agencia en el nivel de la categoría. Descubrimiento en el nivel de la carta.",
-        "body_4": "Ningún contenido de las cartas se genera con IA. Cada consigna y cada cita se crearon a mano. En la versión digital, las animaciones son esqueuomórficas, nunca teatrales. La contención es parte del diseño."
+        "body_4": "En la versión digital, las animaciones son esqueuomórficas, nunca teatrales. La contención es parte del diseño."
     },
     "meeting": {
         "stamp": "Encuentro",
         "title": "Un espejo en una cueva no es un espejo en un aula.",
-        "fig1_alt": "Mosaico de mapa dibujado a mano: Cueva Cantora.",
+        "fig1_alt": "Mosaico de mapa: Cueva Cantora.",
         "fig1_caption": "Cueva Cantora. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "fig2_alt": "Ilustración de carta en acuarela: un espejo agrietado.",
         "fig2_caption": "“Un espejo se agrieta a tu paso.” <span class=\"card-red\">Carta de Encuentro</span>.",
-        "fig3_alt": "Mosaico de mapa dibujado a mano: Sala de Estudio.",
+        "fig3_alt": "Mosaico de mapa: Sala de Estudio.",
         "fig3_caption": "Sala de Estudio. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "body_1": "El tablero es un mapa. Quienes juegan colocan mosaicos para construirlo sobre la marcha. Adónde vas en el mapa es en sí mismo una expresión: hacia qué mosaico caminas, si vas en solitario o te unes a otra persona, si sigues el sendero o te lanzas por tu cuenta. El movimiento no sirve solo para llegar a algún sitio: es parte del relato.",
         "body_2": "Que dos componentes se encuentren es lo que genera una historia. Una carta por sí sola se vuelve repetitiva enseguida. Los mosaicos por sí solos son demasiado quietos. El espejo aterriza de forma distinta dentro de la Cueva Cantora que en la Sala de Estudio. Un disfraz hallado en la Casa de la Infancia no es un disfraz hallado en el Puente de las Estrellas. La mecánica es el encuentro.",
@@ -95,9 +95,9 @@
     "hand": {
         "stamp": "Tacto",
         "title": "Sencillo y a la vez sensorial. Los materiales también son tuyos.",
-        "fig_alt": "Mosaico de mapa dibujado a mano titulado Lago Espejo: la silueta lineal de un lago superpuesta sobre manchas de acuarela.",
+        "fig_alt": "Mosaico de mapa titulado Lago Espejo: la silueta lineal de un lago superpuesta sobre manchas de acuarela.",
         "fig_caption": "Lago Espejo. <span class=\"tile-wood\">Mosaico de mapa</span>.",
-        "body_1": "Mosaicos de cartón o de madera. Cartulina que se siente agradable en las manos. Un logotipo en una tipografía manuscrita que quiere sentirse lúdica y orgánica. Ilustraciones lineales dibujadas a mano sobre fondo blanco, con manchas de acuarela detrás. Los materiales son deliberados.",
+        "body_1": "Mosaicos de cartón o de madera. Cartulina que se siente agradable en las manos. Un logotipo en una tipografía manuscrita que quiere sentirse lúdica y orgánica. Ilustraciones lineales sobre fondo blanco, con manchas de acuarela detrás. Los materiales son deliberados.",
         "body_2": "También lo es la apertura de los materiales. Se puede dibujar sobre los mosaicos. Se pueden inventar mosaicos nuevos con notas adhesivas cuando alguien necesita un lugar que todavía no existe en el mapa. Los componentes no dan por sentada su propia permanencia. La flexibilidad del juego llega hasta el cartón.",
         "quote": "“Estás colocando una pieza sólida. Puedes hacer con ella lo que quieras. Incluso puedes dibujar sobre ella y ampliarla.”"
     },
