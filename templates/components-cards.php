@@ -5,7 +5,7 @@
 // itself is built at runtime by js/components-cards.js (no static card markup).
 $P = 'pages.components-cards';
 ?>
-<link rel="stylesheet" href="/css/game-components.css?v=2">
+<link rel="stylesheet" href="/css/game-components.css?v=3">
 <style>
   /* Local replica of the play-side card gallery. Cards render in the printed
      component style (poker 5:7, warm paper, scaled art, script title); decks
@@ -90,5 +90,5 @@ $P = 'pages.components-cards';
         </div>
     </main>
 
-<script src="/js/game-components.js?v=3" defer></script>
+<script src="/js/game-components.js?v=4" defer></script>
 <script src="/js/components-cards.js?v=10" defer></script>

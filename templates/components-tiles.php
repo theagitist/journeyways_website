@@ -5,7 +5,7 @@
 // page-specific styles the shared /css/game-components.css depends on.
 $P = 'pages.components-tiles';
 ?>
-<link rel="stylesheet" href="/css/game-components.css?v=2">
+<link rel="stylesheet" href="/css/game-components.css?v=3">
 <style>
   /* The tiles page renders only the tile grid. Tile FACE styles come from the
      shared /css/game-components.css (linked in the head), the same single
@@ -41,5 +41,5 @@ $P = 'pages.components-tiles';
         </div>
     </main>
 
-    <script src="/js/game-components.js?v=3" defer></script>
+    <script src="/js/game-components.js?v=4" defer></script>
     <script src="/js/components-tiles.js?v=7" defer></script>

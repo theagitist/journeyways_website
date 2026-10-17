@@ -28,15 +28,15 @@ $mapTiles = [
 ];
 // Card fronts: [image path, card-colour class, gallery index].
 $cardFronts = [
-    ['/img/design/card-box-not-yet.webp?v=4',  'card-red',    0],
-    ['/img/design/card-homecoming.webp?v=4', 'card-green',  1],
-    ['/img/design/card-encounter.webp?v=4',    'card-purple', 2],
-    ['/img/design/card-mirror.webp?v=4',       'card-red',    3],
-    ['/img/design/card-commune.webp?v=4',      'card-purple', 4],
-    ['/img/design/card-map.webp?v=4',          'card-red',    5],
-    ['/img/design/card-memory.webp?v=4',       'card-red',    6],
-    ['/img/design/card-echo.webp?v=4',         'card-red',    7],
-    ['/img/design/card-wind.webp?v=4',         'card-red',    8],
+    ['/img/design/card-box-not-yet.webp?v=5',  'card-red',    0],
+    ['/img/design/card-homecoming.webp?v=5', 'card-green',  1],
+    ['/img/design/card-encounter.webp?v=5',    'card-purple', 2],
+    ['/img/design/card-mirror.webp?v=5',       'card-red',    3],
+    ['/img/design/card-commune.webp?v=5',      'card-purple', 4],
+    ['/img/design/card-map.webp?v=5',          'card-red',    5],
+    ['/img/design/card-memory.webp?v=5',       'card-red',    6],
+    ['/img/design/card-echo.webp?v=5',         'card-red',    7],
+    ['/img/design/card-wind.webp?v=5',         'card-red',    8],
 ];
 ?>
 <main>
