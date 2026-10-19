@@ -104,51 +104,51 @@
         "tiles_label_html": "<span class=\"tile-wood\">Tuiles de carte</span>, douze exemples",
         "tiles": [
             {
-                "alt": "Tuile de carte : {{tile:T5.name}}. Un lac immobile sous des nuages bleus, roses et dorés, un arbre solitaire reflété dans l'eau.",
+                "alt": "Tuile de carte : {{tile:T5.name}}. {{tile:T5.alt}}",
                 "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T10.name}}. Un pont de pierre en arc bordé de lanternes, sur une nuit bleu-vert mouchetée de rose et d'or.",
+                "alt": "Tuile de carte : {{tile:T10.name}}. {{tile:T10.alt}}",
                 "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T9.name}}. L'entrée arrondie d'une grotte dans la pierre moussue, qui luit de rose et de bleu à l'intérieur.",
+                "alt": "Tuile de carte : {{tile:T9.name}}. {{tile:T9.alt}}",
                 "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T7.name}}. Un sommet enneigé sur un lavis bleu, au-dessus de pentes dorées parsemées de rose.",
+                "alt": "Tuile de carte : {{tile:T7.name}}. {{tile:T7.alt}}",
                 "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T4.name}}. Une petite maison à la cheminée fumante, éclaboussée de rose, de bleu et de jaune.",
+                "alt": "Tuile de carte : {{tile:T4.name}}. {{tile:T4.alt}}",
                 "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T11.name}}. Un bureau avec un livre ouvert, un fauteuil rose et de hautes bibliothèques près d'une fenêtre lumineuse.",
+                "alt": "Tuile de carte : {{tile:T11.name}}. {{tile:T11.alt}}",
                 "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T13.name}}. Un volcan sombre fendu de lave orange incandescente, d'où la vapeur monte vers un bleu pâle.",
+                "alt": "Tuile de carte : {{tile:T13.name}}. {{tile:T13.alt}}",
                 "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T12.name}}. Un vieil arbre noueux au tronc creux, où brille une petite lumière.",
+                "alt": "Tuile de carte : {{tile:T12.name}}. {{tile:T12.alt}}",
                 "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T3.name}}. Un champ d'herbe parsemé de pierres usées, de petites fleurs dessinées en bordure.",
+                "alt": "Tuile de carte : {{tile:T3.name}}. {{tile:T3.alt}}",
                 "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T6.name}}. Un sentier entre des rangées d'arbres nus, qui se perd dans la brume.",
+                "alt": "Tuile de carte : {{tile:T6.name}}. {{tile:T6.alt}}",
                 "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T8.name}}. Un chemin de terre sinueux entre des arbres nus, sous un ciel nocturne d'étoiles et de couleurs douces.",
+                "alt": "Tuile de carte : {{tile:T8.name}}. {{tile:T8.alt}}",
                 "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T2.name}}. Des balançoires vides, un toboggan et une bascule, avec des coulures de peinture turquoise et orange.",
+                "alt": "Tuile de carte : {{tile:T2.name}}. {{tile:T2.alt}}",
                 "name": "{{tile:T2.name}}"
             }
         ],
@@ -156,47 +156,47 @@
         "fronts_label": "Faces des cartes, neuf exemples",
         "fronts": [
             {
-                "alt": "Face de carte Rencontre : Une caisse en bois nouée d'un ruban bleu et rose, la peinture coulant dessous.",
+                "alt": "Face de carte Rencontre : {{card:R22.alt}}",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Mouvement : Une petite maison à la porte rouge et à la fenêtre éclairée, entre des arbres pâles.",
+                "alt": "Face de carte Mouvement : {{card:G6.alt}}",
                 "category": "Mouvement",
                 "color": "Verte"
             },
             {
-                "alt": "Face de carte Action de groupe : Deux troncs qui s'enlacent en un seul, sous une canopée de fleurs colorées.",
+                "alt": "Face de carte Action de groupe : {{card:P1.alt}}",
                 "category": "Action de groupe",
                 "color": "Violette"
             },
             {
-                "alt": "Face de carte Rencontre : Un miroir brisé, ses éclats projetés vers l'extérieur en bleu et orange.",
+                "alt": "Face de carte Rencontre : {{card:R2.alt}}",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Action de groupe : Un cercle de pierres levées dans une plaine verte.",
+                "alt": "Face de carte Action de groupe : {{card:P2.alt}}",
                 "category": "Action de groupe",
                 "color": "Violette"
             },
             {
-                "alt": "Face de carte Rencontre : Un enchevêtrement de branches noires parsemé de fleurs bleues, roses et dorées.",
+                "alt": "Face de carte Rencontre : {{card:R3.alt}}",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Rencontre : Un muret de pierre garni de pots de fleurs rouges et de petits souvenirs.",
+                "alt": "Face de carte Rencontre : {{card:R8.alt}}",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Rencontre : Des arcs roses, turquoise et dorés qui s'étendent à partir d'un point, comme un son.",
+                "alt": "Face de carte Rencontre : {{card:R26.alt}}",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Rencontre : De grandes lignes d'encre qui dessinent le vent et emportent de petites fleurs et des points de couleur.",
+                "alt": "Face de carte Rencontre : {{card:R1.alt}}",
                 "category": "Rencontre",
                 "color": "Rouge"
             }

@@ -2,7 +2,8 @@
 // Card and tile text on the website comes from the play API, never from lang/*.json:
 // play's locales are the single source, so both surfaces always read the same.
 // Lang strings refer to it with tokens, filled at render time by t() and jw_load_js():
-//   {{card:R22.title}}  {{card:R22.content}}  {{card:B26.author}}  {{tile:T5.name}}
+//   {{card:R22.title}}  {{card:R22.content}}  {{card:B26.author}}  {{card:R22.alt}}
+//   {{tile:T5.name}}  {{tile:T5.alt}}   (alt = the localized description of the art)
 // A token for a card or tile the API does not know renders as an empty string.
 
 const JW_PLAY_API = 'http://127.0.0.1:1976/api/';
@@ -39,12 +40,12 @@ function jw_play_index(string $lang): array {
         foreach ($deck['cards'] ?? [] as $c) {
             $out['card'][$c['card_number']] = [
                 'title' => $c['title'] ?? '', 'content' => $c['content'] ?? '',
-                'author' => $c['author_name'] ?? '', 'deck' => $deck['type'] ?? '',
+                'author' => $c['author_name'] ?? '', 'alt' => $c['alt'] ?? '', 'deck' => $deck['type'] ?? '',
             ];
         }
     }
     foreach ((jw_play_fetch('tiles', $lang)['tiles'] ?? []) as $t) {
-        $out['tile'][$t['tile_number']] = ['name' => $t['name'] ?? ''];
+        $out['tile'][$t['tile_number']] = ['name' => $t['name'] ?? '', 'alt' => $t['alt'] ?? ''];
     }
     return $idx[$lang] = $out;
 }

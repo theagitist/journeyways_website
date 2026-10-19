@@ -104,51 +104,51 @@
         "tiles_label_html": "<span class=\"tile-wood\">Mosaicos de mapa</span>, doce ejemplos",
         "tiles": [
             {
-                "alt": "Mosaico de mapa: {{tile:T5.name}}. Un lago en calma bajo nubes azules, rosas y doradas, con un árbol solitario reflejado en el agua.",
+                "alt": "Mosaico de mapa: {{tile:T5.name}}. {{tile:T5.alt}}",
                 "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T10.name}}. Un puente de piedra en arco con farolas, sobre una noche azul verdosa salpicada de rosa y dorado.",
+                "alt": "Mosaico de mapa: {{tile:T10.name}}. {{tile:T10.alt}}",
                 "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T9.name}}. La boca redondeada de una cueva en piedra cubierta de musgo, con un resplandor rosa y azul en su interior.",
+                "alt": "Mosaico de mapa: {{tile:T9.name}}. {{tile:T9.alt}}",
                 "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T7.name}}. Una cima nevada sobre una aguada azul, por encima de laderas doradas salpicadas de rosa.",
+                "alt": "Mosaico de mapa: {{tile:T7.name}}. {{tile:T7.alt}}",
                 "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T4.name}}. Una casita con la chimenea humeante, salpicada de rosa, azul y amarillo.",
+                "alt": "Mosaico de mapa: {{tile:T4.name}}. {{tile:T4.alt}}",
                 "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T11.name}}. Un escritorio con un libro abierto, un sillón rosa y altas estanterías junto a una ventana luminosa.",
+                "alt": "Mosaico de mapa: {{tile:T11.name}}. {{tile:T11.alt}}",
                 "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T13.name}}. Un volcán oscuro surcado de lava naranja incandescente, con vapor que sube hacia un azul pálido.",
+                "alt": "Mosaico de mapa: {{tile:T13.name}}. {{tile:T13.alt}}",
                 "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T12.name}}. Un árbol viejo y retorcido con un hueco en el tronco, donde brilla una pequeña luz.",
+                "alt": "Mosaico de mapa: {{tile:T12.name}}. {{tile:T12.alt}}",
                 "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T3.name}}. Un campo de hierba sembrado de piedras gastadas, con pequeñas flores dibujadas en el borde.",
+                "alt": "Mosaico de mapa: {{tile:T3.name}}. {{tile:T3.alt}}",
                 "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T6.name}}. Un sendero entre hileras de árboles desnudos que se pierde en la niebla.",
+                "alt": "Mosaico de mapa: {{tile:T6.name}}. {{tile:T6.alt}}",
                 "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T8.name}}. Un camino de tierra serpenteante entre árboles desnudos, bajo un cielo nocturno de estrellas y color suave.",
+                "alt": "Mosaico de mapa: {{tile:T8.name}}. {{tile:T8.alt}}",
                 "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T2.name}}. Columpios vacíos, un tobogán y un balancín, con chorreones de pintura turquesa y naranja.",
+                "alt": "Mosaico de mapa: {{tile:T2.name}}. {{tile:T2.alt}}",
                 "name": "{{tile:T2.name}}"
             }
         ],
@@ -156,47 +156,47 @@
         "fronts_label": "Anversos de las cartas, nueve ejemplos",
         "fronts": [
             {
-                "alt": "Anverso de carta de Encuentro: Una caja de madera atada con una cinta azul y rosa, con pintura que gotea debajo.",
+                "alt": "Anverso de carta de Encuentro: {{card:R22.alt}}",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Movimiento: Una casita con la puerta roja y una ventana iluminada, entre árboles pálidos.",
+                "alt": "Anverso de carta de Movimiento: {{card:G6.alt}}",
                 "category": "Movimiento",
                 "color": "Verde"
             },
             {
-                "alt": "Anverso de carta de Acción de grupo: Dos troncos que se entrelazan en uno solo, bajo una copa de flores de colores.",
+                "alt": "Anverso de carta de Acción de grupo: {{card:P1.alt}}",
                 "category": "Acción de grupo",
                 "color": "Morada"
             },
             {
-                "alt": "Anverso de carta de Encuentro: Un espejo hecho añicos, con los fragmentos saliendo despedidos en azul y naranja.",
+                "alt": "Anverso de carta de Encuentro: {{card:R2.alt}}",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Acción de grupo: Un círculo de piedras erguidas en una llanura verde.",
+                "alt": "Anverso de carta de Acción de grupo: {{card:P2.alt}}",
                 "category": "Acción de grupo",
                 "color": "Morada"
             },
             {
-                "alt": "Anverso de carta de Encuentro: Una maraña de ramas negras salpicada de flores azules, rosas y doradas.",
+                "alt": "Anverso de carta de Encuentro: {{card:R3.alt}}",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Encuentro: Un muro bajo de piedra con macetas de flores rojas y pequeños recuerdos.",
+                "alt": "Anverso de carta de Encuentro: {{card:R8.alt}}",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Encuentro: Arcos rosas, turquesa y dorados que se expanden desde un punto, como un sonido.",
+                "alt": "Anverso de carta de Encuentro: {{card:R26.alt}}",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Encuentro: Amplias líneas de tinta que dibujan el viento y arrastran pequeñas flores y puntos de color.",
+                "alt": "Anverso de carta de Encuentro: {{card:R1.alt}}",
                 "category": "Encuentro",
                 "color": "Roja"
             }

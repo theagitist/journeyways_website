@@ -34,7 +34,7 @@
     var btn = nodeFromHTML(window.JWComponents.tileFace({
       name: tile.name, number: tile.tile_number,
       isBlank: tile.blank || !tile.image, copies: tile.copies,
-      image: tile.image || null
+      image: tile.image || null, alt: tile.alt || ''
     }, { interactive: true, showCopies: true, blankText: ui.gal_tile_blank || 'Make your own' }));
     btn.addEventListener('click', function () { if (window.openLightboxFromSet) window.openLightboxFromSet('tiles', i); });
     var cap = el('figcaption', { class: 'jw-tile-cap' }, [el('span', { class: 'jw-tile-name', text: tile.name })]);
@@ -52,7 +52,7 @@
       window.gallerySets.tiles = tiles.map(function (t) {
         var src = (t.image && t.image.md) ? t.image.md : BLANK_SRC;
         var subt = t.tile_number + (t.copies > 0 ? '  ·  ' + insetTmpl.replace('%d', t.copies) : '');
-        return { src: src, alt: altTmpl.replace('%s', t.name), title: t.name, subtitle: subt };
+        return { src: src, alt: t.alt || altTmpl.replace('%s', t.name), title: t.name, subtitle: subt };
       });
     }
 

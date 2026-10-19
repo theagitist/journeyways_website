@@ -111,11 +111,11 @@ mapa"). The contact form is ported to `api/contact.php`. Full plan + as-built: m
   galleries are now localized and published in es/fr too (via the language-aware play `/api`);
   see `project_cards_system` / `project_www_php_i18n`.
 
-## Card and tile text comes from the play API (never hardcode it)
+## Card and tile text and art descriptions come from the play API (never hardcode them)
 
 No card title, card text, quote author or tile name is written in `lang/*.json`, the templates or `js/main.js`. Play's locales are the single source; the website refers to them with tokens that `inc/play_api.php` fills at render time from `http://127.0.0.1:1976/api/{cards,tiles}?lng=`:
 
-- `{{card:R22.content}}`, `{{card:R22.title}}`, `{{card:B26.author}}`, `{{tile:T5.name}}` (current card/tile numbers).
+- `{{card:R22.content}}`, `{{card:R22.title}}`, `{{card:B26.author}}`, `{{card:R22.alt}}`, `{{tile:T5.name}}`, `{{tile:T5.alt}}` (current card/tile numbers; `alt` is the localized description of the art, used for image alt text).
 - Filled by `jw_get()` (so `t()`, `te()` and raw arrays like the Updates months all resolve) and by `jw_load_js()` for the lightbox captions in `window.__I18N`. The `main.js` card/tile lightbox sets carry only `src`.
 - Each deck is cached in `/tmp/jw-play-<kind>-<lang>.json` for 5 minutes; a stale copy is served if play is down. An unknown token renders empty.
 - If play renumbers cards or tiles, update the numbers in the tokens (`grep -rn '{{card:\|{{tile:' lang`).

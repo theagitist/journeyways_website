@@ -41,5 +41,5 @@ $P = 'pages.components-tiles';
         </div>
     </main>
 
-    <script src="/js/game-components.js?v=4" defer></script>
-    <script src="/js/components-tiles.js?v=7" defer></script>
+    <script src="/js/game-components.js?v=5" defer></script>
+    <script src="/js/components-tiles.js?v=8" defer></script>

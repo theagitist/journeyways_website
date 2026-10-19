@@ -27,7 +27,7 @@
       color: deck.color, deckSlug: deck.slug, isText: !card.image,
       title: card.title, content: card.content,
       author: card.author_name || '', number: card.card_number,
-      copies: card.copies, image: card.image || null
+      copies: card.copies, image: card.image || null, alt: card.alt || ''
     }, { index: i, count: deck.cards.length, showCopies: true }));
   }
 
