@@ -56,8 +56,10 @@ updates, references, photos, components hub, manual, booklet, contact, and the c
 tiles galleries). The two galleries render content from the **language-aware play `/api`**
 (`?lng=`); play's locale files are the single source, so the website and the play app show
 identical card/tile text in every language, and their JS chrome localizes via
-`window.__I18N`. Spanish map-tile term is "mosaico" (a site-wide sweep replaced "ficha de
-mapa"). The contact form is ported to `api/contact.php`. Full plan + as-built: memory
+`window.__I18N`. All card/tile/deck names and text on other pages come from the play API too,
+via `{{card:..}}`/`{{tile:..}}`/`{{deck:..}}` tokens in the lang JSON (filled by `inc/play_api.php`);
+never hardcode component text. Spanish tile term: "loseta" for a tile as an object, "espacio" for
+a tile already placed on the table (was "mosaico" until 2026-10-19, and "ficha de mapa" before that). The contact form is ported to `api/contact.php`. Full plan + as-built: memory
 `project_www_php_i18n` + `project_cards_system`, vault `Website localization (PHP i18n)`.
 
 - **Routing:** `index.php` is the front controller. It strips a leading `/es` or
