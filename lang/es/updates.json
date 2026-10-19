@@ -44,20 +44,20 @@
                     "body": "Las cartas ahora ponen la imagen primero: la ilustración llega de borde a borde, con el título encima y el texto centrado debajo, en una tipografía más redonda y grande, más fácil de leer desde el otro lado de la mesa. Todas las cartas de un mismo tipo usan el mismo tamaño de texto, y solo las pocas más largas lo reducen. El nuevo diseño ya está en el juego digital y en la galería de cartas; la baraja impresa le sigue."
                 },
                 {
-                    "title": "Preparación más simple y reverso de los mosaicos",
-                    "body": "Los mosaicos del tablero ahora comparten un reverso pintado, así que se pueden barajar boca abajo y elegir a ciegas. La preparación también es más simple: ya no hay un mosaico de inicio. Baraja todos los mosaicos, coloca el primero para empezar el mapa compartido y todo el mundo comienza allí. El antiguo mosaico de inicio sigue en el juego como un lugar nuevo, {{tile:T1.name}}."
+                    "title": "Preparación más simple y reverso de las losetas",
+                    "body": "Las losetas del tablero ahora comparten un reverso pintado, así que se pueden barajar boca abajo y elegir a ciegas. La preparación también es más simple: ya no hay una loseta de inicio. Baraja todas las losetas, coloca la primera para empezar el mapa compartido y todo el mundo comienza allí. La antigua loseta de inicio sigue en el juego como un lugar nuevo, {{tile:T1.name}}."
                 },
                 {
-                    "title": "Seis mosaicos nuevos",
-                    "body": "Seis lugares nuevos se suman al tablero, inspirados en los mosaicos que algunas personas dibujaron en la mesa durante las pruebas de juego. Tomamos sus bocetos como punto de partida y los pintamos en el estilo de tinta y acuarela del juego: una aldea, un peñasco, una rueda de la suerte, una estrella guía, un campo de tulipanes y el cosmos. Están en la versión digital y en la galería de mosaicos."
+                    "title": "Seis losetas nuevas",
+                    "body": "Seis lugares nuevos se suman al tablero, inspirados en las losetas que algunas personas dibujaron en la mesa durante las pruebas de juego. Tomamos sus bocetos como punto de partida y los pintamos en el estilo de tinta y acuarela del juego: una aldea, un peñasco, una rueda de la suerte, una estrella guía, un campo de tulipanes y el cosmos. Están en la versión digital y en la galería de losetas."
                 },
                 {
                     "title": "La baraja, re-ilustrada",
                     "body": "Todas las cartas ilustradas comparten ahora un mismo estilo pintado a mano, en tinta y acuarela. Las 62 caras de carta, las originales y las nuevas, se volvieron a ilustrar con un aspecto único y coherente, para que la baraja se sienta como un solo conjunto. El arte nuevo aparece en la versión digital y en la galería de cartas; la baraja impresa llegará después."
                 },
                 {
-                    "title": "Los mosaicos, re-ilustrados",
-                    "body": "Los mosaicos de mapa comparten ahora el mismo estilo pintado a mano, en tinta y acuarela, que las cartas, para que todo el conjunto, cartas y tablero, se sienta como un mismo mundo. Cada mosaico se volvió a ilustrar; el arte nuevo está en la versión digital, en la galería de mosaicos y en las hojas imprimibles de mosaicos."
+                    "title": "Las losetas, re-ilustradas",
+                    "body": "Las losetas de mapa comparten ahora el mismo estilo pintado a mano, en tinta y acuarela, que las cartas, para que todo el conjunto, cartas y tablero, se sienta como un mismo mundo. Cada loseta se volvió a ilustrar; el arte nuevo está en la versión digital, en la galería de losetas y en las hojas imprimibles de losetas."
                 }
             ]
         },
@@ -67,7 +67,7 @@
             "items": [
                 {
                     "title": "Arte en proceso",
-                    "body": "Continúa el trabajo de re-ilustrar todo el conjunto. El arte nuevo de cartas y mosaicos todavía se está pintando."
+                    "body": "Continúa el trabajo de re-ilustrar todo el conjunto. El arte nuevo de cartas y losetas todavía se está pintando."
                 }
             ]
         },
@@ -77,15 +77,15 @@
             "items": [
                 {
                     "title": "Trece lugares nuevos en el mapa",
-                    "body": "El mapa crece. Trece mosaicos nuevos se suman al conjunto, que llega a cuarenta y un lugares ilustrados más el mosaico en blanco para dibujar el propio. Entre las novedades hay una encrucijada, una pista de baile, una galería de los espejos, un fuerte de mantas y un festival de faroles. Aparecen en la versión digital y en la galería de mosaicos del sitio."
+                    "body": "El mapa crece. Trece losetas nuevas se suman al conjunto, que llega a cuarenta y un lugares ilustrados más la loseta en blanco para dibujar la propia. Entre las novedades hay una encrucijada, una pista de baile, una galería de los espejos, un fuerte de mantas y un festival de faroles. Aparecen en la versión digital y en la galería de losetas del sitio."
                 },
                 {
                     "title": "Un mazo más grande: cartas nuevas en todas las pilas",
                     "body": "El mazo creció de 79 a 101 diseños. La pila de {{deck:group.name}} ({{deck:group.colour}}) pasó de cuatro a dieciséis, la de {{deck:movement.name}} ({{deck:movement.colour}}) de tres a doce, y la de {{deck:encounter.name}} ({{deck:encounter.colour}}) sumó ocho nuevas, incluidas unas cartas de color cruzado que conectan las pilas. Se retiraron algunas cartas repetidas o planas y se recortó la pila de {{deck:countdown.name}}. Ya puedes ver las cartas nuevas en la versión digital y en la galería de cartas; la baraja impresa llegará más adelante."
                 },
                 {
-                    "title": "Rehaciendo el arte de cartas y mosaicos",
-                    "body": "Comenzó el trabajo de re-ilustrar todo el juego. Cada carta y cada mosaico de mapa se repintarían con un mismo estilo pintado a mano, en tinta y acuarela, para que todo el conjunto, cartas y tablero, se sintiera como un solo mundo. El trabajo se extendió por las semanas siguientes; el arte terminado llegó en octubre."
+                    "title": "Rehaciendo el arte de cartas y losetas",
+                    "body": "Comenzó el trabajo de re-ilustrar todo el juego. Cada carta y cada loseta de mapa se repintarían con un mismo estilo pintado a mano, en tinta y acuarela, para que todo el conjunto, cartas y tablero, se sintiera como un solo mundo. El trabajo se extendió por las semanas siguientes; el arte terminado llegó en octubre."
                 }
             ]
         },
@@ -95,7 +95,7 @@
             "items": [
                 {
                     "title": "El sitio, ahora en tres idiomas",
-                    "body": "El sitio web ahora se lee en inglés, español y francés, cada idioma en su propia dirección. Todas las páginas están traducidas, junto con los catálogos de cartas y mosaicos de mapa y el reglamento y el cuadernillo imprimibles. El texto viene directamente del juego, así que una carta o un lugar se leen igual en el sitio que en la mesa."
+                    "body": "El sitio web ahora se lee en inglés, español y francés, cada idioma en su propia dirección. Todas las páginas están traducidas, junto con los catálogos de cartas y losetas de mapa y el reglamento y el cuadernillo imprimibles. El texto viene directamente del juego, así que una carta o un lugar se leen igual en el sitio que en la mesa."
                 },
                 {
                     "title": "Los documentos impresos, rehechos",

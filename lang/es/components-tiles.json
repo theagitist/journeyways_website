@@ -1,13 +1,13 @@
 {
     "meta": {
-        "title": "JOURNEYWAYS | Mosaicos",
-        "description": "Los mosaicos de mapa de JOURNEYWAYS: lugares cuadrados como {{tile:T5.name}}, {{tile:T9.name}} y {{tile:T10.name}}, además de mosaicos en blanco que cada persona dibuja. Elige un mosaico para verlo de cerca.",
-        "keywords": "mosaicos de JOURNEYWAYS, mosaicos de mapa, mosaicos de juego de mesa, lugares, juego de identidad, identidad de género",
-        "og_title": "JOURNEYWAYS | Mosaicos",
-        "og_description": "Los mosaicos de mapa de JOURNEYWAYS. Elige un mosaico para verlo de cerca."
+        "title": "JOURNEYWAYS | Losetas",
+        "description": "Las losetas de mapa de JOURNEYWAYS: lugares cuadrados como {{tile:T5.name}}, {{tile:T9.name}} y {{tile:T10.name}}, además de losetas en blanco que cada persona dibuja. Elige una loseta para verla de cerca.",
+        "keywords": "losetas de JOURNEYWAYS, losetas de mapa, losetas de juego de mesa, lugares, juego de identidad, identidad de género",
+        "og_title": "JOURNEYWAYS | Losetas",
+        "og_description": "Las losetas de mapa de JOURNEYWAYS. Elige una loseta para verla de cerca."
     },
     "back": "&larr; Volver a Componentes",
-    "title": "Los Mosaicos",
-    "subtitle": "Los lugares del mapa. Sus nombres no están impresos en el tablero; elige un mosaico para verlo de cerca.",
-    "loading": "Colocando los mosaicos..."
+    "title": "Las Losetas",
+    "subtitle": "Los lugares del mapa. Sus nombres no están impresos en el tablero; elige una loseta para verlo de cerca.",
+    "loading": "Colocando las losetas..."
 }

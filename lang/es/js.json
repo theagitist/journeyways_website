@@ -16,49 +16,49 @@
         "contact_generic_error": "Algo salió mal. Vuelve a intentarlo más tarde.",
         "contact_network": "Error de red. Vuelve a intentarlo más tarde.",
         "gal_error_decks": "Ahora mismo no se han podido cargar los mazos. Inténtalo de nuevo más tarde.",
-        "gal_error_tiles": "Ahora mismo no se han podido cargar los mosaicos. Inténtalo de nuevo más tarde.",
+        "gal_error_tiles": "Ahora mismo no se han podido cargar las losetas. Inténtalo de nuevo más tarde.",
         "gal_tile_blank": "Haz la tuya",
         "gal_tile_inset": "%d en el conjunto",
-        "gal_tile_alt": "Mosaico %s"
+        "gal_tile_alt": "Loseta %s"
     },
     "gallery": {
         "photos": [
-            { "title": "Preparación del juego de mesa", "subtitle": "Configuración inicial del tablero.", "alt": "Preparación del juego de mesa JOURNEYWAYS: vista completa de la configuración inicial del tablero, con mosaicos y componentes listos para una partida de exploración de la identidad." },
-            { "title": "Componentes del juego de mesa", "subtitle": "Piezas que dan vida al juego.", "alt": "Componentes del juego de mesa JOURNEYWAYS: vista detallada de todas las piezas, incluidas cartas, mosaicos, meeples y cuadernos para la narración colaborativa." },
+            { "title": "Preparación del juego de mesa", "subtitle": "Configuración inicial del tablero.", "alt": "Preparación del juego de mesa JOURNEYWAYS: vista completa de la configuración inicial del tablero, con losetas y componentes listos para una partida de exploración de la identidad." },
+            { "title": "Componentes del juego de mesa", "subtitle": "Piezas que dan vida al juego.", "alt": "Componentes del juego de mesa JOURNEYWAYS: vista detallada de todas las piezas, incluidas cartas, losetas, meeples y cuadernos para la narración colaborativa." },
             { "title": "En plena partida", "subtitle": "Conectando a través del juego.", "alt": "Quienes juegan a JOURNEYWAYS en plena acción: personas participando en el juego de mesa de exploración de la identidad, que muestran la narración colaborativa y un juego significativo." },
             { "title": "Escribiendo el diario en juego", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "Prueba de juego de JOURNEYWAYS con el grupo de investigación EDGES en UBC: quienes participan eligen cartas, escriben entradas de diario y reflexionan en juego colaborativo." },
-            { "title": "Alrededor de la mesa", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "Vista de la mesa en una prueba de juego de JOURNEYWAYS: el grupo de investigación EDGES en UBC jugando de forma colaborativa, con cartas, mosaicos y diarios repartidos por la mesa." },
-            { "title": "El tablero a media sesión", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "El estado del tablero de JOURNEYWAYS a media sesión: vista cenital de mosaicos que forman un camino, cartas de personaje dispuestas y páginas de diario abiertas, en la prueba de juego de EDGES en UBC." },
+            { "title": "Alrededor de la mesa", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "Vista de la mesa en una prueba de juego de JOURNEYWAYS: el grupo de investigación EDGES en UBC jugando de forma colaborativa, con cartas, losetas y diarios repartidos por la mesa." },
+            { "title": "El tablero a media sesión", "subtitle": "Prueba de juego con EDGES, UBC. Noviembre de 2025.", "alt": "El estado del tablero de JOURNEYWAYS a media sesión: vista cenital de losetas que forman un camino, cartas de personaje dispuestas y páginas de diario abiertas, en la prueba de juego de EDGES en UBC." },
             { "title": "Sobre la mesa", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "JOURNEYWAYS en ProtoConBC: una mesa con la hoja de Reglas del juego de JOURNEYWAYS, cuadernos, cartas de personaje y un cartel de ProtoConBC n.º 18." },
             { "title": "En el salón", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Vista amplia del salón de la convención ProtoConBC, con personas escribiendo en mesas largas y el cartel LOOKING FOR PLAYERS a la vista." },
-            { "title": "Dos personas", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con los mosaicos de mapa en acuarela repartidos entre ambas." },
-            { "title": "A media sesión", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, mosaicos y diarios llenando la mesa." }
+            { "title": "Dos personas", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Dos personas escribiendo en sus cuadernos en una mesa de JOURNEYWAYS durante ProtoConBC, con las losetas de mapa en acuarela repartidas entre ambas." },
+            { "title": "A media sesión", "subtitle": "ProtoConBC, Vancouver. Octubre de 2025.", "alt": "Un ángulo más amplio de una sesión de JOURNEYWAYS en ProtoConBC: varias personas escribiendo a la vez, con cartas, losetas y diarios llenando la mesa." }
         ],
         "videogameScreens": [
             { "title": "La puerta de entrada", "subtitle": "JOURNEYWAYS en línea: un juego sobre el devenir.", "alt": "La pantalla de inicio del juego digital de JOURNEYWAYS: el logotipo en acuarela sobre un paisaje de piezas de rompecabezas, con los botones Comienza el viaje y Vuelve al camino." },
             { "title": "Tu panel", "subtitle": "Tus salas y viajes, reunidos en un solo lugar.", "alt": "El panel del juego digital: un saludo de bienvenida, los cinco puntos de palo y las pestañas Viajes activos, Unirse a un viaje y Comenzar un nuevo viaje, sobre tarjetas de las salas de cada persona." },
-            { "title": "Los mosaicos de mapa", "subtitle": "El mapa modular, con mosaicos en blanco para que los completes tú.", "alt": "La galería de mosaicos de mapa del juego digital: una cuadrícula de mosaicos cuadrados en acuarela, cada uno con su nombre debajo, incluidos {{tile:T1.name}}, {{tile:T2.name}} y {{tile:T3.name}}." },
+            { "title": "Las losetas de mapa", "subtitle": "El mapa modular, con losetas en blanco para que las completes tú.", "alt": "La galería de losetas de mapa del juego digital: una cuadrícula de losetas cuadradas en acuarela, cada una con su nombre debajo, incluidas {{tile:T1.name}}, {{tile:T2.name}} y {{tile:T3.name}}." },
             { "title": "Dentro de una sala", "subtitle": "El diario privado junto al vestíbulo en vivo de la sala.", "alt": "Dentro de una sala: el panel del diario privado con las preguntas de Orígenes del personaje a la izquierda, junto al vestíbulo de la sala con sus integrantes y un botón Comenzar viaje a la derecha." }
         ],
         "homeComponents": [
-            { "title": "Componentes del juego", "subtitle": "Mosaicos, cartas, meeples y cuadernos, dispuestos para una sesión.", "alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: mosaicos, cartas, meeples y cuadernos dispuestos para jugar." }
+            { "title": "Componentes del juego", "subtitle": "Losetas, cartas, meeples y cuadernos, dispuestos para una sesión.", "alt": "Componentes y preparación del juego de mesa JOURNEYWAYS para la exploración colaborativa de la identidad: losetas, cartas, meeples y cuadernos dispuestos para jugar." }
         ],
         "boardgameSetup": [
-            { "title": "Preparación del juego", "subtitle": "Mosaicos, cartas, meeples.", "alt": "JOURNEYWAYS listo para empezar: mosaicos, cartas de personaje, meeples, cuadernos de personaje." }
+            { "title": "Preparación del juego", "subtitle": "Losetas, cartas, meeples.", "alt": "JOURNEYWAYS listo para empezar: losetas, cartas de personaje, meeples, cuadernos de personaje." }
         ],
         "boardgameTiles": [
-            { "title": "{{tile:T5.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T5.name}}. {{tile:T5.alt}}" },
-            { "title": "{{tile:T10.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T10.name}}. {{tile:T10.alt}}" },
-            { "title": "{{tile:T9.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T9.name}}. {{tile:T9.alt}}" },
-            { "title": "{{tile:T7.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T7.name}}. {{tile:T7.alt}}" },
-            { "title": "{{tile:T4.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T4.name}}. {{tile:T4.alt}}" },
-            { "title": "{{tile:T11.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T11.name}}. {{tile:T11.alt}}" },
-            { "title": "{{tile:T13.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T13.name}}. {{tile:T13.alt}}" },
-            { "title": "{{tile:T12.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T12.name}}. {{tile:T12.alt}}" },
-            { "title": "{{tile:T3.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T3.name}}. {{tile:T3.alt}}" },
-            { "title": "{{tile:T6.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T6.name}}. {{tile:T6.alt}}" },
-            { "title": "{{tile:T8.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T8.name}}. {{tile:T8.alt}}" },
-            { "title": "{{tile:T2.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T2.name}}. {{tile:T2.alt}}" }
+            { "title": "{{tile:T5.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T5.name}}. {{tile:T5.alt}}" },
+            { "title": "{{tile:T10.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T10.name}}. {{tile:T10.alt}}" },
+            { "title": "{{tile:T9.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T9.name}}. {{tile:T9.alt}}" },
+            { "title": "{{tile:T7.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T7.name}}. {{tile:T7.alt}}" },
+            { "title": "{{tile:T4.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T4.name}}. {{tile:T4.alt}}" },
+            { "title": "{{tile:T11.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T11.name}}. {{tile:T11.alt}}" },
+            { "title": "{{tile:T13.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T13.name}}. {{tile:T13.alt}}" },
+            { "title": "{{tile:T12.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T12.name}}. {{tile:T12.alt}}" },
+            { "title": "{{tile:T3.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T3.name}}. {{tile:T3.alt}}" },
+            { "title": "{{tile:T6.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T6.name}}. {{tile:T6.alt}}" },
+            { "title": "{{tile:T8.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T8.name}}. {{tile:T8.alt}}" },
+            { "title": "{{tile:T2.name}}", "subtitle": "Loseta de mapa.", "alt": "Loseta de mapa: {{tile:T2.name}}. {{tile:T2.alt}}" }
         ],
         "boardgameCardFronts": [
             { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R22.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R22.alt}}" },
@@ -80,7 +80,7 @@
         ],
         "manual": [
             { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: Reglas del juego de JOURNEYWAYS, un juego de mesa sobre el devenir, sobre un paisaje en acuarela." },
-            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer los mosaicos y las cinco pilas de cartas, con una nota al margen." },
+            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer las losetas y las cinco pilas de cartas, con una nota al margen." },
             { "title": "Juego básico", "subtitle": "Explorar, elegir, reflexionar.", "alt": "La página de Juego básico: las tres fases de un turno y una leyenda de los cinco colores de carta." },
             { "title": "Una entrada de diario", "subtitle": "Un ejemplo de escritura a partir de las cartas.", "alt": "Una entrada de diario de ejemplo en letra manuscrita, con un pequeño volcán pintado en la esquina." },
             { "title": "Juego en solitario y en grupo", "subtitle": "Jugar en solitario o en grupo.", "alt": "La página de Juego en solitario y en grupo, con una fotografía de meeples pintados." },
