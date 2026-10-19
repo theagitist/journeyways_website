@@ -228,37 +228,29 @@ var gallerySets = {
         { src: 'img/boardgame_setup.webp', alt: 'JOURNEYWAYS setup ready to begin: tiles, character cards, meeples, character booklets.', title: 'Game Setup', subtitle: 'Tiles, cards, tokens.' }
     ],
     boardgameTiles: [
-        { src: 'img/design/tile-mirror-lake.webp', alt: 'Map tile: Mirror Lake. Hand-drawn lake silhouette over watercolor splotches.', title: 'Mirror Lake', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-star-bridge.webp', alt: 'Map tile: Star Bridge. Hand-drawn arched bridge silhouette over watercolor splotches.', title: 'Star Bridge', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-singing-cave.webp', alt: 'Map tile: Singing Cave. Hand-drawn cave silhouette over watercolor splotches.', title: 'Singing Cave', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-mountain-peak.webp', alt: 'Map tile: Mountain Peak. Hand-drawn mountain silhouette in deep blues with ink splatters.', title: 'Mountain Peak', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-childhood-house.webp', alt: 'Map tile: Childhood House. A small house surrounded by colorful watercolor splatters.', title: 'Childhood House', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-study-room.webp', alt: 'Map tile: Study Room. Hand-drawn room silhouette over watercolor splotches.', title: 'Study Room', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-volcanic-ground.webp', alt: 'Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters.', title: 'Volcanic Ground', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-tree-hollow.webp', alt: 'Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches.', title: 'Tree Hollow', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-buried-names-field.webp', alt: 'Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings.', title: 'Buried Names Field', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-misty-trail.webp', alt: 'Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.', title: 'Misty Trail', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-night-way.webp', alt: 'Map tile: Night Way. Hand-drawn dark path under a starless sky.', title: 'Night Way', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-abandoned-playground.webp', alt: 'Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters.', title: 'Abandoned Playground', subtitle: 'Map tile.' }
+        { src: 'img/design/tile-mirror-lake.webp?v=3' },
+        { src: 'img/design/tile-star-bridge.webp?v=3' },
+        { src: 'img/design/tile-singing-cave.webp?v=3' },
+        { src: 'img/design/tile-mountain-peak.webp?v=3' },
+        { src: 'img/design/tile-childhood-house.webp?v=3' },
+        { src: 'img/design/tile-study-room.webp?v=3' },
+        { src: 'img/design/tile-volcanic-ground.webp?v=3' },
+        { src: 'img/design/tile-tree-hollow.webp?v=3' },
+        { src: 'img/design/tile-buried-names-field.webp?v=3' },
+        { src: 'img/design/tile-misty-trail.webp?v=3' },
+        { src: 'img/design/tile-night-way.webp?v=3' },
+        { src: 'img/design/tile-abandoned-playground.webp?v=3' }
     ],
     boardgameCardFronts: [
-        { src: 'img/design/card-box-not-yet.webp', alt: "Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'.", title: 'Encounter (Red)', subtitle: '"You find a box labeled ‘Not yet’. Do you grab it? Do you open it?"' },
-        { src: 'img/design/card-reminiscence.webp', alt: 'Movement card front: a watercolor and ink illustration evoking a return to a familiar place.', title: 'Movement (Green)', subtitle: '"Go to a space you have already been to."' },
-        { src: 'img/design/card-encounter.webp', alt: 'Group action card front: a watercolor and ink illustration of two figures meeting.', title: 'Group action (Purple)', subtitle: '"You stumble upon another player. Share one element of your stories."' },
-        { src: 'img/design/card-mirror.webp', alt: 'Encounter card front: a watercolor and ink illustration of a cracked mirror.', title: 'Encounter (Red)', subtitle: '"A mirror cracks as you pass."' },
-        { src: 'img/design/card-commune.webp', alt: 'Group action card front: a watercolor of six colorful meeples huddled together.', title: 'Group action (Purple)', subtitle: '"Everyone shares one key element of their story."' },
-        { src: 'img/design/card-map.webp', alt: 'Encounter card front: a watercolor and ink illustration of a map without directions.', title: 'Encounter (Red)', subtitle: '"You receive a map with no directions. What do you do?"' },
-        { src: 'img/design/card-memory.webp', alt: 'Encounter card front: a watercolor and ink illustration of a memory growing wild.', title: 'Encounter (Red)', subtitle: '"A memory rises, vivid and uninvited. What does it ask of you?"' },
-        { src: 'img/design/card-echo.webp', alt: 'Encounter card front: a watercolor and ink illustration of two splotchy figures facing each other.', title: 'Encounter (Red)', subtitle: '"An echo answers back. Whose voice is it?"' },
-        { src: 'img/design/card-wind.webp', alt: 'Encounter card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind.', title: 'Encounter (Red)', subtitle: '"A wind scatters your thoughts. Do you gather them back? How are they different now?"' }
-    ],
-    videogameCards: [
-        { src: 'img/design/card-wind.webp', alt: 'Encounter card front: watercolor and ink of a figure with thoughts scattering on the wind.', title: 'Wind', subtitle: '"A wind scatters your thoughts. Do you gather them back? How are they different now?"' },
-        { src: 'img/design/card-commune.webp', alt: 'Group action card front: watercolor of six colourful meeples huddled together.', title: 'Commune', subtitle: '"Everyone shares one key element of their story and reflects on what they mean to their own."' }
-    ],
-    videogameTiles: [
-        { src: 'img/design/tile-misty-trail.webp', alt: 'Map tile: Misty Trail. Hand-drawn bare trees flanking a quiet path between two hillsides.', title: 'Misty Trail', subtitle: 'Map tile.' },
-        { src: 'img/design/tile-night-way.webp', alt: 'Map tile: Night Way. Hand-drawn dark path under a starless sky.', title: 'Night Way', subtitle: 'Map tile.' }
+        { src: 'img/design/card-box-not-yet.webp?v=5' },
+        { src: 'img/design/card-homecoming.webp?v=5' },
+        { src: 'img/design/card-encounter.webp?v=5' },
+        { src: 'img/design/card-mirror.webp?v=5' },
+        { src: 'img/design/card-commune.webp?v=5' },
+        { src: 'img/design/card-map.webp?v=5' },
+        { src: 'img/design/card-memory.webp?v=5' },
+        { src: 'img/design/card-echo.webp?v=5' },
+        { src: 'img/design/card-wind.webp?v=5' }
     ],
     boardgameCardBacks: [
         { src: 'img/design/bg-red.webp', alt: 'Card back in red, yellow and orange watercolor splotches.', title: 'Red | Encounters', subtitle: 'Card back.' },
@@ -273,12 +265,12 @@ var gallerySets = {
     videogameScreens: [
         { src: 'img/play/play-home.webp', alt: 'The JOURNEYWAYS digital game home screen: the watercolour wordmark over a puzzle-piece landscape, with Begin the Journey and Return to Path buttons.', title: 'The front door', subtitle: 'JOURNEYWAYS online: a game about becoming.' },
         { src: 'img/play/play-dashboard.webp', alt: 'The digital game dashboard: a Welcome back greeting, the five suit dots, and Active Journeys, Join a Journey, and Start a New Journey tabs over cards for the player’s rooms.', title: 'Your dashboard', subtitle: 'Your rooms and journeys, gathered in one place.' },
-        { src: 'img/play/play-tiles.webp?v=2', alt: 'The digital map-tile gallery: a grid of square watercolour tiles, each with its name below, including Start, Mirror Lake, Mountain Peak, and Star Bridge.', title: 'The map tiles', subtitle: 'The modular map, including blank tiles to fill in yourself.' },
+        { src: 'img/play/play-tiles.webp?v=2', alt: 'The digital map-tile gallery: a grid of square watercolour tiles, each with its name below.', title: 'The map tiles', subtitle: 'The modular map, including blank tiles to fill in yourself.' },
         { src: 'img/play/play-room.webp', alt: 'Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right.', title: 'Inside a room', subtitle: 'The private journal beside the live room lobby.' }
     ],
     manual: [
         { src: 'img/manual/p01.webp?v=3', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
-        { src: 'img/manual/p04.webp?v=3', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a hand-drawn side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p04.webp?v=3', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
         { src: 'img/manual/p05.webp?v=3', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
         { src: 'img/manual/p08.webp?v=3', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
         { src: 'img/manual/p09.webp?v=3', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },

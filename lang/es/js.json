@@ -37,7 +37,7 @@
         "videogameScreens": [
             { "title": "La puerta de entrada", "subtitle": "JOURNEYWAYS en línea: un juego sobre el devenir.", "alt": "La pantalla de inicio del juego digital de JOURNEYWAYS: el logotipo en acuarela sobre un paisaje de piezas de rompecabezas, con los botones Comienza el viaje y Vuelve al camino." },
             { "title": "Tu panel", "subtitle": "Tus salas y viajes, reunidos en un solo lugar.", "alt": "El panel del juego digital: un saludo de bienvenida, los cinco puntos de palo y las pestañas Viajes activos, Unirse a un viaje y Comenzar un nuevo viaje, sobre tarjetas de las salas de cada persona." },
-            { "title": "Los mosaicos de mapa", "subtitle": "El mapa modular, con mosaicos en blanco para que los completes tú.", "alt": "La galería de mosaicos de mapa del juego digital: una cuadrícula de mosaicos cuadrados en acuarela, cada uno con su nombre debajo, incluidos Inicio, Lago Espejo, Pico de la Montaña y Puente de las Estrellas." },
+            { "title": "Los mosaicos de mapa", "subtitle": "El mapa modular, con mosaicos en blanco para que los completes tú.", "alt": "La galería de mosaicos de mapa del juego digital: una cuadrícula de mosaicos cuadrados en acuarela, cada uno con su nombre debajo, incluidos {{tile:T1.name}}, {{tile:T2.name}} y {{tile:T3.name}}." },
             { "title": "Dentro de una sala", "subtitle": "El diario privado junto al vestíbulo en vivo de la sala.", "alt": "Dentro de una sala: el panel del diario privado con las preguntas de Orígenes del personaje a la izquierda, junto al vestíbulo de la sala con sus integrantes y un botón Comenzar viaje a la derecha." }
         ],
         "homeComponents": [
@@ -47,29 +47,29 @@
             { "title": "Preparación del juego", "subtitle": "Mosaicos, cartas, meeples.", "alt": "JOURNEYWAYS listo para empezar: mosaicos, cartas de personaje, meeples, cuadernos de personaje." }
         ],
         "boardgameTiles": [
-            { "title": "Lago Espejo", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Lago Espejo. Silueta de un lago sobre manchas de acuarela." },
-            { "title": "Puente de las Estrellas", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de un puente arqueado sobre manchas de acuarela." },
-            { "title": "Cueva Cantora", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Cueva Cantora. Silueta de una cueva sobre manchas de acuarela." },
-            { "title": "Pico de la Montaña", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Pico de la Montaña. Silueta de una montaña en azules profundos con salpicaduras de tinta." },
-            { "title": "Casa de la Infancia", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela." },
-            { "title": "Sala de Estudio", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sala de Estudio. Silueta de una habitación sobre manchas de acuarela." },
-            { "title": "Tierra Volcánica", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta en rojo ardiente, naranja y negro." },
-            { "title": "Árbol Hueco", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Árbol Hueco. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas." },
-            { "title": "Campo de Nombres Enterrados", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Campo de Nombres Enterrados. Un dibujo de líneas de un campo agrietado y resquebrajado con dos pequeños retoños." },
-            { "title": "Sendero Neblinoso", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Sendero Neblinoso. Árboles desnudos dibujados a mano flanqueando un camino tranquilo entre dos laderas." },
-            { "title": "Camino Nocturno", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Camino Nocturno. Un camino oscuro bajo un cielo sin estrellas." },
-            { "title": "Parque Abandonado", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolor." }
+            { "title": "{{tile:T5.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T5.name}}. Silueta de un lago sobre manchas de acuarela." },
+            { "title": "{{tile:T10.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T10.name}}. Silueta de un puente arqueado sobre manchas de acuarela." },
+            { "title": "{{tile:T9.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T9.name}}. Silueta de una cueva sobre manchas de acuarela." },
+            { "title": "{{tile:T7.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T7.name}}. Silueta de una montaña en azules profundos con salpicaduras de tinta." },
+            { "title": "{{tile:T4.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T4.name}}. Una casa pequeña rodeada de coloridas salpicaduras de acuarela." },
+            { "title": "{{tile:T11.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T11.name}}. Silueta de una habitación sobre manchas de acuarela." },
+            { "title": "{{tile:T13.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T13.name}}. Un volcán en erupción con salpicaduras de tinta en rojo ardiente, naranja y negro." },
+            { "title": "{{tile:T12.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T12.name}}. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas." },
+            { "title": "{{tile:T3.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T3.name}}. Un dibujo de líneas de un campo agrietado y resquebrajado con dos pequeños retoños." },
+            { "title": "{{tile:T6.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T6.name}}. Árboles desnudos flanqueando un camino tranquilo entre dos laderas." },
+            { "title": "{{tile:T8.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T8.name}}. Un camino oscuro bajo un cielo sin estrellas." },
+            { "title": "{{tile:T2.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T2.name}}. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolor." }
         ],
         "boardgameCardFronts": [
-            { "title": "Encuentro (Roja)", "subtitle": "\"Encuentras una caja con la etiqueta 'Todavía no'. ¿La tomas? ¿La abres?\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una caja con la etiqueta 'Todavía no'." },
-            { "title": "Movimiento (Verde)", "subtitle": "\"Ve a un espacio en el que ya has estado.\"", "alt": "Anverso de carta de Movimiento: una ilustración en acuarela y tinta que evoca el regreso a un lugar familiar." },
-            { "title": "Acción de grupo (Morada)", "subtitle": "\"Te topas con otra persona. Compartan un elemento de sus historias.\"", "alt": "Anverso de carta de Acción de grupo: una ilustración en acuarela y tinta de dos figuras que se encuentran." },
-            { "title": "Encuentro (Roja)", "subtitle": "\"Un espejo se agrieta a tu paso.\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un espejo agrietado." },
-            { "title": "Acción de grupo (Morada)", "subtitle": "\"Cada persona comparte un elemento clave de su historia.\"", "alt": "Anverso de carta de Acción de grupo: una acuarela de seis meeples de colores apiñados." },
-            { "title": "Encuentro (Roja)", "subtitle": "\"Recibes un mapa sin indicaciones. ¿Qué haces?\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un mapa sin indicaciones." },
-            { "title": "Encuentro (Roja)", "subtitle": "\"Un recuerdo emerge, vívido y sin ser invitado. ¿Qué te pide?\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un recuerdo que crece salvaje." },
-            { "title": "Encuentro (Roja)", "subtitle": "\"Un eco responde. ¿De quién es esa voz?\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de dos figuras manchadas frente a frente." },
-            { "title": "Encuentro (Roja)", "subtitle": "\"Un viento dispersa tus pensamientos. ¿Los reúnes de nuevo? ¿En qué son distintos ahora?\"", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una figura con los pensamientos dispersándose al viento." }
+            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R22.content}}”", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una caja con la etiqueta 'Todavía no'." },
+            { "title": "Movimiento (Verde)", "subtitle": "“{{card:G6.content}}”", "alt": "Anverso de carta de Movimiento: una ilustración en acuarela y tinta que evoca el regreso a un lugar familiar." },
+            { "title": "Acción de grupo (Morada)", "subtitle": "“{{card:P1.content}}”", "alt": "Anverso de carta de Acción de grupo: una ilustración en acuarela y tinta de dos figuras que se encuentran." },
+            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R2.content}}”", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un espejo agrietado." },
+            { "title": "Acción de grupo (Morada)", "subtitle": "“{{card:P2.content}}”", "alt": "Anverso de carta de Acción de grupo: una acuarela de seis meeples de colores apiñados." },
+            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R3.content}}”", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un mapa sin indicaciones." },
+            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R8.content}}”", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un recuerdo que crece salvaje." },
+            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R26.content}}”", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de dos figuras manchadas frente a frente." },
+            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R1.content}}”", "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una figura con los pensamientos dispersándose al viento." }
         ],
         "boardgameCardBacks": [
             { "title": "Roja | Encuentros", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela rojas, amarillas y naranjas." },

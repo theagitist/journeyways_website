@@ -7,6 +7,8 @@ const JW_LANGS        = ['en', 'es', 'fr'];
 const JW_DEFAULT_LANG = 'en';
 const JW_ORIGIN       = 'https://www.journeyways.ca';
 
+require_once __DIR__ . '/play_api.php';
+
 // Split a REQUEST_URI into [lang, cleanPath]. A leading /es or /fr selects that
 // language; anything else (incl. an explicit /en) is English at the bare path.
 function jw_resolve_lang(string $uri): array {
@@ -61,7 +63,7 @@ function jw_load_js(string $lang): array {
     $base = __DIR__ . '/../lang';
     $js = jw_read_json("$base/en/js.json");
     if ($lang !== JW_DEFAULT_LANG) $js = jw_deep_merge($js, jw_read_json("$base/$lang/js.json"));
-    return $js;
+    return jw_play_fill_all($js, $lang);
 }
 
 function jw_deep_merge(array $base, array $over): array {
@@ -86,7 +88,10 @@ function jw_get(string $key) {
         if (is_array($v) && array_key_exists($seg, $v)) { $v = $v[$seg]; }
         else { return $key; }
     }
-    return $v;
+    // Card/tile tokens ({{card:R1.content}}) resolve from the play API on every read.
+    global $JW_LANG;
+    if (is_string($v)) return jw_play_fill($v);
+    return is_array($v) ? jw_play_fill_all($v, $JW_LANG ?? JW_DEFAULT_LANG) : $v;
 }
 
 // Optional lookup: returns $default when the key is absent (jw_get echoes the key

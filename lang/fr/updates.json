@@ -36,8 +36,16 @@
             "label": "Octobre 2026",
             "items": [
                 {
+                    "title": "Chaque carte, relue",
+                    "body": "Nous avons relu chaque carte, une par une. Les coquilles et les attributions de citations sont corrigées, les cartes qui partageaient un nom ont maintenant leur propre titre, et plusieurs consignes sont plus claires : une carte ne demande plus si vous avez bien compris l’histoire d’une autre personne, car il n’y a ni bonne ni mauvaise réponse. Chaque paquet est désormais numéroté sans trou, et les changements sont en anglais, en espagnol et en français."
+                },
+                {
+                    "title": "Des cartes lisibles d’un coup d’œil",
+                    "body": "Les cartes mettent désormais l’image en premier : l’illustration va d’un bord à l’autre, avec le titre au-dessus et le texte centré en dessous, dans une police plus ronde et plus grande, plus facile à lire de l’autre côté de la table. Toutes les cartes d’un même type utilisent la même taille de texte, et seules les quelques plus longues la réduisent. La nouvelle mise en page est dans le jeu numérique et la galerie de cartes ; le jeu imprimé suivra."
+                },
+                {
                     "title": "Préparation simplifiée et dos des tuiles",
-                    "body": "Les tuiles du plateau partagent maintenant un dos peint : on peut les mélanger face cachée et les piocher à l'aveugle. La préparation est aussi plus simple : il n'y a plus de tuile de départ. Mélangez toutes les tuiles, placez la première pour commencer la carte partagée, et tout le monde démarre là. L'ancienne tuile de départ reste dans le jeu comme un nouveau lieu, La clairière."
+                    "body": "Les tuiles du plateau partagent maintenant un dos peint : on peut les mélanger face cachée et les piocher à l'aveugle. La préparation est aussi plus simple : il n'y a plus de tuile de départ. Mélangez toutes les tuiles, placez la première pour commencer la carte partagée, et tout le monde démarre là. L'ancienne tuile de départ reste dans le jeu comme un nouveau lieu, {{tile:T1.name}}."
                 },
                 {
                     "title": "Six nouvelles tuiles",

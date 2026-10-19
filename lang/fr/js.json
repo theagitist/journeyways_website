@@ -37,7 +37,7 @@
         "videogameScreens": [
             { "title": "La porte d'entrée", "subtitle": "JOURNEYWAYS en ligne : un jeu sur le devenir.", "alt": "L'écran d'accueil du jeu numérique JOURNEYWAYS : le logotype à l'aquarelle sur un paysage en pièces de puzzle, avec les boutons Commencer le voyage et Revenir au chemin." },
             { "title": "Votre tableau de bord", "subtitle": "Vos salles et vos voyages, réunis au même endroit.", "alt": "Le tableau de bord du jeu numérique : un message de bienvenue, les cinq points de couleur et les onglets Voyages en cours, Rejoindre un voyage et Commencer un nouveau voyage, au-dessus des cartes des salles de chaque personne." },
-            { "title": "Les tuiles de carte", "subtitle": "La carte modulaire, avec des tuiles vierges à compléter vous-même.", "alt": "La galerie de tuiles de carte du jeu numérique : une grille de tuiles carrées à l'aquarelle, chacune avec son nom en dessous, dont Départ, Lac Miroir, Sommet de la Montagne et Pont des Étoiles." },
+            { "title": "Les tuiles de carte", "subtitle": "La carte modulaire, avec des tuiles vierges à compléter vous-même.", "alt": "La galerie de tuiles de carte du jeu numérique : une grille de tuiles carrées à l'aquarelle, chacune avec son nom en dessous, dont {{tile:T1.name}}, {{tile:T2.name}} et {{tile:T3.name}}." },
             { "title": "À l'intérieur d'une salle", "subtitle": "Le journal privé à côté du hall de la salle en direct.", "alt": "À l'intérieur d'une salle : le panneau du journal privé avec les questions Origines du personnage à gauche, à côté du hall de la salle avec ses membres et un bouton Commencer le voyage à droite." }
         ],
         "homeComponents": [
@@ -47,29 +47,29 @@
             { "title": "Préparation du jeu", "subtitle": "Tuiles, cartes, meeples.", "alt": "JOURNEYWAYS prêt à commencer : tuiles, cartes de personnage, meeples, cahiers de personnage." }
         ],
         "boardgameTiles": [
-            { "title": "Lac Miroir", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Lac Miroir. Silhouette d'un lac sur des taches d'aquarelle." },
-            { "title": "Pont des Étoiles", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Pont des Étoiles. Silhouette d'un pont en arche sur des taches d'aquarelle." },
-            { "title": "Grotte Chantante", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Grotte Chantante. Silhouette d'une grotte sur des taches d'aquarelle." },
-            { "title": "Sommet de la Montagne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sommet de la Montagne. Silhouette d'une montagne dans des bleus profonds avec des éclaboussures d'encre." },
-            { "title": "Maison d'Enfance", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Maison d'Enfance. Une petite maison entourée d'éclaboussures d'aquarelle colorées." },
-            { "title": "Salle d'Étude", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Salle d'Étude. Silhouette d'une pièce sur des taches d'aquarelle." },
-            { "title": "Terre Volcanique", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Terre Volcanique. Un volcan en éruption dans des éclaboussures d'encre rouge feu, orange et noir." },
-            { "title": "Arbre Creux", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Arbre Creux. Un arbre nu avec des éclaboussures bleu profond et violet sur ses branches." },
-            { "title": "Champ des Noms Enfouis", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Champ des Noms Enfouis. Un dessin au trait d'un champ craquelé et fissuré avec deux petites pousses." },
-            { "title": "Sentier Brumeux", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Sentier Brumeux. Des arbres nus dessinés à la main bordant un chemin paisible entre deux coteaux." },
-            { "title": "Chemin Nocturne", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Chemin Nocturne. Un chemin sombre sous un ciel sans étoiles." },
-            { "title": "Aire de Jeux Abandonnée", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : Aire de Jeux Abandonnée. Une structure de jeu avec toboggan et échelle, avec des éclaboussures de peinture multicolores." }
+            { "title": "{{tile:T5.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T5.name}}. Silhouette d'un lac sur des taches d'aquarelle." },
+            { "title": "{{tile:T10.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T10.name}}. Silhouette d'un pont en arche sur des taches d'aquarelle." },
+            { "title": "{{tile:T9.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T9.name}}. Silhouette d'une grotte sur des taches d'aquarelle." },
+            { "title": "{{tile:T7.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T7.name}}. Silhouette d'une montagne dans des bleus profonds avec des éclaboussures d'encre." },
+            { "title": "{{tile:T4.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T4.name}}. Une petite maison entourée d'éclaboussures d'aquarelle colorées." },
+            { "title": "{{tile:T11.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T11.name}}. Silhouette d'une pièce sur des taches d'aquarelle." },
+            { "title": "{{tile:T13.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T13.name}}. Un volcan en éruption dans des éclaboussures d'encre rouge feu, orange et noir." },
+            { "title": "{{tile:T12.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T12.name}}. Un arbre nu avec des éclaboussures bleu profond et violet sur ses branches." },
+            { "title": "{{tile:T3.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T3.name}}. Un dessin au trait d'un champ craquelé et fissuré avec deux petites pousses." },
+            { "title": "{{tile:T6.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T6.name}}. Des arbres nus dessinés à la main bordant un chemin paisible entre deux coteaux." },
+            { "title": "{{tile:T8.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T8.name}}. Un chemin sombre sous un ciel sans étoiles." },
+            { "title": "{{tile:T2.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T2.name}}. Une structure de jeu avec toboggan et échelle, avec des éclaboussures de peinture multicolores." }
         ],
         "boardgameCardFronts": [
-            { "title": "Rencontre (Rouge)", "subtitle": "\"Vous trouvez une boîte étiquetée 'Pas encore'. La prenez-vous ? L'ouvrez-vous ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une boîte étiquetée 'Pas encore'." },
-            { "title": "Mouvement (Verte)", "subtitle": "\"Retournez à un espace que vous avez déjà visité.\"", "alt": "Recto de carte de Mouvement : une illustration à l'aquarelle et à l'encre évoquant le retour vers un lieu familier." },
-            { "title": "Action de groupe (Violette)", "subtitle": "\"Vous croisez une autre personne. Partagez un élément de vos histoires.\"", "alt": "Recto de carte d'Action de groupe : une illustration à l'aquarelle et à l'encre de deux figures qui se rencontrent." },
-            { "title": "Rencontre (Rouge)", "subtitle": "\"Un miroir se fêle à votre passage.\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'un miroir fêlé." },
-            { "title": "Action de groupe (Violette)", "subtitle": "\"Chaque personne partage un élément clé de son histoire.\"", "alt": "Recto de carte d'Action de groupe : une aquarelle de six meeples colorés blottis ensemble." },
-            { "title": "Rencontre (Rouge)", "subtitle": "\"Vous recevez une carte sans indications. Que faites-vous ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une carte sans indications." },
-            { "title": "Rencontre (Rouge)", "subtitle": "\"Un souvenir surgit, vif et non invité. Que vous demande-t-il ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'un souvenir qui pousse à l'état sauvage." },
-            { "title": "Rencontre (Rouge)", "subtitle": "\"Un écho répond. À qui est cette voix ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre de deux figures tachetées face à face." },
-            { "title": "Rencontre (Rouge)", "subtitle": "\"Un vent disperse vos pensées. Les rassemblez-vous ? En quoi sont-elles différentes maintenant ?\"", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une figure dont les pensées se dispersent au vent." }
+            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R22.content}} »", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une boîte étiquetée 'Pas encore'." },
+            { "title": "Mouvement (Verte)", "subtitle": "« {{card:G6.content}} »", "alt": "Recto de carte de Mouvement : une illustration à l'aquarelle et à l'encre évoquant le retour vers un lieu familier." },
+            { "title": "Action de groupe (Violette)", "subtitle": "« {{card:P1.content}} »", "alt": "Recto de carte d'Action de groupe : une illustration à l'aquarelle et à l'encre de deux figures qui se rencontrent." },
+            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R2.content}} »", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'un miroir fêlé." },
+            { "title": "Action de groupe (Violette)", "subtitle": "« {{card:P2.content}} »", "alt": "Recto de carte d'Action de groupe : une aquarelle de six meeples colorés blottis ensemble." },
+            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R3.content}} »", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une carte sans indications." },
+            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R8.content}} »", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'un souvenir qui pousse à l'état sauvage." },
+            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R26.content}} »", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre de deux figures tachetées face à face." },
+            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R1.content}} »", "alt": "Recto de carte de Rencontre : une illustration à l'aquarelle et à l'encre d'une figure dont les pensées se dispersent au vent." }
         ],
         "boardgameCardBacks": [
             { "title": "Rouge | Rencontres", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle rouges, jaunes et orange." },

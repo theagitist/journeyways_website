@@ -111,6 +111,15 @@ mapa"). The contact form is ported to `api/contact.php`. Full plan + as-built: m
   galleries are now localized and published in es/fr too (via the language-aware play `/api`);
   see `project_cards_system` / `project_www_php_i18n`.
 
+## Card and tile text comes from the play API (never hardcode it)
+
+No card title, card text, quote author or tile name is written in `lang/*.json`, the templates or `js/main.js`. Play's locales are the single source; the website refers to them with tokens that `inc/play_api.php` fills at render time from `http://127.0.0.1:1976/api/{cards,tiles}?lng=`:
+
+- `{{card:R22.content}}`, `{{card:R22.title}}`, `{{card:B26.author}}`, `{{tile:T5.name}}` (current card/tile numbers).
+- Filled by `jw_get()` (so `t()`, `te()` and raw arrays like the Updates months all resolve) and by `jw_load_js()` for the lightbox captions in `window.__I18N`. The `main.js` card/tile lightbox sets carry only `src`.
+- Each deck is cached in `/tmp/jw-play-<kind>-<lang>.json` for 5 minutes; a stale copy is served if play is down. An unknown token renders empty.
+- If play renumbers cards or tiles, update the numbers in the tokens (`grep -rn '{{card:\|{{tile:' lang`).
+
 ## Operational state (May 2026)
 
 - **Editorial redesign complete in v1.3.0** (May 2026). All six visible pages (`index.html`, `about.html`, `design.html`, `photos.html`, `boardgame.html`, `videogame.html`) ship in the Swiss-luxury vocabulary. Body sections use the 3+9 chapter spine (Italianno chapter titles in `text-yellow-400` + small watercolor swatches from the boardgame card backs in `img/design/bg-*.webp`), `border-t border-gray-700/40` hairlines, `font-display: block` on Italianno paired with `Inter Fallback` adjusted face. Pattern documented in `brand-spec.md` in the Academia vault under `Journeyways/Foundations/`. Rollback tag `pre-homepage-redesign` at commit `6a46e15` reverts the rollout.

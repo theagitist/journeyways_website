@@ -104,52 +104,52 @@
         "tiles_label_html": "<span class=\"tile-wood\">Map tiles</span>, twelve examples",
         "tiles": [
             {
-                "alt": "Map tile: Mirror Lake. Lake silhouette over watercolor splotches.",
-                "name": "Mirror Lake"
+                "alt": "Map tile: {{tile:T5.name}}. Lake silhouette over watercolor splotches.",
+                "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Map tile: Star Bridge. Arched bridge silhouette over watercolor splotches.",
-                "name": "Star Bridge"
+                "alt": "Map tile: {{tile:T10.name}}. Arched bridge silhouette over watercolor splotches.",
+                "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Map tile: Singing Cave. Cave silhouette over watercolor splotches.",
-                "name": "Singing Cave"
+                "alt": "Map tile: {{tile:T9.name}}. Cave silhouette over watercolor splotches.",
+                "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Map tile: Mountain Peak. Mountain silhouette in deep blues with ink splatters.",
-                "name": "Mountain Peak"
+                "alt": "Map tile: {{tile:T7.name}}. Mountain silhouette in deep blues with ink splatters.",
+                "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Map tile: Childhood House. A small house surrounded by colorful watercolor splatters.",
-                "name": "Childhood House"
+                "alt": "Map tile: {{tile:T4.name}}. A small house surrounded by colorful watercolor splatters.",
+                "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Map tile: Study Room. Room silhouette over watercolor splotches.",
-                "name": "Study Room"
+                "alt": "Map tile: {{tile:T11.name}}. Room silhouette over watercolor splotches.",
+                "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Map tile: Volcanic Ground. A volcano erupting in fiery red, orange and black ink splatters.",
-                "name": "Volcanic Ground"
+                "alt": "Map tile: {{tile:T13.name}}. A volcano erupting in fiery red, orange and black ink splatters.",
+                "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Map tile: Tree Hollow. A bare tree with deep blue and violet splatters across its branches.",
-                "name": "Tree Hollow"
+                "alt": "Map tile: {{tile:T12.name}}. A bare tree with deep blue and violet splatters across its branches.",
+                "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Map tile: Buried Names Field. A line drawing of a cracked, fissured field with two small saplings.",
-                "name": "Buried Names Field"
+                "alt": "Map tile: {{tile:T3.name}}. A line drawing of a cracked, fissured field with two small saplings.",
+                "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Map tile: Misty Trail. Bare trees flanking a quiet path between two hillsides.",
-                "name": "Misty Trail"
+                "alt": "Map tile: {{tile:T6.name}}. Bare trees flanking a quiet path between two hillsides.",
+                "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Map tile: Night Way. Dark path under a starless sky.",
-                "name": "Night Way"
+                "alt": "Map tile: {{tile:T8.name}}. Dark path under a starless sky.",
+                "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Map tile: Abandoned Playground. A playground structure with slide and ladder, with multicolor paint splatters.",
-                "name": "Abandoned Playground"
+                "alt": "Map tile: {{tile:T2.name}}. A playground structure with slide and ladder, with multicolor paint splatters.",
+                "name": "{{tile:T2.name}}"
             }
         ],
         "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">See the full set of map tiles</a> in the Components gallery.",

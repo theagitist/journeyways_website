@@ -38,8 +38,18 @@
             "items": [
                 {
                     "type": "both",
+                    "title": "Every card, reread",
+                    "body": "We read every card again, one by one. Typos and quote attributions are fixed, cards that shared a name now have their own titles, and several prompts are clearer: a card no longer asks whether you got someone's story right, because there is no right or wrong. Each deck is now numbered without gaps, and the changes are in English, Spanish and French."
+                },
+                {
+                    "type": "both",
+                    "title": "Cards you can read at a glance",
+                    "body": "Cards now put the picture first: the illustration runs edge to edge, with the title above and the text centred below in a rounder, larger typeface that is easier to read across the table. Every card of a kind uses the same text size, and only the few longest ones step down. The new layout is in the digital game and the card gallery; the printed deck follows."
+                },
+                {
+                    "type": "both",
                     "title": "Simpler setup, and tile backs",
-                    "body": "The board tiles now share a painted back, so they can be shuffled face down and picked blind. Setup is simpler too: there is no separate start tile anymore. Shuffle all the tiles, place the first one to begin the shared map, and everyone starts there. The old start tile stays in the game as a new place, The Clearing."
+                    "body": "The board tiles now share a painted back, so they can be shuffled face down and picked blind. Setup is simpler too: there is no separate start tile anymore. Shuffle all the tiles, place the first one to begin the shared map, and everyone starts there. The old start tile stays in the game as a new place, {{tile:T1.name}}."
                 },
                 {
                     "type": "both",

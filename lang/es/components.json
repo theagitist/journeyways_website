@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "JOURNEYWAYS | Componentes",
-        "description": "Los componentes de JOURNEYWAYS: los mazos de cartas, los mosaicos de mapa dibujados a mano y (pronto) el cuaderno de juego y el manual. Elige un componente para explorarlo.",
+        "description": "Los componentes de JOURNEYWAYS: los mazos de cartas, los mosaicos de mapa y (pronto) el cuaderno de juego y el manual. Elige un componente para explorarlo.",
         "keywords": "componentes de JOURNEYWAYS, mazos de cartas, mosaicos de mapa, cuaderno de juego, manual, juego de identidad, juego de mesa, identidad de género",
         "og_title": "JOURNEYWAYS | Componentes",
         "og_description": "Las cartas, los mosaicos de mapa y más. Elige un componente para explorarlo."
@@ -22,7 +22,7 @@
         {
             "aria": "Explora los mosaicos de mapa",
             "title": "Mosaicos",
-            "desc": "Lugares del mapa cuadrados dibujados a mano, más mosaicos en blanco que dibuja cada persona. Elige un mosaico para verlo de cerca.",
+            "desc": "Lugares del mapa cuadrados, más mosaicos en blanco que dibuja cada persona. Elige un mosaico para verlo de cerca.",
             "go": "Explora los mosaicos"
         },
         {

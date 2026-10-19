@@ -104,52 +104,52 @@
         "tiles_label_html": "<span class=\"tile-wood\">Mosaicos de mapa</span>, doce ejemplos",
         "tiles": [
             {
-                "alt": "Mosaico de mapa: Lago Espejo. Silueta de lago sobre manchas de acuarela.",
-                "name": "Lago Espejo"
+                "alt": "Mosaico de mapa: {{tile:T5.name}}. Silueta de lago sobre manchas de acuarela.",
+                "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Puente de las Estrellas. Silueta de puente arqueado sobre manchas de acuarela.",
-                "name": "Puente de las Estrellas"
+                "alt": "Mosaico de mapa: {{tile:T10.name}}. Silueta de puente arqueado sobre manchas de acuarela.",
+                "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Cueva Cantora. Silueta de cueva sobre manchas de acuarela.",
-                "name": "Cueva Cantora"
+                "alt": "Mosaico de mapa: {{tile:T9.name}}. Silueta de cueva sobre manchas de acuarela.",
+                "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Cima de la Montaña. Silueta de montaña en azules profundos con salpicaduras de tinta.",
-                "name": "Cima de la Montaña"
+                "alt": "Mosaico de mapa: {{tile:T7.name}}. Silueta de montaña en azules profundos con salpicaduras de tinta.",
+                "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Casa de la Infancia. Una casa pequeña rodeada de coloridas salpicaduras de acuarela.",
-                "name": "Casa de la Infancia"
+                "alt": "Mosaico de mapa: {{tile:T4.name}}. Una casa pequeña rodeada de coloridas salpicaduras de acuarela.",
+                "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Cuarto de Estudio. Silueta de habitación sobre manchas de acuarela.",
-                "name": "Cuarto de Estudio"
+                "alt": "Mosaico de mapa: {{tile:T11.name}}. Silueta de habitación sobre manchas de acuarela.",
+                "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Tierra Volcánica. Un volcán en erupción con salpicaduras de tinta rojas, naranjas y negras ardientes.",
-                "name": "Tierra Volcánica"
+                "alt": "Mosaico de mapa: {{tile:T13.name}}. Un volcán en erupción con salpicaduras de tinta rojas, naranjas y negras ardientes.",
+                "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Hueco del Árbol. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas.",
-                "name": "Hueco del Árbol"
+                "alt": "Mosaico de mapa: {{tile:T12.name}}. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas.",
+                "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Campo de Nombres Enterrados. Un dibujo lineal de un campo agrietado y fisurado con dos pequeños retoños.",
-                "name": "Campo de Nombres Enterrados"
+                "alt": "Mosaico de mapa: {{tile:T3.name}}. Un dibujo lineal de un campo agrietado y fisurado con dos pequeños retoños.",
+                "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Sendero Brumoso. Árboles desnudos dibujados a mano que flanquean un sendero tranquilo entre dos laderas.",
-                "name": "Sendero Brumoso"
+                "alt": "Mosaico de mapa: {{tile:T6.name}}. Árboles desnudos que flanquean un sendero tranquilo entre dos laderas.",
+                "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Camino Nocturno. Sendero oscuro bajo un cielo sin estrellas.",
-                "name": "Camino Nocturno"
+                "alt": "Mosaico de mapa: {{tile:T8.name}}. Sendero oscuro bajo un cielo sin estrellas.",
+                "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Mosaico de mapa: Parque Abandonado. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolores.",
-                "name": "Parque Abandonado"
+                "alt": "Mosaico de mapa: {{tile:T2.name}}. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolores.",
+                "name": "{{tile:T2.name}}"
             }
         ],
         "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Mira el conjunto completo de mosaicos de mapa</a> en la galería de Componentes.",

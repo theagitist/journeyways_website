@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "JOURNEYWAYS | Tiles",
-        "description": "The map tiles of JOURNEYWAYS: square locations like Mirror Lake, Singing Cave, and Star Bridge, plus blank tiles players draw themselves. Pick a tile to see it up close.",
+        "description": "The map tiles of JOURNEYWAYS: square locations like {{tile:T5.name}}, {{tile:T9.name}}, and {{tile:T10.name}}, plus blank tiles players draw themselves. Pick a tile to see it up close.",
         "keywords": "JOURNEYWAYS tiles, map tiles, board game tiles, locations, identity game, gender identity",
         "og_title": "JOURNEYWAYS | Tiles",
         "og_description": "The map tiles of JOURNEYWAYS. Pick a tile to see it up close."

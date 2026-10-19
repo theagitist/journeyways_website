@@ -104,52 +104,52 @@
         "tiles_label_html": "<span class=\"tile-wood\">Tuiles de carte</span>, douze exemples",
         "tiles": [
             {
-                "alt": "Tuile de carte : Lac Miroir. Silhouette de lac sur des taches d'aquarelle.",
-                "name": "Lac Miroir"
+                "alt": "Tuile de carte : {{tile:T5.name}}. Silhouette de lac sur des taches d'aquarelle.",
+                "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Tuile de carte : Pont des Étoiles. Silhouette de pont en arc sur des taches d'aquarelle.",
-                "name": "Pont des Étoiles"
+                "alt": "Tuile de carte : {{tile:T10.name}}. Silhouette de pont en arc sur des taches d'aquarelle.",
+                "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Tuile de carte : Grotte Chantante. Silhouette de grotte sur des taches d'aquarelle.",
-                "name": "Grotte Chantante"
+                "alt": "Tuile de carte : {{tile:T9.name}}. Silhouette de grotte sur des taches d'aquarelle.",
+                "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Tuile de carte : Sommet de la Montagne. Silhouette de montagne dans des bleus profonds avec des éclaboussures d'encre.",
-                "name": "Sommet de la Montagne"
+                "alt": "Tuile de carte : {{tile:T7.name}}. Silhouette de montagne dans des bleus profonds avec des éclaboussures d'encre.",
+                "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Tuile de carte : Maison d'Enfance. Une petite maison entourée d'éclaboussures d'aquarelle colorées.",
-                "name": "Maison d'Enfance"
+                "alt": "Tuile de carte : {{tile:T4.name}}. Une petite maison entourée d'éclaboussures d'aquarelle colorées.",
+                "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Tuile de carte : Salle d'Étude. Silhouette de pièce sur des taches d'aquarelle.",
-                "name": "Salle d'Étude"
+                "alt": "Tuile de carte : {{tile:T11.name}}. Silhouette de pièce sur des taches d'aquarelle.",
+                "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Tuile de carte : Terre Volcanique. Un volcan en éruption dans des éclaboussures d'encre rouges, orange et noires ardentes.",
-                "name": "Terre Volcanique"
+                "alt": "Tuile de carte : {{tile:T13.name}}. Un volcan en éruption dans des éclaboussures d'encre rouges, orange et noires ardentes.",
+                "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Tuile de carte : Creux de l'Arbre. Un arbre nu avec des éclaboussures bleu profond et violettes sur ses branches.",
-                "name": "Creux de l'Arbre"
+                "alt": "Tuile de carte : {{tile:T12.name}}. Un arbre nu avec des éclaboussures bleu profond et violettes sur ses branches.",
+                "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Tuile de carte : Champ des Noms Enterrés. Un dessin au trait d'un champ craquelé et fissuré avec deux petits jeunes plants.",
-                "name": "Champ des Noms Enterrés"
+                "alt": "Tuile de carte : {{tile:T3.name}}. Un dessin au trait d'un champ craquelé et fissuré avec deux petits jeunes plants.",
+                "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Tuile de carte : Sentier Brumeux. Des arbres nus dessinés à la main bordant un sentier tranquille entre deux coteaux.",
-                "name": "Sentier Brumeux"
+                "alt": "Tuile de carte : {{tile:T6.name}}. Des arbres nus dessinés à la main bordant un sentier tranquille entre deux coteaux.",
+                "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Tuile de carte : Chemin Nocturne. Sentier sombre sous un ciel sans étoiles.",
-                "name": "Chemin Nocturne"
+                "alt": "Tuile de carte : {{tile:T8.name}}. Sentier sombre sous un ciel sans étoiles.",
+                "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Tuile de carte : Aire de Jeu Abandonnée. Une structure de jeux avec toboggan et échelle, avec des éclaboussures de peinture multicolores.",
-                "name": "Aire de Jeu Abandonnée"
+                "alt": "Tuile de carte : {{tile:T2.name}}. Une structure de jeux avec toboggan et échelle, avec des éclaboussures de peinture multicolores.",
+                "name": "{{tile:T2.name}}"
             }
         ],
         "tiles_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Voyez l'ensemble complet des tuiles de carte</a> dans la galerie des composants.",
