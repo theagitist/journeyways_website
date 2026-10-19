@@ -1,7 +1,7 @@
 {
     "meta": {
         "title": "JOURNEYWAYS | Cartes",
-        "description": "Les paquets de cartes de JOURNEYWAYS : Rencontre, Mouvement, Réflexion, Compte à rebours et Action de groupe. Choisis un paquet pour le distribuer et lis les consignes et citations dessinées à la main.",
+        "description": "Les paquets de cartes de JOURNEYWAYS : {{deck:encounter.name}}, {{deck:movement.name}}, {{deck:reflection.name}}, {{deck:countdown.name}} et {{deck:group.name}}. Choisis un paquet pour le distribuer et lis les consignes et citations dessinées à la main.",
         "keywords": "cartes de JOURNEYWAYS, paquets de cartes, consignes, citations, jeu d'identité, cartes de jeu de société, identité de genre",
         "og_title": "JOURNEYWAYS | Cartes",
         "og_description": "Les paquets de cartes de JOURNEYWAYS. Choisis un paquet pour le distribuer."

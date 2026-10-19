@@ -61,22 +61,22 @@
             { "title": "{{tile:T2.name}}", "subtitle": "Tuile de carte.", "alt": "Tuile de carte : {{tile:T2.name}}. {{tile:T2.alt}}" }
         ],
         "boardgameCardFronts": [
-            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R22.content}} »", "alt": "Recto de carte de Rencontre : {{card:R22.alt}}" },
-            { "title": "Mouvement (Verte)", "subtitle": "« {{card:G6.content}} »", "alt": "Recto de carte de Mouvement : {{card:G6.alt}}" },
-            { "title": "Action de groupe (Violette)", "subtitle": "« {{card:P1.content}} »", "alt": "Recto de carte d'Action de groupe : {{card:P1.alt}}" },
-            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R2.content}} »", "alt": "Recto de carte de Rencontre : {{card:R2.alt}}" },
-            { "title": "Action de groupe (Violette)", "subtitle": "« {{card:P2.content}} »", "alt": "Recto de carte d'Action de groupe : {{card:P2.alt}}" },
-            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R3.content}} »", "alt": "Recto de carte de Rencontre : {{card:R3.alt}}" },
-            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R8.content}} »", "alt": "Recto de carte de Rencontre : {{card:R8.alt}}" },
-            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R26.content}} »", "alt": "Recto de carte de Rencontre : {{card:R26.alt}}" },
-            { "title": "Rencontre (Rouge)", "subtitle": "« {{card:R1.content}} »", "alt": "Recto de carte de Rencontre : {{card:R1.alt}}" }
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "« {{card:R22.content}} »", "alt": "Recto de carte de {{deck:encounter.name}} : {{card:R22.alt}}" },
+            { "title": "{{deck:movement.name}} ({{deck:movement.colour}})", "subtitle": "« {{card:G6.content}} »", "alt": "Recto de carte de {{deck:movement.name}} : {{card:G6.alt}}" },
+            { "title": "{{deck:group.name}} ({{deck:group.colour}})", "subtitle": "« {{card:P1.content}} »", "alt": "Recto de carte d'{{deck:group.name}} : {{card:P1.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "« {{card:R2.content}} »", "alt": "Recto de carte de {{deck:encounter.name}} : {{card:R2.alt}}" },
+            { "title": "{{deck:group.name}} ({{deck:group.colour}})", "subtitle": "« {{card:P2.content}} »", "alt": "Recto de carte d'{{deck:group.name}} : {{card:P2.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "« {{card:R3.content}} »", "alt": "Recto de carte de {{deck:encounter.name}} : {{card:R3.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "« {{card:R8.content}} »", "alt": "Recto de carte de {{deck:encounter.name}} : {{card:R8.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "« {{card:R26.content}} »", "alt": "Recto de carte de {{deck:encounter.name}} : {{card:R26.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "« {{card:R1.content}} »", "alt": "Recto de carte de {{deck:encounter.name}} : {{card:R1.alt}}" }
         ],
         "boardgameCardBacks": [
-            { "title": "Rouge | Rencontres", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle rouges, jaunes et orange." },
-            { "title": "Verte | Mouvement", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de vert." },
-            { "title": "Bleue | Réflexions", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de bleu." },
-            { "title": "Noire | Compte à rebours", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de noir et de gris." },
-            { "title": "Violette | Actions de groupe", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de violet." }
+            { "title": "{{deck:encounter.colour}} | {{deck:encounter.name}}", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle rouges, jaunes et orange." },
+            { "title": "{{deck:movement.colour}} | {{deck:movement.name}}", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de vert." },
+            { "title": "{{deck:reflection.colour}} | {{deck:reflection.name}}", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de bleu." },
+            { "title": "{{deck:countdown.colour}} | {{deck:countdown.name}}", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de noir et de gris." },
+            { "title": "{{deck:group.colour}} | {{deck:group.name}}", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de violet." }
         ],
         "manual": [
             { "title": "Couverture", "subtitle": "Le Manuel du jeu.", "alt": "La couverture du Manuel du jeu : Règles du jeu de JOURNEYWAYS, un jeu de société sur le devenir, sur un paysage à l'aquarelle." },

@@ -61,22 +61,22 @@
             { "title": "{{tile:T2.name}}", "subtitle": "Map tile.", "alt": "Map tile: {{tile:T2.name}}. {{tile:T2.alt}}" }
         ],
         "boardgameCardFronts": [
-            { "title": "Encounter (Red)", "subtitle": "“{{card:R22.content}}”", "alt": "Encounter card front: {{card:R22.alt}}" },
-            { "title": "Movement (Green)", "subtitle": "“{{card:G6.content}}”", "alt": "Movement card front: {{card:G6.alt}}" },
-            { "title": "Group action (Purple)", "subtitle": "“{{card:P1.content}}”", "alt": "Group action card front: {{card:P1.alt}}" },
-            { "title": "Encounter (Red)", "subtitle": "“{{card:R2.content}}”", "alt": "Encounter card front: {{card:R2.alt}}" },
-            { "title": "Group action (Purple)", "subtitle": "“{{card:P2.content}}”", "alt": "Group action card front: {{card:P2.alt}}" },
-            { "title": "Encounter (Red)", "subtitle": "“{{card:R3.content}}”", "alt": "Encounter card front: {{card:R3.alt}}" },
-            { "title": "Encounter (Red)", "subtitle": "“{{card:R8.content}}”", "alt": "Encounter card front: {{card:R8.alt}}" },
-            { "title": "Encounter (Red)", "subtitle": "“{{card:R26.content}}”", "alt": "Encounter card front: {{card:R26.alt}}" },
-            { "title": "Encounter (Red)", "subtitle": "“{{card:R1.content}}”", "alt": "Encounter card front: {{card:R1.alt}}" }
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R22.content}}”", "alt": "{{deck:encounter.name}} card front: {{card:R22.alt}}" },
+            { "title": "{{deck:movement.name}} ({{deck:movement.colour}})", "subtitle": "“{{card:G6.content}}”", "alt": "{{deck:movement.name}} card front: {{card:G6.alt}}" },
+            { "title": "{{deck:group.name}} ({{deck:group.colour}})", "subtitle": "“{{card:P1.content}}”", "alt": "{{deck:group.name}} card front: {{card:P1.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R2.content}}”", "alt": "{{deck:encounter.name}} card front: {{card:R2.alt}}" },
+            { "title": "{{deck:group.name}} ({{deck:group.colour}})", "subtitle": "“{{card:P2.content}}”", "alt": "{{deck:group.name}} card front: {{card:P2.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R3.content}}”", "alt": "{{deck:encounter.name}} card front: {{card:R3.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R8.content}}”", "alt": "{{deck:encounter.name}} card front: {{card:R8.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R26.content}}”", "alt": "{{deck:encounter.name}} card front: {{card:R26.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R1.content}}”", "alt": "{{deck:encounter.name}} card front: {{card:R1.alt}}" }
         ],
         "boardgameCardBacks": [
-            { "title": "Red | Encounters", "subtitle": "Card back.", "alt": "Card back in red, yellow and orange watercolor splotches." },
-            { "title": "Green | Movement", "subtitle": "Card back.", "alt": "Card back in shades of green watercolor splotches." },
-            { "title": "Blue | Reflections", "subtitle": "Card back.", "alt": "Card back in shades of blue watercolor splotches." },
-            { "title": "Black | Countdown", "subtitle": "Card back.", "alt": "Card back in shades of black and gray watercolor splotches." },
-            { "title": "Purple | Group actions", "subtitle": "Card back.", "alt": "Card back in shades of purple watercolor splotches." }
+            { "title": "{{deck:encounter.colour}} | {{deck:encounter.name}}", "subtitle": "Card back.", "alt": "Card back in red, yellow and orange watercolor splotches." },
+            { "title": "{{deck:movement.colour}} | {{deck:movement.name}}", "subtitle": "Card back.", "alt": "Card back in shades of green watercolor splotches." },
+            { "title": "{{deck:reflection.colour}} | {{deck:reflection.name}}", "subtitle": "Card back.", "alt": "Card back in shades of blue watercolor splotches." },
+            { "title": "{{deck:countdown.colour}} | {{deck:countdown.name}}", "subtitle": "Card back.", "alt": "Card back in shades of black and gray watercolor splotches." },
+            { "title": "{{deck:group.colour}} | {{deck:group.name}}", "subtitle": "Card back.", "alt": "Card back in shades of purple watercolor splotches." }
         ],
         "manual": [
             { "title": "Cover", "subtitle": "The Game Manual.", "alt": "The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape." },

@@ -41,11 +41,11 @@
             },
             "cards": {
                 "title": "Système de cartes à cinq couleurs",
-                "body": "Le même système de tuiles de carte et de piles de cartes que le jeu de société, recréé sous forme de canevas interactif. <span class=\"card-red\">Rouge</span> Rencontres, <span class=\"card-green\">Verte</span> Déplacement, <span class=\"card-blue\">Bleue</span> Réflexions, <span class=\"card-black\">Noire</span> Compte à rebours, <span class=\"card-purple\">Violette</span> Actions de groupe. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Parcourir les jeux de cartes</a>."
+                "body": "Le même système de tuiles de carte et de piles de cartes que le jeu de société, recréé sous forme de canevas interactif. <span class=\"card-red\">{{deck:encounter.colour}}</span> {{deck:encounter.name}}, <span class=\"card-green\">{{deck:movement.colour}}</span> {{deck:movement.name}}, <span class=\"card-blue\">{{deck:reflection.colour}}</span> {{deck:reflection.name}}, <span class=\"card-black\">{{deck:countdown.colour}}</span> {{deck:countdown.name}}, <span class=\"card-purple\">{{deck:group.colour}}</span> {{deck:group.name}}. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Parcourir les jeux de cartes</a>."
             },
             "table": {
                 "title": "La table de jeu partagée",
-                "body": "Toutes les cartes sont battues ensemble et distribuées en une poignée de piles inégales, face cachée, autour d'une table partagée, chacune montrant sa couleur au dos ; les tuiles de carte s'empilent de la même façon sur leur dos en bois. Choisissez le sommet d'une pile et il se retourne face visible pour que toute la salle le regarde, puis placez-le sur la table où vous voulez. La personne qui organise la partie peut fixer le nombre de cartes de Compte à rebours en jeu et rebattre le jeu en cours de partie, en demandant d'abord l'accord de chaque personne qui voyage."
+                "body": "Toutes les cartes sont battues ensemble et distribuées en une poignée de piles inégales, face cachée, autour d'une table partagée, chacune montrant sa couleur au dos ; les tuiles de carte s'empilent de la même façon sur leur dos en bois. Choisissez le sommet d'une pile et il se retourne face visible pour que toute la salle le regarde, puis placez-le sur la table où vous voulez. La personne qui organise la partie peut fixer le nombre de cartes de {{deck:countdown.name}} en jeu et rebattre le jeu en cours de partie, en demandant d'abord l'accord de chaque personne qui voyage."
             },
             "journal": {
                 "title": "Journal privé avec aperçu du croquis",

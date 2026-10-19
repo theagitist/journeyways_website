@@ -41,11 +41,11 @@
             },
             "cards": {
                 "title": "Five-color card system",
-                "body": "The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class=\"card-red\">Red</span> Encounters, <span class=\"card-green\">Green</span> Movement, <span class=\"card-blue\">Blue</span> Reflections, <span class=\"card-black\">Black</span> Countdown, <span class=\"card-purple\">Purple</span> Group actions. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse the decks</a>."
+                "body": "The same map-tile and card-pile system as the board game, recreated as an interactive canvas. <span class=\"card-red\">{{deck:encounter.colour}}</span> {{deck:encounter.name}}, <span class=\"card-green\">{{deck:movement.colour}}</span> {{deck:movement.name}}, <span class=\"card-blue\">{{deck:reflection.colour}}</span> {{deck:reflection.name}}, <span class=\"card-black\">{{deck:countdown.colour}}</span> {{deck:countdown.name}}, <span class=\"card-purple\">{{deck:group.colour}}</span> {{deck:group.name}}. <a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse the decks</a>."
             },
             "table": {
                 "title": "The shared game table",
-                "body": "Every card is shuffled together and dealt into a handful of uneven, face-down piles around a shared table, each showing its suit on the back; the map tiles stack the same way on their wooden backs. Pick the top of a pile and it turns face up for the whole room to look at, then place it on the table wherever you like. A game's organizer can set how many Countdown cards are in play and reshuffle the deck mid-game, with every traveller asked to agree first."
+                "body": "Every card is shuffled together and dealt into a handful of uneven, face-down piles around a shared table, each showing its suit on the back; the map tiles stack the same way on their wooden backs. Pick the top of a pile and it turns face up for the whole room to look at, then place it on the table wherever you like. A game's organizer can set how many {{deck:countdown.name}} cards are in play and reshuffle the deck mid-game, with every traveller asked to agree first."
             },
             "journal": {
                 "title": "Private journal with sketch preview",

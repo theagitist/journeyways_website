@@ -81,7 +81,7 @@
                 },
                 {
                     "title": "Un jeu plus grand : de nouvelles cartes dans toutes les piles",
-                    "body": "Le jeu est passé de 79 à 101 cartes. La pile Groupe (violette) est passée de quatre à seize, Mouvement (verte) de trois à douze, et Rencontre (rouge) a gagné huit nouvelles cartes, dont des cartes intercolores qui relient les piles. Quelques cartes répétées ou plates ont été retirées et la pile Compte à rebours a été réduite. Vous pouvez voir les nouvelles cartes dans la version numérique et dans la galerie de cartes ; le jeu imprimé suivra plus tard."
+                    "body": "Le jeu est passé de 79 à 101 cartes. La pile {{deck:group.name}} ({{deck:group.colour}}) est passée de quatre à seize, {{deck:movement.name}} ({{deck:movement.colour}}) de trois à douze, et {{deck:encounter.name}} ({{deck:encounter.colour}}) a gagné huit nouvelles cartes, dont des cartes intercolores qui relient les piles. Quelques cartes répétées ou plates ont été retirées et la pile {{deck:countdown.name}} a été réduite. Vous pouvez voir les nouvelles cartes dans la version numérique et dans la galerie de cartes ; le jeu imprimé suivra plus tard."
                 },
                 {
                     "title": "Reprise de toutes les illustrations des cartes et des tuiles",
@@ -121,7 +121,7 @@
                 },
                 {
                     "title": "Une table pour jouer",
-                    "body": "Les cartes et les tuiles de la carte reposent désormais sur une table partagée. Tout est mélangé en piles inégales et face cachée, chacune montrant sa couleur au dos et les tuiles sur leur dos en bois. Choisissez le dessus d'une pile et il se retourne face visible pour toute la salle, puis placez-le là où il convient. La personne qui organise peut choisir combien de cartes Compte à rebours sont en jeu et remélanger le paquet pendant une session, après avoir demandé l'accord de tout le monde."
+                    "body": "Les cartes et les tuiles de la carte reposent désormais sur une table partagée. Tout est mélangé en piles inégales et face cachée, chacune montrant sa couleur au dos et les tuiles sur leur dos en bois. Choisissez le dessus d'une pile et il se retourne face visible pour toute la salle, puis placez-le là où il convient. La personne qui organise peut choisir combien de cartes {{deck:countdown.name}} sont en jeu et remélanger le paquet pendant une session, après avoir demandé l'accord de tout le monde."
                 },
                 {
                     "title": "Un catalogue, tracé une seule fois",

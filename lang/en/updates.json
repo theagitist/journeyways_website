@@ -93,7 +93,7 @@
                 {
                     "type": "both",
                     "title": "A bigger deck: new cards across the piles",
-                    "body": "The card deck grew from 79 to 101 designs. The Group (purple) pile went from four to sixteen, Movement (green) from three to twelve, and the Encounter (red) pile gained eight new prompts, including a set of cross-colour cards that reach between the piles. A few repeated or flat cards were retired, and the Countdown pile was trimmed. You can see the new cards in the digital game and the card gallery; the printed deck follows later."
+                    "body": "The card deck grew from 79 to 101 designs. The {{deck:group.name}} ({{deck:group.colour}}) pile went from four to sixteen, {{deck:movement.name}} ({{deck:movement.colour}}) from three to twelve, and the {{deck:encounter.name}} ({{deck:encounter.colour}}) pile gained eight new prompts, including a set of cross-colour cards that reach between the piles. A few repeated or flat cards were retired, and the {{deck:countdown.name}} pile was trimmed. You can see the new cards in the digital game and the card gallery; the printed deck follows later."
                 },
                 {
                     "type": "both",
@@ -142,7 +142,7 @@
                 {
                     "type": "video",
                     "title": "A table to play on",
-                    "body": "The cards and map tiles now sit on a shared table. Everything is shuffled into uneven, face-down piles, each showing its suit on the back and the tiles on their wooden backs. Pick the top of a pile and it turns face up for the whole room to see, then place it wherever it belongs. An organizer can choose how many Countdown cards are in play and reshuffle the deck during a session, with everyone asked to agree first."
+                    "body": "The cards and map tiles now sit on a shared table. Everything is shuffled into uneven, face-down piles, each showing its suit on the back and the tiles on their wooden backs. Pick the top of a pile and it turns face up for the whole room to see, then place it wherever it belongs. An organizer can choose how many {{deck:countdown.name}} cards are in play and reshuffle the deck during a session, with everyone asked to agree first."
                 },
                 {
                     "type": "video",

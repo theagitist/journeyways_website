@@ -16,7 +16,7 @@
         {
             "aria": "Browse the card decks",
             "title": "Cards",
-            "desc": "Five decks of prompts and quotes, Encounter, Movement, Reflection, Countdown, and Group. Pick a deck to deal it out.",
+            "desc": "Five decks of prompts and quotes, {{deck:encounter.name}}, {{deck:movement.name}}, {{deck:reflection.name}}, {{deck:countdown.name}}, and {{deck:group.name}}. Pick a deck to deal it out.",
             "go": "Browse the decks"
         },
         {

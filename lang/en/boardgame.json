@@ -27,28 +27,28 @@
         "chips": [
             {
                 "alt": "Card back in red, yellow and orange watercolor splotches.",
-                "color": "Red",
-                "category": "Encounters"
+                "color": "{{deck:encounter.colour}}",
+                "category": "{{deck:encounter.name}}"
             },
             {
                 "alt": "Card back in shades of green watercolor splotches.",
-                "color": "Green",
-                "category": "Movement"
+                "color": "{{deck:movement.colour}}",
+                "category": "{{deck:movement.name}}"
             },
             {
                 "alt": "Card back in shades of blue watercolor splotches.",
-                "color": "Blue",
-                "category": "Reflections"
+                "color": "{{deck:reflection.colour}}",
+                "category": "{{deck:reflection.name}}"
             },
             {
                 "alt": "Card back in shades of black and gray watercolor splotches.",
-                "color": "Black",
-                "category": "Countdown"
+                "color": "{{deck:countdown.colour}}",
+                "category": "{{deck:countdown.name}}"
             },
             {
                 "alt": "Card back in shades of purple watercolor splotches.",
-                "color": "Purple",
-                "category": "Group actions"
+                "color": "{{deck:group.colour}}",
+                "category": "{{deck:group.name}}"
             }
         ],
         "browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse every card in the Components gallery</a>, deck by deck."
@@ -93,12 +93,12 @@
             {
                 "eyebrow": "Phase 2",
                 "title": "Pick",
-                "body_html": "Pick a card from any pile, even the Discard pile. <span class=\"card-green\">Green</span> cards are movement, <span class=\"card-black\">Black</span> cards are pass of time, <span class=\"card-blue\">Blue</span> cards are quotes, <span class=\"card-red\">Red</span> cards are encounters, <span class=\"card-purple\">Purple</span> cards are group events."
+                "body_html": "Pick a card from any pile, even the Discard pile. <span class=\"card-green\">{{deck:movement.colour}}</span> cards are movement, <span class=\"card-black\">{{deck:countdown.colour}}</span> cards are pass of time, <span class=\"card-blue\">{{deck:reflection.colour}}</span> cards are quotes, <span class=\"card-red\">{{deck:encounter.colour}}</span> cards are encounters, <span class=\"card-purple\">{{deck:group.colour}}</span> cards are group events."
             },
             {
                 "eyebrow": "Phase 3",
                 "title": "Reflect",
-                "body_html": "If you picked a <span class=\"card-green\">Green</span> or <span class=\"card-purple\">Purple</span> card, you have to perform the action it indicates. If you picked a <span class=\"card-blue\">Blue</span> or <span class=\"card-red\">Red</span> card, take into account what they say, and write a new entry in your journal. If you picked a <span class=\"card-black\">Black</span> card, set it apart. The game ends when the fifth <span class=\"card-black\">Black</span> card is picked."
+                "body_html": "If you picked a <span class=\"card-green\">{{deck:movement.colour}}</span> or <span class=\"card-purple\">{{deck:group.colour}}</span> card, you have to perform the action it indicates. If you picked a <span class=\"card-blue\">{{deck:reflection.colour}}</span> or <span class=\"card-red\">{{deck:encounter.colour}}</span> card, take into account what they say, and write a new entry in your journal. If you picked a <span class=\"card-black\">{{deck:countdown.colour}}</span> card, set it apart. The game ends when the fifth <span class=\"card-black\">{{deck:countdown.colour}}</span> card is picked."
             }
         ],
         "tiles_label_html": "<span class=\"tile-wood\">Map tiles</span>, twelve examples",
@@ -156,49 +156,49 @@
         "fronts_label": "Card fronts, nine examples",
         "fronts": [
             {
-                "alt": "Encounter card front: {{card:R22.alt}}",
-                "category": "Encounter",
-                "color": "Red"
+                "alt": "{{deck:encounter.name}} card front: {{card:R22.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Movement card front: {{card:G6.alt}}",
-                "category": "Movement",
-                "color": "Green"
+                "alt": "{{deck:movement.name}} card front: {{card:G6.alt}}",
+                "category": "{{deck:movement.name}}",
+                "color": "{{deck:movement.colour}}"
             },
             {
-                "alt": "Group action card front: {{card:P1.alt}}",
-                "category": "Group action",
-                "color": "Purple"
+                "alt": "{{deck:group.name}} card front: {{card:P1.alt}}",
+                "category": "{{deck:group.name}}",
+                "color": "{{deck:group.colour}}"
             },
             {
-                "alt": "Encounter card front: {{card:R2.alt}}",
-                "category": "Encounter",
-                "color": "Red"
+                "alt": "{{deck:encounter.name}} card front: {{card:R2.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Group action card front: {{card:P2.alt}}",
-                "category": "Group action",
-                "color": "Purple"
+                "alt": "{{deck:group.name}} card front: {{card:P2.alt}}",
+                "category": "{{deck:group.name}}",
+                "color": "{{deck:group.colour}}"
             },
             {
-                "alt": "Encounter card front: {{card:R3.alt}}",
-                "category": "Encounter",
-                "color": "Red"
+                "alt": "{{deck:encounter.name}} card front: {{card:R3.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Encounter card front: {{card:R8.alt}}",
-                "category": "Encounter",
-                "color": "Red"
+                "alt": "{{deck:encounter.name}} card front: {{card:R8.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Encounter card front: {{card:R26.alt}}",
-                "category": "Encounter",
-                "color": "Red"
+                "alt": "{{deck:encounter.name}} card front: {{card:R26.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Encounter card front: {{card:R1.alt}}",
-                "category": "Encounter",
-                "color": "Red"
+                "alt": "{{deck:encounter.name}} card front: {{card:R1.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             }
         ],
         "fronts_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Browse all the cards</a>, sorted by deck, in the Components gallery."
@@ -206,7 +206,7 @@
     "ending": {
         "stamp": "Ending",
         "sr_heading": "Ending",
-        "p1_html": "The game ends when the fifth <span class=\"card-black\">Black</span> card is picked. Each player can add a final entry to their journal, or just leave it as it is. If all players agree, you can end after any number of <span class=\"card-black\">Black</span> cards, or disregard them and use a timer, or stop whenever a story feels complete.",
+        "p1_html": "The game ends when the fifth <span class=\"card-black\">{{deck:countdown.colour}}</span> card is picked. Each player can add a final entry to their journal, or just leave it as it is. If all players agree, you can end after any number of <span class=\"card-black\">{{deck:countdown.colour}}</span> cards, or disregard them and use a timer, or stop whenever a story feels complete.",
         "p2": "It is okay if your story ends abruptly. You can leave it like that, or return to it on another session.",
         "p3": "After ending the game, each player can fill in their character sheet at the back of the player booklet. This way they can see how their character developed during the game: what changed, and what stayed the same.",
         "quote": "“The game is not about winning or losing. It is about discovering, exploring, and becoming.”"
@@ -223,7 +223,7 @@
         "intro": "Two ways to play. Choose either, or move between them.",
         "solo_heading": "Solo play",
         "solo": [
-            "Remove the <span class=\"card-purple\">Purple</span> cards from the game.",
+            "Remove the <span class=\"card-purple\">{{deck:group.colour}}</span> cards from the game.",
             "Focus on deep personal reflection.",
             "Take as much time as you need.",
             "Use journaling extensively.",

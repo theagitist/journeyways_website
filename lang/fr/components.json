@@ -16,7 +16,7 @@
         {
             "aria": "Parcours les paquets de cartes",
             "title": "Cartes",
-            "desc": "Cinq paquets de consignes et de citations : Rencontre, Déplacement, Réflexion, Compte à rebours et Groupe. Choisis un paquet pour le distribuer.",
+            "desc": "Cinq paquets de consignes et de citations : {{deck:encounter.name}}, {{deck:movement.name}}, {{deck:reflection.name}}, {{deck:countdown.name}} et {{deck:group.name}}. Choisis un paquet pour le distribuer.",
             "go": "Parcours les paquets"
         },
         {

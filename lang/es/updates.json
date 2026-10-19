@@ -81,7 +81,7 @@
                 },
                 {
                     "title": "Un mazo más grande: cartas nuevas en todas las pilas",
-                    "body": "El mazo creció de 79 a 101 diseños. La pila de Grupo (morada) pasó de cuatro a dieciséis, la de Movimiento (verde) de tres a doce, y la de Encuentro (roja) sumó ocho nuevas, incluidas unas cartas de color cruzado que conectan las pilas. Se retiraron algunas cartas repetidas o planas y se recortó la pila de Cuenta atrás. Ya puedes ver las cartas nuevas en la versión digital y en la galería de cartas; la baraja impresa llegará más adelante."
+                    "body": "El mazo creció de 79 a 101 diseños. La pila de {{deck:group.name}} ({{deck:group.colour}}) pasó de cuatro a dieciséis, la de {{deck:movement.name}} ({{deck:movement.colour}}) de tres a doce, y la de {{deck:encounter.name}} ({{deck:encounter.colour}}) sumó ocho nuevas, incluidas unas cartas de color cruzado que conectan las pilas. Se retiraron algunas cartas repetidas o planas y se recortó la pila de {{deck:countdown.name}}. Ya puedes ver las cartas nuevas en la versión digital y en la galería de cartas; la baraja impresa llegará más adelante."
                 },
                 {
                     "title": "Rehaciendo el arte de cartas y mosaicos",
@@ -121,7 +121,7 @@
                 },
                 {
                     "title": "Una mesa para jugar",
-                    "body": "Las cartas y las casillas del mapa ahora están sobre una mesa compartida. Todo se baraja en montones desiguales y boca abajo, cada uno con su palo en el reverso y las casillas con su dorso de madera. Elige la carta superior de un montón y se voltea boca arriba para que la vea toda la sala; luego colócala donde corresponda. Quien organiza puede decidir cuántas cartas de Cuenta atrás están en juego y volver a barajar el mazo durante una sesión, pidiendo antes el acuerdo de todo el mundo."
+                    "body": "Las cartas y las casillas del mapa ahora están sobre una mesa compartida. Todo se baraja en montones desiguales y boca abajo, cada uno con su palo en el reverso y las casillas con su dorso de madera. Elige la carta superior de un montón y se voltea boca arriba para que la vea toda la sala; luego colócala donde corresponda. Quien organiza puede decidir cuántas cartas de {{deck:countdown.name}} están en juego y volver a barajar el mazo durante una sesión, pidiendo antes el acuerdo de todo el mundo."
                 },
                 {
                     "title": "Un catálogo, trazado una sola vez",

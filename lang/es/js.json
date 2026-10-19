@@ -61,22 +61,22 @@
             { "title": "{{tile:T2.name}}", "subtitle": "Mosaico de mapa.", "alt": "Mosaico de mapa: {{tile:T2.name}}. {{tile:T2.alt}}" }
         ],
         "boardgameCardFronts": [
-            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R22.content}}”", "alt": "Anverso de carta de Encuentro: {{card:R22.alt}}" },
-            { "title": "Movimiento (Verde)", "subtitle": "“{{card:G6.content}}”", "alt": "Anverso de carta de Movimiento: {{card:G6.alt}}" },
-            { "title": "Acción de grupo (Morada)", "subtitle": "“{{card:P1.content}}”", "alt": "Anverso de carta de Acción de grupo: {{card:P1.alt}}" },
-            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R2.content}}”", "alt": "Anverso de carta de Encuentro: {{card:R2.alt}}" },
-            { "title": "Acción de grupo (Morada)", "subtitle": "“{{card:P2.content}}”", "alt": "Anverso de carta de Acción de grupo: {{card:P2.alt}}" },
-            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R3.content}}”", "alt": "Anverso de carta de Encuentro: {{card:R3.alt}}" },
-            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R8.content}}”", "alt": "Anverso de carta de Encuentro: {{card:R8.alt}}" },
-            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R26.content}}”", "alt": "Anverso de carta de Encuentro: {{card:R26.alt}}" },
-            { "title": "Encuentro (Roja)", "subtitle": "“{{card:R1.content}}”", "alt": "Anverso de carta de Encuentro: {{card:R1.alt}}" }
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R22.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R22.alt}}" },
+            { "title": "{{deck:movement.name}} ({{deck:movement.colour}})", "subtitle": "“{{card:G6.content}}”", "alt": "Anverso de carta de {{deck:movement.name}}: {{card:G6.alt}}" },
+            { "title": "{{deck:group.name}} ({{deck:group.colour}})", "subtitle": "“{{card:P1.content}}”", "alt": "Anverso de carta de {{deck:group.name}}: {{card:P1.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R2.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R2.alt}}" },
+            { "title": "{{deck:group.name}} ({{deck:group.colour}})", "subtitle": "“{{card:P2.content}}”", "alt": "Anverso de carta de {{deck:group.name}}: {{card:P2.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R3.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R3.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R8.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R8.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R26.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R26.alt}}" },
+            { "title": "{{deck:encounter.name}} ({{deck:encounter.colour}})", "subtitle": "“{{card:R1.content}}”", "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R1.alt}}" }
         ],
         "boardgameCardBacks": [
-            { "title": "Roja | Encuentros", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela rojas, amarillas y naranjas." },
-            { "title": "Verde | Movimiento", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de verde." },
-            { "title": "Azul | Reflexiones", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de azul." },
-            { "title": "Negra | Cuenta atrás", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de negro y gris." },
-            { "title": "Morada | Acciones de grupo", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de morado." }
+            { "title": "{{deck:encounter.colour}} | {{deck:encounter.name}}", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela rojas, amarillas y naranjas." },
+            { "title": "{{deck:movement.colour}} | {{deck:movement.name}}", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de verde." },
+            { "title": "{{deck:reflection.colour}} | {{deck:reflection.name}}", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de azul." },
+            { "title": "{{deck:countdown.colour}} | {{deck:countdown.name}}", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de negro y gris." },
+            { "title": "{{deck:group.colour}} | {{deck:group.name}}", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de morado." }
         ],
         "manual": [
             { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: Reglas del juego de JOURNEYWAYS, un juego de mesa sobre el devenir, sobre un paisaje en acuarela." },

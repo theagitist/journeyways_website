@@ -16,7 +16,7 @@
         {
             "aria": "Explora los mazos de cartas",
             "title": "Cartas",
-            "desc": "Cinco mazos de consignas y citas: Encuentro, Movimiento, Reflexión, Cuenta atrás y Grupo. Elige un mazo para repartirlo.",
+            "desc": "Cinco mazos de consignas y citas: {{deck:encounter.name}}, {{deck:movement.name}}, {{deck:reflection.name}}, {{deck:countdown.name}} y {{deck:group.name}}. Elige un mazo para repartirlo.",
             "go": "Explora los mazos"
         },
         {

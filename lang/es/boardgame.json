@@ -27,28 +27,28 @@
         "chips": [
             {
                 "alt": "Reverso de carta en manchas de acuarela rojas, amarillas y naranjas.",
-                "color": "Roja",
-                "category": "Encuentros"
+                "color": "{{deck:encounter.colour}}",
+                "category": "{{deck:encounter.name}}"
             },
             {
                 "alt": "Reverso de carta en tonos de manchas de acuarela verdes.",
-                "color": "Verde",
-                "category": "Movimiento"
+                "color": "{{deck:movement.colour}}",
+                "category": "{{deck:movement.name}}"
             },
             {
                 "alt": "Reverso de carta en tonos de manchas de acuarela azules.",
-                "color": "Azul",
-                "category": "Reflexiones"
+                "color": "{{deck:reflection.colour}}",
+                "category": "{{deck:reflection.name}}"
             },
             {
                 "alt": "Reverso de carta en tonos de manchas de acuarela negras y grises.",
-                "color": "Negra",
-                "category": "Cuenta atrás"
+                "color": "{{deck:countdown.colour}}",
+                "category": "{{deck:countdown.name}}"
             },
             {
                 "alt": "Reverso de carta en tonos de manchas de acuarela moradas.",
-                "color": "Morada",
-                "category": "Acciones de grupo"
+                "color": "{{deck:group.colour}}",
+                "category": "{{deck:group.name}}"
             }
         ],
         "browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora todas las cartas en la galería de Componentes</a>, mazo por mazo."
@@ -93,12 +93,12 @@
             {
                 "eyebrow": "Fase 2",
                 "title": "Elegir",
-                "body_html": "Elige una carta de cualquier pila, incluso de la pila de Descarte. Las cartas <span class=\"card-green\">Verdes</span> son de movimiento, las <span class=\"card-black\">Negras</span> son paso del tiempo, las <span class=\"card-blue\">Azules</span> son citas, las <span class=\"card-red\">Rojas</span> son encuentros y las <span class=\"card-purple\">Moradas</span> son eventos de grupo."
+                "body_html": "Elige una carta de cualquier pila, incluso de la pila de Descarte. Las cartas <span class=\"card-green\">{{deck:movement.colour_plural}}</span> son de movimiento, las <span class=\"card-black\">{{deck:countdown.colour_plural}}</span> son paso del tiempo, las <span class=\"card-blue\">{{deck:reflection.colour_plural}}</span> son citas, las <span class=\"card-red\">{{deck:encounter.colour_plural}}</span> son encuentros y las <span class=\"card-purple\">{{deck:group.colour_plural}}</span> son eventos de grupo."
             },
             {
                 "eyebrow": "Fase 3",
                 "title": "Reflexionar",
-                "body_html": "Si elegiste una carta <span class=\"card-green\">Verde</span> o <span class=\"card-purple\">Morada</span>, tienes que realizar la acción que indica. Si elegiste una carta <span class=\"card-blue\">Azul</span> o <span class=\"card-red\">Roja</span>, ten en cuenta lo que dice y escribe una nueva entrada en tu diario. Si elegiste una carta <span class=\"card-black\">Negra</span>, ponla aparte. La partida termina cuando se elige la quinta carta <span class=\"card-black\">Negra</span>."
+                "body_html": "Si elegiste una carta <span class=\"card-green\">{{deck:movement.colour}}</span> o <span class=\"card-purple\">{{deck:group.colour}}</span>, tienes que realizar la acción que indica. Si elegiste una carta <span class=\"card-blue\">{{deck:reflection.colour}}</span> o <span class=\"card-red\">{{deck:encounter.colour}}</span>, ten en cuenta lo que dice y escribe una nueva entrada en tu diario. Si elegiste una carta <span class=\"card-black\">{{deck:countdown.colour}}</span>, ponla aparte. La partida termina cuando se elige la quinta carta <span class=\"card-black\">{{deck:countdown.colour}}</span>."
             }
         ],
         "tiles_label_html": "<span class=\"tile-wood\">Mosaicos de mapa</span>, doce ejemplos",
@@ -156,49 +156,49 @@
         "fronts_label": "Anversos de las cartas, nueve ejemplos",
         "fronts": [
             {
-                "alt": "Anverso de carta de Encuentro: {{card:R22.alt}}",
-                "category": "Encuentro",
-                "color": "Roja"
+                "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R22.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Anverso de carta de Movimiento: {{card:G6.alt}}",
-                "category": "Movimiento",
-                "color": "Verde"
+                "alt": "Anverso de carta de {{deck:movement.name}}: {{card:G6.alt}}",
+                "category": "{{deck:movement.name}}",
+                "color": "{{deck:movement.colour}}"
             },
             {
-                "alt": "Anverso de carta de Acción de grupo: {{card:P1.alt}}",
-                "category": "Acción de grupo",
-                "color": "Morada"
+                "alt": "Anverso de carta de {{deck:group.name}}: {{card:P1.alt}}",
+                "category": "{{deck:group.name}}",
+                "color": "{{deck:group.colour}}"
             },
             {
-                "alt": "Anverso de carta de Encuentro: {{card:R2.alt}}",
-                "category": "Encuentro",
-                "color": "Roja"
+                "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R2.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Anverso de carta de Acción de grupo: {{card:P2.alt}}",
-                "category": "Acción de grupo",
-                "color": "Morada"
+                "alt": "Anverso de carta de {{deck:group.name}}: {{card:P2.alt}}",
+                "category": "{{deck:group.name}}",
+                "color": "{{deck:group.colour}}"
             },
             {
-                "alt": "Anverso de carta de Encuentro: {{card:R3.alt}}",
-                "category": "Encuentro",
-                "color": "Roja"
+                "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R3.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Anverso de carta de Encuentro: {{card:R8.alt}}",
-                "category": "Encuentro",
-                "color": "Roja"
+                "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R8.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Anverso de carta de Encuentro: {{card:R26.alt}}",
-                "category": "Encuentro",
-                "color": "Roja"
+                "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R26.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             },
             {
-                "alt": "Anverso de carta de Encuentro: {{card:R1.alt}}",
-                "category": "Encuentro",
-                "color": "Roja"
+                "alt": "Anverso de carta de {{deck:encounter.name}}: {{card:R1.alt}}",
+                "category": "{{deck:encounter.name}}",
+                "color": "{{deck:encounter.colour}}"
             }
         ],
         "fronts_browse_html": "<a href=\"%s\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">Explora todas las cartas</a>, ordenadas por mazo, en la galería de Componentes."
@@ -206,7 +206,7 @@
     "ending": {
         "stamp": "Final",
         "sr_heading": "Final",
-        "p1_html": "La partida termina cuando se elige la quinta carta <span class=\"card-black\">Negra</span>. Cada persona puede añadir una entrada final a su diario, o simplemente dejarlo como está. Si todas las personas están de acuerdo, pueden terminar tras cualquier número de cartas <span class=\"card-black\">Negras</span>, o ignorarlas y usar un temporizador, o parar cuando una historia se sienta completa.",
+        "p1_html": "La partida termina cuando se elige la quinta carta <span class=\"card-black\">{{deck:countdown.colour}}</span>. Cada persona puede añadir una entrada final a su diario, o simplemente dejarlo como está. Si todas las personas están de acuerdo, pueden terminar tras cualquier número de cartas <span class=\"card-black\">{{deck:countdown.colour_plural}}</span>, o ignorarlas y usar un temporizador, o parar cuando una historia se sienta completa.",
         "p2": "No pasa nada si tu historia termina de forma abrupta. Puedes dejarla así, o volver a ella en otra sesión.",
         "p3": "Al terminar la partida, cada persona puede rellenar su hoja de personaje al final del cuaderno de juego. Así puede ver cómo se desarrolló su personaje durante la partida: qué cambió y qué permaneció igual.",
         "quote": "“La partida no trata de ganar ni de perder. Trata de descubrir, explorar y devenir.”"
@@ -223,7 +223,7 @@
         "intro": "Dos formas de jugar. Elige una, o alterna entre ellas.",
         "solo_heading": "Juego en solitario",
         "solo": [
-            "Retira las cartas <span class=\"card-purple\">Moradas</span> del juego.",
+            "Retira las cartas <span class=\"card-purple\">{{deck:group.colour_plural}}</span> del juego.",
             "Céntrate en una reflexión personal profunda.",
             "Tómate todo el tiempo que necesites.",
             "Usa el diario con generosidad.",
