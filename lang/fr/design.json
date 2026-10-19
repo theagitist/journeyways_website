@@ -7,7 +7,7 @@
         "og_description": "Neuf notes sur la façon dont le jeu pense. Pourquoi chaque pièce fonctionne comme elle fonctionne."
     },
     "hero": {
-        "image_alt": "Tuile de Départ de JOURNEYWAYS : des tracés libres à l'encre et à l'aquarelle convergeant vers un chaud éclat ambré, parsemés de taches bleues, roses et dorées.",
+        "image_alt": "Tuile de carte : {{tile:T1.name}}. Des chemins d'encre et d'aquarelle qui convergent vers un éclat chaud d'ambre.",
         "eyebrow": "Philosophie de conception · Neuf notes",
         "title": "Comment le jeu fonctionne.",
         "tagline": "Neuf principes derrière chaque pièce, chaque règle, chaque silence à la table.",
@@ -27,7 +27,7 @@
     "identity": {
         "stamp": "Identité",
         "title": "L'identité se découvre.",
-        "fig_alt": "Illustration à l'aquarelle et à l'encre d'une boîte étiquetée Pas encore, une carte de Rencontre.",
+        "fig_alt": "Une caisse en bois nouée d'un ruban bleu et rose, la peinture coulant dessous.",
         "fig_caption": "« {{card:R22.content}} » <span class=\"card-red\">Carte de Rencontre</span>.",
         "body_1": "Dans JOURNEYWAYS, l'identité est tout ce que la personne qui joue décide qu'elle soit. Aussi vaste ou aussi menue. Aussi directe ou aussi oblique. Ancrée dans la vie réelle ou entièrement inventée. Réaliste. Fantastique. N'importe quoi.",
         "body_2": "Le contenu par défaut s'articule autour de l'identité de genre, en s'appuyant sur Judith Butler, Julia Serano, Susan Stryker et Kit Heyam, mais le cadre du jeu reste ouvert. Des personnes l'ont utilisé pour parler de la parentalité, du fait d'être étudiant international, d'une version plus jeune d'elles-mêmes qu'elles cherchaient à se rappeler. Une personne a choisi l'Eau comme identité. Pas une entité aquatique, rien d'anthropomorphisé, simplement l'Eau. Elle réfléchissait au sentiment d'être moins fluide qu'avant, et voulait y penser pendant son expérience de jeu.",
@@ -46,9 +46,9 @@
     "consent": {
         "stamp": "Consentement",
         "title": "La seule règle que le jeu impose, c'est le consentement à la table.",
-        "fig1_alt": "Tuile de carte intitulée {{tile:T10.name}} : le dessin au trait d'un pont en arc sur un lavis de taches d'aquarelle colorées.",
+        "fig1_alt": "Tuile de carte : {{tile:T10.name}}. Un pont de pierre en arc bordé de lanternes, sur une nuit bleu-vert mouchetée de rose et d'or.",
         "fig1_caption": "{{tile:T10.name}}. <span class=\"tile-wood\">Tuile de carte</span>.",
-        "fig2_alt": "Illustration à l'aquarelle et à l'encre d'un plan sans indications, une carte de Rencontre.",
+        "fig2_alt": "Un enchevêtrement de branches noires parsemé de fleurs bleues, roses et dorées.",
         "fig2_caption": "« {{card:R3.content}} » <span class=\"card-red\">Carte de Rencontre</span>.",
         "body_1": "Tout dans le jeu est modifiable. Les règles peuvent être modifiées, infléchies, brisées, ignorées. De nouvelles règles peuvent être inventées en cours de séance. Le seul élément immuable, c'est que le reste de la table soit d'accord.",
         "body_2": "Enfreindre les règles n'est pas un échec. C'est souvent la meilleure chose qui arrive dans une séance. Une fois, une personne a décidé de ne pas poser une tuile à côté de la carte existante, contre les règles. La tuile avait un thème spatial : elle a donc inventé sur le moment une mécanique de saut hyperspatial pour la relier. La rupture est devenue un moment charnière de la séance, et a inspiré d'autres personnes à être plus libres et plus créatives. De nombreuses modifications apportées par les personnes qui jouent finissent par être intégrées au livret de règles canonique.",
@@ -58,11 +58,11 @@
     "voice": {
         "stamp": "Voix",
         "title": "Conçu pour susciter, non pour fournir.",
-        "fig1_alt": "Illustration de carte à l'aquarelle : un souvenir qui pousse à l'état sauvage.",
+        "fig1_alt": "Un muret de pierre garni de pots de fleurs rouges et de petits souvenirs.",
         "fig1_caption": "{{card:R8.title}}. <span class=\"card-red\">Rencontre</span> (<span class=\"card-red\">Rouge</span>).",
-        "fig2_alt": "Illustration à l'aquarelle et à l'encre d'une petite maison au seuil chaud et éclairé.",
+        "fig2_alt": "Une petite maison à la porte rouge et à la fenêtre éclairée, entre des arbres pâles.",
         "fig2_caption": "{{card:G6.title}}. <span class=\"card-green\">Mouvement</span> (<span class=\"card-green\">Verte</span>).",
-        "fig3_alt": "Illustration de carte à l'aquarelle : deux figures qui se rencontrent.",
+        "fig3_alt": "Deux troncs qui s'enlacent en un seul, sous une canopée de fleurs colorées.",
         "fig3_caption": "{{card:P1.title}}. <span class=\"card-purple\">Action de groupe</span> (<span class=\"card-purple\">Violette</span>).",
         "body_1": "Les cartes sont écrites comme des gestes, non comme des situations. <span class=\"italic\">« {{card:R9.content}} »</span> <span class=\"italic\">« {{card:R6.content}} »</span> <span class=\"italic\">« {{card:R12.content}} »</span> Chacune est brève et ouverte. La personne qui joue fournit le concret.",
         "body_2": "Les cartes sont triées en piles de couleur, non en un seul paquet mélangé. Les <span class=\"card-red\">Rouges</span> sont les <span class=\"card-red\">Rencontres</span>. Les <span class=\"card-green\">Vertes</span> sont le <span class=\"card-green\">Mouvement</span>. Les <span class=\"card-blue\">Bleues</span> sont les <span class=\"card-blue\">Réflexions</span>, puisées dans un petit canon de pensée queer ({{card:B1.author}}, {{card:B21.author}}, {{card:B26.author}}, {{card:B4.author}}, {{card:B3.author}}, {{card:B10.author}} et d'autres). Les <span class=\"card-black\">Noires</span> sont <span class=\"card-black\">le passage du temps</span>. Les <span class=\"card-purple\">Violettes</span> sont les <span class=\"card-purple\">actions de groupe</span>. Les personnes qui jouent choisissent dans quelle pile prendre. Elles savent quel type de carte elles obtiendront ; mais pas exactement laquelle.",
@@ -72,11 +72,11 @@
     "meeting": {
         "stamp": "Rencontre",
         "title": "Un miroir dans une grotte n'est pas un miroir dans une salle de classe.",
-        "fig1_alt": "Tuile de carte : {{tile:T9.name}}.",
+        "fig1_alt": "Tuile de carte : {{tile:T9.name}}. L'entrée arrondie d'une grotte dans la pierre moussue, qui luit de rose et de bleu à l'intérieur.",
         "fig1_caption": "{{tile:T9.name}}. <span class=\"tile-wood\">Tuile de carte</span>.",
-        "fig2_alt": "Illustration de carte à l'aquarelle : un miroir fissuré.",
+        "fig2_alt": "Un miroir brisé, ses éclats projetés vers l'extérieur en bleu et orange.",
         "fig2_caption": "« {{card:R2.content}} » <span class=\"card-red\">Carte de Rencontre</span>.",
-        "fig3_alt": "Tuile de carte : {{tile:T11.name}}.",
+        "fig3_alt": "Tuile de carte : {{tile:T11.name}}. Un bureau avec un livre ouvert, un fauteuil rose et de hautes bibliothèques près d'une fenêtre lumineuse.",
         "fig3_caption": "{{tile:T11.name}}. <span class=\"tile-wood\">Tuile de carte</span>.",
         "body_1": "Le plateau est une carte. Les personnes qui jouent posent des tuiles pour la construire au fur et à mesure. L'endroit où l'on va sur la carte est lui-même une expression : vers quelle tuile on marche, si l'on avance en solitaire ou si l'on rejoint une autre personne, si l'on reste sur le sentier ou si l'on s'aventure ailleurs. Le mouvement ne sert pas qu'à aller quelque part : il fait partie du récit.",
         "body_2": "C'est la rencontre de deux composants qui engendre un récit. Une carte seule devient vite répétitive. Les tuiles seules sont trop immobiles. Le miroir résonne autrement dans la {{tile:T9.name}} qu'à la {{tile:T11.name}}. Un costume trouvé à la {{tile:T4.name}} n'est pas un costume trouvé sur le {{tile:T10.name}}. La mécanique, c'est la rencontre.",
@@ -95,7 +95,7 @@
     "hand": {
         "stamp": "Toucher",
         "title": "Simple et pourtant sensoriel. Les matériaux sont vôtres aussi.",
-        "fig_alt": "Tuile de carte intitulée {{tile:T5.name}} : la silhouette au trait d'un lac superposée à des taches d'aquarelle.",
+        "fig_alt": "Tuile de carte : {{tile:T5.name}}. Un lac immobile sous des nuages bleus, roses et dorés, un arbre solitaire reflété dans l'eau.",
         "fig_caption": "{{tile:T5.name}}. <span class=\"tile-wood\">Tuile de carte</span>.",
         "body_1": "Des tuiles en carton ou en bois. Un papier cartonné agréable au toucher. Un logotype dans une écriture qui veut être ludique et organique. Des illustrations au trait sur fond blanc, avec des taches d'aquarelle derrière. Les matériaux sont délibérés.",
         "body_2": "L'ouverture des matériaux l'est tout autant. On peut dessiner sur les tuiles. On peut inventer de nouvelles tuiles avec des notes autocollantes quand une personne a besoin d'un lieu qui n'existe pas encore sur la carte. Les composants ne présument pas de leur propre permanence. La souplesse du jeu descend jusqu'au carton.",
@@ -114,7 +114,7 @@
     "reach": {
         "stamp": "Portée",
         "title": "Fait pour être partagé. Fait pour être sûr.",
-        "fig_alt": "Illustration à l'aquarelle et à l'encre d'un feu de camp entouré de pierres.",
+        "fig_alt": "Un feu de camp qui brûle dans un cercle de pierres, la fumée montant vers un lavis bleu.",
         "fig_caption": "Rassemblées autour d'un même feu. <span class=\"card-purple\">Carte de Groupe</span>.",
         "body_1": "Le même engagement traverse deux ensembles de décisions.",
         "body_2": "<span class=\"text-gray-200 font-medium\">Reproductibilité.</span> Des polices libres. Du code libre. Du contenu sous Creative Commons. Aucune dépendance propriétaire. Le jeu peut être imprimé, modifié et republié sans obstacles de licence ni de ressources. Des gabarits pour les cartes, les tuiles et le cahier de personnage seront disponibles afin que chacun puisse créer sa propre version. Des variantes localisées du jeu de société peuvent être produites à travers le cadre. La version numérique sort en anglais, en espagnol et en français.",

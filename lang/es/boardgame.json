@@ -104,51 +104,51 @@
         "tiles_label_html": "<span class=\"tile-wood\">Mosaicos de mapa</span>, doce ejemplos",
         "tiles": [
             {
-                "alt": "Mosaico de mapa: {{tile:T5.name}}. Silueta de lago sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: {{tile:T5.name}}. Un lago en calma bajo nubes azules, rosas y doradas, con un árbol solitario reflejado en el agua.",
                 "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T10.name}}. Silueta de puente arqueado sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: {{tile:T10.name}}. Un puente de piedra en arco con farolas, sobre una noche azul verdosa salpicada de rosa y dorado.",
                 "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T9.name}}. Silueta de cueva sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: {{tile:T9.name}}. La boca redondeada de una cueva en piedra cubierta de musgo, con un resplandor rosa y azul en su interior.",
                 "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T7.name}}. Silueta de montaña en azules profundos con salpicaduras de tinta.",
+                "alt": "Mosaico de mapa: {{tile:T7.name}}. Una cima nevada sobre una aguada azul, por encima de laderas doradas salpicadas de rosa.",
                 "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T4.name}}. Una casa pequeña rodeada de coloridas salpicaduras de acuarela.",
+                "alt": "Mosaico de mapa: {{tile:T4.name}}. Una casita con la chimenea humeante, salpicada de rosa, azul y amarillo.",
                 "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T11.name}}. Silueta de habitación sobre manchas de acuarela.",
+                "alt": "Mosaico de mapa: {{tile:T11.name}}. Un escritorio con un libro abierto, un sillón rosa y altas estanterías junto a una ventana luminosa.",
                 "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T13.name}}. Un volcán en erupción con salpicaduras de tinta rojas, naranjas y negras ardientes.",
+                "alt": "Mosaico de mapa: {{tile:T13.name}}. Un volcán oscuro surcado de lava naranja incandescente, con vapor que sube hacia un azul pálido.",
                 "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T12.name}}. Un árbol desnudo con salpicaduras azul profundo y violeta por sus ramas.",
+                "alt": "Mosaico de mapa: {{tile:T12.name}}. Un árbol viejo y retorcido con un hueco en el tronco, donde brilla una pequeña luz.",
                 "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T3.name}}. Un dibujo lineal de un campo agrietado y fisurado con dos pequeños retoños.",
+                "alt": "Mosaico de mapa: {{tile:T3.name}}. Un campo de hierba sembrado de piedras gastadas, con pequeñas flores dibujadas en el borde.",
                 "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T6.name}}. Árboles desnudos que flanquean un sendero tranquilo entre dos laderas.",
+                "alt": "Mosaico de mapa: {{tile:T6.name}}. Un sendero entre hileras de árboles desnudos que se pierde en la niebla.",
                 "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T8.name}}. Sendero oscuro bajo un cielo sin estrellas.",
+                "alt": "Mosaico de mapa: {{tile:T8.name}}. Un camino de tierra serpenteante entre árboles desnudos, bajo un cielo nocturno de estrellas y color suave.",
                 "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Mosaico de mapa: {{tile:T2.name}}. Una estructura de juegos con tobogán y escalera, con salpicaduras de pintura multicolores.",
+                "alt": "Mosaico de mapa: {{tile:T2.name}}. Columpios vacíos, un tobogán y un balancín, con chorreones de pintura turquesa y naranja.",
                 "name": "{{tile:T2.name}}"
             }
         ],
@@ -156,47 +156,47 @@
         "fronts_label": "Anversos de las cartas, nueve ejemplos",
         "fronts": [
             {
-                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una caja etiquetada 'Todavía no'.",
+                "alt": "Anverso de carta de Encuentro: Una caja de madera atada con una cinta azul y rosa, con pintura que gotea debajo.",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Movimiento: una ilustración en acuarela y tinta de una casita con un umbral iluminado, un regreso a casa.",
+                "alt": "Anverso de carta de Movimiento: Una casita con la puerta roja y una ventana iluminada, entre árboles pálidos.",
                 "category": "Movimiento",
                 "color": "Verde"
             },
             {
-                "alt": "Anverso de carta de Acción de grupo: una ilustración en acuarela y tinta de dos figuras que se encuentran.",
+                "alt": "Anverso de carta de Acción de grupo: Dos troncos que se entrelazan en uno solo, bajo una copa de flores de colores.",
                 "category": "Acción de grupo",
                 "color": "Morada"
             },
             {
-                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un espejo agrietado.",
+                "alt": "Anverso de carta de Encuentro: Un espejo hecho añicos, con los fragmentos saliendo despedidos en azul y naranja.",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Acción de grupo: una acuarela de seis peones de colores apiñados.",
+                "alt": "Anverso de carta de Acción de grupo: Un círculo de piedras erguidas en una llanura verde.",
                 "category": "Acción de grupo",
                 "color": "Morada"
             },
             {
-                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un mapa sin direcciones.",
+                "alt": "Anverso de carta de Encuentro: Una maraña de ramas negras salpicada de flores azules, rosas y doradas.",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de un recuerdo que crece silvestre.",
+                "alt": "Anverso de carta de Encuentro: Un muro bajo de piedra con macetas de flores rojas y pequeños recuerdos.",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de dos figuras manchadas frente a frente.",
+                "alt": "Anverso de carta de Encuentro: Arcos rosas, turquesa y dorados que se expanden desde un punto, como un sonido.",
                 "category": "Encuentro",
                 "color": "Roja"
             },
             {
-                "alt": "Anverso de carta de Encuentro: una ilustración en acuarela y tinta de una figura con pensamientos que se dispersan en el viento.",
+                "alt": "Anverso de carta de Encuentro: Amplias líneas de tinta que dibujan el viento y arrastran pequeñas flores y puntos de color.",
                 "category": "Encuentro",
                 "color": "Roja"
             }

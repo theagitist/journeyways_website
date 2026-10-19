@@ -104,51 +104,51 @@
         "tiles_label_html": "<span class=\"tile-wood\">Map tiles</span>, twelve examples",
         "tiles": [
             {
-                "alt": "Map tile: {{tile:T5.name}}. Lake silhouette over watercolor splotches.",
+                "alt": "Map tile: {{tile:T5.name}}. A still lake under clouds of blue, pink and gold, a lone tree mirrored in the water.",
                 "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T10.name}}. Arched bridge silhouette over watercolor splotches.",
+                "alt": "Map tile: {{tile:T10.name}}. A stone arch bridge strung with lamps, crossing a deep blue-green night flecked with pink and gold.",
                 "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T9.name}}. Cave silhouette over watercolor splotches.",
+                "alt": "Map tile: {{tile:T9.name}}. A rounded cave mouth in mossy stone, glowing pink and blue inside.",
                 "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T7.name}}. Mountain silhouette in deep blues with ink splatters.",
+                "alt": "Map tile: {{tile:T7.name}}. A snowy peak against a blue wash, above golden slopes dotted with pink.",
                 "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T4.name}}. A small house surrounded by colorful watercolor splatters.",
+                "alt": "Map tile: {{tile:T4.name}}. A small cottage with a smoking chimney, splashed with pink, blue and yellow.",
                 "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T11.name}}. Room silhouette over watercolor splotches.",
+                "alt": "Map tile: {{tile:T11.name}}. A desk with an open book, a pink armchair and tall bookshelves beside a bright window.",
                 "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T13.name}}. A volcano erupting in fiery red, orange and black ink splatters.",
+                "alt": "Map tile: {{tile:T13.name}}. A dark volcano split by glowing orange lava, with steam rising into pale blue.",
                 "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T12.name}}. A bare tree with deep blue and violet splatters across its branches.",
+                "alt": "Map tile: {{tile:T12.name}}. A gnarled old tree with a hollow in its trunk, a small light glowing inside.",
                 "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T3.name}}. A line drawing of a cracked, fissured field with two small saplings.",
+                "alt": "Map tile: {{tile:T3.name}}. A grassy field scattered with weathered stones, small flowers drawn along its edge.",
                 "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T6.name}}. Bare trees flanking a quiet path between two hillsides.",
+                "alt": "Map tile: {{tile:T6.name}}. A path through rows of bare trees, fading into mist.",
                 "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T8.name}}. Dark path under a starless sky.",
+                "alt": "Map tile: {{tile:T8.name}}. A winding dirt path past bare trees, under a night sky of stars and soft colour.",
                 "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Map tile: {{tile:T2.name}}. A playground structure with slide and ladder, with multicolor paint splatters.",
+                "alt": "Map tile: {{tile:T2.name}}. Empty swings, a slide and a seesaw, with drips of teal and orange paint.",
                 "name": "{{tile:T2.name}}"
             }
         ],
@@ -156,47 +156,47 @@
         "fronts_label": "Card fronts, nine examples",
         "fronts": [
             {
-                "alt": "Encounter card front: a watercolor and ink illustration of a box labeled 'Not yet'.",
+                "alt": "Encounter card front: A wooden crate tied with a blue and pink ribbon, paint dripping beneath it.",
                 "category": "Encounter",
                 "color": "Red"
             },
             {
-                "alt": "Movement card front: a watercolor and ink illustration of a small house with a lit doorway, a homecoming.",
+                "alt": "Movement card front: A small house with a red door and a lit window, framed by pale trees.",
                 "category": "Movement",
                 "color": "Green"
             },
             {
-                "alt": "Group action card front: a watercolor and ink illustration of two figures meeting.",
+                "alt": "Group action card front: Two tree trunks twisting into one, under a canopy of colourful blossoms.",
                 "category": "Group action",
                 "color": "Purple"
             },
             {
-                "alt": "Encounter card front: a watercolor and ink illustration of a cracked mirror.",
+                "alt": "Encounter card front: A shattered mirror, its shards flying outward in blue and orange.",
                 "category": "Encounter",
                 "color": "Red"
             },
             {
-                "alt": "Group action card front: a watercolor of six colorful meeples huddled together.",
+                "alt": "Group action card front: A circle of standing stones on a green plain.",
                 "category": "Group action",
                 "color": "Purple"
             },
             {
-                "alt": "Encounter card front: a watercolor and ink illustration of a map without directions.",
+                "alt": "Encounter card front: A tangle of black branches dotted with blue, pink and gold flowers.",
                 "category": "Encounter",
                 "color": "Red"
             },
             {
-                "alt": "Encounter card front: a watercolor and ink illustration of a memory growing wild.",
+                "alt": "Encounter card front: A low stone wall lined with pots of red flowers and small keepsakes.",
                 "category": "Encounter",
                 "color": "Red"
             },
             {
-                "alt": "Encounter card front: a watercolor and ink illustration of two splotchy figures facing each other.",
+                "alt": "Encounter card front: Arcs of pink, teal and gold spreading out from one point, like a sound.",
                 "category": "Encounter",
                 "color": "Red"
             },
             {
-                "alt": "Encounter card front: a watercolor and ink illustration of a figure with thoughts scattering on the wind.",
+                "alt": "Encounter card front: Sweeping ink lines of wind carrying small flowers and dots of colour.",
                 "category": "Encounter",
                 "color": "Red"
             }

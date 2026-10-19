@@ -104,51 +104,51 @@
         "tiles_label_html": "<span class=\"tile-wood\">Tuiles de carte</span>, douze exemples",
         "tiles": [
             {
-                "alt": "Tuile de carte : {{tile:T5.name}}. Silhouette de lac sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : {{tile:T5.name}}. Un lac immobile sous des nuages bleus, roses et dorés, un arbre solitaire reflété dans l'eau.",
                 "name": "{{tile:T5.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T10.name}}. Silhouette de pont en arc sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : {{tile:T10.name}}. Un pont de pierre en arc bordé de lanternes, sur une nuit bleu-vert mouchetée de rose et d'or.",
                 "name": "{{tile:T10.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T9.name}}. Silhouette de grotte sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : {{tile:T9.name}}. L'entrée arrondie d'une grotte dans la pierre moussue, qui luit de rose et de bleu à l'intérieur.",
                 "name": "{{tile:T9.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T7.name}}. Silhouette de montagne dans des bleus profonds avec des éclaboussures d'encre.",
+                "alt": "Tuile de carte : {{tile:T7.name}}. Un sommet enneigé sur un lavis bleu, au-dessus de pentes dorées parsemées de rose.",
                 "name": "{{tile:T7.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T4.name}}. Une petite maison entourée d'éclaboussures d'aquarelle colorées.",
+                "alt": "Tuile de carte : {{tile:T4.name}}. Une petite maison à la cheminée fumante, éclaboussée de rose, de bleu et de jaune.",
                 "name": "{{tile:T4.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T11.name}}. Silhouette de pièce sur des taches d'aquarelle.",
+                "alt": "Tuile de carte : {{tile:T11.name}}. Un bureau avec un livre ouvert, un fauteuil rose et de hautes bibliothèques près d'une fenêtre lumineuse.",
                 "name": "{{tile:T11.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T13.name}}. Un volcan en éruption dans des éclaboussures d'encre rouges, orange et noires ardentes.",
+                "alt": "Tuile de carte : {{tile:T13.name}}. Un volcan sombre fendu de lave orange incandescente, d'où la vapeur monte vers un bleu pâle.",
                 "name": "{{tile:T13.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T12.name}}. Un arbre nu avec des éclaboussures bleu profond et violettes sur ses branches.",
+                "alt": "Tuile de carte : {{tile:T12.name}}. Un vieil arbre noueux au tronc creux, où brille une petite lumière.",
                 "name": "{{tile:T12.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T3.name}}. Un dessin au trait d'un champ craquelé et fissuré avec deux petits jeunes plants.",
+                "alt": "Tuile de carte : {{tile:T3.name}}. Un champ d'herbe parsemé de pierres usées, de petites fleurs dessinées en bordure.",
                 "name": "{{tile:T3.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T6.name}}. Des arbres nus dessinés à la main bordant un sentier tranquille entre deux coteaux.",
+                "alt": "Tuile de carte : {{tile:T6.name}}. Un sentier entre des rangées d'arbres nus, qui se perd dans la brume.",
                 "name": "{{tile:T6.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T8.name}}. Sentier sombre sous un ciel sans étoiles.",
+                "alt": "Tuile de carte : {{tile:T8.name}}. Un chemin de terre sinueux entre des arbres nus, sous un ciel nocturne d'étoiles et de couleurs douces.",
                 "name": "{{tile:T8.name}}"
             },
             {
-                "alt": "Tuile de carte : {{tile:T2.name}}. Une structure de jeux avec toboggan et échelle, avec des éclaboussures de peinture multicolores.",
+                "alt": "Tuile de carte : {{tile:T2.name}}. Des balançoires vides, un toboggan et une bascule, avec des coulures de peinture turquoise et orange.",
                 "name": "{{tile:T2.name}}"
             }
         ],
@@ -156,47 +156,47 @@
         "fronts_label": "Faces des cartes, neuf exemples",
         "fronts": [
             {
-                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'une boîte étiquetée « Pas encore ».",
+                "alt": "Face de carte Rencontre : Une caisse en bois nouée d'un ruban bleu et rose, la peinture coulant dessous.",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Mouvement : une illustration à l'aquarelle et à l'encre d'une petite maison au seuil éclairé, un retour au bercail.",
+                "alt": "Face de carte Mouvement : Une petite maison à la porte rouge et à la fenêtre éclairée, entre des arbres pâles.",
                 "category": "Mouvement",
                 "color": "Verte"
             },
             {
-                "alt": "Face de carte Action de groupe : une illustration à l'aquarelle et à l'encre de deux figures qui se rencontrent.",
+                "alt": "Face de carte Action de groupe : Deux troncs qui s'enlacent en un seul, sous une canopée de fleurs colorées.",
                 "category": "Action de groupe",
                 "color": "Violette"
             },
             {
-                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'un miroir fêlé.",
+                "alt": "Face de carte Rencontre : Un miroir brisé, ses éclats projetés vers l'extérieur en bleu et orange.",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Action de groupe : une aquarelle de six pions colorés blottis les uns contre les autres.",
+                "alt": "Face de carte Action de groupe : Un cercle de pierres levées dans une plaine verte.",
                 "category": "Action de groupe",
                 "color": "Violette"
             },
             {
-                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'une carte sans directions.",
+                "alt": "Face de carte Rencontre : Un enchevêtrement de branches noires parsemé de fleurs bleues, roses et dorées.",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'un souvenir qui pousse à l'état sauvage.",
+                "alt": "Face de carte Rencontre : Un muret de pierre garni de pots de fleurs rouges et de petits souvenirs.",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre de deux figures tachetées se faisant face.",
+                "alt": "Face de carte Rencontre : Des arcs roses, turquoise et dorés qui s'étendent à partir d'un point, comme un son.",
                 "category": "Rencontre",
                 "color": "Rouge"
             },
             {
-                "alt": "Face de carte Rencontre : une illustration à l'aquarelle et à l'encre d'une figure dont les pensées se dispersent au vent.",
+                "alt": "Face de carte Rencontre : De grandes lignes d'encre qui dessinent le vent et emportent de petites fleurs et des points de couleur.",
                 "category": "Rencontre",
                 "color": "Rouge"
             }

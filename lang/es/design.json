@@ -7,7 +7,7 @@
         "og_description": "Nueve notas sobre cómo piensa el juego. Por qué cada pieza funciona como funciona."
     },
     "hero": {
-        "image_alt": "Mosaico de Inicio de JOURNEYWAYS: trazos sueltos de tinta y acuarela que convergen en un cálido estallido ámbar, salpicado de manchas azules, rosas y doradas.",
+        "image_alt": "Mosaico de mapa: {{tile:T1.name}}. Caminos de tinta y acuarela que convergen en un estallido cálido de ámbar.",
         "eyebrow": "Filosofía de diseño · Nueve notas",
         "title": "Cómo funciona el juego.",
         "tagline": "Nueve principios detrás de cada pieza, cada regla, cada silencio en la mesa.",
@@ -27,7 +27,7 @@
     "identity": {
         "stamp": "Identidad",
         "title": "La identidad se descubre.",
-        "fig_alt": "Ilustración en acuarela y tinta de una caja etiquetada Todavía no, una carta de Encuentro.",
+        "fig_alt": "Una caja de madera atada con una cinta azul y rosa, con pintura que gotea debajo.",
         "fig_caption": "“{{card:R22.content}}” <span class=\"card-red\">Carta de Encuentro</span>.",
         "body_1": "En JOURNEYWAYS, la identidad es lo que cada persona decida que sea. Tan grande o tan pequeña. Tan directa o tan oblicua. Basada en la vida real o completamente inventada. Realista. Fantástica. Cualquier cosa.",
         "body_2": "El contenido por defecto gira en torno a la identidad de género, apoyándose en Judith Butler, Julia Serano, Susan Stryker y Kit Heyam, pero el marco del juego es abierto. Quienes juegan lo han usado para hablar de la maternidad y la paternidad, de ser estudiante internacional, de una versión más joven de sí que intentaban recordar. Una persona eligió el Agua como su identidad. No una entidad acuática, no algo antropomorfizado, simplemente Agua. Reflexionaba sobre sentirse menos fluida que antes, y quería pensar en ello durante su experiencia de juego.",
@@ -46,9 +46,9 @@
     "consent": {
         "stamp": "Consentimiento",
         "title": "La única regla que el juego impone es el consentimiento en la mesa.",
-        "fig1_alt": "Mosaico de mapa titulado {{tile:T10.name}}: el dibujo lineal de un puente arqueado sobre un lavado de manchas de acuarela de colores.",
+        "fig1_alt": "Mosaico de mapa: {{tile:T10.name}}. Un puente de piedra en arco con farolas, sobre una noche azul verdosa salpicada de rosa y dorado.",
         "fig1_caption": "{{tile:T10.name}}. <span class=\"tile-wood\">Mosaico de mapa</span>.",
-        "fig2_alt": "Ilustración en acuarela y tinta de un mapa sin indicaciones, una carta de Encuentro.",
+        "fig2_alt": "Una maraña de ramas negras salpicada de flores azules, rosas y doradas.",
         "fig2_caption": "“{{card:R3.content}}” <span class=\"card-red\">Carta de Encuentro</span>.",
         "body_1": "Todo en el juego es mutable. Las reglas se pueden modificar, doblar, romper, ignorar. Se pueden inventar reglas nuevas a mitad de sesión. Lo único inmutable es que el resto de la mesa esté de acuerdo.",
         "body_2": "Romper las reglas no es un fallo. A menudo es lo mejor que ocurre en una sesión. Una vez, una persona decidió no colocar un mosaico junto al mapa existente, en contra de las reglas. El mosaico tenía temática espacial, así que inventó sobre la marcha una mecánica de salto hiperespacial para conectarla. La ruptura se convirtió en un momento clave de la sesión, e inspiró a otras personas a ser más libres y creativas. Muchas modificaciones de quienes juegan acaban incorporándose al reglamento canónico.",
@@ -58,11 +58,11 @@
     "voice": {
         "stamp": "Voz",
         "title": "Diseñado para suscitar, no para proporcionar.",
-        "fig1_alt": "Ilustración de carta en acuarela: un recuerdo que crece silvestre.",
+        "fig1_alt": "Un muro bajo de piedra con macetas de flores rojas y pequeños recuerdos.",
         "fig1_caption": "{{card:R8.title}}. <span class=\"card-red\">Encuentro</span> (<span class=\"card-red\">Roja</span>).",
-        "fig2_alt": "Ilustración en acuarela y tinta de una casita con un umbral cálido e iluminado.",
+        "fig2_alt": "Una casita con la puerta roja y una ventana iluminada, entre árboles pálidos.",
         "fig2_caption": "{{card:G6.title}}. <span class=\"card-green\">Movimiento</span> (<span class=\"card-green\">Verde</span>).",
-        "fig3_alt": "Ilustración de carta en acuarela: dos figuras que se encuentran.",
+        "fig3_alt": "Dos troncos que se entrelazan en uno solo, bajo una copa de flores de colores.",
         "fig3_caption": "{{card:P1.title}}. <span class=\"card-purple\">Acción de grupo</span> (<span class=\"card-purple\">Morada</span>).",
         "body_1": "Las cartas están escritas como gestos, no como situaciones. <span class=\"italic\">“{{card:R9.content}}”</span> <span class=\"italic\">“{{card:R6.content}}”</span> <span class=\"italic\">“{{card:R12.content}}”</span> Cada una es breve y abierta. Quien juega aporta lo concreto.",
         "body_2": "Las cartas se ordenan en montones de colores, no en un único mazo barajado. Las <span class=\"card-red\">Rojas</span> son <span class=\"card-red\">Encuentros</span>. Las <span class=\"card-green\">Verdes</span> son <span class=\"card-green\">Movimiento</span>. Las <span class=\"card-blue\">Azules</span> son <span class=\"card-blue\">Reflexiones</span>, tomadas de un pequeño canon de pensamiento queer ({{card:B1.author}}, {{card:B21.author}}, {{card:B26.author}}, {{card:B4.author}}, {{card:B3.author}}, {{card:B10.author}} y más). Las <span class=\"card-black\">Negras</span> son <span class=\"card-black\">el paso del tiempo</span>. Las <span class=\"card-purple\">Moradas</span> son <span class=\"card-purple\">acciones de grupo</span>. Quienes juegan eligen de qué montón elegir. Saben qué tipo de carta obtendrán; pero no exactamente cuál.",
@@ -72,11 +72,11 @@
     "meeting": {
         "stamp": "Encuentro",
         "title": "Un espejo en una cueva no es un espejo en un aula.",
-        "fig1_alt": "Mosaico de mapa: {{tile:T9.name}}.",
+        "fig1_alt": "Mosaico de mapa: {{tile:T9.name}}. La boca redondeada de una cueva en piedra cubierta de musgo, con un resplandor rosa y azul en su interior.",
         "fig1_caption": "{{tile:T9.name}}. <span class=\"tile-wood\">Mosaico de mapa</span>.",
-        "fig2_alt": "Ilustración de carta en acuarela: un espejo agrietado.",
+        "fig2_alt": "Un espejo hecho añicos, con los fragmentos saliendo despedidos en azul y naranja.",
         "fig2_caption": "“{{card:R2.content}}” <span class=\"card-red\">Carta de Encuentro</span>.",
-        "fig3_alt": "Mosaico de mapa: Sala de Estudio.",
+        "fig3_alt": "Mosaico de mapa: {{tile:T11.name}}. Un escritorio con un libro abierto, un sillón rosa y altas estanterías junto a una ventana luminosa.",
         "fig3_caption": "Sala de Estudio. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "body_1": "El tablero es un mapa. Quienes juegan colocan mosaicos para construirlo sobre la marcha. Adónde vas en el mapa es en sí mismo una expresión: hacia qué mosaico caminas, si vas en solitario o te unes a otra persona, si sigues el sendero o te lanzas por tu cuenta. El movimiento no sirve solo para llegar a algún sitio: es parte del relato.",
         "body_2": "Que dos componentes se encuentren es lo que genera una historia. Una carta por sí sola se vuelve repetitiva enseguida. Los mosaicos por sí solos son demasiado quietos. El espejo aterriza de forma distinta dentro de la {{tile:T9.name}} que en la Sala de Estudio. Un disfraz hallado en la {{tile:T4.name}} no es un disfraz hallado en el {{tile:T10.name}}. La mecánica es el encuentro.",
@@ -95,7 +95,7 @@
     "hand": {
         "stamp": "Tacto",
         "title": "Sencillo y a la vez sensorial. Los materiales también son tuyos.",
-        "fig_alt": "Mosaico de mapa titulado {{tile:T5.name}}: la silueta lineal de un lago superpuesta sobre manchas de acuarela.",
+        "fig_alt": "Mosaico de mapa: {{tile:T5.name}}. Un lago en calma bajo nubes azules, rosas y doradas, con un árbol solitario reflejado en el agua.",
         "fig_caption": "{{tile:T5.name}}. <span class=\"tile-wood\">Mosaico de mapa</span>.",
         "body_1": "Mosaicos de cartón o de madera. Cartulina que se siente agradable en las manos. Un logotipo en una tipografía manuscrita que quiere sentirse lúdica y orgánica. Ilustraciones lineales sobre fondo blanco, con manchas de acuarela detrás. Los materiales son deliberados.",
         "body_2": "También lo es la apertura de los materiales. Se puede dibujar sobre los mosaicos. Se pueden inventar mosaicos nuevos con notas adhesivas cuando alguien necesita un lugar que todavía no existe en el mapa. Los componentes no dan por sentada su propia permanencia. La flexibilidad del juego llega hasta el cartón.",
@@ -114,7 +114,7 @@
     "reach": {
         "stamp": "Alcance",
         "title": "Hecho para compartirse. Hecho para ser seguro.",
-        "fig_alt": "Ilustración en acuarela y tinta de una fogata rodeada de piedras.",
+        "fig_alt": "Una fogata que arde dentro de un círculo de piedras, con el humo subiendo hacia una aguada azul.",
         "fig_caption": "Reunidas en torno a una misma hoguera. <span class=\"card-purple\">Carta de Grupo</span>.",
         "body_1": "El mismo compromiso recorre dos conjuntos de decisiones.",
         "body_2": "<span class=\"text-gray-200 font-medium\">Reproducibilidad.</span> Tipografías libres. Código abierto. Contenido bajo Creative Commons. Sin dependencias propietarias. El juego se puede imprimir, modificar y volver a publicar sin obstáculos de licencias ni de recursos. Habrá plantillas para las cartas, los mosaicos y el cuaderno de personaje, para que cualquiera pueda crear su propia versión. Se pueden producir variantes localizadas del juego de mesa a través del marco. La versión digital se lanza en inglés, español y francés.",
