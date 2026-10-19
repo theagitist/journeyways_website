@@ -113,7 +113,7 @@
                 },
                 {
                     "title": "Una mesa que muestra sus manos",
-                    "body": "La mesa compartida ahora se siente viva. Cuando eliges una carta o una casilla, viaja con el cursor hasta que la dejas, y todo el mundo la ve moverse, con el nombre de quien la sostiene, porque aquí nada es secreto. Las casillas pueden apilarse unas sobre otras en pequeños montones ordenados con un pequeño contador, y al mover la de arriba se revela la de debajo. En la parte inferior de la pantalla, una línea discreta le cuenta a la sala lo que ocurre: quién coloca una carta, mueve una casilla o escribe en su diario (nunca lo que escribió). Ábrela y la línea se despliega en un historial con marcas de tiempo escuetas."
+                    "body": "La mesa compartida ahora se siente viva. Cuando eliges una carta o una loseta, viaja con el cursor hasta que la dejas, y todo el mundo la ve moverse, con el nombre de quien la sostiene, porque aquí nada es secreto. Las losetas pueden apilarse unas sobre otras en pequeños montones ordenados con un pequeño contador, y al mover la de arriba se revela la de debajo. En la parte inferior de la pantalla, una línea discreta le cuenta a la sala lo que ocurre: quién coloca una carta, mueve una loseta o escribe en su diario (nunca lo que escribió). Ábrela y la línea se despliega en un historial con marcas de tiempo escuetas."
                 },
                 {
                     "title": "Un nuevo motor bajo la mesa",
@@ -121,11 +121,11 @@
                 },
                 {
                     "title": "Una mesa para jugar",
-                    "body": "Las cartas y las casillas del mapa ahora están sobre una mesa compartida. Todo se baraja en montones desiguales y boca abajo, cada uno con su palo en el reverso y las casillas con su dorso de madera. Elige la carta superior de un montón y se voltea boca arriba para que la vea toda la sala; luego colócala donde corresponda. Quien organiza puede decidir cuántas cartas de {{deck:countdown.name}} están en juego y volver a barajar el mazo durante una sesión, pidiendo antes el acuerdo de todo el mundo."
+                    "body": "Las cartas y las losetas del mapa ahora están sobre una mesa compartida. Todo se baraja en montones desiguales y boca abajo, cada uno con su palo en el reverso y las losetas con su dorso de madera. Elige la carta superior de un montón y se voltea boca arriba para que la vea toda la sala; luego colócala donde corresponda. Quien organiza puede decidir cuántas cartas de {{deck:countdown.name}} están en juego y volver a barajar el mazo durante una sesión, pidiendo antes el acuerdo de todo el mundo."
                 },
                 {
                     "title": "Un catálogo, trazado una sola vez",
-                    "body": "Cada carta y cada casilla se toman ahora de una única definición compartida, de modo que el catálogo de este sitio, tu panel y la mesa de juego en vivo muestran exactamente los mismos componentes. Cada uno se escala con nitidez al tamaño que necesite conservando sus proporciones reales: una carta sigue siendo una carta de póquer, una casilla sigue siendo un cuadrado tipo post-it, y la ilustración y el texto se encogen y crecen juntos."
+                    "body": "Cada carta y cada loseta se toman ahora de una única definición compartida, de modo que el catálogo de este sitio, tu panel y la mesa de juego en vivo muestran exactamente los mismos componentes. Cada uno se escala con nitidez al tamaño que necesite conservando sus proporciones reales: una carta sigue siendo una carta de póquer, una loseta sigue siendo un cuadrado tipo post-it, y la ilustración y el texto se encogen y crecen juntos."
                 }
             ]
         },
@@ -134,8 +134,8 @@
             "label": "Mayo de 2026",
             "items": [
                 {
-                    "title": "Cartas y casillas del mapa, en línea",
-                    "body": "El mazo completo y el mapa modular ahora tienen un catálogo en vivo que puedes explorar en el sitio: cada carta ordenada por palo, y cada casilla del mapa, incluidas las casillas en blanco que rellenas tú. Cada conjunto proviene del propio juego, así que el sitio web siempre muestra lo que de verdad está en juego. Consulta las <a href=\"%1$s\">cartas</a> y las <a href=\"%2$s\">casillas del mapa</a>."
+                    "title": "Cartas y losetas del mapa, en línea",
+                    "body": "El mazo completo y el mapa modular ahora tienen un catálogo en vivo que puedes explorar en el sitio: cada carta ordenada por palo, y cada loseta del mapa, incluidas las losetas en blanco que rellenas tú. Cada conjunto proviene del propio juego, así que el sitio web siempre muestra lo que de verdad está en juego. Consulta las <a href=\"%1$s\">cartas</a> y las <a href=\"%2$s\">losetas del mapa</a>."
                 },
                 {
                     "title": "Personal investigador, invitaciones y salas programadas",
@@ -235,7 +235,7 @@
             "items": [
                 {
                     "title": "Versión 1.0, y una segunda prueba de juego",
-                    "body": "La primera edición completa tomó forma: 35 casillas de mapa, 81 cartas repartidas en cinco montones codificados por color, el reglamento y un cuadernillo para escribir para cada participante. El juego se jugó con el grupo de investigación EDGES en UBC, una sesión con un grupo de investigación académico que repercutió directamente en el diseño."
+                    "body": "La primera edición completa tomó forma: 35 losetas de mapa, 81 cartas repartidas en cinco montones codificados por color, el reglamento y un cuadernillo para escribir para cada participante. El juego se jugó con el grupo de investigación EDGES en UBC, una sesión con un grupo de investigación académico que repercutió directamente en el diseño."
                 }
             ]
         },
@@ -245,7 +245,7 @@
             "items": [
                 {
                     "title": "Primera prueba de juego pública",
-                    "body": "JOURNEYWAYS participó en ProtoCON BC en Vancouver, una convención para probar prototipos de juegos, y conoció a sus primeras personas jugadoras. Ver a la gente elegir cartas, colocar casillas y doblar las reglas flexibles a su antojo es donde más aprende el juego."
+                    "body": "JOURNEYWAYS participó en ProtoCON BC en Vancouver, una convención para probar prototipos de juegos, y conoció a sus primeras personas jugadoras. Ver a la gente elegir cartas, colocar losetas y doblar las reglas flexibles a su antojo es donde más aprende el juego."
                 }
             ]
         },
@@ -265,7 +265,7 @@
             "items": [
                 {
                     "title": "Comienza el diseño",
-                    "body": "Comenzó el diseño general de JOURNEYWAYS: un juego de reglas flexibles sobre la identidad y el devenir, y la primera forma de sus casillas de mapa, sus cinco montones de cartas codificados por color y el cuadernillo para escribir."
+                    "body": "Comenzó el diseño general de JOURNEYWAYS: un juego de reglas flexibles sobre la identidad y el devenir, y la primera forma de sus losetas de mapa, sus cinco montones de cartas codificados por color y el cuadernillo para escribir."
                 }
             ]
         }

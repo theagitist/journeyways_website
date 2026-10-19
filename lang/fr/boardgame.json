@@ -58,8 +58,8 @@
         "sr_heading": "Mise en place",
         "need_heading": "Ce qu'il vous faut",
         "need": [
-            "Tuiles de carte (35).",
-            "Cartes de jeu (81).",
+            "Tuiles de plateau (47).",
+            "Cartes de jeu (101).",
             "Pions (1 par personne).",
             "Cahier de jeu (1 par personne).",
             "Quelques papiers autocollants.",
@@ -70,12 +70,12 @@
         "steps": [
             "Mélangez toutes les cartes ensemble et placez-les face cachée en trois piles.",
             "Choisissez une carte et placez-la à part, face visible. Ce sera la pile de Défausse.",
-            "Trouvez la tuile de Départ et mettez-la de côté. Mélangez toutes les autres et placez-les face cachée en trois piles.",
+            "Mélangez toutes les tuiles et placez-les face cachée en trois piles.",
             "Chaque personne prend un pion.",
             "Utilisez le dé pour déterminer qui commence. Par exemple, le plus grand nombre commence.",
-            "Placez la tuile de Départ au centre de la table.",
+            "La personne qui commence choisit une tuile dans n'importe quelle pile et la place au milieu de la table. C'est la première tuile, là où le voyage commence.",
             "À tour de rôle, chaque personne choisit une tuile dans n'importe quelle pile et la place à côté d'une tuile déjà posée. Si c'est une tuile vierge, remettez-la dans la pile et choisissez-en une autre.",
-            "Toutes les personnes placent leurs pions sur la tuile de Départ."
+            "Toutes les personnes placent leurs pions sur la première tuile."
         ],
         "figure_alt": "Photo en plongée d'une partie de JOURNEYWAYS prête à commencer : une grille de quatre par quatre de tuiles de carte au premier plan, le cahier de personnage et un étui de pions à gauche, et une pile de cartes de personnage derrière, sur une surface en bois.",
         "figcaption": "Tuiles, cartes, pions."

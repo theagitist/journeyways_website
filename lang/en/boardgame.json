@@ -58,8 +58,8 @@
         "sr_heading": "Setup",
         "need_heading": "What you'll need",
         "need": [
-            "Board tiles (35).",
-            "Game cards (81).",
+            "Board tiles (47).",
+            "Game cards (101).",
             "Player tokens (1 per player).",
             "Player booklet (1 per player).",
             "Some sticky notes.",
@@ -70,12 +70,12 @@
         "steps": [
             "Shuffle all cards together and place them face down in three piles.",
             "Pick one card and place it apart face up. This will be the Discard pile.",
-            "Find the Starter board tile and set it apart. Shuffle all others and place them face down in three piles.",
+            "Shuffle all the board tiles and place them face down in three piles.",
             "Each player takes one player token.",
             "Use the die to determine the starting player. For example, highest number goes first.",
-            "Place the Starter board tile in the center of the table.",
+            "The starting player picks a tile from any pile and places it in the middle of the table. This is the first tile, where the journey begins.",
             "Taking turns, each player picks a tile from any pile and places it adjacent to another previously placed tile. If it's a blank tile, put it back in the pile and pick again.",
-            "All players place their tokens on the Starter tile."
+            "All players place their tokens on the first tile."
         ],
         "figure_alt": "Top-down photo of a JOURNEYWAYS setup ready to begin: a four-by-four grid of map tiles in the foreground, the character booklet and a meeple case to the left, and a pile of character cards behind them on a wooden surface.",
         "figcaption": "Tiles, cards, tokens."
