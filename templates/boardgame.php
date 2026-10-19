@@ -23,7 +23,7 @@ $mapTiles = [
     ['/img/design/tile-tree-hollow.webp?v=3',         7],
     ['/img/design/tile-buried-names-field.webp?v=3',  8],
     ['/img/design/tile-misty-trail.webp?v=3',         9],
-    ['/img/design/tile-night-way.webp?v=3',          10],
+    ['/img/design/tile-night-way.webp?v=4',          10],
     ['/img/design/tile-abandoned-playground.webp?v=3', 11],
 ];
 // Card fronts: [image path, card-colour class, gallery index].
@@ -65,19 +65,19 @@ $cardFronts = [
                     </p>
                     <p class="text-sm md:text-base text-gray-400">
                         <?= te("$P.hero.rulebook_label") ?>
-                        <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=15" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=16" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=15" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
+                        <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=16" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=15" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
+                        <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=16" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.booklet_label") ?>
-                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=13" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=14" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=13" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
+                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=14" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=13" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
+                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=14" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
                     </p>
                 </div>
             </div>
