@@ -40,7 +40,7 @@ $previews = ['p01', 'p02', 'p03', 'p04', 'p05', 'p06', 'p15', 'p16'];
                 <h2 id="preview-heading" class="sr-only"><?= te("$P.preview_heading") ?></h2>
                 <div class="jw-pages">
 <?php foreach ($previews as $i => $img): $c = "$P.pages.$i"; ?>
-                    <figure class="jw-page"><img src="/img/booklet/<?= esc($img) ?>.webp?v=6" alt="<?= te("$c.alt") ?>" loading="lazy" onclick="openLightboxFromSet('booklet', <?= $i ?>)"><figcaption><?= te("$c.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/booklet/<?= esc($img) ?>.webp?v=7" alt="<?= te("$c.alt") ?>" loading="lazy" onclick="openLightboxFromSet('booklet', <?= $i ?>)"><figcaption><?= te("$c.caption") ?></figcaption></figure>
 <?php endforeach; ?>
                 </div>
             </section>
