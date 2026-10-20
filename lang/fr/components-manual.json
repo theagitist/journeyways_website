@@ -23,7 +23,7 @@
             "caption": "Couverture"
         },
         "1": {
-            "alt": "La page Préparation du jeu, avec une note de marge.",
+            "alt": "La page Préparation du jeu : nombre de personnes, ce qu'il te faut et la préparation initiale.",
             "caption": "Préparation du jeu"
         },
         "2": {
@@ -31,11 +31,11 @@
             "caption": "Déroulement de base"
         },
         "3": {
-            "alt": "Un exemple d'entrée de journal avec un volcan peint.",
+            "alt": "Un exemple d'entrée de journal, écrite à la main sur une page lignée.",
             "caption": "Une entrée de journal"
         },
         "4": {
-            "alt": "La page Jeu en solo et en groupe avec des meeples peints.",
+            "alt": "La page Jeu en solo et en groupe, avec un feu de camp peint.",
             "caption": "Solo et groupe"
         },
         "5": {

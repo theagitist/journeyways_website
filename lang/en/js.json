@@ -80,10 +80,10 @@
         ],
         "manual": [
             { "title": "Cover", "subtitle": "The Game Manual.", "alt": "The Game Manual cover: a round watercolour labyrinth above the Journeyways wordmark and the tagline a board game about becoming." },
-            { "title": "Game Setup", "subtitle": "Laying out the game.", "alt": "The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a side note." },
+            { "title": "Game Setup", "subtitle": "Laying out the game.", "alt": "The Game Setup page: what you will need and how to lay out the tiles and the five card piles." },
             { "title": "Basic Gameplay", "subtitle": "Explore, pick, reflect.", "alt": "The Basic Gameplay page: the three phases of a turn and a legend of the five card colours." },
-            { "title": "A journal entry", "subtitle": "An example of writing from the cards.", "alt": "A sample journal entry in a handwritten script, with a small painted volcano in the corner." },
-            { "title": "Solo and Group Play", "subtitle": "Playing alone or together.", "alt": "The Solo and Group Play page, with a photograph of painted meeples." },
+            { "title": "A journal entry", "subtitle": "An example of writing from the cards.", "alt": "A sample journal entry in a handwritten script, on a ruled page." },
+            { "title": "Solo and Group Play", "subtitle": "Playing alone or together.", "alt": "The Solo and Group Play page, with a painted campfire." },
             { "title": "Back cover", "subtitle": "A game about becoming.", "alt": "The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming." }
         ],
         "booklet": [

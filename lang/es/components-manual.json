@@ -23,7 +23,7 @@
             "caption": "Portada"
         },
         "1": {
-            "alt": "La página de Preparación del juego, con una nota al margen.",
+            "alt": "La página de Preparación del juego: número de personas, qué necesitas y la preparación inicial.",
             "caption": "Preparación del juego"
         },
         "2": {
@@ -31,11 +31,11 @@
             "caption": "Juego básico"
         },
         "3": {
-            "alt": "Una entrada de diario de ejemplo con un volcán pintado.",
+            "alt": "Una entrada de diario de ejemplo, escrita a mano en una página pautada.",
             "caption": "Una entrada de diario"
         },
         "4": {
-            "alt": "La página de Juego en solitario y en grupo con meeples pintados.",
+            "alt": "La página de Juego en solitario y en grupo, con una fogata pintada.",
             "caption": "Solo y grupo"
         },
         "5": {

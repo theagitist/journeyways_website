@@ -80,10 +80,10 @@
         ],
         "manual": [
             { "title": "Couverture", "subtitle": "Le Manuel du jeu.", "alt": "La couverture du Manuel du jeu : un labyrinthe rond à l'aquarelle au-dessus du logo Journeyways et de l'accroche un jeu de société sur le devenir." },
-            { "title": "Préparation du jeu", "subtitle": "Mise en place du jeu.", "alt": "La page Préparation du jeu : ce qu'il vous faut et comment disposer les tuiles et les cinq piles de cartes, avec une note de marge." },
+            { "title": "Préparation du jeu", "subtitle": "Mise en place du jeu.", "alt": "La page Préparation du jeu : ce qu'il vous faut et comment disposer les tuiles et les cinq piles de cartes." },
             { "title": "Déroulement de base", "subtitle": "Explorer, choisir, réfléchir.", "alt": "La page Déroulement de base : les trois phases d'un tour et une légende des cinq couleurs de carte." },
-            { "title": "Une entrée de journal", "subtitle": "Un exemple d'écriture à partir des cartes.", "alt": "Un exemple d'entrée de journal en écriture manuscrite, avec un petit volcan peint dans le coin." },
-            { "title": "Jeu en solo et en groupe", "subtitle": "Jouer en solo ou à plusieurs.", "alt": "La page Jeu en solo et en groupe, avec une photographie de meeples peints." },
+            { "title": "Une entrée de journal", "subtitle": "Un exemple d'écriture à partir des cartes.", "alt": "Un exemple d'entrée de journal en écriture manuscrite, sur une page lignée." },
+            { "title": "Jeu en solo et en groupe", "subtitle": "Jouer en solo ou à plusieurs.", "alt": "La page Jeu en solo et en groupe, avec un feu de camp peint." },
             { "title": "Quatrième de couverture", "subtitle": "Un jeu sur le devenir.", "alt": "La quatrième de couverture du manuel : la marque Journeyways, un code QR et l'accroche un jeu sur le devenir." }
         ],
         "booklet": [

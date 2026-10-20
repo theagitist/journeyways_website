@@ -80,10 +80,10 @@
         ],
         "manual": [
             { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: un laberinto redondo en acuarela sobre el logotipo Journeyways y el lema un juego de mesa sobre el devenir." },
-            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer las losetas y las cinco pilas de cartas, con una nota al margen." },
+            { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer las losetas y las cinco pilas de cartas." },
             { "title": "Juego básico", "subtitle": "Explorar, elegir, reflexionar.", "alt": "La página de Juego básico: las tres fases de un turno y una leyenda de los cinco colores de carta." },
-            { "title": "Una entrada de diario", "subtitle": "Un ejemplo de escritura a partir de las cartas.", "alt": "Una entrada de diario de ejemplo en letra manuscrita, con un pequeño volcán pintado en la esquina." },
-            { "title": "Juego en solitario y en grupo", "subtitle": "Jugar en solitario o en grupo.", "alt": "La página de Juego en solitario y en grupo, con una fotografía de meeples pintados." },
+            { "title": "Una entrada de diario", "subtitle": "Un ejemplo de escritura a partir de las cartas.", "alt": "Una entrada de diario de ejemplo en letra manuscrita, en una página pautada." },
+            { "title": "Juego en solitario y en grupo", "subtitle": "Jugar en solitario o en grupo.", "alt": "La página de Juego en solitario y en grupo, con una fogata pintada." },
             { "title": "Contraportada", "subtitle": "Un juego sobre el devenir.", "alt": "La contraportada del manual: el logotipo de Journeyways, un código QR y el lema un juego sobre el devenir." }
         ],
         "booklet": [
