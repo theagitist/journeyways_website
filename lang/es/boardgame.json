@@ -63,7 +63,6 @@
             "Peones (1 por persona).",
             "Cuaderno de juego (1 por persona).",
             "Algunas notas adhesivas.",
-            "Dado para elegir quién empieza (1).",
             "Bolígrafos y lápices."
         ],
         "initial_heading": "Preparación inicial",
@@ -72,7 +71,7 @@
             "Elige una carta y colócala aparte boca arriba. Será la pila de Descarte.",
             "Baraja todas las losetas y colócalas boca abajo en tres pilas.",
             "Cada persona toma un peón.",
-            "Usa el dado para determinar quién empieza. Por ejemplo, el número más alto va primero.",
+            "Decidan entre todas las personas quién empieza y un orden de turnos aproximado. Los turnos no tienen que ser rígidos: cada persona puede jugar cuando quiera, o dejar pasar un turno.",
             "Quien empieza elige una loseta de cualquier pila y la coloca en el centro de la mesa. Es el primer espacio, donde comienza el viaje.",
             "Por turnos, cada persona elige una loseta de cualquier pila y la coloca junto a otra ya colocada. Si es una loseta en blanco, vuelve a ponerla en la pila y elige otra.",
             "Todas las personas colocan sus peones en el primer espacio."

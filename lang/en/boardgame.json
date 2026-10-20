@@ -63,7 +63,6 @@
             "Player tokens (1 per player).",
             "Player booklet (1 per player).",
             "Some sticky notes.",
-            "Die for choosing the starting player (1).",
             "Pens and pencils."
         ],
         "initial_heading": "Initial setup",
@@ -72,7 +71,7 @@
             "Pick one card and place it apart face up. This will be the Discard pile.",
             "Shuffle all the board tiles and place them face down in three piles.",
             "Each player takes one player token.",
-            "Use the die to determine the starting player. For example, highest number goes first.",
+            "Choose together who starts and a rough turn order. Turns don't need to be rigid: anyone can play when they feel like it, or sit a turn out.",
             "The starting player picks a tile from any pile and places it in the middle of the table. This is the first tile, where the journey begins.",
             "Taking turns, each player picks a tile from any pile and places it adjacent to another previously placed tile. If it's a blank tile, put it back in the pile and pick again.",
             "All players place their tokens on the first tile."
