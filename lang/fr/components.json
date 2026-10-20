@@ -9,7 +9,7 @@
     "hero": {
         "eyebrow": "Composants",
         "title": "Les pièces du jeu.",
-        "subtitle": "Les cartes, les tuiles de carte, le cahier de jeu, le manuel, l'aide-mémoire et le guide d'animation.",
+        "subtitle": "Les cartes, les tuiles de carte, le cahier de jeu, le manuel, l'aide-mémoire, le guide d'animation et le compagnon des cartes.",
         "lead": "Choisis un composant pour l'explorer de près."
     },
     "cards": [
@@ -48,6 +48,12 @@
             "title": "Guide d'animation",
             "desc": "Comment animer une séance : les pions, les outils de sécurité, et commencer, terminer et prolonger une partie. Pour les soirées jeux, les classes, les ateliers et la recherche. En anglais.",
             "go": "Ouvre le guide"
+        },
+        {
+            "aria": "Découvre le Compagnon des cartes",
+            "title": "Compagnon des cartes",
+            "desc": "Toutes les cartes en anglais, en espagnol et en français, côte à côte, avec de la place pour les notes. Télécharge-le et imprime-le pour jouer les cartes anglaises dans ta langue.",
+            "go": "Ouvrir le compagnon"
         }
     ]
 }

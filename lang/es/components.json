@@ -9,7 +9,7 @@
     "hero": {
         "eyebrow": "Componentes",
         "title": "Las piezas del juego.",
-        "subtitle": "Las cartas, las losetas de mapa, el cuaderno de juego, el manual, la referencia rápida y la guía para facilitar.",
+        "subtitle": "Las cartas, las losetas de mapa, el cuaderno de juego, el manual, la referencia rápida, la guía para facilitar y el compañero de cartas.",
         "lead": "Elige un componente para explorarlo de cerca."
     },
     "cards": [
@@ -48,6 +48,12 @@
             "title": "Guía para facilitar",
             "desc": "Cómo acompañar una sesión: las fichas, las herramientas de seguridad y cómo empezar, terminar y alargar una partida. Para noches de juego, aulas, talleres e investigación. En inglés.",
             "go": "Abre la guía"
+        },
+        {
+            "aria": "Explora el Compañero de cartas",
+            "title": "Compañero de cartas",
+            "desc": "Todas las cartas en inglés, español y francés, lado a lado, con espacio para notas. Descárgalo e imprímelo para jugar las cartas en inglés en tu idioma.",
+            "go": "Abrir el compañero"
         }
     ]
 }

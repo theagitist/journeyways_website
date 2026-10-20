@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Compañero de cartas",
+        "description": "El Compañero de cartas de JOURNEYWAYS: todas las cartas en inglés, español y francés, lado a lado, con espacio para notas. Mira una vista previa o descarga el PDF para imprimirlo.",
+        "keywords": "JOURNEYWAYS compañero de cartas, traducciones de cartas, español, francés, cartas, juego de mesa",
+        "og_title": "JOURNEYWAYS | Compañero de cartas",
+        "og_description": "Todas las cartas de JOURNEYWAYS en inglés, español y francés. Descárgalo e imprímelo."
+    },
+    "back": "Volver a Componentes",
+    "title": "El Compañero de cartas",
+    "intro": "Todas las cartas del juego, en inglés, español y francés, lado a lado. Las cartas impresas están en inglés; el Compañero de cartas permite jugar en español o en francés buscando cada carta por su número. Cada carta tiene espacio para tus notas. Descárgalo e imprímelo, como el cuaderno de juego.",
+    "pages_hint": "Algunas de sus páginas. Elige una para verla de cerca.",
+    "download": {
+        "label": "Descargar · EN · ES · FR ↓",
+        "note": "PDF, un solo documento en los tres idiomas. Para imprimir en casa."
+    },
+    "preview_heading": "Vista previa del Compañero de cartas",
+    "pages": {
+        "0": {
+            "alt": "La portada del Compañero de cartas: el laberinto redondo en acuarela sobre el logotipo de Journeyways.",
+            "caption": "Portada"
+        },
+        "1": {
+            "alt": "La página de uso, en inglés, español y francés, con los colores de los cinco mazos.",
+            "caption": "Cómo usarlo"
+        },
+        "2": {
+            "alt": "Una página de cartas rojas de Encuentro: la ilustración y el número de cada carta, su texto en tres idiomas y líneas para notas.",
+            "caption": "Cartas de Encuentro"
+        },
+        "3": {
+            "alt": "Una página de cartas azules de Reflexión: citas en tres idiomas, con sus autorías y líneas para notas.",
+            "caption": "Cartas de Reflexión"
+        },
+        "4": {
+            "alt": "Una página de cartas moradas de Grupo en tres idiomas, con líneas para notas.",
+            "caption": "Cartas de Grupo"
+        }
+    }
+}

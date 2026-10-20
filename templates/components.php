@@ -13,6 +13,7 @@ $cards = [
     ['/components-manual',  "background-image: url('/img/rulebook_cover.webp?v=6');"],
     ['/components-quickref', "background-image: url('/img/quickref/card.webp?v=2');"],
     ['/components-facilitator', "background-image: url('/img/facilitator/pieces.webp?v=2');"],
+    ['/components-companion', "background-image: url('/img/companion/card.webp?v=1');"],
 ];
 ?>
 <style>

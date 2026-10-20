@@ -106,6 +106,13 @@
         ],
         "quickref": [
             {"title": "Quick reference", "subtitle": "The game on one page.", "alt": "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box."}
+        ],
+        "companion": [
+            {"title": "Cover", "subtitle": "Every card in three languages", "alt": "The Card Companion cover: the round watercolour labyrinth above the Journeyways wordmark."},
+            {"title": "How to use it", "subtitle": "Every card in three languages", "alt": "The how-to-use page, in English, Spanish and French, with the five deck colours."},
+            {"title": "Encounter cards", "subtitle": "Every card in three languages", "alt": "A page of red Encounter cards: each card's art and number, its text in three languages, and lines for notes."},
+            {"title": "Reflection cards", "subtitle": "Every card in three languages", "alt": "A page of blue Reflection cards: quotes in three languages, with their authors and lines for notes."},
+            {"title": "Group cards", "subtitle": "Every card in three languages", "alt": "A page of purple Group cards in three languages, with lines for notes."}
         ]
     }
 }

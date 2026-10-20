@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Card Companion",
+        "description": "The JOURNEYWAYS Card Companion: every card in English, Spanish and French, side by side, with space for notes. Preview it or download the PDF to print.",
+        "keywords": "JOURNEYWAYS card companion, card translations, Spanish, French, cards, board game",
+        "og_title": "JOURNEYWAYS | Card Companion",
+        "og_description": "Every JOURNEYWAYS card in English, Spanish and French. Download and print."
+    },
+    "back": "Back to Components",
+    "title": "The Card Companion",
+    "intro": "Every card in the game, in English, Spanish and French, side by side. The printed cards are in English; the Card Companion lets a table play in Spanish or French by finding each card by its number. Each card has space for your own notes. Download it and print it, like the player booklet.",
+    "pages_hint": "A few of its pages. Pick one to read it up close.",
+    "download": {
+        "label": "Download · EN · ES · FR ↓",
+        "note": "PDF, one document in all three languages. Print at home."
+    },
+    "preview_heading": "Card Companion preview",
+    "pages": {
+        "0": {
+            "alt": "The Card Companion cover: the round watercolour labyrinth above the Journeyways wordmark.",
+            "caption": "Cover"
+        },
+        "1": {
+            "alt": "The how-to-use page, in English, Spanish and French, with the five deck colours.",
+            "caption": "How to use it"
+        },
+        "2": {
+            "alt": "A page of red Encounter cards: each card's art and number, its text in three languages, and lines for notes.",
+            "caption": "Encounter cards"
+        },
+        "3": {
+            "alt": "A page of blue Reflection cards: quotes in three languages, with their authors and lines for notes.",
+            "caption": "Reflection cards"
+        },
+        "4": {
+            "alt": "A page of purple Group cards in three languages, with lines for notes.",
+            "caption": "Group cards"
+        }
+    }
+}

@@ -20,6 +20,7 @@ $pages = [
     '/components-tiles'   => ['0.6', 'monthly'],
     '/components-manual'  => ['0.6', 'monthly'],
     '/components-quickref'     => ['0.6', 'monthly'],
+    '/components-companion'    => ['0.6', 'monthly'],
     '/components-facilitator'  => ['0.6', 'monthly'],
     '/components-booklet' => ['0.6', 'monthly'],
     '/references'         => ['0.6', 'monthly'],

@@ -20,7 +20,9 @@
             "fr": "Français"
         },
         "facilitator_label": "Guía para facilitar (PDF, en inglés):",
-        "quickref_label": "Referencia rápida (PDF, en inglés):"
+        "quickref_label": "Referencia rápida (PDF, en inglés):",
+        "companion_label": "Compañero de cartas (PDF, EN · ES · FR):",
+        "companion_link": "Descargar"
     },
     "decks": {
         "stamp": "Mazos",

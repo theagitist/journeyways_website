@@ -12,6 +12,7 @@ return [
     '/components'       => ['key' => 'components',         'tpl' => 'components',         'langs' => $all],
     '/components-manual' => ['key' => 'components-manual', 'tpl' => 'components-manual',  'langs' => $all],
     '/components-quickref' => ['key' => 'components-quickref', 'tpl' => 'components-quickref', 'langs' => $all],
+    '/components-companion' => ['key' => 'components-companion', 'tpl' => 'components-companion', 'langs' => $all],
     '/components-facilitator' => ['key' => 'components-facilitator', 'tpl' => 'components-facilitator', 'langs' => $all],
     '/components-booklet' => ['key' => 'components-booklet', 'tpl' => 'components-booklet', 'langs' => $all],
     '/components-cards' => ['key' => 'components-cards',   'tpl' => 'components-cards',   'langs' => $all],

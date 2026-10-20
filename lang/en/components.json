@@ -9,7 +9,7 @@
     "hero": {
         "eyebrow": "Components",
         "title": "The pieces of the game.",
-        "subtitle": "The cards, the map tiles, the player booklet, the manual, the quick reference, and the facilitator's guide.",
+        "subtitle": "The cards, the map tiles, the player booklet, the manual, the quick reference, the facilitator's guide, and the card companion.",
         "lead": "Choose a component to explore it up close."
     },
     "cards": [
@@ -48,6 +48,12 @@
             "title": "Facilitator's Guide",
             "desc": "How to host a session: playing pieces, the safety tools, and starting, ending and extending a game. For game nights, classrooms, workshops and research. In English.",
             "go": "Open the guide"
+        },
+        {
+            "aria": "Explore the Card Companion",
+            "title": "Card Companion",
+            "desc": "Every card in English, Spanish and French, side by side, with space for notes. Download and print it to play the English cards in your language.",
+            "go": "Open the companion"
         }
     ]
 }

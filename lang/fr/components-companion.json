@@ -1,0 +1,40 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Compagnon des cartes",
+        "description": "Le Compagnon des cartes de JOURNEYWAYS : toutes les cartes en anglais, en espagnol et en français, côte à côte, avec de la place pour les notes. Feuillette-le ou télécharge le PDF pour l'imprimer.",
+        "keywords": "JOURNEYWAYS compagnon des cartes, traductions des cartes, espagnol, français, cartes, jeu de société",
+        "og_title": "JOURNEYWAYS | Compagnon des cartes",
+        "og_description": "Toutes les cartes de JOURNEYWAYS en anglais, en espagnol et en français. À télécharger et imprimer."
+    },
+    "back": "Retour aux composants",
+    "title": "Le Compagnon des cartes",
+    "intro": "Toutes les cartes du jeu, en anglais, en espagnol et en français, côte à côte. Les cartes imprimées sont en anglais ; le Compagnon des cartes permet de jouer en espagnol ou en français en retrouvant chaque carte par son numéro. Chaque carte a de la place pour tes notes. Télécharge-le et imprime-le, comme le cahier de jeu.",
+    "pages_hint": "Quelques-unes de ses pages. Choisis-en une pour la voir de près.",
+    "download": {
+        "label": "Télécharger · EN · ES · FR ↓",
+        "note": "PDF, un seul document dans les trois langues. À imprimer chez soi."
+    },
+    "preview_heading": "Aperçu du Compagnon des cartes",
+    "pages": {
+        "0": {
+            "alt": "La couverture du Compagnon des cartes : le labyrinthe rond à l'aquarelle au-dessus du logo Journeyways.",
+            "caption": "Couverture"
+        },
+        "1": {
+            "alt": "La page d'utilisation, en anglais, en espagnol et en français, avec les couleurs des cinq paquets.",
+            "caption": "Mode d'emploi"
+        },
+        "2": {
+            "alt": "Une page de cartes rouges Rencontre : l'illustration et le numéro de chaque carte, son texte en trois langues et des lignes pour les notes.",
+            "caption": "Cartes Rencontre"
+        },
+        "3": {
+            "alt": "Une page de cartes bleues Réflexion : des citations en trois langues, avec leurs autrices et auteurs et des lignes pour les notes.",
+            "caption": "Cartes Réflexion"
+        },
+        "4": {
+            "alt": "Une page de cartes violettes Groupe en trois langues, avec des lignes pour les notes.",
+            "caption": "Cartes Groupe"
+        }
+    }
+}

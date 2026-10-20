@@ -270,7 +270,7 @@ var gallerySets = {
     ],
     manual: [
         { src: 'img/manual/p01.webp?v=25', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
-        { src: 'img/manual/p05.webp?v=25', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p05.webp?v=26', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles.', title: 'Game Setup', subtitle: 'Laying out the game.' },
         { src: 'img/manual/p06.webp?v=25', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
         { src: 'img/manual/p09.webp?v=25', alt: 'A sample journal entry in a handwritten script, on a ruled page.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
         { src: 'img/manual/p10.webp?v=25', alt: 'The Solo and Group Play page, with a painted campfire.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
@@ -293,6 +293,13 @@ var gallerySets = {
         { src: 'img/facilitator/p09.webp?v=6', alt: "The Safety tools page: opting out, the lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, lines and veils, check-ins." },
         { src: 'img/facilitator/p13.webp?v=6', alt: "The Extending the game page, with two game cards side by side.", title: "Extending the game", subtitle: "Longer games and more sessions." },
         { src: 'img/facilitator/p14.webp?v=6', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
+    ],
+    companion: [
+        { src: 'img/companion/p01.webp?v=1', alt: "The Card Companion cover: the round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "Every card in three languages" },
+        { src: 'img/companion/p02.webp?v=1', alt: "The how-to-use page, in English, Spanish and French, with the five deck colours.", title: "How to use it", subtitle: "Every card in three languages" },
+        { src: 'img/companion/p03.webp?v=1', alt: "A page of red Encounter cards: each card's art and number, its text in three languages, and lines for notes.", title: "Encounter cards", subtitle: "Every card in three languages" },
+        { src: 'img/companion/p20.webp?v=1', alt: "A page of blue Reflection cards: quotes in three languages, with their authors and lines for notes.", title: "Reflection cards", subtitle: "Every card in three languages" },
+        { src: 'img/companion/p35.webp?v=1', alt: "A page of purple Group cards in three languages, with lines for notes.", title: "Group cards", subtitle: "Every card in three languages" }
     ],
     quickref: [
         { src: 'img/quickref/p01.webp?v=4', alt: "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box.", title: 'Quick reference', subtitle: 'The game on one page.' }

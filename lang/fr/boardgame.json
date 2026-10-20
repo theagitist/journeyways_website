@@ -20,7 +20,9 @@
             "fr": "Français"
         },
         "facilitator_label": "Guide d'animation (PDF, en anglais) :",
-        "quickref_label": "Aide-mémoire (PDF, en anglais) :"
+        "quickref_label": "Aide-mémoire (PDF, en anglais) :",
+        "companion_label": "Compagnon des cartes (PDF, EN · ES · FR) :",
+        "companion_link": "Télécharger"
     },
     "decks": {
         "stamp": "Paquets",
