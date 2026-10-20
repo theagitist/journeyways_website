@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Guía para facilitar",
+        "description": "La Guía para facilitar JOURNEYWAYS: cómo acompañar una sesión, desde las fichas y las herramientas de seguridad hasta empezar, terminar y alargar una partida, además de las sesiones de investigación. Previsualiza las páginas o descarga el PDF.",
+        "keywords": "guía de facilitación JOURNEYWAYS, cómo facilitar, herramientas de seguridad, tarjeta X, líneas y velos, taller, juego de mesa",
+        "og_title": "JOURNEYWAYS | Guía para facilitar",
+        "og_description": "Cómo acompañar una sesión de JOURNEYWAYS. Previsualiza las páginas o descarga el PDF."
+    },
+    "back": "Volver a Componentes",
+    "title": "La Guía para facilitar",
+    "intro": "Cómo acompañar una sesión de JOURNEYWAYS: tu papel, qué llevar, cómo abrir la mesa, las herramientas de seguridad, cómo empezar, terminar y alargar una partida, y las sesiones de investigación. Para noches de juego, aulas, talleres y estudios.",
+    "pages_hint": "Quince páginas. Elige cualquier página para leerla de cerca.",
+    "download": {
+        "en": "Download · English ↓",
+        "note": "PDF, unos 5,5 MB. Por ahora solo en inglés."
+    },
+    "preview_heading": "Vista previa de la guía",
+    "pages": {
+        "0": {
+            "alt": "La portada de la Guía para facilitar: un laberinto redondo en acuarela sobre el logotipo de Journeyways.",
+            "caption": "Portada"
+        },
+        "1": {
+            "alt": "La página de las fichas: cada persona puede usar la ficha que quiera, con una pintura de peones de colores.",
+            "caption": "Las fichas"
+        },
+        "2": {
+            "alt": "La página para abrir la sesión: qué decir a la mesa antes de empezar.",
+            "caption": "Abrir la sesión"
+        },
+        "3": {
+            "alt": "La página de herramientas de seguridad: retirarse, la tarjeta X, líneas y velos, y pausas para preguntar.",
+            "caption": "Herramientas de seguridad"
+        },
+        "4": {
+            "alt": "La página para alargar la partida, con tres cartas del juego en abanico.",
+            "caption": "Alargar la partida"
+        },
+        "5": {
+            "alt": "La página de sesiones de investigación: consentimiento, grabación, notas y retirada.",
+            "caption": "Sesiones de investigación"
+        }
+    }
+}

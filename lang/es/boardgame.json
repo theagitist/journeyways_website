@@ -18,7 +18,8 @@
             "en": "English",
             "es": "Español",
             "fr": "Français"
-        }
+        },
+        "facilitator_label": "Guía para facilitar (PDF, en inglés):"
     },
     "decks": {
         "stamp": "Mazos",

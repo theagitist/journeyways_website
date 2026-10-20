@@ -9,7 +9,7 @@
     "hero": {
         "eyebrow": "Components",
         "title": "The pieces of the game.",
-        "subtitle": "The cards, the map tiles, the player booklet, and the manual.",
+        "subtitle": "The cards, the map tiles, the player booklet, the manual, and the facilitator's guide.",
         "lead": "Choose a component to explore it up close."
     },
     "cards": [
@@ -36,6 +36,12 @@
             "title": "Game Manual",
             "desc": "How to set up and play JOURNEYWAYS, solo or in a group: the loose rules, the turn, and what each card colour means. Preview it or download it to print.",
             "go": "Open the manual"
+        },
+        {
+            "aria": "Explore the Facilitator's Guide",
+            "title": "Facilitator's Guide",
+            "desc": "How to host a session: playing pieces, the safety tools, and starting, ending and extending a game. For game nights, classrooms, workshops and research. In English.",
+            "go": "Open the guide"
         }
     ]
 }

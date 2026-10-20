@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Facilitator's Guide",
+        "description": "The JOURNEYWAYS Facilitator's Guide: how to host a session, from playing pieces and safety tools to starting, ending and extending a game, plus research sessions. Preview the pages or download the PDF.",
+        "keywords": "JOURNEYWAYS facilitator guide, how to host, game facilitation, safety tools, X-card, lines and veils, workshop, board game",
+        "og_title": "JOURNEYWAYS | Facilitator's Guide",
+        "og_description": "How to host a JOURNEYWAYS session. Preview the pages or download the PDF."
+    },
+    "back": "Back to Components",
+    "title": "The Facilitator's Guide",
+    "intro": "How to host a JOURNEYWAYS session: your role, what to bring, opening the table, the safety tools, starting, ending and extending a game, and research sessions. For game nights, classrooms, workshops and studies.",
+    "pages_hint": "Fifteen pages. Pick any page to read it up close.",
+    "download": {
+        "en": "Download · English ↓",
+        "note": "PDF, about 5.5 MB. English only for now."
+    },
+    "preview_heading": "Guide preview",
+    "pages": {
+        "0": {
+            "alt": "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark.",
+            "caption": "Cover"
+        },
+        "1": {
+            "alt": "The Playing pieces page: players can use any piece they like, with a painting of coloured pawns.",
+            "caption": "Playing pieces"
+        },
+        "2": {
+            "alt": "The Opening the session page: what to say to the table before play begins.",
+            "caption": "Opening the session"
+        },
+        "3": {
+            "alt": "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.",
+            "caption": "Safety tools"
+        },
+        "4": {
+            "alt": "The Extending the game page, with three game cards fanned out.",
+            "caption": "Extending the game"
+        },
+        "5": {
+            "alt": "The Research sessions page: consent, recording, notes and withdrawal.",
+            "caption": "Research sessions"
+        }
+    }
+}

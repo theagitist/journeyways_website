@@ -1,0 +1,44 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Guide d'animation",
+        "description": "Le Guide d'animation JOURNEYWAYS : comment animer une séance, des pions et des outils de sécurité jusqu'au début, à la fin et à la prolongation d'une partie, ainsi que les séances de recherche. Prévisualisez les pages ou téléchargez le PDF.",
+        "keywords": "guide d'animation JOURNEYWAYS, animer une partie, outils de sécurité, carte X, lignes et voiles, atelier, jeu de société",
+        "og_title": "JOURNEYWAYS | Guide d'animation",
+        "og_description": "Comment animer une séance de JOURNEYWAYS. Prévisualisez les pages ou téléchargez le PDF."
+    },
+    "back": "Retour aux Composants",
+    "title": "Le Guide d'animation",
+    "intro": "Comment animer une séance de JOURNEYWAYS : ton rôle, quoi apporter, ouvrir la table, les outils de sécurité, commencer, terminer et prolonger une partie, et les séances de recherche. Pour les soirées jeux, les classes, les ateliers et les études.",
+    "pages_hint": "Quinze pages. Choisissez n'importe quelle page pour la lire de près.",
+    "download": {
+        "en": "Download · English ↓",
+        "note": "PDF, environ 5,5 Mo. En anglais seulement pour l'instant."
+    },
+    "preview_heading": "Aperçu du guide",
+    "pages": {
+        "0": {
+            "alt": "La couverture du Guide d'animation : un labyrinthe rond à l'aquarelle au-dessus du logo Journeyways.",
+            "caption": "Couverture"
+        },
+        "1": {
+            "alt": "La page des pions : chaque personne peut utiliser le pion de son choix, avec une peinture de pions colorés.",
+            "caption": "Les pions"
+        },
+        "2": {
+            "alt": "La page pour ouvrir la séance : quoi dire à la table avant de commencer.",
+            "caption": "Ouvrir la séance"
+        },
+        "3": {
+            "alt": "La page des outils de sécurité : se retirer, la carte X, les lignes et voiles, et les points d'étape.",
+            "caption": "Outils de sécurité"
+        },
+        "4": {
+            "alt": "La page pour prolonger la partie, avec trois cartes du jeu en éventail.",
+            "caption": "Prolonger la partie"
+        },
+        "5": {
+            "alt": "La page des séances de recherche : consentement, enregistrement, notes et retrait.",
+            "caption": "Séances de recherche"
+        }
+    }
+}

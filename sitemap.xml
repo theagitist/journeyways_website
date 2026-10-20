@@ -331,6 +331,36 @@
     <priority>0.6</priority>
   </url>
   <url>
+    <loc>https://www.journeyways.ca/components-facilitator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-facilitator.html"/>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/es/components-facilitator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-facilitator.html"/>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.journeyways.ca/fr/components-facilitator.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.journeyways.ca/fr/components-facilitator.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.journeyways.ca/components-facilitator.html"/>
+    <lastmod>2026-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://www.journeyways.ca/components-booklet.html</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://www.journeyways.ca/components-booklet.html"/>
     <xhtml:link rel="alternate" hreflang="es" href="https://www.journeyways.ca/es/components-booklet.html"/>

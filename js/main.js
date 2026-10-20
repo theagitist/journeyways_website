@@ -285,6 +285,14 @@ var gallerySets = {
         { src: 'img/booklet/p06.webp?v=7', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
         { src: 'img/booklet/p15.webp?v=7', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
         { src: 'img/booklet/p16.webp?v=7', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+    ],
+    facilitator: [
+        { src: 'img/facilitator/p01.webp?v=1', alt: "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "The Facilitator's Guide." },
+        { src: 'img/facilitator/p06.webp?v=1', alt: "The Playing pieces page: players can use any piece they like, with a painting of coloured pawns.", title: "Playing pieces", subtitle: "Anything can be a piece." },
+        { src: 'img/facilitator/p07.webp?v=1', alt: "The Opening the session page: what to say to the table before play begins.", title: "Opening the session", subtitle: "What to say before you begin." },
+        { src: 'img/facilitator/p08.webp?v=1', alt: "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, X-card, lines and veils." },
+        { src: 'img/facilitator/p12.webp?v=1', alt: "The Extending the game page, with three game cards fanned out.", title: "Extending the game", subtitle: "Longer games and more sessions." },
+        { src: 'img/facilitator/p13.webp?v=1', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
     ]
 };
 var currentSet = 'photos';

@@ -11,6 +11,7 @@ return [
     '/about.html'            => ['key' => 'about',              'tpl' => 'about',              'langs' => $all],
     '/components.html'       => ['key' => 'components',         'tpl' => 'components',         'langs' => $all],
     '/components-manual.html' => ['key' => 'components-manual', 'tpl' => 'components-manual',  'langs' => $all],
+    '/components-facilitator.html' => ['key' => 'components-facilitator', 'tpl' => 'components-facilitator', 'langs' => $all],
     '/components-booklet.html' => ['key' => 'components-booklet', 'tpl' => 'components-booklet', 'langs' => $all],
     '/components-cards.html' => ['key' => 'components-cards',   'tpl' => 'components-cards',   'langs' => $all],
     '/components-tiles.html' => ['key' => 'components-tiles',   'tpl' => 'components-tiles',   'langs' => $all],

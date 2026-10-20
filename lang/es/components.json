@@ -9,7 +9,7 @@
     "hero": {
         "eyebrow": "Componentes",
         "title": "Las piezas del juego.",
-        "subtitle": "Las cartas, las losetas de mapa, el cuaderno de juego y el manual.",
+        "subtitle": "Las cartas, las losetas de mapa, el cuaderno de juego, el manual y la guía para facilitar.",
         "lead": "Elige un componente para explorarlo de cerca."
     },
     "cards": [
@@ -36,6 +36,12 @@
             "title": "Manual del juego",
             "desc": "Cómo preparar y jugar a JOURNEYWAYS, en solitario o en grupo: las reglas flexibles, el turno y lo que significa cada color de carta. Puedes verlo o descargarlo para imprimirlo.",
             "go": "Abre el manual"
+        },
+        {
+            "aria": "Descubre la Guía para facilitar",
+            "title": "Guía para facilitar",
+            "desc": "Cómo acompañar una sesión: las fichas, las herramientas de seguridad y cómo empezar, terminar y alargar una partida. Para noches de juego, aulas, talleres e investigación. En inglés.",
+            "go": "Abre la guía"
         }
     ]
 }

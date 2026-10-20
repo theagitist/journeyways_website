@@ -79,6 +79,10 @@ $cardFronts = [
                         &middot;
                         <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=17" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
                     </p>
+                    <p class="text-sm md:text-base text-gray-400 mt-1">
+                        <?= te("$P.hero.facilitator_label") ?>
+                        <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=1" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                    </p>
                 </div>
             </div>
         </div>

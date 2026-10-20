@@ -9,7 +9,7 @@
     "hero": {
         "eyebrow": "Composants",
         "title": "Les pièces du jeu.",
-        "subtitle": "Les cartes, les tuiles de carte, le cahier de jeu et le manuel.",
+        "subtitle": "Les cartes, les tuiles de carte, le cahier de jeu, le manuel et le guide d'animation.",
         "lead": "Choisis un composant pour l'explorer de près."
     },
     "cards": [
@@ -36,6 +36,12 @@
             "title": "Manuel du jeu",
             "desc": "Comment préparer et jouer à JOURNEYWAYS, en solo ou en groupe : les règles souples, le tour de jeu et ce que signifie chaque couleur de carte. Tu peux le prévisualiser ou le télécharger pour l'imprimer.",
             "go": "Ouvre le manuel"
+        },
+        {
+            "aria": "Découvre le Guide d'animation",
+            "title": "Guide d'animation",
+            "desc": "Comment animer une séance : les pions, les outils de sécurité, et commencer, terminer et prolonger une partie. Pour les soirées jeux, les classes, les ateliers et la recherche. En anglais.",
+            "go": "Ouvre le guide"
         }
     ]
 }

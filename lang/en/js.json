@@ -95,6 +95,14 @@
             { "title": "Journal Page", "subtitle": "Lined pages to write and draw your story.", "alt": "A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds." },
             { "title": "Character Sheet", "subtitle": "Who you have become.", "alt": "The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections." },
             { "title": "Back cover", "subtitle": "A game about becoming.", "alt": "The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming." }
+        ],
+        "facilitator": [
+            {"title": "Cover", "subtitle": "The Facilitator's Guide.", "alt": "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark."},
+            {"title": "Playing pieces", "subtitle": "Anything can be a piece.", "alt": "The Playing pieces page: players can use any piece they like, with a painting of coloured pawns."},
+            {"title": "Opening the session", "subtitle": "What to say before you begin.", "alt": "The Opening the session page: what to say to the table before play begins."},
+            {"title": "Safety tools", "subtitle": "Opt out, X-card, lines and veils.", "alt": "The Safety tools page: opting out, the X-card, lines and veils, and check-ins."},
+            {"title": "Extending the game", "subtitle": "Longer games and more sessions.", "alt": "The Extending the game page, with three game cards fanned out."},
+            {"title": "Research sessions", "subtitle": "When a session is part of a study.", "alt": "The Research sessions page: consent, recording, notes and withdrawal."}
         ]
     }
 }
