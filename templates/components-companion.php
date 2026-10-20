@@ -26,7 +26,7 @@ $P = 'pages.components-companion';
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.intro") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.pages_hint") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=1" download class="jw-dl"><?= t("$P.download.label") ?></a>
+                    <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=2" download class="jw-dl"><?= t("$P.download.label") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.download.note") ?></p>
             </header>
@@ -35,10 +35,10 @@ $P = 'pages.components-companion';
                 <h2 id="preview-heading" class="sr-only"><?= te("$P.preview_heading") ?></h2>
                 <div class="jw-pages">
                     <figure class="jw-page"><img src="/img/companion/p01.webp?v=1" alt="<?= te("$P.pages.0.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 0)"><figcaption><?= te("$P.pages.0.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/companion/p02.webp?v=1" alt="<?= te("$P.pages.1.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 1)"><figcaption><?= te("$P.pages.1.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/companion/p03.webp?v=1" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/companion/p20.webp?v=1" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/companion/p35.webp?v=1" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/companion/p02.webp?v=2" alt="<?= te("$P.pages.1.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 1)"><figcaption><?= te("$P.pages.1.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/companion/p03.webp?v=2" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/companion/p24.webp?v=2" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/companion/p34.webp?v=2" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('companion', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
                 </div>
             </section>
         </div>

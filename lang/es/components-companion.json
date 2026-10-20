@@ -29,12 +29,12 @@
             "caption": "Cartas de Encuentro"
         },
         "3": {
-            "alt": "Una página de cartas azules de Reflexión: citas en tres idiomas, con sus autorías y líneas para notas.",
-            "caption": "Cartas de Reflexión"
-        },
-        "4": {
             "alt": "Una página de cartas moradas de Grupo en tres idiomas, con líneas para notas.",
             "caption": "Cartas de Grupo"
+        },
+        "4": {
+            "alt": "Una página de cartas azules de Reflexión: citas en tres idiomas, sus autorías con una breve biografía en cada idioma y líneas para notas.",
+            "caption": "Cartas de Reflexión"
         }
     }
 }

@@ -29,12 +29,12 @@
             "caption": "Cartes Rencontre"
         },
         "3": {
-            "alt": "Une page de cartes bleues Réflexion : des citations en trois langues, avec leurs autrices et auteurs et des lignes pour les notes.",
-            "caption": "Cartes Réflexion"
-        },
-        "4": {
             "alt": "Une page de cartes violettes Groupe en trois langues, avec des lignes pour les notes.",
             "caption": "Cartes Groupe"
+        },
+        "4": {
+            "alt": "Une page de cartes bleues Réflexion : des citations en trois langues, leurs autrices et auteurs avec une courte biographie dans chaque langue, et des lignes pour les notes.",
+            "caption": "Cartes Réflexion"
         }
     }
 }

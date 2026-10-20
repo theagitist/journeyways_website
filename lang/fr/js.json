@@ -111,8 +111,8 @@
             {"title": "Couverture", "subtitle": "Toutes les cartes en trois langues", "alt": "La couverture du Compagnon des cartes : le labyrinthe rond à l'aquarelle au-dessus du logo Journeyways."},
             {"title": "Mode d'emploi", "subtitle": "Toutes les cartes en trois langues", "alt": "La page d'utilisation, en anglais, en espagnol et en français, avec les couleurs des cinq paquets."},
             {"title": "Cartes Rencontre", "subtitle": "Toutes les cartes en trois langues", "alt": "Une page de cartes rouges Rencontre : l'illustration et le numéro de chaque carte, son texte en trois langues et des lignes pour les notes."},
-            {"title": "Cartes Réflexion", "subtitle": "Toutes les cartes en trois langues", "alt": "Une page de cartes bleues Réflexion : des citations en trois langues, avec leurs autrices et auteurs et des lignes pour les notes."},
-            {"title": "Cartes Groupe", "subtitle": "Toutes les cartes en trois langues", "alt": "Une page de cartes violettes Groupe en trois langues, avec des lignes pour les notes."}
+            {"title": "Cartes Groupe", "subtitle": "Toutes les cartes en trois langues", "alt": "Une page de cartes violettes Groupe en trois langues, avec des lignes pour les notes."},
+            {"title": "Cartes Réflexion", "subtitle": "Toutes les cartes en trois langues", "alt": "Une page de cartes bleues Réflexion : des citations en trois langues, leurs autrices et auteurs avec une courte biographie dans chaque langue, et des lignes pour les notes."}
         ]
     }
 }

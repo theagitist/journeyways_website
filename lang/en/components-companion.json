@@ -29,12 +29,12 @@
             "caption": "Encounter cards"
         },
         "3": {
-            "alt": "A page of blue Reflection cards: quotes in three languages, with their authors and lines for notes.",
-            "caption": "Reflection cards"
-        },
-        "4": {
             "alt": "A page of purple Group cards in three languages, with lines for notes.",
             "caption": "Group cards"
+        },
+        "4": {
+            "alt": "A page of blue Reflection cards: quotes in three languages, their authors with a short biography in each language, and lines for notes.",
+            "caption": "Reflection cards"
         }
     }
 }

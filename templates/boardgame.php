@@ -85,7 +85,7 @@ $cardFronts = [
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.companion_label") ?>
-                        <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=1" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.companion_link") ?></a>
+                        <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=2" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.companion_link") ?></a>
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.facilitator_label") ?>
