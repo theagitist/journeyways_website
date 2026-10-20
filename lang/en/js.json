@@ -79,7 +79,7 @@
             { "title": "{{deck:group.colour}} | {{deck:group.name}}", "subtitle": "Card back.", "alt": "Card back in shades of purple watercolor splotches." }
         ],
         "manual": [
-            { "title": "Cover", "subtitle": "The Game Manual.", "alt": "The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape." },
+            { "title": "Cover", "subtitle": "The Game Manual.", "alt": "The Game Manual cover: a round watercolour labyrinth above the Journeyways wordmark and the tagline a board game about becoming." },
             { "title": "Game Setup", "subtitle": "Laying out the game.", "alt": "The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a side note." },
             { "title": "Basic Gameplay", "subtitle": "Explore, pick, reflect.", "alt": "The Basic Gameplay page: the three phases of a turn and a legend of the five card colours." },
             { "title": "A journal entry", "subtitle": "An example of writing from the cards.", "alt": "A sample journal entry in a handwritten script, with a small painted volcano in the corner." },
@@ -87,7 +87,7 @@
             { "title": "Back cover", "subtitle": "A game about becoming.", "alt": "The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming." }
         ],
         "booklet": [
-            { "title": "Cover", "subtitle": "The Player Booklet.", "alt": "The Player Booklet cover: the Journeyways mark over a soft monochrome landscape, titled Player Booklet." },
+            { "title": "Cover", "subtitle": "The Player Booklet.", "alt": "The Player Booklet cover: a grey labyrinth mark above the Journeyways wordmark, titled Player Booklet." },
             { "title": "Quick Reference", "subtitle": "The turn and the card colours at a glance.", "alt": "The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know." },
             { "title": "Character Sheet", "subtitle": "Who you are at the start.", "alt": "The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal." },
             { "title": "Journal Page", "subtitle": "Lined pages to write and draw your story.", "alt": "A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds." },

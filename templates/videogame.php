@@ -224,7 +224,7 @@ $P = 'pages.videogame';
             "name": "JOURNEYWAYS (Digital)",
             "description": "The digital version of JOURNEYWAYS, in active development at v0.7.1-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Designed for solo and group play.",
             "url": "https://www.journeyways.ca/videogame.html",
-            "image": "https://www.journeyways.ca/img/og-card.webp",
+            "image": "https://www.journeyways.ca/img/og-card.webp?v=2",
             "applicationCategory": "GameApplication",
             "playMode": [
                 "SinglePlayer",

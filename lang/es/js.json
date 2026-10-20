@@ -79,7 +79,7 @@
             { "title": "{{deck:group.colour}} | {{deck:group.name}}", "subtitle": "Reverso de la carta.", "alt": "Reverso de carta en manchas de acuarela en tonos de morado." }
         ],
         "manual": [
-            { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: Reglas del juego de JOURNEYWAYS, un juego de mesa sobre el devenir, sobre un paisaje en acuarela." },
+            { "title": "Portada", "subtitle": "El Manual del juego.", "alt": "La portada del Manual del juego: un laberinto redondo en acuarela sobre el logotipo Journeyways y el lema un juego de mesa sobre el devenir." },
             { "title": "Preparación del juego", "subtitle": "Disponiendo el juego.", "alt": "La página de Preparación del juego: qué necesitas y cómo disponer las losetas y las cinco pilas de cartas, con una nota al margen." },
             { "title": "Juego básico", "subtitle": "Explorar, elegir, reflexionar.", "alt": "La página de Juego básico: las tres fases de un turno y una leyenda de los cinco colores de carta." },
             { "title": "Una entrada de diario", "subtitle": "Un ejemplo de escritura a partir de las cartas.", "alt": "Una entrada de diario de ejemplo en letra manuscrita, con un pequeño volcán pintado en la esquina." },
@@ -87,7 +87,7 @@
             { "title": "Contraportada", "subtitle": "Un juego sobre el devenir.", "alt": "La contraportada del manual: el logotipo de Journeyways, un código QR y el lema un juego sobre el devenir." }
         ],
         "booklet": [
-            { "title": "Portada", "subtitle": "El Cuaderno de juego.", "alt": "La portada del Cuaderno de juego: el logotipo de Journeyways sobre un paisaje monocromo suave, titulado Cuaderno de juego." },
+            { "title": "Portada", "subtitle": "El Cuaderno de juego.", "alt": "La portada del Cuaderno de juego: un laberinto gris sobre el logotipo Journeyways, titulado Cuaderno de juego." },
             { "title": "Referencia rápida", "subtitle": "El turno y los colores de carta de un vistazo.", "alt": "La página de introducción y Referencia rápida: las tres fases de un turno, los colores de carta y cosas que conviene saber." },
             { "title": "Hoja de personaje", "subtitle": "Quién eres al comienzo.", "alt": "La primera Hoja de personaje: preguntas sobre de dónde vienes, dónde estás ahora, qué y quién eres, por qué, tu nombre y tu meta." },
             { "title": "Página de diario", "subtitle": "Páginas con renglones para escribir y dibujar tu historia.", "alt": "Una página de diario con renglones y el logotipo de Journeyways, para escribir y dibujar tu historia a medida que se despliega." },

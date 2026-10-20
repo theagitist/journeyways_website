@@ -5,7 +5,7 @@
 // page-specific styles the shared /css/game-components.css depends on.
 $P = 'pages.components-tiles';
 ?>
-<link rel="stylesheet" href="/css/game-components.css?v=3">
+<link rel="stylesheet" href="/css/game-components.css?v=4">
 <style>
   /* The tiles page renders only the tile grid. Tile FACE styles come from the
      shared /css/game-components.css (linked in the head), the same single

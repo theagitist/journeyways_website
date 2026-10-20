@@ -79,7 +79,7 @@
             { "title": "{{deck:group.colour}} | {{deck:group.name}}", "subtitle": "Dos de la carte.", "alt": "Dos de carte en taches d'aquarelle dans des tons de violet." }
         ],
         "manual": [
-            { "title": "Couverture", "subtitle": "Le Manuel du jeu.", "alt": "La couverture du Manuel du jeu : Règles du jeu de JOURNEYWAYS, un jeu de société sur le devenir, sur un paysage à l'aquarelle." },
+            { "title": "Couverture", "subtitle": "Le Manuel du jeu.", "alt": "La couverture du Manuel du jeu : un labyrinthe rond à l'aquarelle au-dessus du logo Journeyways et de l'accroche un jeu de société sur le devenir." },
             { "title": "Préparation du jeu", "subtitle": "Mise en place du jeu.", "alt": "La page Préparation du jeu : ce qu'il vous faut et comment disposer les tuiles et les cinq piles de cartes, avec une note de marge." },
             { "title": "Déroulement de base", "subtitle": "Explorer, choisir, réfléchir.", "alt": "La page Déroulement de base : les trois phases d'un tour et une légende des cinq couleurs de carte." },
             { "title": "Une entrée de journal", "subtitle": "Un exemple d'écriture à partir des cartes.", "alt": "Un exemple d'entrée de journal en écriture manuscrite, avec un petit volcan peint dans le coin." },
@@ -87,7 +87,7 @@
             { "title": "Quatrième de couverture", "subtitle": "Un jeu sur le devenir.", "alt": "La quatrième de couverture du manuel : la marque Journeyways, un code QR et l'accroche un jeu sur le devenir." }
         ],
         "booklet": [
-            { "title": "Couverture", "subtitle": "Le Cahier de jeu.", "alt": "La couverture du Cahier de jeu : la marque Journeyways sur un doux paysage monochrome, intitulé Cahier de jeu." },
+            { "title": "Couverture", "subtitle": "Le Cahier de jeu.", "alt": "La couverture du Cahier de jeu : un labyrinthe gris au-dessus du logo Journeyways, intitulé Cahier de jeu." },
             { "title": "Aide-mémoire", "subtitle": "Le tour et les couleurs de carte en un coup d'œil.", "alt": "La page d'introduction et d'Aide-mémoire : les trois phases d'un tour, les couleurs de carte et ce qu'il est bon de savoir." },
             { "title": "Fiche de personnage", "subtitle": "Qui vous êtes au départ.", "alt": "La première Fiche de personnage : des questions sur d'où vous venez, où vous êtes maintenant, ce que et qui vous êtes, pourquoi, votre nom et votre but." },
             { "title": "Page de journal", "subtitle": "Des pages lignées pour écrire et dessiner votre histoire.", "alt": "Une page de journal lignée avec la marque Journeyways, pour écrire et dessiner votre histoire à mesure qu'elle se déploie." },

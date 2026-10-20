@@ -47,7 +47,7 @@ $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
                 </div>
                 <div class="col-span-12 md:col-span-5">
                     <figure class="hero-mask m-0">
-                        <img src="/img/og-card.webp" alt="<?= te("$P.hero.image_alt") ?>" class="w-full h-auto block">
+                        <img src="/img/og-card.webp?v=2" alt="<?= te("$P.hero.image_alt") ?>" class="w-full h-auto block">
                     </figure>
                 </div>
             </div>

@@ -38,6 +38,11 @@
             "items": [
                 {
                     "type": "both",
+                    "title": "A new mark: the labyrinth",
+                    "body": "JOURNEYWAYS has a new mark: a round labyrinth, one path winding from the edge to the centre, in a rainbow wash that spills past its border. It now appears on the back of every map tile, on the covers of the Game Rules and the Player Booklet, and across this site and the digital game. A labyrinth has no dead ends, only one way that keeps turning, which felt right for a game about becoming."
+                },
+                {
+                    "type": "both",
                     "title": "Every card, reread",
                     "body": "We read every card again, one by one. Typos and quote attributions are fixed, cards that shared a name now have their own titles, and several prompts are clearer: a card no longer asks whether you got someone's story right, because there is no right or wrong. Each deck is now numbered without gaps, and the changes are in English, Spanish and French."
                 },

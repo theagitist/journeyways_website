@@ -3,7 +3,7 @@
 // $JW_LANG, $JW_PAGE, $JW_PATH, $JW_AVAIL, $JW_DICT.
 $m       = "pages.$JW_PAGE.meta";
 $canon   = JW_ORIGIN . jw_url($JW_PATH, $JW_LANG);
-$ogImage = JW_ORIGIN . '/img/og-card.jpg';
+$ogImage = JW_ORIGIN . '/img/og-card.jpg?v=2';
 ?><!DOCTYPE html>
 <html lang="<?= esc($JW_LANG) ?>">
 <head>
@@ -59,14 +59,14 @@ $ogImage = JW_ORIGIN . '/img/og-card.jpg';
     </script>
 
     <title><?= te("$m.title") ?></title>
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon.png">
-    <link rel="shortcut icon" href="/img/favicon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon.png?v=2">
+    <link rel="icon" href="/favicon.ico?v=2" sizes="any">
+    <link rel="apple-touch-icon" href="/img/apple-touch-icon.png?v=2">
     <link rel="preload" href="/fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/inter-600-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="/fonts/italianno-400-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="/css/tailwind.css?v=25">
-    <link rel="stylesheet" href="/css/styles.css?v=28">
+    <link rel="stylesheet" href="/css/styles.css?v=30">
 </head>
 <body class="bg-gray-800 text-white">
 <?php require __DIR__ . '/nav.php'; ?>
