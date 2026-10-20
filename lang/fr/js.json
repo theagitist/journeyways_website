@@ -99,9 +99,9 @@
         "facilitator": [
             {"title": "Couverture", "subtitle": "Le Guide d'animation.", "alt": "La page des pions : chaque personne peut utiliser le pion de son choix, avec une peinture d'un dé et d'une roue."},
             {"title": "Les pions", "subtitle": "Tout peut servir de pion.", "alt": "La page des pions : chaque personne peut utiliser le pion de son choix, avec une peinture de pions colorés."},
-            {"title": "Ouvrir la séance", "subtitle": "Quoi dire avant de commencer.", "alt": "La page pour ouvrir la séance : quoi dire à la table avant de commencer."},
-            {"title": "Outils de sécurité", "subtitle": "Se retirer, carte X, lignes et voiles.", "alt": "La page des outils de sécurité : se retirer, la carte X, les lignes et voiles, et les points d'étape."},
-            {"title": "Prolonger la partie", "subtitle": "Des parties plus longues et plus de séances.", "alt": "La page pour prolonger la partie, avec trois cartes du jeu en éventail."},
+            {"title": "Ouvrir la séance", "subtitle": "Quoi dire avant de commencer.", "alt": "La page pour ouvrir la séance : un exemple de présentation à lire telle quelle ou à adapter."},
+            {"title": "Outils de sécurité", "subtitle": "Se retirer, lignes et voiles, points d'étape.", "alt": "La page des outils de sécurité : se retirer, les lignes et voiles, et les points d'étape."},
+            {"title": "Prolonger la partie", "subtitle": "Des parties plus longues et plus de séances.", "alt": "La page pour prolonger la partie, avec deux cartes du jeu côte à côte."},
             {"title": "Séances de recherche", "subtitle": "Quand une séance fait partie d'une étude.", "alt": "La page des séances de recherche : consentement, enregistrement, notes et retrait."}
         ],
         "quickref": [

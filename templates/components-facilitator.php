@@ -26,7 +26,7 @@ $P = 'pages.components-facilitator';
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.intro") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.pages_hint") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=3" download class="jw-dl"><?= t("$P.download.en") ?></a>
+                    <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=4" download class="jw-dl"><?= t("$P.download.en") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.download.note") ?></p>
             </header>
@@ -35,11 +35,11 @@ $P = 'pages.components-facilitator';
                 <h2 id="preview-heading" class="sr-only"><?= te("$P.preview_heading") ?></h2>
                 <div class="jw-pages">
                     <figure class="jw-page"><img src="/img/facilitator/p01.webp?v=3" alt="<?= te("$P.pages.0.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 0)"><figcaption><?= te("$P.pages.0.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/facilitator/p06.webp?v=3" alt="<?= te("$P.pages.1.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 1)"><figcaption><?= te("$P.pages.1.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/facilitator/p07.webp?v=3" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/facilitator/p08.webp?v=3" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/facilitator/p12.webp?v=3" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/facilitator/p13.webp?v=3" alt="<?= te("$P.pages.5.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 5)"><figcaption><?= te("$P.pages.5.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/facilitator/p06.webp?v=4" alt="<?= te("$P.pages.1.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 1)"><figcaption><?= te("$P.pages.1.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/facilitator/p07.webp?v=4" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/facilitator/p08.webp?v=4" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/facilitator/p12.webp?v=4" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/facilitator/p13.webp?v=4" alt="<?= te("$P.pages.5.alt") ?>" loading="lazy" onclick="openLightboxFromSet('facilitator', 5)"><figcaption><?= te("$P.pages.5.caption") ?></figcaption></figure>
                 </div>
             </section>
         </div>

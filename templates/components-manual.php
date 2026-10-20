@@ -26,9 +26,9 @@ $P = 'pages.components-manual';
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.intro") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.pages_hint") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=22" download class="jw-dl"><?= t("$P.download.en") ?></a>
-                    <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=22" download class="jw-dl"><?= t("$P.download.es") ?></a>
-                    <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=22" download class="jw-dl"><?= t("$P.download.fr") ?></a>
+                    <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=23" download class="jw-dl"><?= t("$P.download.en") ?></a>
+                    <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=23" download class="jw-dl"><?= t("$P.download.es") ?></a>
+                    <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=23" download class="jw-dl"><?= t("$P.download.fr") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.download.note") ?></p>
             </header>
@@ -41,7 +41,7 @@ $P = 'pages.components-manual';
                     <figure class="jw-page"><img src="/img/manual/p05.webp?v=22" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
                     <figure class="jw-page"><img src="/img/manual/p08.webp?v=22" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
                     <figure class="jw-page"><img src="/img/manual/p09.webp?v=22" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/manual/p13.webp?v=22" alt="<?= te("$P.pages.5.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 5)"><figcaption><?= te("$P.pages.5.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p13.webp?v=23" alt="<?= te("$P.pages.5.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 5)"><figcaption><?= te("$P.pages.5.caption") ?></figcaption></figure>
                 </div>
             </section>
         </div>

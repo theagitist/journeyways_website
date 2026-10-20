@@ -2,7 +2,7 @@
     "meta": {
         "title": "JOURNEYWAYS | Facilitator's Guide",
         "description": "The JOURNEYWAYS Facilitator's Guide: how to host a session, from playing pieces and safety tools to starting, ending and extending a game, plus research sessions. Preview the pages or download the PDF.",
-        "keywords": "JOURNEYWAYS facilitator guide, how to host, game facilitation, safety tools, X-card, lines and veils, workshop, board game",
+        "keywords": "JOURNEYWAYS facilitator guide, how to host, game facilitation, safety tools, lines and veils, workshop, board game",
         "og_title": "JOURNEYWAYS | Facilitator's Guide",
         "og_description": "How to host a JOURNEYWAYS session. Preview the pages or download the PDF."
     },
@@ -25,15 +25,15 @@
             "caption": "Playing pieces"
         },
         "2": {
-            "alt": "The Opening the session page: what to say to the table before play begins.",
+            "alt": "The Opening the session page: a sample introduction to read as it is or adapt.",
             "caption": "Opening the session"
         },
         "3": {
-            "alt": "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.",
+            "alt": "The Safety tools page: opting out, the lines and veils, and check-ins.",
             "caption": "Safety tools"
         },
         "4": {
-            "alt": "The Extending the game page, with three game cards fanned out.",
+            "alt": "The Extending the game page, with two game cards side by side.",
             "caption": "Extending the game"
         },
         "5": {

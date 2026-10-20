@@ -274,7 +274,7 @@ var gallerySets = {
         { src: 'img/manual/p05.webp?v=22', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
         { src: 'img/manual/p08.webp?v=22', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
         { src: 'img/manual/p09.webp?v=22', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
-        { src: 'img/manual/p13.webp?v=22', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/manual/p13.webp?v=23', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ],
     booklet: [
         { src: 'img/booklet/p01.webp?v=8', alt: 'The Player Booklet cover: a grey labyrinth mark above the Journeyways wordmark, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
@@ -288,11 +288,11 @@ var gallerySets = {
     ],
     facilitator: [
         { src: 'img/facilitator/p01.webp?v=3', alt: "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "The Facilitator's Guide." },
-        { src: 'img/facilitator/p06.webp?v=3', alt: "The Playing pieces page: players can use any piece they like, with a painting of a die and a spinning wheel.", title: "Playing pieces", subtitle: "Anything can be a piece." },
-        { src: 'img/facilitator/p07.webp?v=3', alt: "The Opening the session page: what to say to the table before play begins.", title: "Opening the session", subtitle: "What to say before you begin." },
-        { src: 'img/facilitator/p08.webp?v=3', alt: "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, X-card, lines and veils." },
-        { src: 'img/facilitator/p12.webp?v=3', alt: "The Extending the game page, with three game cards fanned out.", title: "Extending the game", subtitle: "Longer games and more sessions." },
-        { src: 'img/facilitator/p13.webp?v=3', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
+        { src: 'img/facilitator/p06.webp?v=4', alt: "The Playing pieces page: players can use any piece they like, with a painting of a die and a spinning wheel.", title: "Playing pieces", subtitle: "Anything can be a piece." },
+        { src: 'img/facilitator/p07.webp?v=4', alt: "The Opening the session page: a sample introduction to read as it is or adapt.", title: "Opening the session", subtitle: "What to say before you begin." },
+        { src: 'img/facilitator/p08.webp?v=4', alt: "The Safety tools page: opting out, the lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, lines and veils, check-ins." },
+        { src: 'img/facilitator/p12.webp?v=4', alt: "The Extending the game page, with two game cards side by side.", title: "Extending the game", subtitle: "Longer games and more sessions." },
+        { src: 'img/facilitator/p13.webp?v=4', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
     ],
     quickref: [
         { src: 'img/quickref/p01.webp?v=2', alt: "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box.", title: 'Quick reference', subtitle: 'The game on one page.' }
