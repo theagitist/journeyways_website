@@ -23,7 +23,7 @@ $P = 'pages.about';
                         <?= te("$P.hero.lead") ?>
                     </p>
                     <p class="mt-6 text-sm md:text-base text-gray-400 leading-relaxed max-w-prose">
-                        <a href="<?= esc(jw_page_url('/design.html', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.design") ?></a> &middot; <a href="<?= esc(jw_page_url('/references.html', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.references") ?></a> &middot; <a href="<?= esc(jw_page_url('/presentation.html', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.presentation") ?></a> &middot; <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.grsj") ?></a>
+                        <a href="<?= esc(jw_page_url('/design', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.design") ?></a> &middot; <a href="<?= esc(jw_page_url('/references', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.references") ?></a> &middot; <a href="<?= esc(jw_page_url('/presentation', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.presentation") ?></a> &middot; <a href="https://grsj.arts.ubc.ca/" target="_blank" rel="noopener noreferrer" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.grsj") ?></a>
                     </p>
                 </div>
                 <div class="col-span-12 md:col-span-5">
@@ -41,7 +41,7 @@ $P = 'pages.about';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.researcher.stamp") ?></span>
                 </header>
@@ -64,7 +64,7 @@ $P = 'pages.about';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-blue.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.project.stamp") ?></span>
                 </header>
@@ -79,14 +79,14 @@ $P = 'pages.about';
                     </p>
                     <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
                         <?= sprintf(t("$P.project.p_2"),
-                            esc(jw_page_url('/design.html', $JW_LANG) . '#identity'),
-                            esc(jw_page_url('/design.html', $JW_LANG) . '#no-winning'),
-                            esc(jw_page_url('/design.html', $JW_LANG) . '#expression')) ?>
+                            esc(jw_page_url('/design', $JW_LANG) . '#identity'),
+                            esc(jw_page_url('/design', $JW_LANG) . '#no-winning'),
+                            esc(jw_page_url('/design', $JW_LANG) . '#expression')) ?>
                     </p>
                     <p class="text-gray-300 text-base md:text-lg leading-[1.75] mt-6">
                         <?= sprintf(t("$P.project.p_3"),
-                            esc(jw_page_url('/design.html', $JW_LANG) . '#shared'),
-                            esc(jw_page_url('/references.html', $JW_LANG))) ?>
+                            esc(jw_page_url('/design', $JW_LANG) . '#shared'),
+                            esc(jw_page_url('/references', $JW_LANG))) ?>
                     </p>
 
                     <!-- "Get in touch" section hidden until a direct contact channel is functional. Restore by uncommenting and updating to match the editorial spine pattern. -->

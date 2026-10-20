@@ -11,8 +11,9 @@ This repository holds the site (`www.journeyways.ca`).
 > `/fr/`) with reciprocal hreflang, a language switcher, and an Accept-Language
 > suggestion banner. The contact form is a dependency-free `api/contact.php` (ZeptoMail
 > SMTPS + Turnstile; the old Node `server/` was retired). The page descriptions below
-> describe the content faithfully; the `.html` filenames are the clean URLs served by
-> the front controller. The old static pages are parked in `legacy-html/` as a rollback
+> describe the content faithfully. **URLs are clean** (since 2026-10-20): `/components`,
+> `/es/boardgame`, never `.html`; the front controller 301s any old `/page.html` address
+> to its clean form. The old static pages are parked in `legacy-html/` as a rollback
 > fallback (see `deploy/CUTOVER.md`). Full detail: `CLAUDE.md` and the memory
 > `project_www_php_i18n`.
 
@@ -24,26 +25,27 @@ The project is also a *framework*. Map tiles, cards, and a player booklet are th
 
 ## Pages
 
-- **Home** (`index.html`). Editorial Swiss-luxury layout. Asymmetric hero anchored by the watercolor `og-card.webp` on the right; three hairline-divided chapter cards (No Fixed Roles, Collaborative Storytelling, Continuous Growth) opening themed native `<dialog>` popups; 3+9 chapter spine on the body sections (Italianno script titles with watercolor card-back swatches: Principles / Gameplay / Recent / Begin); contained components photo with a single-image lightbox; outline-button closing block. The marquee was retired in favor of a dated Recent rail lower on the page.
-- **Board Game** (`boardgame.html`). How to play. Editorial hero with the printed rulebook cover (`img/rulebook_cover.webp`) on the left + title block on the right + inline PDF download links with file sizes. Body chapters on the 3+9 spine: Decks (5 card backs), Setup (components: 47 board tiles, 101 game cards; initial steps matching the manual, no start tile; setup photo), Turn (3-phase grid + 12 map tiles + 9 card fronts), Ending (with pull quote), Journal, Modes (solo vs group), Open play.
-- **Video Game** (`videogame.html`). Overview of the digital version. Centered typographic hero with a horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) and a "private during development, public at release" footnote. Body chapters on the 3+9 spine: Premise, Built (6-up hairline grid), a pointer to the Updates page (its dev log moved there), Roadmap (timeline list).
-- **Updates** (`updates.html`). Project-wide milestones for both the board game and the digital version on one filterable timeline. Two controls: a game filter (All / Board game / Video game) and a month-tab strip; entries are month-grouped flat cards tagged Board game / Video game / both. 4th item in the main nav (after Video Game). Board-game history sourced from the researcher CV + vault playtesting notes.
-- **Components** (`components.html` + sub-pages). A hub of four cards: **Cards** (`components-cards.html`) and **Tiles** (`components-tiles.html`), both live catalogues drawn from the play API, and **Player Booklet** (`components-booklet.html`) and **Game Manual** (`components-manual.html`), each a page-by-page preview of the print PDF (opening in the shared lightbox) plus a download link.
-- **Design philosophy** (`design.html`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
-- **Photos** (`photos.html`). Research gallery and lightbox.
-- **About** (`about.html`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
-- **References** (`references.html`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/references.md`.
+- **Home** (`/`). Editorial Swiss-luxury layout. Asymmetric hero anchored by the watercolor `og-card.webp` on the right; three hairline-divided chapter cards (No Fixed Roles, Collaborative Storytelling, Continuous Growth) opening themed native `<dialog>` popups; 3+9 chapter spine on the body sections (Italianno script titles with watercolor card-back swatches: Principles / Gameplay / Recent / Begin); contained components photo with a single-image lightbox; outline-button closing block. The marquee was retired in favor of a dated Recent rail lower on the page.
+- **Board Game** (`/boardgame`). How to play. Editorial hero with the printed rulebook cover (`img/rulebook_cover.webp`) on the left + title block on the right + inline PDF download links with file sizes. Body chapters on the 3+9 spine: Decks (5 card backs), Setup (components: 47 board tiles, 101 game cards; initial steps matching the manual, no start tile; setup photo), Turn (3-phase grid + 12 map tiles + 9 card fronts), Ending (with pull quote), Journal, Modes (solo vs group), Open play.
+- **Video Game** (`/videogame`). Overview of the digital version. Centered typographic hero with a horizontal hairline-grid spec strip (Version / Tagged / Platform / Players / Languages / Source) and a "private during development, public at release" footnote. Body chapters on the 3+9 spine: Premise, Built (6-up hairline grid), a pointer to the Updates page (its dev log moved there), Roadmap (timeline list).
+- **Updates** (`/updates`). Project-wide milestones for both the board game and the digital version on one filterable timeline. Two controls: a game filter (All / Board game / Video game) and a month-tab strip; entries are month-grouped flat cards tagged Board game / Video game / both. 4th item in the main nav (after Video Game). Board-game history sourced from the researcher CV + vault playtesting notes.
+- **Components** (`/components` + sub-pages). A hub of six cards: **Cards** (`/components-cards`) and **Tiles** (`/components-tiles`), both live catalogues drawn from the play API, and **Player Booklet** (`/components-booklet`), **Game Manual** (`/components-manual`), **Quick Reference** (`/components-quickref`) and **Facilitator's Guide** (`/components-facilitator`), each a preview of the print PDF (opening in the shared lightbox) plus a download link. The Quick Reference and the guide are English-only PDFs on trilingual pages.
+- **Design philosophy** (`/design`). Long-form essay: nine principles drawn from a 53-question interview with the designer, illustrated with card and tile artwork. Anchored sections are linked inline from the About page.
+- **Photos** (`/photos`). Research gallery and lightbox.
+- **About** (`/about`). Researcher bio, project narrative, and inline anchor links into the Design philosophy principles.
+- **References** (`/references`). Bibliography behind the project: 8 thematic chapters (Theory / Data / Arts-based / Ethnography / Analysis / Games / Co-creation / Pedagogy), 27 APA 7 citations with DOIs and dissertation/conference details. Footer-linked from every page; intentionally not in the main nav. Source list lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/references.md`.
 - **Brand spec** (no longer in this repo as of 2026-05-12). Canonical copy moved to the Academia Obsidian vault at `Projects/Journeyways/Foundations/brand-spec.md`. Covers logo + usage rules, palette, typography, components, voice + examples, tokens, the editorial chapter spine pattern, the presentation slide system, hero variations per page, and §9 Companion materials covering print and the videogame. Not currently public; will return to the live site in HTML form when the vault-to-HTML rendering pipeline ships (queued in the vault's website roadmap).
-- **Presentation** (`presentation.html`). Standalone conference deck (15 slides). `noindex, nofollow` (linkable from the site, not indexed by search engines). Linked from the About hero bar between References and UBC GRSJ. Self-contained: inline CSS and JS, no external slide framework; keyboard-driven (arrow keys, space, F fullscreen, S speaker notes, P print-to-PDF). The print stylesheet renders 16:9 pages so any browser's "Print to PDF" produces a clean shareable deck.
-- **Contact** (`contact.html`). `noindex`, off the nav and sitemap. The form posts to `api/contact.php` (validation, honeypot, Cloudflare Turnstile, per-IP rate limit, authenticated SMTPS via ZeptoMail, localized errors); secrets live in `/etc/journeyways/www-config.php`, out of the docroot.
+- **Presentation** (`/presentation`). Standalone conference deck (15 slides), the one static page left: nginx serves `presentation.html` at `/presentation` (and 301s the `.html` address). `noindex, nofollow` (linkable from the site, not indexed by search engines). Linked from the About hero bar between References and UBC GRSJ. Self-contained: inline CSS and JS, no external slide framework; keyboard-driven (arrow keys, space, F fullscreen, S speaker notes, P print-to-PDF). The print stylesheet renders 16:9 pages so any browser's "Print to PDF" produces a clean shareable deck.
+- **Contact** (`/contact`). `noindex`, off the nav and sitemap. The form posts to `api/contact.php` (validation, honeypot, Cloudflare Turnstile, per-IP rate limit, authenticated SMTPS via ZeptoMail, localized errors); secrets live in `/etc/journeyways/www-config.php`, out of the docroot.
 
 ## Site structure
 
 ```
 www.journeyways.ca/
-├── index.html, boardgame.html, videogame.html, updates.html, photos.html
-├── components.html, components-cards.html, components-tiles.html, components-booklet.html, components-manual.html
-├── about.html, design.html, references.html, presentation.html, contact.html
+├── index.php               Front controller: routes clean URLs (/components, /es/boardgame) to templates/
+├── inc/pages.php            Route registry (clean path => template + languages); 301s /page.html
+├── templates/ partials/     Page bodies and shared chrome; copy in lang/{en,es,fr}/*.json
+├── presentation.html        The conference deck (static), served at /presentation
 ├── download/               Rulebook and Player Booklet PDFs (published from ~/apps/journeyways/manuals via deploy-web.sh)
 ├── css/styles.css           Card colours, .tile-wood, marquee fade,
 │                            lightbox, hover transitions

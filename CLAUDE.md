@@ -4,24 +4,24 @@ Operator's quick reference for this site. Pairs with `README.md` (user-facing co
 
 ## What this is
 
-A static HTML site (6 visible pages + 2 hidden + 1 footer-only references page) plus a tiny Node backend in `server/` that handles a contact form. The site is the public face of Adri M.'s master's research at UBC GRSJ; tone is academic-yet-friendly. See `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/proposal-summary.md` for project framing, voice, and content principles.
+A PHP-FPM server-rendered, trilingual site (front controller + templates + per-language JSON) with clean URLs (`/components`, `/es/boardgame`; no `.html`) and a dependency-free contact handler in `api/contact.php`. The site is the public face of Adri M.'s master's research at UBC GRSJ; tone is academic-yet-friendly. See `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/proposal-summary.md` for project framing, voice, and content principles.
 
 ## Layout
 
 ```
 www.journeyways.ca/
-├── index.html              Home (rulebook hero copy + 3 feature cards + boardgame snapshot)
-├── boardgame.html          How to play; rules and components
-├── videogame.html          Digital version overview + roadmap (under development). Its dev log moved to updates.html
-├── updates.html            Project-wide milestones timeline. Month-grouped flat cards (.jw-card[data-type=board|video|both]) with a game filter (All/Board/Video) + a month tab strip; both driven by main.js initUpdatesFilter(). "both" cards show two tags. CSS is .jw-* in styles.css. Board data from CV (~/apps/Bio-CV) + vault PLAYTESTING.md. 4th main-nav item (after Video Game); in sitemap.
-├── components.html         Component hub: 4 cards (Cards, Tiles, Player Booklet, Game Manual) linking to the sub-pages below
-├── components-booklet.html / components-manual.html   Player Booklet / Game Manual pages: page-by-page preview (img/booklet/*, img/manual/* rendered from the download PDFs) opening in the shared lightbox (main.js gallerySets booklet/manual), plus a download link. Re-render + ?v-bump these when deploy-web.sh ships new PDFs (see memory project-www-updates-and-components)
-├── photos.html             Research gallery + lightbox (6 entries)
-├── about.html              About the researcher; bio, project narrative, inline anchors into design.html. "Get in touch" section currently commented out
-├── design.html             Design philosophy (long-form essay; 9 principles, illustrated with card and tile artwork; anchored from about.html)
-├── references.html         Bibliography (8 thematic chapters, 27 APA 7 citations). Footer-linked from every page; not in main nav. Source list in ~/apps/obsidian/Academia/Projects/Journeyways/Foundations/references.md
-├── presentation.html       Standalone conference deck (15 slides). `noindex, nofollow` (linkable but not search-indexed). Linked from the About hero bar. Self-contained inline CSS+JS, no external slide framework
-├── contact.html            Contact form (HIDDEN: noindex, not in nav, not in sitemap)
+├── /                 Home (rulebook hero copy + 3 feature cards + boardgame snapshot)
+├── /boardgame          How to play; rules and components
+├── /videogame          Digital version overview + roadmap (under development). Its dev log moved to /updates
+├── /updates            Project-wide milestones timeline. Month-grouped flat cards (.jw-card[data-type=board|video|both]) with a game filter (All/Board/Video) + a month tab strip; both driven by main.js initUpdatesFilter(). "both" cards show two tags. CSS is .jw-* in styles.css. Board data from CV (~/apps/Bio-CV) + vault PLAYTESTING.md. 4th main-nav item (after Video Game); in sitemap.
+├── /components         Component hub: 6 cards (Cards, Tiles, Player Booklet, Game Manual, Quick Reference, Facilitator's Guide) linking to the sub-pages below
+├── /components-booklet / /components-manual   Player Booklet / Game Manual pages: page-by-page preview (img/booklet/*, img/manual/* rendered from the download PDFs) opening in the shared lightbox (main.js gallerySets booklet/manual), plus a download link. Re-render + ?v-bump these when deploy-web.sh ships new PDFs (see memory project-www-updates-and-components)
+├── /photos             Research gallery + lightbox (6 entries)
+├── /about              About the researcher; bio, project narrative, inline anchors into /design. "Get in touch" section currently commented out
+├── /design             Design philosophy (long-form essay; 9 principles, illustrated with card and tile artwork; anchored from /about)
+├── /references         Bibliography (8 thematic chapters, 27 APA 7 citations). Footer-linked from every page; not in main nav. Source list in ~/apps/obsidian/Academia/Projects/Journeyways/Foundations/references.md
+├── presentation.html       (served at /presentation by nginx) Standalone conference deck (15 slides). `noindex, nofollow` (linkable but not search-indexed). Linked from the About hero bar. Self-contained inline CSS+JS, no external slide framework
+├── /contact            Contact form (HIDDEN: noindex, not in nav, not in sitemap)
 ├── css/styles.css          Custom CSS (@font-face, card colours, .tile-wood, marquee, lightbox)
 ├── css/tailwind.css        Tailwind utilities, locally built (output of tools/)
 ├── js/main.js              Mobile menu, cookie banner, CTA injection, lightbox (multi-set), contact form
@@ -43,7 +43,8 @@ www.journeyways.ca/
 - **Tailwind**: locally built. Source under `tools/` (`tailwind.input.css` + `tailwind.config.js`). Run `cd tools && npm run build` to regenerate `css/tailwind.css` after adding any new utility class. Watch mode: `npm run watch`. Always bump `tailwind.css?v=N` after a rebuild.
 - **Fonts**: Inter and Italianno self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). Loaded via `@font-face` declarations at the top of `css/styles.css`. No third-party origins.
 - **Backend**: the contact form is `api/contact.php`, run by php-fpm (nginx routes `location = /api/contact` to `unix:/run/php/php8.3-fpm.sock`). No Node: the old Express `journeyways-www` PM2 app was deleted at the 2026-07-10 cutover. Secrets in `/etc/journeyways/www-config.php` (out of docroot).
-- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`). Bump on every change since `Cache-Control: max-age=31536000`.
+- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=30`, `main.js?v=37`). Bump on every change since `Cache-Control: max-age=31536000`; never reuse a number. Images and PDFs referenced without `?v=` stay Cloudflare-cached after a same-name replace (the deck kept showing the retired logo until it got `og-card.webp?v=3`).
+- **Clean URLs (2026-10-20)**: routes in `inc/pages.php` are extensionless (`/components`). `index.php` 301s `/page.html` (and `/index.html`) to the clean URL, keeping the query string; nginx maps `/presentation` to the static `presentation.html` and 301s `/cards(.html)` to `/components`. Link with `jw_page_url('/x', $JW_LANG)`, never a literal `.html`; run `php bin/gen-sitemap.php` after adding a route.
 
 ## Localization (PHP i18n refactor, LIVE since 2026-07-10)
 

@@ -15,9 +15,9 @@ $modalIds = ['modal-no-fixed-roles', 'modal-collaborative', 'modal-continuous-gr
 $modalBg  = ['bg-red', 'bg-purple', 'bg-green'];
 // [href, dict-suffix] for each modal's two "read further" links.
 $modalLinks = [
-    [['/design.html#identity', 0], ['/about.html', 1]],
-    [['/design.html#combination', 0], ['/boardgame.html', 1]],
-    [['/design.html#expression', 0], ['/about.html', 1]],
+    [['/design#identity', 0], ['/about', 1]],
+    [['/design#combination', 0], ['/boardgame', 1]],
+    [['/design#expression', 0], ['/about', 1]],
 ];
 $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>';
 ?>
@@ -40,7 +40,7 @@ $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
                     <p class="text-base md:text-lg italic font-light text-gray-300 mb-8 md:mb-10 max-w-prose"><?= te("$P.hero.tagline") ?></p>
                     <p class="text-lg md:text-xl text-gray-200 leading-relaxed mb-3 max-w-prose"><?= t("$P.hero.lead") ?></p>
                     <p class="text-base md:text-lg text-gray-400 leading-relaxed mb-10 max-w-prose"><?= te("$P.hero.body") ?></p>
-                    <a href="<?= esc(jw_page_url('/design.html', $JW_LANG)) ?>" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 underline underline-offset-[6px] decoration-1 transition-colors text-sm uppercase tracking-[0.2em]">
+                    <a href="<?= esc(jw_page_url('/design', $JW_LANG)) ?>" class="inline-flex items-center gap-2 text-yellow-400 hover:text-yellow-300 underline underline-offset-[6px] decoration-1 transition-colors text-sm uppercase tracking-[0.2em]">
                         <span><?= te("$P.hero.design_link") ?></span>
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
                     </a>
@@ -60,7 +60,7 @@ $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
             <div class="grid grid-cols-12 gap-8 md:gap-12 mb-10 md:mb-14">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.principles.stamp") ?></span>
                 </header>
@@ -121,7 +121,7 @@ $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <aside class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-blue.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.gameplay.stamp") ?></span>
                 </aside>
@@ -160,7 +160,7 @@ $arrow = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-green.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.recent.stamp") ?></span>
                 </header>

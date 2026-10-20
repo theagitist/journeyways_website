@@ -10,7 +10,7 @@ $P = 'pages.components-tiles';
   /* The tiles page renders only the tile grid. Tile FACE styles come from the
      shared /css/game-components.css (linked in the head), the same single
      source the play app uses; only this page's chrome (background, grid,
-     caption) is here. The card-gallery chrome lives on components-cards.html. */
+     caption) is here. The card-gallery chrome lives on components-cards. */
   .jw-wrap { background: #111827; }
   .jw-hint { color: #9ca3af; }
 
@@ -27,7 +27,7 @@ $P = 'pages.components-tiles';
 
     <main class="jw-wrap min-h-screen" style="padding-top: 3.5rem;">
         <div class="max-w-6xl mx-auto px-4 pt-5 pb-12">
-            <a href="<?= esc(jw_page_url('/components.html', $JW_LANG)) ?>" class="inline-flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors mb-6"><?= t("$P.back") ?></a>
+            <a href="<?= esc(jw_page_url('/components', $JW_LANG)) ?>" class="inline-flex items-center gap-2 text-sm text-yellow-400 hover:text-yellow-300 transition-colors mb-6"><?= t("$P.back") ?></a>
             <header class="text-center mb-12">
                 <h1 class="script-font text-7xl md:text-8xl text-yellow-400 leading-[0.95] mb-3"><?= te("$P.title") ?></h1>
                 <p class="jw-hint text-sm max-w-2xl mx-auto" id="jw-tiles-sub"><?= te("$P.subtitle") ?></p>

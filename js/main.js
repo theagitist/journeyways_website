@@ -1,6 +1,6 @@
 /**
  * JOURNEYWAYS – global and page-specific scripts
- * Shared across index.html, videogame.html, photos.html
+ * Shared across index.html, videogame, photos
  */
 
 // --- Redirect (run first) ---
@@ -182,7 +182,7 @@ function injectCTA() {
             '</header>' +
             '<div class="col-span-12 md:col-span-8 md:col-start-5">' +
             '<h2 class="text-xl md:text-2xl text-gray-100 font-light leading-[1.3] tracking-tight mb-8 max-w-prose">' + jwUI('cta_index_heading', 'Step into the game and let the journey unfold.') + '</h2>' +
-            '<a href="' + jwUI('cta_index_href', '/boardgame.html') + '" class="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-7 py-3 transition-colors text-sm tracking-[0.2em] uppercase">' +
+            '<a href="' + jwUI('cta_index_href', '/boardgame') + '" class="inline-flex items-center gap-2 border border-yellow-400 text-yellow-400 hover:bg-yellow-400 hover:text-black px-7 py-3 transition-colors text-sm tracking-[0.2em] uppercase">' +
             '<span>' + jwUI('cta_index_button', 'How to play') + '</span>' +
             '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>' +
             '</a>' +
@@ -426,7 +426,7 @@ function initLightbox() {
     });
 }
 
-// --- Updates timeline: game filter + month tabs (updates.html only) ---
+// --- Updates timeline: game filter + month tabs (updates only) ---
 function initUpdatesFilter() {
     var typeBar = document.getElementById('updates-filter');
     if (!typeBar) return;

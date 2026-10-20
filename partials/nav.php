@@ -3,13 +3,13 @@
 // Uses globals: $JW_LANG, $JW_PATH, $JW_AVAIL, $JW_SUGGEST.
 $navItems = [
     ['/',               'common.nav.homepage',  'common.nav.aria.homepage'],
-    ['/boardgame.html', 'common.nav.boardgame', 'common.nav.aria.boardgame'],
-    ['/videogame.html', 'common.nav.videogame', 'common.nav.aria.videogame'],
-    ['/updates.html',   'common.nav.updates',   'common.nav.aria.updates'],
-    ['/design.html',    'common.nav.design',    'common.nav.aria.design'],
-    ['/components.html', 'common.nav.components', 'common.nav.aria.components'],
-    ['/photos.html',    'common.nav.photos',    'common.nav.aria.photos'],
-    ['/about.html',     'common.nav.about',     'common.nav.aria.about'],
+    ['/boardgame', 'common.nav.boardgame', 'common.nav.aria.boardgame'],
+    ['/videogame', 'common.nav.videogame', 'common.nav.aria.videogame'],
+    ['/updates',   'common.nav.updates',   'common.nav.aria.updates'],
+    ['/design',    'common.nav.design',    'common.nav.aria.design'],
+    ['/components', 'common.nav.components', 'common.nav.aria.components'],
+    ['/photos',    'common.nav.photos',    'common.nav.aria.photos'],
+    ['/about',     'common.nav.about',     'common.nav.aria.about'],
 ];
 $active = 'font-bold text-yellow-400';
 $idle   = 'hover:text-yellow-400 transition-colors';

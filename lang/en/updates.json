@@ -165,8 +165,8 @@
                     "type": "video",
                     "title": "Cards and map tiles, online",
                     "links": [
-                        "/components-cards.html",
-                        "/components-tiles.html"
+                        "/components-cards",
+                        "/components-tiles"
                     ],
                     "body": "The full deck and the modular map now have a live catalogue you can browse on the site: every card sorted by suit, and every map tile, including the blank tiles you fill in yourself. Each set comes from the game itself, so the website always shows what is actually in play. See the <a href=\"%1$s\">cards</a> and the <a href=\"%2$s\">map tiles</a>."
                 },

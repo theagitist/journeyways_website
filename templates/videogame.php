@@ -60,7 +60,7 @@ $P = 'pages.videogame';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-blue.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.premise.stamp") ?></span>
                 </header>
@@ -83,7 +83,7 @@ $P = 'pages.videogame';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-green.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.built.stamp") ?></span>
                 </header>
@@ -99,7 +99,7 @@ $P = 'pages.videogame';
                         </div>
                         <div class="bg-gray-800 p-5 md:p-6">
                             <h3 class="text-base font-medium text-white tracking-tight mb-2"><?= te("$P.built.cards.cards.title") ?></h3>
-                            <p class="text-sm text-gray-400 leading-relaxed"><?= sprintf(t("$P.built.cards.cards.body"), esc(jw_page_url('/components-cards.html', $JW_LANG))) ?></p>
+                            <p class="text-sm text-gray-400 leading-relaxed"><?= sprintf(t("$P.built.cards.cards.body"), esc(jw_page_url('/components-cards', $JW_LANG))) ?></p>
                         </div>
                         <div class="bg-gray-800 p-5 md:p-6">
                             <h3 class="text-base font-medium text-white tracking-tight mb-2"><?= te("$P.built.cards.table.title") ?></h3>
@@ -133,7 +133,7 @@ $P = 'pages.videogame';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.screens.stamp") ?></span>
                 </header>
@@ -171,14 +171,14 @@ $P = 'pages.videogame';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-black.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-black.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.recent.stamp") ?></span>
                 </header>
                 <div class="col-span-12 md:col-span-8 md:col-start-5">
                     <h2 id="recent" class="sr-only"><?= te("$P.recent.sr") ?></h2>
                     <p class="text-gray-300 text-base md:text-lg leading-[1.75]">
-                        <?= sprintf(t("$P.recent.body"), esc(jw_page_url('/updates.html', $JW_LANG))) ?>
+                        <?= sprintf(t("$P.recent.body"), esc(jw_page_url('/updates', $JW_LANG))) ?>
                     </p>
                 </div>
             </div>
@@ -191,7 +191,7 @@ $P = 'pages.videogame';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-purple.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.roadmap.stamp") ?></span>
                 </header>
@@ -223,7 +223,7 @@ $P = 'pages.videogame';
             "@type": "VideoGame",
             "name": "JOURNEYWAYS (Digital)",
             "description": "The digital version of JOURNEYWAYS, in active development at v0.7.1-alpha. Real-time multiplayer, trilingual interface (English, Spanish, French), privacy by design (no camera), web-based with no install required. Designed for solo and group play.",
-            "url": "https://www.journeyways.ca/videogame.html",
+            "url": "https://www.journeyways.ca/videogame",
             "image": "https://www.journeyways.ca/img/og-card.webp?v=2",
             "applicationCategory": "GameApplication",
             "playMode": [
@@ -241,7 +241,7 @@ $P = 'pages.videogame';
             "author": {
                 "@type": "Person",
                 "name": "Adri M.",
-                "url": "https://www.journeyways.ca/about.html"
+                "url": "https://www.journeyways.ca/about"
             },
             "publisher": {
                 "@type": "Organization",

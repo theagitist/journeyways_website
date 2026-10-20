@@ -1,7 +1,7 @@
     <footer class="bg-black py-8">
         <div class="max-w-6xl mx-auto px-4 text-center">
             <p class="text-sm text-gray-500 mb-2">
-                <?= t('common.footer.research_by') ?> <a href="<?= esc(jw_page_url('/about.html', $JW_LANG)) ?>" class="hover:text-yellow-400 transition-colors">Adri M.</a> <?= t('common.footer.at_institute') ?> <a href="<?= esc(jw_page_url('/references.html', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 transition-colors"><?= te('common.footer.references') ?></a>.
+                <?= t('common.footer.research_by') ?> <a href="<?= esc(jw_page_url('/about', $JW_LANG)) ?>" class="hover:text-yellow-400 transition-colors">Adri M.</a> <?= t('common.footer.at_institute') ?> <a href="<?= esc(jw_page_url('/references', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 transition-colors"><?= te('common.footer.references') ?></a>.
             </p>
             <p class="text-gray-400">JOURNEYWAYS. <?= te('common.footer.tagline') ?><span class="text-xs text-gray-600 ml-2">v1.4.1</span></p>
         </div>

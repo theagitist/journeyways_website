@@ -122,7 +122,7 @@ if (php_sapi_name() !== 'cli') {
 
     $to      = defined('JW_CONTACT_EMAIL') && JW_CONTACT_EMAIL ? JW_CONTACT_EMAIL : JW_SMTP_FROM;
     $subject = 'JOURNEYWAYS contact form: ' . $name;
-    $text = "New contact form submission from www.journeyways.ca/contact.html\n\n"
+    $text = "New contact form submission from www.journeyways.ca/contact\n\n"
         . "Name: $name\nEmail: $email\nReaching out as: $interestList\n\n"
         . "Message:\n" . ($message !== '' ? $message : '(no message)') . "\n";
 

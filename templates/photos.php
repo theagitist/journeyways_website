@@ -23,7 +23,7 @@ $P = 'pages.photos';
                     <?= te("$P.hero.lead") ?>
                 </p>
                 <p class="mt-6 text-sm md:text-base text-gray-400">
-                    <a href="<?= esc(jw_page_url('/design.html', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.design") ?></a> &middot; <a href="<?= esc(jw_page_url('/boardgame.html', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.play") ?></a>
+                    <a href="<?= esc(jw_page_url('/design', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.design") ?></a> &middot; <a href="<?= esc(jw_page_url('/boardgame', $JW_LANG)) ?>" class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.links.play") ?></a>
                 </p>
             </div>
             <!-- 4-photo tile band: the Play group (sessions in progress) -->
@@ -50,7 +50,7 @@ $P = 'pages.photos';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-purple.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.hall.stamp") ?></span>
                 </header>
@@ -100,7 +100,7 @@ $P = 'pages.photos';
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.pieces.stamp") ?></span>
                 </header>

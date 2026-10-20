@@ -44,7 +44,7 @@ $months = jw_get("$P.months");   // newest-first list of month sections
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.timeline.stamp") ?></span>
                 </header>
@@ -91,7 +91,7 @@ $months = jw_get("$P.months");   // newest-first list of month sections
 <?php endforeach; ?>
             </div>
 
-                    <p class="text-sm text-gray-500 mt-8"><?= sprintf(t("$P.timeline.footer_html"), $jwLink('/videogame.html#roadmap')) ?></p>
+                    <p class="text-sm text-gray-500 mt-8"><?= sprintf(t("$P.timeline.footer_html"), $jwLink('/videogame#roadmap')) ?></p>
                 </div>
             </div>
         </div>

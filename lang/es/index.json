@@ -101,7 +101,7 @@
             },
             {
                 "date": "En curso",
-                "html": "Versión de videojuego <a href=\"/videogame.html\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">en desarrollo</a>."
+                "html": "Versión de videojuego <a href=\"/videogame\" class=\"text-yellow-400 hover:text-yellow-300 underline underline-offset-2\">en desarrollo</a>."
             }
         ]
     }

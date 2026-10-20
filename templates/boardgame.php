@@ -5,11 +5,11 @@ $P = 'pages.boardgame';
 // Structural (non-translatable) data paired with dict text by index.
 // Card backs / decks: [image path, card-colour class, gallery index].
 $deckBacks = [
-    ['/img/design/bg-red.webp',    'card-red',    0],
-    ['/img/design/bg-green.webp',  'card-green',  1],
-    ['/img/design/bg-blue.webp',   'card-blue',   2],
-    ['/img/design/bg-black.webp',  'card-black',  3],
-    ['/img/design/bg-purple.webp', 'card-purple', 4],
+    ['/img/design/bg-red.webp?v=2',    'card-red',    0],
+    ['/img/design/bg-green.webp?v=2',  'card-green',  1],
+    ['/img/design/bg-blue.webp?v=2',   'card-blue',   2],
+    ['/img/design/bg-black.webp?v=2',  'card-black',  3],
+    ['/img/design/bg-purple.webp?v=2', 'card-purple', 4],
 ];
 // Map tiles: [image path, gallery index].
 $mapTiles = [
@@ -98,7 +98,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-blue.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.decks.stamp") ?></span>
                 </header>
@@ -116,7 +116,7 @@ $cardFronts = [
 <?php endforeach; ?>
                     </div>
                     <p class="text-sm md:text-base text-gray-400 mt-6">
-                        <?= sprintf(t("$P.decks.browse_html"), esc(jw_page_url('/components-cards.html', $JW_LANG))) ?>
+                        <?= sprintf(t("$P.decks.browse_html"), esc(jw_page_url('/components-cards', $JW_LANG))) ?>
                     </p>
                 </div>
             </div>
@@ -129,7 +129,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.setup.stamp") ?></span>
                 </header>
@@ -168,7 +168,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-green.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-green.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.turn.stamp") ?></span>
                 </header>
@@ -198,7 +198,7 @@ $cardFronts = [
 <?php endforeach; ?>
                         </div>
                         <figcaption class="text-sm md:text-base text-gray-400 mt-4">
-                            <?= sprintf(t("$P.turn.tiles_browse_html"), esc(jw_page_url('/components-tiles.html', $JW_LANG))) ?>
+                            <?= sprintf(t("$P.turn.tiles_browse_html"), esc(jw_page_url('/components-tiles', $JW_LANG))) ?>
                         </figcaption>
                     </figure>
 
@@ -213,7 +213,7 @@ $cardFronts = [
 <?php endforeach; ?>
                         </div>
                         <figcaption class="text-sm md:text-base text-gray-400 mt-4">
-                            <?= sprintf(t("$P.turn.fronts_browse_html"), esc(jw_page_url('/components-cards.html', $JW_LANG))) ?>
+                            <?= sprintf(t("$P.turn.fronts_browse_html"), esc(jw_page_url('/components-cards', $JW_LANG))) ?>
                         </figcaption>
                     </figure>
                 </div>
@@ -227,7 +227,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-black.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-black.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.ending.stamp") ?></span>
                 </header>
@@ -256,7 +256,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-blue.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-blue.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.journal.stamp") ?></span>
                 </header>
@@ -279,7 +279,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-purple.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-purple.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.modes.stamp") ?></span>
                 </header>
@@ -317,7 +317,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <header class="col-span-12 md:col-span-3 flex items-center gap-3">
                     <div class="w-9 h-12 md:w-10 md:h-14 overflow-hidden opacity-80 shrink-0">
-                        <img src="/img/design/bg-red.webp" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
+                        <img src="/img/design/bg-red.webp?v=2" alt="" class="w-full h-full object-cover" loading="lazy" aria-hidden="true">
                     </div>
                     <span class="script-font text-4xl md:text-5xl text-yellow-400 leading-none"><?= te("$P.open.stamp") ?></span>
                 </header>

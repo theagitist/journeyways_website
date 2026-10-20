@@ -7,12 +7,12 @@ $P = 'pages.components';
 // Structural (non-translatable) data paired with dict text by index:
 // [English canonical path, inline background-image style]. Card strings live in the dict.
 $cards = [
-    ['/components-cards.html',   "background-image: url('/img/cards/backs/back-reflection-300.webp');"],
-    ['/components-tiles.html',   "background-image: url('/img/tiles/mirror-lake-400.webp');"],
-    ['/components-booklet.html', "background-image: url('/img/booklet/p01.webp?v=8');"],
-    ['/components-manual.html',  "background-image: url('/img/rulebook_cover.webp?v=5');"],
-    ['/components-quickref.html', "background-image: url('/img/quickref/card.webp?v=2');"],
-    ['/components-facilitator.html', "background-image: url('/img/facilitator/pieces.webp?v=2');"],
+    ['/components-cards',   "background-image: url('/img/cards/backs/back-reflection-300.webp');"],
+    ['/components-tiles',   "background-image: url('/img/tiles/mirror-lake-400.webp');"],
+    ['/components-booklet', "background-image: url('/img/booklet/p01.webp?v=8');"],
+    ['/components-manual',  "background-image: url('/img/rulebook_cover.webp?v=5');"],
+    ['/components-quickref', "background-image: url('/img/quickref/card.webp?v=2');"],
+    ['/components-facilitator', "background-image: url('/img/facilitator/pieces.webp?v=2');"],
 ];
 ?>
 <style>

@@ -48,7 +48,7 @@ $ogImage = JW_ORIGIN . '/img/og-card.jpg?v=2';
         'author'     => [
             '@type' => 'Person',
             'name'  => 'Adri M.',
-            'url'   => JW_ORIGIN . jw_url('/about.html', $JW_LANG),
+            'url'   => JW_ORIGIN . jw_url('/about', $JW_LANG),
             'affiliation' => [
                 '@type' => 'EducationalOrganization',
                 'name'  => 'UBC Institute for Gender, Race, Sexuality and Social Justice',

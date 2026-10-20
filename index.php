@@ -4,7 +4,15 @@ require __DIR__ . '/inc/i18n.php';
 $JW_PAGES = require __DIR__ . '/inc/pages.php';
 
 [$JW_LANG, $path] = jw_resolve_lang($_SERVER['REQUEST_URI'] ?? '/');
-if ($path === '/index.html') $path = '/';   // legacy home URL -> canonical
+// Canonical URLs have no .html: 301 the old /page.html (and /index.html) forms.
+if (str_ends_with($path, '.html')) {
+    $clean = $path === '/index.html' ? '/' : substr($path, 0, -5);
+    if (isset($JW_PAGES[$clean])) {
+        $qs = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_QUERY);
+        header('Location: ' . jw_url($clean, $JW_LANG) . ($qs ? "?$qs" : ''), true, 301);
+        return;
+    }
+}
 
 $page = $JW_PAGES[$path] ?? null;
 $found = $page !== null && in_array($JW_LANG, $page['langs'], true);
