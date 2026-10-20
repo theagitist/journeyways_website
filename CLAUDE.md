@@ -25,7 +25,7 @@ www.journeyways.ca/
 ├── css/styles.css          Custom CSS (@font-face, card colours, .tile-wood, marquee, lightbox)
 ├── css/tailwind.css        Tailwind utilities, locally built (output of tools/)
 ├── js/main.js              Mobile menu, cookie banner, CTA injection, lightbox (multi-set), contact form
-├── img/                    Site images + thumbnails + favicon.png + og-card.jpg
+├── img/                    Site images + thumbnails + favicon.png + og-card.jpg (og-card, logo_bg_only, favicons = the spiral labyrinth logo; source + build scripts in original_assets/brand/spiral, never hand-edit)
 ├── img/design/             webp components (tiles, card fronts, card backs)
 ├── fonts/                  Self-hosted Inter and Italianno (woff2, latin + latin-ext)
 ├── tools/                  Local Tailwind build (npm run build -> ../css/tailwind.css)
