@@ -58,7 +58,7 @@
         "sr_heading": "Setup",
         "need_heading": "What you'll need",
         "need": [
-            "Board tiles (47).",
+            "Board tiles (47), plus a blank tile (1).",
             "Game cards (101).",
             "Player tokens (1 per player).",
             "Player booklet (1 per player).",
@@ -82,7 +82,7 @@
     "turn": {
         "stamp": "Turn",
         "sr_heading": "Turn",
-        "intro_html": "Each turn has three phases: <span class=\"font-medium text-white\">Explore</span>, <span class=\"font-medium text-white\">Pick</span>, and <span class=\"font-medium text-white\">Reflect</span>.",
+        "intro_html": "Each turn has three phases: <span class=\"font-medium text-white\">Explore</span>, <span class=\"font-medium text-white\">Pick</span>, and <span class=\"font-medium text-white\">Reflect</span>. Turns follow the rough order you agreed on, but stay loose: play when you feel ready, or sit a turn out.",
         "phases": [
             {
                 "eyebrow": "Phase 1",
@@ -97,7 +97,7 @@
             {
                 "eyebrow": "Phase 3",
                 "title": "Reflect",
-                "body_html": "If you picked a <span class=\"card-green\">{{deck:movement.colour}}</span> or <span class=\"card-purple\">{{deck:group.colour}}</span> card, you have to perform the action it indicates. If you picked a <span class=\"card-blue\">{{deck:reflection.colour}}</span> or <span class=\"card-red\">{{deck:encounter.colour}}</span> card, take into account what they say, and write a new entry in your journal. If you picked a <span class=\"card-black\">{{deck:countdown.colour}}</span> card, set it apart. The game ends when the fifth <span class=\"card-black\">{{deck:countdown.colour}}</span> card is picked."
+                "body_html": "If you picked a <span class=\"card-green\">{{deck:movement.colour}}</span> or <span class=\"card-purple\">{{deck:group.colour}}</span> card, you have to perform the action it indicates. If you picked a <span class=\"card-blue\">{{deck:reflection.colour}}</span> or <span class=\"card-red\">{{deck:encounter.colour}}</span> card, take into account what it says, and write a new entry in your journal. If you picked a <span class=\"card-black\">{{deck:countdown.colour}}</span> card, set it apart. The game ends when the fifth <span class=\"card-black\">{{deck:countdown.colour}}</span> card is picked. Once you are done with a card, discard it or keep it: it does nothing more in the game, but some players keep their cards as a journal log or as milestones."
             }
         ],
         "tiles_label_html": "<span class=\"tile-wood\">Map tiles</span>, twelve examples",
@@ -248,10 +248,10 @@
         "setting_heading": "Setting the table",
         "setting": [
             "Set aside dedicated time.",
-            "Minimize distractions.",
+            "Minimise distractions.",
             "Create a comfortable environment.",
-            "Honor everyone's privacy.",
-            "Practice active listening."
+            "Honour everyone's privacy.",
+            "Practise active listening."
         ],
         "deeper_heading": "Going deeper",
         "deeper": [

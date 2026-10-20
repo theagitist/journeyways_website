@@ -58,7 +58,7 @@
         "sr_heading": "Preparación",
         "need_heading": "Qué necesitas",
         "need": [
-            "Losetas de mapa (47).",
+            "Losetas de mapa (47), más una loseta en blanco (1).",
             "Cartas de juego (101).",
             "Peones (1 por persona).",
             "Cuaderno de juego (1 por persona).",
@@ -82,7 +82,7 @@
     "turn": {
         "stamp": "Turno",
         "sr_heading": "Turno",
-        "intro_html": "Cada turno tiene tres fases: <span class=\"font-medium text-white\">Explorar</span>, <span class=\"font-medium text-white\">Elegir</span> y <span class=\"font-medium text-white\">Reflexionar</span>.",
+        "intro_html": "Cada turno tiene tres fases: <span class=\"font-medium text-white\">Explorar</span>, <span class=\"font-medium text-white\">Elegir</span> y <span class=\"font-medium text-white\">Reflexionar</span>. Los turnos siguen el orden aproximado que acordaron, pero sin rigidez: juega cuando quieras, o deja pasar un turno.",
         "phases": [
             {
                 "eyebrow": "Fase 1",
@@ -97,7 +97,7 @@
             {
                 "eyebrow": "Fase 3",
                 "title": "Reflexionar",
-                "body_html": "Si elegiste una carta <span class=\"card-green\">{{deck:movement.colour}}</span> o <span class=\"card-purple\">{{deck:group.colour}}</span>, tienes que realizar la acción que indica. Si elegiste una carta <span class=\"card-blue\">{{deck:reflection.colour}}</span> o <span class=\"card-red\">{{deck:encounter.colour}}</span>, ten en cuenta lo que dice y escribe una nueva entrada en tu diario. Si elegiste una carta <span class=\"card-black\">{{deck:countdown.colour}}</span>, ponla aparte. La partida termina cuando se elige la quinta carta <span class=\"card-black\">{{deck:countdown.colour}}</span>."
+                "body_html": "Si elegiste una carta <span class=\"card-green\">{{deck:movement.colour}}</span> o <span class=\"card-purple\">{{deck:group.colour}}</span>, tienes que realizar la acción que indica. Si elegiste una carta <span class=\"card-blue\">{{deck:reflection.colour}}</span> o <span class=\"card-red\">{{deck:encounter.colour}}</span>, ten en cuenta lo que dice y escribe una nueva entrada en tu diario. Si elegiste una carta <span class=\"card-black\">{{deck:countdown.colour}}</span>, ponla aparte. La partida termina cuando se elige la quinta carta <span class=\"card-black\">{{deck:countdown.colour}}</span>. Cuando termines con una carta, descártala o guárdala: ya no tiene efecto en el juego, pero hay personas que guardan sus cartas como registro de su diario o como hitos."
             }
         ],
         "tiles_label_html": "<span class=\"tile-wood\">Losetas de mapa</span>, doce ejemplos",

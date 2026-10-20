@@ -58,7 +58,7 @@
         "sr_heading": "Mise en place",
         "need_heading": "Ce qu'il vous faut",
         "need": [
-            "Tuiles de plateau (47).",
+            "Tuiles de plateau (47), plus une tuile vierge (1).",
             "Cartes de jeu (101).",
             "Pions (1 par personne).",
             "Cahier de jeu (1 par personne).",
@@ -82,7 +82,7 @@
     "turn": {
         "stamp": "Tour",
         "sr_heading": "Tour",
-        "intro_html": "Chaque tour comporte trois phases : <span class=\"font-medium text-white\">Explorer</span>, <span class=\"font-medium text-white\">Choisir</span> et <span class=\"font-medium text-white\">Réfléchir</span>.",
+        "intro_html": "Chaque tour comporte trois phases : <span class=\"font-medium text-white\">Explorer</span>, <span class=\"font-medium text-white\">Choisir</span> et <span class=\"font-medium text-white\">Réfléchir</span>. L'ordre des tours reste souple : jouez quand vous en avez envie, ou passez votre tour.",
         "phases": [
             {
                 "eyebrow": "Phase 1",
@@ -97,7 +97,7 @@
             {
                 "eyebrow": "Phase 3",
                 "title": "Réfléchir",
-                "body_html": "Si vous avez choisi une carte <span class=\"card-green\">{{deck:movement.colour}}</span> ou <span class=\"card-purple\">{{deck:group.colour}}</span>, vous devez réaliser l'action qu'elle indique. Si vous avez choisi une carte <span class=\"card-blue\">{{deck:reflection.colour}}</span> ou <span class=\"card-red\">{{deck:encounter.colour}}</span>, tenez compte de ce qu'elle dit et écrivez une nouvelle entrée dans votre journal. Si vous avez choisi une carte <span class=\"card-black\">{{deck:countdown.colour}}</span>, mettez-la de côté. La partie se termine lorsque la cinquième carte <span class=\"card-black\">{{deck:countdown.colour}}</span> est choisie."
+                "body_html": "Si vous avez choisi une carte <span class=\"card-green\">{{deck:movement.colour}}</span> ou <span class=\"card-purple\">{{deck:group.colour}}</span>, vous devez réaliser l'action qu'elle indique. Si vous avez choisi une carte <span class=\"card-blue\">{{deck:reflection.colour}}</span> ou <span class=\"card-red\">{{deck:encounter.colour}}</span>, tenez compte de ce qu'elle dit et écrivez une nouvelle entrée dans votre journal. Si vous avez choisi une carte <span class=\"card-black\">{{deck:countdown.colour}}</span>, mettez-la de côté. La partie se termine lorsque la cinquième carte <span class=\"card-black\">{{deck:countdown.colour}}</span> est choisie. Ensuite, défaussez la carte ou gardez-la : elle n'a plus d'effet, mais certaines personnes gardent leurs cartes comme trace de leur journal ou comme jalons."
             }
         ],
         "tiles_label_html": "<span class=\"tile-wood\">Tuiles de carte</span>, douze exemples",
