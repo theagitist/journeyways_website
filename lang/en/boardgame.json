@@ -19,7 +19,8 @@
             "es": "Español",
             "fr": "Français"
         },
-        "facilitator_label": "Facilitator's Guide (PDF):"
+        "facilitator_label": "Facilitator's Guide (PDF):",
+        "quickref_label": "Quick Reference (PDF):"
     },
     "decks": {
         "stamp": "Decks",

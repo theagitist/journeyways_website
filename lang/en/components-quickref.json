@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Quick Reference",
+        "description": "The JOURNEYWAYS Quick Reference: the turn, setup at a glance, and what each card colour asks, on one page. Preview it or download the PDF.",
+        "keywords": "JOURNEYWAYS quick reference, rules summary, card colours, how to play, board game",
+        "og_title": "JOURNEYWAYS | Quick Reference",
+        "og_description": "The JOURNEYWAYS rules on one page. Preview it or download the PDF."
+    },
+    "back": "Back to Components",
+    "title": "The Quick Reference",
+    "intro": "The game on one page: the three phases of a turn, setup at a glance, what each card colour asks of you, and the loose-rules reminders. Keep it on the table while you play.",
+    "pages_hint": "One page. Pick it to read it up close.",
+    "download": {
+        "en": "Download · English ↓",
+        "note": "PDF, one page. English only for now."
+    },
+    "preview_heading": "Quick Reference preview",
+    "pages": {
+        "0": {
+            "alt": "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box.",
+            "caption": "Quick reference"
+        }
+    }
+}

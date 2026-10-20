@@ -103,6 +103,9 @@
             {"title": "Outils de sécurité", "subtitle": "Se retirer, carte X, lignes et voiles.", "alt": "La page des outils de sécurité : se retirer, la carte X, les lignes et voiles, et les points d'étape."},
             {"title": "Prolonger la partie", "subtitle": "Des parties plus longues et plus de séances.", "alt": "La page pour prolonger la partie, avec trois cartes du jeu en éventail."},
             {"title": "Séances de recherche", "subtitle": "Quand une séance fait partie d'une étude.", "alt": "La page des séances de recherche : consentement, enregistrement, notes et retrait."}
+        ],
+        "quickref": [
+            {"title": "Aide-mémoire", "subtitle": "Le jeu sur une page.", "alt": "La page Aide-mémoire : ton tour, la mise en place en un coup d'œil, les cinq couleurs de carte avec ce que chacune demande, et un encadré Bon à savoir."}
         ]
     }
 }

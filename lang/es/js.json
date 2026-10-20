@@ -103,6 +103,9 @@
             {"title": "Herramientas de seguridad", "subtitle": "Retirarse, tarjeta X, líneas y velos.", "alt": "La página de herramientas de seguridad: retirarse, la tarjeta X, líneas y velos, y pausas para preguntar."},
             {"title": "Alargar la partida", "subtitle": "Partidas más largas y más sesiones.", "alt": "La página para alargar la partida, con tres cartas del juego en abanico."},
             {"title": "Sesiones de investigación", "subtitle": "Cuando una sesión forma parte de un estudio.", "alt": "La página de sesiones de investigación: consentimiento, grabación, notas y retirada."}
+        ],
+        "quickref": [
+            {"title": "Referencia rápida", "subtitle": "El juego en una página.", "alt": "La página de Referencia rápida: tu turno, la preparación de un vistazo, los cinco colores de carta con lo que pide cada uno y un recuadro de Bueno saber."}
         ]
     }
 }

@@ -19,7 +19,8 @@
             "es": "Español",
             "fr": "Français"
         },
-        "facilitator_label": "Guía para facilitar (PDF, en inglés):"
+        "facilitator_label": "Guía para facilitar (PDF, en inglés):",
+        "quickref_label": "Referencia rápida (PDF, en inglés):"
     },
     "decks": {
         "stamp": "Mazos",

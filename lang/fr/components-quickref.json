@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Aide-mémoire",
+        "description": "L'Aide-mémoire JOURNEYWAYS : le tour, la mise en place en un coup d'œil et ce que demande chaque couleur de carte, sur une page. Prévisualisez-le ou téléchargez le PDF.",
+        "keywords": "aide-mémoire JOURNEYWAYS, résumé des règles, couleurs des cartes, comment jouer, jeu de société",
+        "og_title": "JOURNEYWAYS | Aide-mémoire",
+        "og_description": "Les règles de JOURNEYWAYS sur une page. Prévisualisez-le ou téléchargez le PDF."
+    },
+    "back": "Retour aux Composants",
+    "title": "L'Aide-mémoire",
+    "intro": "Le jeu sur une page : les trois phases d'un tour, la mise en place en un coup d'œil, ce que te demande chaque couleur de carte et les rappels des règles souples. Garde-le sur la table pendant la partie.",
+    "pages_hint": "Une page. Choisissez-la pour la lire de près.",
+    "download": {
+        "en": "Download · English ↓",
+        "note": "PDF, une page. En anglais seulement pour l'instant."
+    },
+    "preview_heading": "Aperçu de l'aide-mémoire",
+    "pages": {
+        "0": {
+            "alt": "La page Aide-mémoire : ton tour, la mise en place en un coup d'œil, les cinq couleurs de carte avec ce que chacune demande, et un encadré Bon à savoir.",
+            "caption": "Aide-mémoire"
+        }
+    }
+}

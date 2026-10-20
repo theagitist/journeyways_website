@@ -103,6 +103,9 @@
             {"title": "Safety tools", "subtitle": "Opt out, X-card, lines and veils.", "alt": "The Safety tools page: opting out, the X-card, lines and veils, and check-ins."},
             {"title": "Extending the game", "subtitle": "Longer games and more sessions.", "alt": "The Extending the game page, with three game cards fanned out."},
             {"title": "Research sessions", "subtitle": "When a session is part of a study.", "alt": "The Research sessions page: consent, recording, notes and withdrawal."}
+        ],
+        "quickref": [
+            {"title": "Quick reference", "subtitle": "The game on one page.", "alt": "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box."}
         ]
     }
 }

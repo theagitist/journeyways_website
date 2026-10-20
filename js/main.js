@@ -293,6 +293,9 @@ var gallerySets = {
         { src: 'img/facilitator/p08.webp?v=1', alt: "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, X-card, lines and veils." },
         { src: 'img/facilitator/p12.webp?v=1', alt: "The Extending the game page, with three game cards fanned out.", title: "Extending the game", subtitle: "Longer games and more sessions." },
         { src: 'img/facilitator/p13.webp?v=1', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
+    ],
+    quickref: [
+        { src: 'img/quickref/p01.webp?v=1', alt: "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box.", title: 'Quick reference', subtitle: 'The game on one page.' }
     ]
 };
 var currentSet = 'photos';

@@ -19,7 +19,8 @@
             "es": "Español",
             "fr": "Français"
         },
-        "facilitator_label": "Guide d'animation (PDF, en anglais) :"
+        "facilitator_label": "Guide d'animation (PDF, en anglais) :",
+        "quickref_label": "Aide-mémoire (PDF, en anglais) :"
     },
     "decks": {
         "stamp": "Paquets",

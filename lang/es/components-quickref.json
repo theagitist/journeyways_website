@@ -1,0 +1,24 @@
+{
+    "meta": {
+        "title": "JOURNEYWAYS | Referencia rápida",
+        "description": "La Referencia rápida de JOURNEYWAYS: el turno, la preparación de un vistazo y lo que pide cada color de carta, en una página. Previsualízala o descarga el PDF.",
+        "keywords": "referencia rápida JOURNEYWAYS, resumen de reglas, colores de cartas, cómo jugar, juego de mesa",
+        "og_title": "JOURNEYWAYS | Referencia rápida",
+        "og_description": "Las reglas de JOURNEYWAYS en una página. Previsualízala o descarga el PDF."
+    },
+    "back": "Volver a Componentes",
+    "title": "La Referencia rápida",
+    "intro": "El juego en una página: las tres fases de un turno, la preparación de un vistazo, lo que te pide cada color de carta y los recordatorios de las reglas flexibles. Tenla en la mesa mientras juegas.",
+    "pages_hint": "Una página. Elígela para leerla de cerca.",
+    "download": {
+        "en": "Download · English ↓",
+        "note": "PDF, una página. Por ahora solo en inglés."
+    },
+    "preview_heading": "Vista previa de la referencia",
+    "pages": {
+        "0": {
+            "alt": "La página de Referencia rápida: tu turno, la preparación de un vistazo, los cinco colores de carta con lo que pide cada uno y un recuadro de Bueno saber.",
+            "caption": "Referencia rápida"
+        }
+    }
+}
