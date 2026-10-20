@@ -47,7 +47,7 @@ $cardFronts = [
             <div class="grid grid-cols-12 gap-8 md:gap-12 items-start">
                 <div class="col-span-12 md:col-span-5">
                     <figure class="m-0 shadow-lg max-w-md mx-auto md:mx-0">
-                        <img src="/img/rulebook_cover.webp?v=4" alt="<?= te("$P.hero.cover_alt") ?>" class="w-full h-auto block" loading="eager">
+                        <img src="/img/rulebook_cover.webp?v=5" alt="<?= te("$P.hero.cover_alt") ?>" class="w-full h-auto block" loading="eager">
                     </figure>
                 </div>
                 <div class="col-span-12 md:col-span-7">
@@ -65,27 +65,27 @@ $cardFronts = [
                     </p>
                     <p class="text-sm md:text-base text-gray-400">
                         <?= te("$P.hero.rulebook_label") ?>
-                        <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=21" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Game Rules 1.0 EN.pdf?v=22" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=21" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
+                        <a href="/download/JOURNEYWAYS Game Rules 1.0 ES.pdf?v=22" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=21" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
+                        <a href="/download/JOURNEYWAYS Game Rules 1.0 FR.pdf?v=22" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.booklet_label") ?>
-                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=17" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 EN.pdf?v=18" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=17" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
+                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 ES.pdf?v=18" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.es") ?></a>
                         &middot;
-                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=17" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
+                        <a href="/download/JOURNEYWAYS Player Booklet 1.0 FR.pdf?v=18" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.fr") ?></a>
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.quickref_label") ?>
-                        <a href="/download/JOURNEYWAYS Quick Reference 1.0 EN.pdf?v=1" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Quick Reference 1.0 EN.pdf?v=2" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.facilitator_label") ?>
-                        <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=1" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=2" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                     </p>
                 </div>
             </div>

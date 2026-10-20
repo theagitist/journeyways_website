@@ -269,33 +269,33 @@ var gallerySets = {
         { src: 'img/play/play-room.webp', alt: 'Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right.', title: 'Inside a room', subtitle: 'The private journal beside the live room lobby.' }
     ],
     manual: [
-        { src: 'img/manual/p01.webp?v=21', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
-        { src: 'img/manual/p04.webp?v=21', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
-        { src: 'img/manual/p05.webp?v=21', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
-        { src: 'img/manual/p08.webp?v=21', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
-        { src: 'img/manual/p09.webp?v=21', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
-        { src: 'img/manual/p13.webp?v=21', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/manual/p01.webp?v=22', alt: 'The Game Manual cover: JOURNEYWAYS Game Rules, a board game about becoming, over a watercolour landscape.', title: 'Cover', subtitle: 'The Game Manual.' },
+        { src: 'img/manual/p04.webp?v=22', alt: 'The Game Setup page: what you will need and how to lay out the tiles and the five card piles, with a side note.', title: 'Game Setup', subtitle: 'Laying out the game.' },
+        { src: 'img/manual/p05.webp?v=22', alt: 'The Basic Gameplay page: the three phases of a turn and a legend of the five card colours.', title: 'Basic Gameplay', subtitle: 'Explore, pick, reflect.' },
+        { src: 'img/manual/p08.webp?v=22', alt: 'A sample journal entry in a handwritten script, with a small painted volcano in the corner.', title: 'A journal entry', subtitle: 'An example of writing from the cards.' },
+        { src: 'img/manual/p09.webp?v=22', alt: 'The Solo and Group Play page, with a photograph of painted meeples.', title: 'Solo and Group Play', subtitle: 'Playing alone or together.' },
+        { src: 'img/manual/p13.webp?v=22', alt: 'The manual back cover: the Journeyways mark, a QR code, and the tagline a game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ],
     booklet: [
-        { src: 'img/booklet/p01.webp?v=7', alt: 'The Player Booklet cover: a grey labyrinth mark above the Journeyways wordmark, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
-        { src: 'img/booklet/p02.webp?v=7', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
-        { src: 'img/booklet/p03.webp?v=7', alt: 'A tear-out page with a tent-fold outline: draw your character on one half, cut along the dotted line, and fold it so it stands.', title: 'Your playing piece', subtitle: 'Draw it, cut it out, fold it.' },
-        { src: 'img/booklet/p04.webp?v=7', alt: 'A diagram of the playing piece folding into a tent shape, with short instructions.', title: 'How it folds', subtitle: 'A small tent that stands on the table.' },
-        { src: 'img/booklet/p05.webp?v=7', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
-        { src: 'img/booklet/p06.webp?v=7', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
-        { src: 'img/booklet/p15.webp?v=7', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
-        { src: 'img/booklet/p16.webp?v=7', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
+        { src: 'img/booklet/p01.webp?v=8', alt: 'The Player Booklet cover: a grey labyrinth mark above the Journeyways wordmark, titled Player Booklet.', title: 'Cover', subtitle: 'The Player Booklet.' },
+        { src: 'img/booklet/p02.webp?v=8', alt: 'The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know.', title: 'Quick Reference', subtitle: 'The turn and the card colours at a glance.' },
+        { src: 'img/booklet/p03.webp?v=8', alt: 'A tear-out page with a tent-fold outline: draw your character on one half, cut along the dotted line, and fold it so it stands.', title: 'Your playing piece', subtitle: 'Draw it, cut it out, fold it.' },
+        { src: 'img/booklet/p04.webp?v=8', alt: 'A diagram of the playing piece folding into a tent shape, with short instructions.', title: 'How it folds', subtitle: 'A small tent that stands on the table.' },
+        { src: 'img/booklet/p05.webp?v=8', alt: 'The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal.', title: 'Character Sheet', subtitle: 'Who you are at the start.' },
+        { src: 'img/booklet/p06.webp?v=8', alt: 'A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds.', title: 'Journal Page', subtitle: 'Lined pages to write and draw your story.' },
+        { src: 'img/booklet/p15.webp?v=8', alt: 'The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections.', title: 'Character Sheet', subtitle: 'Who you have become.' },
+        { src: 'img/booklet/p16.webp?v=8', alt: 'The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming.', title: 'Back cover', subtitle: 'A game about becoming.' }
     ],
     facilitator: [
-        { src: 'img/facilitator/p01.webp?v=1', alt: "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "The Facilitator's Guide." },
-        { src: 'img/facilitator/p06.webp?v=1', alt: "The Playing pieces page: players can use any piece they like, with a painting of coloured pawns.", title: "Playing pieces", subtitle: "Anything can be a piece." },
-        { src: 'img/facilitator/p07.webp?v=1', alt: "The Opening the session page: what to say to the table before play begins.", title: "Opening the session", subtitle: "What to say before you begin." },
-        { src: 'img/facilitator/p08.webp?v=1', alt: "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, X-card, lines and veils." },
-        { src: 'img/facilitator/p12.webp?v=1', alt: "The Extending the game page, with three game cards fanned out.", title: "Extending the game", subtitle: "Longer games and more sessions." },
-        { src: 'img/facilitator/p13.webp?v=1', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
+        { src: 'img/facilitator/p01.webp?v=2', alt: "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "The Facilitator's Guide." },
+        { src: 'img/facilitator/p06.webp?v=2', alt: "The Playing pieces page: players can use any piece they like, with a painting of coloured pawns.", title: "Playing pieces", subtitle: "Anything can be a piece." },
+        { src: 'img/facilitator/p07.webp?v=2', alt: "The Opening the session page: what to say to the table before play begins.", title: "Opening the session", subtitle: "What to say before you begin." },
+        { src: 'img/facilitator/p08.webp?v=2', alt: "The Safety tools page: opting out, the X-card, lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, X-card, lines and veils." },
+        { src: 'img/facilitator/p12.webp?v=2', alt: "The Extending the game page, with three game cards fanned out.", title: "Extending the game", subtitle: "Longer games and more sessions." },
+        { src: 'img/facilitator/p13.webp?v=2', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
     ],
     quickref: [
-        { src: 'img/quickref/p01.webp?v=1', alt: "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box.", title: 'Quick reference', subtitle: 'The game on one page.' }
+        { src: 'img/quickref/p01.webp?v=2', alt: "The Quick Reference page: your turn, setup at a glance, the five card colours with what each asks, and a Good to know box.", title: 'Quick reference', subtitle: 'The game on one page.' }
     ]
 };
 var currentSet = 'photos';

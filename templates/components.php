@@ -9,9 +9,9 @@ $P = 'pages.components';
 $cards = [
     ['/components-cards.html',   "background-image: url('/img/cards/backs/back-reflection-300.webp');"],
     ['/components-tiles.html',   "background-image: url('/img/tiles/mirror-lake-400.webp');"],
-    ['/components-booklet.html', "background-image: url('/img/booklet/p01.webp?v=7');"],
-    ['/components-manual.html',  "background-image: url('/img/rulebook_cover.webp?v=4');"],
-    ['/components-quickref.html', "background-image: url('/img/quickref/card.webp?v=1');"],
+    ['/components-booklet.html', "background-image: url('/img/booklet/p01.webp?v=8');"],
+    ['/components-manual.html',  "background-image: url('/img/rulebook_cover.webp?v=5');"],
+    ['/components-quickref.html', "background-image: url('/img/quickref/card.webp?v=2');"],
     ['/components-facilitator.html', "background-image: url('/img/facilitator/pieces.webp?v=1');"],
 ];
 ?>
