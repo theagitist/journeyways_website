@@ -8,7 +8,7 @@
     },
     "back": "← Volver a Componentes",
     "title": "El Cuaderno de juego",
-    "lede": "Un cuaderno para escribir, uno para cada persona: preguntas para crear el personaje, páginas de diario con renglones para ir llenando conforme el personaje se despliega, y una hoja de personaje al inicio y al final. Uno por persona en cada sesión; imprímelo, dóblalo y hazlo tuyo.",
+    "lede": "Un cuaderno para escribir, uno para cada persona: preguntas para crear el personaje, páginas de diario con renglones para ir llenando conforme el personaje se despliega, una hoja de personaje al inicio y al final, y una ficha para dibujar, recortar y doblar. Uno por persona en cada sesión; imprímelo, dóblalo y hazlo tuyo.",
     "count": "Dieciséis páginas. Elige cualquier página para leerla de cerca.",
     "dl": {
         "en": "Download · English ↓",
@@ -18,11 +18,37 @@
     },
     "preview_heading": "Vista previa del cuaderno",
     "pages": [
-        { "alt": "La portada del Cuaderno de juego.", "caption": "Portada" },
-        { "alt": "La página de introducción y Referencia rápida.", "caption": "Referencia rápida" },
-        { "alt": "La primera Hoja de personaje.", "caption": "Hoja de personaje" },
-        { "alt": "Una página de diario con renglones.", "caption": "Página de diario" },
-        { "alt": "La segunda Hoja de personaje.", "caption": "Hoja de personaje" },
-        { "alt": "La contraportada del cuaderno.", "caption": "Contraportada" }
+        {
+            "alt": "La portada del Cuaderno de juego.",
+            "caption": "Portada"
+        },
+        {
+            "alt": "La página de introducción y Referencia rápida.",
+            "caption": "Referencia rápida"
+        },
+        {
+            "alt": "La página de la ficha.",
+            "caption": "Tu ficha"
+        },
+        {
+            "alt": "Cómo se dobla la ficha.",
+            "caption": "Cómo se dobla"
+        },
+        {
+            "alt": "La primera Hoja de personaje.",
+            "caption": "Hoja de personaje"
+        },
+        {
+            "alt": "Una página de diario con renglones.",
+            "caption": "Página de diario"
+        },
+        {
+            "alt": "La segunda Hoja de personaje.",
+            "caption": "Hoja de personaje"
+        },
+        {
+            "alt": "La contraportada del cuaderno.",
+            "caption": "Contraportada"
+        }
     ]
 }

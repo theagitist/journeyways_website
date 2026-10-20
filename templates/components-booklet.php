@@ -5,7 +5,7 @@ $P = 'pages.components-booklet';
 
 // Structural (non-translatable): preview image basename per row, paired with the
 // dict pages[] entry (alt + caption) by index. Lightbox set is 'booklet'.
-$previews = ['p01', 'p02', 'p03', 'p06', 'p15', 'p16'];
+$previews = ['p01', 'p02', 'p03', 'p04', 'p05', 'p06', 'p15', 'p16'];
 ?>
 <style>
   .jw-wrap { background: #111827; }
@@ -40,7 +40,7 @@ $previews = ['p01', 'p02', 'p03', 'p06', 'p15', 'p16'];
                 <h2 id="preview-heading" class="sr-only"><?= te("$P.preview_heading") ?></h2>
                 <div class="jw-pages">
 <?php foreach ($previews as $i => $img): $c = "$P.pages.$i"; ?>
-                    <figure class="jw-page"><img src="/img/booklet/<?= esc($img) ?>.webp?v=5" alt="<?= te("$c.alt") ?>" loading="lazy" onclick="openLightboxFromSet('booklet', <?= $i ?>)"><figcaption><?= te("$c.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/booklet/<?= esc($img) ?>.webp?v=6" alt="<?= te("$c.alt") ?>" loading="lazy" onclick="openLightboxFromSet('booklet', <?= $i ?>)"><figcaption><?= te("$c.caption") ?></figcaption></figure>
 <?php endforeach; ?>
                 </div>
             </section>

@@ -89,6 +89,8 @@
         "booklet": [
             { "title": "Cover", "subtitle": "The Player Booklet.", "alt": "The Player Booklet cover: a grey labyrinth mark above the Journeyways wordmark, titled Player Booklet." },
             { "title": "Quick Reference", "subtitle": "The turn and the card colours at a glance.", "alt": "The intro and Quick Reference page: the three phases of a turn, the card colours, and things good to know." },
+            { "title": "Your playing piece", "subtitle": "Draw it, cut it out, fold it.", "alt": "A tear-out page with a tent-fold outline: draw your character on one half, cut along the dotted line, and fold it so it stands." },
+            { "title": "How it folds", "subtitle": "A small tent that stands on the table.", "alt": "A diagram of the playing piece folding into a tent shape, with short instructions." },
             { "title": "Character Sheet", "subtitle": "Who you are at the start.", "alt": "The first Character Sheet: prompts for where you come from, where you are now, what and who you are, why, your name, and your goal." },
             { "title": "Journal Page", "subtitle": "Lined pages to write and draw your story.", "alt": "A lined journal page with the Journeyways mark, for writing and drawing your story as it unfolds." },
             { "title": "Character Sheet", "subtitle": "Who you have become.", "alt": "The second Character Sheet: prompts for who you are now, what changed, your name, your story title, and reflections." },

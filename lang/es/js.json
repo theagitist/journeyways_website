@@ -89,6 +89,8 @@
         "booklet": [
             { "title": "Portada", "subtitle": "El Cuaderno de juego.", "alt": "La portada del Cuaderno de juego: un laberinto gris sobre el logotipo Journeyways, titulado Cuaderno de juego." },
             { "title": "Referencia rápida", "subtitle": "El turno y los colores de carta de un vistazo.", "alt": "La página de introducción y Referencia rápida: las tres fases de un turno, los colores de carta y cosas que conviene saber." },
+            { "title": "Tu ficha", "subtitle": "Dibújala, recórtala, dóblala.", "alt": "Una página para recortar con el contorno de una ficha plegable: dibuja a tu personaje en una mitad, recorta por la línea de puntos y dóblala para que se sostenga." },
+            { "title": "Cómo se dobla", "subtitle": "Una pequeña tienda que se sostiene sobre la mesa.", "alt": "Un diagrama de la ficha doblándose en forma de tienda, con instrucciones breves." },
             { "title": "Hoja de personaje", "subtitle": "Quién eres al comienzo.", "alt": "La primera Hoja de personaje: preguntas sobre de dónde vienes, dónde estás ahora, qué y quién eres, por qué, tu nombre y tu meta." },
             { "title": "Página de diario", "subtitle": "Páginas con renglones para escribir y dibujar tu historia.", "alt": "Una página de diario con renglones y el logotipo de Journeyways, para escribir y dibujar tu historia a medida que se despliega." },
             { "title": "Hoja de personaje", "subtitle": "En quién te has convertido.", "alt": "La segunda Hoja de personaje: preguntas sobre quién eres ahora, qué cambió, tu nombre, el título de tu historia y reflexiones." },

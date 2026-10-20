@@ -36,12 +36,12 @@ $P = 'pages.components-manual';
             <section aria-labelledby="preview-heading">
                 <h2 id="preview-heading" class="sr-only"><?= te("$P.preview_heading") ?></h2>
                 <div class="jw-pages">
-                    <figure class="jw-page"><img src="/img/manual/p01.webp?v=15" alt="<?= te("$P.pages.0.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 0)"><figcaption><?= te("$P.pages.0.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/manual/p04.webp?v=14" alt="<?= te("$P.pages.1.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 1)"><figcaption><?= te("$P.pages.1.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/manual/p05.webp?v=14" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/manual/p08.webp?v=14" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/manual/p09.webp?v=14" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
-                    <figure class="jw-page"><img src="/img/manual/p13.webp?v=14" alt="<?= te("$P.pages.5.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 5)"><figcaption><?= te("$P.pages.5.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p01.webp?v=16" alt="<?= te("$P.pages.0.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 0)"><figcaption><?= te("$P.pages.0.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p04.webp?v=16" alt="<?= te("$P.pages.1.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 1)"><figcaption><?= te("$P.pages.1.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p05.webp?v=16" alt="<?= te("$P.pages.2.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 2)"><figcaption><?= te("$P.pages.2.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p08.webp?v=16" alt="<?= te("$P.pages.3.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 3)"><figcaption><?= te("$P.pages.3.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p09.webp?v=16" alt="<?= te("$P.pages.4.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 4)"><figcaption><?= te("$P.pages.4.caption") ?></figcaption></figure>
+                    <figure class="jw-page"><img src="/img/manual/p13.webp?v=16" alt="<?= te("$P.pages.5.alt") ?>" loading="lazy" onclick="openLightboxFromSet('manual', 5)"><figcaption><?= te("$P.pages.5.caption") ?></figcaption></figure>
                 </div>
             </section>
         </div>

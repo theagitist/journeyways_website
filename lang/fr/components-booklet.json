@@ -8,7 +8,7 @@
     },
     "back": "← Retour aux composants",
     "title": "Le Cahier de jeu",
-    "lede": "Un cahier à remplir, un pour chaque personne : des questions pour créer le personnage, des pages de journal lignées à remplir au fil du personnage qui se dévoile, et une fiche de personnage au début et à la fin. Un par personne à chaque séance ; imprimez-le, pliez-le, faites-en le vôtre.",
+    "lede": "Un cahier à remplir, un pour chaque personne : des questions pour créer le personnage, des pages de journal lignées à remplir au fil du personnage qui se dévoile, une fiche de personnage au début et à la fin, et une pièce de jeu à dessiner, découper et plier. Un par personne à chaque séance ; imprimez-le, pliez-le, faites-en le vôtre.",
     "count": "Seize pages. Choisissez une page pour la lire de près.",
     "dl": {
         "en": "Download · English ↓",
@@ -18,11 +18,37 @@
     },
     "preview_heading": "Aperçu du cahier",
     "pages": [
-        { "alt": "La couverture du Cahier de jeu.", "caption": "Couverture" },
-        { "alt": "La page d'introduction et d'Aide-mémoire.", "caption": "Aide-mémoire" },
-        { "alt": "La première Fiche de personnage.", "caption": "Fiche de personnage" },
-        { "alt": "Une page de journal lignée.", "caption": "Page de journal" },
-        { "alt": "La deuxième Fiche de personnage.", "caption": "Fiche de personnage" },
-        { "alt": "La quatrième de couverture du cahier.", "caption": "Quatrième de couverture" }
+        {
+            "alt": "La couverture du Cahier de jeu.",
+            "caption": "Couverture"
+        },
+        {
+            "alt": "La page d'introduction et d'Aide-mémoire.",
+            "caption": "Aide-mémoire"
+        },
+        {
+            "alt": "La page du pion.",
+            "caption": "Ta pièce"
+        },
+        {
+            "alt": "Comment plier le pion.",
+            "caption": "Comment plier"
+        },
+        {
+            "alt": "La première Fiche de personnage.",
+            "caption": "Fiche de personnage"
+        },
+        {
+            "alt": "Une page de journal lignée.",
+            "caption": "Page de journal"
+        },
+        {
+            "alt": "La deuxième Fiche de personnage.",
+            "caption": "Fiche de personnage"
+        },
+        {
+            "alt": "La quatrième de couverture du cahier.",
+            "caption": "Quatrième de couverture"
+        }
     ]
 }

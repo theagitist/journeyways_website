@@ -8,7 +8,7 @@
     },
     "back": "← Back to Components",
     "title": "The Player Booklet",
-    "lede": "A write-in booklet for each player: character-creation prompts, lined journal pages to fill as your character unfolds, and a character sheet at the front and the back. One per player per session; print it, fold it, make it yours.",
+    "lede": "A write-in booklet for each player: character-creation prompts, lined journal pages to fill as your character unfolds, a character sheet at the front and the back, and a playing piece to draw, cut out and fold. One per player per session; print it, fold it, make it yours.",
     "count": "Sixteen pages. Pick any page to read it up close.",
     "dl": {
         "en": "Download · English ↓",
@@ -18,11 +18,37 @@
     },
     "preview_heading": "Booklet preview",
     "pages": [
-        { "alt": "The Player Booklet cover.", "caption": "Cover" },
-        { "alt": "The intro and Quick Reference page.", "caption": "Quick Reference" },
-        { "alt": "The first Character Sheet.", "caption": "Character Sheet" },
-        { "alt": "A lined journal page.", "caption": "Journal Page" },
-        { "alt": "The second Character Sheet.", "caption": "Character Sheet" },
-        { "alt": "The booklet back cover.", "caption": "Back cover" }
+        {
+            "alt": "The Player Booklet cover.",
+            "caption": "Cover"
+        },
+        {
+            "alt": "The intro and Quick Reference page.",
+            "caption": "Quick Reference"
+        },
+        {
+            "alt": "The playing piece page.",
+            "caption": "Your playing piece"
+        },
+        {
+            "alt": "How the playing piece folds.",
+            "caption": "How it folds"
+        },
+        {
+            "alt": "The first Character Sheet.",
+            "caption": "Character Sheet"
+        },
+        {
+            "alt": "A lined journal page.",
+            "caption": "Journal Page"
+        },
+        {
+            "alt": "The second Character Sheet.",
+            "caption": "Character Sheet"
+        },
+        {
+            "alt": "The booklet back cover.",
+            "caption": "Back cover"
+        }
     ]
 }
