@@ -144,11 +144,11 @@ $P = 'pages.videogame';
                     </p>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                         <figure class="m-0">
-                            <img src="/img/play/play-home.webp" alt="<?= te("$P.screens.front.alt") ?>" class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 0)" loading="lazy">
+                            <img src="/img/play/play-home.webp?v=2" alt="<?= te("$P.screens.front.alt") ?>" class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 0)" loading="lazy">
                             <figcaption class="text-[11px] text-gray-500 italic mt-2"><?= te("$P.screens.front.caption") ?></figcaption>
                         </figure>
                         <figure class="m-0">
-                            <img src="/img/play/play-dashboard.webp" alt="<?= te("$P.screens.dashboard.alt") ?>" class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 1)" loading="lazy">
+                            <img src="/img/play/play-dashboard.webp?v=2" alt="<?= te("$P.screens.dashboard.alt") ?>" class="w-full aspect-[1400/897] object-cover rounded border border-gray-700/40 cursor-pointer hover:opacity-90 transition-opacity" onclick="openLightboxFromSet('videogameScreens', 1)" loading="lazy">
                             <figcaption class="text-[11px] text-gray-500 italic mt-2"><?= te("$P.screens.dashboard.caption") ?></figcaption>
                         </figure>
                         <figure class="m-0">

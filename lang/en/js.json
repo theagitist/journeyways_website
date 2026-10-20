@@ -35,7 +35,7 @@
             { "title": "Mid-Session", "subtitle": "ProtoConBC, Vancouver. October 2025.", "alt": "A wider angle of a JOURNEYWAYS session at ProtoConBC: several players writing simultaneously, with cards, tiles, and journals filling the table." }
         ],
         "videogameScreens": [
-            { "title": "The front door", "subtitle": "JOURNEYWAYS online: a game about becoming.", "alt": "The JOURNEYWAYS digital game home screen: the watercolour wordmark over a puzzle-piece landscape, with Begin the Journey and Return to Path buttons." },
+            { "title": "The front door", "subtitle": "JOURNEYWAYS online: a game about becoming.", "alt": "The JOURNEYWAYS digital game home screen: the script wordmark over a faint watercolour labyrinth, with Begin the Journey and Return to Path buttons." },
             { "title": "Your dashboard", "subtitle": "Your rooms and journeys, gathered in one place.", "alt": "The digital game dashboard: a Welcome back greeting, the five suit dots, and Active Journeys, Join a Journey, and Start a New Journey tabs over cards for the player’s rooms." },
             { "title": "The map tiles", "subtitle": "The modular map, including blank tiles to fill in yourself.", "alt": "The digital map-tile gallery: a grid of square watercolour tiles, each with its name below, including {{tile:T1.name}}, {{tile:T2.name}}, and {{tile:T3.name}}." },
             { "title": "Inside a room", "subtitle": "The private journal beside the live room lobby.", "alt": "Inside a room: the private journal panel with the Character Origins prompts on the left, beside the room lobby with its members and a Start Journey button on the right." }
