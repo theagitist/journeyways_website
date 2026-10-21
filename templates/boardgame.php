@@ -85,11 +85,11 @@ $cardFronts = [
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.companion_label") ?>
-                        <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=3" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.companion_link") ?></a>
+                        <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=4" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.companion_link") ?></a>
                     </p>
                     <p class="text-sm md:text-base text-gray-400 mt-1">
                         <?= te("$P.hero.facilitator_label") ?>
-                        <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=7" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
+                        <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=8" download class="text-yellow-400 hover:text-yellow-300 underline underline-offset-2"><?= te("$P.hero.langs.en") ?></a>
                     </p>
                 </div>
             </div>

@@ -296,7 +296,7 @@ var gallerySets = {
     ],
     companion: [
         { src: 'img/companion/p01.webp?v=1', alt: "The Card Companion cover: the round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "Every card in three languages" },
-        { src: 'img/companion/p02.webp?v=2', alt: "The how-to-use page, in English, Spanish and French, with the five deck colours.", title: "How to use it", subtitle: "Every card in three languages" },
+        { src: 'img/companion/p02.webp?v=3', alt: "The how-to-use page, in English, Spanish and French, and the contents, with each deck's colour and first page.", title: "How to use it", subtitle: "Every card in three languages" },
         { src: 'img/companion/p03.webp?v=2', alt: "A page of red Encounter cards: each card's art and number, its text in three languages, and lines for notes.", title: "Encounter cards", subtitle: "Every card in three languages" },
         { src: 'img/companion/p24.webp?v=2', alt: "A page of purple Group cards in three languages, with lines for notes.", title: "Group cards", subtitle: "Every card in three languages" },
         { src: 'img/companion/p34.webp?v=2', alt: "A page of blue Reflection cards: quotes in three languages, their authors with a short biography in each language, and lines for notes.", title: "Reflection cards", subtitle: "Every card in three languages" }

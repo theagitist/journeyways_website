@@ -109,7 +109,7 @@
         ],
         "companion": [
             {"title": "Portada", "subtitle": "Todas las cartas en tres idiomas", "alt": "La portada del Compañero de cartas: el laberinto redondo en acuarela sobre el logotipo de Journeyways."},
-            {"title": "Cómo usarlo", "subtitle": "Todas las cartas en tres idiomas", "alt": "La página de uso, en inglés, español y francés, con los colores de los cinco mazos."},
+            {"title": "Cómo usarlo", "subtitle": "Todas las cartas en tres idiomas", "alt": "La página de uso, en inglés, español y francés, y el índice, con el color de cada mazo y su primera página."},
             {"title": "Cartas de Encuentro", "subtitle": "Todas las cartas en tres idiomas", "alt": "Una página de cartas rojas de Encuentro: la ilustración y el número de cada carta, su texto en tres idiomas y líneas para notas."},
             {"title": "Cartas de Grupo", "subtitle": "Todas las cartas en tres idiomas", "alt": "Una página de cartas moradas de Grupo en tres idiomas, con líneas para notas."},
             {"title": "Cartas de Reflexión", "subtitle": "Todas las cartas en tres idiomas", "alt": "Una página de cartas azules de Reflexión: citas en tres idiomas, sus autorías con una breve biografía en cada idioma y líneas para notas."}
