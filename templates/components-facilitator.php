@@ -26,7 +26,7 @@ $P = 'pages.components-facilitator';
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.intro") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.pages_hint") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=14" download class="jw-dl"><?= t("$P.download.en") ?></a>
+                    <a href="/download/JOURNEYWAYS Facilitator Guide 1.0 EN.pdf?v=15" download class="jw-dl"><?= t("$P.download.en") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.download.note") ?></p>
             </header>
