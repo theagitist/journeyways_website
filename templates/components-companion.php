@@ -26,7 +26,7 @@ $P = 'pages.components-companion';
                 <p class="jw-hint text-sm max-w-2xl mx-auto mb-2"><?= te("$P.intro") ?></p>
                 <p class="text-gray-500 text-xs mb-7"><?= te("$P.pages_hint") ?></p>
                 <div class="jw-dl-row">
-                    <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=2" download class="jw-dl"><?= t("$P.download.label") ?></a>
+                    <a href="/download/JOURNEYWAYS Card Companion 1.0.pdf?v=3" download class="jw-dl"><?= t("$P.download.label") ?></a>
                 </div>
                 <p class="text-gray-500 text-xs mt-3"><?= te("$P.download.note") ?></p>
             </header>
