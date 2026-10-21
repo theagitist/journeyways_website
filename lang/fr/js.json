@@ -97,10 +97,10 @@
             { "title": "Quatrième de couverture", "subtitle": "Un jeu sur le devenir.", "alt": "La quatrième de couverture du cahier : la marque Journeyways, un code QR et l'accroche un jeu de société sur le devenir." }
         ],
         "facilitator": [
-            {"title": "Couverture", "subtitle": "Le Guide d'animation.", "alt": "La page des pions : chaque personne peut utiliser le pion de son choix, avec une peinture d'un dé et d'une roue."},
-            {"title": "Les pions", "subtitle": "Tout peut servir de pion.", "alt": "La page des pions : chaque personne peut utiliser le pion de son choix, avec une peinture de pions colorés."},
+            {"title": "Couverture", "subtitle": "Le Guide d'animation.", "alt": "La couverture du Guide d'animation : un labyrinthe rond à l'aquarelle au-dessus du logo Journeyways."},
+            {"title": "Les pions", "subtitle": "Tout peut servir de pion.", "alt": "La page du temps, de la taille du groupe et des pions : la durée de la séance, le nombre de personnes et les pions, avec des notes en marge tirées d'un test et sur l'invitation à apporter un objet."},
             {"title": "Ouvrir la séance", "subtitle": "Quoi dire avant de commencer.", "alt": "La page pour ouvrir la séance : un exemple de présentation à lire telle quelle ou à adapter."},
-            {"title": "Outils de sécurité", "subtitle": "Se retirer, lignes et voiles, points d'étape.", "alt": "La page des outils de sécurité : se retirer, les lignes et voiles, et les points d'étape."},
+            {"title": "Outils de sécurité", "subtitle": "Se retirer, lignes et voiles, points d'étape.", "alt": "La page des outils de sécurité : se retirer, les lignes et voiles, et les points d'étape, avec une note en marge sur la construction de l'introduction."},
             {"title": "Prolonger la partie", "subtitle": "Des parties plus longues et plus de séances.", "alt": "La page pour prolonger la partie, avec deux cartes du jeu côte à côte."},
             {"title": "Séances de recherche", "subtitle": "Quand une séance fait partie d'une étude.", "alt": "La page des séances de recherche : consentement, enregistrement, notes et retrait."}
         ],

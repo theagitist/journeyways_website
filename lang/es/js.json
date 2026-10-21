@@ -97,10 +97,10 @@
             { "title": "Contraportada", "subtitle": "Un juego sobre el devenir.", "alt": "La contraportada del cuaderno: el logotipo de Journeyways, un código QR y el lema un juego de mesa sobre el devenir." }
         ],
         "facilitator": [
-            {"title": "Portada", "subtitle": "La Guía para facilitar.", "alt": "La página de las fichas: cada persona puede usar la ficha que quiera, con una pintura de un dado y una ruleta."},
-            {"title": "Las fichas", "subtitle": "Cualquier cosa puede ser una ficha.", "alt": "La página de las fichas: cada persona puede usar la ficha que quiera, con una pintura de peones de colores."},
+            {"title": "Portada", "subtitle": "La Guía para facilitar.", "alt": "La portada de la Guía para facilitar: un laberinto redondo en acuarela sobre el logotipo de Journeyways."},
+            {"title": "Las fichas", "subtitle": "Cualquier cosa puede ser una ficha.", "alt": "La página de tiempo, tamaño del grupo y fichas: la duración de la sesión, cuántas personas juegan y las fichas, con notas al margen de una prueba de juego y sobre invitar a traer un objeto."},
             {"title": "Abrir la sesión", "subtitle": "Qué decir antes de empezar.", "alt": "La página para abrir la sesión: un ejemplo de presentación para leer tal cual o adaptar."},
-            {"title": "Herramientas de seguridad", "subtitle": "Retirarse, líneas y velos, pausas.", "alt": "La página de herramientas de seguridad: retirarse, líneas y velos, y pausas para preguntar."},
+            {"title": "Herramientas de seguridad", "subtitle": "Retirarse, líneas y velos, pausas.", "alt": "La página de herramientas de seguridad: retirarse, líneas y velos, y pausas para preguntar, con una nota al margen sobre cómo está construida la introducción."},
             {"title": "Alargar la partida", "subtitle": "Partidas más largas y más sesiones.", "alt": "La página para alargar la partida, con dos cartas del juego una al lado de la otra."},
             {"title": "Sesiones de investigación", "subtitle": "Cuando una sesión forma parte de un estudio.", "alt": "La página de sesiones de investigación: consentimiento, grabación, notas y retirada."}
         ],

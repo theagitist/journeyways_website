@@ -97,10 +97,10 @@
             { "title": "Back cover", "subtitle": "A game about becoming.", "alt": "The booklet back cover: the Journeyways mark, a QR code, and the tagline a board game about becoming." }
         ],
         "facilitator": [
-            {"title": "Cover", "subtitle": "The Facilitator's Guide.", "alt": "The Playing pieces page: players can use any piece they like, with a painting of a die and a spinning wheel."},
-            {"title": "Playing pieces", "subtitle": "Anything can be a piece.", "alt": "The Playing pieces page: players can use any piece they like, with a painting of coloured pawns."},
+            {"title": "Cover", "subtitle": "The Facilitator's Guide.", "alt": "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark."},
+            {"title": "Playing pieces", "subtitle": "Anything can be a piece.", "alt": "The Time and group size and Playing pieces page: session length, group size and pieces, with side notes from a playtest and on inviting players to bring an object."},
             {"title": "Opening the session", "subtitle": "What to say before you begin.", "alt": "The Opening the session page: a sample introduction to read as it is or adapt."},
-            {"title": "Safety tools", "subtitle": "Opt out, lines and veils, check-ins.", "alt": "The Safety tools page: opting out, the lines and veils, and check-ins."},
+            {"title": "Safety tools", "subtitle": "Opt out, lines and veils, check-ins.", "alt": "The Safety tools page: opting out, the lines and veils, and check-ins, with a side note on how the opening introduction is built."},
             {"title": "Extending the game", "subtitle": "Longer games and more sessions.", "alt": "The Extending the game page, with two game cards side by side."},
             {"title": "Research sessions", "subtitle": "When a session is part of a study.", "alt": "The Research sessions page: consent, recording, notes and withdrawal."}
         ],

@@ -2,7 +2,7 @@
     "meta": {
         "title": "JOURNEYWAYS | Guide d'animation",
         "description": "Le Guide d'animation JOURNEYWAYS : comment animer une séance, des pions et des outils de sécurité jusqu'au début, à la fin et à la prolongation d'une partie, ainsi que les séances de recherche. Prévisualisez les pages ou téléchargez le PDF.",
-        "keywords": "guide d'animation JOURNEYWAYS, animer une partie, outils de sécurité, carte X, lignes et voiles, atelier, jeu de société",
+        "keywords": "guide d'animation JOURNEYWAYS, animer une partie, outils de sécurité, lignes et voiles, atelier, jeu de société",
         "og_title": "JOURNEYWAYS | Guide d'animation",
         "og_description": "Comment animer une séance de JOURNEYWAYS. Prévisualisez les pages ou téléchargez le PDF."
     },
@@ -21,7 +21,7 @@
             "caption": "Couverture"
         },
         "1": {
-            "alt": "La page des pions : chaque personne peut utiliser le pion de son choix, avec une peinture d'un dé et d'une roue.",
+            "alt": "La page du temps, de la taille du groupe et des pions : la durée de la séance, le nombre de personnes et les pions, avec des notes en marge tirées d'un test et sur l'invitation à apporter un objet.",
             "caption": "Les pions"
         },
         "2": {
@@ -29,7 +29,7 @@
             "caption": "Ouvrir la séance"
         },
         "3": {
-            "alt": "La page des outils de sécurité : se retirer, les lignes et voiles, et les points d'étape.",
+            "alt": "La page des outils de sécurité : se retirer, les lignes et voiles, et les points d'étape, avec une note en marge sur la construction de l'introduction.",
             "caption": "Outils de sécurité"
         },
         "4": {

@@ -288,9 +288,9 @@ var gallerySets = {
     ],
     facilitator: [
         { src: 'img/facilitator/p01.webp?v=6', alt: "The Facilitator's Guide cover: a round watercolour labyrinth above the Journeyways wordmark.", title: "Cover", subtitle: "The Facilitator's Guide." },
-        { src: 'img/facilitator/p07.webp?v=6', alt: "The Playing pieces page: players can use any piece they like, with a painting of a die and a spinning wheel.", title: "Playing pieces", subtitle: "Anything can be a piece." },
-        { src: 'img/facilitator/p08.webp?v=6', alt: "The Opening the session page: a sample introduction to read as it is or adapt.", title: "Opening the session", subtitle: "What to say before you begin." },
-        { src: 'img/facilitator/p09.webp?v=6', alt: "The Safety tools page: opting out, the lines and veils, and check-ins.", title: "Safety tools", subtitle: "Opt out, lines and veils, check-ins." },
+        { src: 'img/facilitator/p07.webp?v=7', alt: "The Time and group size and Playing pieces page: session length, group size and pieces, with side notes from a playtest and on inviting players to bring an object.", title: "Playing pieces", subtitle: "Anything can be a piece." },
+        { src: 'img/facilitator/p08.webp?v=7', alt: "The Opening the session page: a sample introduction to read as it is or adapt.", title: "Opening the session", subtitle: "What to say before you begin." },
+        { src: 'img/facilitator/p09.webp?v=7', alt: "The Safety tools page: opting out, the lines and veils, and check-ins, with a side note on how the opening introduction is built.", title: "Safety tools", subtitle: "Opt out, lines and veils, check-ins." },
         { src: 'img/facilitator/p13.webp?v=6', alt: "The Extending the game page, with two game cards side by side.", title: "Extending the game", subtitle: "Longer games and more sessions." },
         { src: 'img/facilitator/p14.webp?v=6', alt: "The Research sessions page: consent, recording, notes and withdrawal.", title: "Research sessions", subtitle: "When a session is part of a study." }
     ],

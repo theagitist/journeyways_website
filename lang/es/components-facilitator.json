@@ -2,7 +2,7 @@
     "meta": {
         "title": "JOURNEYWAYS | Guía para facilitar",
         "description": "La Guía para facilitar JOURNEYWAYS: cómo acompañar una sesión, desde las fichas y las herramientas de seguridad hasta empezar, terminar y alargar una partida, además de las sesiones de investigación. Previsualiza las páginas o descarga el PDF.",
-        "keywords": "guía de facilitación JOURNEYWAYS, cómo facilitar, herramientas de seguridad, tarjeta X, líneas y velos, taller, juego de mesa",
+        "keywords": "guía de facilitación JOURNEYWAYS, cómo facilitar, herramientas de seguridad, líneas y velos, taller, juego de mesa",
         "og_title": "JOURNEYWAYS | Guía para facilitar",
         "og_description": "Cómo acompañar una sesión de JOURNEYWAYS. Previsualiza las páginas o descarga el PDF."
     },
@@ -21,7 +21,7 @@
             "caption": "Portada"
         },
         "1": {
-            "alt": "La página de las fichas: cada persona puede usar la ficha que quiera, con una pintura de un dado y una ruleta.",
+            "alt": "La página de tiempo, tamaño del grupo y fichas: la duración de la sesión, cuántas personas juegan y las fichas, con notas al margen de una prueba de juego y sobre invitar a traer un objeto.",
             "caption": "Las fichas"
         },
         "2": {
@@ -29,7 +29,7 @@
             "caption": "Abrir la sesión"
         },
         "3": {
-            "alt": "La página de herramientas de seguridad: retirarse, líneas y velos, y pausas para preguntar.",
+            "alt": "La página de herramientas de seguridad: retirarse, líneas y velos, y pausas para preguntar, con una nota al margen sobre cómo está construida la introducción.",
             "caption": "Herramientas de seguridad"
         },
         "4": {
