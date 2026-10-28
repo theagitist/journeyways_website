@@ -352,6 +352,24 @@ function buildLightboxDOM() {
     lb.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
     lb.querySelector('.lightbox-prev').addEventListener('click', function () { navigateLightbox(-1); });
     lb.querySelector('.lightbox-next').addEventListener('click', function () { navigateLightbox(1); });
+
+    // Swipe left/right on touch screens = next/prev. Only a clearly horizontal
+    // one-finger swipe counts, so vertical scrolling and pinch-zoom still work.
+    var touchX = null, touchY = null;
+    lb.addEventListener('touchstart', function (e) {
+        if (e.touches.length !== 1) { touchX = null; return; }
+        touchX = e.touches[0].clientX;
+        touchY = e.touches[0].clientY;
+    }, { passive: true });
+    lb.addEventListener('touchend', function (e) {
+        if (touchX === null) return;
+        var dx = e.changedTouches[0].clientX - touchX;
+        var dy = e.changedTouches[0].clientY - touchY;
+        touchX = null;
+        var set = gallerySets[currentSet];
+        if (!set || set.length <= 1) return;
+        if (Math.abs(dx) >= 50 && Math.abs(dx) > Math.abs(dy) * 1.5) navigateLightbox(dx < 0 ? 1 : -1);
+    }, { passive: true });
 }
 
 function openLightbox(index) {

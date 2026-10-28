@@ -24,7 +24,7 @@ www.journeyways.ca/
 ├── /contact            Contact form (HIDDEN: noindex, not in nav, not in sitemap)
 ├── css/styles.css          Custom CSS (@font-face, card colours, .tile-wood, marquee, lightbox)
 ├── css/tailwind.css        Tailwind utilities, locally built (output of tools/)
-├── js/main.js              Mobile menu, cookie banner, CTA injection, lightbox (multi-set), contact form
+├── js/main.js              Mobile menu, cookie banner, CTA injection, lightbox (multi-set; prev/next by buttons, arrow keys, or touch swipe), contact form
 ├── img/                    Site images + thumbnails + favicon.png + og-card.jpg (og-card, logo_bg_only, favicons = the spiral labyrinth logo; source + build scripts in original_assets/brand/spiral, never hand-edit)
 ├── img/design/             webp components (tiles, card fronts, card backs)
 ├── fonts/                  Self-hosted Inter and Italianno (woff2, latin + latin-ext)
@@ -42,8 +42,8 @@ www.journeyways.ca/
 - **Pages**: nginx serves `/var/www/www.journeyways.ca/` with `index index.php`; real files serve directly, everything else falls through `try_files` to the `index.php` front controller (see Localization below). Vhost at `/etc/nginx/sites-available/www.journeyways.ca.conf`; the committed reference copy is `deploy/nginx-www.journeyways.ca.conf`.
 - **Tailwind**: locally built. Source under `tools/` (`tailwind.input.css` + `tailwind.config.js`). Run `cd tools && npm run build` to regenerate `css/tailwind.css` after adding any new utility class. Watch mode: `npm run watch`. Always bump `tailwind.css?v=N` after a rebuild.
 - **Fonts**: Inter and Italianno self-hosted under `fonts/` as woff2 (latin + latin-ext subsets). Loaded via `@font-face` declarations at the top of `css/styles.css`. No third-party origins.
-- **Backend**: the contact form is `api/contact.php`, run by php-fpm (nginx routes `location = /api/contact` to `unix:/run/php/php8.3-fpm.sock`). No Node: the old Express `journeyways-www` PM2 app was deleted at the 2026-07-10 cutover. Secrets in `/etc/journeyways/www-config.php` (out of docroot).
-- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=30`, `main.js?v=37`). Bump on every change since `Cache-Control: max-age=31536000`; never reuse a number. Images and PDFs referenced without `?v=` stay Cloudflare-cached after a same-name replace (the deck kept showing the retired logo until it got `og-card.webp?v=3`).
+- **Backend**: the contact form is `api/contact.php`, run by php-fpm (nginx routes `location = /api/contact` to `unix:/run/php/php8.5-fpm.sock` (php8.3 until the 2026-10-27 Ubuntu 26.04 upgrade). No Node: the old Express `journeyways-www` PM2 app was deleted at the 2026-07-10 cutover. Secrets in `/etc/journeyways/www-config.php` (out of docroot).
+- **Cache-busting**: stylesheet and script tags use `?v=N` (currently `tailwind.css?v=25`, `styles.css?v=30`, `main.js?v=45`). Bump on every change since `Cache-Control: max-age=31536000`; never reuse a number. Images and PDFs referenced without `?v=` stay Cloudflare-cached after a same-name replace (the deck kept showing the retired logo until it got `og-card.webp?v=3`).
 - **Clean URLs (2026-10-20)**: routes in `inc/pages.php` are extensionless (`/components`). `index.php` 301s `/page.html` (and `/index.html`) to the clean URL, keeping the query string; nginx maps `/presentation` to the static `presentation.html` and 301s `/cards(.html)` to `/components`. Link with `jw_page_url('/x', $JW_LANG)`, never a literal `.html`; run `php bin/gen-sitemap.php` after adding a route.
 
 ## Localization (PHP i18n refactor, LIVE since 2026-07-10)

@@ -91,7 +91,7 @@ The CSP currently still permits the Tailwind CDN, Google Fonts, GA4, and Cloudfl
 
 ## Operational notes
 
-- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=25`, `styles.css?v=23`, `main.js?v=20`. Bump on every CSS/JS change because asset cache lifetime is one year.
+- **Cache-busting** is handled via query-string version on stylesheets and scripts. Current versions: `tailwind.css?v=25`, `styles.css?v=30`, `main.js?v=45`. Bump on every CSS/JS change because asset cache lifetime is one year.
 - **Font preloading** is set up in every HTML head (`<link rel="preload">` for Inter 400, Inter 600, Italianno 400 latin subsets) so first paint isn't a flash of fallback typography. `Italianno` uses `font-display: block`; Inter uses `font-display: swap` paired with an adjusted `Inter Fallback` face (local Arial with `size-adjust` and ascent/descent overrides) so the swap is layout-neutral and visually subtle.
 - **Contact backend** is `api/contact.php`, run by php-fpm (nginx routes `location = /api/contact` to the php-fpm socket). Secrets (ZeptoMail token, Turnstile secret) live in `/etc/journeyways/www-config.php` outside the docroot (`theagitist:www-data 0640`), never in the repo. The old Node `journeyways-www` PM2 app was deleted.
 - **Project context** (proposals, the 53-question interview with the designer, bibliography source list, parked questions) lives in the Academia Obsidian vault at `~/apps/obsidian/Academia/Projects/Journeyways/Foundations/`. A `brainstorm/` working copy used to live here; removed on 2026-05-12 to keep a single source.
